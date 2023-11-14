@@ -3,11 +3,10 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-import re
 
 
 def get_json_format_data():
-    url = 'https://ailab-cvc-seed-bench-leaderboard.hf.space/'
+    url = 'https://upstage-open-ko-llm-leaderboard.hf.space/'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -15,26 +14,19 @@ def get_json_format_data():
     json_format_data = json.loads(str(script_elements[1])[31:-10])
     return json_format_data
 
-def extract_model_repo_names(html):
-    # This regex pattern looks for the HuggingFace model names in the provided HTML strings.
-    # It matches the text after 'https://huggingface.co/' and before the closing double quote.
-    pattern = r'https://huggingface.co/([^"]+)'
-    matches = re.findall(pattern, html)
-    return matches[0]
-
 
 def get_datas(data):
-    for component_index in range(5, 50, 1): # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
+    for component_index in range(20, 50, 1): # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
         try:
             result_list = []
             i = 0
             while True:
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
-                    # model = extract_model_repo_names(results[1])
-                    print(len(results))
+                    type_of_emoji = data['components'][component_index]['props']['value']['data'][i][0]
+
                     try:
-                        results_json = {"Model Type": results[0], "Model": results[1], "Language Model": results[2], "Avg. All": results[3], "Avg. Img": results[4], "Avg. Video": results[5], "Scene Understanding": results[6], "Instance Identity": results[7], "Instance Attributes": results[8],"Instance Localization": results[9], "Instance Counting": results[10], "Spatial Relation": results[11], "Instance Interaction": results[12], "Visual Reasoning": results[13], "Text Recognition": results[14], "Action Recognition": results[15], "Action Prediction": results[16], "Procedure Understanding": results[17]}                        
+                        results_json = {"T": type_of_emoji, "Model": results[-1], "Average ⬆️": results[2], "Ko-ARC": results[3], "Ko-HellaSwag": results[4], "Ko-MMLU": results[5], "Ko-TruthfulQA": results[6], "Ko-CommonGen V2": results[7], "Type": results[8], "Precision": results[9], "Hub License": results[10], "#Params (B)": results[11], "Hub ❤️": results[12], "Model Sha": results[13]}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
@@ -45,6 +37,7 @@ def get_datas(data):
             continue
 
     return result_list
+
 
 
 def main():
@@ -63,15 +56,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv("HF-SEED-Bench-Leaderboard.csv", index=False)
+        df.to_csv("ko-llm-leaderboard.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html("HF-SEED-Bench-Leaderboard.html", index=False)
+        df.to_html("ko-llm-leaderboard.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json("HF-SEED-Bench-Leaderboard-20231110.json", orient='records', indent=4)
+        df.to_json("ko-llm-leaderboard.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
