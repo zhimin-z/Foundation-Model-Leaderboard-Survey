@@ -33,7 +33,7 @@ def get_datas(data):
                     results = data['components'][component_index]['props']['value']['data'][i]
                     model = extract_model_repo_names(results[-1])
                     try:
-                        results_json = {"Backend": results[0], "Dtype": results[1], "Optimizations": results[2], "Quantization": results[3], "Class": results[4], "Type": results[5], "Memory (MB)": results[6], "Throughput (tokens/s)": results[7], "Energy (tokens/kWh)": results[8],"Best Score (%)": results[9], "Best Scored LLM": model}                        
+                        results_json = {"Backend": results[0], "Dtype": results[1], "Optimizations": results[2], "Quantization": results[3], "Class": results[4], "Type": results[5], "Memory (MB)": results[6], "Throughput (tokens/s)": results[7], "Energy (tokens/kWh)": results[8],"Best Score (%)": results[9], "Model": model}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
