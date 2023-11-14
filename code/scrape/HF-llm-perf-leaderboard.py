@@ -59,7 +59,7 @@ def main():
     df = pd.DataFrame(finished_models)
 
     if not args.csv and not args.html and not args.json:
-        args.csv = True  # If no arguments are provided, default to CSV export
+        args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
         df.to_csv("llm-perf-leaderboard.csv", index=False)
@@ -70,7 +70,7 @@ def main():
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json("llm-perf-leaderboard.json", orient='records')
+        df.to_json("llm-perf-leaderboard.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":

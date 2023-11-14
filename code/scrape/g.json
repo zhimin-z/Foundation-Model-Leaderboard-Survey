@@ -1,0 +1,450 @@
+window.gradio_config = {
+    "version": "3.40.1",
+    "mode": "blocks",
+    "dev_mode": false,
+    "analytics_enabled": true,
+    "components": [
+        {
+            "id": 1,
+            "type": "markdown",
+            "props": {
+                "value": "\u003ch1\u003eSEED-Bench Leaderboard\u003c/h1\u003e\n\u003cp\u003eWelcome to the leaderboard of the SEED-Bench! 🏆\nSEED-Bench consists of 19K multiple-choice questions with accurate human annotations for evaluating Multimodal LLMs, covering 12 evaluation dimensions including both the spatial and temporal understanding.\nPlease refer to \u003ca href=\"https://arxiv.org/abs/2307.16125\" target=\"_blank\"\u003eour paper\u003c/a\u003e for more details.\u003c/p\u003e\n",
+                "rtl": false,
+                "name": "markdown",
+                "visible": true
+            },
+            "serializer": "StringSerializable",
+            "api_info": {
+                "info": {
+                    "type": "string"
+                },
+                "serialized_info": false
+            },
+            "example_inputs": {
+                "raw": "Howdy!",
+                "serialized": "Howdy!"
+            }
+        },
+        {
+            "id": 2,
+            "type": "tabs",
+            "props": {
+                "visible": true,
+                "elem_classes": [
+                    "tab-buttons"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "type": "tabitem",
+            "props": {
+                "label": "🏅 SEED Benchmark",
+                "id": 0,
+                "visible": true,
+                "elem_id": "seed-benchmark-tab-table"
+            }
+        },
+        {
+            "id": 4,
+            "type": "row",
+            "props": {
+                "type": "row",
+                "variant": "default",
+                "equal_height": true,
+                "visible": true
+            }
+        },
+        {
+            "id": 5,
+            "type": "accordion",
+            "props": {
+                "type": "accordion",
+                "open": false,
+                "label": "Citation",
+                "visible": true
+            }
+        },
+        {
+            "id": 6,
+            "type": "textbox",
+            "props": {
+                "lines": 1,
+                "max_lines": 20,
+                "value": "@article{li2023seed,\n  title={SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension},\n  author={Li, Bohao and Wang, Rui and Wang, Guangzhi and Ge, Yuying and Ge, Yixiao and Shan, Ying},\n  journal={arXiv preprint arXiv:2307.16125},\n  year={2023}\n}",
+                "type": "text",
+                "autofocus": false,
+                "show_copy_button": true,
+                "container": true,
+                "rtl": false,
+                "label": "Copy the following snippet to cite these results",
+                "show_label": true,
+                "min_width": 160,
+                "name": "textbox",
+                "visible": true,
+                "elem_id": "citation-button"
+            },
+            "serializer": "StringSerializable",
+            "api_info": {
+                "info": {
+                    "type": "string"
+                },
+                "serialized_info": false
+            },
+            "example_inputs": {
+                "raw": "Howdy!",
+                "serialized": "Howdy!"
+            }
+        },
+        {
+            "id": 7,
+            "type": "form",
+            "props": {
+                "type": "form",
+                "scale": 0,
+                "min_width": 0,
+                "visible": true
+            }
+        },
+        {
+            "id": 8,
+            "type": "markdown",
+            "props": {
+                "value": "\u003cp\u003eIn the table below, we summarize each task performance of all the models.\nWe use accurancy(%) as the primary evaluation metric for each tasks.\u003c/p\u003e\n",
+                "rtl": false,
+                "name": "markdown",
+                "visible": true
+            },
+            "serializer": "StringSerializable",
+            "api_info": {
+                "info": {
+                    "type": "string"
+                },
+                "serialized_info": false
+            },
+            "example_inputs": {
+                "raw": "Howdy!",
+                "serialized": "Howdy!"
+            }
+        },
+        {
+            "id": 9,
+            "type": "checkboxgroup",
+            "props": {
+                "choices": [
+                    "Avg. All",
+                    "Avg. Img",
+                    "Avg. Video",
+                    "Scene Understanding",
+                    "Instance Identity",
+                    "Instance Attributes",
+                    "Instance Localization",
+                    "Instance Counting",
+                    "Spatial Relation",
+                    "Instance Interaction",
+                    "Visual Reasoning",
+                    "Text Recognition",
+                    "Action Recognition",
+                    "Action Prediction",
+                    "Procedure Understanding"
+                ],
+                "value": [
+                    "Avg. All",
+                    "Avg. Img",
+                    "Avg. Video"
+                ],
+                "label": "Select options",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "interactive": true,
+                "name": "checkboxgroup",
+                "visible": true
+            },
+            "serializer": "ListStringSerializable",
+            "api_info": {
+                "info": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "serialized_info": false
+            },
+            "example_inputs": {
+                "raw": "Avg. All",
+                "serialized": "Avg. All"
+            }
+        },
+        {
+            "id": 10,
+            "type": "dataframe",
+            "props": {
+                "headers": [
+                    "Model Type",
+                    "Model",
+                    "Language Model",
+                    "Avg. All",
+                    "Avg. Img",
+                    "Avg. Video",
+                    "Scene Understanding",
+                    "Instance Identity",
+                    "Instance Attributes",
+                    "Instance Localization",
+                    "Instance Counting",
+                    "Spatial Relation",
+                    "Instance Interaction",
+                    "Visual Reasoning",
+                    "Text Recognition",
+                    "Action Recognition",
+                    "Action Prediction",
+                    "Procedure Understanding"
+                ],
+                "datatype": [
+                    "markdown",
+                    "markdown",
+                    "markdown",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number",
+                    "number"
+                ],
+                "row_count": [
+                    1,
+                    "dynamic"
+                ],
+                "col_count": [
+                    18,
+                    "dynamic"
+                ],
+                "value": {
+                    "headers": [
+                        "Model Type",
+                        "Model",
+                        "Language Model",
+                        "Avg. All",
+                        "Avg. Img",
+                        "Avg. Video"
+                    ],
+                    "data": [
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/haotian-liu/LLaVA\" target=\"_blank\"\u003eLLaVA-1.5\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-13B\u003c/p\u003e\n",
+                            61.6,
+                            68.2,
+                            42.7
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"\" target=\"_blank\"\u003eLLaMA-VID-7B\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            59.9,
+                            67.6,
+                            37.9
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://huggingface.co/Qwen/Qwen-VL-Chat\" target=\"_blank\"\u003eQwen-VL-Chat\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eQwen-7B\u003c/p\u003e\n",
+                            58.2,
+                            65.4,
+                            37.8
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/X-PLUG/mPLUG-Owl\" target=\"_blank\"\u003emPLUG-Owl2\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            57.8,
+                            64.1,
+                            39.8
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://huggingface.co/Qwen/Qwen-VL\" target=\"_blank\"\u003eQwen-VL\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eQwen-7B\u003c/p\u003e\n",
+                            56.3,
+                            62.3,
+                            39.1
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/salesforce/LAVIS\" target=\"_blank\"\u003eInstructBLIP-Vicuna\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-7B\u003c/p\u003e\n",
+                            53.4,
+                            58.8,
+                            38.1
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/salesforce/LAVIS\" target=\"_blank\"\u003eInstructBLIP\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eFlan-T5-XL\u003c/p\u003e\n",
+                            52.7,
+                            57.8,
+                            38.3
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/microsoft/unilm/tree/master/kosmos-2\" target=\"_blank\"\u003eKosmos-2\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eDecoder Only 1.3B\u003c/p\u003e\n",
+                            50.0,
+                            54.4,
+                            37.5
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/AILab-CVC/SEED\" target=\"_blank\"\u003eSEED-LLaMA\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA2-Chat-13b\u003c/p\u003e\n",
+                            48.9,
+                            53.7,
+                            35.4
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/salesforce/LAVIS\" target=\"_blank\"\u003eBLIP-2\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eFlan-T5-XL\u003c/p\u003e\n",
+                            46.4,
+                            49.7,
+                            36.7
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/Vision-CAIR/MiniGPT-4\" target=\"_blank\"\u003eMiniGPT-4\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-7B\u003c/p\u003e\n",
+                            42.8,
+                            47.4,
+                            29.9
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/mlfoundations/open_flamingo\" target=\"_blank\"\u003eOpenFlamingo\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eMPT-7B\u003c/p\u003e\n",
+                            40.9,
+                            42.7,
+                            35.7
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/Luodian/Otter\" target=\"_blank\"\u003eOtter\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eMPT-7B\u003c/p\u003e\n",
+                            39.7,
+                            42.9,
+                            30.6
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/VPGTrans/VPGTrans\" target=\"_blank\"\u003eVPGTrans\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            39.1,
+                            41.8,
+                            31.4
+                        ],
+                        [
+                            "\u003cp\u003eVideoLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/OpenGVLab/Ask-Anything\" target=\"_blank\"\u003eVideoChat\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-7B\u003c/p\u003e\n",
+                            37.6,
+                            39.0,
+                            33.7
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/X-PLUG/mPLUG-Owl\" target=\"_blank\"\u003emPLUG-Owl\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            34.0,
+                            37.9,
+                            23.0
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/Luodian/Otter\" target=\"_blank\"\u003eOtter\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            33.9,
+                            35.2,
+                            30.4
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/TencentARC/GVT\" target=\"_blank\"\u003eGVT\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-7B\u003c/p\u003e\n",
+                            33.5,
+                            35.5,
+                            27.8
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/open-mmlab/Multimodal-GPT\" target=\"_blank\"\u003eMultiModal-GPT\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            33.2,
+                            34.5,
+                            29.2
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/mlfoundations/open_flamingo\" target=\"_blank\"\u003eOpenFlamingo\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            33.1,
+                            34.5,
+                            29.3
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/OpenGVLab/LLaMA-Adapter\" target=\"_blank\"\u003eLLaMA-AdapterV2\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            32.7,
+                            35.2,
+                            25.8
+                        ],
+                        [
+                            "\u003cp\u003eVideoLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/mbzuai-oryx/Video-ChatGPT\" target=\"_blank\"\u003eVideo-ChatGPT\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            31.2,
+                            33.9,
+                            23.5
+                        ],
+                        [
+                            "\u003cp\u003eVideoLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://github.com/RupertLuo/Valley\" target=\"_blank\"\u003eValley\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-13B\u003c/p\u003e\n",
+                            30.3,
+                            32.0,
+                            25.4
+                        ],
+                        [
+                            "\u003cp\u003eLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://huggingface.co/lmsys/vicuna-7b-v1.3\" target=\"_blank\"\u003eVicuna\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eVicuna-7B\u003c/p\u003e\n",
+                            28.5,
+                            28.2,
+                            29.5
+                        ],
+                        [
+                            "\u003cp\u003eLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://huggingface.co/google/flan-t5-xl\" target=\"_blank\"\u003eFlan-T5\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eFlan-T5-XL\u003c/p\u003e\n",
+                            27.7,
+                            27.3,
+                            28.6
+                        ],
+                        [
+                            "\u003cp\u003eLLM\u003c/p\u003e\n",
+                            "\u003cp\u003e\u003ca href=\"https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/\" target=\"_blank\"\u003eLLaMA\u003c/a\u003e\u003c/p\u003e\n",
+                            "\u003cp\u003eLLaMA-7B\u003c/p\u003e\n",
+                            26.8,
+                            26.6,
+                            27.3
+                        ],
+                        [
+                            "\u003cp\u003eImageLLM\u003c/p\u003e\n","\u003cp\u00…

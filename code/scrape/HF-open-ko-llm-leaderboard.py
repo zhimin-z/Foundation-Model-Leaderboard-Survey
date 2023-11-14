@@ -6,7 +6,7 @@ import json
 
 
 def get_json_format_data():
-    url = 'https://huggingfaceh4-open-llm-leaderboard.hf.space/'
+    url = 'https://upstage-open-ko-llm-leaderboard.hf.space/'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -16,7 +16,7 @@ def get_json_format_data():
 
 
 def get_datas(data):
-    for component_index in range(10, 50, 1): # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
+    for component_index in range(20, 50, 1): # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
         try:
             result_list = []
             i = 0
@@ -26,7 +26,7 @@ def get_datas(data):
                     type_of_emoji = data['components'][component_index]['props']['value']['data'][i][0]
 
                     try:
-                        results_json = {"T": type_of_emoji, "Model": results[-1], "Average ⬆️": results[2], "ARC": results[3], "HellaSwag": results[4], "MMLU": results[5], "TruthfulQA": results[6], "Winogrande": results[7], "GSM8K": results[8], "DROP": results[9], "Type": results[10], "Precision": results[11], "Hub License": results[12], "#Params (B)": results[13], "Hub ❤️": results[14], "Model Sha": results[16]}                        
+                        results_json = {"T": type_of_emoji, "Model": results[-1], "Average ⬆️": results[2], "Ko-ARC": results[3], "Ko-HellaSwag": results[4], "Ko-MMLU": results[5], "Ko-TruthfulQA": results[6], "Ko-CommonGen V2": results[7], "Type": results[8], "Precision": results[9], "Hub License": results[10], "#Params (B)": results[11], "Hub ❤️": results[12], "Model Sha": results[13]}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
@@ -53,18 +53,18 @@ def main():
     df = pd.DataFrame(finished_models)
 
     if not args.csv and not args.html and not args.json:
-        args.csv = True  # If no arguments are provided, default to CSV export
+        args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv("open-llm-leaderboard.csv", index=False)
+        df.to_csv("HF-ko-llm-leaderboard.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html("open-llm-leaderboard.html", index=False)
+        df.to_html("HF-ko-llm-leaderboard.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json("open-llm-leaderboard.json", orient='records')
+        df.to_json("HF-ko-llm-leaderboard.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
