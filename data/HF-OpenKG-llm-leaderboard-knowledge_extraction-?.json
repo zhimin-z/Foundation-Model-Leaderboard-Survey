@@ -1,0 +1,32 @@
+[
+    {
+        "Model Name":"KnowLM(0-shot)",
+        "Language Model":"LLaMA-13B",
+        "Avg. All":30.25,
+        "FewNERD":24.2,
+        "FewRel":65.67,
+        "InstructIE-en":42.89,
+        "MAVEN":13.41,
+        "WikiEvents":5.1
+    },
+    {
+        "Model Name":"ChatGPT(5-shot ICL)",
+        "Language Model":"GPT-3.5-turbo",
+        "Avg. All":24.88,
+        "FewNERD":41.67,
+        "FewRel":17.58,
+        "InstructIE-en":36.41,
+        "MAVEN":23.19,
+        "WikiEvents":5.57
+    },
+    {
+        "Model Name":"Llama2-13B-chat(5-shot ICL)",
+        "Language Model":"Llama2-13B",
+        "Avg. All":11.43,
+        "FewNERD":28.96,
+        "FewRel":7.48,
+        "InstructIE-en":12.7,
+        "MAVEN":5.08,
+        "WikiEvents":2.92
+    }
+]
