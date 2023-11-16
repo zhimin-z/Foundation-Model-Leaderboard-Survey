@@ -1,0 +1,2970 @@
+[
+  {
+    "title": "track: trec, valid_topk: 30",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "NDCG@10",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nNDCG@10: Normalized discounted cumulative gain at 10 in information retrieval.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "NDCG@10",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "NDCG@10 (Robustness)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nNDCG@10: Normalized discounted cumulative gain at 10 in information retrieval.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "NDCG@10",
+          "run_group": "MS MARCO (TREC)",
+          "perturbation": "Robustness"
+        }
+      },
+      {
+        "value": "NDCG@10 (Fairness)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nNDCG@10: Normalized discounted cumulative gain at 10 in information retrieval.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "NDCG@10",
+          "run_group": "MS MARCO (TREC)",
+          "perturbation": "Fairness"
+        }
+      },
+      {
+        "value": "Stereotypes (race)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Stereotypes (race)",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "Stereotypes (gender)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Stereotypes (gender)",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "Representation (race)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Representation (race)",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "Representation (gender)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Representation (gender)",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "Toxic fraction",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Toxic fraction",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "MS MARCO (TREC)"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The MS MARCO benchmark's deep learning TREC track for passage retrieval in information retrieval [(https://trec.nist.gov)](https://microsoft.github.io/msmarco/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "MS MARCO (TREC)"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "J1-Jumbo v1 (178B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3629986373891198,
+          "description": "min=0.316, mean=0.363, max=0.406, sum=1.089 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3070790784160127,
+          "description": "min=0.276, mean=0.307, max=0.347, sum=0.921 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.34798299201075195,
+          "description": "min=0.308, mean=0.348, max=0.386, sum=1.044 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.4963945009689923,
+          "description": "min=0.477, mean=0.496, max=0.516, sum=1.489 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.046511627906977,
+          "description": "min=2.047, mean=2.047, max=2.047, sum=6.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Large v1 (7.5B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2923798848690971,
+          "description": "min=0.266, mean=0.292, max=0.338, sum=0.877 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.24769351383898738,
+          "description": "min=0.231, mean=0.248, max=0.274, sum=0.743 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2804651230679189,
+          "description": "min=0.258, mean=0.28, max=0.322, sum=0.841 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.3890438468992247,
+          "description": "min=0.376, mean=0.389, max=0.402, sum=1.167 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.116279069767442,
+          "description": "min=2.093, mean=2.116, max=2.163, sum=6.349 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Grande v1 (17B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3405754555729712,
+          "description": "min=0.31, mean=0.341, max=0.389, sum=1.022 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.29680328755123014,
+          "description": "min=0.27, mean=0.297, max=0.328, sum=0.89 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3284974893691146,
+          "description": "min=0.296, mean=0.328, max=0.372, sum=0.985 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.42392066375968995,
+          "description": "min=0.412, mean=0.424, max=0.437, sum=1.272 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0232558139534884,
+          "description": "min=2.023, mean=2.023, max=2.023, sum=6.07 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Grande v2 beta (17B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.4599017899356203,
+          "description": "min=0.401, mean=0.46, max=0.51, sum=1.38 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.40738421631598776,
+          "description": "min=0.361, mean=0.407, max=0.448, sum=1.222 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4346805929346467,
+          "description": "min=0.371, mean=0.435, max=0.486, sum=1.304 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0232558139534884,
+          "description": "min=2.023, mean=2.023, max=2.023, sum=6.07 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Jumbo (178B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.6606283875315079,
+          "description": "min=0.62, mean=0.661, max=0.706, sum=1.982 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6069545244562901,
+          "description": "min=0.569, mean=0.607, max=0.639, sum=1.821 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6202649047028815,
+          "description": "min=0.578, mean=0.62, max=0.66, sum=1.861 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Grande (17B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.5142425752510611,
+          "description": "min=0.473, mean=0.514, max=0.577, sum=1.543 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.42305953691791237,
+          "description": "min=0.406, mean=0.423, max=0.451, sum=1.269 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.47089412794287994,
+          "description": "min=0.438, mean=0.471, max=0.522, sum=1.413 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0232558139534884,
+          "description": "min=2.023, mean=2.023, max=2.023, sum=6.07 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Large (7.5B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.46440079625084785,
+          "description": "min=0.454, mean=0.464, max=0.479, sum=1.393 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.39737317282374035,
+          "description": "min=0.391, mean=0.397, max=0.403, sum=1.192 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.44015360771598083,
+          "description": "min=0.432, mean=0.44, max=0.457, sum=1.32 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 373.3798449612403,
+          "description": "min=337.047, mean=373.38, max=411.047, sum=1120.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0232558139534884,
+          "description": "min=2.023, mean=2.023, max=2.023, sum=6.07 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Anthropic-LM v4-s3 (52B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "min=0.625, mean=0.642, max=0.66, sum=1.925 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "min=0.589, mean=0.592, max=0.594, sum=1.776 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "min=0.589, mean=0.609, max=0.63, sum=1.828 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.5865037397044573,
+          "description": "min=0.547, mean=0.587, max=0.608, sum=1.76 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLOOM (176B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.38615935723643413,
+          "description": "min=0.364, mean=0.386, max=0.429, sum=1.158 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.33254039819149694,
+          "description": "min=0.304, mean=0.333, max=0.385, sum=0.998 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.37148573288404924,
+          "description": "min=0.345, mean=0.371, max=0.418, sum=1.114 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.24635170979166832,
+          "description": "min=0.227, mean=0.246, max=0.271, sum=0.739 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 506.81395348837214,
+          "description": "min=466.814, mean=506.814, max=552.814, sum=1520.442 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere xlarge v20220609 (52.4B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.459226881551946,
+          "description": "min=0.429, mean=0.459, max=0.479, sum=1.378 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.39663320695609633,
+          "description": "min=0.371, mean=0.397, max=0.414, sum=1.19 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4307144032412258,
+          "description": "min=0.394, mean=0.431, max=0.457, sum=1.292 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.501260492369186,
+          "description": "min=0.487, mean=0.501, max=0.511, sum=1.504 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere large v20220720 (13.1B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.33048901656890556,
+          "description": "min=0.292, mean=0.33, max=0.382, sum=0.991 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2574506868270638,
+          "description": "min=0.195, mean=0.257, max=0.323, sum=0.772 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3120660241438415,
+          "description": "min=0.273, mean=0.312, max=0.361, sum=0.936 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.32664419815891477,
+          "description": "min=0.319, mean=0.327, max=0.335, sum=0.98 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0310077519379846,
+          "description": "min=1.023, mean=1.031, max=1.047, sum=3.093 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere medium v20220720 (6.1B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.37403469141231543,
+          "description": "min=0.337, mean=0.374, max=0.416, sum=1.122 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.31504083631376195,
+          "description": "min=0.294, mean=0.315, max=0.354, sum=0.945 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.35726921379791293,
+          "description": "min=0.321, mean=0.357, max=0.398, sum=1.072 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.28804701126453486,
+          "description": "min=0.285, mean=0.288, max=0.29, sum=0.864 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0155038759689923,
+          "description": "min=1, mean=1.016, max=1.023, sum=3.047 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere small v20220720 (410M)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3036973447248717,
+          "description": "min=0.258, mean=0.304, max=0.338, sum=0.911 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2521940956196658,
+          "description": "min=0.22, mean=0.252, max=0.287, sum=0.757 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2798487582673837,
+          "description": "min=0.228, mean=0.28, max=0.324, sum=0.84 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.29054985767926356,
+          "description": "min=0.282, mean=0.291, max=0.303, sum=0.872 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0310077519379846,
+          "description": "min=1, mean=1.031, max=1.093, sum=3.093 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere xlarge v20221108 (52.4B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.5499286754082369,
+          "description": "min=0.526, mean=0.55, max=0.573, sum=1.65 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.48206153384583117,
+          "description": "min=0.449, mean=0.482, max=0.527, sum=1.446 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.5216640091882355,
+          "description": "min=0.51, mean=0.522, max=0.544, sum=1.565 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere medium v20221108 (6.1B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3726465618083979,
+          "description": "min=0.329, mean=0.373, max=0.4, sum=1.118 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3140445596258007,
+          "description": "min=0.265, mean=0.314, max=0.339, sum=0.942 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.35251421077315565,
+          "description": "min=0.311, mean=0.353, max=0.384, sum=1.058 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere Command beta (6.1B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.7094155817648372,
+          "description": "min=0.702, mean=0.709, max=0.717, sum=2.128 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6845367765287401,
+          "description": "min=0.68, mean=0.685, max=0.689, sum=2.054 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6896233668786421,
+          "description": "min=0.68, mean=0.69, max=0.696, sum=2.069 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere Command beta (52.4B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.7622522766616928,
+          "description": "min=0.761, mean=0.762, max=0.765, sum=2.287 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.7339375978505934,
+          "description": "min=0.726, mean=0.734, max=0.743, sum=2.202 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.7483868294443408,
+          "description": "min=0.745, mean=0.748, max=0.752, sum=2.245 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4961240310078,
+          "description": "min=480.163, mean=519.496, max=566.163, sum=1558.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-J (6B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.34502499414653504,
+          "description": "min=0.315, mean=0.345, max=0.362, sum=1.035 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3190834142643501,
+          "description": "min=0.29, mean=0.319, max=0.336, sum=0.957 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3321982457704417,
+          "description": "min=0.303, mean=0.332, max=0.348, sum=0.997 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.08053553836682271,
+          "description": "min=0.078, mean=0.081, max=0.083, sum=0.242 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-NeoX (20B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.39824533946123547,
+          "description": "min=0.37, mean=0.398, max=0.436, sum=1.195 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3510422646487042,
+          "description": "min=0.338, mean=0.351, max=0.365, sum=1.053 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.38125183165300675,
+          "description": "min=0.347, mean=0.381, max=0.416, sum=1.144 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.11621723726407733,
+          "description": "min=0.105, mean=0.116, max=0.127, sum=0.349 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 519.4728682170543,
+          "description": "min=481.14, mean=519.473, max=565.14, sum=1558.419 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "OPT (175B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.4480793689593227,
+          "description": "min=0.425, mean=0.448, max=0.467, sum=1.344 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4083455179340017,
+          "description": "min=0.386, mean=0.408, max=0.422, sum=1.225 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.41868435186381264,
+          "description": "min=0.4, mean=0.419, max=0.428, sum=1.256 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.2261325473631569,
+          "description": "min=0.19, mean=0.226, max=0.254, sum=0.678 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "OPT (66B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.4820255726730058,
+          "description": "min=0.467, mean=0.482, max=0.511, sum=1.446 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.436684763137285,
+          "description": "min=0.421, mean=0.437, max=0.46, sum=1.31 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4706976603850948,
+          "description": "min=0.45, mean=0.471, max=0.501, sum=1.412 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.10182954292591756,
+          "description": "min=0.061, mean=0.102, max=0.183, sum=0.305 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TNLG v2 (530B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.6431699764013751,
+          "description": "min=0.621, mean=0.643, max=0.662, sum=1.93 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.5653481865448796,
+          "description": "min=0.54, mean=0.565, max=0.586, sum=1.696 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6120938886543282,
+          "description": "min=0.592, mean=0.612, max=0.629, sum=1.836 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0155038759689923,
+          "description": "min=1, mean=1.016, max=1.023, sum=3.047 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TNLG v2 (6.7B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3324723538542003,
+          "description": "min=0.273, mean=0.332, max=0.382, sum=0.997 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2783978738136928,
+          "description": "min=0.227, mean=0.278, max=0.312, sum=0.835 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.31652617829212154,
+          "description": "min=0.256, mean=0.317, max=0.363, sum=0.95 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0465116279069768,
+          "description": "min=1.047, mean=1.047, max=1.047, sum=3.14 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "davinci (175B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3781975078250463,
+          "description": "min=0.343, mean=0.378, max=0.397, sum=1.135 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3320850067305285,
+          "description": "min=0.31, mean=0.332, max=0.352, sum=0.996 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.35718542292055805,
+          "description": "min=0.324, mean=0.357, max=0.375, sum=1.072 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.2137389625726744,
+          "description": "min=0.201, mean=0.214, max=0.221, sum=0.641 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "curie (6.7B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.29959792504491484,
+          "description": "min=0.279, mean=0.3, max=0.31, sum=0.899 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.25287196320995325,
+          "description": "min=0.25, mean=0.253, max=0.254, sum=0.759 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2838824123845733,
+          "description": "min=0.266, mean=0.284, max=0.295, sum=0.852 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.09531934350775194,
+          "description": "min=0.094, mean=0.095, max=0.097, sum=0.286 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.248062015503876,
+          "description": "min=1.093, mean=1.248, max=1.488, sum=3.744 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "babbage (1.3B)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3165150970076857,
+          "description": "min=0.291, mean=0.317, max=0.362, sum=0.95 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.24641961891165112,
+          "description": "min=0.206, mean=0.246, max=0.285, sum=0.739 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.300592144197253,
+          "description": "min=0.275, mean=0.301, max=0.346, sum=0.902 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.12249798631298452,
+          "description": "min=0.118, mean=0.122, max=0.128, sum=0.367 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.4961240310077522,
+          "description": "min=1, mean=1.496, max=2.302, sum=4.488 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "ada (350M)",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2902649241990923,
+          "description": "min=0.184, mean=0.29, max=0.427, sum=0.871 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.24715427563243078,
+          "description": "min=0.148, mean=0.247, max=0.358, sum=0.741 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.267882893215826,
+          "description": "min=0.17, mean=0.268, max=0.399, sum=0.804 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.14153152252906978,
+          "description": "min=0.14, mean=0.142, max=0.142, sum=0.425 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.1705426356589146,
+          "description": "min=1.093, mean=1.171, max=1.209, sum=3.512 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-davinci-003",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.6437915218204088,
+          "description": "min=0.611, mean=0.644, max=0.662, sum=1.931 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6160995919712035,
+          "description": "min=0.578, mean=0.616, max=0.645, sum=1.848 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6326849780192724,
+          "description": "min=0.603, mean=0.633, max=0.652, sum=1.898 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-davinci-002",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.6636685030000556,
+          "description": "min=0.642, mean=0.664, max=0.685, sum=1.991 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.627999061572698,
+          "description": "min=0.615, mean=0.628, max=0.641, sum=1.884 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6388640932298691,
+          "description": "min=0.614, mean=0.639, max=0.663, sum=1.917 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.19810631661821707,
+          "description": "min=0.173, mean=0.198, max=0.213, sum=0.594 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.9922480620155039,
+          "description": "min=0.977, mean=0.992, max=1, sum=2.977 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-curie-001",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.5072420607794633,
+          "description": "min=0.476, mean=0.507, max=0.545, sum=1.522 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4437543283018195,
+          "description": "min=0.393, mean=0.444, max=0.486, sum=1.331 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4817143719085842,
+          "description": "min=0.448, mean=0.482, max=0.523, sum=1.445 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.13529218144379848,
+          "description": "min=0.133, mean=0.135, max=0.138, sum=0.406 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0775193798449612,
+          "description": "min=1, mean=1.078, max=1.209, sum=3.233 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-babbage-001",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.4491612384841603,
+          "description": "min=0.42, mean=0.449, max=0.493, sum=1.347 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.35630094105473137,
+          "description": "min=0.315, mean=0.356, max=0.413, sum=1.069 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4244404820446352,
+          "description": "min=0.396, mean=0.424, max=0.469, sum=1.273 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.1353138323643411,
+          "description": "min=0.135, mean=0.135, max=0.136, sum=0.406 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.1317829457364341,
+          "description": "min=0.977, mean=1.132, max=1.326, sum=3.395 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-ada-001",
+          "description": "",
+          "href": "?group=msmarco_trec&subgroup=track%3A%20trec%2C%20valid_topk%3A%2030&runSpecs=%5B%22msmarco%3Atrack%3Dtrec%2Cvalid_topk%3D30%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3015757422504311,
+          "description": "min=0.21, mean=0.302, max=0.353, sum=0.905 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2521954718959493,
+          "description": "min=0.172, mean=0.252, max=0.302, sum=0.757 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2757254036023355,
+          "description": "min=0.177, mean=0.276, max=0.327, sum=0.827 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.08954472504844961,
+          "description": "min=0.089, mean=0.09, max=0.09, sum=0.269 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 43.0,
+          "description": "min=43, mean=43, max=43, sum=129 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 515.8217054263565,
+          "description": "min=478.488, mean=515.822, max=560.488, sum=1547.465 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.1007751937984496,
+          "description": "min=0.953, mean=1.101, max=1.326, sum=3.302 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/msmarco_trec_msmarco_trec_track:trec,valid_topk:30.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/msmarco_trec_msmarco_trec_track:trec,valid_topk:30.json"
+      }
+    ],
+    "name": "msmarco_trec_track:trec,valid_topk:30"
+  }
+]

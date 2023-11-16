@@ -1,0 +1,3831 @@
+[
+  {
+    "title": "task: all",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "LSAT"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The LSAT benchmark for measuring analytical reasoning on the Law School Admission Test (LSAT; [Zhong et al., 2021](https://arxiv.org/pdf/2104.06598.pdf)).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "LSAT"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "J1-Jumbo v1 (178B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-jumbo%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2318840579710145,
+          "description": "min=0.217, mean=0.232, max=0.248, sum=0.696 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6654486648928143,
+          "description": "min=0.639, mean=0.665, max=0.694, sum=1.996 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Large v1 (7.5B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-large%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.19565217391304346,
+          "description": "min=0.183, mean=0.196, max=0.204, sum=0.587 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.5361392964975845,
+          "description": "min=0.517, mean=0.536, max=0.556, sum=1.608 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Grande v1 (17B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-grande%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1884057971014493,
+          "description": "min=0.178, mean=0.188, max=0.2, sum=0.565 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.5872068925498192,
+          "description": "min=0.567, mean=0.587, max=0.61, sum=1.762 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "J1-Grande v2 beta (17B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.19130434782608696,
+          "description": "min=0.183, mean=0.191, max=0.204, sum=0.574 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Jumbo (178B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-jumbo%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21884057971014492,
+          "description": "min=0.204, mean=0.219, max=0.239, sum=0.657 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Grande (17B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-grande%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.22028985507246376,
+          "description": "min=0.217, mean=0.22, max=0.226, sum=0.661 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Jurassic-2 Large (7.5B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-large%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21739130434782608,
+          "description": "min=0.204, mean=0.217, max=0.235, sum=0.652 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 905.5391304347826,
+          "description": "min=845.539, mean=905.539, max=972.539, sum=2716.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Luminous Base (13B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.23478260869565218,
+          "description": "min=0.2, mean=0.235, max=0.261, sum=0.704 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1180.5565217391304,
+          "description": "min=1135.557, mean=1180.557, max=1244.557, sum=3541.67 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Luminous Extended (30B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1884057971014493,
+          "description": "min=0.187, mean=0.188, max=0.191, sum=0.565 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1180.5565217391304,
+          "description": "min=1135.557, mean=1180.557, max=1244.557, sum=3541.67 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Luminous Supreme (70B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21159420289855072,
+          "description": "min=0.204, mean=0.212, max=0.222, sum=0.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1180.5565217391304,
+          "description": "min=1135.557, mean=1180.557, max=1244.557, sum=3541.67 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Anthropic-LM v4-s3 (52B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.2, mean=0.213, max=0.23, sum=0.639 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.7364329521437193,
+          "description": "min=0.725, mean=0.736, max=0.752, sum=2.209 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BLOOM (176B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_bloom%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20869565217391306,
+          "description": "min=0.2, mean=0.209, max=0.217, sum=0.626 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4175956257381797,
+          "description": "min=0.414, mean=0.418, max=0.424, sum=1.253 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1156.4507246376813,
+          "description": "min=1120.117, mean=1156.451, max=1222.117, sum=3469.352 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "T0pp (11B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1855072463768116,
+          "description": "min=0.174, mean=0.186, max=0.204, sum=0.557 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.1416690067450204,
+          "description": "min=0.142, mean=0.142, max=0.142, sum=0.425 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.6086956521739126,
+          "description": "min=3.109, mean=3.609, max=3.891, sum=10.826 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 926.9565217391304,
+          "description": "min=877.87, mean=926.957, max=952.543, sum=2780.87 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere xlarge v20220609 (52.4B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.19999999999999998,
+          "description": "min=0.191, mean=0.2, max=0.213, sum=0.6 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.6823762567934785,
+          "description": "min=0.669, mean=0.682, max=0.702, sum=2.047 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere large v20220720 (13.1B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_large-20220720%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1927536231884058,
+          "description": "min=0.183, mean=0.193, max=0.209, sum=0.578 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.48729106657608684,
+          "description": "min=0.477, mean=0.487, max=0.502, sum=1.462 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere medium v20220720 (6.1B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_medium-20220720%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21159420289855072,
+          "description": "min=0.204, mean=0.212, max=0.226, sum=0.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.3892058763586957,
+          "description": "min=0.382, mean=0.389, max=0.4, sum=1.168 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere small v20220720 (410M)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_small-20220720%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18695652173913047,
+          "description": "min=0.183, mean=0.187, max=0.196, sum=0.561 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.4232129755434783,
+          "description": "min=0.416, mean=0.423, max=0.434, sum=1.27 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere xlarge v20221108 (52.4B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20434782608695654,
+          "description": "min=0.191, mean=0.204, max=0.222, sum=0.613 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere medium v20221108 (6.1B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_medium-20221108%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20579710144927535,
+          "description": "min=0.2, mean=0.206, max=0.213, sum=0.617 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere Command beta (6.1B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1782608695652174,
+          "description": "min=0.174, mean=0.178, max=0.183, sum=0.535 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Cohere Command beta (52.4B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2289855072463768,
+          "description": "min=0.226, mean=0.229, max=0.23, sum=0.687 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1195.878260869565,
+          "description": "min=1152.878, mean=1195.878, max=1258.878, sum=3587.635 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-J (6B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.17536231884057973,
+          "description": "min=0.143, mean=0.175, max=0.2, sum=0.526 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.13409884114196338,
+          "description": "min=0.134, mean=0.134, max=0.134, sum=0.402 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-NeoX (20B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.19130434782608696,
+          "description": "min=0.152, mean=0.191, max=0.217, sum=0.574 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2698803281150581,
+          "description": "min=0.252, mean=0.27, max=0.28, sum=0.81 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1202.163768115942,
+          "description": "min=1162.83, mean=1202.164, max=1266.83, sum=3606.491 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Pythia (6.9B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1956521739130435,
+          "description": "min=0.196, mean=0.196, max=0.196, sum=0.196 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Pythia (12B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1826086956521739,
+          "description": "min=0.183, mean=0.183, max=0.183, sum=0.183 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "T5 (11B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.15942028985507245,
+          "description": "min=0.148, mean=0.159, max=0.165, sum=0.478 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.225083498416861,
+          "description": "min=0.221, mean=0.225, max=0.228, sum=0.675 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.9376811594202898,
+          "description": "min=0.891, mean=0.938, max=0.965, sum=2.813 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.06376811594202898,
+          "description": "min=0.039, mean=0.064, max=0.109, sum=0.191 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 417.64637681159417,
+          "description": "min=406.374, mean=417.646, max=433.109, sum=1252.939 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "UL2 (20B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2072463768115942,
+          "description": "min=0.2, mean=0.207, max=0.213, sum=0.622 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.1900887959245318,
+          "description": "min=0.187, mean=0.19, max=0.195, sum=0.57 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.9304347826086957,
+          "description": "min=0.887, mean=0.93, max=0.957, sum=2.791 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.06956521739130435,
+          "description": "min=0.043, mean=0.07, max=0.113, sum=0.209 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 420.31739130434784,
+          "description": "min=408.848, mean=420.317, max=436.187, sum=1260.952 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "OPT (175B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_opt-175b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2202898550724638,
+          "description": "min=0.191, mean=0.22, max=0.243, sum=0.661 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.36850243412354106,
+          "description": "min=0.334, mean=0.369, max=0.429, sum=1.106 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "OPT (66B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_opt-66b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1753623188405797,
+          "description": "min=0.165, mean=0.175, max=0.191, sum=0.526 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.1160887603310572,
+          "description": "min=0.093, mean=0.116, max=0.162, sum=0.348 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LLaMA (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20869565217391303,
+          "description": "min=0.209, mean=0.209, max=0.209, sum=0.209 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LLaMA (13B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-13b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18695652173913044,
+          "description": "min=0.187, mean=0.187, max=0.187, sum=0.187 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LLaMA (30B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-30b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "LLaMA (65B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-65b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 2 (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.14782608695652175,
+          "description": "min=0.148, mean=0.148, max=0.148, sum=0.148 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 2 (13B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.23478260869565218,
+          "description": "min=0.235, mean=0.235, max=0.235, sum=0.235 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 2 (70B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.23478260869565218,
+          "description": "min=0.235, mean=0.235, max=0.235, sum=0.235 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Alpaca (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2217391304347826,
+          "description": "min=0.222, mean=0.222, max=0.222, sum=0.222 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vicuna v1.3 (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1826086956521739,
+          "description": "min=0.183, mean=0.183, max=0.183, sum=0.183 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vicuna v1.3 (13B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20869565217391303,
+          "description": "min=0.209, mean=0.209, max=0.209, sum=0.209 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1261.1913043478262,
+          "description": "min=1261.191, mean=1261.191, max=1261.191, sum=1261.191 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TNLG v2 (530B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.22753623188405794,
+          "description": "min=0.222, mean=0.228, max=0.235, sum=0.683 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "TNLG v2 (6.7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18985507246376812,
+          "description": "min=0.161, mean=0.19, max=0.204, sum=0.57 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "davinci (175B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_davinci%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.19130434782608696,
+          "description": "min=0.183, mean=0.191, max=0.2, sum=0.574 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2155425894474637,
+          "description": "min=0.214, mean=0.216, max=0.217, sum=0.647 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "curie (6.7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_curie%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.17971014492753623,
+          "description": "min=0.178, mean=0.18, max=0.183, sum=0.539 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.10301953030646134,
+          "description": "min=0.102, mean=0.103, max=0.104, sum=0.309 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "babbage (1.3B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_babbage%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2608695652173913,
+          "description": "min=0.252, mean=0.261, max=0.274, sum=0.783 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.1241720004906401,
+          "description": "min=0.124, mean=0.124, max=0.125, sum=0.373 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "ada (350M)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_ada%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18840579710144925,
+          "description": "min=0.161, mean=0.188, max=0.217, sum=0.565 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.1406489413496377,
+          "description": "min=0.14, mean=0.141, max=0.141, sum=0.422 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-davinci-003",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2333333333333333,
+          "description": "min=0.226, mean=0.233, max=0.239, sum=0.7 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-davinci-002",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2289855072463768,
+          "description": "min=0.213, mean=0.229, max=0.239, sum=0.687 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.21356211975392506,
+          "description": "min=0.211, mean=0.214, max=0.217, sum=0.641 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-curie-001",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-curie-001%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.17246376811594202,
+          "description": "min=0.17, mean=0.172, max=0.178, sum=0.517 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.14069505963164253,
+          "description": "min=0.14, mean=0.141, max=0.142, sum=0.422 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-babbage-001",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18985507246376812,
+          "description": "min=0.183, mean=0.19, max=0.196, sum=0.57 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.14911882453955314,
+          "description": "min=0.148, mean=0.149, max=0.151, sum=0.447 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "text-ada-001",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-ada-001%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.209, mean=0.213, max=0.217, sum=0.639 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.10156917742300721,
+          "description": "min=0.101, mean=0.102, max=0.103, sum=0.305 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "code-davinci-002",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.20407812122584548,
+          "description": "min=0.2, mean=0.204, max=0.209, sum=0.612 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "code-cushman-001 (12B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.10146988318991546,
+          "description": "min=0.101, mean=0.101, max=0.103, sum=0.304 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "gpt-3.5-turbo-0301",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.25217391304347825,
+          "description": "min=0.252, mean=0.252, max=0.252, sum=0.252 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1134.604347826087,
+          "description": "min=1134.604, mean=1134.604, max=1134.604, sum=1134.604 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0043478260869565,
+          "description": "min=1.004, mean=1.004, max=1.004, sum=1.004 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "gpt-3.5-turbo-0613",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1608695652173913,
+          "description": "min=0.161, mean=0.161, max=0.161, sum=0.161 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1134.604347826087,
+          "description": "min=1134.604, mean=1134.604, max=1134.604, sum=1134.604 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.4434782608695653,
+          "description": "min=1.443, mean=1.443, max=1.443, sum=1.443 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RedPajama-INCITE-Base-v1 (3B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.16956521739130434,
+          "description": "min=0.17, mean=0.17, max=0.17, sum=0.17 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RedPajama-INCITE-Base (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1782608695652174,
+          "description": "min=0.178, mean=0.178, max=0.178, sum=0.178 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "RedPajama-INCITE-Instruct (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.24347826086956523,
+          "description": "min=0.243, mean=0.243, max=0.243, sum=0.243 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MPT (30B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.24782608695652175,
+          "description": "min=0.248, mean=0.248, max=0.248, sum=0.248 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "MPT-Instruct (30B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1176.8304347826088,
+          "description": "min=1176.83, mean=1176.83, max=1176.83, sum=1176.83 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Falcon (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20434782608695654,
+          "description": "min=0.204, mean=0.204, max=0.204, sum=0.204 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1181.9478260869564,
+          "description": "min=1181.948, mean=1181.948, max=1181.948, sum=1181.948 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Falcon-Instruct (7B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20434782608695654,
+          "description": "min=0.204, mean=0.204, max=0.204, sum=0.204 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1181.9478260869564,
+          "description": "min=1181.948, mean=1181.948, max=1181.948, sum=1181.948 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Falcon (40B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.21304347826086956,
+          "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1181.9478260869564,
+          "description": "min=1181.948, mean=1181.948, max=1181.948, sum=1181.948 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Falcon-Instruct (40B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1826086956521739,
+          "description": "min=0.183, mean=0.183, max=0.183, sum=0.183 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=230 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1181.9478260869564,
+          "description": "min=1181.948, mean=1181.948, max=1181.948, sum=1181.948 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GLM (130B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.1927536231884058,
+          "description": "min=0.174, mean=0.193, max=0.209, sum=0.578 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.5758543137786095,
+          "description": "min=0.564, mean=0.576, max=0.597, sum=1.728 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1156.5434782608695,
+          "description": "min=1104.543, mean=1156.543, max=1215.543, sum=3469.63 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "InstructPalmyra (30B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.18695652173913044,
+          "description": "min=0.178, mean=0.187, max=0.191, sum=0.561 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Palmyra X (43B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dwriter_palmyra-x%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.2246376811594203,
+          "description": "min=0.222, mean=0.225, max=0.23, sum=0.674 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1190.1289855072464,
+          "description": "min=1144.796, mean=1190.129, max=1252.796, sum=3570.387 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.991304347826087,
+          "description": "min=0.974, mean=0.991, max=1, sum=2.974 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "YaLM (100B)",
+          "description": "",
+          "href": "?group=lsat_qa&subgroup=task%3A%20all&runSpecs=%5B%22lsat_qa%3Atask%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_yalm%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.23043478260869565,
+          "description": "min=0.23, mean=0.23, max=0.23, sum=0.691 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.2514298939013831,
+          "description": "min=0.247, mean=0.251, max=0.26, sum=0.754 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 230.0,
+          "description": "min=230, mean=230, max=230, sum=690 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=15 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1186.444927536232,
+          "description": "min=1144.778, mean=1186.445, max=1242.778, sum=3559.335 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=3 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=9 (3)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/lsat_qa_lsat_qa_task:all.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/lsat_qa_lsat_qa_task:all.json"
+      }
+    ],
+    "name": "lsat_qa_task:all"
+  }
+]

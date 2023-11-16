@@ -1,0 +1,213 @@
+[
+  {
+    "title": "dataset: apps",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Avg. # tests passed",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\nAvg. # tests passed: Average number of tests passed by model outputs.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Avg. # tests passed",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "Strict correctness",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\nStrict correctness: Fraction of models outputs that pass all associated test cases.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Strict correctness",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "APPS (Code)"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The APPS benchmark for measuring competence on code challenges [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c24cd76e1ce41366a4bbe8a49b02a028-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "APPS (Code)"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "code-davinci-002",
+          "description": "",
+          "href": "?group=code_apps&subgroup=dataset%3A%20apps&runSpecs=%5B%22code%3Adataset%3Dapps%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.20036778308837142,
+          "description": "min=0.195, mean=0.2, max=0.205, sum=0.601 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.108,
+          "description": "min=0.106, mean=0.108, max=0.111, sum=0.324 (3)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "code-cushman-001 (12B)",
+          "description": "",
+          "href": "?group=code_apps&subgroup=dataset%3A%20apps&runSpecs=%5B%22code%3Adataset%3Dapps%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.04821570466570468,
+          "description": "min=0.044, mean=0.048, max=0.052, sum=0.145 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.02033333333333333,
+          "description": "min=0.02, mean=0.02, max=0.021, sum=0.061 (3)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "compare all",
+        "href": "?group=code_apps&subgroup=dataset%3A%20apps&runSpecs=%5B%22code%3Adataset%3Dapps%2Cmodel%3Dopenai_code-cushman-001%22%2C%20%22code%3Adataset%3Dapps%2Cmodel%3Dopenai_code-davinci-002%22%5D"
+      },
+      {
+        "text": "LaTeX",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/code_apps_code_apps_dataset:apps.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/code_apps_code_apps_dataset:apps.json"
+      }
+    ],
+    "name": "code_apps_dataset:apps"
+  }
+]
