@@ -5,7 +5,7 @@ import requests
 
 from pathlib import Path
 
-path_data = Path("data")
+path_llm = Path("data/llm")
 
 
 if __name__ == '__main__':
@@ -27,5 +27,5 @@ if __name__ == '__main__':
         task = post_url.split('=')[-1]
         post_url = json_url + task + '.json'
         response = requests.get(post_url)
-        with open(path_data / f'HELM-leaderboard-{task}-20231024.json', 'wb') as file:
+        with open(path_llm / f'HELM-leaderboard-{task}-20231024.json', 'wb') as file:
             file.write(response.content)

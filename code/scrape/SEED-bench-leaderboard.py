@@ -5,6 +5,10 @@ import pandas as pd
 import json
 import re
 
+from pathlib import Path
+
+path_llm = Path("data/llm")
+
 
 def get_json_format_data():
     url = 'https://ailab-cvc-seed-bench-leaderboard.hf.space/'
@@ -63,15 +67,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv("SEED-Bench-Leaderboard.csv", index=False)
+        df.to_csv(path_llm / "SEED-Bench-Leaderboard.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html("SEED-Bench-Leaderboard.html", index=False)
+        df.to_html(path_llm / "SEED-Bench-Leaderboard.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json("SEED-Bench-Leaderboard-20231110.json", orient='records', indent=4)
+        df.to_json(path_llm / "SEED-Bench-Leaderboard-20231110.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":

@@ -4,6 +4,10 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import json
 
+from pathlib import Path
+
+path_llm = Path("data/llm")
+
 
 def get_json_format_data():
     url = 'https://upstage-open-ko-llm-leaderboard.hf.space/'
@@ -56,15 +60,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv("ko-llm-leaderboard.csv", index=False)
+        df.to_csv(path_llm / "ko-llm-leaderboard.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html("ko-llm-leaderboard.html", index=False)
+        df.to_html(path_llm / "ko-llm-leaderboard.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json("ko-llm-leaderboard.json", orient='records', indent=4)
+        df.to_json(path_llm / "ko-llm-leaderboard.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
