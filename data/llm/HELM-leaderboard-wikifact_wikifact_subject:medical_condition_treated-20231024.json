@@ -1,0 +1,3717 @@
+{
+  "title": "subject: medical_condition_treated",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "WikiFact"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3847058823529412,
+        "description": "min=0.374, mean=0.385, max=0.394, sum=1.154 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9938576577818617,
+        "description": "min=0.986, mean=0.994, max=1.0, sum=2.982 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.904313725490198,
+        "description": "min=17.712, mean=17.904, max=18.065, sum=53.713 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.30666666666666664,
+        "description": "min=0.289, mean=0.307, max=0.322, sum=0.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5302413771446082,
+        "description": "min=0.525, mean=0.53, max=0.538, sum=1.591 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.325882352941175,
+        "description": "min=18.007, mean=18.326, max=18.828, sum=54.978 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.38352941176470584,
+        "description": "min=0.368, mean=0.384, max=0.395, sum=1.151 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7041160064338235,
+        "description": "min=0.7, mean=0.704, max=0.711, sum=2.112 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.767450980392155,
+        "description": "min=18.565, mean=18.767, max=19.108, sum=56.302 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4227450980392157,
+        "description": "min=0.409, mean=0.423, max=0.434, sum=1.268 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.41450980392157,
+        "description": "min=19.013, mean=19.415, max=19.693, sum=58.244 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4349019607843137,
+        "description": "min=0.421, mean=0.435, max=0.456, sum=1.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.68156862745098,
+        "description": "min=14.4, mean=14.682, max=14.835, sum=44.045 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45960784313725495,
+        "description": "min=0.449, mean=0.46, max=0.469, sum=1.379 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.35921568627451,
+        "description": "min=13.334, mean=13.359, max=13.393, sum=40.078 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2964705882352941,
+        "description": "min=0.286, mean=0.296, max=0.308, sum=0.889 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.12274509803922,
+        "description": "min=62.789, mean=63.123, max=63.789, sum=189.368 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.334901960784313,
+        "description": "min=14.194, mean=14.335, max=14.594, sum=43.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.42509803921568623,
+        "description": "min=0.42, mean=0.425, max=0.428, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.48274509803923,
+        "description": "min=83.149, mean=85.483, max=87.149, sum=256.448 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.551764705882354,
+        "description": "min=11.449, mean=11.552, max=11.731, sum=34.655 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45333333333333337,
+        "description": "min=0.452, mean=0.453, max=0.455, sum=1.36 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.48274509803923,
+        "description": "min=83.149, mean=85.483, max=87.149, sum=256.448 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.27450980392157,
+        "description": "min=12.024, mean=12.275, max=12.631, sum=36.824 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5227450980392158,
+        "description": "min=0.507, mean=0.523, max=0.531, sum=1.568 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.48274509803923,
+        "description": "min=83.149, mean=85.483, max=87.149, sum=256.448 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.208627450980392,
+        "description": "min=12.062, mean=12.209, max=12.313, sum=36.626 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4807843137254902,
+        "description": "min=0.478, mean=0.481, max=0.486, sum=1.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.272025647977942,
+        "description": "min=1.263, mean=1.272, max=1.281, sum=3.816 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.4,
+        "description": "min=14.236, mean=14.4, max=14.601, sum=43.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3423529411764706,
+        "description": "min=0.331, mean=0.342, max=0.353, sum=1.027 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8688837617878455,
+        "description": "min=0.826, mean=0.869, max=0.904, sum=2.607 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 84.27058823529411,
+        "description": "min=83.271, mean=84.271, max=85.271, sum=252.812 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.031372549019607836,
+        "description": "min=0.027, mean=0.031, max=0.035, sum=0.094 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1507921027991117,
+        "description": "min=0.133, mean=0.151, max=0.16, sum=0.452 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 101.61294117647058,
+        "description": "min=98.613, mean=101.613, max=103.613, sum=304.839 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.46901960784313723,
+        "description": "min=0.464, mean=0.469, max=0.472, sum=1.407 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9476830453431369,
+        "description": "min=0.939, mean=0.948, max=0.952, sum=2.843 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.669019607843138,
+        "description": "min=15.505, mean=15.669, max=15.767, sum=47.007 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3898039215686275,
+        "description": "min=0.381, mean=0.39, max=0.398, sum=1.169 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5525191513480394,
+        "description": "min=0.545, mean=0.553, max=0.558, sum=1.658 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.210196078431373,
+        "description": "min=14.912, mean=15.21, max=15.428, sum=45.631 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.36117647058823527,
+        "description": "min=0.354, mean=0.361, max=0.375, sum=1.084 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.366138943014705,
+        "description": "min=0.358, mean=0.366, max=0.375, sum=1.098 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.474117647058824,
+        "description": "min=13.741, mean=14.474, max=15.241, sum=43.422 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11725490196078432,
+        "description": "min=0.116, mean=0.117, max=0.118, sum=0.352 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2841867830882339,
+        "description": "min=0.272, mean=0.284, max=0.297, sum=0.853 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.055686274509803,
+        "description": "min=9.055, mean=11.056, max=13.082, sum=33.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4772549019607843,
+        "description": "min=0.472, mean=0.477, max=0.486, sum=1.432 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.856470588235291,
+        "description": "min=15.133, mean=15.856, max=16.271, sum=47.569 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.40431372549019606,
+        "description": "min=0.396, mean=0.404, max=0.409, sum=1.213 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.579215686274509,
+        "description": "min=14.006, mean=14.579, max=14.929, sum=43.738 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.38235294117647056,
+        "description": "min=0.378, mean=0.382, max=0.386, sum=1.147 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.631372549019607,
+        "description": "min=14.647, mean=15.631, max=16.206, sum=46.894 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48196078431372547,
+        "description": "min=0.479, mean=0.482, max=0.485, sum=1.446 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.60941176470588,
+        "description": "min=89.609, mean=92.609, max=94.609, sum=277.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.509411764705883,
+        "description": "min=15.236, mean=15.509, max=15.961, sum=46.528 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.20862745098039215,
+        "description": "min=0.191, mean=0.209, max=0.233, sum=0.626 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0880137139542609,
+        "description": "min=0.086, mean=0.088, max=0.092, sum=0.264 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3196078431372549,
+        "description": "min=0.313, mean=0.32, max=0.329, sum=0.959 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.05347601197357746,
+        "description": "min=0.049, mean=0.053, max=0.061, sum=0.16 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 84.54392156862745,
+        "description": "min=82.211, mean=84.544, max=86.211, sum=253.632 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2541176470588235,
+        "description": "min=0.254, mean=0.254, max=0.254, sum=0.254 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.1870588235294117,
+        "description": "min=3.187, mean=3.187, max=3.187, sum=3.187 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2411764705882353,
+        "description": "min=0.241, mean=0.241, max=0.241, sum=0.241 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.2423529411764704,
+        "description": "min=3.242, mean=3.242, max=3.242, sum=3.242 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07568627450980392,
+        "description": "min=0.067, mean=0.076, max=0.085, sum=0.227 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.237194367962725,
+        "description": "min=0.237, mean=0.237, max=0.238, sum=0.712 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 101.61294117647058,
+        "description": "min=98.613, mean=101.613, max=103.613, sum=304.839 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.20784313725490197,
+        "description": "min=0.205, mean=0.208, max=0.214, sum=0.624 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22387182878805142,
+        "description": "min=0.224, mean=0.224, max=0.224, sum=0.672 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 105.61294117647058,
+        "description": "min=102.613, mean=105.613, max=107.613, sum=316.839 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.19647058823529415,
+        "description": "min=0.168, mean=0.196, max=0.212, sum=0.589 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5948136405588365,
+        "description": "min=0.594, mean=0.595, max=0.596, sum=1.784 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21882352941176472,
+        "description": "min=0.208, mean=0.219, max=0.226, sum=0.656 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14288384828497383,
+        "description": "min=0.143, mean=0.143, max=0.143, sum=0.429 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26823529411764707,
+        "description": "min=0.268, mean=0.268, max=0.268, sum=0.268 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.815294117647059,
+        "description": "min=5.815, mean=5.815, max=5.815, sum=5.815 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2647058823529412,
+        "description": "min=0.265, mean=0.265, max=0.265, sum=0.265 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.074117647058824,
+        "description": "min=6.074, mean=6.074, max=6.074, sum=6.074 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.25176470588235295,
+        "description": "min=0.252, mean=0.252, max=0.252, sum=0.252 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.062352941176471,
+        "description": "min=6.062, mean=6.062, max=6.062, sum=6.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4835294117647059,
+        "description": "min=0.484, mean=0.484, max=0.484, sum=0.484 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4411764705882353,
+        "description": "min=0.441, mean=0.441, max=0.441, sum=0.441 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4717647058823529,
+        "description": "min=0.472, mean=0.472, max=0.472, sum=0.472 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5211764705882352,
+        "description": "min=0.521, mean=0.521, max=0.521, sum=0.521 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3129411764705882,
+        "description": "min=0.313, mean=0.313, max=0.313, sum=0.313 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.648235294117647,
+        "description": "min=5.648, mean=5.648, max=5.648, sum=5.648 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.31529411764705884,
+        "description": "min=0.315, mean=0.315, max=0.315, sum=0.315 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.007058823529412,
+        "description": "min=6.007, mean=6.007, max=6.007, sum=6.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3352941176470588,
+        "description": "min=0.335, mean=0.335, max=0.335, sum=0.335 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 112.06235294117647,
+        "description": "min=112.062, mean=112.062, max=112.062, sum=112.062 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.008235294117647,
+        "description": "min=6.008, mean=6.008, max=6.008, sum=6.008 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.43058823529411766,
+        "description": "min=0.419, mean=0.431, max=0.444, sum=1.292 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.663529411764706,
+        "description": "min=20.569, mean=20.664, max=20.824, sum=61.991 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3388235294117647,
+        "description": "min=0.335, mean=0.339, max=0.344, sum=1.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.655686274509804,
+        "description": "min=19.558, mean=19.656, max=19.771, sum=58.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.412156862745098,
+        "description": "min=0.399, mean=0.412, max=0.422, sum=1.236 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7744331341911764,
+        "description": "min=0.753, mean=0.774, max=0.785, sum=2.323 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.352549019607842,
+        "description": "min=19.646, mean=20.353, max=20.711, sum=61.058 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.28862745098039216,
+        "description": "min=0.254, mean=0.289, max=0.307, sum=0.866 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20186958026960786,
+        "description": "min=0.201, mean=0.202, max=0.202, sum=0.606 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.82901960784314,
+        "description": "min=17.741, mean=17.829, max=17.913, sum=53.487 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13372549019607843,
+        "description": "min=0.12, mean=0.134, max=0.159, sum=0.401 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21648145680147068,
+        "description": "min=0.213, mean=0.216, max=0.22, sum=0.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.158039215686273,
+        "description": "min=17.585, mean=18.158, max=18.707, sum=54.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04,
+        "description": "min=0.032, mean=0.04, max=0.052, sum=0.12 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25047721507352827,
+        "description": "min=0.248, mean=0.25, max=0.252, sum=0.751 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.71764705882353,
+        "description": "min=19.382, mean=19.718, max=19.948, sum=59.153 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.458, mean=0.467, max=0.479, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.376470588235293,
+        "description": "min=18.305, mean=19.376, max=20.546, sum=58.129 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.47843137254901963,
+        "description": "min=0.467, mean=0.478, max=0.487, sum=1.435 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6362695971200982,
+        "description": "min=0.619, mean=0.636, max=0.652, sum=1.909 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.014901960784314,
+        "description": "min=16.402, mean=17.015, max=17.566, sum=51.045 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26941176470588235,
+        "description": "min=0.264, mean=0.269, max=0.279, sum=0.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23261674325980367,
+        "description": "min=0.231, mean=0.233, max=0.236, sum=0.698 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.300392156862745,
+        "description": "min=16.011, mean=16.3, max=16.798, sum=48.901 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13215686274509805,
+        "description": "min=0.126, mean=0.132, max=0.14, sum=0.396 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24844648284313756,
+        "description": "min=0.246, mean=0.248, max=0.252, sum=0.745 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.65019607843137,
+        "description": "min=18.352, mean=18.65, max=19.086, sum=55.951 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04392156862745098,
+        "description": "min=0.028, mean=0.044, max=0.053, sum=0.132 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18761653492647046,
+        "description": "min=0.181, mean=0.188, max=0.192, sum=0.563 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.999607843137255,
+        "description": "min=17.84, mean=19.0, max=19.741, sum=56.999 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14941176470588236,
+        "description": "min=0.149, mean=0.149, max=0.149, sum=0.149 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 84.41529411764706,
+        "description": "min=84.415, mean=84.415, max=84.415, sum=84.415 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 34.315294117647056,
+        "description": "min=34.315, mean=34.315, max=34.315, sum=34.315 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22705882352941176,
+        "description": "min=0.227, mean=0.227, max=0.227, sum=0.227 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 84.41529411764706,
+        "description": "min=84.415, mean=84.415, max=84.415, sum=84.415 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 28.545882352941177,
+        "description": "min=28.546, mean=28.546, max=28.546, sum=28.546 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21411764705882352,
+        "description": "min=0.214, mean=0.214, max=0.214, sum=0.214 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.415294117647059,
+        "description": "min=3.415, mean=3.415, max=3.415, sum=3.415 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2211764705882353,
+        "description": "min=0.221, mean=0.221, max=0.221, sum=0.221 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3847058823529412,
+        "description": "min=3.385, mean=3.385, max=3.385, sum=3.385 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2988235294117647,
+        "description": "min=0.299, mean=0.299, max=0.299, sum=0.299 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.4423529411764706,
+        "description": "min=3.442, mean=3.442, max=3.442, sum=3.442 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2964705882352941,
+        "description": "min=0.296, mean=0.296, max=0.296, sum=0.296 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.367058823529412,
+        "description": "min=3.367, mean=3.367, max=3.367, sum=3.367 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4894117647058824,
+        "description": "min=0.489, mean=0.489, max=0.489, sum=0.489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.43058823529411766,
+        "description": "min=0.431, mean=0.431, max=0.431, sum=0.431 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.21058823529411,
+        "description": "min=85.211, mean=85.211, max=85.211, sum=85.211 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4423529411764706,
+        "description": "min=0.442, mean=0.442, max=0.442, sum=0.442 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.28823529411764,
+        "description": "min=87.288, mean=87.288, max=87.288, sum=87.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3811764705882353,
+        "description": "min=0.381, mean=0.381, max=0.381, sum=0.381 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.28823529411764,
+        "description": "min=87.288, mean=87.288, max=87.288, sum=87.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.52,
+        "description": "min=0.52, mean=0.52, max=0.52, sum=0.52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.28823529411764,
+        "description": "min=87.288, mean=87.288, max=87.288, sum=87.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49411764705882355,
+        "description": "min=0.494, mean=0.494, max=0.494, sum=0.494 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.28823529411764,
+        "description": "min=87.288, mean=87.288, max=87.288, sum=87.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3364705882352941,
+        "description": "min=0.319, mean=0.336, max=0.355, sum=1.009 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5079974099321692,
+        "description": "min=0.507, mean=0.508, max=0.508, sum=1.524 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 83.37137254901961,
+        "description": "min=82.705, mean=83.371, max=84.705, sum=250.114 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.476078431372546,
+        "description": "min=22.126, mean=22.476, max=22.786, sum=67.428 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.25333333333333335,
+        "description": "min=0.24, mean=0.253, max=0.276, sum=0.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.14627450980392,
+        "description": "min=18.092, mean=18.146, max=18.207, sum=54.439 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4588235294117647,
+        "description": "min=0.458, mean=0.459, max=0.46, sum=1.376 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 92.6435294117647,
+        "description": "min=89.644, mean=92.644, max=94.644, sum=277.931 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.587843137254904,
+        "description": "min=16.265, mean=16.588, max=16.894, sum=49.764 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20medical_condition_treated&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Dmedical_condition_treated%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13254901960784313,
+        "description": "min=0.119, mean=0.133, max=0.159, sum=0.398 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34417479392944594,
+        "description": "min=0.34, mean=0.344, max=0.349, sum=1.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 83.01058823529412,
+        "description": "min=81.011, mean=83.011, max=85.011, sum=249.032 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/wikifact_wikifact_subject:medical_condition_treated.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/wikifact_wikifact_subject:medical_condition_treated.json"
+    }
+  ],
+  "name": "wikifact_subject:medical_condition_treated"
+}

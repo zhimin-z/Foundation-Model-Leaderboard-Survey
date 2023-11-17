@@ -1,0 +1,3829 @@
+{
+  "title": "subject: number_theory, level: 1, use_official_examples: False, use_chain_of_thought: True",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Equivalent (chain of thought)",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nEquivalent (chain of thought): Fraction of model outputs that are mathematically equivalent to the correct reference when using chain-of-thoughts prompting.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Equivalent (chain of thought)",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems with chain-of-thoughts style reasoning [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "MATH (chain-of-thoughts)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.033, mean=0.067, max=0.1, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.660966424334491,
+        "description": "min=7.264, mean=8.661, max=10.493, sum=25.983 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 190.70000000000002,
+        "description": "min=157, mean=190.7, max=235.2, sum=572.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.044444444444444446,
+        "description": "min=0.033, mean=0.044, max=0.067, sum=0.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.6878077401620373,
+        "description": "min=3.35, mean=3.688, max=4.013, sum=11.063 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 196.7888888888889,
+        "description": "min=174.933, mean=196.789, max=218.633, sum=590.367 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10000000000000002,
+        "description": "min=0.067, mean=0.1, max=0.133, sum=0.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.5736800238715283,
+        "description": "min=2.464, mean=3.574, max=4.158, sum=10.721 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.14444444444445,
+        "description": "min=88.567, mean=142.144, max=169.3, sum=426.433 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.033, mean=0.067, max=0.1, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 145.0111111111111,
+        "description": "min=116.4, mean=145.011, max=165.967, sum=435.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07777777777777778,
+        "description": "min=0.033, mean=0.078, max=0.133, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 134.72222222222223,
+        "description": "min=79.867, mean=134.722, max=220.133, sum=404.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.044444444444444446,
+        "description": "min=0.033, mean=0.044, max=0.067, sum=0.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.0,
+        "description": "min=79.267, mean=142, max=209.933, sum=426 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.022222222222222223,
+        "description": "min=0, mean=0.022, max=0.067, sum=0.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 972.0999999999999,
+        "description": "min=884.433, mean=972.1, max=1018.433, sum=2916.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 164.67777777777778,
+        "description": "min=135.3, mean=164.678, max=223.433, sum=494.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0, mean=0.033, max=0.067, sum=0.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1132.1666666666667,
+        "description": "min=1010.833, mean=1132.167, max=1209.833, sum=3396.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 163.13333333333333,
+        "description": "min=106.133, mean=163.133, max=207.633, sum=489.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.022222222222222223,
+        "description": "min=0, mean=0.022, max=0.033, sum=0.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1132.1666666666667,
+        "description": "min=1010.833, mean=1132.167, max=1209.833, sum=3396.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 136.15555555555557,
+        "description": "min=108.033, mean=136.156, max=180.2, sum=408.467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.022222222222222223,
+        "description": "min=0, mean=0.022, max=0.067, sum=0.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1132.1666666666667,
+        "description": "min=1010.833, mean=1132.167, max=1209.833, sum=3396.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 123.43333333333335,
+        "description": "min=89.967, mean=123.433, max=148, sum=370.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11111111111111112,
+        "description": "min=0.1, mean=0.111, max=0.133, sum=0.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.576281615306714,
+        "description": "min=3.116, mean=3.576, max=4.086, sum=10.729 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 51.46666666666667,
+        "description": "min=44.533, mean=51.467, max=59.933, sum=154.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.011111111111111112,
+        "description": "min=0, mean=0.011, max=0.033, sum=0.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.31553796629111,
+        "description": "min=19.207, mean=19.316, max=19.46, sum=57.947 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 961.2666666666668,
+        "description": "min=845.6, mean=961.267, max=1039.6, sum=2883.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.38888888888889,
+        "description": "min=141.2, mean=154.389, max=161.633, sum=463.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.4297635283133,
+        "description": "min=4.423, mean=4.43, max=4.436, sum=13.289 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.0,
+        "description": "min=5, mean=6, max=7, sum=18 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 907.4333333333334,
+        "description": "min=827.767, mean=907.433, max=957.767, sum=2722.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=1200 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0, mean=0.033, max=0.067, sum=0.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.573244184027779,
+        "description": "min=5.555, mean=6.573, max=7.988, sum=19.72 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 148.64444444444445,
+        "description": "min=122.9, mean=148.644, max=184.967, sum=445.933 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.033, mean=0.067, max=0.133, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0376288736979165,
+        "description": "min=4.825, mean=5.038, max=5.303, sum=15.113 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 199.36666666666667,
+        "description": "min=189.233, mean=199.367, max=210.467, sum=598.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.044444444444444446,
+        "description": "min=0.033, mean=0.044, max=0.067, sum=0.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.7516141167534722,
+        "description": "min=2.571, mean=2.752, max=2.96, sum=8.255 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 198.34444444444443,
+        "description": "min=182.933, mean=198.344, max=214.7, sum=595.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2340711588541668,
+        "description": "min=1.084, mean=1.234, max=1.317, sum=3.702 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 138.11111111111111,
+        "description": "min=111.367, mean=138.111, max=156.6, sum=414.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.033, mean=0.067, max=0.133, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 111.32222222222221,
+        "description": "min=90.2, mean=111.322, max=141.2, sum=333.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0, mean=0.033, max=0.067, sum=0.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 161.2888888888889,
+        "description": "min=135.533, mean=161.289, max=208.667, sum=483.867 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07777777777777778,
+        "description": "min=0.033, mean=0.078, max=0.133, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 151.76666666666668,
+        "description": "min=128.9, mean=151.767, max=168.3, sum=455.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07777777777777778,
+        "description": "min=0.033, mean=0.078, max=0.1, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1147.8666666666666,
+        "description": "min=1025.533, mean=1147.867, max=1231.533, sum=3443.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 123.45555555555556,
+        "description": "min=90.633, mean=123.456, max=161.467, sum=370.367 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0, mean=0.067, max=0.1, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.9698739281407107,
+        "description": "min=1.815, mean=2.97, max=4.675, sum=8.91 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 114.65555555555555,
+        "description": "min=92.6, mean=114.656, max=133.633, sum=343.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08888888888888889,
+        "description": "min=0.033, mean=0.089, max=0.133, sum=0.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.520588423477278,
+        "description": "min=4.983, mean=5.521, max=6.193, sum=16.562 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1050.0333333333333,
+        "description": "min=943.033, mean=1050.033, max=1130.033, sum=3150.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 128.0666666666667,
+        "description": "min=121.967, mean=128.067, max=133.467, sum=384.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 136.16666666666666,
+        "description": "min=136.167, mean=136.167, max=136.167, sum=136.167 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 146.1,
+        "description": "min=146.1, mean=146.1, max=146.1, sum=146.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.310817623749758,
+        "description": "min=8.31, mean=8.311, max=8.312, sum=24.932 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.8222222222222224,
+        "description": "min=2.467, mean=2.822, max=3, sum=8.467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 382.85555555555555,
+        "description": "min=376.767, mean=382.856, max=386.033, sum=1148.567 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=1200 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.747719093404637,
+        "description": "min=4.74, mean=4.748, max=4.761, sum=14.243 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.777777777777778,
+        "description": "min=2.333, mean=2.778, max=3, sum=8.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 375.87777777777774,
+        "description": "min=357.1, mean=375.878, max=389.767, sum=1127.633 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=1200 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0888888888888889,
+        "description": "min=0.067, mean=0.089, max=0.1, sum=0.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.085499905215373,
+        "description": "min=6.368, mean=9.085, max=11.75, sum=27.256 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 81.39999999999999,
+        "description": "min=72.8, mean=81.4, max=89.7, sum=244.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05555555555555555,
+        "description": "min=0, mean=0.056, max=0.133, sum=0.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.63686824341615,
+        "description": "min=4.82, mean=5.637, max=6.084, sum=16.911 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 132.53333333333333,
+        "description": "min=93.2, mean=132.533, max=169, sum=397.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=400 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=400 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23333333333333334,
+        "description": "min=0.233, mean=0.233, max=0.233, sum=0.233 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=400 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 97.9,
+        "description": "min=97.9, mean=97.9, max=97.9, sum=97.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 384.4,
+        "description": "min=384.4, mean=384.4, max=384.4, sum=384.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "description": "min=0.167, mean=0.167, max=0.167, sum=0.167 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1121.6333333333334,
+        "description": "min=1121.633, mean=1121.633, max=1121.633, sum=1121.633 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 318.96666666666664,
+        "description": "min=318.967, mean=318.967, max=318.967, sum=318.967 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.044444444444444446,
+        "description": "min=0, mean=0.044, max=0.067, sum=0.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 125.74444444444445,
+        "description": "min=97.767, mean=125.744, max=157.667, sum=377.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03333333333333333,
+        "description": "min=0, mean=0.033, max=0.1, sum=0.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 189.3888888888889,
+        "description": "min=154.267, mean=189.389, max=208.367, sum=568.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.011111111111111112,
+        "description": "min=0, mean=0.011, max=0.033, sum=0.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.034281825086804,
+        "description": "min=3.695, mean=5.034, max=6.546, sum=15.103 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 161.64444444444445,
+        "description": "min=117.033, mean=161.644, max=212.033, sum=484.933 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05555555555555556,
+        "description": "min=0.033, mean=0.056, max=0.067, sum=0.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0049713252314814,
+        "description": "min=0.832, mean=1.005, max=1.224, sum=3.015 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 129.84444444444446,
+        "description": "min=105, mean=129.844, max=161.233, sum=389.533 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.011111111111111112,
+        "description": "min=0, mean=0.011, max=0.033, sum=0.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1376023509837963,
+        "description": "min=0.91, mean=1.138, max=1.328, sum=3.413 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.01111111111112,
+        "description": "min=132.067, mean=170.011, max=201.567, sum=510.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.011111111111111112,
+        "description": "min=0, mean=0.011, max=0.033, sum=0.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2108724175347223,
+        "description": "min=0.811, mean=1.211, max=1.431, sum=3.633 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 179.32222222222222,
+        "description": "min=112.533, mean=179.322, max=216.033, sum=537.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3888888888888889,
+        "description": "min=0.3, mean=0.389, max=0.5, sum=1.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 78.11111111111111,
+        "description": "min=71.533, mean=78.111, max=84.7, sum=234.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3666666666666667,
+        "description": "min=0.3, mean=0.367, max=0.433, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.92316949146412,
+        "description": "min=2.833, mean=2.923, max=3.054, sum=8.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 94.75555555555555,
+        "description": "min=92.233, mean=94.756, max=98.933, sum=284.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05555555555555555,
+        "description": "min=0.033, mean=0.056, max=0.1, sum=0.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.470388013599537,
+        "description": "min=0.329, mean=0.47, max=0.744, sum=1.411 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 47.65555555555556,
+        "description": "min=26.467, mean=47.656, max=87.267, sum=142.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.022222222222222223,
+        "description": "min=0, mean=0.022, max=0.067, sum=0.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3752972945601852,
+        "description": "min=0.267, mean=0.375, max=0.441, sum=1.126 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 33.61111111111111,
+        "description": "min=17.833, mean=33.611, max=43.467, sum=100.833 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.52868984375,
+        "description": "min=0.444, mean=0.529, max=0.609, sum=1.586 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.45555555555556,
+        "description": "min=58.267, mean=72.456, max=85.5, sum=217.367 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3666666666666667,
+        "description": "min=0.233, mean=0.367, max=0.5, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5617412905092594,
+        "description": "min=2.102, mean=2.562, max=3.148, sum=7.685 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 94.83333333333333,
+        "description": "min=75.367, mean=94.833, max=118.733, sum=284.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11111111111111112,
+        "description": "min=0.1, mean=0.111, max=0.133, sum=0.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8171333297164352,
+        "description": "min=0.723, mean=0.817, max=0.978, sum=2.451 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 90.35555555555555,
+        "description": "min=78.833, mean=90.356, max=110.233, sum=271.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7333333333333333,
+        "description": "min=0.733, mean=0.733, max=0.733, sum=0.733 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 983.2333333333333,
+        "description": "min=983.233, mean=983.233, max=983.233, sum=983.233 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.6,
+        "description": "min=86.6, mean=86.6, max=86.6, sum=86.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 983.2333333333333,
+        "description": "min=983.233, mean=983.233, max=983.233, sum=983.233 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 88.4,
+        "description": "min=88.4, mean=88.4, max=88.4, sum=88.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.56666666666666,
+        "description": "min=115.567, mean=115.567, max=115.567, sum=115.567 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 76.9,
+        "description": "min=76.9, mean=76.9, max=76.9, sum=76.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 183.6,
+        "description": "min=183.6, mean=183.6, max=183.6, sum=183.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 78.33333333333333,
+        "description": "min=78.333, mean=78.333, max=78.333, sum=78.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 943.0333333333333,
+        "description": "min=943.033, mean=943.033, max=943.033, sum=943.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1101.6666666666667,
+        "description": "min=1101.667, mean=1101.667, max=1101.667, sum=1101.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1101.6666666666667,
+        "description": "min=1101.667, mean=1101.667, max=1101.667, sum=1101.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1101.6666666666667,
+        "description": "min=1101.667, mean=1101.667, max=1101.667, sum=1101.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13333333333333333,
+        "description": "min=0.133, mean=0.133, max=0.133, sum=0.133 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1101.6666666666667,
+        "description": "min=1101.667, mean=1101.667, max=1101.667, sum=1101.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07777777777777778,
+        "description": "min=0.067, mean=0.078, max=0.1, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.628693589899276,
+        "description": "min=7.763, mean=8.629, max=9.319, sum=25.886 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1169.3666666666666,
+        "description": "min=1069.367, mean=1169.367, max=1265.367, sum=3508.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 157.15555555555557,
+        "description": "min=131.767, mean=157.156, max=173.833, sum=471.467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08888888888888889,
+        "description": "min=0.067, mean=0.089, max=0.1, sum=0.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.68888888888891,
+        "description": "min=59.2, mean=86.689, max=113.4, sum=260.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24444444444444446,
+        "description": "min=0.167, mean=0.244, max=0.333, sum=0.733 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1115.0666666666666,
+        "description": "min=1000.067, mean=1115.067, max=1195.067, sum=3345.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 64.02222222222223,
+        "description": "min=58.267, mean=64.022, max=67.333, sum=192.067 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=math_chain_of_thought&subgroup=subject%3A%20number_theory%2C%20level%3A%201%2C%20use_official_examples%3A%20False%2C%20use_chain_of_thought%3A%20True&runSpecs=%5B%22math%3Asubject%3Dnumber_theory%2Clevel%3D1%2Cuse_official_examples%3DFalse%2Cuse_chain_of_thought%3DTrue%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.5595603958008795,
+        "description": "min=5.398, mean=5.56, max=5.86, sum=16.679 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1005.7666666666668,
+        "description": "min=882.767, mean=1005.767, max=1077.767, sum=3017.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.0,
+        "description": "min=400, mean=400, max=400, sum=1200 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/math_chain_of_thought_math_chain_of_thought_subject:number_theory,level:1,use_official_examples:False,use_chain_of_thought:True.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/math_chain_of_thought_math_chain_of_thought_subject:number_theory,level:1,use_official_examples:False,use_chain_of_thought:True.json"
+    }
+  ],
+  "name": "math_chain_of_thought_subject:number_theory,level:1,use_official_examples:False,use_chain_of_thought:True"
+}

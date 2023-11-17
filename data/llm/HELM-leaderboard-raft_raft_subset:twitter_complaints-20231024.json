@@ -1,0 +1,6697 @@
+{
+  "title": "subset: twitter_complaints",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "ECE (10-bin)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "EM (Robustness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Robustness"
+      }
+    },
+    {
+      "value": "EM (Fairness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "RAFT"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8000000000000002,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22283671734727187,
+        "description": "min=0.213, mean=0.223, max=0.24, sum=0.669 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6916666666666668,
+        "description": "min=0.6, mean=0.692, max=0.75, sum=2.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6583333333333333,
+        "description": "min=0.575, mean=0.658, max=0.725, sum=1.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.43072825520833335,
+        "description": "min=0.423, mean=0.431, max=0.445, sum=1.292 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.7999999999999994,
+        "description": "min=2.75, mean=2.8, max=2.85, sum=8.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.525, mean=0.625, max=0.75, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.271101903362539,
+        "description": "min=0.247, mean=0.271, max=0.318, sum=0.813 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47500000000000003,
+        "description": "min=0.325, mean=0.475, max=0.6, sum=1.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.425, mean=0.508, max=0.6, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.31777526041666676,
+        "description": "min=0.312, mean=0.318, max=0.329, sum=0.953 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.3583333333333334,
+        "description": "min=2.225, mean=2.358, max=2.55, sum=7.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.775, mean=0.817, max=0.85, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23794155921247495,
+        "description": "min=0.218, mean=0.238, max=0.255, sum=0.714 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.5, mean=0.625, max=0.725, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7833333333333333,
+        "description": "min=0.75, mean=0.783, max=0.825, sum=2.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.49840013020833335,
+        "description": "min=0.491, mean=0.498, max=0.505, sum=1.495 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.533333333333333,
+        "description": "min=2.475, mean=2.533, max=2.6, sum=7.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9333333333333332,
+        "description": "min=0.925, mean=0.933, max=0.95, sum=2.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2881858250740185,
+        "description": "min=0.272, mean=0.288, max=0.312, sum=0.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7000000000000001,
+        "description": "min=0.675, mean=0.7, max=0.75, sum=2.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8416666666666667,
+        "description": "min=0.775, mean=0.842, max=0.9, sum=2.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.6833333333333336,
+        "description": "min=2.625, mean=2.683, max=2.725, sum=8.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9083333333333333,
+        "description": "min=0.9, mean=0.908, max=0.925, sum=2.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17364678403134406,
+        "description": "min=0.167, mean=0.174, max=0.178, sum=0.521 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8666666666666667,
+        "description": "min=0.85, mean=0.867, max=0.875, sum=2.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8833333333333333,
+        "description": "min=0.85, mean=0.883, max=0.9, sum=2.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.641666666666666,
+        "description": "min=2.6, mean=2.642, max=2.675, sum=7.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.85, mean=0.875, max=0.9, sum=2.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27163000318610314,
+        "description": "min=0.215, mean=0.272, max=0.302, sum=0.815 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7833333333333332,
+        "description": "min=0.75, mean=0.783, max=0.825, sum=2.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.8, mean=0.833, max=0.85, sum=2.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.608333333333333,
+        "description": "min=2.55, mean=2.608, max=2.65, sum=7.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8416666666666667,
+        "description": "min=0.75, mean=0.842, max=0.925, sum=2.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2752672870970237,
+        "description": "min=0.245, mean=0.275, max=0.304, sum=0.826 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.6, mean=0.667, max=0.725, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333333,
+        "description": "min=0.675, mean=0.758, max=0.85, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 227.91666666666666,
+        "description": "min=212.25, mean=227.917, max=250.25, sum=683.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.575,
+        "description": "min=2.45, mean=2.575, max=2.725, sum=7.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3DAlephAlpha_luminous-base%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.3, mean=0.508, max=0.65, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2948790395544411,
+        "description": "min=0.189, mean=0.295, max=0.491, sum=0.885 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3499999999999999,
+        "description": "min=0.3, mean=0.35, max=0.4, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.3, mean=0.467, max=0.575, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 281.6333333333334,
+        "description": "min=262.3, mean=281.633, max=311.3, sum=844.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2249999999999999,
+        "description": "min=1, mean=1.225, max=1.35, sum=3.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3DAlephAlpha_luminous-extended%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666667,
+        "description": "min=0.375, mean=0.517, max=0.75, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26901322825442187,
+        "description": "min=0.174, mean=0.269, max=0.365, sum=0.807 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3833333333333333,
+        "description": "min=0.3, mean=0.383, max=0.5, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.325, mean=0.467, max=0.7, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 281.6333333333334,
+        "description": "min=262.3, mean=281.633, max=311.3, sum=844.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.25,
+        "description": "min=1.075, mean=1.25, max=1.55, sum=3.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3DAlephAlpha_luminous-supreme%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.7, mean=0.775, max=0.825, sum=2.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15769822257469443,
+        "description": "min=0.131, mean=0.158, max=0.181, sum=0.473 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7083333333333334,
+        "description": "min=0.6, mean=0.708, max=0.8, sum=2.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.625, mean=0.725, max=0.775, sum=2.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 281.6333333333334,
+        "description": "min=262.3, mean=281.633, max=311.3, sum=844.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.625,
+        "description": "min=1.45, mean=1.625, max=1.9, sum=4.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.675, mean=0.775, max=0.875, sum=2.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.099, mean=0.159, max=0.247, sum=0.478 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6583333333333333,
+        "description": "min=0.55, mean=0.658, max=0.725, sum=1.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7333333333333334,
+        "description": "min=0.625, mean=0.733, max=0.825, sum=2.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5910099283854165,
+        "description": "min=0.583, mean=0.591, max=0.605, sum=1.773 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4916666666666665,
+        "description": "min=1.375, mean=1.492, max=1.625, sum=4.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333333,
+        "description": "min=0.7, mean=0.758, max=0.8, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4126957437742074,
+        "description": "min=0.382, mean=0.413, max=0.473, sum=1.238 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6833333333333332,
+        "description": "min=0.65, mean=0.683, max=0.7, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6833333333333332,
+        "description": "min=0.675, mean=0.683, max=0.7, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.2698626299699147,
+        "description": "min=0.258, mean=0.27, max=0.285, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 252.35833333333332,
+        "description": "min=234.025, mean=252.358, max=279.025, sum=757.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.533333333333334,
+        "description": "min=5, mean=5.533, max=6.2, sum=16.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_t0pp%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0004217872534697526,
+        "description": "min=0.0, mean=0.0, max=0.001, sum=0.001 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.32903561257479474,
+        "description": "min=0.329, mean=0.329, max=0.329, sum=0.987 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 291.06666666666666,
+        "description": "min=263.4, mean=291.067, max=326.4, sum=873.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8916666666666666,
+        "description": "min=0.875, mean=0.892, max=0.9, sum=2.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18759491439670337,
+        "description": "min=0.167, mean=0.188, max=0.204, sum=0.563 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.8, mean=0.833, max=0.875, sum=2.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.8, mean=0.808, max=0.825, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.46222646484375,
+        "description": "min=0.458, mean=0.462, max=0.47, sum=1.387 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.675,
+        "description": "min=1.6, mean=1.675, max=1.75, sum=5.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8666666666666667,
+        "description": "min=0.825, mean=0.867, max=0.9, sum=2.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25828490823859496,
+        "description": "min=0.207, mean=0.258, max=0.298, sum=0.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7666666666666666,
+        "description": "min=0.7, mean=0.767, max=0.825, sum=2.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7833333333333332,
+        "description": "min=0.725, mean=0.783, max=0.825, sum=2.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.2899070963541666,
+        "description": "min=0.284, mean=0.29, max=0.299, sum=0.87 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7833333333333332,
+        "description": "min=1.725, mean=1.783, max=1.875, sum=5.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333334,
+        "description": "min=0.375, mean=0.583, max=0.725, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24865973314797332,
+        "description": "min=0.209, mean=0.249, max=0.284, sum=0.746 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3666666666666667,
+        "description": "min=0.3, mean=0.367, max=0.45, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.325, mean=0.508, max=0.6, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.25097978515625,
+        "description": "min=0.244, mean=0.251, max=0.258, sum=0.753 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.3333333333333333,
+        "description": "min=1.075, mean=1.333, max=1.525, sum=4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6999999999999998,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=2.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2100900495784189,
+        "description": "min=0.16, mean=0.21, max=0.269, sum=0.63 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6999999999999998,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=2.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6999999999999998,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=2.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.2590301106770833,
+        "description": "min=0.256, mean=0.259, max=0.263, sum=0.777 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7166666666666667,
+        "description": "min=0.6, mean=0.717, max=0.9, sum=2.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17525942123283322,
+        "description": "min=0.131, mean=0.175, max=0.208, sum=0.526 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47500000000000003,
+        "description": "min=0.375, mean=0.475, max=0.625, sum=1.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6916666666666665,
+        "description": "min=0.575, mean=0.692, max=0.85, sum=2.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4666666666666668,
+        "description": "min=1.3, mean=1.467, max=1.75, sum=4.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.775, mean=0.808, max=0.85, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25914911442122607,
+        "description": "min=0.223, mean=0.259, max=0.313, sum=0.777 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7166666666666667,
+        "description": "min=0.7, mean=0.717, max=0.75, sum=2.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333333,
+        "description": "min=0.725, mean=0.758, max=0.8, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8416666666666668,
+        "description": "min=1.75, mean=1.842, max=1.925, sum=5.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6833333333333332,
+        "description": "min=0.65, mean=0.683, max=0.725, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21694128344597574,
+        "description": "min=0.149, mean=0.217, max=0.276, sum=0.651 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.6, mean=0.625, max=0.65, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.625, mean=0.667, max=0.7, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4166666666666667,
+        "description": "min=1.35, mean=1.417, max=1.525, sum=4.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.825, mean=0.875, max=0.925, sum=2.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0900701107384313,
+        "description": "min=0.069, mean=0.09, max=0.13, sum=0.27 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333333,
+        "description": "min=0.725, mean=0.758, max=0.8, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.8, mean=0.833, max=0.875, sum=2.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.325,
+        "description": "min=270.325, mean=289.325, max=316.325, sum=867.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.625,
+        "description": "min=1.525, mean=1.625, max=1.725, sum=4.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7083333333333334,
+        "description": "min=0.65, mean=0.708, max=0.8, sum=2.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3008946592460082,
+        "description": "min=0.251, mean=0.301, max=0.328, sum=0.903 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6166666666666667,
+        "description": "min=0.5, mean=0.617, max=0.75, sum=1.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666666,
+        "description": "min=0.575, mean=0.642, max=0.725, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.10832615083172208,
+        "description": "min=0.107, mean=0.108, max=0.109, sum=0.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.133333333333333,
+        "description": "min=5, mean=5.133, max=5.2, sum=15.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6333333333333333,
+        "description": "min=0.575, mean=0.633, max=0.725, sum=1.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2676345880531483,
+        "description": "min=0.23, mean=0.268, max=0.311, sum=0.803 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.3, mean=0.425, max=0.575, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666666,
+        "description": "min=0.425, mean=0.517, max=0.65, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.16065603166818618,
+        "description": "min=0.16, mean=0.161, max=0.161, sum=0.482 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 288.0166666666667,
+        "description": "min=269.35, mean=288.017, max=314.35, sum=864.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Deleutherai_pythia-6.9b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5749976284359395,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Deleutherai_pythia-12b-v0%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6999928394011925,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_t5-11b%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.825, mean=0.875, max=0.925, sum=2.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.874994601029115,
+        "description": "min=0.825, mean=0.875, max=0.925, sum=2.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.8, mean=0.833, max=0.875, sum=2.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.825, mean=0.833, max=0.85, sum=2.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4111044146681344,
+        "description": "min=0.411, mean=0.411, max=0.412, sum=1.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 291.06666666666666,
+        "description": "min=263.4, mean=291.067, max=326.4, sum=873.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_ul2%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333334,
+        "description": "min=0.3, mean=0.508, max=0.75, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5073703977969498,
+        "description": "min=0.3, mean=0.507, max=0.748, sum=1.522 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.3, mean=0.45, max=0.75, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.3, mean=0.492, max=0.725, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3167555363349664,
+        "description": "min=0.316, mean=0.317, max=0.317, sum=0.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 295.06666666666666,
+        "description": "min=267.4, mean=295.067, max=330.4, sum=885.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666665,
+        "description": "min=0.775, mean=0.817, max=0.85, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5160089383058297,
+        "description": "min=0.501, mean=0.516, max=0.545, sum=1.548 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666667,
+        "description": "min=0.625, mean=0.642, max=0.675, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.675, mean=0.725, max=0.75, sum=2.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.49467731297016143,
+        "description": "min=0.468, mean=0.495, max=0.54, sum=1.484 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.925,
+        "description": "min=5, mean=6.925, max=9.975, sum=20.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8416666666666667,
+        "description": "min=0.75, mean=0.842, max=0.95, sum=2.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6164351731451242,
+        "description": "min=0.568, mean=0.616, max=0.697, sum=1.849 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7416666666666667,
+        "description": "min=0.575, mean=0.742, max=0.85, sum=2.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7999999999999999,
+        "description": "min=0.7, mean=0.8, max=0.9, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.07877640780061483,
+        "description": "min=0.069, mean=0.079, max=0.09, sum=0.236 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6000000000000005,
+        "description": "min=5.3, mean=7.6, max=10, sum=22.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "min=1.0, mean=1.0, max=1.0, sum=1.0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.975,
+        "description": "min=0.975, mean=0.975, max=0.975, sum=0.975 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-65b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-2-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-2-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmeta_llama-2-70b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dstanford_alpaca-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18645228612806494,
+        "description": "min=0.186, mean=0.186, max=0.186, sum=0.186 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.7,
+        "description": "min=3.7, mean=3.7, max=3.7, sum=3.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dlmsys_vicuna-7b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7854929385665772,
+        "description": "min=0.785, mean=0.785, max=0.785, sum=0.785 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 28.05,
+        "description": "min=28.05, mean=28.05, max=28.05, sum=28.05 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dlmsys_vicuna-13b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.32739409760238486,
+        "description": "min=0.327, mean=0.327, max=0.327, sum=0.327 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 303.675,
+        "description": "min=303.675, mean=303.675, max=303.675, sum=303.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.1,
+        "description": "min=9.1, mean=9.1, max=9.1, sum=9.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8916666666666666,
+        "description": "min=0.875, mean=0.892, max=0.925, sum=2.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10406868226774924,
+        "description": "min=0.089, mean=0.104, max=0.117, sum=0.312 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.775, mean=0.808, max=0.85, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8416666666666668,
+        "description": "min=0.8, mean=0.842, max=0.9, sum=2.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5916666666666668,
+        "description": "min=1.575, mean=1.592, max=1.625, sum=4.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6749999999999999,
+        "description": "min=0.625, mean=0.675, max=0.7, sum=2.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23335643287929206,
+        "description": "min=0.195, mean=0.233, max=0.257, sum=0.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.35, mean=0.375, max=0.4, sum=1.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5916666666666667,
+        "description": "min=0.55, mean=0.592, max=0.65, sum=1.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5416666666666667,
+        "description": "min=1.4, mean=1.542, max=1.65, sum=4.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8250000000000001,
+        "description": "min=0.775, mean=0.825, max=0.875, sum=2.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13511380515426805,
+        "description": "min=0.128, mean=0.135, max=0.147, sum=0.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333334,
+        "description": "min=0.725, mean=0.758, max=0.8, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.775, mean=0.792, max=0.825, sum=2.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.23497802734374998,
+        "description": "min=0.234, mean=0.235, max=0.236, sum=0.705 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.875,
+        "description": "min=1.825, mean=1.875, max=1.925, sum=5.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7999999999999999,
+        "description": "min=0.775, mean=0.8, max=0.85, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22560149779894215,
+        "description": "min=0.159, mean=0.226, max=0.271, sum=0.677 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.55, mean=0.667, max=0.725, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.725, mean=0.775, max=0.85, sum=2.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.0945171875,
+        "description": "min=0.094, mean=0.095, max=0.095, sum=0.284 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8166666666666667,
+        "description": "min=1.7, mean=1.817, max=1.875, sum=5.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35715461105047597,
+        "description": "min=0.332, mean=0.357, max=0.381, sum=1.071 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.11722379557291668,
+        "description": "min=0.117, mean=0.117, max=0.117, sum=0.352 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333334,
+        "description": "min=0.4, mean=0.583, max=0.675, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21551775604994006,
+        "description": "min=0.165, mean=0.216, max=0.26, sum=0.647 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3916666666666666,
+        "description": "min=0.175, mean=0.392, max=0.525, sum=1.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.275, mean=0.525, max=0.675, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.1445220703125,
+        "description": "min=0.142, mean=0.145, max=0.146, sum=0.434 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7833333333333332,
+        "description": "min=1.4, mean=1.783, max=1.975, sum=5.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9166666666666666,
+        "description": "min=0.9, mean=0.917, max=0.925, sum=2.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08079400953335623,
+        "description": "min=0.073, mean=0.081, max=0.095, sum=0.242 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8833333333333333,
+        "description": "min=0.875, mean=0.883, max=0.9, sum=2.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=2.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.6166666666666665,
+        "description": "min=1.6, mean=1.617, max=1.625, sum=4.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.85, mean=0.875, max=0.9, sum=2.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12383225487204197,
+        "description": "min=0.098, mean=0.124, max=0.139, sum=0.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8249999999999998,
+        "description": "min=0.775, mean=0.825, max=0.875, sum=2.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8249999999999998,
+        "description": "min=0.8, mean=0.825, max=0.85, sum=2.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.21170429687500003,
+        "description": "min=0.211, mean=0.212, max=0.214, sum=0.635 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5666666666666667,
+        "description": "min=1.55, mean=1.567, max=1.6, sum=4.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6749999999999999,
+        "description": "min=0.65, mean=0.675, max=0.7, sum=2.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26219846524540596,
+        "description": "min=0.239, mean=0.262, max=0.289, sum=0.787 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666667,
+        "description": "min=0.625, mean=0.642, max=0.65, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.625, mean=0.667, max=0.7, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13132649739583335,
+        "description": "min=0.13, mean=0.131, max=0.134, sum=0.394 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.3583333333333334,
+        "description": "min=1.325, mean=1.358, max=1.4, sum=4.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666666,
+        "description": "min=0.5, mean=0.642, max=0.775, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26749514991271267,
+        "description": "min=0.226, mean=0.267, max=0.342, sum=0.802 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.425, mean=0.5, max=0.65, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6083333333333334,
+        "description": "min=0.5, mean=0.608, max=0.725, sum=1.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13218580729166668,
+        "description": "min=0.13, mean=0.132, max=0.134, sum=0.397 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4333333333333333,
+        "description": "min=1.1, mean=1.433, max=1.825, sum=4.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.35, mean=0.45, max=0.55, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39926539578158454,
+        "description": "min=0.326, mean=0.399, max=0.452, sum=1.198 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3583333333333334,
+        "description": "min=0.325, mean=0.358, max=0.4, sum=1.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3833333333333333,
+        "description": "min=0.325, mean=0.383, max=0.475, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.08508483072916667,
+        "description": "min=0.084, mean=0.085, max=0.086, sum=0.255 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1416666666666666,
+        "description": "min=1.025, mean=1.142, max=1.25, sum=3.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.925,
+        "description": "min=0.925, mean=0.925, max=0.925, sum=0.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 252.275,
+        "description": "min=252.275, mean=252.275, max=252.275, sum=252.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.95,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 252.275,
+        "description": "min=252.275, mean=252.275, max=252.275, sum=252.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7749961405269461,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7999999999999944,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_redpajama-incite-base-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8749768363947336,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.725, mean=0.725, max=0.725, sum=0.725 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.925,
+        "description": "min=0.925, mean=0.925, max=0.925, sum=0.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9249999920721089,
+        "description": "min=0.925, mean=0.925, max=0.925, sum=0.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmosaicml_mpt-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dmosaicml_mpt-instruct-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 280.35,
+        "description": "min=280.35, mean=280.35, max=280.35, sum=280.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtiiuae_falcon-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.725, mean=0.725, max=0.725, sum=0.725 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.025,
+        "description": "min=289.025, mean=289.025, max=289.025, sum=289.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtiiuae_falcon-7b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.025,
+        "description": "min=289.025, mean=289.025, max=289.025, sum=289.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtiiuae_falcon-40b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.025,
+        "description": "min=289.025, mean=289.025, max=289.025, sum=289.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtiiuae_falcon-40b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9,
+        "description": "min=0.9, mean=0.9, max=0.9, sum=0.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.875,
+        "description": "min=0.875, mean=0.875, max=0.875, sum=0.875 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 289.025,
+        "description": "min=289.025, mean=289.025, max=289.025, sum=289.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_glm%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.75, mean=0.817, max=0.85, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23057596662378785,
+        "description": "min=0.196, mean=0.231, max=0.271, sum=0.692 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7999999999999999,
+        "description": "min=0.75, mean=0.8, max=0.825, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.75, mean=0.808, max=0.85, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.356868004798889,
+        "description": "min=0.333, mean=0.357, max=0.386, sum=1.071 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 263.1166666666666,
+        "description": "min=244.45, mean=263.117, max=290.45, sum=789.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.716666666666667,
+        "description": "min=2.6, mean=2.717, max=2.95, sum=8.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dwriter_palmyra-instruct-30%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8416666666666667,
+        "description": "min=0.825, mean=0.842, max=0.85, sum=2.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.8, mean=0.817, max=0.85, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.8, mean=0.817, max=0.825, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.625,
+        "description": "min=1.55, mean=1.625, max=1.7, sum=4.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dwriter_palmyra-x%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8833333333333334,
+        "description": "min=0.85, mean=0.883, max=0.925, sum=2.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.75, mean=0.817, max=0.9, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.825, mean=0.85, max=0.9, sum=2.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 276.0166666666667,
+        "description": "min=257.35, mean=276.017, max=301.35, sum=828.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.95,
+        "description": "min=1.9, mean=1.95, max=2, sum=5.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20twitter_complaints&runSpecs=%5B%22raft%3Asubset%3Dtwitter_complaints%2Cmodel%3Dtogether_yalm%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.45, mean=0.508, max=0.6, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26379072146046584,
+        "description": "min=0.22, mean=0.264, max=0.305, sum=0.791 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.4, mean=0.425, max=0.45, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.375, mean=0.45, max=0.5, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13911137841641902,
+        "description": "min=0.132, mean=0.139, max=0.148, sum=0.417 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 277.875,
+        "description": "min=255.875, mean=277.875, max=305.875, sum=833.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.625,
+        "description": "min=5, mean=5.625, max=6.25, sum=16.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/raft_raft_subset:twitter_complaints.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/raft_raft_subset:twitter_complaints.json"
+    }
+  ],
+  "name": "raft_subset:twitter_complaints"
+}

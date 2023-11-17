@@ -1,0 +1,3883 @@
+{
+  "title": "task: 3",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "bAbI"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The bAbI benchmark for measuring understanding and reasoning [(Weston et al., 2015)](https://arxiv.org/pdf/1502.05698.pdf).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "bAbI"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2838283828382839,
+        "description": "min=0.248, mean=0.284, max=0.316, sum=0.851 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.024479234229846,
+        "description": "min=0.957, mean=1.024, max=1.098, sum=3.073 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2812614594792812,
+        "description": "min=0.272, mean=0.281, max=0.299, sum=0.844 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7503132460598492,
+        "description": "min=0.704, mean=0.75, max=0.801, sum=2.251 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3245324532453245,
+        "description": "min=0.312, mean=0.325, max=0.341, sum=0.974 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8728453779622756,
+        "description": "min=0.819, mean=0.873, max=0.931, sum=2.619 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.29482948294829486,
+        "description": "min=0.254, mean=0.295, max=0.345, sum=0.884 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3025302530253025,
+        "description": "min=0.281, mean=0.303, max=0.345, sum=0.908 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1800.2607260726072,
+        "description": "min=1549.927, mean=1800.261, max=2148.927, sum=5400.782 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23652365236523654,
+        "description": "min=0.211, mean=0.237, max=0.254, sum=0.71 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2882288228822882,
+        "description": "min=0.273, mean=0.288, max=0.318, sum=0.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.707370737073707,
+        "description": "min=4.204, mean=4.707, max=4.986, sum=14.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1701.2764943160983,
+        "description": "min=1542.662, mean=1701.276, max=1874.175, sum=5103.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.29959662632929956,
+        "description": "min=0.275, mean=0.3, max=0.327, sum=0.899 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.374770810414375,
+        "description": "min=2.525, mean=3.375, max=4.312, sum=10.124 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1716.4118078474512,
+        "description": "min=1656.395, mean=1716.412, max=1798.986, sum=5149.235 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.568023469013568,
+        "description": "min=1.48, mean=1.568, max=1.723, sum=4.704 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.28309497616428314,
+        "description": "min=0.276, mean=0.283, max=0.29, sum=0.849 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.374770810414375,
+        "description": "min=2.525, mean=3.375, max=4.312, sum=10.124 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1716.4118078474512,
+        "description": "min=1656.395, mean=1716.412, max=1798.986, sum=5149.235 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2060872753942062,
+        "description": "min=1.15, mean=1.206, max=1.296, sum=3.618 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2541254125412541,
+        "description": "min=0.233, mean=0.254, max=0.272, sum=0.762 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.374770810414375,
+        "description": "min=2.525, mean=3.375, max=4.312, sum=10.124 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1716.4118078474512,
+        "description": "min=1656.395, mean=1716.412, max=1798.986, sum=5149.235 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5342867620095342,
+        "description": "min=1.394, mean=1.534, max=1.663, sum=4.603 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.32636596993032635,
+        "description": "min=0.296, mean=0.326, max=0.374, sum=0.979 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.056947386665749,
+        "description": "min=0.971, mean=1.057, max=1.177, sum=3.171 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2485.6820682068205,
+        "description": "min=2139.682, mean=2485.682, max=2970.682, sum=7457.046 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.32049871653832057,
+        "description": "min=0.309, mean=0.32, max=0.337, sum=0.961 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.3441816124126593,
+        "description": "min=1.338, mean=1.344, max=1.354, sum=4.033 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.055005500550055,
+        "description": "min=3.075, mean=4.055, max=4.78, sum=12.165 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1806.8353502016869,
+        "description": "min=1755.922, mean=1806.835, max=1843.927, sum=5420.506 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16893759905822472,
+        "description": "min=0.168, mean=0.169, max=0.17, sum=0.507 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7587092042537587,
+        "description": "min=0.978, mean=1.759, max=2.464, sum=5.276 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.006600660066006601,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.02 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 750.4741474147414,
+        "description": "min=519.42, mean=750.474, max=905.638, sum=2251.422 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23102310231023102,
+        "description": "min=0.205, mean=0.231, max=0.266, sum=0.693 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8516397003632651,
+        "description": "min=0.835, mean=0.852, max=0.873, sum=2.555 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23285661899523288,
+        "description": "min=0.227, mean=0.233, max=0.238, sum=0.699 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6182190601221585,
+        "description": "min=0.606, mean=0.618, max=0.635, sum=1.855 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23138980564723136,
+        "description": "min=0.201, mean=0.231, max=0.263, sum=0.694 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48186442648171096,
+        "description": "min=0.473, mean=0.482, max=0.494, sum=1.446 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0062339567290062,
+        "description": "min=1, mean=1.006, max=1.014, sum=3.019 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08397506417308398,
+        "description": "min=0.044, mean=0.084, max=0.123, sum=0.252 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5190222643358087,
+        "description": "min=0.51, mean=0.519, max=0.531, sum=1.557 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0055005500550054,
+        "description": "min=1, mean=1.006, max=1.012, sum=3.017 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2764943160982765,
+        "description": "min=0.272, mean=0.276, max=0.283, sum=0.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26879354602126876,
+        "description": "min=0.253, mean=0.269, max=0.288, sum=0.806 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.001100110011001,
+        "description": "min=1, mean=1.001, max=1.003, sum=3.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2555922258892556,
+        "description": "min=0.25, mean=0.256, max=0.262, sum=0.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.382838283828383,
+        "description": "min=2.539, mean=3.383, max=4.319, sum=10.149 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1695.3997066373304,
+        "description": "min=1634.449, mean=1695.4, max=1779.029, sum=5086.199 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2614594792812615,
+        "description": "min=0.241, mean=0.261, max=0.275, sum=0.784 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.382838283828383,
+        "description": "min=2.539, mean=3.383, max=4.319, sum=10.149 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1695.3997066373304,
+        "description": "min=1634.449, mean=1695.4, max=1779.029, sum=5086.199 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0517051705170515,
+        "description": "min=1.004, mean=1.052, max=1.107, sum=3.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26549321598826553,
+        "description": "min=0.243, mean=0.265, max=0.283, sum=0.796 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3193621370236058,
+        "description": "min=0.314, mean=0.319, max=0.329, sum=0.958 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.28639530619728637,
+        "description": "min=0.25, mean=0.286, max=0.32, sum=0.859 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5405132790756261,
+        "description": "min=0.535, mean=0.541, max=0.549, sum=1.622 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (1B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Deleutherai_pythia-1b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.25412541254125415,
+        "description": "min=0.254, mean=0.254, max=0.254, sum=0.254 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.30363036303630364,
+        "description": "min=0.304, mean=0.304, max=0.304, sum=0.304 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.31573157315731576,
+        "description": "min=0.316, mean=0.316, max=0.316, sum=0.316 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10561056105610561,
+        "description": "min=0.01, mean=0.106, max=0.174, sum=0.317 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25723321786569786,
+        "description": "min=0.249, mean=0.257, max=0.268, sum=0.772 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44041070773744045,
+        "description": "min=0.075, mean=0.44, max=0.666, sum=1.321 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18701870187018702,
+        "description": "min=0.187, mean=0.187, max=0.187, sum=0.561 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 382.7821782178218,
+        "description": "min=337.166, mean=382.782, max=414.684, sum=1148.347 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.12614594792812614,
+        "description": "min=0.018, mean=0.126, max=0.212, sum=0.378 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22027032595437956,
+        "description": "min=0.219, mean=0.22, max=0.221, sum=0.661 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43417675100843417,
+        "description": "min=0.065, mean=0.434, max=0.663, sum=1.303 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18811881188118815,
+        "description": "min=0.188, mean=0.188, max=0.188, sum=0.564 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 384.17161716171614,
+        "description": "min=336.371, mean=384.172, max=416.701, sum=1152.515 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2717271727172717,
+        "description": "min=0.257, mean=0.272, max=0.282, sum=0.815 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5699081280137925,
+        "description": "min=1.515, mean=1.57, max=1.626, sum=4.71 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3028969563623029,
+        "description": "min=0.283, mean=0.303, max=0.328, sum=0.909 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.454394523585765,
+        "description": "min=0.407, mean=0.454, max=0.524, sum=1.363 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26952695269526955,
+        "description": "min=0.27, mean=0.27, max=0.27, sum=0.27 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2607260726072607,
+        "description": "min=0.261, mean=0.261, max=0.261, sum=0.261 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.39823982398239827,
+        "description": "min=0.398, mean=0.398, max=0.398, sum=0.398 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4521452145214521,
+        "description": "min=0.452, mean=0.452, max=0.452, sum=0.452 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21672167216721672,
+        "description": "min=0.217, mean=0.217, max=0.217, sum=0.217 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.988998899889989,
+        "description": "min=4.989, mean=4.989, max=4.989, sum=4.989 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3290.914191419142,
+        "description": "min=3290.914, mean=3290.914, max=3290.914, sum=3290.914 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3234323432343234,
+        "description": "min=0.323, mean=0.323, max=0.323, sum=0.323 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.988998899889989,
+        "description": "min=4.989, mean=4.989, max=4.989, sum=4.989 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3290.914191419142,
+        "description": "min=3290.914, mean=3290.914, max=3290.914, sum=3290.914 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.36633663366336633,
+        "description": "min=0.366, mean=0.366, max=0.366, sum=0.366 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.988998899889989,
+        "description": "min=4.989, mean=4.989, max=4.989, sum=4.989 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3290.914191419142,
+        "description": "min=3290.914, mean=3290.914, max=3290.914, sum=3290.914 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1562156215621562,
+        "description": "min=0.156, mean=0.156, max=0.156, sum=0.156 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.0154015401540155,
+        "description": "min=4.015, mean=4.015, max=4.015, sum=4.015 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2684268426842684,
+        "description": "min=0.268, mean=0.268, max=0.268, sum=0.268 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.484048404840484,
+        "description": "min=4.484, mean=4.484, max=4.484, sum=4.484 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.33003300330033003,
+        "description": "min=0.33, mean=0.33, max=0.33, sum=0.33 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.09020902090209,
+        "description": "min=2.09, mean=2.09, max=2.09, sum=2.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1707.1419141914191,
+        "description": "min=1707.142, mean=1707.142, max=1707.142, sum=1707.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.922992299229923,
+        "description": "min=4.923, mean=4.923, max=4.923, sum=4.923 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3593692702603594,
+        "description": "min=0.308, mean=0.359, max=0.391, sum=1.078 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0003667033370005,
+        "description": "min=1, mean=1.0, max=1.001, sum=3.001 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3392005867253392,
+        "description": "min=0.316, mean=0.339, max=0.369, sum=1.018 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2816281628162816,
+        "description": "min=0.26, mean=0.282, max=0.294, sum=0.845 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.230651709181335,
+        "description": "min=0.229, mean=0.231, max=0.233, sum=0.692 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23982398239823985,
+        "description": "min=0.227, mean=0.24, max=0.25, sum=0.719 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11414928788885825,
+        "description": "min=0.113, mean=0.114, max=0.116, sum=0.342 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24459112577924458,
+        "description": "min=0.237, mean=0.245, max=0.25, sum=0.734 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13027858614854543,
+        "description": "min=0.13, mean=0.13, max=0.131, sum=0.391 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14484781811514483,
+        "description": "min=0.135, mean=0.145, max=0.158, sum=0.435 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14280990156307283,
+        "description": "min=0.143, mean=0.143, max=0.143, sum=0.428 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4954162082874954,
+        "description": "min=0.487, mean=0.495, max=0.504, sum=1.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.998899889988999,
+        "description": "min=4.997, mean=4.999, max=5, sum=14.997 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2485.166116611661,
+        "description": "min=2139.682, mean=2485.166, max=2969.134, sum=7455.498 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5020168683535021,
+        "description": "min=0.488, mean=0.502, max=0.52, sum=1.506 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275110108406674,
+        "description": "min=0.259, mean=0.275, max=0.298, sum=0.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.998899889988999,
+        "description": "min=4.997, mean=4.999, max=5, sum=14.997 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2485.166116611661,
+        "description": "min=2139.682, mean=2485.166, max=2969.134, sum=7455.498 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24495782911624495,
+        "description": "min=0.218, mean=0.245, max=0.262, sum=0.735 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15078467447439192,
+        "description": "min=0.15, mean=0.151, max=0.152, sum=0.452 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9988998899889988,
+        "description": "min=0.997, mean=0.999, max=1, sum=2.997 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22002200220022003,
+        "description": "min=0.193, mean=0.22, max=0.237, sum=0.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16168335501084824,
+        "description": "min=0.161, mean=0.162, max=0.163, sum=0.485 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13934726806013933,
+        "description": "min=0.118, mean=0.139, max=0.165, sum=0.418 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11345225837687938,
+        "description": "min=0.112, mean=0.113, max=0.115, sum=0.34 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.995966263292996,
+        "description": "min=0.983, mean=0.996, max=1.004, sum=2.988 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5999266593325999,
+        "description": "min=0.579, mean=0.6, max=0.613, sum=1.8 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.33362538962229576,
+        "description": "min=0.306, mean=0.334, max=0.373, sum=1.001 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.998899889988999,
+        "description": "min=4.997, mean=4.999, max=5, sum=14.997 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2485.166116611661,
+        "description": "min=2139.682, mean=2485.166, max=2969.134, sum=7455.498 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.30216354968830217,
+        "description": "min=0.295, mean=0.302, max=0.316, sum=0.906 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11988078751451527,
+        "description": "min=0.119, mean=0.12, max=0.121, sum=0.36 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.001100110011001,
+        "description": "min=2, mean=2.001, max=2.003, sum=6.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2222222222222222,
+        "description": "min=0.222, mean=0.222, max=0.222, sum=0.222 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2569.04400440044,
+        "description": "min=2569.044, mean=2569.044, max=2569.044, sum=2569.044 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.771177117711771,
+        "description": "min=2.771, mean=2.771, max=2.771, sum=2.771 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.46094609460946095,
+        "description": "min=0.461, mean=0.461, max=0.461, sum=0.461 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2569.04400440044,
+        "description": "min=2569.044, mean=2569.044, max=2569.044, sum=2569.044 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.847084708470847,
+        "description": "min=1.847, mean=1.847, max=1.847, sum=1.847 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.34213421342134215,
+        "description": "min=0.342, mean=0.342, max=0.342, sum=0.342 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45324532453245325,
+        "description": "min=0.453, mean=0.453, max=0.453, sum=0.453 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2563256325632563,
+        "description": "min=0.256, mean=0.256, max=0.256, sum=0.256 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.31903190319031904,
+        "description": "min=0.319, mean=0.319, max=0.319, sum=0.319 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.32123212321232125,
+        "description": "min=0.321, mean=0.321, max=0.321, sum=0.321 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3069306930693069,
+        "description": "min=0.307, mean=0.307, max=0.307, sum=0.307 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24862486248624863,
+        "description": "min=0.249, mean=0.249, max=0.249, sum=0.249 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.15181518151815182,
+        "description": "min=0.152, mean=0.152, max=0.152, sum=0.152 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.30363036303630364,
+        "description": "min=0.304, mean=0.304, max=0.304, sum=0.304 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23652365236523654,
+        "description": "min=0.237, mean=0.237, max=0.237, sum=0.237 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=909 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5962596259625963,
+        "description": "min=2.596, mean=2.596, max=2.596, sum=2.596 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1811.1584158415842,
+        "description": "min=1811.158, mean=1811.158, max=1811.158, sum=1811.158 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3542354235423542,
+        "description": "min=0.318, mean=0.354, max=0.408, sum=1.063 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2370159000890508,
+        "description": "min=1.231, mean=1.237, max=1.246, sum=3.711 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.324899156582325,
+        "description": "min=3.464, mean=4.325, max=4.889, sum=12.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1809.7895122845619,
+        "description": "min=1723.545, mean=1809.79, max=1867.197, sum=5429.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.25045837917125047,
+        "description": "min=0.223, mean=0.25, max=0.267, sum=0.751 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456178951228456,
+        "description": "min=2.596, mean=3.456, max=4.393, sum=10.369 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1740.7389072240558,
+        "description": "min=1687.737, mean=1740.739, max=1811.158, sum=5222.217 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0014668133480014,
+        "description": "min=1, mean=1.001, max=1.004, sum=3.004 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.36596993032636593,
+        "description": "min=0.356, mean=0.366, max=0.384, sum=1.098 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2485.6820682068205,
+        "description": "min=2139.682, mean=2485.682, max=2970.682, sum=7457.046 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7169050238357169,
+        "description": "min=1.683, mean=1.717, max=1.743, sum=5.151 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=babi_qa&subgroup=task%3A%203&runSpecs=%5B%22babi_qa%3Atask%3D3%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17565089842317563,
+        "description": "min=0.167, mean=0.176, max=0.189, sum=0.527 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9081706512379637,
+        "description": "min=0.861, mean=0.908, max=0.955, sum=2.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 909.0,
+        "description": "min=909, mean=909, max=909, sum=2727 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.456912357902457,
+        "description": "min=2.596, mean=3.457, max=4.393, sum=10.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1741.0817748441511,
+        "description": "min=1688.766, mean=1741.082, max=1811.158, sum=5223.245 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/babi_qa_babi_qa_task:3.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/babi_qa_babi_qa_task:3.json"
+    }
+  ],
+  "name": "babi_qa_task:3"
+}

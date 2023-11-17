@@ -1,0 +1,2747 @@
+{
+  "title": "Fairness",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "NaturalQuestions (closed-book) - F1 (Fairness)",
+      "description": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input does not include the Wikipedia page with the answer.\n\nF1: Average F1 score in terms of word overlap between the model output and correct reference.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "F1",
+        "run_group": "NaturalQuestions (closed-book)",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "HellaSwag - EM (Fairness)",
+      "description": "The HellaSwag benchmark for commonsense reasoning in question answering [(Zellers et al., 2019)](https://aclanthology.org/P19-1472/).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "HellaSwag",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "OpenbookQA - EM (Fairness)",
+      "description": "The OpenbookQA benchmark for commonsense-intensive open book question answering [(Mihaylov et al., 2018)](https://aclanthology.org/D18-1260/).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "OpenbookQA",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "TruthfulQA - EM (Fairness)",
+      "description": "The TruthfulQA benchmarking for measuring model truthfulness and commonsense knowledge in question answering [(Lin et al., 2022)](https://aclanthology.org/2022.acl-long.229/).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "TruthfulQA",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "MMLU - EM (Fairness)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "MMLU",
+        "perturbation": "Fairness"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4258064516129032,
+        "markdown": false
+      },
+      {
+        "value": 0.23456155611286555,
+        "description": "min=0.227, mean=0.235, max=0.239, sum=0.704 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.614,
+        "description": "min=0.614, mean=0.614, max=0.614, sum=0.614 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.466,
+        "description": "min=0.466, mean=0.466, max=0.466, sum=0.466 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15596330275229356,
+        "description": "min=0.142, mean=0.156, max=0.168, sum=0.468 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23635087719298245,
+        "description": "min=0.17, mean=0.236, max=0.33, sum=3.545 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.22719602977667494,
+        "markdown": false
+      },
+      {
+        "value": 0.14648226412007787,
+        "description": "min=0.14, mean=0.146, max=0.151, sum=0.439 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.528,
+        "description": "min=0.528, mean=0.528, max=0.528, sum=0.528 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.444,
+        "description": "min=0.444, mean=0.444, max=0.444, sum=0.444 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17380224260958207,
+        "description": "min=0.159, mean=0.174, max=0.182, sum=0.521 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2039415204678363,
+        "description": "min=0.16, mean=0.204, max=0.23, sum=3.059 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4073449131513648,
+        "markdown": false
+      },
+      {
+        "value": 0.1872477522460834,
+        "description": "min=0.185, mean=0.187, max=0.189, sum=0.562 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.58,
+        "description": "min=0.58, mean=0.58, max=0.58, sum=0.58 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.472,
+        "description": "min=0.472, mean=0.472, max=0.472, sum=0.472 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16309887869520898,
+        "description": "min=0.138, mean=0.163, max=0.182, sum=0.489 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23159064327485382,
+        "description": "min=0.158, mean=0.232, max=0.29, sum=3.474 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7014392059553349,
+        "markdown": false
+      },
+      {
+        "value": 0.269872960171523,
+        "description": "min=0.269, mean=0.27, max=0.27, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.623,
+        "description": "min=0.623, mean=0.623, max=0.623, sum=0.623 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.478,
+        "description": "min=0.478, mean=0.478, max=0.478, sum=0.478 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24159021406727832,
+        "description": "min=0.216, mean=0.242, max=0.271, sum=0.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4094619883040936,
+        "description": "min=0.19, mean=0.409, max=0.77, sum=6.142 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8293796526054591,
+        "markdown": false
+      },
+      {
+        "value": 0.32739768950953246,
+        "description": "min=0.326, mean=0.327, max=0.328, sum=0.982 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.655,
+        "description": "min=0.655, mean=0.655, max=0.655, sum=0.655 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.488,
+        "description": "min=0.488, mean=0.488, max=0.488, sum=0.488 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35423037716615696,
+        "description": "min=0.289, mean=0.354, max=0.398, sum=1.063 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44997660818713453,
+        "description": "min=0.21, mean=0.45, max=0.78, sum=6.75 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7190074441687345,
+        "markdown": false
+      },
+      {
+        "value": 0.2832503879785802,
+        "description": "min=0.276, mean=0.283, max=0.288, sum=0.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.632,
+        "description": "min=0.632, mean=0.632, max=0.632, sum=0.632 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.466,
+        "description": "min=0.466, mean=0.466, max=0.466, sum=0.466 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2900101936799185,
+        "description": "min=0.242, mean=0.29, max=0.32, sum=0.87 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43321637426900583,
+        "description": "min=0.23, mean=0.433, max=0.73, sum=6.498 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4659057071960298,
+        "markdown": false
+      },
+      {
+        "value": 0.21726190588701,
+        "description": "min=0.215, mean=0.217, max=0.221, sum=0.652 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.567,
+        "description": "min=0.567, mean=0.567, max=0.567, sum=0.567 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1962283384301733,
+        "description": "min=0.185, mean=0.196, max=0.205, sum=0.589 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2968421052631579,
+        "description": "min=0.167, mean=0.297, max=0.45, sum=4.453 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.11794871794871796,
+        "markdown": false
+      },
+      {
+        "value": 0.16022586408623682,
+        "description": "min=0.156, mean=0.16, max=0.164, sum=0.481 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.12487257900101938,
+        "description": "min=0.118, mean=0.125, max=0.13, sum=0.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1845730994152047,
+        "description": "min=0.09, mean=0.185, max=0.27, sum=2.769 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3282051282051282,
+        "markdown": false
+      },
+      {
+        "value": 0.21385439000180537,
+        "description": "min=0.205, mean=0.214, max=0.22, sum=0.642 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.15953109072375127,
+        "description": "min=0.144, mean=0.16, max=0.171, sum=0.479 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23658479532163745,
+        "description": "min=0.14, mean=0.237, max=0.35, sum=3.549 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.35384615384615387,
+        "markdown": false
+      },
+      {
+        "value": 0.24089192251975544,
+        "description": "min=0.23, mean=0.241, max=0.25, sum=0.723 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.13200815494393475,
+        "description": "min=0.128, mean=0.132, max=0.138, sum=0.396 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2636608187134503,
+        "description": "min=0.11, mean=0.264, max=0.51, sum=3.955 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7748883374689827,
+        "markdown": false
+      },
+      {
+        "value": 0.23855278160903723,
+        "description": "min=0.228, mean=0.239, max=0.244, sum=0.716 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.695,
+        "description": "min=0.695, mean=0.695, max=0.695, sum=0.695 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.482,
+        "description": "min=0.482, mean=0.482, max=0.482, sum=0.482 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3004587155963303,
+        "description": "min=0.229, mean=0.3, max=0.388, sum=1.202 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4467836257309941,
+        "description": "min=0.211, mean=0.447, max=0.74, sum=6.702 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.513151364764268,
+        "markdown": false
+      },
+      {
+        "value": 0.18669047090402127,
+        "description": "min=0.183, mean=0.187, max=0.189, sum=0.56 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.585,
+        "description": "min=0.585, mean=0.585, max=0.585, sum=0.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.482,
+        "description": "min=0.482, mean=0.482, max=0.482, sum=0.482 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18616207951070335,
+        "description": "min=0.164, mean=0.186, max=0.206, sum=0.745 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27360233918128657,
+        "description": "min=0.175, mean=0.274, max=0.38, sum=4.104 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5230769230769231,
+        "markdown": false
+      },
+      {
+        "value": 0.028132918197666456,
+        "description": "min=0.027, mean=0.028, max=0.03, sum=0.084 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.34977064220183485,
+        "description": "min=0.307, mean=0.35, max=0.411, sum=1.399 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3820701754385965,
+        "description": "min=0.25, mean=0.382, max=0.63, sum=5.731 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5481885856079405,
+        "markdown": false
+      },
+      {
+        "value": 0.25466316487855734,
+        "description": "min=0.248, mean=0.255, max=0.259, sum=0.764 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.66,
+        "description": "min=0.66, mean=0.66, max=0.66, sum=0.66 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47,
+        "description": "min=0.47, mean=0.47, max=0.47, sum=0.47 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1564729867482161,
+        "description": "min=0.138, mean=0.156, max=0.182, sum=0.469 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31526315789473686,
+        "description": "min=0.158, mean=0.315, max=0.53, sum=4.729 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.37081885856079405,
+        "markdown": false
+      },
+      {
+        "value": 0.17833773739586523,
+        "description": "min=0.176, mean=0.178, max=0.181, sum=0.535 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.446,
+        "description": "min=0.446, mean=0.446, max=0.446, sum=0.446 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15698267074413863,
+        "description": "min=0.142, mean=0.157, max=0.174, sum=0.471 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2809590643274854,
+        "description": "min=0.14, mean=0.281, max=0.38, sum=4.214 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.24109181141439207,
+        "markdown": false
+      },
+      {
+        "value": 0.12565301660951664,
+        "description": "min=0.124, mean=0.126, max=0.127, sum=0.377 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.525, mean=0.525, max=0.525, sum=0.525 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42,
+        "description": "min=0.42, mean=0.42, max=0.42, sum=0.42 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17380224260958207,
+        "description": "min=0.154, mean=0.174, max=0.19, sum=0.521 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23653801169590644,
+        "description": "min=0.15, mean=0.237, max=0.29, sum=3.548 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.19166253101736974,
+        "markdown": false
+      },
+      {
+        "value": 0.055406816944260924,
+        "description": "min=0.052, mean=0.055, max=0.062, sum=0.166 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.308,
+        "description": "min=0.308, mean=0.308, max=0.308, sum=0.308 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28,
+        "description": "min=0.28, mean=0.28, max=0.28, sum=0.28 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20285423037716613,
+        "description": "min=0.194, mean=0.203, max=0.214, sum=0.609 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22225730994152046,
+        "description": "min=0.1, mean=0.222, max=0.4, sum=3.334 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.618560794044665,
+        "markdown": false
+      },
+      {
+        "value": 0.299210546403295,
+        "description": "min=0.295, mean=0.299, max=0.303, sum=0.898 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.687,
+        "description": "min=0.687, mean=0.687, max=0.687, sum=0.687 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1197757390417941,
+        "description": "min=0.112, mean=0.12, max=0.124, sum=0.359 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31652631578947366,
+        "description": "min=0.13, mean=0.317, max=0.57, sum=4.748 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3176178660049628,
+        "markdown": false
+      },
+      {
+        "value": 0.14913779301489424,
+        "description": "min=0.142, mean=0.149, max=0.157, sum=0.447 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.567,
+        "description": "min=0.567, mean=0.567, max=0.567, sum=0.567 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44,
+        "description": "min=0.44, mean=0.44, max=0.44, sum=0.44 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18195718654434248,
+        "description": "min=0.156, mean=0.182, max=0.205, sum=0.546 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21994152046783624,
+        "description": "min=0.14, mean=0.22, max=0.3, sum=3.299 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.47225806451612906,
+        "markdown": false
+      },
+      {
+        "value": 0.16652011745655915,
+        "description": "min=0.165, mean=0.167, max=0.167, sum=0.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.608,
+        "description": "min=0.608, mean=0.608, max=0.608, sum=0.608 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.468,
+        "description": "min=0.468, mean=0.468, max=0.468, sum=0.468 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16258919469928643,
+        "description": "min=0.154, mean=0.163, max=0.167, sum=0.488 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36630409356725147,
+        "description": "min=0.2, mean=0.366, max=0.55, sum=5.495 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8141935483870968,
+        "markdown": false
+      },
+      {
+        "value": 0.29608566298974776,
+        "description": "min=0.29, mean=0.296, max=0.301, sum=0.888 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.699,
+        "description": "min=0.699, mean=0.699, max=0.699, sum=0.699 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.508,
+        "description": "min=0.508, mean=0.508, max=0.508, sum=0.508 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2217125382262997,
+        "description": "min=0.219, mean=0.222, max=0.225, sum=0.665 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4071111111111111,
+        "description": "min=0.19, mean=0.407, max=0.73, sum=6.107 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.20019851116625312,
+        "markdown": false
+      },
+      {
+        "value": 0.12161534757794057,
+        "description": "min=0.112, mean=0.122, max=0.128, sum=0.365 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.486,
+        "description": "min=0.486, mean=0.486, max=0.486, sum=0.486 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.416,
+        "description": "min=0.416, mean=0.416, max=0.416, sum=0.416 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18004587155963303,
+        "description": "min=0.156, mean=0.18, max=0.209, sum=0.72 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21961403508771932,
+        "description": "min=0.13, mean=0.22, max=0.27, sum=3.294 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.27672456575682386,
+        "markdown": false
+      },
+      {
+        "value": 0.15381312093617092,
+        "description": "min=0.147, mean=0.154, max=0.158, sum=0.461 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.552,
+        "description": "min=0.552, mean=0.552, max=0.552, sum=0.552 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.438,
+        "description": "min=0.438, mean=0.438, max=0.438, sum=0.438 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17851681957186544,
+        "description": "min=0.161, mean=0.179, max=0.225, sum=0.714 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21518128654970764,
+        "description": "min=0.175, mean=0.215, max=0.26, sum=3.228 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1794871794871795,
+        "markdown": false
+      },
+      {
+        "value": 0.10301926896303132,
+        "description": "min=0.103, mean=0.103, max=0.103, sum=0.103 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.18042813455657492,
+        "description": "min=0.18, mean=0.18, max=0.18, sum=0.18 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20687719298245613,
+        "description": "min=0.14, mean=0.207, max=0.254, sum=1.034 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12307692307692308,
+        "markdown": false
+      },
+      {
+        "value": 0.13109020655004933,
+        "description": "min=0.131, mean=0.131, max=0.131, sum=0.131 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.154434250764526,
+        "description": "min=0.154, mean=0.154, max=0.154, sum=0.154 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2121052631578947,
+        "description": "min=0.16, mean=0.212, max=0.29, sum=1.061 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "markdown": false
+      },
+      {
+        "value": 0.15857963279707157,
+        "description": "min=0.152, mean=0.159, max=0.164, sum=0.476 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.10129969418960244,
+        "description": "min=0.058, mean=0.101, max=0.136, sum=0.405 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23500584795321638,
+        "description": "min=0.167, mean=0.235, max=0.33, sum=3.525 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.317948717948718,
+        "markdown": false
+      },
+      {
+        "value": 0.16184307849771043,
+        "description": "min=0.159, mean=0.162, max=0.167, sum=0.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.16169724770642202,
+        "description": "min=0.15, mean=0.162, max=0.176, sum=0.647 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2734502923976609,
+        "description": "min=0.19, mean=0.273, max=0.36, sum=4.102 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6736476426799007,
+        "markdown": false
+      },
+      {
+        "value": 0.2461285688311032,
+        "description": "min=0.244, mean=0.246, max=0.248, sum=0.738 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.66,
+        "description": "min=0.66, mean=0.66, max=0.66, sum=0.66 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2029816513761468,
+        "description": "min=0.165, mean=0.203, max=0.249, sum=0.812 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28651461988304094,
+        "description": "min=0.167, mean=0.287, max=0.43, sum=4.298 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4033746898263027,
+        "markdown": false
+      },
+      {
+        "value": 0.2180459446078801,
+        "description": "min=0.215, mean=0.218, max=0.221, sum=0.654 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.597,
+        "description": "min=0.597, mean=0.597, max=0.597, sum=0.597 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.454,
+        "description": "min=0.454, mean=0.454, max=0.454, sum=0.454 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17316513761467892,
+        "description": "min=0.145, mean=0.173, max=0.206, sum=0.693 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22935672514619884,
+        "description": "min=0.18, mean=0.229, max=0.33, sum=3.44 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5743589743589743,
+        "markdown": false
+      },
+      {
+        "value": 0.24052468144533276,
+        "description": "min=0.241, mean=0.241, max=0.241, sum=0.241 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.21865443425076453,
+        "description": "min=0.219, mean=0.219, max=0.219, sum=0.219 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28410526315789475,
+        "description": "min=0.19, mean=0.284, max=0.42, sum=1.421 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7230769230769231,
+        "markdown": false
+      },
+      {
+        "value": 0.28794490645078735,
+        "description": "min=0.288, mean=0.288, max=0.288, sum=0.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.23394495412844038,
+        "description": "min=0.234, mean=0.234, max=0.234, sum=0.234 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3853684210526316,
+        "description": "min=0.18, mean=0.385, max=0.71, sum=1.927 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8769230769230769,
+        "markdown": false
+      },
+      {
+        "value": 0.35638449124084753,
+        "description": "min=0.356, mean=0.356, max=0.356, sum=0.356 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.26605504587155965,
+        "description": "min=0.266, mean=0.266, max=0.266, sum=0.266 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49617543859649127,
+        "description": "min=0.28, mean=0.496, max=0.81, sum=2.481 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.958974358974359,
+        "markdown": false
+      },
+      {
+        "value": 0.3753249636782112,
+        "description": "min=0.375, mean=0.375, max=0.375, sum=0.375 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.42048929663608564,
+        "description": "min=0.42, mean=0.42, max=0.42, sum=0.42 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5514385964912281,
+        "description": "min=0.34, mean=0.551, max=0.84, sum=2.757 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6820512820512821,
+        "markdown": false
+      },
+      {
+        "value": 0.26403309290317406,
+        "description": "min=0.264, mean=0.264, max=0.264, sum=0.264 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.22324159021406728,
+        "description": "min=0.223, mean=0.223, max=0.223, sum=0.223 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.392140350877193,
+        "description": "min=0.26, mean=0.392, max=0.59, sum=1.961 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8358974358974359,
+        "markdown": false
+      },
+      {
+        "value": 0.30927547433853436,
+        "description": "min=0.309, mean=0.309, max=0.309, sum=0.309 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.27370030581039756,
+        "description": "min=0.274, mean=0.274, max=0.274, sum=0.274 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.46614035087719297,
+        "description": "min=0.26, mean=0.466, max=0.79, sum=2.331 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9743589743589743,
+        "markdown": false
+      },
+      {
+        "value": 0.3997609830959401,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.43425076452599387,
+        "description": "min=0.434, mean=0.434, max=0.434, sum=0.434 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5571929824561404,
+        "description": "min=0.26, mean=0.557, max=0.91, sum=2.786 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5384615384615384,
+        "markdown": false
+      },
+      {
+        "value": 0.20966482260352876,
+        "description": "min=0.21, mean=0.21, max=0.21, sum=0.21 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.2018348623853211,
+        "description": "min=0.202, mean=0.202, max=0.202, sum=0.202 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34585964912280703,
+        "description": "min=0.219, mean=0.346, max=0.53, sum=1.729 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.635897435897436,
+        "markdown": false
+      },
+      {
+        "value": 0.22422961995096835,
+        "description": "min=0.224, mean=0.224, max=0.224, sum=0.224 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.23547400611620795,
+        "description": "min=0.235, mean=0.235, max=0.235, sum=0.235 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38484210526315793,
+        "description": "min=0.184, mean=0.385, max=0.68, sum=1.924 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7846153846153846,
+        "markdown": false
+      },
+      {
+        "value": 0.26608326669652704,
+        "description": "min=0.266, mean=0.266, max=0.266, sum=0.266 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.3149847094801223,
+        "description": "min=0.315, mean=0.315, max=0.315, sum=0.315 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4236140350877193,
+        "description": "min=0.228, mean=0.424, max=0.7, sum=2.118 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7822332506203474,
+        "markdown": false
+      },
+      {
+        "value": 0.3175020164111731,
+        "description": "min=0.306, mean=0.318, max=0.324, sum=0.953 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.678,
+        "description": "min=0.678, mean=0.678, max=0.678, sum=0.678 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.504,
+        "description": "min=0.504, mean=0.504, max=0.504, sum=0.504 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19673802242609584,
+        "description": "min=0.177, mean=0.197, max=0.213, sum=0.59 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41770760233918125,
+        "description": "min=0.17, mean=0.418, max=0.75, sum=6.266 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1949379652605459,
+        "markdown": false
+      },
+      {
+        "value": 0.16163226517271406,
+        "description": "min=0.152, mean=0.162, max=0.17, sum=0.485 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.53,
+        "description": "min=0.53, mean=0.53, max=0.53, sum=0.53 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.412,
+        "description": "min=0.412, mean=0.412, max=0.412, sum=0.412 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1437308868501529,
+        "description": "min=0.133, mean=0.144, max=0.162, sum=0.431 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2124327485380117,
+        "description": "min=0.17, mean=0.212, max=0.31, sum=3.186 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6084367245657568,
+        "markdown": false
+      },
+      {
+        "value": 0.2760483569290458,
+        "description": "min=0.271, mean=0.276, max=0.282, sum=0.828 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.641,
+        "description": "min=0.641, mean=0.641, max=0.641, sum=0.641 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.502,
+        "description": "min=0.502, mean=0.502, max=0.502, sum=0.502 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.15545361875637104,
+        "description": "min=0.136, mean=0.155, max=0.185, sum=0.466 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3803040935672514,
+        "description": "min=0.24, mean=0.38, max=0.61, sum=5.705 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25955334987593054,
+        "markdown": false
+      },
+      {
+        "value": 0.14670404179376148,
+        "description": "min=0.139, mean=0.147, max=0.151, sum=0.44 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.522,
+        "description": "min=0.522, mean=0.522, max=0.522, sum=0.522 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.43,
+        "description": "min=0.43, mean=0.43, max=0.43, sum=0.43 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.18603465851172274,
+        "description": "min=0.165, mean=0.186, max=0.216, sum=0.558 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21771929824561406,
+        "description": "min=0.15, mean=0.218, max=0.281, sum=3.266 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12794044665012408,
+        "markdown": false
+      },
+      {
+        "value": 0.08399089853474369,
+        "description": "min=0.079, mean=0.084, max=0.088, sum=0.252 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.401,
+        "description": "min=0.401, mean=0.401, max=0.401, sum=0.401 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.326,
+        "description": "min=0.326, mean=0.326, max=0.326, sum=0.326 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.17787971457696228,
+        "description": "min=0.159, mean=0.178, max=0.19, sum=0.534 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20567251461988303,
+        "description": "min=0.14, mean=0.206, max=0.28, sum=3.085 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.13935483870967744,
+        "markdown": false
+      },
+      {
+        "value": 0.057147528877813734,
+        "description": "min=0.054, mean=0.057, max=0.061, sum=0.171 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.294,
+        "description": "min=0.294, mean=0.294, max=0.294, sum=0.294 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.318,
+        "description": "min=0.318, mean=0.318, max=0.318, sum=0.318 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.18450560652395517,
+        "description": "min=0.18, mean=0.185, max=0.187, sum=0.554 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2103157894736842,
+        "description": "min=0.053, mean=0.21, max=0.31, sum=3.155 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9723076923076923,
+        "markdown": false
+      },
+      {
+        "value": 0.3564629891973459,
+        "description": "min=0.349, mean=0.356, max=0.361, sum=1.069 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.729,
+        "description": "min=0.729, mean=0.729, max=0.729, sum=0.729 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray",
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.578,
+        "description": "min=0.578, mean=0.578, max=0.578, sum=0.578 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray",
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.491335372069317,
+        "description": "min=0.448, mean=0.491, max=0.521, sum=1.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5369590643274853,
+        "description": "min=0.24, mean=0.537, max=0.83, sum=8.054 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9440198511166253,
+        "markdown": false
+      },
+      {
+        "value": 0.3200640288704773,
+        "description": "min=0.311, mean=0.32, max=0.326, sum=0.96 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.703,
+        "description": "min=0.703, mean=0.703, max=0.703, sum=0.703 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.54,
+        "description": "min=0.54, mean=0.54, max=0.54, sum=0.54 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.5152905198776758,
+        "description": "min=0.48, mean=0.515, max=0.547, sum=1.546 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5309473684210526,
+        "description": "min=0.24, mean=0.531, max=0.82, sum=7.964 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.38560794044665014,
+        "markdown": false
+      },
+      {
+        "value": 0.13187631785928275,
+        "description": "min=0.124, mean=0.132, max=0.139, sum=0.396 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.534,
+        "description": "min=0.534, mean=0.534, max=0.534, sum=0.534 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.452,
+        "description": "min=0.452, mean=0.452, max=0.452, sum=0.452 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.23904179408766565,
+        "description": "min=0.209, mean=0.239, max=0.286, sum=0.717 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23079532163742691,
+        "description": "min=0.2, mean=0.231, max=0.281, sum=3.462 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.193151364764268,
+        "markdown": false
+      },
+      {
+        "value": 0.05326475617936846,
+        "description": "min=0.048, mean=0.053, max=0.057, sum=0.16 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.405,
+        "description": "min=0.405, mean=0.405, max=0.405, sum=0.405 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.386,
+        "description": "min=0.386, mean=0.386, max=0.386, sum=0.386 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.20744138634046894,
+        "description": "min=0.173, mean=0.207, max=0.257, sum=0.622 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20512280701754387,
+        "description": "min=0.09, mean=0.205, max=0.272, sum=3.077 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.10153846153846155,
+        "markdown": false
+      },
+      {
+        "value": 0.012133718750385417,
+        "description": "min=0.009, mean=0.012, max=0.018, sum=0.036 (3)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.27,
+        "description": "min=0.27, mean=0.27, max=0.27, sum=0.27 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.266,
+        "description": "min=0.266, mean=0.266, max=0.266, sum=0.266 (1)\n\u26a0 Brown et al. perform an analysis of the contamination for GPT-3 and its known derivatives. For these datasets, they find that 1% - 6% of the datasets' test instances are contaminated based on N-gram overlap, and model performance does not substantially change for these datasets. See Table C.1 on page 45 of https://arxiv.org/pdf/2005.14165.pdf.",
+        "style": {
+          "color": "gray"
+        },
+        "markdown": false,
+        "contamination_level": "weak"
+      },
+      {
+        "value": 0.191131498470948,
+        "description": "min=0.18, mean=0.191, max=0.213, sum=0.573 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.201766081871345,
+        "description": "min=0.11, mean=0.202, max=0.28, sum=3.026 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9333333333333333,
+        "markdown": false
+      },
+      {
+        "value": 0.3309794595447127,
+        "description": "min=0.331, mean=0.331, max=0.331, sum=0.331 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.5137614678899083,
+        "description": "min=0.514, mean=0.514, max=0.514, sum=0.514 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5299649122807017,
+        "description": "min=0.26, mean=0.53, max=0.8, sum=2.65 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6871794871794872,
+        "markdown": false
+      },
+      {
+        "value": 0.2871379631388369,
+        "description": "min=0.287, mean=0.287, max=0.287, sum=0.287 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.25535168195718655,
+        "description": "min=0.255, mean=0.255, max=0.255, sum=0.255 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31312280701754386,
+        "description": "min=0.12, mean=0.313, max=0.66, sum=1.566 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4153846153846154,
+        "markdown": false
+      },
+      {
+        "value": 0.14546689822682907,
+        "description": "min=0.145, mean=0.145, max=0.145, sum=0.145 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.24770642201834864,
+        "description": "min=0.248, mean=0.248, max=0.248, sum=0.248 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23210526315789473,
+        "description": "min=0.2, mean=0.232, max=0.29, sum=1.161 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.24102564102564103,
+        "markdown": false
+      },
+      {
+        "value": 0.1431948167839223,
+        "description": "min=0.143, mean=0.143, max=0.143, sum=0.143 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.17889908256880735,
+        "description": "min=0.179, mean=0.179, max=0.179, sum=0.179 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22210526315789475,
+        "description": "min=0.18, mean=0.222, max=0.27, sum=1.111 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.37435897435897436,
+        "markdown": false
+      },
+      {
+        "value": 0.19300226376410895,
+        "description": "min=0.193, mean=0.193, max=0.193, sum=0.193 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.16972477064220184,
+        "description": "min=0.17, mean=0.17, max=0.17, sum=0.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275859649122807,
+        "description": "min=0.219, mean=0.276, max=0.34, sum=1.379 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4307692307692308,
+        "markdown": false
+      },
+      {
+        "value": 0.16419040044922398,
+        "description": "min=0.164, mean=0.164, max=0.164, sum=0.164 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.1834862385321101,
+        "description": "min=0.183, mean=0.183, max=0.183, sum=0.183 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.30533333333333335,
+        "description": "min=0.167, mean=0.305, max=0.48, sum=1.527 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6717948717948719,
+        "markdown": false
+      },
+      {
+        "value": 0.28717918481295357,
+        "description": "min=0.287, mean=0.287, max=0.287, sum=0.287 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.18960244648318042,
+        "description": "min=0.19, mean=0.19, max=0.19, sum=0.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40989473684210526,
+        "description": "min=0.24, mean=0.41, max=0.64, sum=2.049 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5435897435897435,
+        "markdown": false
+      },
+      {
+        "value": 0.23301952773256637,
+        "description": "min=0.233, mean=0.233, max=0.233, sum=0.233 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.18042813455657492,
+        "description": "min=0.18, mean=0.18, max=0.18, sum=0.18 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40038596491228073,
+        "description": "min=0.24, mean=0.4, max=0.61, sum=2.002 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.517948717948718,
+        "markdown": false
+      },
+      {
+        "value": 0.2334955595363806,
+        "description": "min=0.233, mean=0.233, max=0.233, sum=0.233 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.21253822629969418,
+        "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26063157894736844,
+        "description": "min=0.15, mean=0.261, max=0.33, sum=1.303 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.35384615384615387,
+        "markdown": false
+      },
+      {
+        "value": 0.14824932914209746,
+        "description": "min=0.148, mean=0.148, max=0.148, sum=0.148 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.1834862385321101,
+        "description": "min=0.183, mean=0.183, max=0.183, sum=0.183 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2613684210526316,
+        "description": "min=0.2, mean=0.261, max=0.32, sum=1.307 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8820512820512821,
+        "markdown": false
+      },
+      {
+        "value": 0.33840782877152153,
+        "description": "min=0.338, mean=0.338, max=0.338, sum=0.338 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.29204892966360857,
+        "description": "min=0.292, mean=0.292, max=0.292, sum=0.292 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4803859649122807,
+        "description": "min=0.272, mean=0.48, max=0.78, sum=2.402 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8717948717948718,
+        "markdown": false
+      },
+      {
+        "value": 0.33094416222152356,
+        "description": "min=0.331, mean=0.331, max=0.331, sum=0.331 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.3119266055045872,
+        "description": "min=0.312, mean=0.312, max=0.312, sum=0.312 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4658596491228071,
+        "description": "min=0.219, mean=0.466, max=0.8, sum=2.329 (5)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.39487179487179486,
+        "markdown": false
+      },
+      {
+        "value": 0.12026039507733897,
+        "description": "min=0.112, mean=0.12, max=0.124, sum=0.361 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.1915137614678899,
+        "description": "min=0.148, mean=0.192, max=0.229, sum=0.766 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3148771929824561,
+        "description": "min=0.22, mean=0.315, max=0.43, sum=4.723 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4769230769230769,
+        "markdown": false
+      },
+      {
+        "value": 0.276181640672073,
+        "description": "min=0.272, mean=0.276, max=0.282, sum=0.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.15188583078491336,
+        "description": "min=0.147, mean=0.152, max=0.157, sum=0.456 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3714502923976608,
+        "description": "min=0.19, mean=0.371, max=0.66, sum=5.572 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9897435897435898,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3624320629787478,
+        "description": "min=0.356, mean=0.362, max=0.367, sum=1.087 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.5417940876656473,
+        "description": "min=0.529, mean=0.542, max=0.56, sum=1.625 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5881637426900584,
+        "description": "min=0.34, mean=0.588, max=0.86, sum=8.822 (15)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.31794871794871793,
+        "markdown": false
+      },
+      {
+        "value": 0.0516362934670568,
+        "description": "min=0.051, mean=0.052, max=0.053, sum=0.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.2018348623853211,
+        "description": "min=0.197, mean=0.202, max=0.203, sum=0.807 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2433684210526316,
+        "description": "min=0.2, mean=0.243, max=0.28, sum=3.651 (15)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/knowledge_fairness.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/knowledge_fairness.json"
+    }
+  ],
+  "name": "fairness"
+}

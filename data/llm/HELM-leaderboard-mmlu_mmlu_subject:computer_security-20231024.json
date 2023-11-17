@@ -1,0 +1,4911 @@
+{
+  "title": "subject: computer_security",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "ECE (10-bin)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "EM (Robustness)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "MMLU",
+        "perturbation": "Robustness"
+      }
+    },
+    {
+      "value": "EM (Fairness)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\nExact match: Fraction of instances that the predicted output matches a correct reference exactly.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "MMLU",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "MMLU"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "MMLU"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3133333333333333,
+        "description": "min=0.29, mean=0.313, max=0.33, sum=0.94 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10068610837147839,
+        "description": "min=0.074, mean=0.101, max=0.121, sum=0.302 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27,
+        "description": "min=0.25, mean=0.27, max=0.29, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.29, mean=0.3, max=0.31, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41852757812500024,
+        "description": "min=0.419, mean=0.419, max=0.419, sum=1.256 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24666666666666667,
+        "description": "min=0.24, mean=0.247, max=0.25, sum=0.74 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11468094167379717,
+        "description": "min=0.097, mean=0.115, max=0.134, sum=0.344 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20333333333333337,
+        "description": "min=0.19, mean=0.203, max=0.22, sum=0.61 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20666666666666667,
+        "description": "min=0.19, mean=0.207, max=0.22, sum=0.62 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34789953124999995,
+        "description": "min=0.348, mean=0.348, max=0.348, sum=1.044 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2933333333333334,
+        "description": "min=0.28, mean=0.293, max=0.31, sum=0.88 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09458287944901649,
+        "description": "min=0.082, mean=0.095, max=0.119, sum=0.284 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25333333333333335,
+        "description": "min=0.24, mean=0.253, max=0.26, sum=0.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26,
+        "description": "min=0.25, mean=0.26, max=0.28, sum=0.78 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38066695312499993,
+        "description": "min=0.381, mean=0.381, max=0.381, sum=1.142 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6233333333333334,
+        "description": "min=0.62, mean=0.623, max=0.63, sum=1.87 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09799470312472387,
+        "description": "min=0.067, mean=0.098, max=0.13, sum=0.294 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5733333333333334,
+        "description": "min=0.56, mean=0.573, max=0.6, sum=1.72 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5966666666666667,
+        "description": "min=0.59, mean=0.597, max=0.61, sum=1.79 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6833333333333335,
+        "description": "min=0.68, mean=0.683, max=0.69, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10928205922930512,
+        "description": "min=0.097, mean=0.109, max=0.128, sum=0.328 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.64,
+        "description": "min=0.62, mean=0.64, max=0.67, sum=1.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.68,
+        "description": "min=0.67, mean=0.68, max=0.69, sum=2.04 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6466666666666666,
+        "description": "min=0.64, mean=0.647, max=0.66, sum=1.94 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14923720813570954,
+        "description": "min=0.133, mean=0.149, max=0.172, sum=0.448 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5966666666666667,
+        "description": "min=0.59, mean=0.597, max=0.6, sum=1.79 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6333333333333333,
+        "description": "min=0.63, mean=0.633, max=0.64, sum=1.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.39666666666666667,
+        "description": "min=0.38, mean=0.397, max=0.42, sum=1.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12937040411709103,
+        "description": "min=0.102, mean=0.129, max=0.155, sum=0.388 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.30666666666666664,
+        "description": "min=0.29, mean=0.307, max=0.34, sum=0.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34,
+        "description": "min=0.32, mean=0.34, max=0.37, sum=1.02 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 308.59,
+        "description": "min=308.59, mean=308.59, max=308.59, sum=925.77 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-base%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3133333333333333,
+        "description": "min=0.3, mean=0.313, max=0.32, sum=0.94 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11573741468580782,
+        "description": "min=0.094, mean=0.116, max=0.13, sum=0.347 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22666666666666666,
+        "description": "min=0.21, mean=0.227, max=0.24, sum=0.68 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.23, mean=0.24, max=0.25, sum=0.72 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.60999999999996,
+        "description": "min=387.61, mean=387.61, max=387.61, sum=1162.83 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-extended%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.41333333333333333,
+        "description": "min=0.41, mean=0.413, max=0.42, sum=1.24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1579880745347255,
+        "description": "min=0.147, mean=0.158, max=0.172, sum=0.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33666666666666667,
+        "description": "min=0.3, mean=0.337, max=0.37, sum=1.01 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34,
+        "description": "min=0.33, mean=0.34, max=0.35, sum=1.02 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.60999999999996,
+        "description": "min=387.61, mean=387.61, max=387.61, sum=1162.83 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3DAlephAlpha_luminous-supreme%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.47,
+        "description": "min=0.44, mean=0.47, max=0.5, sum=1.41 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17056656607046103,
+        "description": "min=0.124, mean=0.171, max=0.212, sum=0.512 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38000000000000006,
+        "description": "min=0.36, mean=0.38, max=0.39, sum=1.14 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39999999999999997,
+        "description": "min=0.39, mean=0.4, max=0.41, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.60999999999996,
+        "description": "min=387.61, mean=387.61, max=387.61, sum=1162.83 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6699999999999999,
+        "description": "min=0.66, mean=0.67, max=0.69, sum=2.01 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.063, mean=0.09, max=0.111, sum=0.271 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.64,
+        "description": "min=0.63, mean=0.64, max=0.65, sum=1.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6566666666666667,
+        "description": "min=0.64, mean=0.657, max=0.68, sum=1.97 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5859159667968753,
+        "description": "min=0.586, mean=0.586, max=0.586, sum=1.758 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.38999999999999996,
+        "description": "min=0.37, mean=0.39, max=0.41, sum=1.17 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11985007640801015,
+        "description": "min=0.115, mean=0.12, max=0.128, sum=0.36 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3233333333333333,
+        "description": "min=0.3, mean=0.323, max=0.34, sum=0.97 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36999999999999994,
+        "description": "min=0.35, mean=0.37, max=0.38, sum=1.11 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34413451552391056,
+        "description": "min=0.342, mean=0.344, max=0.347, sum=1.032 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 365.54,
+        "description": "min=365.54, mean=365.54, max=365.54, sum=1096.62 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_t0pp%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.44, mean=0.45, max=0.46, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1320418789604815,
+        "description": "min=0.121, mean=0.132, max=0.142, sum=0.396 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43,
+        "description": "min=0.42, mean=0.43, max=0.45, sum=1.29 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43333333333333335,
+        "description": "min=0.43, mean=0.433, max=0.44, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1438595759868621,
+        "description": "min=0.144, mean=0.144, max=0.144, sum=0.432 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 386.05,
+        "description": "min=386.05, mean=386.05, max=386.05, sum=1158.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.41,
+        "description": "min=0.36, mean=0.41, max=0.46, sum=1.23 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17335689657865375,
+        "description": "min=0.139, mean=0.173, max=0.196, sum=0.52 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3499999999999999,
+        "description": "min=0.32, mean=0.35, max=0.37, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35999999999999993,
+        "description": "min=0.32, mean=0.36, max=0.41, sum=1.08 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47919388671874974,
+        "description": "min=0.479, mean=0.479, max=0.479, sum=1.438 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.37000000000000005,
+        "description": "min=0.32, mean=0.37, max=0.4, sum=1.11 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12337197434530917,
+        "description": "min=0.097, mean=0.123, max=0.147, sum=0.37 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.30666666666666664,
+        "description": "min=0.29, mean=0.307, max=0.32, sum=0.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.3, mean=0.333, max=0.36, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29847886718750005,
+        "description": "min=0.298, mean=0.298, max=0.298, sum=0.895 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.32666666666666666,
+        "description": "min=0.29, mean=0.327, max=0.36, sum=0.98 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11181490600851485,
+        "description": "min=0.106, mean=0.112, max=0.121, sum=0.335 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20333333333333334,
+        "description": "min=0.17, mean=0.203, max=0.24, sum=0.61 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.24, mean=0.267, max=0.29, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26943001953124995,
+        "description": "min=0.269, mean=0.269, max=0.269, sum=0.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22,
+        "description": "min=0.2, mean=0.22, max=0.25, sum=0.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13349777009089045,
+        "description": "min=0.107, mean=0.133, max=0.158, sum=0.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14,
+        "description": "min=0.13, mean=0.14, max=0.16, sum=0.42 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19333333333333333,
+        "description": "min=0.16, mean=0.193, max=0.23, sum=0.58 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26847544921875,
+        "description": "min=0.268, mean=0.268, max=0.268, sum=0.805 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5133333333333333,
+        "description": "min=0.5, mean=0.513, max=0.52, sum=1.54 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11761177274835892,
+        "description": "min=0.104, mean=0.118, max=0.136, sum=0.353 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43,
+        "description": "min=0.42, mean=0.43, max=0.45, sum=1.29 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.43, mean=0.45, max=0.46, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.27,
+        "description": "min=0.26, mean=0.27, max=0.29, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11362330752179094,
+        "description": "min=0.107, mean=0.114, max=0.121, sum=0.341 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24333333333333332,
+        "description": "min=0.24, mean=0.243, max=0.25, sum=0.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26,
+        "description": "min=0.25, mean=0.26, max=0.27, sum=0.78 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49666666666666665,
+        "description": "min=0.46, mean=0.497, max=0.52, sum=1.49 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13228107680823697,
+        "description": "min=0.126, mean=0.132, max=0.142, sum=0.397 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4266666666666667,
+        "description": "min=0.42, mean=0.427, max=0.43, sum=1.28 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44333333333333336,
+        "description": "min=0.43, mean=0.443, max=0.46, sum=1.33 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6266666666666666,
+        "description": "min=0.61, mean=0.627, max=0.64, sum=1.88 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15980931893047942,
+        "description": "min=0.13, mean=0.16, max=0.177, sum=0.479 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5433333333333333,
+        "description": "min=0.51, mean=0.543, max=0.56, sum=1.63 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333334,
+        "description": "min=0.57, mean=0.583, max=0.59, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 397.73,
+        "description": "min=397.73, mean=397.73, max=397.73, sum=1193.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.29666666666666663,
+        "description": "min=0.29, mean=0.297, max=0.3, sum=0.89 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11265441143729527,
+        "description": "min=0.097, mean=0.113, max=0.125, sum=0.338 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.25, mean=0.267, max=0.28, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.26, mean=0.267, max=0.27, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.07118436763683955,
+        "description": "min=0.07, mean=0.071, max=0.072, sum=0.214 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.25333333333333335,
+        "description": "min=0.23, mean=0.253, max=0.28, sum=0.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1239017534321159,
+        "description": "min=0.11, mean=0.124, max=0.143, sum=0.372 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.17, mean=0.183, max=0.2, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21,
+        "description": "min=0.19, mean=0.21, max=0.23, sum=0.63 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2745299462477366,
+        "description": "min=0.274, mean=0.275, max=0.275, sum=0.824 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=1164.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Deleutherai_pythia-6.9b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26,
+        "description": "min=0.26, mean=0.26, max=0.26, sum=0.26 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11319467098641812,
+        "description": "min=0.113, mean=0.113, max=0.113, sum=0.113 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.24 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "description": "min=0.25, mean=0.25, max=0.25, sum=0.25 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Deleutherai_pythia-12b-v0%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.29,
+        "description": "min=0.29, mean=0.29, max=0.29, sum=0.29 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09205080958852419,
+        "description": "min=0.092, mean=0.092, max=0.092, sum=0.092 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17,
+        "description": "min=0.17, mean=0.17, max=0.17, sum=0.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19,
+        "description": "min=0.19, mean=0.19, max=0.19, sum=0.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_t5-11b%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.27,
+        "description": "min=0.23, mean=0.27, max=0.3, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12570201728145283,
+        "description": "min=0.117, mean=0.126, max=0.142, sum=0.377 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2333333333333333,
+        "description": "min=0.19, mean=0.233, max=0.26, sum=0.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19666666666666668,
+        "description": "min=0.19, mean=0.197, max=0.21, sum=0.59 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2312925594051678,
+        "description": "min=0.23, mean=0.231, max=0.232, sum=0.694 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.943333333333334,
+        "description": "min=4.94, mean=4.943, max=4.95, sum=14.83 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 383.17333333333335,
+        "description": "min=382.49, mean=383.173, max=383.66, sum=1149.52 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_ul2%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.35000000000000003,
+        "description": "min=0.34, mean=0.35, max=0.37, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10889946225151632,
+        "description": "min=0.09, mean=0.109, max=0.12, sum=0.327 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3233333333333333,
+        "description": "min=0.31, mean=0.323, max=0.34, sum=0.97 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33666666666666667,
+        "description": "min=0.33, mean=0.337, max=0.35, sum=1.01 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17963503815730417,
+        "description": "min=0.179, mean=0.18, max=0.18, sum=0.539 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.94,
+        "description": "min=4.93, mean=4.94, max=4.95, sum=14.82 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.0,
+        "description": "min=386.49, mean=387, max=387.66, sum=1161 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3933333333333333,
+        "description": "min=0.35, mean=0.393, max=0.42, sum=1.18 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1433199763875271,
+        "description": "min=0.132, mean=0.143, max=0.161, sum=0.43 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3133333333333333,
+        "description": "min=0.29, mean=0.313, max=0.33, sum=0.94 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35333333333333333,
+        "description": "min=0.32, mean=0.353, max=0.39, sum=1.06 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11762017247222724,
+        "description": "min=0.117, mean=0.118, max=0.119, sum=0.353 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.27,
+        "description": "min=0.26, mean=0.27, max=0.29, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11247692521605653,
+        "description": "min=0.101, mean=0.112, max=0.132, sum=0.337 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19999999999999998,
+        "description": "min=0.18, mean=0.2, max=0.23, sum=0.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22,
+        "description": "min=0.19, mean=0.22, max=0.24, sum=0.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.044782473420103386,
+        "description": "min=0.043, mean=0.045, max=0.047, sum=0.134 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.13, mean=0.13, max=0.13, sum=0.13 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36,
+        "description": "min=0.36, mean=0.36, max=0.36, sum=0.36 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42,
+        "description": "min=0.42, mean=0.42, max=0.42, sum=0.42 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.147, mean=0.147, max=0.147, sum=0.147 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.58,
+        "description": "min=0.58, mean=0.58, max=0.58, sum=0.58 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.57,
+        "description": "min=0.57, mean=0.57, max=0.57, sum=0.57 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.078, mean=0.078, max=0.078, sum=0.078 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.66,
+        "description": "min=0.66, mean=0.66, max=0.66, sum=0.66 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-65b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.79,
+        "description": "min=0.79, mean=0.79, max=0.79, sum=0.79 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.73,
+        "description": "min=0.73, mean=0.73, max=0.73, sum=0.73 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.77,
+        "description": "min=0.77, mean=0.77, max=0.77, sum=0.77 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.57,
+        "description": "min=0.57, mean=0.57, max=0.57, sum=0.57 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.56,
+        "description": "min=0.56, mean=0.56, max=0.56, sum=0.56 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.68,
+        "description": "min=0.68, mean=0.68, max=0.68, sum=0.68 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmeta_llama-2-70b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.76,
+        "description": "min=0.76, mean=0.76, max=0.76, sum=0.76 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dstanford_alpaca-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.51,
+        "description": "min=0.51, mean=0.51, max=0.51, sum=0.51 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17647420561225885,
+        "description": "min=0.176, mean=0.176, max=0.176, sum=0.176 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44,
+        "description": "min=0.44, mean=0.44, max=0.44, sum=0.44 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48,
+        "description": "min=0.48, mean=0.48, max=0.48, sum=0.48 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dlmsys_vicuna-7b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.64,
+        "description": "min=0.64, mean=0.64, max=0.64, sum=0.64 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13485917615293308,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.135 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.57,
+        "description": "min=0.57, mean=0.57, max=0.57, sum=0.57 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.58,
+        "description": "min=0.58, mean=0.58, max=0.58, sum=0.58 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dlmsys_vicuna-13b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15566428719073158,
+        "description": "min=0.156, mean=0.156, max=0.156, sum=0.156 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.62,
+        "description": "min=0.62, mean=0.62, max=0.62, sum=0.62 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 428.17,
+        "description": "min=428.17, mean=428.17, max=428.17, sum=428.17 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6833333333333332,
+        "description": "min=0.68, mean=0.683, max=0.69, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13057923708901864,
+        "description": "min=0.127, mean=0.131, max=0.134, sum=0.392 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6266666666666666,
+        "description": "min=0.61, mean=0.627, max=0.65, sum=1.88 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.66,
+        "description": "min=0.65, mean=0.66, max=0.67, sum=1.98 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24333333333333332,
+        "description": "min=0.23, mean=0.243, max=0.25, sum=0.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14200580883533165,
+        "description": "min=0.116, mean=0.142, max=0.175, sum=0.426 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19000000000000003,
+        "description": "min=0.18, mean=0.19, max=0.2, sum=0.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22333333333333336,
+        "description": "min=0.22, mean=0.223, max=0.23, sum=0.67 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5599999999999999,
+        "description": "min=0.54, mean=0.56, max=0.59, sum=1.68 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12558924735759688,
+        "description": "min=0.121, mean=0.126, max=0.134, sum=0.377 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48,
+        "description": "min=0.44, mean=0.48, max=0.52, sum=1.44 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5033333333333333,
+        "description": "min=0.48, mean=0.503, max=0.52, sum=1.51 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21643040039062503,
+        "description": "min=0.216, mean=0.216, max=0.216, sum=0.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2866666666666667,
+        "description": "min=0.28, mean=0.287, max=0.29, sum=0.86 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09515461681451905,
+        "description": "min=0.081, mean=0.095, max=0.109, sum=0.285 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19000000000000003,
+        "description": "min=0.18, mean=0.19, max=0.2, sum=0.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26333333333333336,
+        "description": "min=0.26, mean=0.263, max=0.27, sum=0.79 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09104115234375003,
+        "description": "min=0.091, mean=0.091, max=0.091, sum=0.273 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22666666666666668,
+        "description": "min=0.2, mean=0.227, max=0.25, sum=0.68 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1271115976957019,
+        "description": "min=0.105, mean=0.127, max=0.14, sum=0.381 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16,
+        "description": "min=0.16, mean=0.16, max=0.16, sum=0.48 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19666666666666666,
+        "description": "min=0.16, mean=0.197, max=0.24, sum=0.59 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11921455078124998,
+        "description": "min=0.119, mean=0.119, max=0.119, sum=0.358 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.27666666666666667,
+        "description": "min=0.26, mean=0.277, max=0.3, sum=0.83 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12566442658583743,
+        "description": "min=0.113, mean=0.126, max=0.138, sum=0.377 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22999999999999998,
+        "description": "min=0.21, mean=0.23, max=0.26, sum=0.69 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.25, mean=0.267, max=0.3, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14047474609375,
+        "description": "min=0.14, mean=0.14, max=0.14, sum=0.421 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7633333333333333,
+        "description": "min=0.74, mean=0.763, max=0.78, sum=2.29 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18982027860412187,
+        "description": "min=0.166, mean=0.19, max=0.224, sum=0.569 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7266666666666666,
+        "description": "min=0.72, mean=0.727, max=0.73, sum=2.18 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7533333333333333,
+        "description": "min=0.74, mean=0.753, max=0.77, sum=2.26 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7633333333333333,
+        "description": "min=0.76, mean=0.763, max=0.77, sum=2.29 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14209236867058628,
+        "description": "min=0.134, mean=0.142, max=0.15, sum=0.426 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7200000000000001,
+        "description": "min=0.71, mean=0.72, max=0.73, sum=2.16 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7399999999999999,
+        "description": "min=0.73, mean=0.74, max=0.75, sum=2.22 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20729065429687496,
+        "description": "min=0.207, mean=0.207, max=0.207, sum=0.622 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24333333333333332,
+        "description": "min=0.24, mean=0.243, max=0.25, sum=0.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4796885057233169,
+        "description": "min=0.453, mean=0.48, max=0.513, sum=1.439 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23666666666666666,
+        "description": "min=0.23, mean=0.237, max=0.24, sum=0.71 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.72 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12965806640625002,
+        "description": "min=0.13, mean=0.13, max=0.13, sum=0.389 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22333333333333336,
+        "description": "min=0.22, mean=0.223, max=0.23, sum=0.67 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.32967879774276465,
+        "description": "min=0.307, mean=0.33, max=0.361, sum=0.989 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.18, mean=0.183, max=0.19, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2066666666666667,
+        "description": "min=0.2, mean=0.207, max=0.22, sum=0.62 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13105798828125007,
+        "description": "min=0.131, mean=0.131, max=0.131, sum=0.393 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.29, mean=0.3, max=0.31, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40898990230589655,
+        "description": "min=0.357, mean=0.409, max=0.444, sum=1.227 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25333333333333335,
+        "description": "min=0.22, mean=0.253, max=0.28, sum=0.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26333333333333336,
+        "description": "min=0.24, mean=0.263, max=0.28, sum=0.79 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08652787109375,
+        "description": "min=0.087, mean=0.087, max=0.087, sum=0.26 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.77,
+        "description": "min=0.77, mean=0.77, max=0.77, sum=0.77 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.72,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=0.72 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.73,
+        "description": "min=0.73, mean=0.73, max=0.73, sum=0.73 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 371.54,
+        "description": "min=371.54, mean=371.54, max=371.54, sum=371.54 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.06,
+        "description": "min=1.06, mean=1.06, max=1.06, sum=1.06 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.24 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 371.54,
+        "description": "min=371.54, mean=371.54, max=371.54, sum=371.54 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.61,
+        "description": "min=1.61, mean=1.61, max=1.61, sum=1.61 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.24 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11657173647960638,
+        "description": "min=0.117, mean=0.117, max=0.117, sum=0.117 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19,
+        "description": "min=0.19, mean=0.19, max=0.19, sum=0.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22,
+        "description": "min=0.22, mean=0.22, max=0.22, sum=0.22 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12829402234456555,
+        "description": "min=0.128, mean=0.128, max=0.128, sum=0.128 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18,
+        "description": "min=0.18, mean=0.18, max=0.18, sum=0.18 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18,
+        "description": "min=0.18, mean=0.18, max=0.18, sum=0.18 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-base-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.38,
+        "description": "min=0.38, mean=0.38, max=0.38, sum=0.38 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.07996552614477029,
+        "description": "min=0.08, mean=0.08, max=0.08, sum=0.08 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.33,
+        "description": "min=0.33, mean=0.33, max=0.33, sum=0.33 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34,
+        "description": "min=0.34, mean=0.34, max=0.34, sum=0.34 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1286177423175291,
+        "description": "min=0.129, mean=0.129, max=0.129, sum=0.129 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42,
+        "description": "min=0.42, mean=0.42, max=0.42, sum=0.42 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42,
+        "description": "min=0.42, mean=0.42, max=0.42, sum=0.42 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmosaicml_mpt-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.62,
+        "description": "min=0.62, mean=0.62, max=0.62, sum=0.62 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dmosaicml_mpt-instruct-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.62,
+        "description": "min=0.62, mean=0.62, max=0.62, sum=0.62 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.59,
+        "description": "min=0.59, mean=0.59, max=0.59, sum=0.59 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.61,
+        "description": "min=0.61, mean=0.61, max=0.61, sum=0.61 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.19,
+        "description": "min=388.19, mean=388.19, max=388.19, sum=388.19 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.34,
+        "description": "min=0.34, mean=0.34, max=0.34, sum=0.34 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.24,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.24 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 389.6,
+        "description": "min=389.6, mean=389.6, max=389.6, sum=389.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-7b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.31,
+        "description": "min=0.31, mean=0.31, max=0.31, sum=0.31 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.28,
+        "description": "min=0.28, mean=0.28, max=0.28, sum=0.28 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29,
+        "description": "min=0.29, mean=0.29, max=0.29, sum=0.29 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 389.6,
+        "description": "min=389.6, mean=389.6, max=389.6, sum=389.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-40b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.67,
+        "description": "min=0.67, mean=0.67, max=0.67, sum=0.67 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.61,
+        "description": "min=0.61, mean=0.61, max=0.61, sum=0.61 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.63,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 389.6,
+        "description": "min=389.6, mean=389.6, max=389.6, sum=389.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtiiuae_falcon-40b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.61,
+        "description": "min=0.61, mean=0.61, max=0.61, sum=0.61 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.58,
+        "description": "min=0.58, mean=0.58, max=0.58, sum=0.58 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.59,
+        "description": "min=0.59, mean=0.59, max=0.59, sum=0.59 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=100 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 389.6,
+        "description": "min=389.6, mean=389.6, max=389.6, sum=389.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_glm%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4466666666666666,
+        "description": "min=0.43, mean=0.447, max=0.47, sum=1.34 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17222430331798386,
+        "description": "min=0.156, mean=0.172, max=0.196, sum=0.517 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "description": "min=0.39, mean=0.417, max=0.44, sum=1.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "description": "min=0.39, mean=0.417, max=0.43, sum=1.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5462319111824034,
+        "description": "min=0.546, mean=0.546, max=0.546, sum=1.639 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 364.87000000000006,
+        "description": "min=364.87, mean=364.87, max=364.87, sum=1094.61 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dwriter_palmyra-instruct-30%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.58,
+        "description": "min=0.57, mean=0.58, max=0.59, sum=1.74 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5499999999999999,
+        "description": "min=0.5, mean=0.55, max=0.58, sum=1.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5499999999999999,
+        "description": "min=0.53, mean=0.55, max=0.58, sum=1.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dwriter_palmyra-x%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.74, mean=0.75, max=0.76, sum=2.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7166666666666667,
+        "description": "min=0.71, mean=0.717, max=0.73, sum=2.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7399999999999999,
+        "description": "min=0.73, mean=0.74, max=0.75, sum=2.22 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.3999999999999,
+        "description": "min=387.4, mean=387.4, max=387.4, sum=1162.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=mmlu&subgroup=subject%3A%20computer_security&runSpecs=%5B%22mmlu%3Asubject%3Dcomputer_security%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dtogether_yalm%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.28,
+        "description": "min=0.28, mean=0.28, max=0.28, sum=0.84 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6789330429620812,
+        "description": "min=0.671, mean=0.679, max=0.689, sum=2.037 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28,
+        "description": "min=0.28, mean=0.28, max=0.28, sum=0.84 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28,
+        "description": "min=0.28, mean=0.28, max=0.28, sum=0.84 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21511975089708946,
+        "description": "min=0.212, mean=0.215, max=0.217, sum=0.645 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 100.0,
+        "description": "min=100, mean=100, max=100, sum=300 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.23,
+        "description": "min=380.23, mean=380.23, max=380.23, sum=1140.69 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/mmlu_mmlu_subject:computer_security.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/mmlu_mmlu_subject:computer_security.json"
+    }
+  ],
+  "name": "mmlu_subject:computer_security"
+}

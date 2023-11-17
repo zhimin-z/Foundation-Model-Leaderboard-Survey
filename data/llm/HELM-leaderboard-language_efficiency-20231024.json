@@ -1,0 +1,1120 @@
+{
+  "title": "Efficiency",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "The Pile - Denoised inference time (s)",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "TwitterAAE - Denoised inference time (s)",
+      "description": "The TwitterAAE corpus of [Blodgett et al. (2016)](https://aclanthology.org/D16-1120/) for measuring language model performance in tweets as a function of speaker dialect.\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "TwitterAAE"
+      }
+    },
+    {
+      "value": "ICE - Denoised inference time (s)",
+      "description": "The International Corpus of English (ICE) drawn from English speakers from various places in the world, initiated by [Greenbaum (1991)](https://www.cambridge.org/core/journals/english-today/article/abs/ice-the-international-corpus-of-english/47808205394C538393C3FD8E62E5E701).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "ICE"
+      }
+    },
+    {
+      "value": "BLiMP - Denoised inference time (s)",
+      "description": "The Benchmark of Linguistic Minimal Pairs for English (BLiMP) for measuring performance on linguistic phenomena using minimal pair design [(Warstadt et al., 2020)](https://aclanthology.org/2020.tacl-1.25/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "BLiMP"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1875,
+        "markdown": false
+      },
+      {
+        "value": 0.8475487923672765,
+        "description": "min=0.422, mean=0.848, max=1.13, sum=5.085 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2626217089843754,
+        "description": "min=0.263, mean=0.263, max=0.263, sum=0.525 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1041165339024241,
+        "description": "min=0.984, mean=1.104, max=1.13, sum=6.625 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2598798779296889,
+        "description": "min=0.259, mean=0.26, max=0.26, sum=1.04 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.32857142857142857,
+        "markdown": false
+      },
+      {
+        "value": 0.6419919242598767,
+        "description": "min=0.35, mean=0.642, max=0.835, sum=3.852 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2402709824218751,
+        "description": "min=0.24, mean=0.24, max=0.24, sum=0.481 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8178366685639861,
+        "description": "min=0.736, mean=0.818, max=0.835, sum=4.907 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23871735839843827,
+        "description": "min=0.238, mean=0.239, max=0.239, sum=0.955 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.21785714285714286,
+        "markdown": false
+      },
+      {
+        "value": 0.753306670563767,
+        "description": "min=0.426, mean=0.753, max=0.969, sum=4.52 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28772452539062543,
+        "description": "min=0.287, mean=0.288, max=0.288, sum=0.575 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9480739088726212,
+        "description": "min=0.852, mean=0.948, max=0.968, sum=5.688 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2827861767578131,
+        "description": "min=0.281, mean=0.283, max=0.283, sum=1.131 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.08333333333333333,
+        "markdown": false
+      },
+      {
+        "value": 2.9107060307669976,
+        "description": "min=0.771, mean=2.911, max=9.758, sum=17.464 (6)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.736466325195313,
+        "description": "min=0.731, mean=0.736, max=0.742, sum=1.473 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8483537224824618,
+        "description": "min=1.423, mean=1.848, max=3.327, sum=11.09 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45192962500000017,
+        "description": "min=0.447, mean=0.452, max=0.455, sum=1.808 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.9687673335811681,
+        "description": "min=0.628, mean=0.969, max=1.172, sum=5.813 (6)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.03561218068336269,
+        "description": "min=0.035, mean=0.036, max=0.036, sum=0.071 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.1457290420102664,
+        "description": "min=1.141, mean=1.146, max=1.156, sum=6.874 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4481422901528853,
+        "description": "min=0.041, mean=0.448, max=1.093, sum=1.793 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2232142857142857,
+        "markdown": false
+      },
+      {
+        "value": 0.6536378630351761,
+        "description": "min=0.471, mean=0.654, max=0.944, sum=1.961 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.319862096679687,
+        "description": "min=0.319, mean=0.32, max=0.321, sum=0.64 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9443136763333732,
+        "description": "min=0.932, mean=0.944, max=0.947, sum=5.666 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31576679492187415,
+        "description": "min=0.314, mean=0.316, max=0.316, sum=1.263 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4089285714285714,
+        "markdown": false
+      },
+      {
+        "value": 0.45567770648827927,
+        "description": "min=0.31, mean=0.456, max=0.69, sum=1.367 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20456363964843743,
+        "description": "min=0.204, mean=0.205, max=0.205, sum=0.409 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6899098133798774,
+        "description": "min=0.68, mean=0.69, max=0.692, sum=4.139 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20245248144531222,
+        "description": "min=0.202, mean=0.202, max=0.203, sum=0.81 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5071428571428571,
+        "markdown": false
+      },
+      {
+        "value": 0.3698902792855998,
+        "description": "min=0.268, mean=0.37, max=0.533, sum=1.11 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18928297265624988,
+        "description": "min=0.189, mean=0.189, max=0.19, sum=0.379 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5325464697341276,
+        "description": "min=0.526, mean=0.533, max=0.534, sum=3.195 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18776164160156142,
+        "description": "min=0.187, mean=0.188, max=0.188, sum=0.751 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4142857142857143,
+        "markdown": false
+      },
+      {
+        "value": 0.39354988136346974,
+        "description": "min=0.283, mean=0.394, max=0.572, sum=1.181 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21493332714843738,
+        "description": "min=0.215, mean=0.215, max=0.215, sum=0.43 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5714440357894965,
+        "description": "min=0.564, mean=0.571, max=0.573, sum=3.429 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2140362597656245,
+        "description": "min=0.214, mean=0.214, max=0.214, sum=0.856 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "3 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "3 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "3 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "3 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.23333333333333334,
+        "markdown": false
+      },
+      {
+        "value": 0.4545487957788817,
+        "description": "min=0.45, mean=0.455, max=0.458, sum=2.727 (6)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.43774666063785544,
+        "description": "min=0.437, mean=0.438, max=0.438, sum=0.875 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5111227163620132,
+        "description": "min=0.486, mean=0.511, max=0.553, sum=3.067 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5410593883115798,
+        "description": "min=0.504, mean=0.541, max=0.59, sum=2.164 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.11666666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.9020064701332329,
+        "description": "min=0.85, mean=0.902, max=0.94, sum=5.412 (6)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.8239876860380173,
+        "description": "min=0.824, mean=0.824, max=0.824, sum=1.648 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.950689652798172,
+        "description": "min=0.908, mean=0.951, max=1.006, sum=5.704 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4795485499575734,
+        "description": "min=0.012, mean=0.48, max=1.021, sum=1.918 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "markdown": false
+      },
+      {
+        "value": 0.8291283641986077,
+        "description": "min=0.751, mean=0.829, max=0.884, sum=4.975 (6)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.18378463380667753,
+        "description": "min=0.134, mean=0.184, max=0.233, sum=0.368 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.993986411128148,
+        "description": "min=0.932, mean=0.994, max=1.015, sum=5.964 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5168888223273327,
+        "description": "min=0.048, mean=0.517, max=0.986, sum=2.068 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.38333333333333336,
+        "markdown": false
+      },
+      {
+        "value": 0.4954892173905541,
+        "description": "min=0.323, mean=0.495, max=0.782, sum=2.973 (6)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.2739027768756674,
+        "description": "min=1.262, mean=1.274, max=1.285, sum=2.548 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3308091764497742,
+        "description": "min=0.324, mean=0.331, max=0.339, sum=1.985 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19433621144073984,
+        "description": "min=0.103, mean=0.194, max=0.318, sum=0.777 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6178571428571429,
+        "markdown": false
+      },
+      {
+        "value": 0.22648630444649456,
+        "description": "min=0.205, mean=0.226, max=0.239, sum=1.359 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1849201318359373,
+        "description": "min=0.185, mean=0.185, max=0.185, sum=0.37 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2387854716950696,
+        "description": "min=0.238, mean=0.239, max=0.239, sum=1.433 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18400875000000017,
+        "description": "min=0.184, mean=0.184, max=0.184, sum=0.736 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9321428571428572,
+        "markdown": false
+      },
+      {
+        "value": 0.10946915104340038,
+        "description": "min=0.091, mean=0.109, max=0.12, sum=0.657 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.07989462109375012,
+        "description": "min=0.08, mean=0.08, max=0.08, sum=0.16 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12017436156071439,
+        "description": "min=0.119, mean=0.12, max=0.12, sum=0.721 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0794707500000001,
+        "description": "min=0.079, mean=0.079, max=0.08, sum=0.318 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8767857142857143,
+        "markdown": false
+      },
+      {
+        "value": 0.12766683943867405,
+        "description": "min=0.118, mean=0.128, max=0.134, sum=0.766 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11144817480468752,
+        "description": "min=0.111, mean=0.111, max=0.111, sum=0.223 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13357645167240487,
+        "description": "min=0.133, mean=0.134, max=0.134, sum=0.801 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11123537500000014,
+        "description": "min=0.111, mean=0.111, max=0.111, sum=0.445 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7714285714285714,
+        "markdown": false
+      },
+      {
+        "value": 0.1423994499242065,
+        "description": "min=0.14, mean=0.142, max=0.144, sum=0.854 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13638316210937557,
+        "description": "min=0.136, mean=0.136, max=0.136, sum=0.273 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14397123498217643,
+        "description": "min=0.144, mean=0.144, max=0.144, sum=0.864 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13620175000000034,
+        "description": "min=0.136, mean=0.136, max=0.136, sum=0.545 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "6 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "markdown": false
+      },
+      {
+        "value": 0.27909842959569836,
+        "description": "min=0.189, mean=0.279, max=0.347, sum=1.675 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1596260527343749,
+        "description": "min=0.159, mean=0.16, max=0.16, sum=0.319 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31732851610709,
+        "description": "min=0.28, mean=0.317, max=0.337, sum=1.904 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1583786249999995,
+        "description": "min=0.158, mean=0.158, max=0.159, sum=0.634 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7910714285714286,
+        "markdown": false
+      },
+      {
+        "value": 0.14748904771651317,
+        "description": "min=0.133, mean=0.147, max=0.156, sum=0.885 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12014833398437608,
+        "description": "min=0.12, mean=0.12, max=0.12, sum=0.24 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15620569416568877,
+        "description": "min=0.156, mean=0.156, max=0.156, sum=0.937 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11960525000000066,
+        "description": "min=0.119, mean=0.12, max=0.12, sum=0.478 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7357142857142858,
+        "markdown": false
+      },
+      {
+        "value": 0.15499952592827024,
+        "description": "min=0.132, mean=0.155, max=0.169, sum=0.93 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12251203515624998,
+        "description": "min=0.122, mean=0.123, max=0.123, sum=0.245 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16847486691053973,
+        "description": "min=0.167, mean=0.168, max=0.169, sum=1.011 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12226900000000016,
+        "description": "min=0.122, mean=0.122, max=0.122, sum=0.489 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9875,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.10754665397556828,
+        "description": "min=0.087, mean=0.108, max=0.12, sum=0.645 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.07663975585937499,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.153 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11982156549903906,
+        "description": "min=0.119, mean=0.12, max=0.12, sum=0.719 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.07633625000000001,
+        "description": "min=0.076, mean=0.076, max=0.076, sum=0.305 (4)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/language_efficiency.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/language_efficiency.json"
+    }
+  ],
+  "name": "efficiency"
+}

@@ -1,0 +1,696 @@
+{
+  "title": "Calibration",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "HellaSwag - ECE (10-bin)",
+      "description": "The HellaSwag benchmark for commonsense reasoning in question answering [(Zellers et al., 2019)](https://aclanthology.org/P19-1472/).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "HellaSwag"
+      }
+    },
+    {
+      "value": "OpenbookQA - ECE (10-bin)",
+      "description": "The OpenbookQA benchmark for commonsense-intensive open book question answering [(Mihaylov et al., 2018)](https://aclanthology.org/D18-1260/).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "OpenbookQA"
+      }
+    },
+    {
+      "value": "TruthfulQA - ECE (10-bin)",
+      "description": "The TruthfulQA benchmarking for measuring model truthfulness and commonsense knowledge in question answering [(Lin et al., 2022)](https://aclanthology.org/2022.acl-long.229/).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "TruthfulQA"
+      }
+    },
+    {
+      "value": "MMLU - ECE (10-bin)",
+      "description": "The Massive Multitask Language Understanding (MMLU) benchmark for knowledge-intensive question answering across 57 domains [(Hendrycks et al., 2021)](https://openreview.net/forum?id=d7KBjmI3GmQ).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "MMLU"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "min=0.037, mean=0.052, max=0.071, sum=0.312 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.13, mean=0.151, max=0.163, sum=0.906 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.091, mean=0.152, max=0.196, sum=0.912 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.063, mean=0.144, max=0.262, sum=4.33 (30)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "min=0.348, mean=0.348, max=0.348, sum=0.696 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.244, mean=0.244, max=0.244, sum=0.487 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.454, mean=0.454, max=0.454, sum=0.908 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.282, mean=0.374, max=0.532, sum=3.737 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "min=0.32, mean=0.32, max=0.32, sum=0.64 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.234, mean=0.234, max=0.234, sum=0.468 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.131, mean=0.131, max=0.131, sum=0.261 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.152, mean=0.193, max=0.238, sum=1.93 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "markdown": false
+      },
+      {
+        "value": 0.038626101622483734,
+        "description": "min=0.027, mean=0.039, max=0.054, sum=0.232 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.06318173696322739,
+        "description": "min=0.04, mean=0.063, max=0.101, sum=0.379 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11072951200356794,
+        "description": "min=0.095, mean=0.111, max=0.128, sum=0.664 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13690038983912287,
+        "description": "min=0.115, mean=0.137, max=0.173, sum=4.107 (30)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.14285714285714285,
+        "markdown": false
+      },
+      {
+        "value": 0.3854446500403883,
+        "description": "min=0.385, mean=0.385, max=0.385, sum=0.771 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24842661648577113,
+        "description": "min=0.248, mean=0.248, max=0.248, sum=0.497 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4104398711298872,
+        "description": "min=0.41, mean=0.41, max=0.41, sum=0.821 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3357126740822321,
+        "description": "min=0.22, mean=0.336, max=0.41, sum=3.357 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5535714285714286,
+        "markdown": false
+      },
+      {
+        "value": 0.2926428762465171,
+        "description": "min=0.293, mean=0.293, max=0.293, sum=0.585 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17933991788720433,
+        "description": "min=0.179, mean=0.179, max=0.179, sum=0.359 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13555175559091695,
+        "description": "min=0.136, mean=0.136, max=0.136, sum=0.271 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1458343300099422,
+        "description": "min=0.072, mean=0.146, max=0.215, sum=1.458 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8571428571428571,
+        "markdown": false
+      },
+      {
+        "value": 0.04149819121256203,
+        "description": "min=0.027, mean=0.041, max=0.049, sum=0.249 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.057806116723640465,
+        "description": "min=0.055, mean=0.058, max=0.062, sum=0.347 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0849911547763697,
+        "description": "min=0.071, mean=0.085, max=0.103, sum=0.51 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11546362297486107,
+        "description": "min=0.062, mean=0.115, max=0.149, sum=3.464 (30)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.08928571428571427,
+        "markdown": false
+      },
+      {
+        "value": 0.43997945977306685,
+        "description": "min=0.44, mean=0.44, max=0.44, sum=0.88 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2353362549897216,
+        "description": "min=0.235, mean=0.235, max=0.235, sum=0.471 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3762607551678114,
+        "description": "min=0.376, mean=0.376, max=0.376, sum=0.753 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43511648957497906,
+        "description": "min=0.341, mean=0.435, max=0.497, sum=4.351 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4642857142857143,
+        "markdown": false
+      },
+      {
+        "value": 0.2332919292558098,
+        "description": "min=0.233, mean=0.233, max=0.233, sum=0.467 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21992999925340584,
+        "description": "min=0.22, mean=0.22, max=0.22, sum=0.44 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11096822940931403,
+        "description": "min=0.111, mean=0.111, max=0.111, sum=0.222 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19832235699844883,
+        "description": "min=0.131, mean=0.198, max=0.256, sum=1.983 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9642857142857143,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.03052081318077,
+        "description": "min=0.023, mean=0.031, max=0.035, sum=0.183 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.04358757761135571,
+        "description": "min=0.033, mean=0.044, max=0.05, sum=0.262 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.05849252955386595,
+        "description": "min=0.051, mean=0.058, max=0.068, sum=0.351 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12205035764205194,
+        "description": "min=0.094, mean=0.122, max=0.145, sum=3.662 (30)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.125,
+        "markdown": false
+      },
+      {
+        "value": 0.4191539593758524,
+        "description": "min=0.419, mean=0.419, max=0.419, sum=0.838 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23249621701719156,
+        "description": "min=0.232, mean=0.232, max=0.232, sum=0.465 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3989679958666775,
+        "description": "min=0.399, mean=0.399, max=0.399, sum=0.798 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3821934753223123,
+        "description": "min=0.3, mean=0.382, max=0.506, sum=3.822 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.46428571428571425,
+        "markdown": false
+      },
+      {
+        "value": 0.2773372160584027,
+        "description": "min=0.277, mean=0.277, max=0.277, sum=0.555 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21047895014053983,
+        "description": "min=0.21, mean=0.21, max=0.21, sum=0.421 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1227945971866754,
+        "description": "min=0.123, mean=0.123, max=0.123, sum=0.246 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19479556970362055,
+        "description": "min=0.101, mean=0.195, max=0.298, sum=1.948 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8214285714285714,
+        "markdown": false
+      },
+      {
+        "value": 0.040596488268350994,
+        "description": "min=0.033, mean=0.041, max=0.05, sum=0.244 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.06194892541744759,
+        "description": "min=0.052, mean=0.062, max=0.069, sum=0.372 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.05810522532832002,
+        "description": "min=0.054, mean=0.058, max=0.061, sum=0.349 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.14714449343481942,
+        "description": "min=0.115, mean=0.147, max=0.194, sum=4.414 (30)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.26785714285714285,
+        "markdown": false
+      },
+      {
+        "value": 0.3896643821627957,
+        "description": "min=0.39, mean=0.39, max=0.39, sum=0.779 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20889829455743214,
+        "description": "min=0.209, mean=0.209, max=0.209, sum=0.418 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3628566456061813,
+        "description": "min=0.363, mean=0.363, max=0.363, sum=0.726 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3859056054837279,
+        "description": "min=0.227, mean=0.386, max=0.532, sum=3.859 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5535714285714286,
+        "markdown": false
+      },
+      {
+        "value": 0.324637159664446,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.649 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19935854990317198,
+        "description": "min=0.199, mean=0.199, max=0.199, sum=0.399 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0957662475630556,
+        "description": "min=0.096, mean=0.096, max=0.096, sum=0.192 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.193047821923734,
+        "description": "min=0.119, mean=0.193, max=0.276, sum=1.93 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [method: multiple_choice_joint]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8392857142857143,
+        "markdown": false
+      },
+      {
+        "value": 0.04532997764713149,
+        "description": "min=0.043, mean=0.045, max=0.048, sum=0.272 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.05137640943950128,
+        "description": "min=0.037, mean=0.051, max=0.075, sum=0.308 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08198809539497491,
+        "description": "min=0.078, mean=0.082, max=0.084, sum=0.492 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13542563946906333,
+        "description": "min=0.101, mean=0.135, max=0.172, sum=4.063 (30)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [method: multiple_choice_separate_calibrated]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.14285714285714285,
+        "markdown": false
+      },
+      {
+        "value": 0.4019497186520865,
+        "description": "min=0.402, mean=0.402, max=0.402, sum=0.804 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2373615873422732,
+        "description": "min=0.237, mean=0.237, max=0.237, sum=0.475 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38084998981243834,
+        "description": "min=0.381, mean=0.381, max=0.381, sum=0.762 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3771302936100407,
+        "description": "min=0.285, mean=0.377, max=0.482, sum=3.771 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [method: multiple_choice_separate_original]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4642857142857143,
+        "markdown": false
+      },
+      {
+        "value": 0.29326475041918015,
+        "description": "min=0.293, mean=0.293, max=0.293, sum=0.587 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22558968425691012,
+        "description": "min=0.226, mean=0.226, max=0.226, sum=0.451 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10935239044215148,
+        "description": "min=0.109, mean=0.109, max=0.109, sum=0.219 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19393375240202998,
+        "description": "min=0.138, mean=0.194, max=0.228, sum=1.939 (10)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/ablation_multiple_choice_calibration.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/ablation_multiple_choice_calibration.json"
+    }
+  ],
+  "name": "calibration"
+}

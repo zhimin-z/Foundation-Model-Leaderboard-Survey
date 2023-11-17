@@ -1,0 +1,6697 @@
+{
+  "title": "subset: terms_of_service",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "ECE (10-bin)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "EM (Robustness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Robustness"
+      }
+    },
+    {
+      "value": "EM (Fairness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "RAFT"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.75, mean=0.775, max=0.8, sum=2.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16773700275981382,
+        "description": "min=0.163, mean=0.168, max=0.174, sum=0.503 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7083333333333334,
+        "description": "min=0.7, mean=0.708, max=0.725, sum=2.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.625, mean=0.667, max=0.7, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6448612548828125,
+        "description": "min=0.638, mean=0.645, max=0.654, sum=1.935 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.783333333333333,
+        "description": "min=3.775, mean=3.783, max=3.8, sum=11.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.20833333333333334,
+        "description": "min=0.15, mean=0.208, max=0.275, sum=0.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.382791909536038,
+        "description": "min=0.311, mean=0.383, max=0.421, sum=1.148 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.15, mean=0.192, max=0.25, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "description": "min=0.15, mean=0.167, max=0.175, sum=0.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.46957802734375,
+        "description": "min=0.467, mean=0.47, max=0.475, sum=1.409 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.1,
+        "description": "min=3.025, mean=3.1, max=3.2, sum=9.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8000000000000002,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2576761921067618,
+        "description": "min=0.234, mean=0.258, max=0.297, sum=0.773 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7083333333333334,
+        "description": "min=0.7, mean=0.708, max=0.725, sum=2.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.775, mean=0.792, max=0.8, sum=2.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5410405517578126,
+        "description": "min=0.536, mean=0.541, max=0.548, sum=1.623 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.7916666666666665,
+        "description": "min=3.775, mean=3.792, max=3.825, sum=11.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.35833333333333334,
+        "description": "min=0.325, mean=0.358, max=0.375, sum=1.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28970053403106055,
+        "description": "min=0.213, mean=0.29, max=0.375, sum=0.869 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.275, mean=0.3, max=0.325, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2333333333333333,
+        "description": "min=0.2, mean=0.233, max=0.275, sum=0.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.266666666666667,
+        "description": "min=3.25, mean=3.267, max=3.3, sum=9.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.75, mean=0.808, max=0.85, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.223722511065515,
+        "description": "min=0.179, mean=0.224, max=0.259, sum=0.671 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7166666666666667,
+        "description": "min=0.65, mean=0.717, max=0.775, sum=2.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333333,
+        "description": "min=0.725, mean=0.758, max=0.775, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.75,
+        "description": "min=3.675, mean=3.75, max=3.8, sum=11.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7999999999999999,
+        "description": "min=0.775, mean=0.8, max=0.825, sum=2.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23776923520392032,
+        "description": "min=0.234, mean=0.238, max=0.245, sum=0.713 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7333333333333334,
+        "description": "min=0.675, mean=0.733, max=0.775, sum=2.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.7, mean=0.75, max=0.8, sum=2.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.841666666666667,
+        "description": "min=3.75, mean=3.842, max=3.9, sum=11.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5666666666666668,
+        "description": "min=0.5, mean=0.567, max=0.6, sum=1.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2099550550949831,
+        "description": "min=0.128, mean=0.21, max=0.271, sum=0.63 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666666,
+        "description": "min=0.45, mean=0.517, max=0.575, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4000000000000001,
+        "description": "min=0.35, mean=0.4, max=0.45, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 599.275,
+        "description": "min=585.275, mean=599.275, max=617.275, sum=1797.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.4416666666666664,
+        "description": "min=3.375, mean=3.442, max=3.475, sum=10.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3DAlephAlpha_luminous-base%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.175, mean=0.192, max=0.2, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5204227820146028,
+        "description": "min=0.504, mean=0.52, max=0.552, sum=1.561 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.175, mean=0.183, max=0.2, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 834.15,
+        "description": "min=820.15, mean=834.15, max=859.15, sum=2502.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.016666666666667,
+        "description": "min=2, mean=2.017, max=2.025, sum=6.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3DAlephAlpha_luminous-extended%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2916666666666667,
+        "description": "min=0.2, mean=0.292, max=0.425, sum=0.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33941665721882536,
+        "description": "min=0.301, mean=0.339, max=0.366, sum=1.018 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.175, mean=0.183, max=0.2, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2416666666666667,
+        "description": "min=0.15, mean=0.242, max=0.375, sum=0.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 834.15,
+        "description": "min=820.15, mean=834.15, max=859.15, sum=2502.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.2666666666666666,
+        "description": "min=2.075, mean=2.267, max=2.55, sum=6.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3DAlephAlpha_luminous-supreme%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5916666666666667,
+        "description": "min=0.55, mean=0.592, max=0.625, sum=1.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21410629825575103,
+        "description": "min=0.178, mean=0.214, max=0.242, sum=0.642 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.275, mean=0.3, max=0.35, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3583333333333334,
+        "description": "min=0.325, mean=0.358, max=0.4, sum=1.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 834.15,
+        "description": "min=820.15, mean=834.15, max=859.15, sum=2502.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.65,
+        "description": "min=2.575, mean=2.65, max=2.7, sum=7.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.475, mean=0.508, max=0.575, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.233, mean=0.34, max=0.397, sum=1.019 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42500000000000004,
+        "description": "min=0.4, mean=0.425, max=0.45, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3416666666666666,
+        "description": "min=0.3, mean=0.342, max=0.4, sum=1.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6759691080729165,
+        "description": "min=0.671, mean=0.676, max=0.685, sum=2.028 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.3833333333333333,
+        "description": "min=2.35, mean=2.383, max=2.45, sum=7.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.25, mean=0.267, max=0.3, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2822229262231171,
+        "description": "min=0.246, mean=0.282, max=0.305, sum=0.847 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21666666666666667,
+        "description": "min=0.2, mean=0.217, max=0.225, sum=0.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21666666666666667,
+        "description": "min=0.2, mean=0.217, max=0.25, sum=0.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 2.138528651793798,
+        "description": "min=1.327, mean=2.139, max=2.551, sum=6.416 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 806.7166666666666,
+        "description": "min=790.05, mean=806.717, max=836.05, sum=2420.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_t0pp%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2833333333333333,
+        "description": "min=0, mean=0.283, max=0.775, sum=0.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20825915727653432,
+        "description": "min=0.0, mean=0.208, max=0.573, sum=0.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2833333333333333,
+        "description": "min=0, mean=0.283, max=0.775, sum=0.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0, mean=0.267, max=0.75, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6541608549488915,
+        "description": "min=0.533, mean=0.654, max=0.725, sum=1.962 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.983333333333333,
+        "description": "min=4.95, mean=4.983, max=5, sum=14.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 874.525,
+        "description": "min=859.275, mean=874.525, max=903.025, sum=2623.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.775, mean=0.792, max=0.825, sum=2.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21454499986819206,
+        "description": "min=0.196, mean=0.215, max=0.249, sum=0.644 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7333333333333334,
+        "description": "min=0.675, mean=0.733, max=0.8, sum=2.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7333333333333334,
+        "description": "min=0.675, mean=0.733, max=0.8, sum=2.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6417409016927084,
+        "description": "min=0.634, mean=0.642, max=0.656, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.7833333333333337,
+        "description": "min=2.7, mean=2.783, max=2.95, sum=8.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.35, mean=0.533, max=0.7, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2157550273020307,
+        "description": "min=0.183, mean=0.216, max=0.261, sum=0.647 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23333333333333336,
+        "description": "min=0.15, mean=0.233, max=0.275, sum=0.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4333333333333333,
+        "description": "min=0.25, mean=0.433, max=0.6, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.43215153808593754,
+        "description": "min=0.425, mean=0.432, max=0.438, sum=1.296 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.475,
+        "description": "min=2.275, mean=2.475, max=2.675, sum=7.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3416666666666666,
+        "description": "min=0.3, mean=0.342, max=0.375, sum=1.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28269150400660914,
+        "description": "min=0.232, mean=0.283, max=0.367, sum=0.848 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2416666666666667,
+        "description": "min=0.2, mean=0.242, max=0.3, sum=0.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.25, mean=0.3, max=0.35, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.35354470214843753,
+        "description": "min=0.349, mean=0.354, max=0.358, sum=1.061 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.25,
+        "description": "min=2.125, mean=2.25, max=2.35, sum=6.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5666666666666668,
+        "description": "min=0.425, mean=0.567, max=0.75, sum=1.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22472068836009262,
+        "description": "min=0.193, mean=0.225, max=0.274, sum=0.674 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.4, mean=0.533, max=0.7, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666666,
+        "description": "min=0.375, mean=0.517, max=0.7, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.35450102539062506,
+        "description": "min=0.352, mean=0.355, max=0.36, sum=1.064 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.558333333333333,
+        "description": "min=2.4, mean=2.558, max=2.775, sum=7.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3083333333333333,
+        "description": "min=0.275, mean=0.308, max=0.35, sum=0.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42900565490403614,
+        "description": "min=0.362, mean=0.429, max=0.489, sum=1.287 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.225,
+        "description": "min=0.2, mean=0.225, max=0.275, sum=0.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.225, mean=0.275, max=0.325, sum=0.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.1333333333333333,
+        "description": "min=2.1, mean=2.133, max=2.175, sum=6.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6250000000000001,
+        "description": "min=0.55, mean=0.625, max=0.675, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16298782973432316,
+        "description": "min=0.11, mean=0.163, max=0.196, sum=0.489 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5916666666666667,
+        "description": "min=0.525, mean=0.592, max=0.65, sum=1.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333334,
+        "description": "min=0.525, mean=0.583, max=0.625, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.75,
+        "description": "min=2.625, mean=2.75, max=2.825, sum=8.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333334,
+        "description": "min=0.675, mean=0.758, max=0.825, sum=2.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1756383026882694,
+        "description": "min=0.125, mean=0.176, max=0.204, sum=0.527 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6333333333333334,
+        "description": "min=0.55, mean=0.633, max=0.8, sum=1.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.625, mean=0.667, max=0.725, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.733333333333333,
+        "description": "min=2.65, mean=2.733, max=2.8, sum=8.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8166666666666668,
+        "description": "min=0.75, mean=0.817, max=0.9, sum=2.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21950171820616685,
+        "description": "min=0.199, mean=0.22, max=0.257, sum=0.659 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7166666666666667,
+        "description": "min=0.625, mean=0.717, max=0.825, sum=2.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666667,
+        "description": "min=0.55, mean=0.642, max=0.725, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 835.3250000000002,
+        "description": "min=821.325, mean=835.325, max=860.325, sum=2505.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.7083333333333335,
+        "description": "min=2.675, mean=2.708, max=2.775, sum=8.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7833333333333333,
+        "description": "min=0.725, mean=0.783, max=0.825, sum=2.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45709410630402575,
+        "description": "min=0.261, mean=0.457, max=0.824, sum=1.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.65, mean=0.75, max=0.825, sum=2.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.625, mean=0.725, max=0.8, sum=2.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.7179929286241532,
+        "description": "min=0.435, mean=0.718, max=1.282, sum=2.154 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.333333333333334,
+        "description": "min=5, mean=13.333, max=30, sum=40 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.20000000000000004,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.30674469292162954,
+        "description": "min=0.2, mean=0.307, max=0.379, sum=0.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.175, mean=0.192, max=0.2, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.175, mean=0.192, max=0.2, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.3032216731707253,
+        "description": "min=0.681, mean=1.303, max=2.546, sum=3.91 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.5750000000002,
+        "description": "min=817.575, mean=831.575, max=856.575, sum=2494.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.366666666666667,
+        "description": "min=5, mean=13.367, max=30, sum=40.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Deleutherai_pythia-6.9b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17517726386009314,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Deleutherai_pythia-12b-v0%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19919515098484303,
+        "description": "min=0.199, mean=0.199, max=0.199, sum=0.199 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_t5-11b%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.192363953627014e-07,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4668208956718445,
+        "description": "min=0.467, mean=0.467, max=0.467, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 511.0,
+        "description": "min=511, mean=511, max=511, sum=1533 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_ul2%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.341917183140372e-07,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.44517164481313626,
+        "description": "min=0.445, mean=0.445, max=0.445, sum=1.336 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 511.0,
+        "description": "min=511, mean=511, max=511, sum=1533 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21666666666666667,
+        "description": "min=0.175, mean=0.217, max=0.25, sum=0.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3499408725206163,
+        "description": "min=0.277, mean=0.35, max=0.398, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.0881329128784794,
+        "description": "min=1.0, mean=1.088, max=1.133, sum=3.264 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.233333333333333,
+        "description": "min=5.1, mean=5.233, max=5.3, sum=15.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31708238634837144,
+        "description": "min=0.175, mean=0.317, max=0.463, sum=0.951 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 2.4282326553706772,
+        "description": "min=0.312, mean=2.428, max=6.495, sum=7.285 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.791666666666666,
+        "description": "min=5, mean=14.792, max=30, sum=44.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.225,
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "description": "min=0.25, mean=0.25, max=0.25, sum=0.25 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-65b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-2-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-2-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.425, mean=0.425, max=0.425, sum=0.425 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.275, mean=0.275, max=0.275, sum=0.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmeta_llama-2-70b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dstanford_alpaca-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22899354025254312,
+        "description": "min=0.229, mean=0.229, max=0.229, sum=0.229 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.325,
+        "description": "min=18.325, mean=18.325, max=18.325, sum=18.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dlmsys_vicuna-7b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5207020352091521,
+        "description": "min=0.521, mean=0.521, max=0.521, sum=0.521 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.525, mean=0.525, max=0.525, sum=0.525 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.425, mean=0.425, max=0.425, sum=0.425 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 26.725,
+        "description": "min=26.725, mean=26.725, max=26.725, sum=26.725 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dlmsys_vicuna-13b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.425, mean=0.425, max=0.425, sum=0.425 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33895027973912784,
+        "description": "min=0.339, mean=0.339, max=0.339, sum=0.339 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.375, mean=0.375, max=0.375, sum=0.375 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.275, mean=0.275, max=0.275, sum=0.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 931.35,
+        "description": "min=931.35, mean=931.35, max=931.35, sum=931.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.45,
+        "description": "min=25.45, mean=25.45, max=25.45, sum=25.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.475, mean=0.492, max=0.5, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24297535239191262,
+        "description": "min=0.179, mean=0.243, max=0.284, sum=0.729 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.45, mean=0.467, max=0.475, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3416666666666666,
+        "description": "min=0.3, mean=0.342, max=0.4, sum=1.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.4166666666666665,
+        "description": "min=2.4, mean=2.417, max=2.425, sum=7.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.20833333333333334,
+        "description": "min=0.175, mean=0.208, max=0.25, sum=0.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.46190946964151314,
+        "description": "min=0.424, mean=0.462, max=0.509, sum=1.386 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.175, mean=0.192, max=0.2, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.175, mean=0.183, max=0.2, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0333333333333337,
+        "description": "min=2, mean=2.033, max=2.075, sum=6.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6749999999999999,
+        "description": "min=0.55, mean=0.675, max=0.75, sum=2.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20080234703863317,
+        "description": "min=0.171, mean=0.201, max=0.22, sum=0.602 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.35, mean=0.45, max=0.525, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.425, mean=0.525, max=0.65, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.26130068359375,
+        "description": "min=0.258, mean=0.261, max=0.264, sum=0.784 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.716666666666667,
+        "description": "min=2.575, mean=2.717, max=2.825, sum=8.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21666666666666667,
+        "description": "min=0.2, mean=0.217, max=0.225, sum=0.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4442283378288056,
+        "description": "min=0.409, mean=0.444, max=0.467, sum=1.333 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18333333333333335,
+        "description": "min=0.175, mean=0.183, max=0.2, sum=0.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20833333333333334,
+        "description": "min=0.2, mean=0.208, max=0.225, sum=0.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.10752402343749996,
+        "description": "min=0.107, mean=0.108, max=0.108, sum=0.323 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.058333333333333,
+        "description": "min=2.05, mean=2.058, max=2.075, sum=6.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.27499999999999997,
+        "description": "min=0.125, mean=0.275, max=0.375, sum=0.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31338875417638273,
+        "description": "min=0.222, mean=0.313, max=0.446, sum=0.94 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11666666666666668,
+        "description": "min=0.075, mean=0.117, max=0.175, sum=0.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.1, mean=0.192, max=0.25, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.128045703125,
+        "description": "min=0.128, mean=0.128, max=0.129, sum=0.384 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.216666666666667,
+        "description": "min=2.1, mean=2.217, max=2.35, sum=6.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5253715340357225,
+        "description": "min=0.503, mean=0.525, max=0.547, sum=1.576 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.1468728515625,
+        "description": "min=0.147, mean=0.147, max=0.147, sum=0.441 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7000000000000001,
+        "description": "min=0.65, mean=0.7, max=0.75, sum=2.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29054742769989844,
+        "description": "min=0.246, mean=0.291, max=0.339, sum=0.872 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.55, mean=0.6, max=0.65, sum=1.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.45, mean=0.5, max=0.6, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.6583333333333337,
+        "description": "min=2.575, mean=2.658, max=2.725, sum=7.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.65, mean=0.667, max=0.7, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2835077210275361,
+        "description": "min=0.264, mean=0.284, max=0.31, sum=0.851 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333333,
+        "description": "min=0.575, mean=0.583, max=0.6, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4000000000000001,
+        "description": "min=0.375, mean=0.4, max=0.425, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.22816044921874998,
+        "description": "min=0.227, mean=0.228, max=0.229, sum=0.684 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.6416666666666666,
+        "description": "min=2.625, mean=2.642, max=2.675, sum=7.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.38333333333333336,
+        "description": "min=0.325, mean=0.383, max=0.425, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5401564926854955,
+        "description": "min=0.52, mean=0.54, max=0.58, sum=1.62 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25833333333333336,
+        "description": "min=0.25, mean=0.258, max=0.275, sum=0.775 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2916666666666667,
+        "description": "min=0.25, mean=0.292, max=0.35, sum=0.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.15530449218749998,
+        "description": "min=0.155, mean=0.155, max=0.156, sum=0.466 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.2416666666666667,
+        "description": "min=2.2, mean=2.242, max=2.3, sum=6.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2416666666666667,
+        "description": "min=0.2, mean=0.242, max=0.325, sum=0.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4915111148905102,
+        "description": "min=0.418, mean=0.492, max=0.541, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15,
+        "description": "min=0.125, mean=0.15, max=0.175, sum=0.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.175, mean=0.192, max=0.225, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.14780045572916667,
+        "description": "min=0.147, mean=0.148, max=0.148, sum=0.443 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.1333333333333333,
+        "description": "min=2.025, mean=2.133, max=2.25, sum=6.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7825848078621025,
+        "description": "min=0.774, mean=0.783, max=0.789, sum=2.348 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.09986712239583333,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.3 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 778.45,
+        "description": "min=778.45, mean=778.45, max=778.45, sum=778.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 778.45,
+        "description": "min=778.45, mean=778.45, max=778.45, sum=778.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.225,
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2245713478675404,
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8244732674491879,
+        "description": "min=0.824, mean=0.824, max=0.824, sum=0.824 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_redpajama-incite-base-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47495380544518534,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.85,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8498208876324618,
+        "description": "min=0.85, mean=0.85, max=0.85, sum=0.85 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.825,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=0.825 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmosaicml_mpt-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dmosaicml_mpt-instruct-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.275, mean=0.275, max=0.275, sum=0.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 820.575,
+        "description": "min=820.575, mean=820.575, max=820.575, sum=820.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtiiuae_falcon-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.225,
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.225,
+        "description": "min=0.225, mean=0.225, max=0.225, sum=0.225 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 827.025,
+        "description": "min=827.025, mean=827.025, max=827.025, sum=827.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtiiuae_falcon-7b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 827.025,
+        "description": "min=827.025, mean=827.025, max=827.025, sum=827.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtiiuae_falcon-40b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2,
+        "description": "min=0.2, mean=0.2, max=0.2, sum=0.2 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 827.025,
+        "description": "min=827.025, mean=827.025, max=827.025, sum=827.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtiiuae_falcon-40b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.175,
+        "description": "min=0.175, mean=0.175, max=0.175, sum=0.175 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 827.025,
+        "description": "min=827.025, mean=827.025, max=827.025, sum=827.025 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_glm%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8583333333333334,
+        "description": "min=0.85, mean=0.858, max=0.875, sum=2.575 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.1721077928186342,
+        "description": "min=0.152, mean=0.172, max=0.187, sum=0.516 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8249999999999998,
+        "description": "min=0.825, mean=0.825, max=0.825, sum=2.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "description": "min=0.825, mean=0.833, max=0.85, sum=2.5 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.637854988773664,
+        "description": "min=1.619, mean=1.638, max=1.675, sum=4.914 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 824.3250000000002,
+        "description": "min=809.325, mean=824.325, max=851.325, sum=2472.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.966666666666667,
+        "description": "min=3.95, mean=3.967, max=3.975, sum=11.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dwriter_palmyra-instruct-30%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6166666666666667,
+        "description": "min=0.525, mean=0.617, max=0.725, sum=1.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.30000000000000004,
+        "description": "min=0.275, mean=0.3, max=0.325, sum=0.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.425, mean=0.5, max=0.6, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.6583333333333337,
+        "description": "min=2.575, mean=2.658, max=2.7, sum=7.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dwriter_palmyra-x%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8083333333333332,
+        "description": "min=0.775, mean=0.808, max=0.85, sum=2.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.75, mean=0.792, max=0.85, sum=2.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=2.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 831.6333333333332,
+        "description": "min=817.3, mean=831.633, max=857.3, sum=2494.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20terms_of_service&runSpecs=%5B%22raft%3Asubset%3Dterms_of_service%2Cmodel%3Dtogether_yalm%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.1, mean=0.333, max=0.775, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17564633045540554,
+        "description": "min=0.1, mean=0.176, max=0.303, sum=0.527 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.06666666666666667,
+        "description": "min=0.025, mean=0.067, max=0.1, sum=0.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666665,
+        "description": "min=0.1, mean=0.192, max=0.35, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9425729799822525,
+        "description": "min=0.84, mean=0.943, max=1.131, sum=2.828 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 826.4249999999998,
+        "description": "min=811.425, mean=826.425, max=853.425, sum=2479.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 21.766666666666666,
+        "description": "min=5.3, mean=21.767, max=30, sum=65.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/raft_raft_subset:terms_of_service.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/raft_raft_subset:terms_of_service.json"
+    }
+  ],
+  "name": "raft_subset:terms_of_service"
+}

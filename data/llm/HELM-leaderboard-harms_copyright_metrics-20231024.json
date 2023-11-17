@@ -1,0 +1,1909 @@
+{
+  "title": "Copyright metrics",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "Copyright (text) - LCS",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nLongest common prefix length: Average length of longest common prefix between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "LCS",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Copyright (text) - Edit dist.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit distance (Levenshtein): Average Levenshtein edit distance between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Edit dist.",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Copyright (text) - Edit sim.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit similarity (Levenshtein): Average Levenshtein edit similarity (1 - distance normalized by length of longer sequence) between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Edit sim.",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Copyright (code) - LCS",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for code, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nLongest common prefix length: Average length of longest common prefix between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "LCS",
+        "run_group": "Copyright (code)"
+      }
+    },
+    {
+      "value": "Copyright (code) - Edit dist.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for code, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit distance (Levenshtein): Average Levenshtein edit distance between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Edit dist.",
+        "run_group": "Copyright (code)"
+      }
+    },
+    {
+      "value": "Copyright (code) - Edit sim.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for code, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit similarity (Levenshtein): Average Levenshtein edit similarity (1 - distance normalized by length of longer sequence) between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Edit sim.",
+        "run_group": "Copyright (code)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5609756097560975,
+        "markdown": false
+      },
+      {
+        "value": 0.0073525139030757025,
+        "description": "min=0.005, mean=0.007, max=0.01, sum=0.015 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.00894343443018,
+        "description": "min=7.804, mean=8.009, max=8.214, sum=16.018 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.000522637145863853,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8211382113821138,
+        "markdown": false
+      },
+      {
+        "value": 0.002200629083775152,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.004 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.112201257953242,
+        "description": "min=7.971, mean=8.112, max=8.253, sum=16.224 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005078500094642716,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8048780487804877,
+        "markdown": false
+      },
+      {
+        "value": 0.0029848586836625987,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.006 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.982733845707975,
+        "description": "min=7.692, mean=7.983, max=8.274, sum=15.965 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005056937385301151,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.42276422764227645,
+        "markdown": false
+      },
+      {
+        "value": 0.015058099453605072,
+        "description": "min=0.004, mean=0.015, max=0.026, sum=0.03 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.4306437975117845,
+        "description": "min=7.09, mean=7.431, max=7.771, sum=14.861 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006131220735183155,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3089430894308943,
+        "markdown": false
+      },
+      {
+        "value": 0.08876865282033822,
+        "description": "min=0.004, mean=0.089, max=0.173, sum=0.178 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.478394376094531,
+        "description": "min=7.31, mean=7.478, max=7.647, sum=14.957 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0007366984270897953,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.43089430894308944,
+        "markdown": false
+      },
+      {
+        "value": 0.03368676492047279,
+        "description": "min=0.004, mean=0.034, max=0.064, sum=0.067 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6178747722478555,
+        "description": "min=7.511, mean=7.618, max=7.725, sum=15.236 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005517625024531107,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6910569105691057,
+        "markdown": false
+      },
+      {
+        "value": 0.0037844804384130244,
+        "description": "min=0.003, mean=0.004, max=0.004, sum=0.008 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.334312362826431,
+        "description": "min=7.085, mean=7.334, max=7.583, sum=14.669 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005197334648419291,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5772357723577236,
+        "markdown": false
+      },
+      {
+        "value": 0.0058061449162572784,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.012 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.907995078895508,
+        "description": "min=6.84, mean=6.908, max=6.976, sum=13.816 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005121909500395909,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.43089430894308944,
+        "markdown": false
+      },
+      {
+        "value": 0.007332707492258056,
+        "description": "min=0.006, mean=0.007, max=0.008, sum=0.015 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.770604484406446,
+        "description": "min=6.58, mean=6.771, max=6.961, sum=13.541 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005346048765759797,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.43902439024390244,
+        "markdown": false
+      },
+      {
+        "value": 0.018165598197058874,
+        "description": "min=0.007, mean=0.018, max=0.03, sum=0.036 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.86764085564568,
+        "description": "min=6.771, mean=6.868, max=6.964, sum=13.735 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005279650578793606,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1951219512195122,
+        "markdown": false
+      },
+      {
+        "value": 0.08768853867730272,
+        "description": "min=0.007, mean=0.088, max=0.168, sum=0.351 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.495372463416204,
+        "description": "min=6.136, mean=6.495, max=6.855, sum=25.981 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006299205432600192,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5691056910569106,
+        "markdown": false
+      },
+      {
+        "value": 0.004357249866238632,
+        "description": "min=0, mean=0.004, max=0.007, sum=0.035 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.61606317861113,
+        "description": "min=6.206, mean=19.616, max=66.76, sum=156.929 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0016867834344657915,
+        "description": "min=0.001, mean=0.002, max=0.006, sum=0.013 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9674796747967479,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.00026529419394587933,
+        "description": "min=0, mean=0.0, max=0.0, sum=0.002 (8)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 60.38888195894705,
+        "description": "min=19.463, mean=60.389, max=187.297, sum=483.111 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.92395710366957e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.001 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4715447154471545,
+        "markdown": false
+      },
+      {
+        "value": 0.009136621431003456,
+        "description": "min=0.006, mean=0.009, max=0.012, sum=0.018 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.735803000852116,
+        "description": "min=6.679, mean=6.736, max=6.793, sum=13.472 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005080965357955898,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5365853658536586,
+        "markdown": false
+      },
+      {
+        "value": 0.005438153606692935,
+        "description": "min=0.005, mean=0.005, max=0.006, sum=0.011 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.708481253460917,
+        "description": "min=6.613, mean=6.708, max=6.804, sum=13.417 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005041105664923206,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5203252032520326,
+        "markdown": false
+      },
+      {
+        "value": 0.005095192697439891,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.767884589048448,
+        "description": "min=6.735, mean=6.768, max=6.801, sum=13.536 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005157636462632584,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6260162601626016,
+        "markdown": false
+      },
+      {
+        "value": 0.0035887381033448463,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.007 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.485744255963467,
+        "description": "min=6.233, mean=6.486, max=6.739, sum=12.971 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005018036697760701,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.17886178861788618,
+        "markdown": false
+      },
+      {
+        "value": 0.11619403667493557,
+        "description": "min=0.007, mean=0.116, max=0.226, sum=0.232 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.521899188412942,
+        "description": "min=6.257, mean=6.522, max=6.787, sum=13.044 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006522916754643268,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5772357723577236,
+        "markdown": false
+      },
+      {
+        "value": 0.005066786646561929,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.54566499659969,
+        "description": "min=6.32, mean=6.546, max=6.771, sum=13.091 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0004913369869220787,
+        "description": "min=0.0, mean=0.0, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6422764227642276,
+        "markdown": false
+      },
+      {
+        "value": 0.004993284368565269,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.8092300603508225,
+        "description": "min=6.65, mean=6.809, max=6.968, sum=13.618 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0004928397418125705,
+        "description": "min=0.0, mean=0.0, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2845528455284553,
+        "markdown": false
+      },
+      {
+        "value": 0.0304629570180132,
+        "description": "min=0.006, mean=0.03, max=0.055, sum=0.061 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.415544568538307,
+        "description": "min=6.307, mean=6.416, max=6.524, sum=12.831 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.000539628875076289,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5365853658536586,
+        "markdown": false
+      },
+      {
+        "value": 0.004125749469007897,
+        "description": "min=0, mean=0.004, max=0.007, sum=0.033 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.429232423064615,
+        "description": "min=5.606, mean=12.429, max=31.906, sum=99.434 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018953805172772376,
+        "description": "min=0.0, mean=0.002, max=0.007, sum=0.015 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4796747967479675,
+        "markdown": false
+      },
+      {
+        "value": 0.005471058903643175,
+        "description": "min=0, mean=0.005, max=0.01, sum=0.044 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.551329337947656,
+        "description": "min=5.72, mean=16.551, max=57.815, sum=132.411 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0017619963853608023,
+        "description": "min=0.0, mean=0.002, max=0.006, sum=0.014 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8780487804878049,
+        "markdown": false
+      },
+      {
+        "value": 0.004697340384636507,
+        "description": "min=0, mean=0.005, max=0.008, sum=0.038 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 68.77573080717106,
+        "description": "min=19.543, mean=68.776, max=213.95, sum=550.206 (8)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.230083933866869e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (8)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8943089430894309,
+        "markdown": false
+      },
+      {
+        "value": 0.0042891474942036755,
+        "description": "min=0, mean=0.004, max=0.007, sum=0.034 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.14966885360156,
+        "description": "min=15.471, mean=63.15, max=201.677, sum=505.197 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.050292481689023e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.001 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2601626016260163,
+        "markdown": false
+      },
+      {
+        "value": 0.375546898818229,
+        "description": "min=0.005, mean=0.376, max=1.907, sum=3.004 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.84378582367939,
+        "description": "min=5.145, mean=8.844, max=22.035, sum=70.75 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.011836809389355081,
+        "description": "min=0.0, mean=0.012, max=0.048, sum=0.095 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5203252032520326,
+        "markdown": false
+      },
+      {
+        "value": 0.004463620960811973,
+        "description": "min=0, mean=0.004, max=0.007, sum=0.036 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.981635367045117,
+        "description": "min=5.384, mean=13.982, max=49.501, sum=111.853 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018618489326962901,
+        "description": "min=0.001, mean=0.002, max=0.007, sum=0.015 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2845528455284553,
+        "markdown": false
+      },
+      {
+        "value": 0.04560352157206089,
+        "description": "min=0.009, mean=0.046, max=0.082, sum=0.091 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.713194306816579,
+        "description": "min=6.622, mean=6.713, max=6.804, sum=13.426 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005907934831714738,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6097560975609756,
+        "markdown": false
+      },
+      {
+        "value": 0.006005932990130165,
+        "description": "min=0.005, mean=0.006, max=0.007, sum=0.012 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.7892914979815355,
+        "description": "min=6.704, mean=6.789, max=6.874, sum=13.579 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.00047877983646416804,
+        "description": "min=0.0, mean=0.0, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2032520325203252,
+        "markdown": false
+      },
+      {
+        "value": 0.07082636963535842,
+        "description": "min=0.006, mean=0.071, max=0.136, sum=0.142 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.522017017135289,
+        "description": "min=6.151, mean=6.522, max=6.893, sum=13.044 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0007268162931414776,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4634146341463415,
+        "markdown": false
+      },
+      {
+        "value": 0.006666893655657702,
+        "description": "min=0.005, mean=0.007, max=0.008, sum=0.013 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.772288143733812,
+        "description": "min=6.64, mean=6.772, max=6.905, sum=13.545 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005271297078359323,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5772357723577236,
+        "markdown": false
+      },
+      {
+        "value": 0.0045563727159232785,
+        "description": "min=0.004, mean=0.005, max=0.005, sum=0.009 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.860629546570424,
+        "description": "min=6.801, mean=6.861, max=6.92, sum=13.721 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005242530590685132,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6016260162601627,
+        "markdown": false
+      },
+      {
+        "value": 0.004025552474990679,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.008 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.894443397896868,
+        "description": "min=6.822, mean=6.894, max=6.967, sum=13.789 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005402047770981449,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12195121951219513,
+        "markdown": false
+      },
+      {
+        "value": 0.035479916338343305,
+        "description": "min=0.006, mean=0.035, max=0.065, sum=0.071 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1621214885160913,
+        "description": "min=0.838, mean=1.162, max=1.486, sum=2.324 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0008906026267843526,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.21138211382113822,
+        "markdown": false
+      },
+      {
+        "value": 0.05276968399889748,
+        "description": "min=0.007, mean=0.053, max=0.099, sum=0.106 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.3904418027053875,
+        "description": "min=5.139, mean=5.39, max=5.642, sum=10.781 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005902249100624332,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.44715447154471544,
+        "markdown": false
+      },
+      {
+        "value": 0.0047239359891045295,
+        "description": "min=0.004, mean=0.005, max=0.005, sum=0.009 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.1727642503717908,
+        "description": "min=2.015, mean=2.173, max=2.331, sum=4.346 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005152143637501513,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5853658536585366,
+        "markdown": false
+      },
+      {
+        "value": 0.003964385427306778,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.008 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.190662226981925,
+        "description": "min=1.744, mean=2.191, max=2.638, sum=4.381 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005011448956887474,
+        "description": "min=0.0, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6178861788617886,
+        "markdown": false
+      },
+      {
+        "value": 0.00351087115132059,
+        "description": "min=0.003, mean=0.004, max=0.004, sum=0.007 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.5408094963345946,
+        "description": "min=1.349, mean=1.541, max=1.732, sum=3.082 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0004885050397051892,
+        "description": "min=0.0, mean=0.0, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.16257925805248447,
+        "description": "min=0.055, mean=0.163, max=0.27, sum=0.325 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.920774208401383,
+        "description": "min=6.389, mean=23.921, max=41.453, sum=47.842 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.00911010772060411,
+        "description": "min=0.003, mean=0.009, max=0.015, sum=0.018 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.14046091755424744,
+        "description": "min=0.048, mean=0.14, max=0.233, sum=0.281 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 23.679434836754186,
+        "description": "min=6.304, mean=23.679, max=41.054, sum=47.359 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.00864297048533108,
+        "description": "min=0.003, mean=0.009, max=0.015, sum=0.017 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5772357723577236,
+        "markdown": false
+      },
+      {
+        "value": 0.004214691574785813,
+        "description": "min=0, mean=0.004, max=0.007, sum=0.034 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.181689518783022,
+        "description": "min=5.299, mean=15.182, max=48.789, sum=121.454 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0014559151378077011,
+        "description": "min=0.001, mean=0.001, max=0.005, sum=0.012 (8)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.23577235772357724,
+        "markdown": false
+      },
+      {
+        "value": 0.019544653598586186,
+        "description": "min=0.005, mean=0.02, max=0.034, sum=0.039 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.538017408930489,
+        "description": "min=5.26, mean=5.538, max=5.816, sum=11.076 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006206782492239804,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.17073170731707318,
+        "markdown": false
+      },
+      {
+        "value": 0.01062641503315661,
+        "description": "min=0.005, mean=0.011, max=0.016, sum=0.021 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2040305087031986,
+        "description": "min=1.084, mean=1.204, max=1.324, sum=2.408 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0009745530405391103,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.0031483345261836444,
+        "description": "min=0, mean=0.003, max=0.005, sum=0.022 (7)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.887159449842915,
+        "description": "min=6.333, mean=22.887, max=73.376, sum=160.21 (7)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0009783804218141301,
+        "description": "min=0.0, mean=0.001, max=0.003, sum=0.007 (7)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/harms_copyright_metrics.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/harms_copyright_metrics.json"
+    }
+  ],
+  "name": "copyright_metrics"
+}

@@ -1,0 +1,6693 @@
+{
+  "title": "subset: tai_safety_research",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "ECE (10-bin)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "EM (Robustness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Robustness"
+      }
+    },
+    {
+      "value": "EM (Fairness)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "RAFT",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "RAFT"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The Real-world annotated few-shot (RAFT) meta-benchmark of 11 real-world text classification tasks [(Alex et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/ca46c1b9512a7a8315fa3c5a946e8265-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "RAFT"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.475, mean=0.5, max=0.525, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3049409081039793,
+        "description": "min=0.251, mean=0.305, max=0.339, sum=0.915 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.325, mean=0.375, max=0.4, sum=1.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4749999999999999,
+        "description": "min=0.4, mean=0.475, max=0.525, sum=1.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9812486436631945,
+        "description": "min=0.933, mean=0.981, max=1.014, sum=2.944 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.083333333333333,
+        "description": "min=5.025, mean=5.083, max=5.175, sum=15.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.475, mean=0.533, max=0.625, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2575313059290298,
+        "description": "min=0.2, mean=0.258, max=0.341, sum=0.773 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4000000000000001,
+        "description": "min=0.35, mean=0.4, max=0.45, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666666,
+        "description": "min=0.45, mean=0.517, max=0.6, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6833737521701387,
+        "description": "min=0.649, mean=0.683, max=0.707, sum=2.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.216666666666667,
+        "description": "min=5.075, mean=5.217, max=5.475, sum=15.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.425, mean=0.5, max=0.6, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21099650923129284,
+        "description": "min=0.162, mean=0.211, max=0.273, sum=0.633 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "description": "min=0.225, mean=0.25, max=0.275, sum=0.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49166666666666664,
+        "description": "min=0.425, mean=0.492, max=0.6, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.811929459635417,
+        "description": "min=0.772, mean=0.812, max=0.833, sum=2.436 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.616666666666667,
+        "description": "min=5.475, mean=5.617, max=5.85, sum=16.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6416666666666667,
+        "description": "min=0.575, mean=0.642, max=0.675, sum=1.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19413185576584083,
+        "description": "min=0.163, mean=0.194, max=0.238, sum=0.582 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39166666666666666,
+        "description": "min=0.375, mean=0.392, max=0.4, sum=1.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6250000000000001,
+        "description": "min=0.525, mean=0.625, max=0.675, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.291666666666667,
+        "description": "min=5.125, mean=5.292, max=5.475, sum=15.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5499999999999999,
+        "description": "min=0.525, mean=0.55, max=0.575, sum=1.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2213887285298517,
+        "description": "min=0.183, mean=0.221, max=0.247, sum=0.664 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.425, mean=0.467, max=0.5, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.475, mean=0.525, max=0.575, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.116666666666667,
+        "description": "min=5.075, mean=5.117, max=5.175, sum=15.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333333,
+        "description": "min=0.575, mean=0.583, max=0.6, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2175349330851706,
+        "description": "min=0.175, mean=0.218, max=0.281, sum=0.653 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3833333333333333,
+        "description": "min=0.3, mean=0.383, max=0.425, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.5, mean=0.533, max=0.575, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.366666666666667,
+        "description": "min=5.3, mean=5.367, max=5.475, sum=16.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5750000000000001,
+        "description": "min=0.5, mean=0.575, max=0.675, sum=1.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2107520665569068,
+        "description": "min=0.191, mean=0.211, max=0.232, sum=0.632 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0.175, mean=0.267, max=0.325, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.475, mean=0.525, max=0.6, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1296.2166666666665,
+        "description": "min=1185.55, mean=1296.217, max=1363.55, sum=3888.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.558333333333334,
+        "description": "min=5.4, mean=5.558, max=5.825, sum=16.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3DAlephAlpha_luminous-base%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.43333333333333335,
+        "description": "min=0.375, mean=0.433, max=0.525, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2727786146161739,
+        "description": "min=0.191, mean=0.273, max=0.351, sum=0.818 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.3, mean=0.333, max=0.4, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39166666666666666,
+        "description": "min=0.325, mean=0.392, max=0.45, sum=1.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.9750000000000005,
+        "description": "min=4.925, mean=4.975, max=5, sum=14.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1681.9833333333336,
+        "description": "min=1536.15, mean=1681.983, max=1759.65, sum=5045.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.416666666666667,
+        "description": "min=4.275, mean=4.417, max=4.675, sum=13.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3DAlephAlpha_luminous-extended%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.4, mean=0.442, max=0.5, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2725853709013101,
+        "description": "min=0.24, mean=0.273, max=0.305, sum=0.818 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3833333333333333,
+        "description": "min=0.375, mean=0.383, max=0.4, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "description": "min=0.4, mean=0.417, max=0.45, sum=1.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.9750000000000005,
+        "description": "min=4.925, mean=4.975, max=5, sum=14.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1681.9833333333336,
+        "description": "min=1536.15, mean=1681.983, max=1759.65, sum=5045.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.158333333333333,
+        "description": "min=4.125, mean=4.158, max=4.2, sum=12.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3DAlephAlpha_luminous-supreme%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5416666666666667,
+        "description": "min=0.425, mean=0.542, max=0.65, sum=1.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23245298373128923,
+        "description": "min=0.162, mean=0.232, max=0.274, sum=0.697 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35000000000000003,
+        "description": "min=0.25, mean=0.35, max=0.475, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.375, mean=0.492, max=0.6, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.9750000000000005,
+        "description": "min=4.925, mean=4.975, max=5, sum=14.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1681.9833333333336,
+        "description": "min=1536.15, mean=1681.983, max=1759.65, sum=5045.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.358333333333333,
+        "description": "min=4.275, mean=4.358, max=4.45, sum=13.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333333,
+        "description": "min=0.575, mean=0.583, max=0.6, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.119, mean=0.21, max=0.269, sum=0.629 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.425, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5666666666666667,
+        "description": "min=0.55, mean=0.567, max=0.6, sum=1.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.063886740451389,
+        "description": "min=1.022, mean=1.064, max=1.093, sum=3.192 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1722.6916666666668,
+        "description": "min=1555.025, mean=1722.692, max=1830.025, sum=5168.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.433333333333333,
+        "description": "min=4.4, mean=4.433, max=4.475, sum=13.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4583333333333333,
+        "description": "min=0.45, mean=0.458, max=0.475, sum=1.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4539336164015897,
+        "description": "min=0.446, mean=0.454, max=0.469, sum=1.362 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39999999999999997,
+        "description": "min=0.35, mean=0.4, max=0.425, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4583333333333333,
+        "description": "min=0.45, mean=0.458, max=0.475, sum=1.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 2.32501576513052,
+        "description": "min=1.542, mean=2.325, max=2.921, sum=6.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1634.0666666666668,
+        "description": "min=1488.4, mean=1634.067, max=1729.4, sum=4902.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.0,
+        "description": "min=9, mean=9, max=9, sum=27 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_t0pp%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21666666666666665,
+        "description": "min=0.175, mean=0.217, max=0.3, sum=0.65 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1009919458585417,
+        "description": "min=0.001, mean=0.101, max=0.175, sum=0.303 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.20833333333333334,
+        "description": "min=0.15, mean=0.208, max=0.3, sum=0.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17499999999999996,
+        "description": "min=0.125, mean=0.175, max=0.225, sum=0.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6440836579811693,
+        "description": "min=0.533, mean=0.644, max=0.701, sum=1.932 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8499999999999999,
+        "description": "min=1.45, mean=1.85, max=2.275, sum=5.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.041666666666666664,
+        "description": "min=0, mean=0.042, max=0.125, sum=0.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 847.7416666666667,
+        "description": "min=806.225, mean=847.742, max=878.9, sum=2543.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.5, mean=0.508, max=0.525, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27695580709642537,
+        "description": "min=0.265, mean=0.277, max=0.287, sum=0.831 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48333333333333334,
+        "description": "min=0.475, mean=0.483, max=0.5, sum=1.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.5, mean=0.508, max=0.525, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.9581864583333332,
+        "description": "min=0.914, mean=0.958, max=0.984, sum=2.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.008333333333334,
+        "description": "min=4, mean=4.008, max=4.025, sum=12.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2601646939126574,
+        "description": "min=0.241, mean=0.26, max=0.281, sum=0.78 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43333333333333335,
+        "description": "min=0.425, mean=0.433, max=0.45, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6780989583333333,
+        "description": "min=0.643, mean=0.678, max=0.697, sum=2.034 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.066666666666666,
+        "description": "min=4.05, mean=4.067, max=4.1, sum=12.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.425, mean=0.492, max=0.525, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24344586320362172,
+        "description": "min=0.231, mean=0.243, max=0.25, sum=0.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3416666666666666,
+        "description": "min=0.275, mean=0.342, max=0.4, sum=1.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.4, mean=0.467, max=0.5, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.516778125,
+        "description": "min=0.492, mean=0.517, max=0.532, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.541666666666667,
+        "description": "min=4.425, mean=4.542, max=4.675, sum=13.625 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4083333333333334,
+        "description": "min=0.375, mean=0.408, max=0.45, sum=1.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25544765007304,
+        "description": "min=0.224, mean=0.255, max=0.282, sum=0.766 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1416666666666667,
+        "description": "min=0.075, mean=0.142, max=0.2, sum=0.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3833333333333333,
+        "description": "min=0.325, mean=0.383, max=0.45, sum=1.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5314187499999999,
+        "description": "min=0.505, mean=0.531, max=0.547, sum=1.594 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.366666666666667,
+        "description": "min=4.2, mean=4.367, max=4.6, sum=13.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6083333333333334,
+        "description": "min=0.525, mean=0.608, max=0.675, sum=1.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1912555788811553,
+        "description": "min=0.104, mean=0.191, max=0.241, sum=0.574 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3666666666666667,
+        "description": "min=0.3, mean=0.367, max=0.45, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5750000000000001,
+        "description": "min=0.45, mean=0.575, max=0.65, sum=1.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.425,
+        "description": "min=4.175, mean=4.425, max=4.575, sum=13.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27162685911256135,
+        "description": "min=0.231, mean=0.272, max=0.326, sum=0.815 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4083333333333334,
+        "description": "min=0.375, mean=0.408, max=0.425, sum=1.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1696.5333333333335,
+        "description": "min=1553.725, mean=1696.533, max=1777.025, sum=5089.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.166666666666667,
+        "description": "min=4.1, mean=4.167, max=4.2, sum=12.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5833333333333334,
+        "description": "min=0.5, mean=0.583, max=0.675, sum=1.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23830898206035456,
+        "description": "min=0.194, mean=0.238, max=0.303, sum=0.715 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2916666666666667,
+        "description": "min=0.15, mean=0.292, max=0.425, sum=0.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.45, mean=0.525, max=0.625, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.916666666666667,
+        "description": "min=4.875, mean=4.917, max=5, sum=14.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1691.6833333333332,
+        "description": "min=1553.725, mean=1691.683, max=1762.475, sum=5075.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.616666666666666,
+        "description": "min=4.375, mean=4.617, max=4.8, sum=13.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.475, mean=0.492, max=0.525, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27233782084383135,
+        "description": "min=0.24, mean=0.272, max=0.32, sum=0.817 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43333333333333335,
+        "description": "min=0.4, mean=0.433, max=0.45, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4833333333333334,
+        "description": "min=0.45, mean=0.483, max=0.525, sum=1.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.916666666666667,
+        "description": "min=4.875, mean=4.917, max=5, sum=14.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1691.6833333333332,
+        "description": "min=1553.725, mean=1691.683, max=1762.475, sum=5075.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.241666666666667,
+        "description": "min=4.125, mean=4.242, max=4.325, sum=12.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.5, mean=0.508, max=0.525, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4840138680790424,
+        "description": "min=0.463, mean=0.484, max=0.525, sum=1.452 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.475, mean=0.492, max=0.5, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.5, mean=0.508, max=0.525, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.778858455916246,
+        "description": "min=0.53, mean=0.779, max=1.274, sum=2.337 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.366666666666667,
+        "description": "min=9.5, mean=16.367, max=30, sum=49.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.425, mean=0.442, max=0.45, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39487840727399764,
+        "description": "min=0.325, mean=0.395, max=0.45, sum=1.185 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36666666666666664,
+        "description": "min=0.325, mean=0.367, max=0.425, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.4, mean=0.425, max=0.45, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.3487142026424406,
+        "description": "min=0.765, mean=1.349, max=2.516, sum=4.046 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.9750000000000005,
+        "description": "min=4.925, mean=4.975, max=5, sum=14.925 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1686.7166666666665,
+        "description": "min=1539.575, mean=1686.717, max=1764, sum=5060.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.0,
+        "description": "min=9, mean=16, max=30, sum=48 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Deleutherai_pythia-6.9b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49993272362664976,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Deleutherai_pythia-12b-v0%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44997849709322935,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.375, mean=0.375, max=0.375, sum=0.375 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_t5-11b%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2333333333333333,
+        "description": "min=0.125, mean=0.233, max=0.325, sum=0.7 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1999964770617877,
+        "description": "min=0.125, mean=0.2, max=0.275, sum=0.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.075,
+        "description": "min=0.05, mean=0.075, max=0.1, sum=0.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19166666666666668,
+        "description": "min=0.1, mean=0.192, max=0.275, sum=0.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.43510772751437293,
+        "description": "min=0.431, mean=0.435, max=0.437, sum=1.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0, mean=0.425, max=1, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.175, mean=0.5, max=0.8, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.7416666666666,
+        "description": "min=335.825, mean=390.742, max=420, sum=1172.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_ul2%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3666666666666667,
+        "description": "min=0.325, mean=0.367, max=0.45, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3667081712434935,
+        "description": "min=0.325, mean=0.367, max=0.45, sum=1.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.275, mean=0.325, max=0.4, sum=0.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35000000000000003,
+        "description": "min=0.3, mean=0.35, max=0.425, sum=1.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4466270905314828,
+        "description": "min=0.445, mean=0.447, max=0.448, sum=1.34 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0, mean=0.425, max=1, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.175, mean=0.5, max=0.8, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 394.0416666666667,
+        "description": "min=339.125, mean=394.042, max=423.3, sum=1182.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=90 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.425, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35061847713327027,
+        "description": "min=0.324, mean=0.351, max=0.387, sum=1.052 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19999999999999998,
+        "description": "min=0.175, mean=0.2, max=0.225, sum=0.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4333333333333333,
+        "description": "min=0.4, mean=0.433, max=0.475, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.4588248620785418,
+        "description": "min=1.108, mean=1.459, max=1.712, sum=4.376 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.491666666666665,
+        "description": "min=9, mean=14.492, max=17.45, sum=43.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3416666666666666,
+        "description": "min=0.3, mean=0.342, max=0.375, sum=1.025 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34132746468702263,
+        "description": "min=0.3, mean=0.341, max=0.375, sum=1.024 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1416666666666667,
+        "description": "min=0.125, mean=0.142, max=0.15, sum=0.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.275, mean=0.325, max=0.375, sum=0.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 2.69749142875274,
+        "description": "min=0.723, mean=2.697, max=6.606, sum=8.092 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 28.866666666666664,
+        "description": "min=27.025, mean=28.867, max=30, sum=86.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.375, mean=0.375, max=0.375, sum=0.375 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-65b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-2-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.425, mean=0.425, max=0.425, sum=0.425 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1953.925,
+        "description": "min=1953.925, mean=1953.925, max=1953.925, sum=1953.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-2-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8,
+        "description": "min=0.8, mean=0.8, max=0.8, sum=0.8 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1953.925,
+        "description": "min=1953.925, mean=1953.925, max=1953.925, sum=1953.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmeta_llama-2-70b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "description": "min=0.75, mean=0.75, max=0.75, sum=0.75 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.725,
+        "description": "min=0.725, mean=0.725, max=0.725, sum=0.725 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1953.925,
+        "description": "min=1953.925, mean=1953.925, max=1953.925, sum=1953.925 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dstanford_alpaca-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3982540616516895,
+        "description": "min=0.398, mean=0.398, max=0.398, sum=0.398 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1,
+        "description": "min=0.1, mean=0.1, max=0.1, sum=0.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dlmsys_vicuna-7b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1264301821644666,
+        "description": "min=0.126, mean=0.126, max=0.126, sum=0.126 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.8,
+        "description": "min=5.8, mean=5.8, max=5.8, sum=5.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dlmsys_vicuna-13b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21189325546409282,
+        "description": "min=0.212, mean=0.212, max=0.212, sum=0.212 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.675,
+        "description": "min=4.675, mean=4.675, max=4.675, sum=4.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1882.1,
+        "description": "min=1882.1, mean=1882.1, max=1882.1, sum=1882.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.3,
+        "description": "min=5.3, mean=5.3, max=5.3, sum=5.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.625, mean=0.65, max=0.675, sum=1.95 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25094987417594994,
+        "description": "min=0.204, mean=0.251, max=0.305, sum=0.753 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4416666666666667,
+        "description": "min=0.4, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.6, mean=0.625, max=0.65, sum=1.875 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.699999999999999,
+        "description": "min=4.575, mean=4.7, max=4.85, sum=14.1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48333333333333334,
+        "description": "min=0.475, mean=0.483, max=0.5, sum=1.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3018321114577089,
+        "description": "min=0.289, mean=0.302, max=0.31, sum=0.905 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666666,
+        "description": "min=0.45, mean=0.467, max=0.475, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48333333333333334,
+        "description": "min=0.475, mean=0.483, max=0.5, sum=1.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.050000000000001,
+        "description": "min=4.025, mean=4.05, max=4.075, sum=12.15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4833333333333334,
+        "description": "min=0.45, mean=0.483, max=0.525, sum=1.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24359592060072585,
+        "description": "min=0.211, mean=0.244, max=0.265, sum=0.731 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19999999999999998,
+        "description": "min=0.175, mean=0.2, max=0.25, sum=0.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4583333333333333,
+        "description": "min=0.425, mean=0.458, max=0.525, sum=1.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3219875651041667,
+        "description": "min=0.317, mean=0.322, max=0.327, sum=0.966 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.083333333333333,
+        "description": "min=4.025, mean=4.083, max=4.175, sum=12.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4083333333333334,
+        "description": "min=0.325, mean=0.408, max=0.5, sum=1.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3022822778755358,
+        "description": "min=0.274, mean=0.302, max=0.336, sum=0.907 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2416666666666667,
+        "description": "min=0.175, mean=0.242, max=0.275, sum=0.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.325, mean=0.375, max=0.4, sum=1.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13705391710069445,
+        "description": "min=0.133, mean=0.137, max=0.139, sum=0.411 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.391666666666667,
+        "description": "min=4.25, mean=4.392, max=4.475, sum=13.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.475, mean=0.533, max=0.65, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26952016042382787,
+        "description": "min=0.224, mean=0.27, max=0.324, sum=0.809 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4083333333333334,
+        "description": "min=0.35, mean=0.408, max=0.525, sum=1.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5083333333333333,
+        "description": "min=0.45, mean=0.508, max=0.625, sum=1.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.15241639539930554,
+        "description": "min=0.151, mean=0.152, max=0.154, sum=0.457 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.766666666666667,
+        "description": "min=4.725, mean=4.767, max=4.825, sum=14.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.45, mean=0.525, max=0.575, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17100082075219705,
+        "description": "min=0.135, mean=0.171, max=0.215, sum=0.513 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.325, mean=0.375, max=0.425, sum=1.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.425, mean=0.492, max=0.55, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.16569108072916663,
+        "description": "min=0.165, mean=0.166, max=0.166, sum=0.497 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.841666666666667,
+        "description": "min=4.775, mean=4.842, max=4.9, sum=14.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7083333333333334,
+        "description": "min=0.65, mean=0.708, max=0.775, sum=2.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23765928121435567,
+        "description": "min=0.165, mean=0.238, max=0.279, sum=0.713 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6333333333333333,
+        "description": "min=0.6, mean=0.633, max=0.65, sum=1.9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.65, mean=0.667, max=0.7, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1722.6916666666668,
+        "description": "min=1555.025, mean=1722.692, max=1830.025, sum=5168.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.7250000000000005,
+        "description": "min=4.625, mean=4.725, max=4.8, sum=14.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6916666666666668,
+        "description": "min=0.65, mean=0.692, max=0.725, sum=2.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24520286703296615,
+        "description": "min=0.196, mean=0.245, max=0.296, sum=0.736 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5750000000000001,
+        "description": "min=0.525, mean=0.575, max=0.65, sum=1.725 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6083333333333333,
+        "description": "min=0.55, mean=0.608, max=0.675, sum=1.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3478643825954861,
+        "description": "min=0.343, mean=0.348, max=0.351, sum=1.044 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1722.6916666666668,
+        "description": "min=1555.025, mean=1722.692, max=1830.025, sum=5168.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.758333333333334,
+        "description": "min=4.65, mean=4.758, max=4.85, sum=14.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.46666666666666673,
+        "description": "min=0.425, mean=0.467, max=0.55, sum=1.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24577737251309695,
+        "description": "min=0.199, mean=0.246, max=0.323, sum=0.737 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.3, mean=0.375, max=0.45, sum=1.125 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4333333333333333,
+        "description": "min=0.35, mean=0.433, max=0.525, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.17297504340277778,
+        "description": "min=0.17, mean=0.173, max=0.175, sum=0.519 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.283333333333334,
+        "description": "min=4.175, mean=4.283, max=4.425, sum=12.85 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.47500000000000003,
+        "description": "min=0.4, mean=0.475, max=0.575, sum=1.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2708680776233623,
+        "description": "min=0.237, mean=0.271, max=0.325, sum=0.813 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3583333333333334,
+        "description": "min=0.325, mean=0.358, max=0.4, sum=1.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.35, mean=0.45, max=0.55, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.18506463758680555,
+        "description": "min=0.18, mean=0.185, max=0.188, sum=0.555 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.4750000000000005,
+        "description": "min=4.25, mean=4.475, max=4.625, sum=13.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5333333333333333,
+        "description": "min=0.475, mean=0.533, max=0.625, sum=1.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39924658759397147,
+        "description": "min=0.34, mean=0.399, max=0.436, sum=1.198 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.425,
+        "description": "min=0.4, mean=0.425, max=0.475, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4916666666666667,
+        "description": "min=0.4, mean=0.492, max=0.6, sum=1.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13142594401041668,
+        "description": "min=0.127, mean=0.131, max=0.134, sum=0.394 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.1499999999999995,
+        "description": "min=4, mean=4.15, max=4.375, sum=12.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.775,
+        "description": "min=0.775, mean=0.775, max=0.775, sum=0.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7,
+        "description": "min=0.7, mean=0.7, max=0.7, sum=0.7 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1687.6,
+        "description": "min=1687.6, mean=1687.6, max=1687.6, sum=1687.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.625,
+        "description": "min=4.625, mean=4.625, max=4.625, sum=4.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.575,
+        "description": "min=0.575, mean=0.575, max=0.575, sum=0.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1687.6,
+        "description": "min=1687.6, mean=1687.6, max=1687.6, sum=1687.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.775,
+        "description": "min=4.775, mean=4.775, max=4.775, sum=4.775 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4749977956323387,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49999999976905923,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25,
+        "description": "min=0.25, mean=0.25, max=0.25, sum=0.25 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_redpajama-incite-base-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.625,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6249935508576316,
+        "description": "min=0.625, mean=0.625, max=0.625, sum=0.625 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.275, mean=0.275, max=0.275, sum=0.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5999999999806833,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.525, mean=0.525, max=0.525, sum=0.525 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6,
+        "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.0,
+        "description": "min=30, mean=30, max=30, sum=30 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmosaicml_mpt-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dmosaicml_mpt-instruct-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.675,
+        "description": "min=0.675, mean=0.675, max=0.675, sum=0.675 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.55,
+        "description": "min=0.55, mean=0.55, max=0.55, sum=0.55 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.65,
+        "description": "min=0.65, mean=0.65, max=0.65, sum=0.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1756.575,
+        "description": "min=1756.575, mean=1756.575, max=1756.575, sum=1756.575 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtiiuae_falcon-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.325, mean=0.325, max=0.325, sum=0.325 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.95,
+        "description": "min=4.95, mean=4.95, max=4.95, sum=4.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1772.5,
+        "description": "min=1772.5, mean=1772.5, max=1772.5, sum=1772.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtiiuae_falcon-7b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.275,
+        "description": "min=0.275, mean=0.275, max=0.275, sum=0.275 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.475,
+        "description": "min=0.475, mean=0.475, max=0.475, sum=0.475 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.95,
+        "description": "min=4.95, mean=4.95, max=4.95, sum=4.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1772.5,
+        "description": "min=1772.5, mean=1772.5, max=1772.5, sum=1772.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtiiuae_falcon-40b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.35,
+        "description": "min=0.35, mean=0.35, max=0.35, sum=0.35 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.45, mean=0.45, max=0.45, sum=0.45 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.95,
+        "description": "min=4.95, mean=4.95, max=4.95, sum=4.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1772.5,
+        "description": "min=1772.5, mean=1772.5, max=1772.5, sum=1772.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtiiuae_falcon-40b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=40 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.95,
+        "description": "min=4.95, mean=4.95, max=4.95, sum=4.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1772.5,
+        "description": "min=1772.5, mean=1772.5, max=1772.5, sum=1772.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_glm%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45,
+        "description": "min=0.425, mean=0.45, max=0.475, sum=1.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31014143128160554,
+        "description": "min=0.283, mean=0.31, max=0.345, sum=0.93 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.425, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44166666666666665,
+        "description": "min=0.425, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.6577258390188219,
+        "description": "min=1.629, mean=1.658, max=1.714, sum=4.973 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1668.1500000000003,
+        "description": "min=1515.15, mean=1668.15, max=1757.15, sum=5004.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.1000000000000005,
+        "description": "min=5.075, mean=5.1, max=5.125, sum=15.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dwriter_palmyra-instruct-30%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.525,
+        "description": "min=0.475, mean=0.525, max=0.6, sum=1.575 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.4416666666666667,
+        "description": "min=0.4, mean=0.442, max=0.475, sum=1.325 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5166666666666667,
+        "description": "min=0.45, mean=0.517, max=0.6, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.941666666666666,
+        "description": "min=4.875, mean=4.942, max=5, sum=14.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1700.1166666666668,
+        "description": "min=1555.025, mean=1700.117, max=1773.675, sum=5100.35 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.275,
+        "description": "min=4.1, mean=4.275, max=4.45, sum=12.825 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dwriter_palmyra-x%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.775, mean=0.792, max=0.8, sum=2.375 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7583333333333334,
+        "description": "min=0.7, mean=0.758, max=0.8, sum=2.275 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.7916666666666666,
+        "description": "min=0.775, mean=0.792, max=0.8, sum=2.375 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1722.6916666666668,
+        "description": "min=1555.025, mean=1722.692, max=1830.025, sum=5168.075 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.508333333333334,
+        "description": "min=4.5, mean=4.508, max=4.525, sum=13.525 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=raft&subgroup=subset%3A%20tai_safety_research&runSpecs=%5B%22raft%3Asubset%3Dtai_safety_research%2Cmodel%3Dtogether_yalm%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.39999999999999997,
+        "description": "min=0.25, mean=0.4, max=0.575, sum=1.2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31616788660795603,
+        "description": "min=0.224, mean=0.316, max=0.368, sum=0.949 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.325,
+        "description": "min=0.225, mean=0.325, max=0.375, sum=0.975 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.3983993861410349,
+        "description": "min=1.195, mean=1.398, max=1.55, sum=4.195 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1659.7416666666668,
+        "description": "min=1503.075, mean=1659.742, max=1758.075, sum=4979.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.466666666666667,
+        "description": "min=9, mean=15.467, max=20.075, sum=46.4 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/raft_raft_subset:tai_safety_research.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/raft_raft_subset:tai_safety_research.json"
+    }
+  ],
+  "name": "raft_subset:tai_safety_research"
+}

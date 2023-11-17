@@ -1,0 +1,3998 @@
+{
+  "title": "capability: reiteration, topic: climate",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Self-BLEU",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nSelf-BLEU: Self-BLEU metric of [Zhu et al. (2018)](https://arxiv.org/pdf/1802.01886.pdf) as a measure of diversity in model generations.",
+      "markdown": false,
+      "metadata": {
+        "metric": "Self-BLEU",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Entropy",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nEntropy (Monte Carlo): Monte Carlo estimate of the entropy as a measure of diversity in model generations.",
+      "markdown": false,
+      "metadata": {
+        "metric": "Entropy",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "Disinformation (reiteration)"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Scenario from [Buchanan et al. (2021)](https://cset.georgetown.edu/publication/truth-lies-and-automation/) that tests the ability to reiterate disinformation content.\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "Disinformation (reiteration)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 7.554953797546129,
+        "description": "min=7.244, mean=7.555, max=8.116, sum=22.665 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.88658747991664,
+        "description": "min=24.652, mean=25.887, max=26.802, sum=77.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.375,
+        "description": "min=0.25, mean=0.375, max=0.5, sum=0.75 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.819400021114865,
+        "description": "min=2.662, mean=2.819, max=2.94, sum=8.458 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 60.054054054054056,
+        "description": "min=56.378, mean=60.054, max=62.811, sum=180.162 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 9.205685874850829,
+        "description": "min=6.484, mean=9.206, max=11.018, sum=27.617 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 27.134681949924516,
+        "description": "min=25.45, mean=27.135, max=29.511, sum=81.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.333, mean=0.5, max=0.667, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.15012060106982,
+        "description": "min=1.099, mean=1.15, max=1.24, sum=3.45 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 55.00900900900901,
+        "description": "min=51.919, mean=55.009, max=60.405, sum=165.027 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 7.5289814955625225,
+        "description": "min=6.636, mean=7.529, max=8.056, sum=22.587 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 26.87535703465132,
+        "description": "min=25.132, mean=26.875, max=28.474, sum=80.626 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26666666666666666,
+        "description": "min=0, mean=0.267, max=0.5, sum=0.8 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.011, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.6401481207770268,
+        "description": "min=1.556, mean=1.64, max=1.736, sum=4.92 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.054054054054056,
+        "description": "min=54.243, mean=58.054, max=62.108, sum=174.162 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 8.758072027334187,
+        "description": "min=7.18, mean=8.758, max=10.033, sum=26.274 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.75700334796406,
+        "description": "min=23.502, mean=25.757, max=28.309, sum=77.271 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.333, mean=0.5, max=0.667, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27777777777777773,
+        "description": "min=0.167, mean=0.278, max=0.5, sum=0.833 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.007207207207207207,
+        "description": "min=0, mean=0.007, max=0.011, sum=0.022 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.666666666666664,
+        "description": "min=55.216, mean=58.667, max=64.622, sum=176 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 7.875715077457417,
+        "description": "min=6.469, mean=7.876, max=8.809, sum=23.627 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.3376628079662,
+        "description": "min=23.113, mean=24.338, max=25.55, sum=73.013 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5416666666666667,
+        "description": "min=0.417, mean=0.542, max=0.667, sum=1.083 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12499999999999997,
+        "description": "min=0, mean=0.125, max=0.25, sum=0.25 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.005, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 57.43243243243243,
+        "description": "min=54.838, mean=57.432, max=60.784, sum=172.297 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 7.583701827156209,
+        "description": "min=7.121, mean=7.584, max=7.838, sum=22.751 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.113366875311346,
+        "description": "min=24.581, mean=25.113, max=25.963, sum=75.34 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.333, mean=0.5, max=0.667, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38888888888888884,
+        "description": "min=0.167, mean=0.389, max=0.5, sum=1.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.011, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 56.27927927927928,
+        "description": "min=53.351, mean=56.279, max=61.378, sum=168.838 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 8.604609503272231,
+        "description": "min=6.569, mean=8.605, max=11.003, sum=25.814 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 27.363665813441457,
+        "description": "min=26.091, mean=27.364, max=29.293, sum=82.091 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3888888888888889,
+        "description": "min=0.278, mean=0.389, max=0.5, sum=0.778 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.8918918918919,
+        "description": "min=185.892, mean=192.892, max=204.892, sum=578.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.01801801801802,
+        "description": "min=55.324, mean=58.018, max=62.865, sum=174.054 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 98.24386484730722,
+        "description": "min=97.074, mean=98.244, max=98.856, sum=294.732 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.083450081829303,
+        "description": "min=13.533, mean=14.083, max=14.921, sum=42.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 253.2702702702703,
+        "description": "min=239.27, mean=253.27, max=269.27, sum=759.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 51.31531531531531,
+        "description": "min=49.811, mean=51.315, max=53.946, sum=153.946 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 95.16210932193222,
+        "description": "min=94.645, mean=95.162, max=95.452, sum=285.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.933777526829735,
+        "description": "min=13.522, mean=14.934, max=16.425, sum=44.801 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 253.2702702702703,
+        "description": "min=239.27, mean=253.27, max=269.27, sum=759.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.792792792792795,
+        "description": "min=52.784, mean=58.793, max=65.027, sum=176.378 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 85.55095299437266,
+        "description": "min=83.586, mean=85.551, max=87.128, sum=256.653 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.802492001481063,
+        "description": "min=12.692, mean=13.802, max=14.948, sum=41.407 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 253.2702702702703,
+        "description": "min=239.27, mean=253.27, max=269.27, sum=759.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 57.27927927927928,
+        "description": "min=53.649, mean=57.279, max=61.351, sum=171.838 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 99.1050253024506,
+        "description": "min=98.718, mean=99.105, max=99.337, sum=297.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.81396184259087,
+        "description": "min=10.388, mean=10.814, max=11.171, sum=32.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 3.697400971283784,
+        "description": "min=3.657, mean=3.697, max=3.721, sum=11.092 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 55.4954954954955,
+        "description": "min=55.351, mean=55.495, max=55.595, sum=166.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 9.757771757605814,
+        "description": "min=8.944, mean=9.758, max=10.81, sum=29.273 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 38.9524851805455,
+        "description": "min=37.149, mean=38.952, max=40.616, sum=116.857 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "description": "min=0.25, mean=0.417, max=0.5, sum=1.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.64092054431503,
+        "description": "min=3.243, mean=3.641, max=4.297, sum=10.923 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 246.40540540540542,
+        "description": "min=237.405, mean=246.405, max=257.405, sum=739.216 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 121.36036036036035,
+        "description": "min=116.459, mean=121.36, max=125.757, sum=364.081 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 43.614139595760264,
+        "description": "min=24.964, mean=43.614, max=58.133, sum=130.842 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 60.808836846206646,
+        "description": "min=40.237, mean=60.809, max=84.355, sum=182.427 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38888888888888884,
+        "description": "min=0.167, mean=0.389, max=0.5, sum=1.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.005, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.433624275052869,
+        "description": "min=2.433, mean=2.434, max=2.434, sum=7.301 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 266.42342342342346,
+        "description": "min=248.757, mean=266.423, max=289.757, sum=799.27 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 500.0,
+        "description": "min=500, mean=500, max=500, sum=1500 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 99.79293924891518,
+        "description": "min=99.542, mean=99.793, max=100.0, sum=299.379 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.565592208463224,
+        "description": "min=14.655, mean=15.566, max=16.399, sum=46.697 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 2.903150408220721,
+        "description": "min=2.633, mean=2.903, max=3.097, sum=8.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 62.666666666666664,
+        "description": "min=55.811, mean=62.667, max=67.27, sum=188 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 99.88403651285324,
+        "description": "min=99.652, mean=99.884, max=100.0, sum=299.652 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.766064445881838,
+        "description": "min=14.146, mean=15.766, max=17.63, sum=47.298 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.6003840090090093,
+        "description": "min=1.487, mean=1.6, max=1.731, sum=4.801 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.97297297297297,
+        "description": "min=53.919, mean=58.973, max=64.73, sum=176.919 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 100.00000000000001,
+        "description": "min=100.0, mean=100.0, max=100.0, sum=300.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.347230010899459,
+        "description": "min=12.111, mean=13.347, max=14.897, sum=40.042 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.8321290118243244,
+        "description": "min=0.782, mean=0.832, max=0.889, sum=2.496 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.59459459459459,
+        "description": "min=46.486, mean=50.595, max=55, sum=151.784 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 100.00000000000001,
+        "description": "min=100.0, mean=100.0, max=100.0, sum=300.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.653195681152072,
+        "description": "min=11.691, mean=12.653, max=14.141, sum=37.96 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5577309262387388,
+        "description": "min=0.509, mean=0.558, max=0.595, sum=1.673 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 53.24324324324325,
+        "description": "min=45.405, mean=53.243, max=60, sum=159.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 99.42976112554136,
+        "description": "min=99.087, mean=99.43, max=99.66, sum=298.289 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.39116740156066,
+        "description": "min=13.712, mean=14.391, max=14.778, sum=43.174 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 61.14414414414415,
+        "description": "min=55.541, mean=61.144, max=65.351, sum=183.432 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 100.00000000000001,
+        "description": "min=100.0, mean=100.0, max=100.0, sum=300.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.188651835873763,
+        "description": "min=12.334, mean=14.189, max=17.298, sum=42.566 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 51.84684684684685,
+        "description": "min=49.595, mean=51.847, max=56.081, sum=155.541 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 100.00000000000001,
+        "description": "min=100.0, mean=100.0, max=100.0, sum=300.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.973023069394367,
+        "description": "min=11.325, mean=12.973, max=14.619, sum=38.919 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 60.27027027027027,
+        "description": "min=58.243, mean=60.27, max=64.054, sum=180.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 99.596976104438,
+        "description": "min=98.969, mean=99.597, max=100.0, sum=298.791 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.293144103118975,
+        "description": "min=11.605, mean=12.293, max=13.618, sum=36.879 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 250.82882882882885,
+        "description": "min=240.162, mean=250.829, max=262.162, sum=752.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 66.90990990990991,
+        "description": "min=62.027, mean=66.91, max=70.676, sum=200.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 7.82504110147653,
+        "description": "min=6.081, mean=7.825, max=9.014, sum=23.475 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.32704490885004,
+        "description": "min=48.721, mean=50.327, max=53.123, sum=150.981 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.32222222222222224,
+        "description": "min=0.167, mean=0.322, max=0.5, sum=0.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6843822560868821,
+        "description": "min=0.656, mean=0.684, max=0.703, sum=2.053 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 148.24324324324326,
+        "description": "min=141.757, mean=148.243, max=152.568, sum=444.73 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 9.079818834913185,
+        "description": "min=7.569, mean=9.08, max=11.053, sum=27.239 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.28360629919413,
+        "description": "min=47.897, mean=50.284, max=53.384, sum=150.851 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.005405405405405406,
+        "description": "min=0, mean=0.005, max=0.011, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5799556104986517,
+        "description": "min=0.528, mean=0.58, max=0.657, sum=1.74 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 252.21621621621622,
+        "description": "min=241.216, mean=252.216, max=264.216, sum=756.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 157.25225225225225,
+        "description": "min=143.378, mean=157.252, max=175.811, sum=471.757 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 57.3171061946224,
+        "description": "min=54.768, mean=57.317, max=59.969, sum=171.951 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 96.3405916647631,
+        "description": "min=91.273, mean=96.341, max=99.025, sum=289.022 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.2464597845862615,
+        "description": "min=5.224, mean=5.246, max=5.289, sum=15.739 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 266.42342342342346,
+        "description": "min=248.757, mean=266.423, max=289.757, sum=799.27 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 500.0,
+        "description": "min=500, mean=500, max=500, sum=1500 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 39.51114549160161,
+        "description": "min=36.215, mean=39.511, max=44.669, sum=118.533 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 121.47936067117956,
+        "description": "min=117.941, mean=121.479, max=124.517, sum=364.438 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6216216216216217,
+        "description": "min=0.532, mean=0.622, max=0.667, sum=1.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36752136752136755,
+        "description": "min=0.269, mean=0.368, max=0.5, sum=1.103 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.005405405405405406,
+        "description": "min=0, mean=0.005, max=0.011, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3984400095703378,
+        "description": "min=3.397, mean=3.398, max=3.4, sum=10.195 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 270.42342342342346,
+        "description": "min=252.757, mean=270.423, max=293.757, sum=811.27 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 500.0,
+        "description": "min=500, mean=500, max=500, sum=1500 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 8.505387623086158,
+        "description": "min=7.599, mean=8.505, max=9.6, sum=25.516 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.91575292574393,
+        "description": "min=36.221, mean=40.916, max=46.187, sum=122.747 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.009009009009009009,
+        "description": "min=0.005, mean=0.009, max=0.016, sum=0.027 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3343027767834355,
+        "description": "min=2.731, mean=3.334, max=4.062, sum=10.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 135.82882882882885,
+        "description": "min=114.73, mean=135.829, max=157.595, sum=407.486 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 11.325577392872495,
+        "description": "min=7.27, mean=11.326, max=13.997, sum=33.977 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 39.357692537651396,
+        "description": "min=35.967, mean=39.358, max=45.656, sum=118.073 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.333, mean=0.5, max=0.667, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "description": "min=0.25, mean=0.417, max=0.5, sum=1.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.011, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7302689415914521,
+        "description": "min=0.635, mean=0.73, max=0.909, sum=2.191 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 131.7027027027027,
+        "description": "min=122.946, mean=131.703, max=147.162, sum=395.108 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 9.76322756930315,
+        "description": "min=7.144, mean=9.763, max=11.997, sum=29.29 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 21.254128301895417,
+        "description": "min=19.95, mean=21.254, max=22.254, sum=63.762 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.005405405405405406,
+        "description": "min=0, mean=0.005, max=0.011, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 62.36936936936937,
+        "description": "min=58.865, mean=62.369, max=68.514, sum=187.108 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 10.17155043786839,
+        "description": "min=9.189, mean=10.172, max=11.818, sum=30.515 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.265417827571834,
+        "description": "min=23.57, mean=25.265, max=27.629, sum=75.796 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5555555555555556,
+        "description": "min=0.333, mean=0.556, max=0.667, sum=1.667 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0, mean=0.333, max=0.5, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 63.765765765765764,
+        "description": "min=60.189, mean=63.766, max=68.568, sum=191.297 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 9.258644081475195,
+        "description": "min=7.407, mean=9.259, max=12.913, sum=27.776 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.69631360247043,
+        "description": "min=20.892, mean=22.696, max=25.458, sum=68.089 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.005405405405405406,
+        "description": "min=0, mean=0.005, max=0.011, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0382433488175673,
+        "description": "min=1.884, mean=2.038, max=2.238, sum=6.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 61.95495495495496,
+        "description": "min=56.757, mean=61.955, max=68.73, sum=185.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 8.151577700867454,
+        "description": "min=6.886, mean=8.152, max=9.148, sum=24.455 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 26.37453819009049,
+        "description": "min=24.238, mean=26.375, max=28.925, sum=79.124 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4666666666666667,
+        "description": "min=0.467, mean=0.467, max=0.467, sum=0.467 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.007207207207207207,
+        "description": "min=0.005, mean=0.007, max=0.011, sum=0.022 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5358342483108108,
+        "description": "min=0.511, mean=0.536, max=0.57, sum=1.608 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 64.60360360360362,
+        "description": "min=60.757, mean=64.604, max=69.946, sum=193.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 8.140398044602831,
+        "description": "min=7.066, mean=8.14, max=9.434, sum=24.421 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 28.25488213705616,
+        "description": "min=27.75, mean=28.255, max=28.969, sum=84.765 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0, mean=0.333, max=0.5, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47388020833333333,
+        "description": "min=0.454, mean=0.474, max=0.486, sum=1.422 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 60.43243243243243,
+        "description": "min=57.054, mean=60.432, max=62.622, sum=181.297 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 6.739923192094875,
+        "description": "min=6.122, mean=6.74, max=7.248, sum=20.22 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 31.85715554167594,
+        "description": "min=29.866, mean=31.857, max=33.014, sum=95.571 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.011, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5301891891891892,
+        "description": "min=0.507, mean=0.53, max=0.546, sum=1.591 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 65.8918918918919,
+        "description": "min=61.892, mean=65.892, max=68.432, sum=197.676 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 19.897185105835884,
+        "description": "min=18.1, mean=19.897, max=21.422, sum=59.692 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 13.826851779832147,
+        "description": "min=13.433, mean=13.827, max=14.51, sum=41.481 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 61.21621621621622,
+        "description": "min=58.432, mean=61.216, max=64.892, sum=183.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 21.38486580016294,
+        "description": "min=21.126, mean=21.385, max=21.533, sum=64.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.08280139779326,
+        "description": "min=8.655, mean=9.083, max=9.313, sum=27.248 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 1.987163253096847,
+        "description": "min=1.89, mean=1.987, max=2.073, sum=5.961 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 62.81981981981982,
+        "description": "min=59.459, mean=62.82, max=65.865, sum=188.459 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 18.950778982644234,
+        "description": "min=12.662, mean=18.951, max=22.673, sum=56.852 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.593984141190319,
+        "description": "min=11.485, mean=12.594, max=14.312, sum=37.782 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5100522240990992,
+        "description": "min=0.5, mean=0.51, max=0.526, sum=1.53 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 54.88288288288288,
+        "description": "min=53.027, mean=54.883, max=58.027, sum=164.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 20.662381567291273,
+        "description": "min=16.012, mean=20.662, max=24.547, sum=61.987 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.589358971998081,
+        "description": "min=13.341, mean=14.589, max=17.001, sum=43.768 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5028666948198199,
+        "description": "min=0.481, mean=0.503, max=0.546, sum=1.509 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 54.3963963963964,
+        "description": "min=51.162, mean=54.396, max=60.676, sum=163.189 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 25.96310017897278,
+        "description": "min=23.372, mean=25.963, max=29.618, sum=77.889 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 15.495637782929881,
+        "description": "min=13.266, mean=15.496, max=17.999, sum=46.487 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35714285714285715,
+        "description": "min=0.071, mean=0.357, max=0.5, sum=1.071 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4388666948198198,
+        "description": "min=0.415, mean=0.439, max=0.481, sum=1.317 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 60.02702702702703,
+        "description": "min=55.838, mean=60.027, max=67.351, sum=180.081 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 15.545484401654408,
+        "description": "min=12.08, mean=15.545, max=17.318, sum=46.636 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.34676111796955,
+        "description": "min=94.06, mean=99.347, max=109.884, sum=298.04 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38888888888888884,
+        "description": "min=0.167, mean=0.389, max=0.5, sum=1.167 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0018018018018018018,
+        "description": "min=0, mean=0.002, max=0.005, sum=0.005 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.389714120898009,
+        "description": "min=7.242, mean=7.39, max=7.681, sum=22.169 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 245.21621621621622,
+        "description": "min=237.216, mean=245.216, max=257.216, sum=735.649 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 372.27027027027026,
+        "description": "min=372.081, mean=372.27, max=372.595, sum=1116.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 14.66406091811003,
+        "description": "min=11.1, mean=14.664, max=18.062, sum=43.992 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10714285714285714,
+        "description": "min=0, mean=0.107, max=0.214, sum=0.214 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.011, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.234234234234236,
+        "description": "min=54, mean=58.234, max=66.486, sum=174.703 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 13.724910059641909,
+        "description": "min=11.204, mean=13.725, max=15.011, sum=41.175 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=1.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0036036036036036037,
+        "description": "min=0, mean=0.004, max=0.005, sum=0.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 247.46846846846847,
+        "description": "min=238.135, mean=247.468, max=260.135, sum=742.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 65.86486486486486,
+        "description": "min=63.378, mean=65.865, max=69.486, sum=197.595 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=disinformation_reiteration&subgroup=capability%3A%20reiteration%2C%20topic%3A%20climate&runSpecs=%5B%22disinfo%3Atype%3Dreiteration%2Ctopic%3Dclimate%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 32.99351080785076,
+        "description": "min=30.192, mean=32.994, max=35.491, sum=98.981 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.066469511899864,
+        "description": "min=16.574, mean=17.066, max=17.375, sum=51.199 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0.5, mean=0.5, max=0.5, sum=0.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.007207207207207207,
+        "description": "min=0, mean=0.007, max=0.011, sum=0.022 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.547393883824195,
+        "description": "min=4.293, mean=4.547, max=4.74, sum=13.642 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 37.0,
+        "description": "min=37, mean=37, max=37, sum=111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 248.44144144144147,
+        "description": "min=239.108, mean=248.441, max=259.108, sum=745.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 479.5225225225225,
+        "description": "min=452.378, mean=479.523, max=500, sum=1438.568 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/disinformation_reiteration_disinformation_reiteration_capability:reiteration,topic:climate.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/disinformation_reiteration_disinformation_reiteration_capability:reiteration,topic:climate.json"
+    }
+  ],
+  "name": "disinformation_reiteration_capability:reiteration,topic:climate"
+}

@@ -1,0 +1,3829 @@
+{
+  "title": "subject: intermediate_algebra, level: 1, use_official_examples: True, use_chain_of_thought: False",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Equivalent",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nEquivalent: Fraction of model outputs that are mathematically equivalent to the correct reference.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Equivalent",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "MATH"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05769230769230769,
+        "description": "min=0.038, mean=0.058, max=0.077, sum=0.173 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6756133563701926,
+        "description": "min=0.674, mean=0.676, max=0.678, sum=2.027 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.365384615384616,
+        "description": "min=6.327, mean=6.365, max=6.423, sum=19.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.019230769230769232,
+        "description": "min=0.019, mean=0.019, max=0.019, sum=0.058 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4630998848157053,
+        "description": "min=0.459, mean=0.463, max=0.47, sum=1.389 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.83974358974359,
+        "description": "min=6.596, mean=6.84, max=7.25, sum=20.519 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.231 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5234192457932694,
+        "description": "min=0.522, mean=0.523, max=0.525, sum=1.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.647435897435898,
+        "description": "min=6.596, mean=6.647, max=6.712, sum=19.942 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10256410256410257,
+        "description": "min=0.096, mean=0.103, max=0.115, sum=0.308 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.173076923076923,
+        "description": "min=4.846, mean=5.173, max=5.404, sum=15.519 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09615384615384616,
+        "description": "min=0.077, mean=0.096, max=0.115, sum=0.288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.67948717948718,
+        "description": "min=5.346, mean=5.679, max=6.058, sum=17.038 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1346153846153846,
+        "description": "min=0.115, mean=0.135, max=0.154, sum=0.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.5576923076923075,
+        "description": "min=4.481, mean=4.558, max=4.615, sum=13.673 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.025641025641025644,
+        "description": "min=0.019, mean=0.026, max=0.038, sum=0.077 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 380.15384615384613,
+        "description": "min=380.154, mean=380.154, max=380.154, sum=1140.462 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.58974358974359,
+        "description": "min=6.077, mean=6.59, max=6.942, sum=19.769 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.038461538461538464,
+        "description": "min=0.019, mean=0.038, max=0.058, sum=0.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 436.09615384615387,
+        "description": "min=436.096, mean=436.096, max=436.096, sum=1308.288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.570512820512821,
+        "description": "min=4.442, mean=4.571, max=4.788, sum=13.712 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14743589743589744,
+        "description": "min=0.135, mean=0.147, max=0.154, sum=0.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 436.09615384615387,
+        "description": "min=436.096, mean=436.096, max=436.096, sum=1308.288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.083333333333333,
+        "description": "min=3.981, mean=4.083, max=4.154, sum=12.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1730769230769231,
+        "description": "min=0.154, mean=0.173, max=0.192, sum=0.519 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 436.09615384615387,
+        "description": "min=436.096, mean=436.096, max=436.096, sum=1308.288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.7307692307692313,
+        "description": "min=3.558, mean=3.731, max=3.885, sum=11.192 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1794871794871795,
+        "description": "min=0.173, mean=0.179, max=0.192, sum=0.538 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7128296900040066,
+        "description": "min=0.706, mean=0.713, max=0.716, sum=2.138 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0897435897435894,
+        "description": "min=2.962, mean=3.09, max=3.154, sum=9.269 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.032051282051282055,
+        "description": "min=0.019, mean=0.032, max=0.058, sum=0.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8293176972522186,
+        "description": "min=0.801, mean=0.829, max=0.844, sum=2.488 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 362.65384615384613,
+        "description": "min=362.654, mean=362.654, max=362.654, sum=1087.962 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.538461538461537,
+        "description": "min=6.077, mean=6.538, max=6.827, sum=19.615 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2842013503697558,
+        "description": "min=0.284, mean=0.284, max=0.285, sum=0.853 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6923076923076925,
+        "description": "min=7.692, mean=7.692, max=7.692, sum=23.077 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.038461538461538464,
+        "description": "min=0.038, mean=0.038, max=0.038, sum=0.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 422.3653846153846,
+        "description": "min=422.365, mean=422.365, max=422.365, sum=1267.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06410256410256411,
+        "description": "min=0.038, mean=0.064, max=0.096, sum=0.192 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6704799554286861,
+        "description": "min=0.668, mean=0.67, max=0.672, sum=2.011 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.5897435897435885,
+        "description": "min=5.538, mean=5.59, max=5.635, sum=16.769 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07051282051282053,
+        "description": "min=0.058, mean=0.071, max=0.077, sum=0.212 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4333976737780449,
+        "description": "min=0.427, mean=0.433, max=0.439, sum=1.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.57051282051282,
+        "description": "min=6.308, mean=6.571, max=6.827, sum=19.712 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006410256410256411,
+        "description": "min=0, mean=0.006, max=0.019, sum=0.019 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3674232271634615,
+        "description": "min=0.354, mean=0.367, max=0.375, sum=1.102 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.814102564102564,
+        "description": "min=7.712, mean=8.814, max=9.404, sum=26.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006410256410256411,
+        "description": "min=0, mean=0.006, max=0.019, sum=0.019 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31442161207932695,
+        "description": "min=0.311, mean=0.314, max=0.316, sum=0.943 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.717948717948718,
+        "description": "min=7.154, mean=7.718, max=8.038, sum=23.154 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08974358974358974,
+        "description": "min=0.077, mean=0.09, max=0.096, sum=0.269 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.730769230769231,
+        "description": "min=6.5, mean=6.731, max=7.019, sum=20.192 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.019230769230769232,
+        "description": "min=0.019, mean=0.019, max=0.019, sum=0.058 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.25,
+        "description": "min=6.231, mean=7.25, max=7.827, sum=21.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.025641025641025644,
+        "description": "min=0.019, mean=0.026, max=0.038, sum=0.077 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.615384615384616,
+        "description": "min=7.077, mean=7.615, max=8.115, sum=22.846 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08333333333333333,
+        "description": "min=0.077, mean=0.083, max=0.096, sum=0.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 426.1346153846154,
+        "description": "min=426.135, mean=426.135, max=426.135, sum=1278.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.788461538461537,
+        "description": "min=5.365, mean=5.788, max=6.25, sum=17.365 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08333333333333333,
+        "description": "min=0.077, mean=0.083, max=0.096, sum=0.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27011438791568465,
+        "description": "min=0.262, mean=0.27, max=0.283, sum=0.81 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.269230769230769,
+        "description": "min=3.962, mean=4.269, max=4.558, sum=12.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "description": "min=0.154, mean=0.167, max=0.173, sum=0.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4019923476509122,
+        "description": "min=0.4, mean=0.402, max=0.403, sum=1.206 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.6346153846154,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=1213.904 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.916666666666667,
+        "description": "min=4.75, mean=4.917, max=5.058, sum=14.75 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.057692307692307696,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.519230769230769,
+        "description": "min=4.519, mean=4.519, max=4.519, sum=4.519 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.077 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.6923076923076925,
+        "description": "min=4.692, mean=4.692, max=4.692, sum=4.692 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4381910559466429,
+        "description": "min=0.438, mean=0.438, max=0.438, sum=1.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6923076923076925,
+        "description": "min=7.692, mean=7.692, max=7.692, sum=23.077 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.038461538461538464,
+        "description": "min=0.038, mean=0.038, max=0.038, sum=0.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 402.1346153846154,
+        "description": "min=402.135, mean=402.135, max=402.135, sum=1206.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3418617622778653,
+        "description": "min=0.342, mean=0.342, max=0.342, sum=1.026 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6923076923076925,
+        "description": "min=7.692, mean=7.692, max=7.692, sum=23.077 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.038461538461538464,
+        "description": "min=0.038, mean=0.038, max=0.038, sum=0.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 405.9615384615384,
+        "description": "min=405.962, mean=405.962, max=405.962, sum=1217.885 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1978244056631786,
+        "description": "min=1.147, mean=1.198, max=1.283, sum=3.593 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.2243589743589745,
+        "description": "min=3.885, mean=4.224, max=4.635, sum=12.673 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.032051282051282055,
+        "description": "min=0.019, mean=0.032, max=0.038, sum=0.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.786897619674495,
+        "description": "min=5.764, mean=5.787, max=5.801, sum=17.361 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.012820512820513,
+        "description": "min=3.75, mean=4.013, max=4.212, sum=12.038 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.057692307692307696,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.865384615384615,
+        "description": "min=6.865, mean=6.865, max=6.865, sum=6.865 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11538461538461539,
+        "description": "min=0.115, mean=0.115, max=0.115, sum=0.115 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.288461538461538,
+        "description": "min=6.288, mean=6.288, max=6.288, sum=6.288 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17307692307692307,
+        "description": "min=0.173, mean=0.173, max=0.173, sum=0.173 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.5,
+        "description": "min=4.5, mean=4.5, max=4.5, sum=4.5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1346153846153846,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.135 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.077 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1346153846153846,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.135 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21153846153846154,
+        "description": "min=0.212, mean=0.212, max=0.212, sum=0.212 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09615384615384616,
+        "description": "min=0.096, mean=0.096, max=0.096, sum=0.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.846153846153846,
+        "description": "min=6.846, mean=6.846, max=6.846, sum=6.846 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09615384615384616,
+        "description": "min=0.096, mean=0.096, max=0.096, sum=0.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.326923076923077,
+        "description": "min=7.327, mean=7.327, max=7.327, sum=7.327 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1346153846153846,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.135 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 459.96153846153845,
+        "description": "min=459.962, mean=459.962, max=459.962, sum=459.962 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.730769230769231,
+        "description": "min=7.731, mean=7.731, max=7.731, sum=7.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14743589743589744,
+        "description": "min=0.135, mean=0.147, max=0.154, sum=0.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.5,
+        "description": "min=3.365, mean=3.5, max=3.635, sum=10.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.032051282051282055,
+        "description": "min=0.019, mean=0.032, max=0.038, sum=0.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.833333333333333,
+        "description": "min=5.577, mean=5.833, max=6.327, sum=17.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.058, mean=0.077, max=0.096, sum=0.231 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29924365234375,
+        "description": "min=0.295, mean=0.299, max=0.304, sum=0.898 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.75,
+        "description": "min=3.596, mean=3.75, max=3.904, sum=11.25 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.032051282051282055,
+        "description": "min=0.019, mean=0.032, max=0.038, sum=0.096 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11583541165865384,
+        "description": "min=0.114, mean=0.116, max=0.121, sum=0.348 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.467948717948718,
+        "description": "min=4.135, mean=4.468, max=5.135, sum=13.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006410256410256411,
+        "description": "min=0, mean=0.006, max=0.019, sum=0.019 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13990706380208337,
+        "description": "min=0.139, mean=0.14, max=0.141, sum=0.42 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.403846153846154,
+        "description": "min=4.288, mean=4.404, max=4.615, sum=13.212 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.012820512820512822,
+        "description": "min=0, mean=0.013, max=0.019, sum=0.038 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1441669921875,
+        "description": "min=0.144, mean=0.144, max=0.145, sum=0.433 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.6089743589743588,
+        "description": "min=1.5, mean=1.609, max=1.788, sum=4.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2692307692307692,
+        "description": "min=0.231, mean=0.269, max=0.308, sum=0.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.4679487179487176,
+        "description": "min=3.308, mean=3.468, max=3.654, sum=10.404 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2371794871794872,
+        "description": "min=0.231, mean=0.237, max=0.25, sum=0.712 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29755466245993584,
+        "description": "min=0.295, mean=0.298, max=0.303, sum=0.893 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.076923076923077,
+        "description": "min=3.981, mean=4.077, max=4.25, sum=12.231 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05128205128205129,
+        "description": "min=0.019, mean=0.051, max=0.077, sum=0.154 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15299476662660258,
+        "description": "min=0.15, mean=0.153, max=0.155, sum=0.459 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.282051282051282,
+        "description": "min=3.885, mean=4.282, max=4.5, sum=12.846 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14798470052083337,
+        "description": "min=0.144, mean=0.148, max=0.152, sum=0.444 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.307692307692308,
+        "description": "min=2.692, mean=3.308, max=3.942, sum=9.923 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09096454326923076,
+        "description": "min=0.089, mean=0.091, max=0.093, sum=0.273 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.628205128205128,
+        "description": "min=1.269, mean=1.628, max=2.038, sum=4.885 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2692307692307692,
+        "description": "min=0.269, mean=0.269, max=0.269, sum=0.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2518288261217949,
+        "description": "min=0.25, mean=0.252, max=0.254, sum=0.755 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.743589743589744,
+        "description": "min=4.673, mean=4.744, max=4.846, sum=14.231 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07051282051282053,
+        "description": "min=0.058, mean=0.071, max=0.077, sum=0.212 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13245751953124998,
+        "description": "min=0.131, mean=0.132, max=0.134, sum=0.397 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.314102564102565,
+        "description": "min=5.173, mean=5.314, max=5.558, sum=15.942 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.34615384615384615,
+        "description": "min=0.346, mean=0.346, max=0.346, sum=0.346 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.5769230769231,
+        "description": "min=388.577, mean=388.577, max=388.577, sum=388.577 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.211538461538462,
+        "description": "min=4.212, mean=4.212, max=4.212, sum=4.212 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.36538461538461536,
+        "description": "min=0.365, mean=0.365, max=0.365, sum=0.365 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 388.5769230769231,
+        "description": "min=388.577, mean=388.577, max=388.577, sum=388.577 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.7884615384615383,
+        "description": "min=3.788, mean=3.788, max=3.788, sum=3.788 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.077 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.038461538461538,
+        "description": "min=5.038, mean=5.038, max=5.038, sum=5.038 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09615384615384616,
+        "description": "min=0.096, mean=0.096, max=0.096, sum=0.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.038461538461538,
+        "description": "min=5.038, mean=5.038, max=5.038, sum=5.038 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.057692307692307696,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.173076923076923,
+        "description": "min=6.173, mean=6.173, max=6.173, sum=6.173 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.038461538461538464,
+        "description": "min=0.038, mean=0.038, max=0.038, sum=0.038 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.519230769230769,
+        "description": "min=4.519, mean=4.519, max=4.519, sum=4.519 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1346153846153846,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.135 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07692307692307693,
+        "description": "min=0.077, mean=0.077, max=0.077, sum=0.077 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 404.63461538461536,
+        "description": "min=404.635, mean=404.635, max=404.635, sum=404.635 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11538461538461539,
+        "description": "min=0.115, mean=0.115, max=0.115, sum=0.115 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 452.09615384615387,
+        "description": "min=452.096, mean=452.096, max=452.096, sum=452.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.057692307692307696,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 452.09615384615387,
+        "description": "min=452.096, mean=452.096, max=452.096, sum=452.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.15384615384615385,
+        "description": "min=0.154, mean=0.154, max=0.154, sum=0.154 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 452.09615384615387,
+        "description": "min=452.096, mean=452.096, max=452.096, sum=452.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11538461538461539,
+        "description": "min=0.115, mean=0.115, max=0.115, sum=0.115 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=52 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 452.09615384615387,
+        "description": "min=452.096, mean=452.096, max=452.096, sum=452.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.7363369905309525,
+        "description": "min=0.73, mean=0.736, max=0.74, sum=2.209 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 421.59615384615387,
+        "description": "min=421.596, mean=421.596, max=421.596, sum=1264.788 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.980769230769231,
+        "description": "min=6.788, mean=6.981, max=7.096, sum=20.942 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10256410256410257,
+        "description": "min=0.096, mean=0.103, max=0.115, sum=0.308 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.935897435897436,
+        "description": "min=3.846, mean=3.936, max=4.019, sum=11.808 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17307692307692304,
+        "description": "min=0.173, mean=0.173, max=0.173, sum=0.519 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 420.9423076923077,
+        "description": "min=420.942, mean=420.942, max=420.942, sum=1262.827 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.9871794871794872,
+        "description": "min=2.885, mean=2.987, max=3.038, sum=8.962 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20intermediate_algebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dintermediate_algebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.37763067487722785,
+        "description": "min=0.367, mean=0.378, max=0.384, sum=1.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 52.0,
+        "description": "min=52, mean=52, max=52, sum=156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 375.1923076923077,
+        "description": "min=375.192, mean=375.192, max=375.192, sum=1125.577 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.185897435897434,
+        "description": "min=18.827, mean=19.186, max=19.731, sum=57.558 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/math_regular_math_regular_subject:intermediate_algebra,level:1,use_official_examples:True,use_chain_of_thought:False.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/math_regular_math_regular_subject:intermediate_algebra,level:1,use_official_examples:True,use_chain_of_thought:False.json"
+    }
+  ],
+  "name": "math_regular_subject:intermediate_algebra,level:1,use_official_examples:True,use_chain_of_thought:False"
+}

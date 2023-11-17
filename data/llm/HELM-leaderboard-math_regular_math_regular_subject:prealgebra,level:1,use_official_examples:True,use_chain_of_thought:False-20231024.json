@@ -1,0 +1,3829 @@
+{
+  "title": "subject: prealgebra, level: 1, use_official_examples: True, use_chain_of_thought: False",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Equivalent",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nEquivalent: Fraction of model outputs that are mathematically equivalent to the correct reference.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Equivalent",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "MATH"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The MATH benchmark for measuring mathematical problem solving on competition math problems [(Hendrycks et al., 2021)](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "MATH"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13178294573643412,
+        "description": "min=0.128, mean=0.132, max=0.14, sum=0.395 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5557788540152618,
+        "description": "min=0.543, mean=0.556, max=0.564, sum=1.667 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.903100775193799,
+        "description": "min=3.605, mean=3.903, max=4.105, sum=11.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07364341085271318,
+        "description": "min=0.07, mean=0.074, max=0.081, sum=0.221 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42470822734980623,
+        "description": "min=0.42, mean=0.425, max=0.428, sum=1.274 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.108527131782946,
+        "description": "min=4.802, mean=5.109, max=5.326, sum=15.326 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09689922480620156,
+        "description": "min=0.093, mean=0.097, max=0.105, sum=0.291 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4702307072129359,
+        "description": "min=0.465, mean=0.47, max=0.475, sum=1.411 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.732558139534884,
+        "description": "min=4.465, mean=4.733, max=4.965, sum=14.198 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1317829457364341,
+        "description": "min=0.116, mean=0.132, max=0.151, sum=0.395 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.089147286821705,
+        "description": "min=3, mean=3.089, max=3.209, sum=9.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.18604651162790697,
+        "description": "min=0.163, mean=0.186, max=0.209, sum=0.558 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.8682170542635657,
+        "description": "min=2.721, mean=2.868, max=3, sum=8.605 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1744186046511628,
+        "description": "min=0.163, mean=0.174, max=0.186, sum=0.523 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.8217054263565893,
+        "description": "min=2.709, mean=2.822, max=3.035, sum=8.465 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09689922480620156,
+        "description": "min=0.093, mean=0.097, max=0.105, sum=0.291 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 341.3488372093023,
+        "description": "min=341.349, mean=341.349, max=341.349, sum=1024.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.8992248062015507,
+        "description": "min=3.465, mean=3.899, max=4.151, sum=11.698 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10852713178294575,
+        "description": "min=0.105, mean=0.109, max=0.116, sum=0.326 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.55813953488376,
+        "description": "min=400.558, mean=400.558, max=400.558, sum=1201.674 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.9612403100775193,
+        "description": "min=1.814, mean=1.961, max=2.174, sum=5.884 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10465116279069768,
+        "description": "min=0.093, mean=0.105, max=0.116, sum=0.314 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.55813953488376,
+        "description": "min=400.558, mean=400.558, max=400.558, sum=1201.674 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7441860465116281,
+        "description": "min=1.5, mean=1.744, max=1.953, sum=5.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14728682170542637,
+        "description": "min=0.14, mean=0.147, max=0.151, sum=0.442 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.55813953488376,
+        "description": "min=400.558, mean=400.558, max=400.558, sum=1201.674 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0542635658914725,
+        "description": "min=1.942, mean=2.054, max=2.163, sum=6.163 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.18992248062015504,
+        "description": "min=0.163, mean=0.19, max=0.221, sum=0.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6304668877180233,
+        "description": "min=0.63, mean=0.63, max=0.631, sum=1.891 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8643410852713178,
+        "description": "min=1.86, mean=1.864, max=1.872, sum=5.593 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06201550387596899,
+        "description": "min=0.047, mean=0.062, max=0.081, sum=0.186 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6388295505398004,
+        "description": "min=0.615, mean=0.639, max=0.668, sum=1.916 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 335.1046511627907,
+        "description": "min=335.105, mean=335.105, max=335.105, sum=1005.314 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.945736434108527,
+        "description": "min=3.267, mean=3.946, max=4.628, sum=11.837 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2703600646718965,
+        "description": "min=0.263, mean=0.27, max=0.274, sum=0.811 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 399.90697674418607,
+        "description": "min=399.907, mean=399.907, max=399.907, sum=1199.721 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1937984496124031,
+        "description": "min=0.174, mean=0.194, max=0.233, sum=0.581 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5652470097504845,
+        "description": "min=0.56, mean=0.565, max=0.569, sum=1.696 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.2751937984496124,
+        "description": "min=3.14, mean=3.275, max=3.36, sum=9.826 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13953488372093023,
+        "description": "min=0.128, mean=0.14, max=0.151, sum=0.419 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3730177371002907,
+        "description": "min=0.37, mean=0.373, max=0.378, sum=1.119 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.325581395348837,
+        "description": "min=4.186, mean=4.326, max=4.535, sum=12.977 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06976744186046512,
+        "description": "min=0.058, mean=0.07, max=0.081, sum=0.209 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3101135992005814,
+        "description": "min=0.303, mean=0.31, max=0.315, sum=0.93 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.554263565891472,
+        "description": "min=3.977, mean=4.554, max=4.93, sum=13.663 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.023255813953488372,
+        "description": "min=0.023, mean=0.023, max=0.023, sum=0.07 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29907692132994185,
+        "description": "min=0.293, mean=0.299, max=0.304, sum=0.897 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.213178294573644,
+        "description": "min=5.233, mean=6.213, max=7.07, sum=18.64 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1821705426356589,
+        "description": "min=0.163, mean=0.182, max=0.198, sum=0.547 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.112403100775194,
+        "description": "min=3.942, mean=4.112, max=4.267, sum=12.337 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.046511627906976744,
+        "description": "min=0.035, mean=0.047, max=0.058, sum=0.14 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.717054263565892,
+        "description": "min=4.314, mean=4.717, max=4.965, sum=14.151 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1434108527131783,
+        "description": "min=0.14, mean=0.143, max=0.151, sum=0.43 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.627906976744186,
+        "description": "min=4.512, mean=4.628, max=4.802, sum=13.884 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "description": "min=0.151, mean=0.167, max=0.186, sum=0.5 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 390.56976744186045,
+        "description": "min=390.57, mean=390.57, max=390.57, sum=1171.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.914728682170543,
+        "description": "min=3.581, mean=3.915, max=4.14, sum=11.744 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17829457364341086,
+        "description": "min=0.14, mean=0.178, max=0.209, sum=0.535 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22631049923194468,
+        "description": "min=0.209, mean=0.226, max=0.247, sum=0.679 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.2248062015503876,
+        "description": "min=1.884, mean=2.225, max=2.5, sum=6.674 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11627906976744186,
+        "description": "min=0.105, mean=0.116, max=0.128, sum=0.349 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3762732721774416,
+        "description": "min=0.366, mean=0.376, max=0.391, sum=1.129 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=1111.221 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.007751937984496,
+        "description": "min=2.453, mean=3.008, max=3.372, sum=9.023 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11627906976744186,
+        "description": "min=0.116, mean=0.116, max=0.116, sum=0.116 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.616279069767442,
+        "description": "min=2.616, mean=2.616, max=2.616, sum=2.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1511627906976744,
+        "description": "min=0.151, mean=0.151, max=0.151, sum=0.151 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0697674418604652,
+        "description": "min=2.07, mean=2.07, max=2.07, sum=2.07 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43980374358742585,
+        "description": "min=0.44, mean=0.44, max=0.44, sum=1.319 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.903100775193798,
+        "description": "min=7.872, mean=7.903, max=7.93, sum=23.709 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 395.30232558139534,
+        "description": "min=394.942, mean=395.302, max=395.767, sum=1185.907 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3409219766037524,
+        "description": "min=0.341, mean=0.341, max=0.341, sum=1.023 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.895348837209302,
+        "description": "min=7.872, mean=7.895, max=7.919, sum=23.686 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 398.8565891472868,
+        "description": "min=398.512, mean=398.857, max=399.198, sum=1196.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.0,
+        "description": "min=20, mean=20, max=20, sum=60 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.12015503875968991,
+        "description": "min=0.105, mean=0.12, max=0.14, sum=0.36 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6320880983491012,
+        "description": "min=0.576, mean=0.632, max=0.739, sum=1.896 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8100775193798448,
+        "description": "min=1.709, mean=1.81, max=2, sum=5.43 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03488372093023256,
+        "description": "min=0.035, mean=0.035, max=0.035, sum=0.105 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.353582694680983,
+        "description": "min=2.182, mean=3.354, max=4.116, sum=10.061 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.1046511627906974,
+        "description": "min=1.802, mean=2.105, max=2.395, sum=6.314 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13953488372093023,
+        "description": "min=0.14, mean=0.14, max=0.14, sum=0.14 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.6511627906976742,
+        "description": "min=2.651, mean=2.651, max=2.651, sum=2.651 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1511627906976744,
+        "description": "min=0.151, mean=0.151, max=0.151, sum=0.151 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.244186046511628,
+        "description": "min=3.244, mean=3.244, max=3.244, sum=3.244 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1744186046511628,
+        "description": "min=0.174, mean=0.174, max=0.174, sum=0.174 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.5930232558139537,
+        "description": "min=3.593, mean=3.593, max=3.593, sum=3.593 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.313953488372093,
+        "description": "min=0.314, mean=0.314, max=0.314, sum=0.314 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13953488372093023,
+        "description": "min=0.14, mean=0.14, max=0.14, sum=0.14 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13953488372093023,
+        "description": "min=0.14, mean=0.14, max=0.14, sum=0.14 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3372093023255814,
+        "description": "min=0.337, mean=0.337, max=0.337, sum=0.337 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10465116279069768,
+        "description": "min=0.105, mean=0.105, max=0.105, sum=0.105 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.034883720930233,
+        "description": "min=4.035, mean=4.035, max=4.035, sum=4.035 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05813953488372093,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.627906976744186,
+        "description": "min=3.628, mean=3.628, max=3.628, sum=3.628 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09302325581395349,
+        "description": "min=0.093, mean=0.093, max=0.093, sum=0.093 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 424.6162790697674,
+        "description": "min=424.616, mean=424.616, max=424.616, sum=424.616 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.686046511627907,
+        "description": "min=3.686, mean=3.686, max=3.686, sum=3.686 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17829457364341084,
+        "description": "min=0.163, mean=0.178, max=0.198, sum=0.535 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.395348837209302,
+        "description": "min=2.337, mean=2.395, max=2.465, sum=7.186 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08527131782945736,
+        "description": "min=0.07, mean=0.085, max=0.093, sum=0.256 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.3449612403100772,
+        "description": "min=2.209, mean=2.345, max=2.605, sum=7.035 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10077519379844961,
+        "description": "min=0.081, mean=0.101, max=0.116, sum=0.302 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24602380087209308,
+        "description": "min=0.243, mean=0.246, max=0.249, sum=0.738 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0310077519379846,
+        "description": "min=1.919, mean=2.031, max=2.14, sum=6.093 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05813953488372093,
+        "description": "min=0.047, mean=0.058, max=0.07, sum=0.174 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09967697734980623,
+        "description": "min=0.095, mean=0.1, max=0.106, sum=0.299 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.25968992248062,
+        "description": "min=1.616, mean=2.26, max=3.163, sum=6.779 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07751937984496124,
+        "description": "min=0.07, mean=0.078, max=0.081, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12520119458575582,
+        "description": "min=0.125, mean=0.125, max=0.125, sum=0.376 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0387596899224807,
+        "description": "min=2.023, mean=2.039, max=2.047, sum=6.116 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03875968992248062,
+        "description": "min=0.035, mean=0.039, max=0.047, sum=0.116 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14177125726744189,
+        "description": "min=0.141, mean=0.142, max=0.143, sum=0.425 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.24031007751938,
+        "description": "min=1.163, mean=1.24, max=1.384, sum=3.721 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5465116279069768,
+        "description": "min=0.523, mean=0.547, max=0.57, sum=1.64 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.74031007751938,
+        "description": "min=2.663, mean=2.74, max=2.802, sum=8.221 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.43798449612403095,
+        "description": "min=0.419, mean=0.438, max=0.453, sum=1.314 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24283379511870162,
+        "description": "min=0.242, mean=0.243, max=0.244, sum=0.729 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.310077519379845,
+        "description": "min=2.279, mean=2.31, max=2.337, sum=6.93 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05426356589147286,
+        "description": "min=0.047, mean=0.054, max=0.058, sum=0.163 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13822235343992242,
+        "description": "min=0.138, mean=0.138, max=0.139, sum=0.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.2131782945736433,
+        "description": "min=2.174, mean=2.213, max=2.256, sum=6.64 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03488372093023256,
+        "description": "min=0.023, mean=0.035, max=0.058, sum=0.105 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13683334847383724,
+        "description": "min=0.135, mean=0.137, max=0.139, sum=0.411 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.837209302325581,
+        "description": "min=1.628, mean=1.837, max=2.174, sum=5.512 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.011627906976744186,
+        "description": "min=0.012, mean=0.012, max=0.012, sum=0.035 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08881831395348838,
+        "description": "min=0.088, mean=0.089, max=0.089, sum=0.266 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4108527131782946,
+        "description": "min=1.302, mean=1.411, max=1.523, sum=4.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5813953488372093,
+        "description": "min=0.558, mean=0.581, max=0.593, sum=1.744 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2196774467054264,
+        "description": "min=0.218, mean=0.22, max=0.221, sum=0.659 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.519379844961241,
+        "description": "min=3.453, mean=3.519, max=3.581, sum=10.558 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.13178294573643412,
+        "description": "min=0.116, mean=0.132, max=0.14, sum=0.395 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12001669997577519,
+        "description": "min=0.118, mean=0.12, max=0.121, sum=0.36 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.864341085271318,
+        "description": "min=3.674, mean=3.864, max=4, sum=11.593 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.686046511627907,
+        "description": "min=0.686, mean=0.686, max=0.686, sum=0.686 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 358.0348837209302,
+        "description": "min=358.035, mean=358.035, max=358.035, sum=358.035 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5930232558139537,
+        "description": "min=2.593, mean=2.593, max=2.593, sum=2.593 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6395348837209303,
+        "description": "min=0.64, mean=0.64, max=0.64, sum=0.64 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 358.0348837209302,
+        "description": "min=358.035, mean=358.035, max=358.035, sum=358.035 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.8488372093023258,
+        "description": "min=2.849, mean=2.849, max=2.849, sum=2.849 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05813953488372093,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.9534883720930232,
+        "description": "min=1.953, mean=1.953, max=1.953, sum=1.953 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08139534883720931,
+        "description": "min=0.081, mean=0.081, max=0.081, sum=0.081 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0348837209302326,
+        "description": "min=2.035, mean=2.035, max=2.035, sum=2.035 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08139534883720931,
+        "description": "min=0.081, mean=0.081, max=0.081, sum=0.081 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.8255813953488373,
+        "description": "min=2.826, mean=2.826, max=2.826, sum=2.826 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08139534883720931,
+        "description": "min=0.081, mean=0.081, max=0.081, sum=0.081 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.9186046511627908,
+        "description": "min=1.919, mean=1.919, max=1.919, sum=1.919 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1511627906976744,
+        "description": "min=0.151, mean=0.151, max=0.151, sum=0.151 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.12790697674418605,
+        "description": "min=0.128, mean=0.128, max=0.128, sum=0.128 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 370.40697674418607,
+        "description": "min=370.407, mean=370.407, max=370.407, sum=370.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11627906976744186,
+        "description": "min=0.116, mean=0.116, max=0.116, sum=0.116 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 410.5581395348837,
+        "description": "min=410.558, mean=410.558, max=410.558, sum=410.558 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08139534883720931,
+        "description": "min=0.081, mean=0.081, max=0.081, sum=0.081 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 410.5581395348837,
+        "description": "min=410.558, mean=410.558, max=410.558, sum=410.558 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.22093023255813954,
+        "description": "min=0.221, mean=0.221, max=0.221, sum=0.221 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 410.5581395348837,
+        "description": "min=410.558, mean=410.558, max=410.558, sum=410.558 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.18604651162790697,
+        "description": "min=0.186, mean=0.186, max=0.186, sum=0.186 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=86 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 410.5581395348837,
+        "description": "min=410.558, mean=410.558, max=410.558, sum=410.558 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36311461629216063,
+        "description": "min=0.34, mean=0.363, max=0.375, sum=1.089 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 389.2906976744186,
+        "description": "min=389.291, mean=389.291, max=389.291, sum=1167.872 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.593023255813954,
+        "description": "min=4.477, mean=4.593, max=4.721, sum=13.779 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10077519379844962,
+        "description": "min=0.093, mean=0.101, max=0.105, sum=0.302 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.027131782945736,
+        "description": "min=1.849, mean=2.027, max=2.163, sum=6.081 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.39534883720930236,
+        "description": "min=0.384, mean=0.395, max=0.419, sum=1.186 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 385.5232558139535,
+        "description": "min=385.523, mean=385.523, max=385.523, sum=1156.57 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.116279069767442,
+        "description": "min=2.058, mean=2.116, max=2.174, sum=6.349 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=math_regular&subgroup=subject%3A%20prealgebra%2C%20level%3A%201%2C%20use_official_examples%3A%20True%2C%20use_chain_of_thought%3A%20False&runSpecs=%5B%22math%3Asubject%3Dprealgebra%2Clevel%3D1%2Cuse_official_examples%3DTrue%2Cuse_chain_of_thought%3DFalse%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3775671161422434,
+        "description": "min=0.351, mean=0.378, max=0.422, sum=1.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.0,
+        "description": "min=86, mean=86, max=86, sum=258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.0,
+        "description": "min=8, mean=8, max=8, sum=24 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 344.60465116279073,
+        "description": "min=344.605, mean=344.605, max=344.605, sum=1033.814 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.16279069767442,
+        "description": "min=19, mean=19.163, max=19.302, sum=57.488 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/math_regular_math_regular_subject:prealgebra,level:1,use_official_examples:True,use_chain_of_thought:False.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/math_regular_math_regular_subject:prealgebra,level:1,use_official_examples:True,use_chain_of_thought:False.json"
+    }
+  ],
+  "name": "math_regular_subject:prealgebra,level:1,use_official_examples:True,use_chain_of_thought:False"
+}

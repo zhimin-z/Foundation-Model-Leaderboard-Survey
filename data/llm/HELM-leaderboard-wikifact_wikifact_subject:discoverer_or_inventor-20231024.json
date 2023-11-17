@@ -1,0 +1,3717 @@
+{
+  "title": "subject: discoverer_or_inventor",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "WikiFact"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Scenario introduced in this work, inspired by [Petroni et al. (2019)](https://aclanthology.org/D19-1250/), to more extensively test factual knowledge.\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "WikiFact"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06549019607843137,
+        "description": "min=0.055, mean=0.065, max=0.078, sum=0.196 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2886924126838235,
+        "description": "min=1.279, mean=1.289, max=1.308, sum=3.866 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.82941176470588,
+        "description": "min=24.566, mean=24.829, max=25.309, sum=74.488 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07176470588235294,
+        "description": "min=0.061, mean=0.072, max=0.078, sum=0.215 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6445524065563721,
+        "description": "min=0.639, mean=0.645, max=0.651, sum=1.934 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.321960784313728,
+        "description": "min=24.909, mean=25.322, max=25.732, sum=75.966 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05215686274509804,
+        "description": "min=0.044, mean=0.052, max=0.058, sum=0.156 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8336585064338231,
+        "description": "min=0.828, mean=0.834, max=0.842, sum=2.501 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.555294117647055,
+        "description": "min=24.147, mean=24.555, max=24.974, sum=73.666 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06784313725490196,
+        "description": "min=0.058, mean=0.068, max=0.087, sum=0.204 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 26.624313725490197,
+        "description": "min=25.515, mean=26.624, max=27.255, sum=79.873 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09999999999999999,
+        "description": "min=0.095, mean=0.1, max=0.107, sum=0.3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.997254901960787,
+        "description": "min=20.544, mean=20.997, max=21.322, sum=62.992 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08392156862745098,
+        "description": "min=0.079, mean=0.084, max=0.091, sum=0.252 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.074117647058824,
+        "description": "min=21.705, mean=22.074, max=22.766, sum=66.222 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04470588235294118,
+        "description": "min=0.033, mean=0.045, max=0.055, sum=0.134 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 72.47176470588235,
+        "description": "min=70.472, mean=72.472, max=75.472, sum=217.415 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.968235294117648,
+        "description": "min=22.468, mean=22.968, max=23.587, sum=68.905 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0796078431372549,
+        "description": "min=0.072, mean=0.08, max=0.091, sum=0.239 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 81.65607843137253,
+        "description": "min=80.989, mean=81.656, max=82.989, sum=244.968 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.22,
+        "description": "min=23.984, mean=25.22, max=26.309, sum=75.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11333333333333334,
+        "description": "min=0.091, mean=0.113, max=0.132, sum=0.34 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 81.65607843137253,
+        "description": "min=80.989, mean=81.656, max=82.989, sum=244.968 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.308627450980392,
+        "description": "min=19.445, mean=20.309, max=21.618, sum=60.926 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08274509803921569,
+        "description": "min=0.064, mean=0.083, max=0.105, sum=0.248 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 81.65607843137253,
+        "description": "min=80.989, mean=81.656, max=82.989, sum=244.968 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.40078431372549,
+        "description": "min=16.025, mean=17.401, max=20.068, sum=52.202 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1188235294117647,
+        "description": "min=0.113, mean=0.119, max=0.126, sum=0.356 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.8454472104779394,
+        "description": "min=1.805, mean=1.845, max=1.874, sum=5.536 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.55333333333333,
+        "description": "min=23.826, mean=24.553, max=25.041, sum=73.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08274509803921569,
+        "description": "min=0.064, mean=0.083, max=0.094, sum=0.248 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8683644525619115,
+        "description": "min=0.833, mean=0.868, max=0.889, sum=2.605 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 75.07921568627451,
+        "description": "min=72.746, mean=75.079, max=78.746, sum=225.238 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12398596592685757,
+        "description": "min=0.121, mean=0.124, max=0.128, sum=0.372 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 93.58666666666666,
+        "description": "min=90.92, mean=93.587, max=95.92, sum=280.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10274509803921568,
+        "description": "min=0.098, mean=0.103, max=0.107, sum=0.308 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0700027542892154,
+        "description": "min=1.025, mean=1.07, max=1.134, sum=3.21 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.808627450980392,
+        "description": "min=17.742, mean=18.809, max=20.385, sum=56.426 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07921568627450981,
+        "description": "min=0.067, mean=0.079, max=0.095, sum=0.238 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6617716927083347,
+        "description": "min=0.601, mean=0.662, max=0.743, sum=1.985 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.021176470588234,
+        "description": "min=17.446, mean=20.021, max=23.513, sum=60.064 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07529411764705883,
+        "description": "min=0.056, mean=0.075, max=0.089, sum=0.226 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4728995174632347,
+        "description": "min=0.456, mean=0.473, max=0.491, sum=1.419 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.467058823529413,
+        "description": "min=22.148, mean=23.467, max=24.907, sum=70.401 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.048235294117647064,
+        "description": "min=0.046, mean=0.048, max=0.052, sum=0.145 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.36020649816176437,
+        "description": "min=0.35, mean=0.36, max=0.374, sum=1.081 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.84392156862745,
+        "description": "min=22.267, mean=23.844, max=26.118, sum=71.532 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.14627450980392157,
+        "description": "min=0.139, mean=0.146, max=0.155, sum=0.439 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.754117647058823,
+        "description": "min=24.882, mean=25.754, max=26.968, sum=77.262 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06352941176470589,
+        "description": "min=0.06, mean=0.064, max=0.069, sum=0.191 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 21.304705882352945,
+        "description": "min=20.049, mean=21.305, max=22.869, sum=63.914 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07411764705882352,
+        "description": "min=0.056, mean=0.074, max=0.104, sum=0.222 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 17.490196078431374,
+        "description": "min=17.229, mean=17.49, max=17.976, sum=52.471 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1380392156862745,
+        "description": "min=0.115, mean=0.138, max=0.154, sum=0.414 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.55333333333333,
+        "description": "min=82.22, mean=86.553, max=89.22, sum=259.66 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.35098039215686,
+        "description": "min=18.782, mean=20.351, max=22.059, sum=61.053 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04313725490196078,
+        "description": "min=0.025, mean=0.043, max=0.056, sum=0.129 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09594392406506358,
+        "description": "min=0.095, mean=0.096, max=0.098, sum=0.288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03529411764705882,
+        "description": "min=0.029, mean=0.035, max=0.042, sum=0.106 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.054669700755331195,
+        "description": "min=0.053, mean=0.055, max=0.058, sum=0.164 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 84.16117647058823,
+        "description": "min=80.161, mean=84.161, max=87.161, sum=252.484 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.512941176470588,
+        "description": "min=6.513, mean=6.513, max=6.513, sum=6.513 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.015294117647058824,
+        "description": "min=0.015, mean=0.015, max=0.015, sum=0.015 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.278823529411765,
+        "description": "min=6.279, mean=6.279, max=6.279, sum=6.279 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.02156862745098039,
+        "description": "min=0.014, mean=0.022, max=0.027, sum=0.065 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23350676743715418,
+        "description": "min=0.233, mean=0.234, max=0.234, sum=0.701 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 93.58666666666666,
+        "description": "min=90.92, mean=93.587, max=95.92, sum=280.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.045490196078431376,
+        "description": "min=0.04, mean=0.045, max=0.051, sum=0.136 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2223097153767651,
+        "description": "min=0.219, mean=0.222, max=0.225, sum=0.667 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 97.58666666666666,
+        "description": "min=94.92, mean=97.587, max=99.92, sum=292.76 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06274509803921569,
+        "description": "min=0.06, mean=0.063, max=0.067, sum=0.188 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5957127922773361,
+        "description": "min=0.593, mean=0.596, max=0.6, sum=1.787 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05176470588235294,
+        "description": "min=0.034, mean=0.052, max=0.062, sum=0.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14499812058666173,
+        "description": "min=0.142, mean=0.145, max=0.15, sum=0.435 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0811764705882353,
+        "description": "min=0.081, mean=0.081, max=0.081, sum=0.081 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.302352941176471,
+        "description": "min=5.302, mean=5.302, max=5.302, sum=5.302 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08941176470588236,
+        "description": "min=0.089, mean=0.089, max=0.089, sum=0.089 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.708235294117647,
+        "description": "min=5.708, mean=5.708, max=5.708, sum=5.708 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0976470588235294,
+        "description": "min=0.098, mean=0.098, max=0.098, sum=0.098 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.517647058823529,
+        "description": "min=5.518, mean=5.518, max=5.518, sum=5.518 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.21294117647058824,
+        "description": "min=0.213, mean=0.213, max=0.213, sum=0.213 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11411764705882353,
+        "description": "min=0.114, mean=0.114, max=0.114, sum=0.114 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.16588235294117648,
+        "description": "min=0.166, mean=0.166, max=0.166, sum=0.166 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.2611764705882353,
+        "description": "min=0.261, mean=0.261, max=0.261, sum=0.261 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06588235294117648,
+        "description": "min=0.066, mean=0.066, max=0.066, sum=0.066 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.123529411764705,
+        "description": "min=6.124, mean=6.124, max=6.124, sum=6.124 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06705882352941177,
+        "description": "min=0.067, mean=0.067, max=0.067, sum=0.067 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.009411764705883,
+        "description": "min=6.009, mean=6.009, max=6.009, sum=6.009 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09058823529411765,
+        "description": "min=0.091, mean=0.091, max=0.091, sum=0.091 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 115.36235294117647,
+        "description": "min=115.362, mean=115.362, max=115.362, sum=115.362 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.762352941176471,
+        "description": "min=5.762, mean=5.762, max=5.762, sum=5.762 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11254901960784314,
+        "description": "min=0.098, mean=0.113, max=0.133, sum=0.338 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.130588235294116,
+        "description": "min=24.038, mean=24.131, max=24.268, sum=72.392 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06509803921568627,
+        "description": "min=0.049, mean=0.065, max=0.076, sum=0.195 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.511764705882353,
+        "description": "min=25.133, mean=25.512, max=25.819, sum=76.535 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09450980392156864,
+        "description": "min=0.081, mean=0.095, max=0.114, sum=0.284 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9068671415441184,
+        "description": "min=0.891, mean=0.907, max=0.917, sum=2.721 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.79607843137255,
+        "description": "min=24.273, mean=24.796, max=25.132, sum=74.388 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06901960784313725,
+        "description": "min=0.049, mean=0.069, max=0.084, sum=0.207 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2562987837009802,
+        "description": "min=0.253, mean=0.256, max=0.258, sum=0.769 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.66274509803922,
+        "description": "min=25.206, mean=25.663, max=25.979, sum=76.988 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03490196078431373,
+        "description": "min=0.033, mean=0.035, max=0.038, sum=0.105 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.25039096047794135,
+        "description": "min=0.249, mean=0.25, max=0.252, sum=0.751 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.843529411764706,
+        "description": "min=23.565, mean=23.844, max=24.066, sum=71.531 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.021568627450980395,
+        "description": "min=0.019, mean=0.022, max=0.026, sum=0.065 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.27626284007352925,
+        "description": "min=0.275, mean=0.276, max=0.277, sum=0.829 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.0443137254902,
+        "description": "min=23.916, mean=24.044, max=24.189, sum=72.133 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.17882352941176471,
+        "description": "min=0.16, mean=0.179, max=0.188, sum=0.536 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.79686274509804,
+        "description": "min=23.955, mean=24.797, max=25.515, sum=74.391 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.176078431372549,
+        "description": "min=0.167, mean=0.176, max=0.186, sum=0.528 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8444807797181374,
+        "description": "min=0.835, mean=0.844, max=0.852, sum=2.533 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.235686274509803,
+        "description": "min=23.911, mean=24.236, max=24.501, sum=72.707 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06274509803921569,
+        "description": "min=0.049, mean=0.063, max=0.074, sum=0.188 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.28633675551470567,
+        "description": "min=0.286, mean=0.286, max=0.287, sum=0.859 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.049411764705884,
+        "description": "min=24.012, mean=24.049, max=24.112, sum=72.148 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.010588235294117648,
+        "description": "min=0.008, mean=0.011, max=0.012, sum=0.032 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2798649632352941,
+        "description": "min=0.276, mean=0.28, max=0.284, sum=0.84 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.171764705882353,
+        "description": "min=22.629, mean=23.172, max=23.765, sum=69.515 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.013333333333333334,
+        "description": "min=0.011, mean=0.013, max=0.018, sum=0.04 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20628355698529402,
+        "description": "min=0.198, mean=0.206, max=0.213, sum=0.619 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 22.157254901960783,
+        "description": "min=20.825, mean=22.157, max=23.238, sum=66.472 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11176470588235295,
+        "description": "min=0.112, mean=0.112, max=0.112, sum=0.112 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.3635294117647,
+        "description": "min=86.364, mean=86.364, max=86.364, sum=86.364 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 33.58705882352941,
+        "description": "min=33.587, mean=33.587, max=33.587, sum=33.587 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.12117647058823529,
+        "description": "min=0.121, mean=0.121, max=0.121, sum=0.121 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 86.3635294117647,
+        "description": "min=86.364, mean=86.364, max=86.364, sum=86.364 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.265882352941176,
+        "description": "min=30.266, mean=30.266, max=30.266, sum=30.266 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.007058823529411765,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.534117647058824,
+        "description": "min=6.534, mean=6.534, max=6.534, sum=6.534 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004705882352941176,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.156470588235294,
+        "description": "min=7.156, mean=7.156, max=7.156, sum=7.156 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.029411764705882353,
+        "description": "min=0.029, mean=0.029, max=0.029, sum=0.029 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.048235294117647,
+        "description": "min=6.048, mean=6.048, max=6.048, sum=6.048 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03058823529411765,
+        "description": "min=0.031, mean=0.031, max=0.031, sum=0.031 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.689411764705882,
+        "description": "min=5.689, mean=5.689, max=5.689, sum=5.689 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.16470588235294117,
+        "description": "min=0.165, mean=0.165, max=0.165, sum=0.165 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9988235294117647,
+        "description": "min=0.999, mean=0.999, max=0.999, sum=0.999 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.10352941176470588,
+        "description": "min=0.104, mean=0.104, max=0.104, sum=0.104 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 87.16117647058823,
+        "description": "min=87.161, mean=87.161, max=87.161, sum=87.161 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08352941176470588,
+        "description": "min=0.084, mean=0.084, max=0.084, sum=0.084 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 89.24470588235295,
+        "description": "min=89.245, mean=89.245, max=89.245, sum=89.245 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06588235294117648,
+        "description": "min=0.066, mean=0.066, max=0.066, sum=0.066 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 89.24470588235295,
+        "description": "min=89.245, mean=89.245, max=89.245, sum=89.245 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9952941176470588,
+        "description": "min=0.995, mean=0.995, max=0.995, sum=0.995 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1423529411764706,
+        "description": "min=0.142, mean=0.142, max=0.142, sum=0.142 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 89.24470588235295,
+        "description": "min=89.245, mean=89.245, max=89.245, sum=89.245 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9988235294117647,
+        "description": "min=0.999, mean=0.999, max=0.999, sum=0.999 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1376470588235294,
+        "description": "min=0.138, mean=0.138, max=0.138, sum=0.138 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=850 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 89.24470588235295,
+        "description": "min=89.245, mean=89.245, max=89.245, sum=89.245 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9929411764705882,
+        "description": "min=0.993, mean=0.993, max=0.993, sum=0.993 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07764705882352942,
+        "description": "min=0.075, mean=0.078, max=0.081, sum=0.233 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5060995124251235,
+        "description": "min=0.506, mean=0.506, max=0.507, sum=1.518 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 106.11372549019609,
+        "description": "min=101.447, mean=106.114, max=111.447, sum=318.341 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.048235294117646,
+        "description": "min=29.698, mean=30.048, max=30.232, sum=90.145 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.028627450980392155,
+        "description": "min=0.021, mean=0.029, max=0.035, sum=0.086 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.26549019607843,
+        "description": "min=23.054, mean=23.265, max=23.4, sum=69.796 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.23137254901960783,
+        "description": "min=0.219, mean=0.231, max=0.248, sum=0.694 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 85.2035294117647,
+        "description": "min=82.204, mean=85.204, max=87.204, sum=255.611 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 25.7043137254902,
+        "description": "min=25.241, mean=25.704, max=26.32, sum=77.113 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=wikifact&subgroup=subject%3A%20discoverer_or_inventor&runSpecs=%5B%22wikifact%3Ak%3D5%2Csubject%3Ddiscoverer_or_inventor%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.00980392156862745,
+        "description": "min=0.002, mean=0.01, max=0.018, sum=0.029 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33835718000052023,
+        "description": "min=0.338, mean=0.338, max=0.339, sum=1.015 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 850.0,
+        "description": "min=850, mean=850, max=850, sum=2550 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 81.30980392156862,
+        "description": "min=78.976, mean=81.31, max=83.976, sum=243.929 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 40.0,
+        "description": "min=40, mean=40, max=40, sum=120 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/wikifact_wikifact_subject:discoverer_or_inventor.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/wikifact_wikifact_subject:discoverer_or_inventor.json"
+    }
+  ],
+  "name": "wikifact_subject:discoverer_or_inventor"
+}

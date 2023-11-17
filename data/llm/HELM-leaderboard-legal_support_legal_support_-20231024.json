@@ -1,0 +1,3829 @@
+{
+  "title": "",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "LegalSupport"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Scenario introduced in this work to measure fine-grained legal reasoning through reverse entailment.\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "LegalSupport"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4839809134287662,
+        "description": "min=0.483, mean=0.484, max=0.485, sum=1.452 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.486569853841811,
+        "description": "min=0.481, mean=0.487, max=0.491, sum=1.46 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5139740967961827,
+        "description": "min=0.503, mean=0.514, max=0.532, sum=1.542 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39482458088360595,
+        "description": "min=0.391, mean=0.395, max=0.398, sum=1.184 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5044308111792775,
+        "description": "min=0.481, mean=0.504, max=0.544, sum=1.513 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4248458103005708,
+        "description": "min=0.421, mean=0.425, max=0.428, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5623721881390593,
+        "description": "min=0.55, mean=0.562, max=0.573, sum=1.687 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6387184730743013,
+        "description": "min=0.62, mean=0.639, max=0.656, sum=1.916 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.574642126789366,
+        "description": "min=0.573, mean=0.575, max=0.577, sum=1.724 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.558282208588957,
+        "description": "min=0.548, mean=0.558, max=0.569, sum=1.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 439.9018404907976,
+        "description": "min=428.902, mean=439.902, max=448.902, sum=1319.706 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5132924335378323,
+        "description": "min=0.503, mean=0.513, max=0.519, sum=1.54 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.7341513292434,
+        "description": "min=616.401, mean=629.734, max=640.401, sum=1889.202 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5167007498295842,
+        "description": "min=0.495, mean=0.517, max=0.534, sum=1.55 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.7341513292434,
+        "description": "min=616.401, mean=629.734, max=640.401, sum=1889.202 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5296523517382413,
+        "description": "min=0.517, mean=0.53, max=0.548, sum=1.589 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.7341513292434,
+        "description": "min=616.401, mean=629.734, max=640.401, sum=1889.202 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6244035446489434,
+        "description": "min=0.622, mean=0.624, max=0.628, sum=1.873 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5549870490637778,
+        "description": "min=0.552, mean=0.555, max=0.557, sum=1.665 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5426039536468984,
+        "description": "min=0.515, mean=0.543, max=0.558, sum=1.628 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19272892121238275,
+        "description": "min=0.186, mean=0.193, max=0.204, sum=0.578 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 620.1717791411043,
+        "description": "min=604.172, mean=620.172, max=634.172, sum=1860.515 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6114519427402862,
+        "description": "min=0.597, mean=0.611, max=0.626, sum=1.834 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14617001149795794,
+        "description": "min=0.145, mean=0.146, max=0.148, sum=0.439 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 689.1758691206545,
+        "description": "min=669.509, mean=689.176, max=702.509, sum=2067.528 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.558282208588957,
+        "description": "min=0.546, mean=0.558, max=0.573, sum=1.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.506620398773006,
+        "description": "min=0.502, mean=0.507, max=0.51, sum=1.52 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49147920927062033,
+        "description": "min=0.479, mean=0.491, max=0.511, sum=1.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3494835122699387,
+        "description": "min=0.346, mean=0.349, max=0.352, sum=1.048 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5071574642126789,
+        "description": "min=0.501, mean=0.507, max=0.517, sum=1.521 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3010346370143147,
+        "description": "min=0.298, mean=0.301, max=0.303, sum=0.903 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5235173824130879,
+        "description": "min=0.513, mean=0.524, max=0.536, sum=1.571 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.312655674846626,
+        "description": "min=0.31, mean=0.313, max=0.315, sum=0.938 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5255623721881392,
+        "description": "min=0.493, mean=0.526, max=0.556, sum=1.577 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4894342194955692,
+        "description": "min=0.476, mean=0.489, max=0.501, sum=1.468 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5664621676891616,
+        "description": "min=0.56, mean=0.566, max=0.573, sum=1.699 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6059986366734833,
+        "description": "min=0.599, mean=0.606, max=0.616, sum=1.818 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 629.922290388548,
+        "description": "min=613.922, mean=629.922, max=641.922, sum=1889.767 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.47852760736196315,
+        "description": "min=0.47, mean=0.479, max=0.491, sum=1.436 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.06647083805897265,
+        "description": "min=0.066, mean=0.066, max=0.067, sum=0.199 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5146557600545331,
+        "description": "min=0.503, mean=0.515, max=0.53, sum=1.544 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.24526811465628276,
+        "description": "min=0.245, mean=0.245, max=0.246, sum=0.736 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 610.99591002045,
+        "description": "min=597.329, mean=610.996, max=622.329, sum=1832.988 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5214723926380368,
+        "description": "min=0.521, mean=0.521, max=0.521, sum=0.521 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49079754601226994,
+        "description": "min=0.491, mean=0.491, max=0.491, sum=0.491 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.558282208588957,
+        "description": "min=0.556, mean=0.558, max=0.56, sum=1.675 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.21085320012592726,
+        "description": "min=0.21, mean=0.211, max=0.212, sum=0.633 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.3231083844580775,
+        "description": "min=1.311, mean=1.323, max=1.348, sum=3.969 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.002044989775051125,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.006 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 395.95501022494886,
+        "description": "min=393.808, mean=395.955, max=400.249, sum=1187.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5057941376959781,
+        "description": "min=0.503, mean=0.506, max=0.511, sum=1.517 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1799104948797922,
+        "description": "min=0.18, mean=0.18, max=0.18, sum=0.54 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2862985685071573,
+        "description": "min=1.274, mean=1.286, max=1.311, sum=3.859 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.002044989775051125,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.006 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 392.16359918200413,
+        "description": "min=389.967, mean=392.164, max=396.556, sum=1176.491 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5316973415132924,
+        "description": "min=0.513, mean=0.532, max=0.546, sum=1.595 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42513747813619823,
+        "description": "min=0.392, mean=0.425, max=0.443, sum=1.275 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5269256987048397,
+        "description": "min=0.521, mean=0.527, max=0.538, sum=1.581 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11845568543063677,
+        "description": "min=0.116, mean=0.118, max=0.12, sum=0.355 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48466257668711654,
+        "description": "min=0.485, mean=0.485, max=0.485, sum=0.485 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5869120654396728,
+        "description": "min=0.587, mean=0.587, max=0.587, sum=0.587 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6380368098159509,
+        "description": "min=0.638, mean=0.638, max=0.638, sum=0.638 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.591002044989775,
+        "description": "min=0.591, mean=0.591, max=0.591, sum=0.591 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5316973415132924,
+        "description": "min=0.532, mean=0.532, max=0.532, sum=0.532 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.591002044989775,
+        "description": "min=0.591, mean=0.591, max=0.591, sum=0.591 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5848670756646217,
+        "description": "min=0.585, mean=0.585, max=0.585, sum=0.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48261758691206547,
+        "description": "min=0.483, mean=0.483, max=0.483, sum=0.483 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6053169734151329,
+        "description": "min=0.605, mean=0.605, max=0.605, sum=0.605 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.588957055214724,
+        "description": "min=0.589, mean=0.589, max=0.589, sum=0.589 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 707.9468302658487,
+        "description": "min=707.947, mean=707.947, max=707.947, sum=707.947 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.580095432856169,
+        "description": "min=0.571, mean=0.58, max=0.595, sum=1.74 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5037491479209271,
+        "description": "min=0.493, mean=0.504, max=0.513, sum=1.511 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49625085207907293,
+        "description": "min=0.489, mean=0.496, max=0.505, sum=1.489 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2025213226131135,
+        "description": "min=0.202, mean=0.203, max=0.203, sum=0.608 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4901158827539196,
+        "description": "min=0.483, mean=0.49, max=0.501, sum=1.47 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09438043599821062,
+        "description": "min=0.094, mean=0.094, max=0.095, sum=0.283 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4921608725289706,
+        "description": "min=0.472, mean=0.492, max=0.517, sum=1.476 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11809866276840493,
+        "description": "min=0.118, mean=0.118, max=0.118, sum=0.354 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3715064758009543,
+        "description": "min=0.243, mean=0.372, max=0.444, sum=1.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13954933138420245,
+        "description": "min=0.139, mean=0.14, max=0.14, sum=0.419 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.621676891615542,
+        "description": "min=0.613, mean=0.622, max=0.626, sum=1.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6148602590320382,
+        "description": "min=0.601, mean=0.615, max=0.63, sum=1.845 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1741551016903118,
+        "description": "min=0.174, mean=0.174, max=0.174, sum=0.522 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4423994546693933,
+        "description": "min=0.436, mean=0.442, max=0.452, sum=1.327 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13911287784381385,
+        "description": "min=0.139, mean=0.139, max=0.139, sum=0.417 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5173824130879345,
+        "description": "min=0.515, mean=0.517, max=0.521, sum=1.552 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1350142150754091,
+        "description": "min=0.135, mean=0.135, max=0.135, sum=0.405 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5146557600545331,
+        "description": "min=0.505, mean=0.515, max=0.532, sum=1.544 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08901421507540902,
+        "description": "min=0.089, mean=0.089, max=0.089, sum=0.267 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.193183953220859,
+        "description": "min=0.191, mean=0.193, max=0.195, sum=0.58 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09497199122891102,
+        "description": "min=0.095, mean=0.095, max=0.095, sum=0.285 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6278118609406953,
+        "description": "min=0.628, mean=0.628, max=0.628, sum=0.628 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 579.9856850715746,
+        "description": "min=579.986, mean=579.986, max=579.986, sum=579.986 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0143149284253579,
+        "description": "min=1.014, mean=1.014, max=1.014, sum=1.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.46830265848670755,
+        "description": "min=0.468, mean=0.468, max=0.468, sum=0.468 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 579.9856850715746,
+        "description": "min=579.986, mean=579.986, max=579.986, sum=579.986 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2535787321063394,
+        "description": "min=1.254, mean=1.254, max=1.254, sum=1.254 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5132924335378323,
+        "description": "min=0.513, mean=0.513, max=0.513, sum=0.513 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48466257668711654,
+        "description": "min=0.485, mean=0.485, max=0.485, sum=0.485 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5173824130879345,
+        "description": "min=0.517, mean=0.517, max=0.517, sum=0.517 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5685071574642127,
+        "description": "min=0.569, mean=0.569, max=0.569, sum=0.569 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5644171779141104,
+        "description": "min=0.564, mean=0.564, max=0.564, sum=0.564 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5378323108384458,
+        "description": "min=0.538, mean=0.538, max=0.538, sum=0.538 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 597.3292433537832,
+        "description": "min=597.329, mean=597.329, max=597.329, sum=597.329 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5112474437627812,
+        "description": "min=0.511, mean=0.511, max=0.511, sum=0.511 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 612.7791411042945,
+        "description": "min=612.779, mean=612.779, max=612.779, sum=612.779 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.45194274028629855,
+        "description": "min=0.452, mean=0.452, max=0.452, sum=0.452 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 612.7791411042945,
+        "description": "min=612.779, mean=612.779, max=612.779, sum=612.779 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6053169734151329,
+        "description": "min=0.605, mean=0.605, max=0.605, sum=0.605 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 612.7791411042945,
+        "description": "min=612.779, mean=612.779, max=612.779, sum=612.779 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6053169734151329,
+        "description": "min=0.605, mean=0.605, max=0.605, sum=0.605 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=489 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 612.7791411042945,
+        "description": "min=612.779, mean=612.779, max=612.779, sum=612.779 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4505794137695978,
+        "description": "min=0.448, mean=0.451, max=0.454, sum=1.352 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22907799970924894,
+        "description": "min=0.228, mean=0.229, max=0.23, sum=0.687 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 609.5910020449898,
+        "description": "min=586.591, mean=609.591, max=628.591, sum=1828.773 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4921608725289707,
+        "description": "min=0.483, mean=0.492, max=0.505, sum=1.476 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6230402181322426,
+        "description": "min=0.601, mean=0.623, max=0.636, sum=1.869 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 605.7525562372189,
+        "description": "min=590.753, mean=605.753, max=616.753, sum=1817.258 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9959100204498977,
+        "description": "min=0.996, mean=0.996, max=0.996, sum=2.988 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=legal_support&subgroup=&runSpecs=%5B%22legal_support%2Cmethod%3Dmultiple_choice_joint%3Amodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4839809134287662,
+        "description": "min=0.483, mean=0.484, max=0.485, sum=1.452 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10487547616367039,
+        "description": "min=0.103, mean=0.105, max=0.106, sum=0.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 489.0,
+        "description": "min=489, mean=489, max=489, sum=1467 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 604.560327198364,
+        "description": "min=593.894, mean=604.56, max=616.894, sum=1813.681 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/legal_support_legal_support_.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/legal_support_legal_support_.json"
+    }
+  ],
+  "name": "legal_support_"
+}

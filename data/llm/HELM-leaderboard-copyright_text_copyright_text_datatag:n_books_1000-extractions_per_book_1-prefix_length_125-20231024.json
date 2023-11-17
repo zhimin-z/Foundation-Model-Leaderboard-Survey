@@ -1,0 +1,4269 @@
+{
+  "title": "datatag: n_books_1000-extractions_per_book_1-prefix_length_125",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "LCS",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nLongest common prefix length: Average length of longest common prefix between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "LCS",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Edit dist.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit distance (Levenshtein): Average Levenshtein edit distance between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Edit dist.",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Edit sim.",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nEdit similarity (Levenshtein): Average Levenshtein edit similarity (1 - distance normalized by length of longer sequence) between model generation and reference.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Edit sim.",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "Copyright (text)"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Scenario introduced in this work to measure copyright and memorization behavior for books, based off of [Carlini et al. (2021)](https://www.usenix.org/biblio-11958).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "Copyright (text)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004705027806151404,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.213886868860355,
+        "description": "min=8.214, mean=8.214, max=8.214, sum=8.214 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005424776230532445,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6651451756054269,
+        "description": "min=0.665, mean=0.665, max=0.665, sum=0.665 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4318740757588162,
+        "description": "min=0.432, mean=0.432, max=0.432, sum=0.432 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18488102758475466,
+        "description": "min=0.185, mean=0.185, max=0.185, sum=0.185 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.14867716596975267,
+        "description": "min=0.149, mean=0.149, max=0.149, sum=0.149 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.015321756894790603,
+        "description": "min=0.015, mean=0.015, max=0.015, sum=0.015 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 43.06409744976541,
+        "description": "min=43.064, mean=43.064, max=43.064, sum=43.064 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1019.2042900919305,
+        "description": "min=1019.204, mean=1019.204, max=1019.204, sum=1019.204 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.003201258167550304,
+        "description": "min=0.003, mean=0.003, max=0.003, sum=0.003 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.253202515906484,
+        "description": "min=8.253, mean=8.253, max=8.253, sum=8.253 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005193260296933815,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666669,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44906101989772856,
+        "description": "min=0.449, mean=0.449, max=0.449, sum=0.449 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5602579604997985,
+        "description": "min=0.56, mean=0.56, max=0.56, sum=0.56 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11191763727121462,
+        "description": "min=0.112, mean=0.112, max=0.112, sum=0.112 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013278855975485188,
+        "description": "min=0.013, mean=0.013, max=0.013, sum=0.013 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.525488524642512,
+        "description": "min=16.525, mean=16.525, max=16.525, sum=16.525 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1017.4433094994893,
+        "description": "min=1017.443, mean=1017.443, max=1017.443, sum=1017.443 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.003969717367325197,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.273867691415951,
+        "description": "min=8.274, mean=8.274, max=8.274, sum=8.274 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005425403997277009,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.661512027491409,
+        "description": "min=0.662, mean=0.662, max=0.662, sum=0.662 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3995462168880028,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11985151140180303,
+        "description": "min=0.12, mean=0.12, max=0.12, sum=0.12 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 21.725528797122408,
+        "description": "min=21.726, mean=21.726, max=21.726, sum=21.726 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1018.3084780388151,
+        "description": "min=1018.308, mean=1018.308, max=1018.308, sum=1018.308 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.003716198907210145,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.770887595023567,
+        "description": "min=7.771, mean=7.771, max=7.771, sum=7.771 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005447401626119072,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6663821716453295,
+        "description": "min=0.666, mean=0.666, max=0.666, sum=0.666 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4231317784069478,
+        "description": "min=0.423, mean=0.423, max=0.423, sum=0.423 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09052518951897467,
+        "description": "min=0.091, mean=0.091, max=0.091, sum=0.091 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.010214504596527068,
+        "description": "min=0.01, mean=0.01, max=0.01, sum=0.01 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1014.2768130745659,
+        "description": "min=1014.277, mean=1014.277, max=1014.277, sum=1014.277 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004337305640676429,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.647188752189063,
+        "description": "min=7.647, mean=7.647, max=7.647, sum=7.647 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005422363638571685,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6540229885057472,
+        "description": "min=0.654, mean=0.654, max=0.654, sum=0.654 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3815040092494831,
+        "description": "min=0.382, mean=0.382, max=0.382, sum=0.382 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13609695516251977,
+        "description": "min=0.136, mean=0.136, max=0.136, sum=0.136 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.018386108273748723,
+        "description": "min=0.018, mean=0.018, max=0.018, sum=0.018 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1017.5628192032686,
+        "description": "min=1017.563, mean=1017.563, max=1017.563, sum=1017.563 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.003773529840945573,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.724949544495711,
+        "description": "min=7.725, mean=7.725, max=7.725, sum=7.725 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005374364817087536,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3736596265065018,
+        "description": "min=0.374, mean=0.374, max=0.374, sum=0.374 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39888586604482446,
+        "description": "min=0.399, mean=0.399, max=0.399, sum=0.399 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.06760730272974633,
+        "description": "min=0.068, mean=0.068, max=0.068, sum=0.068 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1018.2032686414709,
+        "description": "min=1018.203, mean=1018.203, max=1018.203, sum=1018.203 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0031689608768260473,
+        "description": "min=0.003, mean=0.003, max=0.003, sum=0.003 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.58342472565286,
+        "description": "min=7.583, mean=7.583, max=7.583, sum=7.583 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.00054058881464447,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6661554192229039,
+        "description": "min=0.666, mean=0.666, max=0.666, sum=0.666 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4316649215911485,
+        "description": "min=0.432, mean=0.432, max=0.432, sum=0.432 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08627561941785797,
+        "description": "min=0.086, mean=0.086, max=0.086, sum=0.086 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.012257405515832482,
+        "description": "min=0.012, mean=0.012, max=0.012, sum=0.012 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 99.8161389172625,
+        "description": "min=99.816, mean=99.816, max=99.816, sum=99.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1017.9775280898876,
+        "description": "min=1017.978, mean=1017.978, max=1017.978, sum=1017.978 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006012289832514556,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.975590157791014,
+        "description": "min=6.976, mean=6.976, max=6.976, sum=6.976 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005471282722026242,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.435844903804805,
+        "description": "min=0.436, mean=0.436, max=0.436, sum=0.436 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3738095238095238,
+        "description": "min=0.374, mean=0.374, max=0.374, sum=0.374 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12244687435527127,
+        "description": "min=0.122, mean=0.122, max=0.122, sum=0.122 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.79162410623084,
+        "description": "min=142.792, mean=142.792, max=142.792, sum=142.792 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1021.1961184882533,
+        "description": "min=1021.196, mean=1021.196, max=1021.196, sum=1021.196 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006265414984516111,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.960808968812891,
+        "description": "min=6.961, mean=6.961, max=6.961, sum=6.961 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005535817932707638,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41725561866422,
+        "description": "min=0.417, mean=0.417, max=0.417, sum=0.417 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4076190476190476,
+        "description": "min=0.408, mean=0.408, max=0.408, sum=0.408 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12699224303494375,
+        "description": "min=0.127, mean=0.127, max=0.127, sum=0.127 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.018386108273748723,
+        "description": "min=0.018, mean=0.018, max=0.018, sum=0.018 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.79162410623084,
+        "description": "min=142.792, mean=142.792, max=142.792, sum=142.792 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1020.297242083759,
+        "description": "min=1020.297, mean=1020.297, max=1020.297, sum=1020.297 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0067311963941177454,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.964081711291361,
+        "description": "min=6.964, mean=6.964, max=6.964, sum=6.964 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005495519968762325,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6523809523809525,
+        "description": "min=0.652, mean=0.652, max=0.652, sum=0.652 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4075564730901889,
+        "description": "min=0.408, mean=0.408, max=0.408, sum=0.408 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4807256235827665,
+        "description": "min=0.481, mean=0.481, max=0.481, sum=0.481 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0962066710268149,
+        "description": "min=0.096, mean=0.096, max=0.096, sum=0.096 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.010214504596527068,
+        "description": "min=0.01, mean=0.01, max=0.01, sum=0.01 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.79162410623084,
+        "description": "min=142.792, mean=142.792, max=142.792, sum=142.792 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1019.6966292134831,
+        "description": "min=1019.697, mean=1019.697, max=1019.697, sum=1019.697 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cnum_outputs%3D1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.007377077354605449,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.015 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.855144926832407,
+        "description": "min=6.855, mean=6.855, max=6.855, sum=13.71 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005402475628440376,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6638257575757575,
+        "description": "min=0.664, mean=0.664, max=0.664, sum=1.328 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33946541084118176,
+        "description": "min=0.339, mean=0.339, max=0.339, sum=0.679 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3371428571428572,
+        "description": "min=0.337, mean=0.337, max=0.337, sum=0.674 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10785714285714282,
+        "description": "min=0.108, mean=0.108, max=0.108, sum=0.216 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.029 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 58.661726357677885,
+        "description": "min=58.662, mean=58.662, max=58.662, sum=117.323 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=1958 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 141.2134831460674,
+        "description": "min=141.213, mean=141.213, max=141.213, sum=282.427 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1020.641470888662,
+        "description": "min=1020.641, mean=1020.641, max=1020.641, sum=2041.283 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_bloom%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_bloom%2Cnum_outputs%3D1%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_bloom%2Cnum_outputs%3D10%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005485999643303018,
+        "description": "min=0.005, mean=0.005, max=0.007, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.700610589738468,
+        "description": "min=6.206, mean=6.701, max=6.948, sum=20.102 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005795097312954171,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39655355670179215,
+        "description": "min=0.371, mean=0.397, max=0.409, sum=1.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35695233370392776,
+        "description": "min=0.307, mean=0.357, max=0.382, sum=1.071 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09581948770084177,
+        "description": "min=0.092, mean=0.096, max=0.104, sum=0.287 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01058903643173306,
+        "description": "min=0.009, mean=0.011, max=0.013, sum=0.032 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 83.85294103412035,
+        "description": "min=20.225, mean=83.853, max=211.109, sum=251.559 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.6475995914198,
+        "description": "min=142.648, mean=142.648, max=142.648, sum=427.943 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t0pp%2Cnum_outputs%3D1%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t0pp%2Cnum_outputs%3D10%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0003074511838556783,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.001 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 20.063490455664024,
+        "description": "min=19.463, mean=20.063, max=20.364, sum=60.19 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.238443167109766e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40206117384469553,
+        "description": "min=0.359, mean=0.402, max=0.424, sum=1.206 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4758060835189693,
+        "description": "min=0.421, mean=0.476, max=0.503, sum=1.427 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13421545563254614,
+        "description": "min=0.122, mean=0.134, max=0.14, sum=0.403 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01767109295199183,
+        "description": "min=0.016, mean=0.018, max=0.02, sum=0.053 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 97.14044995056913,
+        "description": "min=16.914, mean=97.14, max=257.594, sum=291.421 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 158.55771195097037,
+        "description": "min=158.558, mean=158.558, max=158.558, sum=475.673 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005873242862006911,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.792806001704233,
+        "description": "min=6.793, mean=6.793, max=6.793, sum=6.793 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005267208319745963,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666669,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.364087300264827,
+        "description": "min=0.364, mean=0.364, max=0.364, sum=0.364 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3280198370527807,
+        "description": "min=0.328, mean=0.328, max=0.328, sum=0.328 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11460912628227804,
+        "description": "min=0.115, mean=0.115, max=0.115, sum=0.115 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.007150153217568948,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.3080906836536,
+        "description": "min=41.308, mean=41.308, max=41.308, sum=41.308 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004876307213385868,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.804162506921833,
+        "description": "min=6.804, mean=6.804, max=6.804, sum=6.804 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005356820785327759,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40489539503262345,
+        "description": "min=0.405, mean=0.405, max=0.405, sum=0.405 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333326,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09872712388095173,
+        "description": "min=0.099, mean=0.099, max=0.099, sum=0.099 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.768716845752962,
+        "description": "min=23.769, mean=23.769, max=23.769, sum=23.769 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.00499038539487978,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.800569178096894,
+        "description": "min=6.801, mean=6.801, max=6.801, sum=6.801 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005330395907002626,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4242023066490953,
+        "description": "min=0.424, mean=0.424, max=0.424, sum=0.424 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45179063360881544,
+        "description": "min=0.452, mean=0.452, max=0.452, sum=0.452 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15245920511123265,
+        "description": "min=0.152, mean=0.152, max=0.152, sum=0.152 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.009193054136874362,
+        "description": "min=0.009, mean=0.009, max=0.009, sum=0.009 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.490537509376603,
+        "description": "min=12.491, mean=12.491, max=12.491, sum=12.491 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0035774762066896923,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.7386885119269335,
+        "description": "min=6.739, mean=6.739, max=6.739, sum=6.739 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005557793877954131,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4848245552876671,
+        "description": "min=0.485, mean=0.485, max=0.485, sum=0.485 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18876622062946155,
+        "description": "min=0.189, mean=0.189, max=0.189, sum=0.189 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.017364657814096015,
+        "description": "min=0.017, mean=0.017, max=0.017, sum=0.017 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.367822301535367,
+        "description": "min=6.368, mean=6.368, max=6.368, sum=6.368 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006788073349871107,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.786998376825883,
+        "description": "min=6.787, mean=6.787, max=6.787, sum=6.787 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.000550790738837529,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3958505978494906,
+        "description": "min=0.396, mean=0.396, max=0.396, sum=0.396 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5532646048109966,
+        "description": "min=0.553, mean=0.553, max=0.553, sum=0.553 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11910956923966465,
+        "description": "min=0.119, mean=0.119, max=0.119, sum=0.119 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013278855975485188,
+        "description": "min=0.013, mean=0.013, max=0.013, sum=0.013 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004933573293123858,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.771329993199381,
+        "description": "min=6.771, mean=6.771, max=6.771, sum=6.771 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005381589017978166,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38005018463164875,
+        "description": "min=0.38, mean=0.38, max=0.38, sum=0.38 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3968253968253968,
+        "description": "min=0.397, mean=0.397, max=0.397, sum=0.397 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10603944354433209,
+        "description": "min=0.106, mean=0.106, max=0.106, sum=0.106 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.008171603677221655,
+        "description": "min=0.008, mean=0.008, max=0.008, sum=0.008 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=1024 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005186568737130538,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.650060120701647,
+        "description": "min=6.65, mean=6.65, max=6.65, sum=6.65 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005376698863737277,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45075250382202586,
+        "description": "min=0.451, mean=0.451, max=0.451, sum=0.451 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34910249958060724,
+        "description": "min=0.349, mean=0.349, max=0.349, sum=0.349 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1037106749126109,
+        "description": "min=0.104, mean=0.104, max=0.104, sum=0.104 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.012257405515832482,
+        "description": "min=0.012, mean=0.012, max=0.012, sum=0.012 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 997.0,
+        "description": "min=997, mean=997, max=997, sum=997 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006125914036026399,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.307489137076613,
+        "description": "min=6.307, mean=6.307, max=6.307, sum=6.307 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005422439286979616,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666669,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38361511281675625,
+        "description": "min=0.384, mean=0.384, max=0.384, sum=0.384 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09089944845142134,
+        "description": "min=0.091, mean=0.091, max=0.091, sum=0.091 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.018386108273748723,
+        "description": "min=0.018, mean=0.018, max=0.018, sum=0.018 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.30541368743616,
+        "description": "min=143.305, mean=143.305, max=143.305, sum=143.305 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 942.7456588355465,
+        "description": "min=942.746, mean=942.746, max=942.746, sum=942.746 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-j-6b%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-j-6b%2Cnum_outputs%3D1%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-j-6b%2Cnum_outputs%3D10%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005535331917354392,
+        "description": "min=0.005, mean=0.006, max=0.007, sum=0.017 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.539501949721135,
+        "description": "min=5.993, mean=6.54, max=6.813, sum=19.619 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006113265127537598,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6656746031746031,
+        "description": "min=0.664, mean=0.666, max=0.667, sum=1.997 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3723067220080305,
+        "description": "min=0.37, mean=0.372, max=0.373, sum=1.117 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33292292538783547,
+        "description": "min=0.332, mean=0.333, max=0.333, sum=0.999 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1377095149321546,
+        "description": "min=0.121, mean=0.138, max=0.146, sum=0.413 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01511746680286006,
+        "description": "min=0.015, mean=0.015, max=0.015, sum=0.045 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 61.505260078617994,
+        "description": "min=13.78, mean=61.505, max=156.956, sum=184.516 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=421.756 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-neox-20b%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-neox-20b%2Cnum_outputs%3D1%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_gpt-neox-20b%2Cnum_outputs%3D10%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006589490409715133,
+        "description": "min=0.006, mean=0.007, max=0.008, sum=0.02 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.514414883063734,
+        "description": "min=5.948, mean=6.514, max=6.798, sum=19.543 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006118346450043223,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.664854951227548,
+        "description": "min=0.661, mean=0.665, max=0.667, sum=1.995 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3945890027386218,
+        "description": "min=0.377, mean=0.395, max=0.404, sum=1.184 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35300573158308973,
+        "description": "min=0.308, mean=0.353, max=0.376, sum=1.059 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10668129812859854,
+        "description": "min=0.097, mean=0.107, max=0.126, sum=0.32 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013721484508001357,
+        "description": "min=0.013, mean=0.014, max=0.015, sum=0.041 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 107.39825691337721,
+        "description": "min=18.455, mean=107.398, max=285.285, sum=322.195 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 142.19713993871298,
+        "description": "min=142.197, mean=142.197, max=142.197, sum=426.591 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t5-11b%2Cnum_outputs%3D1%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_t5-11b%2Cnum_outputs%3D10%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.00519290769236402,
+        "description": "min=0.005, mean=0.005, max=0.006, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 20.533210461184495,
+        "description": "min=19.543, mean=20.533, max=21.028, sum=61.6 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 5.4975600608692515e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4613289760348584,
+        "description": "min=0.384, mean=0.461, max=0.5, sum=1.384 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=1 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11787909257238997,
+        "description": "min=0.118, mean=0.118, max=0.119, sum=0.354 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.012734082397003743,
+        "description": "min=0.012, mean=0.013, max=0.014, sum=0.038 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 158.5518609374194,
+        "description": "min=90.374, mean=158.552, max=294.908, sum=475.656 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 158.49131767109296,
+        "description": "min=158.491, mean=158.491, max=158.491, sum=475.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_ul2%2Cnum_outputs%3D1%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_ul2%2Cnum_outputs%3D10%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005437726651209801,
+        "description": "min=0.005, mean=0.005, max=0.007, sum=0.016 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.032867473888043,
+        "description": "min=17.272, mean=18.033, max=18.413, sum=54.099 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.251522797581831e-05,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6555555555555556,
+        "description": "min=0.633, mean=0.656, max=0.667, sum=1.967 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39694684853566925,
+        "description": "min=0.393, mean=0.397, max=0.399, sum=1.191 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5555609795785534,
+        "description": "min=0.51, mean=0.556, max=0.578, sum=1.667 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10675037449582231,
+        "description": "min=0.106, mean=0.107, max=0.108, sum=0.32 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013891726251276812,
+        "description": "min=0.013, mean=0.014, max=0.014, sum=0.042 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 54.87142872201233,
+        "description": "min=13.897, mean=54.871, max=136.82, sum=164.614 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 162.49131767109296,
+        "description": "min=162.491, mean=162.491, max=162.491, sum=487.474 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-175b%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-175b%2Cnum_outputs%3D1%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-175b%2Cnum_outputs%3D10%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006736407726621576,
+        "description": "min=0.006, mean=0.007, max=0.008, sum=0.02 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.545639585755759,
+        "description": "min=5.942, mean=6.546, max=6.848, sum=19.637 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006073026404404939,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6602853592508765,
+        "description": "min=0.659, mean=0.66, max=0.661, sum=1.981 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3741403830058954,
+        "description": "min=0.373, mean=0.374, max=0.375, sum=1.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48537761283978814,
+        "description": "min=0.33, mean=0.485, max=0.563, sum=1.456 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11731292463880466,
+        "description": "min=0.108, mean=0.117, max=0.136, sum=0.352 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01954375212802179,
+        "description": "min=0.016, mean=0.02, max=0.021, sum=0.059 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 80.54117101078985,
+        "description": "min=18.113, mean=80.541, max=205.397, sum=241.624 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=421.756 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-66b%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-66b%2Cnum_outputs%3D1%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_opt-66b%2Cnum_outputs%3D10%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.00590298922883193,
+        "description": "min=0.005, mean=0.006, max=0.007, sum=0.018 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.554569732995727,
+        "description": "min=5.918, mean=6.555, max=6.873, sum=19.664 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006113724822900485,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666669,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=2.0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3909742308392687,
+        "description": "min=0.366, mean=0.391, max=0.404, sum=1.173 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3328512197473725,
+        "description": "min=0.332, mean=0.333, max=0.333, sum=0.999 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10236263251534927,
+        "description": "min=0.095, mean=0.102, max=0.116, sum=0.307 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01651344909771876,
+        "description": "min=0.013, mean=0.017, max=0.018, sum=0.05 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 78.63378122313344,
+        "description": "min=66.745, mean=78.634, max=102.411, sum=235.901 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.003 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=421.756 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4096.0,
+        "description": "min=1024, mean=4096, max=10240, sum=12288 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.008807043144121788,
+        "description": "min=0.009, mean=0.009, max=0.009, sum=0.009 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.803988613633156,
+        "description": "min=6.804, mean=6.804, max=6.804, sum=6.804 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005498987856145375,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6615384615384615,
+        "description": "min=0.662, mean=0.662, max=0.662, sum=0.662 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3464620389024124,
+        "description": "min=0.346, mean=0.346, max=0.346, sum=0.346 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.086205051369863,
+        "description": "min=0.086, mean=0.086, max=0.086, sum=0.086 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.58324821246168,
+        "description": "min=140.583, mean=140.583, max=140.583, sum=140.583 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1016.6782431052094,
+        "description": "min=1016.678, mean=1016.678, max=1016.678, sum=1016.678 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005211865980260329,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.874182995963071,
+        "description": "min=6.874, mean=6.874, max=6.874, sum=6.874 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005425143381399264,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4098257576642973,
+        "description": "min=0.41, mean=0.41, max=0.41, sum=0.41 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5255775577557755,
+        "description": "min=0.526, mean=0.526, max=0.526, sum=0.526 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12923626777521482,
+        "description": "min=0.129, mean=0.129, max=0.129, sum=0.129 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013278855975485188,
+        "description": "min=0.013, mean=0.013, max=0.013, sum=0.013 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.58324821246168,
+        "description": "min=140.583, mean=140.583, max=140.583, sum=140.583 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1020.8621041879469,
+        "description": "min=1020.862, mean=1020.862, max=1020.862, sum=1020.862 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005652739270716802,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.892834034270578,
+        "description": "min=6.893, mean=6.893, max=6.893, sum=6.893 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005418104553466495,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39303257653205587,
+        "description": "min=0.393, mean=0.393, max=0.393, sum=0.393 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5014880952380952,
+        "description": "min=0.501, mean=0.501, max=0.501, sum=0.501 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08986115091046451,
+        "description": "min=0.09, mean=0.09, max=0.09, sum=0.09 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01940755873340143,
+        "description": "min=0.019, mean=0.019, max=0.019, sum=0.019 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 30.722404266949653,
+        "description": "min=30.722, mean=30.722, max=30.722, sum=30.722 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1018.4341164453524,
+        "description": "min=1018.434, mean=1018.434, max=1018.434, sum=1018.434 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005333787311315404,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.904576287467624,
+        "description": "min=6.905, mean=6.905, max=6.905, sum=6.905 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005575315654003657,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3970490121133394,
+        "description": "min=0.397, mean=0.397, max=0.397, sum=0.397 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4391829155060353,
+        "description": "min=0.439, mean=0.439, max=0.439, sum=0.439 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1270806157057135,
+        "description": "min=0.127, mean=0.127, max=0.127, sum=0.127 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01634320735444331,
+        "description": "min=0.016, mean=0.016, max=0.016, sum=0.016 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.227338546321724,
+        "description": "min=7.227, mean=7.227, max=7.227, sum=7.227 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1021.0980592441267,
+        "description": "min=1021.098, mean=1021.098, max=1021.098, sum=1021.098 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0047127454318465585,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.920059093140849,
+        "description": "min=6.92, mean=6.92, max=6.92, sum=6.92 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005423952790420041,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4224422483857356,
+        "description": "min=0.422, mean=0.422, max=0.422, sum=0.422 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49382716049382713,
+        "description": "min=0.494, mean=0.494, max=0.494, sum=0.494 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11512516864038372,
+        "description": "min=0.115, mean=0.115, max=0.115, sum=0.115 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01634320735444331,
+        "description": "min=0.016, mean=0.016, max=0.016, sum=0.016 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.228588068846837,
+        "description": "min=6.229, mean=6.229, max=6.229, sum=6.229 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1019.9601634320735,
+        "description": "min=1019.96, mean=1019.96, max=1019.96, sum=1019.96 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004051104949981357,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.9672867957937346,
+        "description": "min=6.967, mean=6.967, max=6.967, sum=6.967 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005185966882846577,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44479294503508626,
+        "description": "min=0.445, mean=0.445, max=0.445, sum=0.445 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4073260073260073,
+        "description": "min=0.407, mean=0.407, max=0.407, sum=0.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13189899510435454,
+        "description": "min=0.132, mean=0.132, max=0.132, sum=0.132 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.021450459652706845,
+        "description": "min=0.021, mean=0.021, max=0.021, sum=0.021 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.271188716962453,
+        "description": "min=6.271, mean=6.271, max=6.271, sum=6.271 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1022.9856996935648,
+        "description": "min=1022.986, mean=1022.986, max=1022.986, sum=1022.986 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006159832676686613,
+        "description": "min=0.006, mean=0.006, max=0.006, sum=0.006 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8382429770321823,
+        "description": "min=0.838, mean=0.838, max=0.838, sum=0.838 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006574741594573568,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.619047619047619,
+        "description": "min=0.619, mean=0.619, max=0.619, sum=0.619 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.396348943578646,
+        "description": "min=0.396, mean=0.396, max=0.396, sum=0.396 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4986666666666667,
+        "description": "min=0.499, mean=0.499, max=0.499, sum=0.499 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1728359359938307,
+        "description": "min=0.173, mean=0.173, max=0.173, sum=0.173 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0040858018386108275,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 141.2134831460674,
+        "description": "min=141.213, mean=141.213, max=141.213, sum=141.213 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 122.3758937691522,
+        "description": "min=122.376, mean=122.376, max=122.376, sum=122.376 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.006739367997794968,
+        "description": "min=0.007, mean=0.007, max=0.007, sum=0.007 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.641683605410774,
+        "description": "min=5.642, mean=5.642, max=5.642, sum=5.642 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005469091732000285,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6470588235294118,
+        "description": "min=0.647, mean=0.647, max=0.647, sum=0.647 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35453174693761924,
+        "description": "min=0.355, mean=0.355, max=0.355, sum=0.355 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4176100628930817,
+        "description": "min=0.418, mean=0.418, max=0.418, sum=0.418 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13677976952624837,
+        "description": "min=0.137, mean=0.137, max=0.137, sum=0.137 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01940755873340143,
+        "description": "min=0.019, mean=0.019, max=0.019, sum=0.019 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.717752367424268,
+        "description": "min=24.718, mean=24.718, max=24.718, sum=24.718 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 141.2134831460674,
+        "description": "min=141.213, mean=141.213, max=141.213, sum=141.213 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 847.1481103166496,
+        "description": "min=847.148, mean=847.148, max=847.148, sum=847.148 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004247871978209059,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0147285007435816,
+        "description": "min=2.015, mean=2.015, max=2.015, sum=2.015 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005487832189779879,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6664845173041896,
+        "description": "min=0.666, mean=0.666, max=0.666, sum=0.666 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40650596598998123,
+        "description": "min=0.407, mean=0.407, max=0.407, sum=0.407 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3939393939393939,
+        "description": "min=0.394, mean=0.394, max=0.394, sum=0.394 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10603681409753121,
+        "description": "min=0.106, mean=0.106, max=0.106, sum=0.106 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.014 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.207072456481953,
+        "description": "min=2.207, mean=2.207, max=2.207, sum=2.207 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 297.8876404494382,
+        "description": "min=297.888, mean=297.888, max=297.888, sum=297.888 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0035287708546135536,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.74372445396385,
+        "description": "min=1.744, mean=1.744, max=1.744, sum=1.744 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005531750604899871,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41335116119701915,
+        "description": "min=0.413, mean=0.413, max=0.413, sum=0.413 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.33333333333333337,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11057142857142857,
+        "description": "min=0.111, mean=0.111, max=0.111, sum=0.111 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.013278855975485188,
+        "description": "min=0.013, mean=0.013, max=0.013, sum=0.013 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.9137225292336986,
+        "description": "min=1.914, mean=1.914, max=1.914, sum=1.914 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 256.33094994892747,
+        "description": "min=256.331, mean=256.331, max=256.331, sum=256.331 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.003021742302641181,
+        "description": "min=0.003, mean=0.003, max=0.003, sum=0.003 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.7324189926691895,
+        "description": "min=1.732, mean=1.732, max=1.732, sum=1.732 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0004706179412702465,
+        "description": "min=0.0, mean=0.0, max=0.0, sum=0.0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5238095238095238,
+        "description": "min=0.524, mean=0.524, max=0.524, sum=0.524 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3997790805835295,
+        "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45679012345679015,
+        "description": "min=0.457, mean=0.457, max=0.457, sum=0.457 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08283205982767028,
+        "description": "min=0.083, mean=0.083, max=0.083, sum=0.083 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.01634320735444331,
+        "description": "min=0.016, mean=0.016, max=0.016, sum=0.016 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.6117183569809739,
+        "description": "min=1.612, mean=1.612, max=1.612, sum=1.612 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.585291113381,
+        "description": "min=140.585, mean=140.585, max=140.585, sum=140.585 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 256.03983656792644,
+        "description": "min=256.04, mean=256.04, max=256.04, sum=256.04 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_glm%2Cnum_outputs%3D1%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_glm%2Cnum_outputs%3D10%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005905844199428835,
+        "description": "min=0.005, mean=0.006, max=0.007, sum=0.018 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.174095282411284,
+        "description": "min=5.53, mean=6.174, max=6.496, sum=18.522 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0006380713340618169,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.002 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6570294784580498,
+        "description": "min=0.638, mean=0.657, max=0.667, sum=1.971 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3894951408692228,
+        "description": "min=0.364, mean=0.389, max=0.402, sum=1.168 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39975845410628025,
+        "description": "min=0.333, mean=0.4, max=0.433, sum=1.199 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11369012298794445,
+        "description": "min=0.11, mean=0.114, max=0.12, sum=0.341 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.011372148450800137,
+        "description": "min=0.011, mean=0.011, max=0.012, sum=0.034 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 134.25080810834143,
+        "description": "min=37.349, mean=134.251, max=328.054, sum=402.752 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=2937 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 144.74157303370785,
+        "description": "min=144.742, mean=144.742, max=144.742, sum=434.225 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4054.960844399047,
+        "description": "min=1009.29, mean=4054.961, max=10146.302, sum=12164.883 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=3 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.005489307197172369,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.816434817860978,
+        "description": "min=5.816, mean=5.816, max=5.816, sum=5.816 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005277616144990003,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=0.667 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3993952482520948,
+        "description": "min=0.399, mean=0.399, max=0.399, sum=0.399 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11219436706901886,
+        "description": "min=0.112, mean=0.112, max=0.112, sum=0.112 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.012257405515832482,
+        "description": "min=0.012, mean=0.012, max=0.012, sum=0.012 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0010214504596527069,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 140.58324821246168,
+        "description": "min=140.583, mean=140.583, max=140.583, sum=140.583 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 918.5331971399387,
+        "description": "min=918.533, mean=918.533, max=918.533, sum=918.533 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004852830066313215,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.005 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.3240610174063971,
+        "description": "min=1.324, mean=1.324, max=1.324, sum=1.324 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.000592330094429434,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6296296296296297,
+        "description": "min=0.63, mean=0.63, max=0.63, sum=0.63 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2722861783330643,
+        "description": "min=0.272, mean=0.272, max=0.272, sum=0.272 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08333333333333337,
+        "description": "min=0.083, mean=0.083, max=0.083, sum=0.083 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0030643513789581204,
+        "description": "min=0.003, mean=0.003, max=0.003, sum=0.003 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=979 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 141.2134831460674,
+        "description": "min=141.213, mean=141.213, max=141.213, sum=141.213 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 192.77017364657814,
+        "description": "min=192.77, mean=192.77, max=192.77, sum=192.77 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=copyright_text&subgroup=datatag%3A%20n_books_1000-extractions_per_book_1-prefix_length_125&runSpecs=%5B%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_yalm%22%2C%20%22copyright%3Adatatag%3Dn_books_1000-extractions_per_book_1-prefix_length_125%2Cmodel%3Dtogether_yalm%2Cnum_outputs%3D1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.004819170841642754,
+        "description": "min=0.005, mean=0.005, max=0.005, sum=0.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.573208424100555,
+        "description": "min=6.573, mean=6.573, max=6.573, sum=13.146 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0005505320062423902,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.001 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "description": "min=0.667, mean=0.667, max=0.667, sum=1.333 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.385861513883434,
+        "description": "min=0.386, mean=0.386, max=0.386, sum=0.772 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "description": "min=0.333, mean=0.333, max=0.333, sum=0.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1006416885424124,
+        "description": "min=0.101, mean=0.101, max=0.101, sum=0.201 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.014300306435137897,
+        "description": "min=0.014, mean=0.014, max=0.014, sum=0.029 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.926687496546801,
+        "description": "min=12.927, mean=12.927, max=12.927, sum=25.853 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 979.0,
+        "description": "min=979, mean=979, max=979, sum=1958 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 143.91317671092952,
+        "description": "min=143.913, mean=143.913, max=143.913, sum=287.826 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1024.0,
+        "description": "min=1024, mean=1024, max=1024, sum=2048 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/copyright_text_copyright_text_datatag:n_books_1000-extractions_per_book_1-prefix_length_125.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/copyright_text_copyright_text_datatag:n_books_1000-extractions_per_book_1-prefix_length_125.json"
+    }
+  ],
+  "name": "copyright_text_datatag:n_books_1000-extractions_per_book_1-prefix_length_125"
+}

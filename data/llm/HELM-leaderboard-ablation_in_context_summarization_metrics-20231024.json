@@ -1,0 +1,3782 @@
+{
+  "title": "Summarization metrics",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "CNN/DailyMail - SummaC",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nSummaC: Faithfulness scores based on the SummaC method of [Laban et al. (2022)](https://aclanthology.org/2022.tacl-1.10/).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "SummaC",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - QAFactEval",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nQAFactEval: Faithfulness scores based on the SummaC method of [Laban et al. (2022)](https://aclanthology.org/2022.tacl-1.10/).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "QAFactEval",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - BERTScore (F1)",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nBERTScore (F1): Average BERTScore F1 [(Zhang et al., 2020)](https://openreview.net/pdf?id=SkeHuCVFDr) between model generation and reference summary.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "BERTScore (F1)",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - Coverage",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nCoverage: Extent to which the model-generated summaries are extractive fragments from the source document [(Grusky et al., 2018)](https://aclanthology.org/N18-1065/).",
+      "markdown": false,
+      "metadata": {
+        "metric": "Coverage",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - Density",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nDensity: Extent to which the model-generated summaries are extractive summaries based on the source document [(Grusky et al., 2018)](https://aclanthology.org/N18-1065/).",
+      "markdown": false,
+      "metadata": {
+        "metric": "Density",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - Compression",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nCompression: Extent to which the model-generated summaries are compressed relative to the source document [(Grusky et al., 2018)](https://aclanthology.org/N18-1065/).",
+      "markdown": false,
+      "metadata": {
+        "metric": "Compression",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - HumanEval-faithfulness",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nHumanEval-faithfulness: Human evaluation score for faithfulness.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "HumanEval-faithfulness",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - HumanEval-relevance",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nHumanEval-relevance: Human evaluation score for relevance.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "HumanEval-relevance",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - HumanEval-coherence",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nHumanEval-coherence: Human evaluation score for coherence.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "HumanEval-coherence",
+        "run_group": "CNN/DailyMail"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8066208699503754,
+        "description": "min=0.807, mean=0.807, max=0.807, sum=1.613 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 23.705954277011536,
+        "description": "min=23.706, mean=23.706, max=23.706, sum=47.412 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.087624736428085,
+        "description": "min=7.088, mean=7.088, max=7.088, sum=14.175 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.397486243142044,
+        "description": "min=0.394, mean=0.397, max=0.403, sum=2.385 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0040953880705559,
+        "description": "min=0.694, mean=1.004, max=1.602, sum=6.025 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.63763256604256,
+        "description": "min=11.586, mean=11.638, max=11.668, sum=69.826 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8064814814814815,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.7766785610745375,
+        "description": "min=4.717, mean=4.777, max=4.83, sum=28.66 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9623062366618006,
+        "description": "min=0.95, mean=0.962, max=0.97, sum=5.774 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.784509853357953,
+        "description": "min=6.803, mean=9.785, max=12.959, sum=58.707 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 12.013071821402653,
+        "description": "min=10.841, mean=12.013, max=13.408, sum=72.078 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=4 (4)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.611111111111112,
+        "description": "min=4.556, mean=4.611, max=4.667, sum=18.444 (4)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.055555555555555,
+        "description": "min=4, mean=4.056, max=4.111, sum=16.222 (4)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4907407407407407,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.854498097535981,
+        "description": "min=4.72, mean=4.854, max=4.989, sum=19.418 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9658297713652185,
+        "description": "min=0.953, mean=0.966, max=0.988, sum=5.795 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.502651399234438,
+        "description": "min=10.97, mean=18.503, max=27.123, sum=111.016 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.979171368756449,
+        "description": "min=8.753, mean=9.979, max=10.794, sum=59.875 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.333333333333333,
+        "description": "min=4.333, mean=4.333, max=4.333, sum=8.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3333333333333335,
+        "description": "min=3.333, mean=3.333, max=3.333, sum=6.667 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.931068711768593,
+        "description": "min=4.798, mean=4.931, max=5.013, sum=29.586 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9705296031762204,
+        "description": "min=0.97, mean=0.971, max=0.972, sum=5.823 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 16.950052475315406,
+        "description": "min=16.019, mean=16.95, max=18.426, sum=101.7 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.056468873163498,
+        "description": "min=9.813, mean=10.056, max=10.319, sum=60.339 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.33425925925925926,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.638036028857763,
+        "description": "min=4.487, mean=4.638, max=4.798, sum=27.828 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.961278764309425,
+        "description": "min=0.959, mean=0.961, max=0.965, sum=5.768 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.141684943345476,
+        "description": "min=8.732, mean=10.142, max=12.123, sum=60.85 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.497399653410229,
+        "description": "min=11.111, mean=11.497, max=12.136, sum=68.984 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.333333333333333,
+        "description": "min=4.333, mean=4.333, max=4.333, sum=8.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3333333333333335,
+        "description": "min=3.333, mean=3.333, max=3.333, sum=6.667 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5875995834935652,
+        "description": "min=0.588, mean=0.588, max=0.588, sum=1.175 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.842098994485548,
+        "description": "min=6.842, mean=6.842, max=6.842, sum=13.684 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.254481321034167,
+        "description": "min=4.254, mean=4.254, max=4.254, sum=8.509 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.309390061780026,
+        "description": "min=4.309, mean=4.309, max=4.309, sum=8.619 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.4199290711017594,
+        "description": "min=0.419, mean=0.42, max=0.421, sum=2.52 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.488698664462012,
+        "description": "min=1.109, mean=1.489, max=1.766, sum=8.932 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.058271187330005,
+        "description": "min=8.824, mean=9.058, max=9.216, sum=54.35 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.14814814814814814,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.64916330459588,
+        "description": "min=4.624, mean=4.649, max=4.683, sum=27.895 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6933363579954595,
+        "description": "min=0.584, mean=0.693, max=0.794, sum=4.16 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 29.59645346025314,
+        "description": "min=14.783, mean=29.596, max=41.502, sum=177.579 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.210475182077606,
+        "description": "min=4.691, mean=5.21, max=6.198, sum=31.263 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666666,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.7246571446294165,
+        "description": "min=4.673, mean=4.725, max=4.763, sum=28.348 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.81996028766352,
+        "description": "min=0.757, mean=0.82, max=0.915, sum=4.92 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 39.46458452647996,
+        "description": "min=38.043, mean=39.465, max=40.205, sum=236.788 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.616638288211878,
+        "description": "min=4.82, mean=5.617, max=6.588, sum=33.7 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.07407407407407407,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.647631064385969,
+        "description": "min=4.576, mean=4.648, max=4.739, sum=27.886 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7566379909181316,
+        "description": "min=0.632, mean=0.757, max=0.951, sum=4.54 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 41.370419689935105,
+        "description": "min=21.84, mean=41.37, max=68.763, sum=248.223 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.916952330432516,
+        "description": "min=4.619, mean=4.917, max=5.4, sum=29.502 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.18518518518518517,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.64916330459588,
+        "description": "min=4.624, mean=4.649, max=4.683, sum=27.895 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6932722187489166,
+        "description": "min=0.583, mean=0.693, max=0.794, sum=4.16 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 29.596286316714753,
+        "description": "min=14.782, mean=29.596, max=41.502, sum=177.578 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.210507609354669,
+        "description": "min=4.691, mean=5.211, max=6.198, sum=31.263 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8758826984839778,
+        "description": "min=0.876, mean=0.876, max=0.876, sum=1.752 (2)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 9.753634540685981,
+        "description": "min=9.754, mean=9.754, max=9.754, sum=19.507 (2)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.161493511330807,
+        "description": "min=8.161, mean=8.161, max=8.161, sum=16.323 (2)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8689472944480293,
+        "description": "min=0.865, mean=0.869, max=0.873, sum=5.214 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 9.21522586255624,
+        "description": "min=8.727, mean=9.215, max=9.482, sum=55.291 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.349911203011134,
+        "description": "min=8.24, mean=8.35, max=8.487, sum=50.099 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.841192270385719,
+        "description": "min=0.836, mean=0.841, max=0.845, sum=5.047 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.588383920302716,
+        "description": "min=8.147, mean=8.588, max=8.816, sum=51.53 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.27387938295926,
+        "description": "min=8.169, mean=8.274, max=8.416, sum=49.643 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.829547192023473,
+        "description": "min=0.808, mean=0.83, max=0.84, sum=4.977 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.410793757100516,
+        "description": "min=8.073, mean=8.411, max=8.891, sum=50.465 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.402531696266585,
+        "description": "min=8.297, mean=8.403, max=8.468, sum=50.415 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.841192270385719,
+        "description": "min=0.836, mean=0.841, max=0.845, sum=5.047 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.588383920302716,
+        "description": "min=8.147, mean=8.588, max=8.816, sum=51.53 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.27387938295926,
+        "description": "min=8.169, mean=8.274, max=8.416, sum=49.643 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.841192270385719,
+        "description": "min=0.836, mean=0.841, max=0.845, sum=5.047 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.588383920302716,
+        "description": "min=8.147, mean=8.588, max=8.816, sum=51.53 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 8.27387938295926,
+        "description": "min=8.169, mean=8.274, max=8.416, sum=49.643 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8023279907429506,
+        "description": "min=0.802, mean=0.802, max=0.802, sum=1.605 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 26.551252345314836,
+        "description": "min=26.551, mean=26.551, max=26.551, sum=53.103 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.116689511234034,
+        "description": "min=6.117, mean=6.117, max=6.117, sum=12.233 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6296296296296297,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.707629724004407,
+        "description": "min=4.685, mean=4.708, max=4.731, sum=28.246 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5766179098555488,
+        "description": "min=0.566, mean=0.577, max=0.595, sum=3.46 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 21.256143860746036,
+        "description": "min=19.701, mean=21.256, max=23.657, sum=127.537 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.974507396733674,
+        "description": "min=9.829, mean=9.975, max=10.093, sum=59.847 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4444444444444444,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.694422736071146,
+        "description": "min=4.673, mean=4.694, max=4.719, sum=28.167 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9678942913585868,
+        "description": "min=0.961, mean=0.968, max=0.982, sum=5.807 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 48.70421647133666,
+        "description": "min=34.094, mean=48.704, max=56.723, sum=292.225 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.069100568484126,
+        "description": "min=8.76, mean=10.069, max=12.403, sum=60.415 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8148148148148148,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.73523818903631,
+        "description": "min=4.71, mean=4.735, max=4.774, sum=28.411 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9668685034019816,
+        "description": "min=0.956, mean=0.967, max=0.977, sum=5.801 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 51.832775817739694,
+        "description": "min=40.937, mean=51.833, max=61.068, sum=310.997 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.34799010873906,
+        "description": "min=7.22, mean=8.348, max=9.888, sum=50.088 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5185185185185185,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.699152351977819,
+        "description": "min=4.655, mean=4.699, max=4.73, sum=28.195 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9726303370676711,
+        "description": "min=0.963, mean=0.973, max=0.988, sum=5.836 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 55.004804430116764,
+        "description": "min=44.872, mean=55.005, max=71.09, sum=330.029 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.3619482861502,
+        "description": "min=7.266, mean=9.362, max=11.025, sum=56.172 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.48148148148148145,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.694422736071146,
+        "description": "min=4.673, mean=4.694, max=4.719, sum=28.167 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9678942913585868,
+        "description": "min=0.961, mean=0.968, max=0.982, sum=5.807 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 48.70421647133666,
+        "description": "min=34.094, mean=48.704, max=56.723, sum=292.225 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.069100568484126,
+        "description": "min=8.76, mean=10.069, max=12.403, sum=60.415 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.814856655650425,
+        "description": "min=0.815, mean=0.815, max=0.815, sum=1.63 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 32.72787742028018,
+        "description": "min=32.728, mean=32.728, max=32.728, sum=65.456 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.524097368825485,
+        "description": "min=4.524, mean=4.524, max=4.524, sum=9.048 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8518518518518519,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.754042871361193,
+        "description": "min=4.614, mean=4.754, max=4.894, sum=19.016 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.3960694142363937,
+        "description": "min=0.394, mean=0.396, max=0.397, sum=2.376 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4477539336061584,
+        "description": "min=1.153, mean=1.448, max=1.614, sum=8.687 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.587885145198234,
+        "description": "min=11.53, mean=11.588, max=11.627, sum=69.527 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.37037037037037035,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.685228154441049,
+        "description": "min=4.651, mean=4.685, max=4.731, sum=28.111 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9683182067788616,
+        "description": "min=0.955, mean=0.968, max=0.978, sum=5.81 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 42.62052944771142,
+        "description": "min=33.791, mean=42.621, max=50.28, sum=255.723 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.712846429895897,
+        "description": "min=7.521, mean=8.713, max=9.634, sum=52.277 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2222222222222222,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.655342769979523,
+        "description": "min=4.618, mean=4.655, max=4.677, sum=27.932 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9774818538040652,
+        "description": "min=0.967, mean=0.977, max=0.992, sum=5.865 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 56.68929080350716,
+        "description": "min=49.944, mean=56.689, max=67.954, sum=340.136 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.813901793568199,
+        "description": "min=5.782, mean=6.814, max=8.152, sum=40.883 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.674626962135526,
+        "description": "min=4.615, mean=4.675, max=4.719, sum=28.048 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9735599269694634,
+        "description": "min=0.959, mean=0.974, max=0.986, sum=5.841 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 43.20454219675176,
+        "description": "min=38.051, mean=43.205, max=51.712, sum=259.227 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.291837955933152,
+        "description": "min=8.156, mean=9.292, max=10.478, sum=55.751 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4074074074074074,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.685228154441049,
+        "description": "min=4.651, mean=4.685, max=4.731, sum=28.111 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9683182067788616,
+        "description": "min=0.955, mean=0.968, max=0.978, sum=5.81 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 42.62052944771142,
+        "description": "min=33.791, mean=42.621, max=50.28, sum=255.723 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.712846429895897,
+        "description": "min=7.521, mean=8.713, max=9.634, sum=52.277 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5457359382136101,
+        "description": "min=0.546, mean=0.546, max=0.546, sum=1.091 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.722456412054521,
+        "description": "min=2.722, mean=2.722, max=2.722, sum=5.445 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.01587912160436,
+        "description": "min=19.016, mean=19.016, max=19.016, sum=38.032 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5547542182286073,
+        "description": "min=0.55, mean=0.555, max=0.56, sum=3.329 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.698337926712314,
+        "description": "min=2.69, mean=2.698, max=2.706, sum=16.19 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.248383205041776,
+        "description": "min=19.085, mean=19.248, max=19.44, sum=115.49 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5547542182286073,
+        "description": "min=0.55, mean=0.555, max=0.56, sum=3.329 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.698337926712314,
+        "description": "min=2.69, mean=2.698, max=2.706, sum=16.19 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.248383205041776,
+        "description": "min=19.085, mean=19.248, max=19.44, sum=115.49 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5547542182286073,
+        "description": "min=0.55, mean=0.555, max=0.56, sum=3.329 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.698337926712314,
+        "description": "min=2.69, mean=2.698, max=2.706, sum=16.19 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.248383205041776,
+        "description": "min=19.085, mean=19.248, max=19.44, sum=115.49 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5547542182286073,
+        "description": "min=0.55, mean=0.555, max=0.56, sum=3.329 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.698337926712314,
+        "description": "min=2.69, mean=2.698, max=2.706, sum=16.19 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.248383205041776,
+        "description": "min=19.085, mean=19.248, max=19.44, sum=115.49 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5547542182286073,
+        "description": "min=0.55, mean=0.555, max=0.56, sum=3.329 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.698337926712314,
+        "description": "min=2.69, mean=2.698, max=2.706, sum=16.19 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.248383205041776,
+        "description": "min=19.085, mean=19.248, max=19.44, sum=115.49 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7218183048031681,
+        "description": "min=0.722, mean=0.722, max=0.722, sum=1.444 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.054958464001107,
+        "description": "min=5.055, mean=5.055, max=5.055, sum=10.11 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.0713881968479395,
+        "description": "min=7.071, mean=7.071, max=7.071, sum=14.143 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7197585278365729,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=4.319 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.044183333839311,
+        "description": "min=5.044, mean=5.044, max=5.044, sum=30.265 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.186281356409094,
+        "description": "min=7.173, mean=7.186, max=7.2, sum=43.118 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7197585278365729,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=4.319 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.044183333839311,
+        "description": "min=5.044, mean=5.044, max=5.044, sum=30.265 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.186281356409094,
+        "description": "min=7.173, mean=7.186, max=7.2, sum=43.118 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7197585278365729,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=4.319 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.044183333839311,
+        "description": "min=5.044, mean=5.044, max=5.044, sum=30.265 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.186281356409094,
+        "description": "min=7.173, mean=7.186, max=7.2, sum=43.118 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7197585278365729,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=4.319 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.044183333839311,
+        "description": "min=5.044, mean=5.044, max=5.044, sum=30.265 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.186281356409094,
+        "description": "min=7.173, mean=7.186, max=7.2, sum=43.118 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7197585278365729,
+        "description": "min=0.72, mean=0.72, max=0.72, sum=4.319 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.044183333839311,
+        "description": "min=5.044, mean=5.044, max=5.044, sum=30.265 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.186281356409094,
+        "description": "min=7.173, mean=7.186, max=7.2, sum=43.118 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.7835934769749021,
+        "description": "min=0.784, mean=0.784, max=0.784, sum=1.567 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 31.158695780705187,
+        "description": "min=31.159, mean=31.159, max=31.159, sum=62.317 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.762920761390131,
+        "description": "min=4.763, mean=4.763, max=4.763, sum=9.526 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.3888937798809044,
+        "description": "min=0.389, mean=0.389, max=0.389, sum=2.333 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40978076128290725,
+        "description": "min=0.41, mean=0.41, max=0.41, sum=2.459 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.688871770416823,
+        "description": "min=11.678, mean=11.689, max=11.695, sum=70.133 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4638888888888889,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.705545693316696,
+        "description": "min=4.671, mean=4.706, max=4.751, sum=28.233 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9708815004902974,
+        "description": "min=0.963, mean=0.971, max=0.978, sum=5.825 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 32.94304597381774,
+        "description": "min=29.571, mean=32.943, max=37.369, sum=197.658 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.443383001812462,
+        "description": "min=8.999, mean=9.443, max=10.246, sum=56.66 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.326599326599326,
+        "description": "min=4.167, mean=4.327, max=4.424, sum=25.96 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3703703703703707,
+        "description": "min=3, mean=3.37, max=3.667, sum=20.222 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6648148148148149,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.655894778817756,
+        "description": "min=4.615, mean=4.656, max=4.681, sum=27.935 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9751862187942524,
+        "description": "min=0.966, mean=0.975, max=0.991, sum=5.851 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 48.14507353301917,
+        "description": "min=42.471, mean=48.145, max=57.149, sum=288.87 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.391667358512615,
+        "description": "min=7.241, mean=8.392, max=9.564, sum=50.35 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.607407407407408,
+        "description": "min=4.556, mean=4.607, max=4.667, sum=27.644 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.497530864197531,
+        "description": "min=3.37, mean=3.498, max=3.733, sum=20.985 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6990740740740741,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.662345816788956,
+        "description": "min=4.629, mean=4.662, max=4.684, sum=27.974 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9784905216246959,
+        "description": "min=0.976, mean=0.978, max=0.983, sum=5.871 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 42.9183106598654,
+        "description": "min=39.308, mean=42.918, max=49.98, sum=257.51 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.605458336956644,
+        "description": "min=8.001, mean=8.605, max=9.216, sum=51.633 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.527777777777779,
+        "description": "min=4.417, mean=4.528, max=4.667, sum=27.167 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.6703703703703705,
+        "description": "min=3.5, mean=3.67, max=3.778, sum=22.022 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5981481481481481,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.705545693316696,
+        "description": "min=4.671, mean=4.706, max=4.751, sum=28.233 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9708815004902974,
+        "description": "min=0.963, mean=0.971, max=0.978, sum=5.825 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 32.94304597381774,
+        "description": "min=29.571, mean=32.943, max=37.369, sum=197.658 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.443383001812462,
+        "description": "min=8.999, mean=9.443, max=10.246, sum=56.66 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.326599326599326,
+        "description": "min=4.167, mean=4.327, max=4.424, sum=25.96 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3703703703703707,
+        "description": "min=3, mean=3.37, max=3.667, sum=20.222 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.8179902358177882,
+        "description": "min=0.818, mean=0.818, max=0.818, sum=1.636 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 35.11050200899355,
+        "description": "min=35.111, mean=35.111, max=35.111, sum=70.221 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.662427984787693,
+        "description": "min=4.662, mean=4.662, max=4.662, sum=9.325 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1111111111111111,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.648919455707073,
+        "description": "min=4.649, mean=4.649, max=4.649, sum=9.298 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.39403424027887546,
+        "description": "min=0.393, mean=0.394, max=0.395, sum=2.364 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1053486209013828,
+        "description": "min=1.053, mean=1.105, max=1.186, sum=6.632 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.63212150085167,
+        "description": "min=11.623, mean=11.632, max=11.639, sum=69.793 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7407407407407407,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.726169519052763,
+        "description": "min=4.715, mean=4.726, max=4.743, sum=28.357 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9605540986224425,
+        "description": "min=0.938, mean=0.961, max=0.975, sum=5.763 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 39.99653492014301,
+        "description": "min=35.818, mean=39.997, max=46.045, sum=239.979 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.84946284553556,
+        "description": "min=9.219, mean=9.849, max=10.932, sum=59.097 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7037037037037037,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.7258017055564485,
+        "description": "min=4.708, mean=4.726, max=4.752, sum=28.355 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9624642820465833,
+        "description": "min=0.962, mean=0.962, max=0.963, sum=5.775 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 53.717370713731434,
+        "description": "min=44.328, mean=53.717, max=61.996, sum=322.304 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.782185545912016,
+        "description": "min=8.911, mean=9.782, max=11.181, sum=58.693 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8888888888888888,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.75584370697154,
+        "description": "min=4.747, mean=4.756, max=4.764, sum=28.535 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9741367891867393,
+        "description": "min=0.97, mean=0.974, max=0.982, sum=5.845 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 49.50719406074385,
+        "description": "min=41.622, mean=49.507, max=57.156, sum=297.043 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.569335094513788,
+        "description": "min=8.354, mean=9.569, max=10.743, sum=57.416 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7777777777777778,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 4.726169519052763,
+        "description": "min=4.715, mean=4.726, max=4.743, sum=28.357 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9605540986224425,
+        "description": "min=0.938, mean=0.961, max=0.975, sum=5.763 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 39.99653492014301,
+        "description": "min=35.818, mean=39.997, max=46.045, sum=239.979 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.84946284553556,
+        "description": "min=9.219, mean=9.849, max=10.932, sum=59.097 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.18526411241542126,
+        "description": "min=0.185, mean=0.185, max=0.185, sum=0.371 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.116851256133712,
+        "description": "min=9.117, mean=9.117, max=9.117, sum=18.234 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.7779382719909202,
+        "description": "min=3.778, mean=3.778, max=3.778, sum=7.556 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.2825307067794182,
+        "description": "min=0.28, mean=0.283, max=0.284, sum=1.695 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0861023156337966,
+        "description": "min=0.784, mean=1.086, max=1.284, sum=6.517 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.444281942517158,
+        "description": "min=7.323, mean=7.444, max=7.506, sum=44.666 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.23333333333333334,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9721860037134923,
+        "description": "min=0.959, mean=0.972, max=0.983, sum=5.833 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 29.943766865059754,
+        "description": "min=24.572, mean=29.944, max=34.538, sum=179.663 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.667464272802052,
+        "description": "min=8.132, mean=8.667, max=9.521, sum=52.005 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9814814814814814,
+        "description": "min=0.944, mean=0.981, max=1, sum=5.889 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.12962962962963,
+        "description": "min=3.889, mean=4.13, max=4.333, sum=24.778 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.407407407407407,
+        "description": "min=3.111, mean=3.407, max=3.833, sum=20.444 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9120160473429578,
+        "description": "min=0.853, mean=0.912, max=0.944, sum=5.472 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 24.826767736443482,
+        "description": "min=20.298, mean=24.827, max=30.697, sum=148.961 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.608096275250842,
+        "description": "min=7.932, mean=8.608, max=9.49, sum=51.649 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9814814814814814,
+        "description": "min=0.944, mean=0.981, max=1, sum=5.889 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.129629629629629,
+        "description": "min=3.667, mean=4.13, max=4.5, sum=24.778 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.4629629629629632,
+        "description": "min=3, mean=3.463, max=3.833, sum=20.778 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9146333006127634,
+        "description": "min=0.806, mean=0.915, max=0.981, sum=5.488 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 34.84340660391599,
+        "description": "min=27.174, mean=34.843, max=40.702, sum=209.06 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.884378686265209,
+        "description": "min=6.721, mean=7.884, max=9.657, sum=47.306 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=4 (4)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 4.1,
+        "description": "min=3.867, mean=4.1, max=4.333, sum=16.4 (4)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.3666666666666663,
+        "description": "min=3.133, mean=3.367, max=3.6, sum=13.467 (4)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.36666666666666664,
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.9721860037134923,
+        "description": "min=0.959, mean=0.972, max=0.983, sum=5.833 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 29.943766865059754,
+        "description": "min=24.572, mean=29.944, max=34.538, sum=179.663 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.667464272802052,
+        "description": "min=8.132, mean=8.667, max=9.521, sum=52.005 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9814814814814814,
+        "description": "min=0.944, mean=0.981, max=1, sum=5.889 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.12962962962963,
+        "description": "min=3.889, mean=4.13, max=4.333, sum=24.778 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.407407407407407,
+        "description": "min=3.111, mean=3.407, max=3.833, sum=20.444 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 0]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.32393052830252245,
+        "description": "min=0.324, mean=0.324, max=0.324, sum=0.648 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6240500837560987,
+        "description": "min=0.624, mean=0.624, max=0.624, sum=1.248 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.220676650505098,
+        "description": "min=9.221, mean=9.221, max=9.221, sum=18.441 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 1]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.3770112395065251,
+        "description": "min=0.359, mean=0.377, max=0.398, sum=2.262 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5514708018461126,
+        "description": "min=0.521, mean=0.551, max=0.596, sum=3.309 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.336623717979729,
+        "description": "min=4.263, mean=4.337, max=4.418, sum=26.02 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 16]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6144564029622607,
+        "description": "min=0.612, mean=0.614, max=0.619, sum=3.687 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.33125811426235,
+        "description": "min=1.214, mean=1.331, max=1.394, sum=7.988 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.306936944505871,
+        "description": "min=6.063, mean=6.307, max=6.695, sum=37.842 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 2]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6064566504967672,
+        "description": "min=0.595, mean=0.606, max=0.629, sum=3.639 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.4138056863567952,
+        "description": "min=1.331, mean=1.414, max=1.572, sum=8.483 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.57890095997955,
+        "description": "min=4.467, mean=4.579, max=4.74, sum=27.473 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 4]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5684782496825841,
+        "description": "min=0.477, mean=0.568, max=0.633, sum=3.411 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.2295636003889936,
+        "description": "min=0.95, mean=1.23, max=1.444, sum=7.377 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.665068599499438,
+        "description": "min=5.069, mean=5.665, max=6.256, sum=33.99 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [max_train_instances: 8]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6144564029622607,
+        "description": "min=0.612, mean=0.614, max=0.619, sum=3.687 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.33125811426235,
+        "description": "min=1.214, mean=1.331, max=1.394, sum=7.988 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.306936944505871,
+        "description": "min=6.063, mean=6.307, max=6.695, sum=37.842 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/ablation_in_context_summarization_metrics.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/ablation_in_context_summarization_metrics.json"
+    }
+  ],
+  "name": "summarization_metrics"
+}

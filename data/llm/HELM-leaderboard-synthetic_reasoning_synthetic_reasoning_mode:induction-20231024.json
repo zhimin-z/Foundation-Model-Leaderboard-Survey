@@ -1,0 +1,3831 @@
+{
+  "title": "mode: induction",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "Synthetic reasoning tasks defined using abstract symbols based on LIME [(Wu et al., 2021)](https://proceedings.mlr.press/v139/wu21c.html).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "Synthetic reasoning (abstract symbols)"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04789644012944983,
+        "description": "min=0.043, mean=0.048, max=0.054, sum=0.144 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5839677917677993,
+        "description": "min=0.58, mean=0.584, max=0.588, sum=1.752 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.222653721682849,
+        "description": "min=7.12, mean=7.223, max=7.32, sum=21.668 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03300970873786408,
+        "description": "min=0.029, mean=0.033, max=0.037, sum=0.099 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.37661314977750754,
+        "description": "min=0.374, mean=0.377, max=0.38, sum=1.13 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.280258899676376,
+        "description": "min=7.146, mean=7.28, max=7.47, sum=21.841 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.047896440129449845,
+        "description": "min=0.041, mean=0.048, max=0.052, sum=0.144 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5342230051577664,
+        "description": "min=0.534, mean=0.534, max=0.535, sum=1.603 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.9708737864077674,
+        "description": "min=6.955, mean=6.971, max=6.988, sum=20.913 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.040129449838187704,
+        "description": "min=0.037, mean=0.04, max=0.045, sum=0.12 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.021359223300972,
+        "description": "min=6.773, mean=7.021, max=7.278, sum=21.064 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06601941747572816,
+        "description": "min=0.064, mean=0.066, max=0.07, sum=0.198 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.412944983818771,
+        "description": "min=7.332, mean=7.413, max=7.483, sum=22.239 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03754045307443366,
+        "description": "min=0.031, mean=0.038, max=0.041, sum=0.113 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.328155339805825,
+        "description": "min=7.006, mean=7.328, max=7.534, sum=21.984 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04401294498381877,
+        "description": "min=0.041, mean=0.044, max=0.049, sum=0.132 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 154.10809061488672,
+        "description": "min=153.775, mean=154.108, max=154.775, sum=462.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.946278317152104,
+        "description": "min=6.816, mean=6.946, max=7.138, sum=20.839 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3DAlephAlpha_luminous-base%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04530744336569579,
+        "description": "min=0.043, mean=0.045, max=0.049, sum=0.136 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 173.12815533980583,
+        "description": "min=170.128, mean=173.128, max=175.128, sum=519.384 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.862135922330097,
+        "description": "min=5.759, mean=5.862, max=5.977, sum=17.586 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3DAlephAlpha_luminous-extended%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04401294498381877,
+        "description": "min=0.027, mean=0.044, max=0.056, sum=0.132 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 173.12815533980583,
+        "description": "min=170.128, mean=173.128, max=175.128, sum=519.384 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.203236245954692,
+        "description": "min=6.004, mean=6.203, max=6.39, sum=18.61 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3DAlephAlpha_luminous-supreme%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05242718446601941,
+        "description": "min=0.049, mean=0.052, max=0.058, sum=0.157 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 173.12815533980583,
+        "description": "min=170.128, mean=173.128, max=175.128, sum=519.384 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.35663430420712,
+        "description": "min=6.128, mean=6.357, max=6.594, sum=19.07 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0517799352750809,
+        "description": "min=0.047, mean=0.052, max=0.06, sum=0.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.861737833737864,
+        "description": "min=0.854, mean=0.862, max=0.871, sum=2.585 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.201294498381877,
+        "description": "min=6.097, mean=6.201, max=6.384, sum=18.604 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.061488673139158574,
+        "description": "min=0.054, mean=0.061, max=0.068, sum=0.184 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.37154453811522054,
+        "description": "min=0.325, mean=0.372, max=0.417, sum=1.115 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 163.47184466019417,
+        "description": "min=161.472, mean=163.472, max=165.472, sum=490.416 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.2789644012945,
+        "description": "min=12.72, mean=14.279, max=16.732, sum=42.837 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_t0pp%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2883872508324601,
+        "description": "min=0.27, mean=0.288, max=0.326, sum=0.865 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 205.47766990291265,
+        "description": "min=202.478, mean=205.478, max=209.478, sum=616.433 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=150 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_xlarge-20220609%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.042071197411003236,
+        "description": "min=0.035, mean=0.042, max=0.05, sum=0.126 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6132738066343038,
+        "description": "min=0.603, mean=0.613, max=0.624, sum=1.84 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.228478964401294,
+        "description": "min=5.975, mean=6.228, max=6.483, sum=18.685 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_large-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.031067961165048546,
+        "description": "min=0.029, mean=0.031, max=0.033, sum=0.093 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.37007761933656913,
+        "description": "min=0.362, mean=0.37, max=0.375, sum=1.11 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.311326860841423,
+        "description": "min=5.965, mean=6.311, max=6.553, sum=18.934 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_medium-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.02330097087378641,
+        "description": "min=0.002, mean=0.023, max=0.037, sum=0.07 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2775300060679614,
+        "description": "min=0.276, mean=0.278, max=0.28, sum=0.833 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.7592233009708735,
+        "description": "min=5.612, mean=5.759, max=5.977, sum=17.278 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_small-20220720%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.039482200647249194,
+        "description": "min=0.035, mean=0.039, max=0.043, sum=0.118 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26029132281553374,
+        "description": "min=0.258, mean=0.26, max=0.263, sum=0.781 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.507443365695793,
+        "description": "min=5.192, mean=5.507, max=6.006, sum=16.522 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_xlarge-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04660194174757282,
+        "description": "min=0.035, mean=0.047, max=0.056, sum=0.14 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.228478964401295,
+        "description": "min=6.016, mean=6.228, max=6.46, sum=18.685 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_medium-20221108%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.041423948220064725,
+        "description": "min=0.033, mean=0.041, max=0.049, sum=0.124 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.027831715210357,
+        "description": "min=5.534, mean=6.028, max=6.567, sum=18.083 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_command-medium-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04724919093851133,
+        "description": "min=0.031, mean=0.047, max=0.058, sum=0.142 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.767637540453074,
+        "description": "min=5.46, mean=5.768, max=6.087, sum=17.303 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dcohere_command-xlarge-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05048543689320389,
+        "description": "min=0.047, mean=0.05, max=0.056, sum=0.151 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.77152103559874,
+        "description": "min=172.105, mean=172.772, max=174.105, sum=518.315 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.87378640776699,
+        "description": "min=5.767, mean=5.874, max=6.019, sum=17.621 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04854368932038835,
+        "description": "min=0.047, mean=0.049, max=0.05, sum=0.146 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.08850842926857509,
+        "description": "min=0.076, mean=0.089, max=0.104, sum=0.266 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 11.025889967637541,
+        "description": "min=9.753, mean=11.026, max=13.198, sum=33.078 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.043365695792880264,
+        "description": "min=0.033, mean=0.043, max=0.05, sum=0.13 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.10193916734754076,
+        "description": "min=0.097, mean=0.102, max=0.109, sum=0.306 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 171.12362459546924,
+        "description": "min=169.79, mean=171.124, max=172.79, sum=513.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 14.866666666666665,
+        "description": "min=13.342, mean=14.867, max=16.744, sum=44.6 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Deleutherai_pythia-6.9b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.021359223300970873,
+        "description": "min=0.021, mean=0.021, max=0.021, sum=0.021 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Deleutherai_pythia-12b-v0%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03300970873786408,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_t5-11b%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.036893203883495145,
+        "description": "min=0.033, mean=0.037, max=0.045, sum=0.111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.573234552539331,
+        "description": "min=0.472, mean=0.573, max=0.624, sum=1.72 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 205.47766990291265,
+        "description": "min=202.478, mean=205.478, max=209.478, sum=616.433 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=150 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_ul2%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05372168284789643,
+        "description": "min=0.049, mean=0.054, max=0.062, sum=0.161 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38815389377066145,
+        "description": "min=0.388, mean=0.388, max=0.389, sum=1.164 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 209.47766990291265,
+        "description": "min=206.478, mean=209.478, max=213.478, sum=628.433 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=150 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.018122977346278317,
+        "description": "min=0.008, mean=0.018, max=0.037, sum=0.054 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19197134109376704,
+        "description": "min=0.179, mean=0.192, max=0.206, sum=0.576 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.696440129449838,
+        "description": "min=9.155, mean=9.696, max=10.616, sum=29.089 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04401294498381877,
+        "description": "min=0.033, mean=0.044, max=0.05, sum=0.132 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.05846489025068901,
+        "description": "min=0.054, mean=0.058, max=0.061, sum=0.175 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.972168284789644,
+        "description": "min=9.583, mean=10.972, max=12.299, sum=32.917 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.036893203883495145,
+        "description": "min=0.037, mean=0.037, max=0.037, sum=0.037 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04854368932038835,
+        "description": "min=0.049, mean=0.049, max=0.049, sum=0.049 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06796116504854369,
+        "description": "min=0.068, mean=0.068, max=0.068, sum=0.068 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-65b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06019417475728155,
+        "description": "min=0.06, mean=0.06, max=0.06, sum=0.06 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-2-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06601941747572816,
+        "description": "min=0.066, mean=0.066, max=0.066, sum=0.066 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-2-13b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05048543689320388,
+        "description": "min=0.05, mean=0.05, max=0.05, sum=0.05 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmeta_llama-2-70b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07961165048543689,
+        "description": "min=0.08, mean=0.08, max=0.08, sum=0.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dstanford_alpaca-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05825242718446602,
+        "description": "min=0.058, mean=0.058, max=0.058, sum=0.058 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 18.689320388349515,
+        "description": "min=18.689, mean=18.689, max=18.689, sum=18.689 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dlmsys_vicuna-7b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06019417475728155,
+        "description": "min=0.06, mean=0.06, max=0.06, sum=0.06 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dlmsys_vicuna-13b-v1.3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03300970873786408,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.07961165048545,
+        "description": "min=204.08, mean=204.08, max=204.08, sum=204.08 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06925566343042072,
+        "description": "min=0.064, mean=0.069, max=0.078, sum=0.208 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.288025889967638,
+        "description": "min=6.243, mean=6.288, max=6.313, sum=18.864 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04271844660194174,
+        "description": "min=0.039, mean=0.043, max=0.047, sum=0.128 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.8809061488673136,
+        "description": "min=5.798, mean=5.881, max=5.946, sum=17.643 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04724919093851132,
+        "description": "min=0.045, mean=0.047, max=0.052, sum=0.142 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3491489684466022,
+        "description": "min=0.346, mean=0.349, max=0.354, sum=1.047 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.8647249190938515,
+        "description": "min=5.759, mean=5.865, max=6.027, sum=17.594 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03883495145631068,
+        "description": "min=0.025, mean=0.039, max=0.049, sum=0.117 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12354330501618128,
+        "description": "min=0.123, mean=0.124, max=0.125, sum=0.371 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.016181229773463,
+        "description": "min=5.891, mean=6.016, max=6.196, sum=18.049 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.036893203883495145,
+        "description": "min=0.033, mean=0.037, max=0.041, sum=0.111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14510142597087367,
+        "description": "min=0.141, mean=0.145, max=0.148, sum=0.435 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.897734627831716,
+        "description": "min=5.256, mean=5.898, max=6.433, sum=17.693 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03559870550161812,
+        "description": "min=0.027, mean=0.036, max=0.045, sum=0.107 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1658472694174756,
+        "description": "min=0.165, mean=0.166, max=0.167, sum=0.498 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.300970873786407,
+        "description": "min=5.202, mean=5.301, max=5.472, sum=15.903 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11132686084142396,
+        "description": "min=0.097, mean=0.111, max=0.122, sum=0.334 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.997411003236247,
+        "description": "min=6.901, mean=6.997, max=7.066, sum=20.992 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.1029126213592233,
+        "description": "min=0.085, mean=0.103, max=0.122, sum=0.309 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3511084445792882,
+        "description": "min=0.347, mean=0.351, max=0.355, sum=1.053 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.741100323624596,
+        "description": "min=6.598, mean=6.741, max=6.854, sum=20.223 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.036893203883495145,
+        "description": "min=0.029, mean=0.037, max=0.043, sum=0.111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1680317758899681,
+        "description": "min=0.166, mean=0.168, max=0.17, sum=0.504 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.2724919093851135,
+        "description": "min=5.953, mean=6.272, max=6.505, sum=18.817 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.036893203883495145,
+        "description": "min=0.033, mean=0.037, max=0.039, sum=0.111 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16314522653721672,
+        "description": "min=0.162, mean=0.163, max=0.164, sum=0.489 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.1080906148867316,
+        "description": "min=5.981, mean=6.108, max=6.252, sum=18.324 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.040129449838187704,
+        "description": "min=0.039, mean=0.04, max=0.041, sum=0.12 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11292991504854365,
+        "description": "min=0.109, mean=0.113, max=0.117, sum=0.339 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.032362459546925,
+        "description": "min=5.301, mean=6.032, max=6.649, sum=18.097 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-davinci-002",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_code-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.11132686084142396,
+        "description": "min=0.109, mean=0.111, max=0.115, sum=0.334 (3)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3493599615695789,
+        "description": "min=0.348, mean=0.349, max=0.35, sum=1.048 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.202588996763756,
+        "description": "min=8.124, mean=8.203, max=8.252, sum=24.608 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "code-cushman-001 (12B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_code-cushman-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0517799352750809,
+        "description": "min=0.045, mean=0.052, max=0.058, sum=0.155 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1483489482200648,
+        "description": "min=0.146, mean=0.148, max=0.152, sum=0.445 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.6478964401294505,
+        "description": "min=7.359, mean=7.648, max=8.078, sum=22.944 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04660194174757282,
+        "description": "min=0.047, mean=0.047, max=0.047, sum=0.047 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 157.54563106796115,
+        "description": "min=157.546, mean=157.546, max=157.546, sum=157.546 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.30873786407767,
+        "description": "min=8.309, mean=8.309, max=8.309, sum=8.309 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.09902912621359224,
+        "description": "min=0.099, mean=0.099, max=0.099, sum=0.099 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 157.54563106796115,
+        "description": "min=157.546, mean=157.546, max=157.546, sum=157.546 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.112621359223301,
+        "description": "min=7.113, mean=7.113, max=7.113, sum=7.113 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03495145631067961,
+        "description": "min=0.035, mean=0.035, max=0.035, sum=0.035 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.001941747572815534,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.002 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_redpajama-incite-base-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.040776699029126215,
+        "description": "min=0.041, mean=0.041, max=0.041, sum=0.041 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.009708737864077669,
+        "description": "min=0.01, mean=0.01, max=0.01, sum=0.01 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 50.0,
+        "description": "min=50, mean=50, max=50, sum=50 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmosaicml_mpt-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.07184466019417475,
+        "description": "min=0.072, mean=0.072, max=0.072, sum=0.072 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dmosaicml_mpt-instruct-30b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.06796116504854369,
+        "description": "min=0.068, mean=0.068, max=0.068, sum=0.068 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 170.79029126213592,
+        "description": "min=170.79, mean=170.79, max=170.79, sum=170.79 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtiiuae_falcon-7b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.03300970873786408,
+        "description": "min=0.033, mean=0.033, max=0.033, sum=0.033 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.0640776699029,
+        "description": "min=204.064, mean=204.064, max=204.064, sum=204.064 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtiiuae_falcon-7b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04271844660194175,
+        "description": "min=0.043, mean=0.043, max=0.043, sum=0.043 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.0640776699029,
+        "description": "min=204.064, mean=204.064, max=204.064, sum=204.064 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtiiuae_falcon-40b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05436893203883495,
+        "description": "min=0.054, mean=0.054, max=0.054, sum=0.054 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.0640776699029,
+        "description": "min=204.064, mean=204.064, max=204.064, sum=204.064 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtiiuae_falcon-40b-instruct%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.05242718446601942,
+        "description": "min=0.052, mean=0.052, max=0.052, sum=0.052 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=515 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=5 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 204.0640776699029,
+        "description": "min=204.064, mean=204.064, max=204.064, sum=204.064 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_glm%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.04077669902912621,
+        "description": "min=0.039, mean=0.041, max=0.043, sum=0.122 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2497866118320755,
+        "description": "min=0.242, mean=0.25, max=0.264, sum=0.749 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 162.07637540453072,
+        "description": "min=160.41, mean=162.076, max=163.41, sum=486.229 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 7.424595469255664,
+        "description": "min=7.388, mean=7.425, max=7.482, sum=22.274 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dwriter_palmyra-instruct-30%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.042071197411003236,
+        "description": "min=0.035, mean=0.042, max=0.047, sum=0.126 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.535275080906149,
+        "description": "min=5.449, mean=5.535, max=5.617, sum=16.606 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dwriter_palmyra-x%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.08284789644012945,
+        "description": "min=0.078, mean=0.083, max=0.091, sum=0.249 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 172.43495145631064,
+        "description": "min=170.435, mean=172.435, max=175.435, sum=517.305 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.7378640776699035,
+        "description": "min=6.713, mean=6.738, max=6.783, sum=20.214 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=synthetic_reasoning&subgroup=mode%3A%20induction&runSpecs=%5B%22synthetic_reasoning%3Amode%3Dinduction%2Cmodel%3Dtogether_yalm%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0077669902912621365,
+        "description": "min=0, mean=0.008, max=0.016, sum=0.023 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4052641661952228,
+        "description": "min=0.372, mean=0.405, max=0.424, sum=1.216 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 515.0,
+        "description": "min=515, mean=515, max=515, sum=1545 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=15 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 168.40711974110033,
+        "description": "min=166.074, mean=168.407, max=171.074, sum=505.221 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 42.534627831715206,
+        "description": "min=38.315, mean=42.535, max=45.429, sum=127.604 (3)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=9 (3)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/synthetic_reasoning_synthetic_reasoning_mode:induction.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/synthetic_reasoning_synthetic_reasoning_mode:induction.json"
+    }
+  ],
+  "name": "synthetic_reasoning_mode:induction"
+}

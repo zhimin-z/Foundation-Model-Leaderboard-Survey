@@ -1,0 +1,1616 @@
+{
+  "title": "subset: ArXiv",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "BPB",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\nBits/byte: Average number of bits per byte according to model probabilities.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "BPB",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "The Pile"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The Pile corpus for measuring lanugage model performance across various domains [(Gao et al., 2020)](https://arxiv.org/pdf/2101.00027.pdf).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "The Pile"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j1-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6176228232061851,
+        "description": "min=0.618, mean=0.618, max=0.618, sum=0.618 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.1256930189420729,
+        "description": "min=1.126, mean=1.126, max=1.126, sum=1.126 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j1-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6788673122988067,
+        "description": "min=0.679, mean=0.679, max=0.679, sum=0.679 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.8324681891585252,
+        "description": "min=0.832, mean=0.832, max=0.832, sum=0.832 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j1-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6431964949286737,
+        "description": "min=0.643, mean=0.643, max=0.643, sum=0.643 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9655248712464828,
+        "description": "min=0.966, mean=0.966, max=0.966, sum=0.966 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j1-grande-v2-beta%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6280570561577926,
+        "description": "min=0.628, mean=0.628, max=0.628, sum=0.628 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j2-jumbo%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5368363850354955,
+        "description": "min=0.537, mean=0.537, max=0.537, sum=0.537 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5765.888888888889,
+        "description": "min=5765.889, mean=5765.889, max=5765.889, sum=5765.889 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j2-grande%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6179282656169972,
+        "description": "min=0.618, mean=0.618, max=0.618, sum=0.618 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dai21_j2-large%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6611090933503669,
+        "description": "min=0.661, mean=0.661, max=0.661, sum=0.661 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2036.9977653631286,
+        "description": "min=2036.998, mean=2036.998, max=2036.998, sum=2036.998 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)\u2620",
+        "description": "Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Danthropic_stanford-online-all-v4-s3%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5286644019824496,
+        "description": "min=0.529, mean=0.529, max=0.529, sum=0.529 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2.3807853898820572,
+        "description": "min=2.381, mean=2.381, max=2.381, sum=2.381 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 7832.226726726727,
+        "description": "min=7832.227, mean=7832.227, max=7832.227, sum=7832.227 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.010510510510510511,
+        "description": "min=0.011, mean=0.011, max=0.011, sum=0.011 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 Anthropic is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2112.00861.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)\u2620",
+        "description": "BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dtogether_bloom%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5773238862011882,
+        "description": "min=0.577, mean=0.577, max=0.577, sum=0.577 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.1676210155526539,
+        "description": "min=1.168, mean=1.168, max=1.168, sum=1.168 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2039.7127487896719,
+        "description": "min=2039.713, mean=2039.713, max=2039.713, sum=2039.713 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 BLOOM is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://huggingface.co/spaces/bigscience/BigScienceCorpus.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)\u2620",
+        "description": "GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dtogether_gpt-j-6b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5250146407524553,
+        "description": "min=0.525, mean=0.525, max=0.525, sum=0.525 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.4560336179683862,
+        "description": "min=0.456, mean=0.456, max=0.456, sum=0.456 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 GPT-J is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)\u2620",
+        "description": "GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dtogether_gpt-neox-20b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5032158997910714,
+        "description": "min=0.503, mean=0.503, max=0.503, sum=0.503 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray",
+          "font-weight": "bold"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.9326426548808966,
+        "description": "min=0.933, mean=0.933, max=0.933, sum=0.933 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2040.2154554759468,
+        "description": "min=2040.215, mean=2040.215, max=2040.215, sum=2040.215 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 GPT-NeoX is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2204.06745.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)\u2620",
+        "description": "OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dtogether_opt-175b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7295592861239729,
+        "description": "min=0.73, mean=0.73, max=0.73, sum=0.73 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.8805291163938334,
+        "description": "min=0.881, mean=0.881, max=0.881, sum=0.881 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)\u2620",
+        "description": "OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dtogether_opt-66b%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7557707873100006,
+        "description": "min=0.756, mean=0.756, max=0.756, sum=0.756 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.33011185243539104,
+        "description": "min=0.33, mean=0.33, max=0.33, sum=0.33 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 OPT is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2205.01068.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)\u2620",
+        "description": "MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dmicrosoft_TNLGv2_530B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6076407527680043,
+        "description": "min=0.608, mean=0.608, max=0.608, sum=0.608 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2040.7406128614589,
+        "description": "min=2040.741, mean=2040.741, max=2040.741, sum=2040.741 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0043159257660768235,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)\u2620",
+        "description": "MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dmicrosoft_TNLGv2_7B%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7012454079154359,
+        "description": "min=0.701, mean=0.701, max=0.701, sum=0.701 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 2040.7406128614589,
+        "description": "min=2040.741, mean=2040.741, max=2040.741, sum=2040.741 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 0.0043159257660768235,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.004 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)\n\u2620 MT-NLG is explicitly trained on the Pile, i.e. data from the same distribution as the test set. See https://arxiv.org/abs/2201.11990.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_davinci%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7883099201057752,
+        "description": "min=0.788, mean=0.788, max=0.788, sum=0.788 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.23889577851765612,
+        "description": "min=0.239, mean=0.239, max=0.239, sum=0.239 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_curie%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.8653232045904805,
+        "description": "min=0.865, mean=0.865, max=0.865, sum=0.865 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12022281142055341,
+        "description": "min=0.12, mean=0.12, max=0.12, sum=0.12 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_babbage%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.9497478298733175,
+        "description": "min=0.95, mean=0.95, max=0.95, sum=0.95 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.13360900984320906,
+        "description": "min=0.134, mean=0.134, max=0.134, sum=0.134 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_ada%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 1.0549232841684306,
+        "description": "min=1.055, mean=1.055, max=1.055, sum=1.055 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14398581707416078,
+        "description": "min=0.144, mean=0.144, max=0.144, sum=0.144 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_text-davinci-003%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5551128772216812,
+        "description": "min=0.555, mean=0.555, max=0.555, sum=0.555 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3965.6793214862682,
+        "description": "min=3965.679, mean=3965.679, max=3965.679, sum=3965.679 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_text-davinci-002%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5626794131796818,
+        "description": "min=0.563, mean=0.563, max=0.563, sum=0.563 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3456447799920937,
+        "description": "min=0.346, mean=0.346, max=0.346, sum=0.346 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3965.6793214862682,
+        "description": "min=3965.679, mean=3965.679, max=3965.679, sum=3965.679 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_text-curie-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 1.0711668693150587,
+        "description": "min=1.071, mean=1.071, max=1.071, sum=1.071 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15623710566439597,
+        "description": "min=0.156, mean=0.156, max=0.156, sum=0.156 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_text-babbage-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 1.2289552553877345,
+        "description": "min=1.229, mean=1.229, max=1.229, sum=1.229 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16852607539940273,
+        "description": "min=0.169, mean=0.169, max=0.169, sum=0.169 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=the_pile&subgroup=subset%3A%20ArXiv&runSpecs=%5B%22the_pile%3Asubset%3DArXiv%2Cmodel%3Dopenai_text-ada-001%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 1.7705244839642018,
+        "description": "min=1.771, mean=1.771, max=1.771, sum=1.771 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.11987363888439273,
+        "description": "min=0.12, mean=0.12, max=0.12, sum=0.12 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 238.0,
+        "description": "min=238, mean=238, max=238, sum=238 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2041.7305699481865,
+        "description": "min=2041.731, mean=2041.731, max=2041.731, sum=2041.731 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=1 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/the_pile_the_pile_subset:ArXiv.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/the_pile_the_pile_subset:ArXiv.json"
+    }
+  ],
+  "name": "the_pile_subset:ArXiv"
+}

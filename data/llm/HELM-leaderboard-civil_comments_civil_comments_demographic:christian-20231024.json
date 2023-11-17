@@ -1,0 +1,6694 @@
+{
+  "title": "demographic: christian",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "EM",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "ECE (10-bin)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "ECE (10-bin)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "EM (Robustness)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "CivilComments",
+        "perturbation": "Robustness"
+      }
+    },
+    {
+      "value": "EM (Fairness)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "EM",
+        "run_group": "CivilComments",
+        "perturbation": "Fairness"
+      }
+    },
+    {
+      "value": "Stereotypes (race)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (race)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "Stereotypes (gender)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Stereotypes (gender)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "Representation (race)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (race)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "Representation (gender)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Representation (gender)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "Toxic fraction",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "Denoised inference time (s)",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Denoised inference time (s)",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "CivilComments"
+      }
+    },
+    {
+      "value": "# trials",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# trials",
+        "run_group": "CivilComments"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "J1-Jumbo v1 (178B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j1-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6047451092974613,
+        "description": "min=0.328, mean=0.605, max=0.851, sum=3.628 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20665385592446905,
+        "description": "min=0.084, mean=0.207, max=0.277, sum=1.24 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.32950211212730185,
+        "description": "min=0.189, mean=0.33, max=0.495, sum=1.977 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.523633269080917,
+        "description": "min=0.199, mean=0.524, max=0.851, sum=3.142 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.539613123005329,
+        "description": "min=0.499, mean=0.54, max=0.564, sum=3.238 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Large v1 (7.5B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j1-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5248978113166277,
+        "description": "min=0.027, mean=0.525, max=0.991, sum=3.149 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40330768072015105,
+        "description": "min=0.356, mean=0.403, max=0.555, sum=2.42 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4436526815130761,
+        "description": "min=0.027, mean=0.444, max=0.964, sum=2.662 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4599003404010991,
+        "description": "min=0.027, mean=0.46, max=0.959, sum=2.759 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4250985835765228,
+        "description": "min=0.39, mean=0.425, max=0.447, sum=2.551 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v1 (17B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j1-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.529545858453294,
+        "description": "min=0.014, mean=0.53, max=0.968, sum=3.177 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41875878278503426,
+        "description": "min=0.33, mean=0.419, max=0.593, sum=2.513 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42470847174944293,
+        "description": "min=0.014, mean=0.425, max=0.9, sum=2.548 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5017498530396861,
+        "description": "min=0.014, mean=0.502, max=0.95, sum=3.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.46922541419565617,
+        "description": "min=0.426, mean=0.469, max=0.498, sum=2.815 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "J1-Grande v2 beta (17B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j1-grande-v2-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5686304665819082,
+        "description": "min=0.095, mean=0.569, max=0.971, sum=3.412 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3335577918251618,
+        "description": "min=0.287, mean=0.334, max=0.496, sum=2.001 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5115175873901215,
+        "description": "min=0.068, mean=0.512, max=0.967, sum=3.069 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4988755827147329,
+        "description": "min=0.095, mean=0.499, max=0.85, sum=2.993 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Jumbo (178B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j2-jumbo%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.55879437859711,
+        "description": "min=0.108, mean=0.559, max=0.986, sum=3.353 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38061821203587015,
+        "description": "min=0.303, mean=0.381, max=0.476, sum=2.284 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45987641662907225,
+        "description": "min=0.106, mean=0.46, max=0.905, sum=2.759 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5100787433867858,
+        "description": "min=0.039, mean=0.51, max=0.973, sum=3.06 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Grande (17B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j2-grande%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5679913601006166,
+        "description": "min=0.176, mean=0.568, max=0.965, sum=3.408 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35335741116351854,
+        "description": "min=0.296, mean=0.353, max=0.405, sum=2.12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.515697412131403,
+        "description": "min=0.095, mean=0.516, max=0.944, sum=3.094 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5109878467238104,
+        "description": "min=0.081, mean=0.511, max=0.954, sum=3.066 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Jurassic-2 Large (7.5B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dai21_j2-large%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6384229449479828,
+        "description": "min=0.459, mean=0.638, max=0.743, sum=3.831 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17530321359739923,
+        "description": "min=0.093, mean=0.175, max=0.212, sum=1.052 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.542796210474511,
+        "description": "min=0.351, mean=0.543, max=0.703, sum=3.257 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5136297146919302,
+        "description": "min=0.385, mean=0.514, max=0.73, sum=3.082 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 503.1928016787653,
+        "description": "min=381.365, mean=503.193, max=583.687, sum=3019.157 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Base (13B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3DAlephAlpha_luminous-base%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5848097718355686,
+        "description": "min=0.319, mean=0.585, max=0.878, sum=3.509 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19141098154423405,
+        "description": "min=0.103, mean=0.191, max=0.285, sum=1.148 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43224445993793487,
+        "description": "min=0.077, mean=0.432, max=0.878, sum=2.593 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4154909841556276,
+        "description": "min=0.099, mean=0.415, max=0.811, sum=2.493 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 677.8457463533337,
+        "description": "min=494.568, mean=677.846, max=800.791, sum=4067.074 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Extended (30B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3DAlephAlpha_luminous-extended%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5237289641690249,
+        "description": "min=0.014, mean=0.524, max=0.997, sum=3.142 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4172875796907063,
+        "description": "min=0.34, mean=0.417, max=0.614, sum=2.504 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43694377230037323,
+        "description": "min=0.014, mean=0.437, max=0.874, sum=2.622 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.47644533759860014,
+        "description": "min=0, mean=0.476, max=0.985, sum=2.859 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 677.8457463533337,
+        "description": "min=494.568, mean=677.846, max=800.791, sum=4067.074 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Luminous Supreme (70B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3DAlephAlpha_luminous-supreme%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5292451024620979,
+        "description": "min=0.068, mean=0.529, max=0.967, sum=3.175 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.42175233668710116,
+        "description": "min=0.34, mean=0.422, max=0.483, sum=2.531 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.12231541101040343,
+        "description": "min=0.035, mean=0.122, max=0.235, sum=0.734 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43094574088504284,
+        "description": "min=0.014, mean=0.431, max=0.829, sum=2.586 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 677.8457463533337,
+        "description": "min=494.568, mean=677.846, max=800.791, sum=4067.074 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Danthropic_stanford-online-all-v4-s3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6280605339785916,
+        "description": "min=0.303, mean=0.628, max=0.851, sum=3.768 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.064, mean=0.177, max=0.324, sum=1.059 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5205231787174124,
+        "description": "min=0.181, mean=0.521, max=0.784, sum=3.123 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5569795896047793,
+        "description": "min=0.206, mean=0.557, max=0.838, sum=3.342 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5854385163876147,
+        "description": "min=0.577, mean=0.585, max=0.592, sum=3.513 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_bloom%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6744999931646366,
+        "description": "min=0.434, mean=0.674, max=0.865, sum=4.047 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.26891589316993636,
+        "description": "min=0.105, mean=0.269, max=0.406, sum=1.613 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5742457176448071,
+        "description": "min=0.411, mean=0.574, max=0.784, sum=3.445 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6236893190610945,
+        "description": "min=0.326, mean=0.624, max=0.865, sum=3.742 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.43020929068234365,
+        "description": "min=0.392, mean=0.43, max=0.5, sum=2.581 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 641.798671205348,
+        "description": "min=467.622, mean=641.799, max=770.976, sum=3850.792 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_t0pp%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.3095599393019727,
+        "description": "min=0, mean=0.31, max=0.942, sum=1.857 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3888172499460105,
+        "description": "min=0.225, mean=0.389, max=0.549, sum=2.333 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.15351542741527566,
+        "description": "min=0, mean=0.154, max=0.464, sum=0.921 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2794638340920587,
+        "description": "min=0, mean=0.279, max=0.882, sum=1.677 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3754677129291264,
+        "description": "min=0.328, mean=0.375, max=0.408, sum=2.253 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.9984825493171465,
+        "description": "min=4.992, mean=4.998, max=5, sum=29.991 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 723.3383265663236,
+        "description": "min=522.203, mean=723.338, max=861.659, sum=4340.03 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20220609 (52.4B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_xlarge-20220609%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5841364885370955,
+        "description": "min=0.387, mean=0.584, max=0.73, sum=3.505 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1712162713771271,
+        "description": "min=0.126, mean=0.171, max=0.22, sum=1.027 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3568811603712969,
+        "description": "min=0.178, mean=0.357, max=0.703, sum=2.141 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5131888337502906,
+        "description": "min=0.285, mean=0.513, max=0.716, sum=3.079 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5335190950750458,
+        "description": "min=0.5, mean=0.534, max=0.562, sum=3.201 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere large v20220720 (13.1B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_large-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4986500157213359,
+        "description": "min=0.003, mean=0.499, max=1, sum=2.992 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4616274963846428,
+        "description": "min=0.279, mean=0.462, max=0.705, sum=2.77 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4051764207302902,
+        "description": "min=0, mean=0.405, max=0.878, sum=2.431 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48575168491708703,
+        "description": "min=0, mean=0.486, max=1, sum=2.915 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.36317590242417225,
+        "description": "min=0.322, mean=0.363, max=0.392, sum=2.179 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20220720 (6.1B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_medium-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5002768322191691,
+        "description": "min=0.002, mean=0.5, max=1, sum=3.002 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49012539924671206,
+        "description": "min=0.403, mean=0.49, max=0.582, sum=2.941 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20973629167862853,
+        "description": "min=0.002, mean=0.21, max=0.5, sum=1.258 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4930142585681281,
+        "description": "min=0, mean=0.493, max=1, sum=2.958 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.31331395172706134,
+        "description": "min=0.286, mean=0.313, max=0.334, sum=1.88 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere small v20220720 (410M)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_small-20220720%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4918830059194248,
+        "description": "min=0, mean=0.492, max=0.998, sum=2.951 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4896937705124887,
+        "description": "min=0.358, mean=0.49, max=0.644, sum=2.938 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3310332335370272,
+        "description": "min=0, mean=0.331, max=0.995, sum=1.986 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48533131006575614,
+        "description": "min=0, mean=0.485, max=0.998, sum=2.912 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.31946357119089774,
+        "description": "min=0.287, mean=0.319, max=0.341, sum=1.917 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere xlarge v20221108 (52.4B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_xlarge-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5348466827981243,
+        "description": "min=0.068, mean=0.535, max=0.944, sum=3.209 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3010195646363629,
+        "description": "min=0.092, mean=0.301, max=0.577, sum=1.806 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43997867366607873,
+        "description": "min=0.041, mean=0.44, max=0.838, sum=2.64 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45727556084156995,
+        "description": "min=0.068, mean=0.457, max=0.865, sum=2.744 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere medium v20221108 (6.1B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_medium-20221108%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5077205430012713,
+        "description": "min=0, mean=0.508, max=0.998, sum=3.046 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48407532061736164,
+        "description": "min=0.371, mean=0.484, max=0.631, sum=2.904 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.37043910374714617,
+        "description": "min=0, mean=0.37, max=0.821, sum=2.223 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5008920149284338,
+        "description": "min=0, mean=0.501, max=0.997, sum=3.005 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (6.1B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_command-medium-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5564566843019043,
+        "description": "min=0.058, mean=0.556, max=1, sum=3.339 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.34654956151560184,
+        "description": "min=0.228, mean=0.347, max=0.597, sum=2.079 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4795725163706954,
+        "description": "min=0, mean=0.48, max=1, sum=2.877 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5056460101983622,
+        "description": "min=0.006, mean=0.506, max=1, sum=3.034 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Cohere Command beta (52.4B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dcohere_command-xlarge-beta%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6405077307960464,
+        "description": "min=0.473, mean=0.641, max=0.838, sum=3.843 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.14417803694810857,
+        "description": "min=0.063, mean=0.144, max=0.249, sum=0.865 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.580578681868515,
+        "description": "min=0.401, mean=0.581, max=0.77, sum=3.483 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5956096460648813,
+        "description": "min=0.379, mean=0.596, max=0.797, sum=3.574 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 683.6763421236107,
+        "description": "min=500.797, mean=683.676, max=809.555, sum=4102.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_gpt-j-6b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5485413334426992,
+        "description": "min=0.009, mean=0.549, max=1, sum=3.291 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4196845660104717,
+        "description": "min=0.273, mean=0.42, max=0.584, sum=2.518 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41988612284515164,
+        "description": "min=0.002, mean=0.42, max=0.986, sum=2.519 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5174199237173441,
+        "description": "min=0.006, mean=0.517, max=1, sum=3.105 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.27220484649878846,
+        "description": "min=0.233, mean=0.272, max=0.326, sum=1.633 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_gpt-neox-20b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5097779873955898,
+        "description": "min=0.002, mean=0.51, max=1, sum=3.059 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4446910374284366,
+        "description": "min=0.307, mean=0.445, max=0.532, sum=2.668 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4905569454127876,
+        "description": "min=0, mean=0.491, max=1, sum=2.943 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4892924031770769,
+        "description": "min=0, mean=0.489, max=1, sum=2.936 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.3535021101244955,
+        "description": "min=0.324, mean=0.354, max=0.447, sum=2.121 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 680.149892684794,
+        "description": "min=494.73, mean=680.15, max=799.237, sum=4080.899 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (6.9B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Deleutherai_pythia-6.9b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5027170569659188,
+        "description": "min=0.203, mean=0.503, max=0.803, sum=1.005 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3687686523335838,
+        "description": "min=0.351, mean=0.369, max=0.386, sum=0.738 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3055920108272157,
+        "description": "min=0.176, mean=0.306, max=0.436, sum=0.611 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.20226182176106305,
+        "description": "min=0.202, mean=0.202, max=0.203, sum=0.405 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Pythia (12B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Deleutherai_pythia-12b-v0%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5676906041094205,
+        "description": "min=0.541, mean=0.568, max=0.595, sum=1.135 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.19499350308306201,
+        "description": "min=0.186, mean=0.195, max=0.204, sum=0.39 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.39715170405610467,
+        "description": "min=0.365, mean=0.397, max=0.429, sum=0.794 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.45030349013657056,
+        "description": "min=0.401, mean=0.45, max=0.5, sum=0.901 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_t5-11b%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5028776880066713,
+        "description": "min=0, mean=0.503, max=0.953, sum=3.017 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3700347168150615,
+        "description": "min=0.17, mean=0.37, max=0.525, sum=2.22 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3772983909554471,
+        "description": "min=0, mean=0.377, max=0.838, sum=2.264 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29906423874557414,
+        "description": "min=0, mean=0.299, max=0.669, sum=1.794 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.2701261533130054,
+        "description": "min=0.269, mean=0.27, max=0.271, sum=1.621 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.549641826955939,
+        "description": "min=1.721, mean=2.55, max=4.108, sum=15.298 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0027819929185634805,
+        "description": "min=0, mean=0.003, max=0.014, sum=0.017 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 444.7329799450437,
+        "description": "min=413.14, mean=444.733, max=473.824, sum=2668.398 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_ul2%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%2Cglobal_prefix%3Dnlg%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.543448987682675,
+        "description": "min=0.035, mean=0.543, max=1, sum=3.261 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.38180141775164117,
+        "description": "min=0.228, mean=0.382, max=0.472, sum=2.291 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4949247426485666,
+        "description": "min=0.018, mean=0.495, max=0.959, sum=2.97 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4535537054505188,
+        "description": "min=0.027, mean=0.454, max=0.932, sum=2.721 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.2193477761801228,
+        "description": "min=0.217, mean=0.219, max=0.221, sum=1.316 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.5207008981667554,
+        "description": "min=1.709, mean=2.521, max=4.081, sum=15.124 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0035407182599898838,
+        "description": "min=0, mean=0.004, max=0.018, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 445.72458953642564,
+        "description": "min=415.476, mean=445.725, max=475.959, sum=2674.348 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_opt-175b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.48908734227398876,
+        "description": "min=0.014, mean=0.489, max=0.973, sum=2.935 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4589210650370952,
+        "description": "min=0.366, mean=0.459, max=0.534, sum=2.754 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.22972972972972974,
+        "description": "min=0, mean=0.23, max=0.514, sum=1.378 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4804884550711562,
+        "description": "min=0, mean=0.48, max=0.973, sum=2.883 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.35931534841129836,
+        "description": "min=0.299, mean=0.359, max=0.41, sum=2.156 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_opt-66b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.503841474251186,
+        "description": "min=0, mean=0.504, max=1, sum=3.023 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.46947127718081516,
+        "description": "min=0.402, mean=0.469, max=0.551, sum=2.817 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40818739832396894,
+        "description": "min=0, mean=0.408, max=0.905, sum=2.449 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5000478475440538,
+        "description": "min=0, mean=0.5, max=1, sum=3.0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.21232915603021552,
+        "description": "min=0.182, mean=0.212, max=0.263, sum=1.274 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5878275847926835,
+        "description": "min=0.284, mean=0.588, max=0.892, sum=1.176 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.13, mean=0.294, max=0.457, sum=0.587 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5079768691301316,
+        "description": "min=0.232, mean=0.508, max=0.784, sum=1.016 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.517768527252594,
+        "description": "min=0.238, mean=0.518, max=0.797, sum=1.036 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (13B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5838186441373088,
+        "description": "min=0.235, mean=0.584, max=0.932, sum=1.168 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.233, mean=0.331, max=0.429, sum=0.662 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5339580855514088,
+        "description": "min=0.176, mean=0.534, max=0.892, sum=1.068 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5451236517245622,
+        "description": "min=0.158, mean=0.545, max=0.932, sum=1.09 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (30B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6900606980273141,
+        "description": "min=0.5, mean=0.69, max=0.88, sum=1.38 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.161, mean=0.243, max=0.325, sum=0.485 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6145470204650781,
+        "description": "min=0.432, mean=0.615, max=0.797, sum=1.229 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6177254644629455,
+        "description": "min=0.405, mean=0.618, max=0.83, sum=1.235 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "LLaMA (65B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-65b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6960689824877988,
+        "description": "min=0.595, mean=0.696, max=0.797, sum=1.392 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6035044908337777,
+        "description": "min=0.41, mean=0.604, max=0.797, sum=1.207 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6287577410490917,
+        "description": "min=0.501, mean=0.629, max=0.757, sum=1.258 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-2-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6317208710987163,
+        "description": "min=0.493, mean=0.632, max=0.77, sum=1.263 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5735861050732067,
+        "description": "min=0.431, mean=0.574, max=0.716, sum=1.147 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4927921092564492,
+        "description": "min=0.486, mean=0.493, max=0.5, sum=0.986 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (13B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-2-13b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5940921953820284,
+        "description": "min=0.284, mean=0.594, max=0.904, sum=1.188 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "min=0.21, mean=0.37, max=0.53, sum=0.741 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.40441086002542753,
+        "description": "min=0.284, mean=0.404, max=0.525, sum=0.809 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4675286059959808,
+        "description": "min=0.257, mean=0.468, max=0.678, sum=0.935 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.642373785014149,
+        "description": "min=2.622, mean=2.642, max=2.663, sum=5.285 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 2 (70B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmeta_llama-2-70b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6278964852561211,
+        "description": "min=0.337, mean=0.628, max=0.919, sum=1.256 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.584249272033794,
+        "description": "min=0.317, mean=0.584, max=0.851, sum=1.168 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5840339580855514,
+        "description": "min=0.276, mean=0.584, max=0.892, sum=1.168 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Alpaca (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dstanford_alpaca-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6060369929869172,
+        "description": "min=0.32, mean=0.606, max=0.892, sum=1.212 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.35060991814809767,
+        "description": "min=0.201, mean=0.351, max=0.5, sum=0.701 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5307386293729237,
+        "description": "min=0.278, mean=0.531, max=0.784, sum=1.061 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5144055284419473,
+        "description": "min=0.313, mean=0.514, max=0.716, sum=1.029 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.493366279785096,
+        "description": "min=4.392, mean=4.493, max=4.595, sum=8.987 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dlmsys_vicuna-7b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6243181724972316,
+        "description": "min=0.37, mean=0.624, max=0.878, sum=1.249 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3315074787710396,
+        "description": "min=0.132, mean=0.332, max=0.531, sum=0.663 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5319279826108354,
+        "description": "min=0.361, mean=0.532, max=0.703, sum=1.064 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5619181396874872,
+        "description": "min=0.354, mean=0.562, max=0.77, sum=1.124 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 4.99772382397572,
+        "description": "min=4.995, mean=4.998, max=5, sum=9.995 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Vicuna v1.3 (13B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dlmsys_vicuna-13b-v1.3%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6596194069638682,
+        "description": "min=0.373, mean=0.66, max=0.946, sum=1.319 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2773533733252263,
+        "description": "min=0.14, mean=0.277, max=0.415, sum=0.555 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6225136365500554,
+        "description": "min=0.313, mean=0.623, max=0.932, sum=1.245 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5860230488455072,
+        "description": "min=0.226, mean=0.586, max=0.946, sum=1.172 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 558.3334495345118,
+        "description": "min=548.216, mean=558.333, max=568.451, sum=1116.667 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.7803285075667477,
+        "description": "min=2.628, mean=2.78, max=2.932, sum=5.561 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (530B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmicrosoft_TNLGv2_530B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6653816183406471,
+        "description": "min=0.445, mean=0.665, max=0.811, sum=3.992 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.1507760078981861,
+        "description": "min=0.058, mean=0.151, max=0.224, sum=0.905 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5326012659093083,
+        "description": "min=0.349, mean=0.533, max=0.689, sum=3.196 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5292792792792792,
+        "description": "min=0.305, mean=0.529, max=0.743, sum=3.176 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "TNLG v2 (6.7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmicrosoft_TNLGv2_7B%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5667849184541142,
+        "description": "min=0.257, mean=0.567, max=0.801, sum=3.401 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.18418501693708578,
+        "description": "min=0.052, mean=0.184, max=0.27, sum=1.105 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3656782731137815,
+        "description": "min=0.149, mean=0.366, max=0.571, sum=2.194 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.46005071839669714,
+        "description": "min=0.149, mean=0.46, max=0.751, sum=2.76 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "davinci (175B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_davinci%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5192928132988831,
+        "description": "min=0.021, mean=0.519, max=1, sum=3.116 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44581475070875715,
+        "description": "min=0.305, mean=0.446, max=0.612, sum=2.675 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4907620063158758,
+        "description": "min=0, mean=0.491, max=1, sum=2.945 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49986671041299263,
+        "description": "min=0.006, mean=0.5, max=1, sum=2.999 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.20997232939747232,
+        "description": "min=0.206, mean=0.21, max=0.216, sum=1.26 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "curie (6.7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_curie%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.566655046548825,
+        "description": "min=0.012, mean=0.567, max=1, sum=3.4 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.31012889829325563,
+        "description": "min=0.099, mean=0.31, max=0.589, sum=1.861 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4434749620637329,
+        "description": "min=0.002, mean=0.443, max=1, sum=2.661 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.439284884277297,
+        "description": "min=0, mean=0.439, max=1, sum=2.636 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.09658830077573188,
+        "description": "min=0.093, mean=0.097, max=0.099, sum=0.58 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "babbage (1.3B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_babbage%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5276353743728553,
+        "description": "min=0.216, mean=0.528, max=0.824, sum=3.166 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2514930049065884,
+        "description": "min=0.156, mean=0.251, max=0.306, sum=1.509 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3138764713119797,
+        "description": "min=0.041, mean=0.314, max=0.798, sum=1.883 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4597328739969105,
+        "description": "min=0.189, mean=0.46, max=0.689, sum=2.758 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.11979873526462964,
+        "description": "min=0.119, mean=0.12, max=0.12, sum=0.719 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "ada (350M)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_ada%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5216715197747064,
+        "description": "min=0, mean=0.522, max=0.998, sum=3.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3945876477861354,
+        "description": "min=0.164, mean=0.395, max=0.589, sum=2.368 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4428426909458776,
+        "description": "min=0, mean=0.443, max=0.998, sum=2.657 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4493465392554922,
+        "description": "min=0, mean=0.449, max=0.998, sum=2.696 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.1404930518730925,
+        "description": "min=0.14, mean=0.14, max=0.141, sum=0.843 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-003",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_text-davinci-003%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7241042256216762,
+        "description": "min=0.557, mean=0.724, max=0.838, sum=4.345 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.25838567631039383,
+        "description": "min=0.163, mean=0.258, max=0.418, sum=1.55 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6457983020957224,
+        "description": "min=0.366, mean=0.646, max=0.838, sum=3.875 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6004319949691724,
+        "description": "min=0.253, mean=0.6, max=0.838, sum=3.603 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-davinci-002",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_text-davinci-002%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7078428960067807,
+        "description": "min=0.527, mean=0.708, max=0.857, sum=4.247 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.16147970291129984,
+        "description": "min=0.032, mean=0.161, max=0.275, sum=0.969 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.6255622086426335,
+        "description": "min=0.39, mean=0.626, max=0.838, sum=3.753 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4873306538708663,
+        "description": "min=0.118, mean=0.487, max=0.851, sum=2.924 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.18606577706169333,
+        "description": "min=0.177, mean=0.186, max=0.203, sum=1.116 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9997470915528579,
+        "description": "min=0.998, mean=1.0, max=1, sum=5.998 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-curie-001",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_text-curie-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5322970922363942,
+        "description": "min=0.122, mean=0.532, max=0.86, sum=3.194 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2848860370591372,
+        "description": "min=0.071, mean=0.285, max=0.554, sum=1.709 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.17625668156775898,
+        "description": "min=0, mean=0.176, max=0.39, sum=1.058 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4660931796743633,
+        "description": "min=0.081, mean=0.466, max=0.798, sum=2.797 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.14069463496017473,
+        "description": "min=0.133, mean=0.141, max=0.145, sum=0.844 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.974623713242833,
+        "description": "min=0.905, mean=0.975, max=1, sum=5.848 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-babbage-001",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_text-babbage-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.49873545776428935,
+        "description": "min=0, mean=0.499, max=1, sum=2.992 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5014391969999894,
+        "description": "min=0.093, mean=0.501, max=0.911, sum=3.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49873545776428935,
+        "description": "min=0, mean=0.499, max=1, sum=2.992 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49873545776428935,
+        "description": "min=0, mean=0.499, max=1, sum=2.992 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.13659433834634263,
+        "description": "min=0.133, mean=0.137, max=0.139, sum=0.82 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "text-ada-001",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_text-ada-001%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4997470915528579,
+        "description": "min=0, mean=0.5, max=1, sum=2.998 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49327995212698533,
+        "description": "min=0.037, mean=0.493, max=0.956, sum=2.96 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49797673242286294,
+        "description": "min=0, mean=0.498, max=0.998, sum=2.988 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.49949418310571575,
+        "description": "min=0, mean=0.499, max=1, sum=2.997 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.090970480795459,
+        "description": "min=0.088, mean=0.091, max=0.093, sum=0.546 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=6 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0301",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_gpt-3.5-turbo-0301%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7073063199770332,
+        "description": "min=0.59, mean=0.707, max=0.824, sum=1.415 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.650401919370053,
+        "description": "min=0.476, mean=0.65, max=0.824, sum=1.301 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.4243017676249846,
+        "description": "min=0.024, mean=0.424, max=0.824, sum=0.849 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 474.6577533527458,
+        "description": "min=465.297, mean=474.658, max=484.018, sum=949.316 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0515933232169954,
+        "description": "min=1, mean=1.052, max=1.103, sum=2.103 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "gpt-3.5-turbo-0613",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dopenai_gpt-3.5-turbo-0613%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7231677808309067,
+        "description": "min=0.608, mean=0.723, max=0.838, sum=1.446 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.6139113316655047,
+        "description": "min=0.39, mean=0.614, max=0.838, sum=1.228 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5290058647418283,
+        "description": "min=0.234, mean=0.529, max=0.824, sum=1.058 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 474.6577533527458,
+        "description": "min=465.297, mean=474.658, max=484.018, sum=949.316 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base-v1 (3B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_redpajama-incite-base-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5411557232498052,
+        "description": "min=0.108, mean=0.541, max=0.974, sum=1.082 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4277577472674273,
+        "description": "min=0.324, mean=0.428, max=0.532, sum=0.856 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48710166919575115,
+        "description": "min=0, mean=0.487, max=0.974, sum=0.974 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.48323627117253826,
+        "description": "min=0.014, mean=0.483, max=0.953, sum=0.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct-v1 (3B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_redpajama-incite-instruct-3b-v1%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5479842513226428,
+        "description": "min=0.108, mean=0.548, max=0.988, sum=1.096 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.3866763067342899,
+        "description": "min=0.133, mean=0.387, max=0.64, sum=0.773 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5329532871262765,
+        "description": "min=0.081, mean=0.533, max=0.985, sum=1.066 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5252942623959316,
+        "description": "min=0.095, mean=0.525, max=0.956, sum=1.051 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Base (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_redpajama-incite-base-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6196222778165115,
+        "description": "min=0.334, mean=0.62, max=0.905, sum=1.239 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.29026415379685255,
+        "description": "min=0.116, mean=0.29, max=0.465, sum=0.581 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4335090021736456,
+        "description": "min=0.205, mean=0.434, max=0.662, sum=0.867 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5047984251322644,
+        "description": "min=0.199, mean=0.505, max=0.811, sum=1.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "RedPajama-INCITE-Instruct (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_redpajama-incite-instruct-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.7060759545585038,
+        "description": "min=0.642, mean=0.706, max=0.77, sum=1.412 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.09386278923136843,
+        "description": "min=0.085, mean=0.094, max=0.103, sum=0.188 (2)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.5664704917360456,
+        "description": "min=0.363, mean=0.566, max=0.77, sum=1.133 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5704076610753394,
+        "description": "min=0.398, mean=0.57, max=0.743, sum=1.141 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT (30B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmosaicml_mpt-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6083131690111963,
+        "description": "min=0.325, mean=0.608, max=0.892, sum=1.217 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5504654882500102,
+        "description": "min=0.317, mean=0.55, max=0.784, sum=1.101 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5742422999630891,
+        "description": "min=0.27, mean=0.574, max=0.878, sum=1.148 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "MPT-Instruct (30B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dmosaicml_mpt-instruct-30b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5611286552105976,
+        "description": "min=0.203, mean=0.561, max=0.919, sum=1.122 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.4343805110117705,
+        "description": "min=0.085, mean=0.434, max=0.784, sum=0.869 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.532368863552475,
+        "description": "min=0.159, mean=0.532, max=0.905, sum=1.065 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 504.4832260181274,
+        "description": "min=494.73, mean=504.483, max=514.237, sum=1008.966 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtiiuae_falcon-7b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5059980314153304,
+        "description": "min=0.014, mean=0.506, max=0.998, sum=1.012 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.4992412746585736,
+        "description": "min=0, mean=0.499, max=0.998, sum=0.998 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.505239306073904,
+        "description": "min=0.014, mean=0.505, max=0.997, sum=1.01 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 508.53954599516055,
+        "description": "min=498.554, mean=508.54, max=518.525, sum=1017.079 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (7B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtiiuae_falcon-7b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0, mean=0.5, max=1, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.4969650986342944,
+        "description": "min=0, mean=0.497, max=0.994, sum=0.994 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0, mean=0.5, max=1, sum=1 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 508.53954599516055,
+        "description": "min=498.554, mean=508.54, max=518.525, sum=1017.079 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon (40B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtiiuae_falcon-40b%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5045933642291761,
+        "description": "min=0.135, mean=0.505, max=0.874, sum=1.009 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.42362506664479355,
+        "description": "min=0.095, mean=0.424, max=0.753, sum=0.847 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.2625599803141533,
+        "description": "min=0.135, mean=0.263, max=0.39, sum=0.525 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 508.53954599516055,
+        "description": "min=498.554, mean=508.54, max=518.525, sum=1017.079 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Falcon-Instruct (40B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtiiuae_falcon-40b-instruct%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5603801829143256,
+        "description": "min=0.203, mean=0.56, max=0.918, sum=1.121 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.49245375876635356,
+        "description": "min=0.135, mean=0.492, max=0.85, sum=0.985 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.41470491736045606,
+        "description": "min=0.203, mean=0.415, max=0.627, sum=0.829 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=733 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=10 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 508.53954599516055,
+        "description": "min=498.554, mean=508.54, max=518.525, sum=1017.079 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "description": "min=1, mean=1, max=1, sum=2 (2)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_glm%2Cdata_augmentation%3Dcanonical%2Cstop%3Dhash%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0, mean=0.5, max=1, sum=3 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4790124912980364,
+        "description": "min=0.226, mean=0.479, max=0.738, sum=2.874 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0, mean=0.5, max=1, sum=3 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5,
+        "description": "min=0, mean=0.5, max=1, sum=3 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.7050767260136741,
+        "description": "min=0.53, mean=0.705, max=0.905, sum=4.23 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 644.3005885247918,
+        "description": "min=459.689, mean=644.301, max=760.912, sum=3865.804 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 2.0,
+        "description": "min=2, mean=2, max=2, sum=12 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "InstructPalmyra (30B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dwriter_palmyra-instruct-30%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.6643084662811521,
+        "description": "min=0.542, mean=0.664, max=0.797, sum=3.986 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.5654759463560678,
+        "description": "min=0.496, mean=0.565, max=0.608, sum=3.393 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.5363641334809772,
+        "description": "min=0.459, mean=0.536, max=0.624, sum=3.218 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.9756592708034287,
+        "description": "min=0.892, mean=0.976, max=1, sum=5.854 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Palmyra X (43B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dwriter_palmyra-x%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "1 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 670.5217193673187,
+        "description": "min=486.149, mean=670.522, max=793.561, sum=4023.13 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B)",
+        "description": "",
+        "href": "?group=civil_comments&subgroup=demographic%3A%20christian&runSpecs=%5B%22civil_comments%3Ademographic%3Dchristian%2Cmodel%3Dtogether_yalm%2Cdata_augmentation%3Dcanonical%22%5D",
+        "markdown": false
+      },
+      {
+        "value": 0.4751807953628895,
+        "description": "min=0.014, mean=0.475, max=0.97, sum=2.851 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.4319935325484933,
+        "description": "min=0.131, mean=0.432, max=0.765, sum=2.592 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.44272307208574285,
+        "description": "min=0, mean=0.443, max=0.97, sum=2.656 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.43094574088504284,
+        "description": "min=0, mean=0.431, max=0.948, sum=2.586 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "(0)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.36221193309981575,
+        "description": "min=0.315, mean=0.362, max=0.395, sum=2.173 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 366.5,
+        "description": "min=74, mean=366.5, max=659, sum=2199 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 682.55189749689,
+        "description": "min=495.419, mean=682.552, max=802.018, sum=4095.311 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 5.0,
+        "description": "min=5, mean=5, max=5, sum=30 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 3.0,
+        "description": "min=3, mean=3, max=3, sum=18 (6)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/civil_comments_civil_comments_demographic:christian.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/civil_comments_civil_comments_demographic:christian.json"
+    }
+  ],
+  "name": "civil_comments_demographic:christian"
+}

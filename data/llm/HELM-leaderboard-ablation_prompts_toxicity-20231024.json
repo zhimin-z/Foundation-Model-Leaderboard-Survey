@@ -1,0 +1,4388 @@
+{
+  "title": "Toxicity",
+  "header": [
+    {
+      "value": "Model/adapter",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Mean win rate",
+      "description": "How many models this model outperform on average (over columns).",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {}
+    },
+    {
+      "value": "NaturalQuestions (open-book) - Toxic fraction",
+      "description": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input includes the Wikipedia page with the answer.\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "NaturalQuestions (open-book)"
+      }
+    },
+    {
+      "value": "CNN/DailyMail - Toxic fraction",
+      "description": "The CNN/DailyMail benchmark for text summarization ([Hermann et al., 2015](https://papers.nips.cc/paper/2015/hash/afdec7005cc9f14302cd0474fd0f3c96-Abstract.html); [Nallapati et al.,2016](https://aclanthology.org/K16-1028/)).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "CNN/DailyMail"
+      }
+    },
+    {
+      "value": "IMDB - Toxic fraction",
+      "description": "The IMDB benchmark for sentiment analysis in movie review [(Maas et al., 2011)](https://aclanthology.org/P11-1015/).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "IMDB"
+      }
+    },
+    {
+      "value": "CivilComments - Toxic fraction",
+      "description": "The CivilComments benchmark for toxicity detection [(Borkan et al., 2019)](https://arxiv.org/pdf/1903.04561.pdf).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Toxic fraction",
+        "run_group": "CivilComments"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9814814814814815,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9074074074074074,
+        "markdown": false
+      },
+      {
+        "value": 0.0003333333333333333,
+        "description": "min=0, mean=0.0, max=0.001, sum=0.002 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9722222222222222,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8670949861426052,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9629629629629629,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9444444444444444,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.673469387755102,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.017 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9183673469387755,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6530612244897959,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Anthropic-LM v4-s3 (52B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8979591836734694,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9074074074074074,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8888888888888888,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6018518518518519,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.002, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.75,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6680524061476443,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.002861230329041488,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.017 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "markdown": false
+      },
+      {
+        "value": 0.002,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.024 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3148148148148148,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6326530612244898,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.017 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3877551020408163,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0, mean=0.002, max=0.004, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1836734693877551,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.00357653791130186,
+        "description": "min=0, mean=0.004, max=0.006, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "BLOOM (176B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.16326530612244897,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.00357653791130186,
+        "description": "min=0.002, mean=0.004, max=0.004, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8148148148148148,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7962962962962963,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.0030000000000000005,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.018 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.42592592592592593,
+        "markdown": false
+      },
+      {
+        "value": 0.0023333333333333335,
+        "description": "min=0.002, mean=0.002, max=0.003, sum=0.014 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7685185185185185,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0, mean=0.002, max=0.004, sum=0.013 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8333333333333334,
+        "markdown": false
+      },
+      {
+        "value": 0.0003333333333333333,
+        "description": "min=0, mean=0.0, max=0.001, sum=0.002 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8148148148148148,
+        "markdown": false
+      },
+      {
+        "value": 0.0003333333333333333,
+        "description": "min=0, mean=0.0, max=0.001, sum=0.004 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.017 (12)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T0pp (11B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002861230329041488,
+        "description": "min=0, mean=0.003, max=0.004, sum=0.017 (6)\n\u2620 T0++ is explicitly trained on these datasets, i.e. data from the same distribution as the test set. See Table 5 on page 24 of https://arxiv.org/pdf/2110.08207.pdf.",
+        "style": {
+          "color": "lightgray"
+        },
+        "markdown": false,
+        "contamination_level": "strong"
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7222222222222222,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7037037037037037,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7962962962962963,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7777777777777777,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5229276895943562,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.00357653791130186,
+        "description": "min=0.002, mean=0.004, max=0.004, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.48148148148148145,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.016 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.46296296296296297,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3673469387755102,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.026 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12244897959183673,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.00357653791130186,
+        "description": "min=0.002, mean=0.004, max=0.006, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6122448979591837,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-J (6B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3469387755102041,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6296296296296297,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6111111111111112,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5185185185185185,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6666666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2685815066767448,
+        "markdown": false
+      },
+      {
+        "value": 0.002,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.012 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.00357653791130186,
+        "description": "min=0.002, mean=0.004, max=0.006, sum=0.021 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12962962962962962,
+        "markdown": false
+      },
+      {
+        "value": 0.002,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.024 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.6296296296296297,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.003, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5918367346938775,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.017 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5714285714285714,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5510204081632653,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-NeoX (20B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8775510204081632,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5370370370370371,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5185185185185185,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5555555555555556,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4537037037037037,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.47165532879818595,
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 0.004291845493562232,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.026 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.07407407407407407,
+        "markdown": false
+      },
+      {
+        "value": 0.0026666666666666666,
+        "description": "min=0.002, mean=0.003, max=0.003, sum=0.016 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5925925925925926,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.012 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.061224489795918366,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.004291845493562232,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.026 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 1.0,
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.32653061224489793,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "T5 (11B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9795918367346939,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4444444444444444,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.42592592592592593,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5740740740740741,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.39814814814814814,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.37780297304106825,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.004291845493562232,
+        "description": "min=0.004, mean=0.004, max=0.004, sum=0.026 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5740740740740741,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5555555555555556,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.012 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9591836734693877,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.008583690987124463,
+        "description": "min=0.009, mean=0.009, max=0.009, sum=0.103 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.22448979591836735,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002861230329041488,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.017 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "UL2 (20B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.30612244897959184,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.35185185185185186,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3333333333333333,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3055555555555556,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0, mean=0.002, max=0.004, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4166666666666667,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.42239858906525574,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0.002, mean=0.002, max=0.002, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2777777777777778,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.02 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3888888888888889,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8571428571428571,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8367346938775511,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.8163265306122449,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (175B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7959183673469388,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25925925925925924,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.24074074074074073,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25925925925925924,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0.001, mean=0.001, max=0.001, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0002440214738897023,
+        "description": "min=0, mean=0.0, max=0.001, sum=0.003 (12)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3611111111111111,
+        "markdown": false
+      },
+      {
+        "value": 0.001,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.006 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.47316704459561604,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25925925925925924,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.002, sum=0.02 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.1111111111111111,
+        "markdown": false
+      },
+      {
+        "value": 0.002,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.012 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7755102040816326,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7551020408163265,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.5102040816326531,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "OPT (66B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4897959183673469,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.18518518518518517,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.16666666666666666,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.25925925925925924,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.39814814814814814,
+        "markdown": false
+      },
+      {
+        "value": 0.0006666666666666666,
+        "description": "min=0, mean=0.001, max=0.001, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3107835726883346,
+        "markdown": false
+      },
+      {
+        "value": 0.0013333333333333333,
+        "description": "min=0.001, mean=0.001, max=0.002, sum=0.008 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.24074074074074073,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.002, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2222222222222222,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.002, sum=0.02 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.4489795918367347,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.42857142857142855,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.004, sum=0.017 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.20408163265306123,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002861230329041488,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.017 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GLM (130B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.02040816326530612,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.004291845493562232,
+        "description": "min=0.002, mean=0.004, max=0.006, sum=0.026 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.09259259259259259,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (24)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Answer: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.07407407407407407,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: I: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.027777777777777776,
+        "markdown": false
+      },
+      {
+        "value": 0.0036666666666666666,
+        "description": "min=0.003, mean=0.004, max=0.005, sum=0.022 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: Input: , input_suffix: \n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.12037037037037036,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.002, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: <input>]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.3127991937515747,
+        "markdown": false
+      },
+      {
+        "value": 0.0016666666666666668,
+        "description": "min=0.001, mean=0.002, max=0.003, sum=0.01 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.004 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (12)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "4 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: Passage: , input_suffix: \n, output_prefix: Sentiment: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "2 matching runs, but no matching metrics",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.037037037037037035,
+        "markdown": false
+      },
+      {
+        "value": 0.0030000000000000005,
+        "description": "min=0.003, mean=0.003, max=0.003, sum=0.036 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.018518518518518517,
+        "markdown": false
+      },
+      {
+        "value": 0.0030000000000000005,
+        "description": "min=0.002, mean=0.003, max=0.004, sum=0.018 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.7142857142857143,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.000715307582260372,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (12)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: I am an expert AI assistant who is here to help you with the following. , input_prefix: ###\nArticle: ]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.9387755102040817,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (6)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: I: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.2653061224489796,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.002145922746781116,
+        "description": "min=0, mean=0.002, max=0.004, sum=0.013 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "YaLM (100B) [instructions: , input_prefix: Input: , input_suffix: \n\n]",
+        "description": "",
+        "markdown": false
+      },
+      {
+        "value": 0.40816326530612246,
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "value": 0.001430615164520744,
+        "description": "min=0, mean=0.001, max=0.002, sum=0.009 (6)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      },
+      {
+        "description": "No matching runs",
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/latex/ablation_prompts_toxicity.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/releases/v0.3.0/groups/json/ablation_prompts_toxicity.json"
+    }
+  ],
+  "name": "toxicity"
+}
