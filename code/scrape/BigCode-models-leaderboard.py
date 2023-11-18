@@ -38,7 +38,7 @@ def get_datas(data):
                     model = extract_model_repo_names(results[1])
                     try:
                         print(len(results))
-                        results_json = {"T": results[0], "Model": model, "Win Rate": results[2], "Average score": results[3], "humaneval-python": results[4], "java": results[5], "javascript": results[6], "Throughput (token/s)": results[7], "cpp": results[8],"php": results[9], "rust": results[10], "swift": results[11], "r": results[12], "lua": results[13], "d": results[14], "racket": results[15], "julia": results[16], "#Languages": results[17], "Throughput (token/s) bs=50": results[18], "Peak Memory (MB)": results[19], "Seq_length": results[20], "Links": results[21], "Submission PR": results[22]}                        
+                        results_json = {"T": results[0], "Model": model, "Win Rate": results[2], "Throughput (token\/s)": results[3], "Seq_length": results[5], "#Languages": results[6], "humaneval-python": results[7], "java": results[8],"javascript": results[9], "cpp": results[10], "php": results[11], "julia": results[12], "d": results[13], "Average score": results[14], "lua": results[15], "r": results[16], "racket": results[17], "rust": results[18], "swift": results[19], "Throughput (token\/s) bs=50": results[20], "Peak Memory (MB)": results[21], "Link": results[23], 'Submission PR': results[24]}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
