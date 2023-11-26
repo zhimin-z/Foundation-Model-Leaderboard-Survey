@@ -66,15 +66,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv(path_llm / "HuggingFace-llm-perf-leaderboard-20231116.csv", index=False)
+        df.to_csv(path_llm / "HuggingFace-llm_perf.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html(path_llm / "HuggingFace-llm-perf-leaderboard-20231116.html", index=False)
+        df.to_html(path_llm / "HuggingFace-llm_perf.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json(path_llm / "HuggingFace-llm-perf-leaderboard-20231116.json", orient='records', indent=4)
+        df.to_json(path_llm / "HuggingFace-llm_perf.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
