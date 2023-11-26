@@ -2,32 +2,43 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
 import json
+import re
 
 from pathlib import Path
 
 path_llm = Path("data/llm")
 
 
+def RefineBaseTitle(title):
+    title = title.replace('-', '_')
+    title = '_'.join(word.capitalize() for word in title.split('_'))
+    return title
+
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
+    dataset = 'big-bench'
     base_url = 'https://paperswithcode.com'
-    url = f'{base_url}/sota/sentence-completion-on-hellaswag'
+    url = f'{base_url}/dataset/{dataset}'
     driver.get(url)
     
-    table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
-    table = json.loads(table)
-    df = pd.DataFrame()
+    leaderboard_tables = driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr')
+    leaderboard_links = []
     
-    for row in table:
-        entry = {
-            'Model': row['method'],
-            'Accuracy': row['raw_metrics']['Accuracy'],
-            'Paper': f'{base_url}{row["paper"]["url"]}',
-            'Date': row['evaluation_date'],
-        }
-        df = pd.concat([df, pd.DataFrame([entry])], ignore_index=True)
+    for leaderboard in leaderboard_tables:
+        # print(leaderboard)
+        text = leaderboard.get_attribute('onclick')
+        match = re.findall(r"'(.*?)'", text)[0]
+        link = f'{base_url}{match}'
+        leaderboard_links.append(link)
     
-    df.to_json(path_llm / 'HellaSwag-sentence_completion-paperwithcode-latest.json', orient='records', indent=4)
+    for link in leaderboard_links:
+        driver.get(link)
+        table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
+        table = json.loads(table)
+        table = pd.DataFrame(table)
+        title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
+        title = '_'.join(title.lower().replace(f' on {dataset}', '').split())
+        table.to_json(path_llm / f'{RefineBaseTitle(dataset)}-{title}.json', orient='records', indent=4)
                 
