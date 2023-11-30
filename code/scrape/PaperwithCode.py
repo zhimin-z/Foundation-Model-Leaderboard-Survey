@@ -27,7 +27,6 @@ if __name__ == '__main__':
     leaderboard_links = []
     
     for leaderboard in leaderboard_tables:
-        # print(leaderboard)
         text = leaderboard.get_attribute('onclick')
         match = re.findall(r"'(.*?)'", text)[0]
         link = f'{base_url}{match}'
