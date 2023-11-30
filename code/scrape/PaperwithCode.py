@@ -18,7 +18,7 @@ if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
-    dataset = 'big-bench'
+    dataset = 'xnli'
     base_url = 'https://paperswithcode.com'
     url = f'{base_url}/dataset/{dataset}'
     driver.get(url)
