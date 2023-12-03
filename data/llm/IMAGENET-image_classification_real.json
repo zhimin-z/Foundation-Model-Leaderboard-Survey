@@ -1,0 +1,2548 @@
+[
+    {
+        "table_id":3881,
+        "row_id":49064,
+        "rank":1,
+        "method":"Baseline (ViT-G\/14)",
+        "mlmodel":{
+
+        },
+        "method_short":"Baseline ",
+        "method_details":"ViT-G\/14",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-03-10",
+        "metrics":{
+            "Accuracy":"91.78%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.78,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":974897,
+            "title":"Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time",
+            "url":"\/paper\/model-soups-averaging-weights-of-multiple",
+            "published":"2022-03-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/model-soups-averaging-weights-of-multiple\/review\/?hl=49064"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":48209,
+        "rank":2,
+        "method":"ViTAE-H\n(MAE, 512)",
+        "mlmodel":{
+
+        },
+        "method_short":"ViTAE-H\n",
+        "method_details":"MAE, 512",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-21",
+        "metrics":{
+            "Accuracy":"91.2%",
+            "Params":"644M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.2,
+            "Params":644000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":964748,
+            "title":"ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond",
+            "url":"\/paper\/vitaev2-vision-transformer-advanced-by",
+            "published":"2022-02-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/vitaev2-vision-transformer-advanced-by\/review\/?hl=48209"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":48976,
+        "rank":3,
+        "method":"Model soups (ViT-G\/14)",
+        "mlmodel":{
+
+        },
+        "method_short":"Model soups ",
+        "method_details":"ViT-G\/14",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-03-10",
+        "metrics":{
+            "Accuracy":"91.20%",
+            "Params":"1843M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.2,
+            "Params":1843000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":974897,
+            "title":"Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time",
+            "url":"\/paper\/model-soups-averaging-weights-of-multiple",
+            "published":"2022-03-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/model-soups-averaging-weights-of-multiple\/review\/?hl=48976"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":24285,
+        "rank":4,
+        "method":"Meta Pseudo Labels (EfficientNet-B6-Wide)",
+        "mlmodel":{
+
+        },
+        "method_short":"Meta Pseudo Labels ",
+        "method_details":"EfficientNet-B6-Wide",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-03-23",
+        "metrics":{
+            "Accuracy":"91.12%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.12,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":188189,
+            "title":"Meta Pseudo Labels",
+            "url":"\/paper\/meta-pseudo-labels",
+            "published":"2020-03-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/meta-pseudo-labels\/review\/?hl=24285"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":5,
+                "name":"EfficientNet",
+                "color":"#05A300"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":40307,
+        "rank":5,
+        "method":"TokenLearner L\/8 (24+11)",
+        "mlmodel":{
+
+        },
+        "method_short":"TokenLearner L\/8 ",
+        "method_details":"24+11",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-21",
+        "metrics":{
+            "Accuracy":"91.05%",
+            "Params":"460M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.05,
+            "Params":460000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":821783,
+            "title":"TokenLearner: What Can 8 Learned Tokens Do for Images and Videos?",
+            "url":"\/paper\/tokenlearner-what-can-8-learned-tokens-do-for",
+            "published":"2021-06-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/tokenlearner-what-can-8-learned-tokens-do-for\/review\/?hl=40307"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":57552,
+        "rank":6,
+        "method":"Model soups (BASIC-L)",
+        "mlmodel":{
+
+        },
+        "method_short":"Model soups ",
+        "method_details":"BASIC-L",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-03-10",
+        "metrics":{
+            "Accuracy":"91.03%",
+            "Params":"2440M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.03,
+            "Params":2440000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":974897,
+            "title":"Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time",
+            "url":"\/paper\/model-soups-averaging-weights-of-multiple",
+            "published":"2022-03-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/model-soups-averaging-weights-of-multiple\/review\/?hl=57552"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":247,
+                "name":"ALIGN",
+                "color":"#2771D3"
+            },
+            {
+                "id":103,
+                "name":"JFT-3B",
+                "color":"#2771D3"
+            },
+            {
+                "id":98,
+                "name":"Conv+Transformer",
+                "color":"#ff2600"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":24287,
+        "rank":7,
+        "method":"Meta Pseudo Labels (EfficientNet-L2)",
+        "mlmodel":{
+
+        },
+        "method_short":"Meta Pseudo Labels ",
+        "method_details":"EfficientNet-L2",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-03-23",
+        "metrics":{
+            "Accuracy":"91.02%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":91.02,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":188189,
+            "title":"Meta Pseudo Labels",
+            "url":"\/paper\/meta-pseudo-labels",
+            "published":"2020-03-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/meta-pseudo-labels\/review\/?hl=24287"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":5,
+                "name":"EfficientNet",
+                "color":"#05A300"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":100962,
+        "rank":8,
+        "method":"MAWS (ViT-2B)",
+        "mlmodel":{
+
+        },
+        "method_short":"MAWS ",
+        "method_details":"ViT-2B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-03-23",
+        "metrics":{
+            "Accuracy":"90.9%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.9,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1179156,
+            "title":"The effectiveness of MAE pre-pretraining for billion-scale pretraining",
+            "url":"\/paper\/the-effectiveness-of-mae-pre-pretraining-for",
+            "published":"2023-03-23T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21784,
+        "rank":9,
+        "method":"FixEfficientNet-L2",
+        "mlmodel":{
+
+        },
+        "method_short":"FixEfficientNet-L2",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-11-18",
+        "metrics":{
+            "Accuracy":"90.9%",
+            "Params":"480M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.9,
+            "Params":480000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":187431,
+            "title":"Fixing the train-test resolution discrepancy: FixEfficientNet",
+            "url":"\/paper\/fixing-the-train-test-resolution-discrepancy-2",
+            "published":"2020-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/fixing-the-train-test-resolution-discrepancy-2\/review\/?hl=21784"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":5,
+                "name":"EfficientNet",
+                "color":"#05A300"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":34460,
+        "rank":10,
+        "method":"ViT-G\/14",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-G\/14",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-08",
+        "metrics":{
+            "Accuracy":"90.81%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.81,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":813674,
+            "title":"Scaling Vision Transformers",
+            "url":"\/paper\/scaling-vision-transformers",
+            "published":"2021-06-08T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/scaling-vision-transformers\/review\/?hl=34460"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":20359,
+        "rank":11,
+        "method":"ViT-H\/14",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-H\/14",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-10-22",
+        "metrics":{
+            "Accuracy":"90.72\u00b10.05%",
+            "Params":"632M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.72,
+            "Params":632000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":229828,
+            "title":"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url":"\/paper\/an-image-is-worth-16x16-words-transformers-1",
+            "published":"2020-10-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/an-image-is-worth-16x16-words-transformers-1\/review\/?hl=20359"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":45652,
+        "rank":12,
+        "method":"SWAG (RegNetY 128GF)",
+        "mlmodel":{
+
+        },
+        "method_short":"SWAG ",
+        "method_details":"RegNetY 128GF",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-01-20",
+        "metrics":{
+            "Accuracy":"90.7%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.7,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":948291,
+            "title":"Revisiting Weakly Supervised Pre-Training of Visual Perception Models",
+            "url":"\/paper\/revisiting-weakly-supervised-pre-training-of",
+            "published":"2022-01-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/revisiting-weakly-supervised-pre-training-of\/review\/?hl=45652"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":35535,
+        "rank":13,
+        "method":"VOLO-D5",
+        "mlmodel":{
+
+        },
+        "method_short":"VOLO-D5",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-24",
+        "metrics":{
+            "Accuracy":"90.6%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.6,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":824294,
+            "title":"VOLO: Vision Outlooker for Visual Recognition",
+            "url":"\/paper\/volo-vision-outlooker-for-visual-recognition",
+            "published":"2021-06-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/volo-vision-outlooker-for-visual-recognition\/review\/?hl=35535"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29259,
+        "rank":14,
+        "method":"CvT-W24 (384 res, ImageNet-22k pretrain)",
+        "mlmodel":{
+
+        },
+        "method_short":"CvT-W24 ",
+        "method_details":"384 res, ImageNet-22k pretrain",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-29",
+        "metrics":{
+            "Accuracy":"90.6%",
+            "Params":"277M",
+            "Top 1 Accuracy":"87.7%",
+            "Number of params":"277M"
+        },
+        "raw_metrics":{
+            "Accuracy":90.6,
+            "Params":277000000.0,
+            "Top 1 Accuracy":87.7,
+            "Number of params":277000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":758429,
+            "title":"CvT: Introducing Convolutions to Vision Transformers",
+            "url":"\/paper\/cvt-introducing-convolutions-to-vision",
+            "published":"2021-03-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/cvt-introducing-convolutions-to-vision\/review\/?hl=29259"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21785,
+        "rank":15,
+        "method":"EfficientNet-L2",
+        "mlmodel":{
+
+        },
+        "method_short":"EfficientNet-L2",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-11-11",
+        "metrics":{
+            "Accuracy":"90.55%",
+            "Params":"480M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.55,
+            "Params":480000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":170047,
+            "title":"Self-training with Noisy Student improves ImageNet classification",
+            "url":"\/paper\/self-training-with-noisy-student-improves",
+            "published":"2019-11-11T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/self-training-with-noisy-student-improves\/review\/?hl=21785"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":5,
+                "name":"EfficientNet",
+                "color":"#05A300"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":20360,
+        "rank":16,
+        "method":"ViT-L\/16",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-L\/16",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-10-22",
+        "metrics":{
+            "Accuracy":"90.54\u00b10.03%",
+            "Params":"307M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.54,
+            "Params":307000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":229828,
+            "title":"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url":"\/paper\/an-image-is-worth-16x16-words-transformers-1",
+            "published":"2020-10-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/an-image-is-worth-16x16-words-transformers-1\/review\/?hl=20360"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21787,
+        "rank":17,
+        "method":"BiT-L",
+        "mlmodel":{
+
+        },
+        "method_short":"BiT-L",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-12-24",
+        "metrics":{
+            "Accuracy":"90.54%",
+            "Params":"928M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.54,
+            "Params":928000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":178162,
+            "title":"Big Transfer (BiT): General Visual Representation Learning",
+            "url":"\/paper\/large-scale-learning-of-general-visual",
+            "published":"2019-12-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/large-scale-learning-of-general-visual\/review\/?hl=21787"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":35537,
+        "rank":18,
+        "method":"VOLO-D4",
+        "mlmodel":{
+
+        },
+        "method_short":"VOLO-D4",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-24",
+        "metrics":{
+            "Accuracy":"90.5%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.5,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":824294,
+            "title":"VOLO: Vision Outlooker for Visual Recognition",
+            "url":"\/paper\/volo-vision-outlooker-for-visual-recognition",
+            "published":"2021-06-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/volo-vision-outlooker-for-visual-recognition\/review\/?hl=35537"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29441,
+        "rank":19,
+        "method":"CAIT-M36-448",
+        "mlmodel":{
+
+        },
+        "method_short":"CAIT-M36-448",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-31",
+        "metrics":{
+            "Accuracy":"90.2%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.2,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":772635,
+            "title":"Going deeper with Image Transformers",
+            "url":"\/paper\/going-deeper-with-image-transformers",
+            "published":"2021-03-31T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/going-deeper-with-image-transformers\/review\/?hl=29441"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":31607,
+        "rank":20,
+        "method":"Mixer-H\/14- 448 (JFT-300M pre-train)",
+        "mlmodel":{
+
+        },
+        "method_short":"Mixer-H\/14- 448 ",
+        "method_details":"JFT-300M pre-train",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-04",
+        "metrics":{
+            "Accuracy":"90.18%",
+            "Params":"409M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.18,
+            "Params":409000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":793349,
+            "title":"MLP-Mixer: An all-MLP Architecture for Vision",
+            "url":"\/paper\/mlp-mixer-an-all-mlp-architecture-for-vision",
+            "published":"2021-05-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/mlp-mixer-an-all-mlp-architecture-for-vision\/review\/?hl=31607"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29618,
+        "rank":21,
+        "method":"FixEfficientNet-B8",
+        "mlmodel":{
+
+        },
+        "method_short":"FixEfficientNet-B8",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-03-18",
+        "metrics":{
+            "Accuracy":"90.0%",
+            "Params":"87M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":90.0,
+            "Params":87000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":187431,
+            "title":"Fixing the train-test resolution discrepancy: FixEfficientNet",
+            "url":"\/paper\/fixing-the-train-test-resolution-discrepancy-2",
+            "published":"2020-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/fixing-the-train-test-resolution-discrepancy-2\/review\/?hl=29618"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":5,
+                "name":"EfficientNet",
+                "color":"#05A300"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":47973,
+        "rank":22,
+        "method":"SEER (RegNet10B)",
+        "mlmodel":{
+
+        },
+        "method_short":"SEER ",
+        "method_details":"RegNet10B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-16",
+        "metrics":{
+            "Accuracy":"89.8%",
+            "Params":"10000M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":89.8,
+            "Params":10000000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":963673,
+            "title":"Vision Models Are More Robust And Fair When Pretrained On Uncurated Images Without Supervision",
+            "url":"\/paper\/vision-models-are-more-robust-and-fair-when",
+            "published":"2022-02-16T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/vision-models-are-more-robust-and-fair-when\/review\/?hl=47973"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":107,
+                "name":"IG-1B",
+                "color":"#2771D3"
+            },
+            {
+                "id":108,
+                "name":"RegNet",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21786,
+        "rank":23,
+        "method":"FixResNeXt-101 32x48d",
+        "mlmodel":{
+
+        },
+        "method_short":"FixResNeXt-101 32x48d",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-06-14",
+        "metrics":{
+            "Accuracy":"89.73%",
+            "Params":"829M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":89.73,
+            "Params":829000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":142997,
+            "title":"Fixing the train-test resolution discrepancy",
+            "url":"\/paper\/fixing-the-train-test-resolution-discrepancy",
+            "published":"2019-06-14T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/fixing-the-train-test-resolution-discrepancy\/review\/?hl=21786"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":6,
+                "name":"ResNeXt",
+                "color":"#86960b"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":23834,
+        "rank":24,
+        "method":"DeiT-B-384",
+        "mlmodel":{
+
+        },
+        "method_short":"DeiT-B-384",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-23",
+        "metrics":{
+            "Accuracy":"89.3%",
+            "Params":"86M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":89.3,
+            "Params":86000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":731001,
+            "title":"Training data-efficient image transformers & distillation through attention",
+            "url":"\/paper\/training-data-efficient-image-transformers",
+            "published":"2020-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/training-data-efficient-image-transformers\/review\/?hl=23834"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21788,
+        "rank":25,
+        "method":"BiT-M",
+        "mlmodel":{
+
+        },
+        "method_short":"BiT-M",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-12-24",
+        "metrics":{
+            "Accuracy":"89.02%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":89.02,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":178162,
+            "title":"Big Transfer (BiT): General Visual Representation Learning",
+            "url":"\/paper\/large-scale-learning-of-general-visual",
+            "published":"2019-12-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/large-scale-learning-of-general-visual\/review\/?hl=21788"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":23835,
+        "rank":26,
+        "method":"DeiT-B",
+        "mlmodel":{
+
+        },
+        "method_short":"DeiT-B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-23",
+        "metrics":{
+            "Accuracy":"88.7%",
+            "Params":"86M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":88.7,
+            "Params":86000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":731001,
+            "title":"Training data-efficient image transformers & distillation through attention",
+            "url":"\/paper\/training-data-efficient-image-transformers",
+            "published":"2020-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/training-data-efficient-image-transformers\/review\/?hl=23835"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21790,
+        "rank":27,
+        "method":"Assemble-ResNet152",
+        "mlmodel":{
+
+        },
+        "method_short":"Assemble-ResNet152",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-01-17",
+        "metrics":{
+            "Accuracy":"88.65%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":88.65,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":180140,
+            "title":"Compounding the Performance Improvements of Assembled Techniques in a Convolutional Neural Network",
+            "url":"\/paper\/compounding-the-performance-improvements-of",
+            "published":"2020-01-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/compounding-the-performance-improvements-of\/review\/?hl=21790"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":28492,
+        "rank":28,
+        "method":"CeiT-S (384 finetune res)",
+        "mlmodel":{
+
+        },
+        "method_short":"CeiT-S ",
+        "method_details":"384 finetune res",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-22",
+        "metrics":{
+            "Accuracy":"88.1%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":88.1,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":755729,
+            "title":"Incorporating Convolution Designs into Visual Transformers",
+            "url":"\/paper\/incorporating-convolution-designs-into-visual",
+            "published":"2021-03-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/incorporating-convolution-designs-into-visual\/review\/?hl=28492"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":53862,
+        "rank":29,
+        "method":"Sequencer2D-L",
+        "mlmodel":{
+
+        },
+        "method_short":"Sequencer2D-L",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-04",
+        "metrics":{
+            "Accuracy":"87.9",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.9,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1004136,
+            "title":"Sequencer: Deep LSTM for Image Classification",
+            "url":"\/paper\/sequencer-deep-lstm-for-image-classification",
+            "published":"2022-05-04T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":31605,
+        "rank":30,
+        "method":"Mixer-H\/14 (JFT-300M pre-train)",
+        "mlmodel":{
+
+        },
+        "method_short":"Mixer-H\/14 ",
+        "method_details":"JFT-300M pre-train",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-04",
+        "metrics":{
+            "Accuracy":"87.86%",
+            "Params":"409M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.86,
+            "Params":409000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":793349,
+            "title":"MLP-Mixer: An all-MLP Architecture for Vision",
+            "url":"\/paper\/mlp-mixer-an-all-mlp-architecture-for-vision",
+            "published":"2021-05-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/mlp-mixer-an-all-mlp-architecture-for-vision\/review\/?hl=31605"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21791,
+        "rank":31,
+        "method":"Assemble ResNet-50",
+        "mlmodel":{
+
+        },
+        "method_short":"Assemble ResNet-50",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-01-17",
+        "metrics":{
+            "Accuracy":"87.82%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.82,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":180140,
+            "title":"Compounding the Performance Improvements of Assembled Techniques in a Convolutional Neural Network",
+            "url":"\/paper\/compounding-the-performance-improvements-of",
+            "published":"2020-01-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/compounding-the-performance-improvements-of\/review\/?hl=21791"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":3,
+                "name":"ResNet",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21796,
+        "rank":32,
+        "method":"NASNet-A Large",
+        "mlmodel":{
+
+        },
+        "method_short":"NASNet-A Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2017-07-21",
+        "metrics":{
+            "Accuracy":"87.56%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.56,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":6283,
+            "title":"Learning Transferable Architectures for Scalable Image Recognition",
+            "url":"\/paper\/learning-transferable-architectures-for",
+            "published":"2017-07-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/learning-transferable-architectures-for\/review\/?hl=21796"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29462,
+        "rank":33,
+        "method":"LeViT-384",
+        "mlmodel":{
+
+        },
+        "method_short":"LeViT-384",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-02",
+        "metrics":{
+            "Accuracy":"87.5%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.5,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":774248,
+            "title":"LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference",
+            "url":"\/paper\/levit-a-vision-transformer-in-convnet-s",
+            "published":"2021-04-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/levit-a-vision-transformer-in-convnet-s\/review\/?hl=29462"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":28489,
+        "rank":34,
+        "method":"CeiT-S",
+        "mlmodel":{
+
+        },
+        "method_short":"CeiT-S",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-22",
+        "metrics":{
+            "Accuracy":"87.3%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.3,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":755729,
+            "title":"Incorporating Convolution Designs into Visual Transformers",
+            "url":"\/paper\/incorporating-convolution-designs-into-visual",
+            "published":"2021-03-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/incorporating-convolution-designs-into-visual\/review\/?hl=28489"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29471,
+        "rank":35,
+        "method":"LeViT-256",
+        "mlmodel":{
+
+        },
+        "method_short":"LeViT-256",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-02",
+        "metrics":{
+            "Accuracy":"86.9%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":86.9,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":774248,
+            "title":"LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference",
+            "url":"\/paper\/levit-a-vision-transformer-in-convnet-s",
+            "published":"2021-04-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/levit-a-vision-transformer-in-convnet-s\/review\/?hl=29471"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":23833,
+        "rank":36,
+        "method":"DeiT-S",
+        "mlmodel":{
+
+        },
+        "method_short":"DeiT-S",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-23",
+        "metrics":{
+            "Accuracy":"86.8%",
+            "Params":"22M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":86.8,
+            "Params":22000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":731001,
+            "title":"Training data-efficient image transformers & distillation through attention",
+            "url":"\/paper\/training-data-efficient-image-transformers",
+            "published":"2020-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/training-data-efficient-image-transformers\/review\/?hl=23833"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":34306,
+        "rank":37,
+        "method":"ResNet-152x2-SAM",
+        "mlmodel":{
+
+        },
+        "method_short":"ResNet-152x2-SAM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-03",
+        "metrics":{
+            "Accuracy":"86.4%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":86.4,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":810994,
+            "title":"When Vision Transformers Outperform ResNets without Pre-training or Strong Data Augmentations",
+            "url":"\/paper\/when-vision-transformers-outperform-resnets",
+            "published":"2021-06-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/when-vision-transformers-outperform-resnets\/review\/?hl=34306"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":3,
+                "name":"ResNet",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29480,
+        "rank":38,
+        "method":"LeViT-192",
+        "mlmodel":{
+
+        },
+        "method_short":"LeViT-192",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-02",
+        "metrics":{
+            "Accuracy":"85.8%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.8,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":774248,
+            "title":"LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference",
+            "url":"\/paper\/levit-a-vision-transformer-in-convnet-s",
+            "published":"2021-04-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/levit-a-vision-transformer-in-convnet-s\/review\/?hl=29480"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":40194,
+        "rank":39,
+        "method":"ResNet50 (A1)",
+        "mlmodel":{
+
+        },
+        "method_short":"ResNet50 ",
+        "method_details":"A1",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-10-01",
+        "metrics":{
+            "Accuracy":"85.7%",
+            "Params":"25M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.7,
+            "Params":25000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":877343,
+            "title":"ResNet strikes back: An improved training procedure in timm",
+            "url":"\/paper\/resnet-strikes-back-an-improved-training",
+            "published":"2021-10-01T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29489,
+        "rank":40,
+        "method":"LeViT-128",
+        "mlmodel":{
+
+        },
+        "method_short":"LeViT-128",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-02",
+        "metrics":{
+            "Accuracy":"85.6%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.6,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":774248,
+            "title":"LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference",
+            "url":"\/paper\/levit-a-vision-transformer-in-convnet-s",
+            "published":"2021-04-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/levit-a-vision-transformer-in-convnet-s\/review\/?hl=29489"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":31821,
+        "rank":41,
+        "method":"ResMLP-36",
+        "mlmodel":{
+
+        },
+        "method_short":"ResMLP-36",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-07",
+        "metrics":{
+            "Accuracy":"85.6%",
+            "Params":"45M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.6,
+            "Params":45000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":795412,
+            "title":"ResMLP: Feedforward networks for image classification with data-efficient training",
+            "url":"\/paper\/resmlp-feedforward-networks-for-image",
+            "published":"2021-05-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/resmlp-feedforward-networks-for-image\/review\/?hl=31821"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":31820,
+        "rank":42,
+        "method":"ResMLP-24",
+        "mlmodel":{
+
+        },
+        "method_short":"ResMLP-24",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-07",
+        "metrics":{
+            "Accuracy":"85.3%",
+            "Params":"30M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.3,
+            "Params":30000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":795412,
+            "title":"ResMLP: Feedforward networks for image classification with data-efficient training",
+            "url":"\/paper\/resmlp-feedforward-networks-for-image",
+            "published":"2021-05-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/resmlp-feedforward-networks-for-image\/review\/?hl=31820"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":34311,
+        "rank":43,
+        "method":"ViT-B\/16-SAM",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-B\/16-SAM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-03",
+        "metrics":{
+            "Accuracy":"85.2%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":85.2,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":810994,
+            "title":"When Vision Transformers Outperform ResNets without Pre-training or Strong Data Augmentations",
+            "url":"\/paper\/when-vision-transformers-outperform-resnets",
+            "published":"2021-06-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/when-vision-transformers-outperform-resnets\/review\/?hl=34311"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":31819,
+        "rank":44,
+        "method":"ResMLP-12",
+        "mlmodel":{
+
+        },
+        "method_short":"ResMLP-12",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-07",
+        "metrics":{
+            "Accuracy":"84.6%",
+            "Params":"15M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":84.6,
+            "Params":15000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":795412,
+            "title":"ResMLP: Feedforward networks for image classification with data-efficient training",
+            "url":"\/paper\/resmlp-feedforward-networks-for-image",
+            "published":"2021-05-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/resmlp-feedforward-networks-for-image\/review\/?hl=31819"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":34316,
+        "rank":45,
+        "method":"Mixer-B\/8-SAM",
+        "mlmodel":{
+
+        },
+        "method_short":"Mixer-B\/8-SAM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-03",
+        "metrics":{
+            "Accuracy":"84.4%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":84.4,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":810994,
+            "title":"When Vision Transformers Outperform ResNets without Pre-training or Strong Data Augmentations",
+            "url":"\/paper\/when-vision-transformers-outperform-resnets",
+            "published":"2021-06-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/when-vision-transformers-outperform-resnets\/review\/?hl=34316"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":99897,
+        "rank":46,
+        "method":"kNN-CLIP",
+        "mlmodel":{
+
+        },
+        "method_short":"kNN-CLIP",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-03",
+        "metrics":{
+            "Accuracy":"84%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":84.0,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":988322,
+            "title":"Revisiting a kNN-based Image Classification System with High-capacity Storage",
+            "url":"\/paper\/revisiting-a-knn-based-image-classification",
+            "published":"2022-04-03T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/revisiting-a-knn-based-image-classification\/review\/?hl=99897"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":231,
+                "name":"CLIP Pre-trained",
+                "color":"#2771D3"
+            },
+            {
+                "id":397,
+                "name":"Memory-Centric",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":28487,
+        "rank":47,
+        "method":"CeiT-T",
+        "mlmodel":{
+
+        },
+        "method_short":"CeiT-T",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-22",
+        "metrics":{
+            "Accuracy":"83.6%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":83.6,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":755729,
+            "title":"Incorporating Convolution Designs into Visual Transformers",
+            "url":"\/paper\/incorporating-convolution-designs-into-visual",
+            "published":"2021-03-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/incorporating-convolution-designs-into-visual\/review\/?hl=28487"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":29498,
+        "rank":48,
+        "method":"LeViT-128S",
+        "mlmodel":{
+
+        },
+        "method_short":"LeViT-128S",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-02",
+        "metrics":{
+            "Accuracy":"82.6%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":82.6,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":774248,
+            "title":"LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference",
+            "url":"\/paper\/levit-a-vision-transformer-in-convnet-s",
+            "published":"2021-04-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/levit-a-vision-transformer-in-convnet-s\/review\/?hl=29498"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":23832,
+        "rank":49,
+        "method":"DeiT-Ti",
+        "mlmodel":{
+
+        },
+        "method_short":"DeiT-Ti",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-23",
+        "metrics":{
+            "Accuracy":"82.1%",
+            "Params":"5M",
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":82.1,
+            "Params":5000000.0,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":731001,
+            "title":"Training data-efficient image transformers & distillation through attention",
+            "url":"\/paper\/training-data-efficient-image-transformers",
+            "published":"2020-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/training-data-efficient-image-transformers\/review\/?hl=23832"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21797,
+        "rank":50,
+        "method":"NASNet-A Mobile",
+        "mlmodel":{
+
+        },
+        "method_short":"NASNet-A Mobile",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2017-07-21",
+        "metrics":{
+            "Accuracy":"81.15%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":81.15,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":6283,
+            "title":"Learning Transferable Architectures for Scalable Image Recognition",
+            "url":"\/paper\/learning-transferable-architectures-for",
+            "published":"2017-07-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/learning-transferable-architectures-for\/review\/?hl=21797"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21798,
+        "rank":51,
+        "method":"VGG-16 BN",
+        "mlmodel":{
+
+        },
+        "method_short":"VGG-16 BN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2014-09-04",
+        "metrics":{
+            "Accuracy":"80.60%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":80.6,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":41308,
+            "title":"Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url":"\/paper\/very-deep-convolutional-networks-for-large",
+            "published":"2014-09-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/very-deep-convolutional-networks-for-large\/review\/?hl=21798"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21795,
+        "rank":52,
+        "method":"VGG-16",
+        "mlmodel":{
+
+        },
+        "method_short":"VGG-16",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2014-09-04",
+        "metrics":{
+            "Accuracy":"79.01%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":79.01,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":41308,
+            "title":"Very Deep Convolutional Networks for Large-Scale Image Recognition",
+            "url":"\/paper\/very-deep-convolutional-networks-for-large",
+            "published":"2014-09-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/very-deep-convolutional-networks-for-large\/review\/?hl=21795"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":21792,
+        "rank":53,
+        "method":"AlexNet",
+        "mlmodel":{
+
+        },
+        "method_short":"AlexNet",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2012-12-01",
+        "metrics":{
+            "Accuracy":"62.88%",
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":62.88,
+            "Params":null,
+            "Top 1 Accuracy":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":79567,
+            "title":"ImageNet Classification with Deep Convolutional Neural Networks",
+            "url":"\/paper\/imagenet-classification-with-deep",
+            "published":"2012-12-01T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":60751,
+        "rank":54,
+        "method":"ViT-L @384 (DeiT III, 21k)",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-L @384 ",
+        "method_details":"DeiT III, 21k",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-14",
+        "metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":"87.7%",
+            "Number of params":"304M"
+        },
+        "raw_metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":87.7,
+            "Number of params":304000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":994466,
+            "title":"DeiT III: Revenge of the ViT",
+            "url":"\/paper\/deit-iii-revenge-of-the-vit",
+            "published":"2022-04-14T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deit-iii-revenge-of-the-vit\/review\/?hl=60751"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":60753,
+        "rank":55,
+        "method":"ViT-H @224 (DeiT III, 21k)",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-H @224 ",
+        "method_details":"DeiT III, 21k",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-14",
+        "metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":"87.2%",
+            "Number of params":"632M"
+        },
+        "raw_metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":87.2,
+            "Number of params":632000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":994466,
+            "title":"DeiT III: Revenge of the ViT",
+            "url":"\/paper\/deit-iii-revenge-of-the-vit",
+            "published":"2022-04-14T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deit-iii-revenge-of-the-vit\/review\/?hl=60753"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":60752,
+        "rank":56,
+        "method":"ViT-L @224 (DeiT III, 21k)",
+        "mlmodel":{
+
+        },
+        "method_short":"ViT-L @224 ",
+        "method_details":"DeiT III, 21k",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-14",
+        "metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":"87.0%",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":87.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":994466,
+            "title":"DeiT III: Revenge of the ViT",
+            "url":"\/paper\/deit-iii-revenge-of-the-vit",
+            "published":"2022-04-14T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deit-iii-revenge-of-the-vit\/review\/?hl=60752"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3881,
+        "row_id":60640,
+        "rank":57,
+        "method":"ResMLP-B24\/8 (22k)",
+        "mlmodel":{
+
+        },
+        "method_short":"ResMLP-B24\/8 ",
+        "method_details":"22k",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-07",
+        "metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":"84.4%",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Accuracy":null,
+            "Params":null,
+            "Top 1 Accuracy":84.4,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":795412,
+            "title":"ResMLP: Feedforward networks for image classification with data-efficient training",
+            "url":"\/paper\/resmlp-feedforward-networks-for-image",
+            "published":"2021-05-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/resmlp-feedforward-networks-for-image\/review\/?hl=60640"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
