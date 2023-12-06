@@ -7,7 +7,7 @@ import re
 
 from pathlib import Path
 
-path_llm = Path("data/llm")
+path_leaderboard = Path("data/Big Code Models Leaderboard")
 
 
 def get_json_format_data():
@@ -37,7 +37,6 @@ def get_datas(data):
                     results = data['components'][component_index]['props']['value']['data'][i]
                     model = extract_model_repo_names(results[1])
                     try:
-                        print(len(results))
                         results_json = {"T": results[0], "Model": model, "Win Rate": results[2], "Throughput (token\/s)": results[3], "Seq_length": results[5], "#Languages": results[6], "humaneval-python": results[7], "java": results[8],"javascript": results[9], "cpp": results[10], "php": results[11], "julia": results[12], "d": results[13], "Average score": results[14], "lua": results[15], "r": results[16], "racket": results[17], "rust": results[18], "swift": results[19], "Throughput (token\/s) bs=50": results[20], "Peak Memory (MB)": results[21], "Link": results[23], 'Submission PR': results[24]}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
@@ -67,15 +66,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv(path_llm / "BigCode-models-leaderboard-2023111.csv", index=False)
+        df.to_csv(path_leaderboard / "all.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html(path_llm / "BigCode-models-leaderboard-2023111.html", index=False)
+        df.to_html(path_leaderboard / "all.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json(path_llm / "BigCode-models-leaderboard-2023111.json", orient='records', indent=4)
+        df.to_json(path_leaderboard / "all.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
