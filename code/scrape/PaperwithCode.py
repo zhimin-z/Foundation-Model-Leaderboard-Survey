@@ -6,9 +6,9 @@ import re
 
 from pathlib import Path
 
-path_llm = Path("data/llm")
+path_leaderboard = Path("data/HumanEval")
 
-included_links = ['image-classification-on-imagenet', 'self-supervised-image-classification-on', 'image-classification-on-imagenet-real', 'image-classification-on-imagenet-v2', 'domain-generalization-on-imagenet-r', 'zero-shot-transfer-image-classification-on-1', 'zero-shot-transfer-image-classification-on-3', 'zero-shot-transfer-image-classification-on-5', 'zero-shot-transfer-image-classification-on-4']
+included_links = []
 
 
 def RefineBaseTitle(title, allUpper=False):
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     driver.implicitly_wait(5)
 
     leaderboard_links = []
-    dataset = 'imagenet'
+    dataset = 'humaneval'
     base_url = 'https://paperswithcode.com'
     url = f'{base_url}/dataset/{dataset}'
     driver.get(url)
@@ -44,9 +44,17 @@ if __name__ == '__main__':
     for link in leaderboard_links:
         driver.get(link)
         table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
-        table = json.loads(table)
-        table = pd.DataFrame(table)
-        title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-        title = '_'.join(title.lower().replace(f' on {dataset}', '').split())
-        table.to_json(path_llm / f'{RefineBaseTitle(dataset, allUpper=True)}-{title}.json', orient='records', indent=4)
+        if table != '[]':
+            table = json.loads(table)
+            table = pd.DataFrame(table)
+            title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
+            title = '_'.join(title.lower().replace(f' on {dataset}', '').split())
+            table.to_json(path_leaderboard / f'{title}.json', orient='records', indent=4)
+        else:
+            table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
+            table = json.loads(table)
+            table = pd.DataFrame(table)
+            title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
+            title = '_'.join(title.lower().replace(f' on {dataset}', '').split())
+            table.to_json(path_leaderboard / f'{title}.json', orient='records', indent=4)
                 

@@ -7,7 +7,7 @@ import re
 
 from pathlib import Path
 
-path_llm = Path("data/llm")
+path_leaderboard = Path("data/LLM-Perf Leaderboard")
 
 
 def get_json_format_data():
@@ -37,7 +37,7 @@ def get_datas(data):
                     results = data['components'][component_index]['props']['value']['data'][i]
                     model = extract_model_repo_names(results[0])
                     try:
-                        results_json = {"Model": model, "Arch": results[1], "Size": results[2], "Backend": results[3], "Dtype": results[4], "Optimizations": results[5], "Quantization": results[6], "Avg Score (%)": results[7], "Decode Throughput (tokens/s)": results[8],"E2E Throughput (tokens/s)": results[9], "Prefill Latency (s)": results[10], "E2E Latency (s)": results[11], "Allocated Memory (MB)": results[12], "Reserved Memory (MB)": results[13], "Used Memory (MB)": results[14], "Energy (tokens/kWh)": results[15]}                        
+                        results_json = {"Model": model, "Arch": results[1], "Params (B)": results[2], "Open LLM Score (%)": results[3], "Backend": results[4], "Dtype": results[5], "Optimization": results[6], "Quantization": results[7], "Prefill Latency (s)": results[8], "Decode Throughput (tokens/s)": results[9],"Allocated Memory (MB)": results[10], "Energy (tokens/kWh)": results[11], "E2E Latency (s)": results[12], "E2E Throughput (tokens/s)": results[13], "Reserved Memory (MB)": results[14], "Used Memory (MB)": results[15]}                        
                     except IndexError: # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
@@ -66,15 +66,15 @@ def main():
         args.json = True  # If no arguments are provided, default to JSON export
 
     if args.csv:
-        df.to_csv(path_llm / "HuggingFace-llm_perf.csv", index=False)
+        df.to_csv(path_leaderboard / "all.csv", index=False)
         print("Data exported to CSV")
 
     if args.html:
-        df.to_html(path_llm / "HuggingFace-llm_perf.html", index=False)
+        df.to_html(path_leaderboard / "all.html", index=False)
         print("Data exported to HTML")
 
     if args.json:
-        df.to_json(path_llm / "HuggingFace-llm_perf.json", orient='records', indent=4)
+        df.to_json(path_leaderboard / "all.json", orient='records', indent=4)
         print("Data exported to JSON")
 
 if __name__ == "__main__":
