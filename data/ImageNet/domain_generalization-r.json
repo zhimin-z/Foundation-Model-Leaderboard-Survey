@@ -7,7 +7,7 @@
         "mlmodel":{
 
         },
-        "method_short":"Model soups ",
+        "Model":"Model soups ",
         "method_details":"BASIC-L",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -43,7 +43,7 @@
         "mlmodel":{
 
         },
-        "method_short":"Model soups ",
+        "Model":"Model soups ",
         "method_details":"ViT-G\/14",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -79,7 +79,7 @@
         "mlmodel":{
 
         },
-        "method_short":"CAR-FT ",
+        "Model":"CAR-FT ",
         "method_details":"CLIP, ViT-L\/14@336px",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -115,7 +115,7 @@
         "mlmodel":{
 
         },
-        "method_short":"FAN-Hybrid-L",
+        "Model":"FAN-Hybrid-L",
         "method_details":"IN-21K, 384",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -145,13 +145,49 @@
     },
     {
         "table_id":3369,
-        "row_id":87289,
+        "row_id":113247,
         "rank":5,
+        "method":"CAFormer-B36 (IN21K, 384)",
+        "mlmodel":{
+
+        },
+        "Model":"CAFormer-B36 ",
+        "method_details":"IN21K, 384",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"29.6"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":29.6
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113247"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
+        "row_id":87289,
+        "rank":6,
         "method":"LLE (ViT-B\/16, SWAG, Edge Aug)",
         "mlmodel":{
 
         },
-        "method_short":"LLE ",
+        "Model":"LLE ",
         "method_details":"ViT-B\/16, SWAG, Edge Aug",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -181,13 +217,49 @@
     },
     {
         "table_id":3369,
+        "row_id":113246,
+        "rank":7,
+        "method":"CAFormer-B36 (IN21K)",
+        "mlmodel":{
+
+        },
+        "Model":"CAFormer-B36 ",
+        "method_details":"IN21K",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"31.7"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":31.7
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113246"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
         "row_id":45428,
-        "rank":6,
+        "rank":8,
         "method":"ConvNeXt-XL (Im21k, 384)",
         "mlmodel":{
 
         },
-        "method_short":"ConvNeXt-XL ",
+        "Model":"ConvNeXt-XL ",
         "method_details":"Im21k, 384",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -218,12 +290,12 @@
     {
         "table_id":3369,
         "row_id":87288,
-        "rank":7,
+        "rank":9,
         "method":"LLE (ViT-H\/14, MAE, Edge Aug)",
         "mlmodel":{
 
         },
-        "method_short":"LLE ",
+        "Model":"LLE ",
         "method_details":"ViT-H\/14, MAE, Edge Aug",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -254,12 +326,12 @@
     {
         "table_id":3369,
         "row_id":45123,
-        "rank":8,
+        "rank":10,
         "method":"MAE (ViT-H, 448)",
         "mlmodel":{
 
         },
-        "method_short":"MAE ",
+        "Model":"MAE ",
         "method_details":"ViT-H, 448",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -289,13 +361,49 @@
     },
     {
         "table_id":3369,
+        "row_id":113249,
+        "rank":11,
+        "method":"ConvFormer-B36 (IN21K, 384)",
+        "mlmodel":{
+
+        },
+        "Model":"ConvFormer-B36 ",
+        "method_details":"IN21K, 384",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"33.5"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":33.5
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113249"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
         "row_id":68559,
-        "rank":9,
+        "rank":12,
         "method":"MAE+DAT (ViT-H)",
         "mlmodel":{
 
         },
-        "method_short":"MAE+DAT ",
+        "Model":"MAE+DAT ",
         "method_details":"ViT-H",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -325,13 +433,49 @@
     },
     {
         "table_id":3369,
+        "row_id":113248,
+        "rank":13,
+        "method":"ConvFormer-B36 (IN21K)",
+        "mlmodel":{
+
+        },
+        "Model":"ConvFormer-B36 ",
+        "method_details":"IN21K",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"34.7"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":34.7
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113248"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
         "row_id":70352,
-        "rank":10,
+        "rank":14,
         "method":"GPaCo (ViT-L)",
         "mlmodel":{
 
         },
-        "method_short":"GPaCo ",
+        "Model":"GPaCo ",
         "method_details":"ViT-L",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -362,12 +506,12 @@
     {
         "table_id":3369,
         "row_id":55840,
-        "rank":11,
+        "rank":15,
         "method":"VOLO-D5+HAT",
         "mlmodel":{
 
         },
-        "method_short":"VOLO-D5+HAT",
+        "Model":"VOLO-D5+HAT",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -398,12 +542,12 @@
     {
         "table_id":3369,
         "row_id":43621,
-        "rank":12,
+        "rank":16,
         "method":"Pyramid Adversarial Training Improves ViT (Im21k)",
         "mlmodel":{
 
         },
-        "method_short":"Pyramid Adversarial Training Improves ViT ",
+        "Model":"Pyramid Adversarial Training Improves ViT ",
         "method_details":"Im21k",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -434,12 +578,12 @@
     {
         "table_id":3369,
         "row_id":109652,
-        "rank":13,
+        "rank":17,
         "method":"FAN-L-Hybrid+STL",
         "mlmodel":{
 
         },
-        "method_short":"FAN-L-Hybrid+STL",
+        "Model":"FAN-L-Hybrid+STL",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -474,12 +618,12 @@
     {
         "table_id":3369,
         "row_id":47970,
-        "rank":14,
+        "rank":18,
         "method":"SEER (RegNet10B)",
         "mlmodel":{
 
         },
-        "method_short":"SEER ",
+        "Model":"SEER ",
         "method_details":"RegNet10B",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -510,12 +654,12 @@
     {
         "table_id":3369,
         "row_id":44731,
-        "rank":15,
+        "rank":19,
         "method":"DiscreteViT",
         "mlmodel":{
 
         },
-        "method_short":"DiscreteViT",
+        "Model":"DiscreteViT",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -545,13 +689,49 @@
     },
     {
         "table_id":3369,
+        "row_id":113251,
+        "rank":20,
+        "method":"CAFormer-B36 (384)",
+        "mlmodel":{
+
+        },
+        "Model":"CAFormer-B36 ",
+        "method_details":"384",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"45"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":45.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113251"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
         "row_id":43620,
-        "rank":16,
+        "rank":21,
         "method":"Pyramid Adversarial Training Improves ViT",
         "mlmodel":{
 
         },
-        "method_short":"Pyramid Adversarial Training Improves ViT",
+        "Model":"Pyramid Adversarial Training Improves ViT",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -581,13 +761,121 @@
     },
     {
         "table_id":3369,
+        "row_id":113250,
+        "rank":22,
+        "method":"CAFormer-B36",
+        "mlmodel":{
+
+        },
+        "Model":"CAFormer-B36",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"46.1"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":46.1
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113250"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
+        "row_id":113253,
+        "rank":23,
+        "method":"ConvFormer-B36 (384)",
+        "mlmodel":{
+
+        },
+        "Model":"ConvFormer-B36 ",
+        "method_details":"384",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"47.8"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":47.8
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113253"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
+        "row_id":113252,
+        "rank":24,
+        "method":"ConvFormer-B36",
+        "mlmodel":{
+
+        },
+        "Model":"ConvFormer-B36",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-24",
+        "metrics":{
+            "Top-1 Error Rate":"48.9"
+        },
+        "raw_metrics":{
+            "Top-1 Error Rate":48.9
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1098433,
+            "title":"MetaFormer Baselines for Vision",
+            "url":"\/paper\/metaformer-baselines-for-vision",
+            "published":"2022-10-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/metaformer-baselines-for-vision\/review\/?hl=113252"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3369,
         "row_id":33633,
-        "rank":17,
+        "rank":25,
         "method":"RVT-B*",
         "mlmodel":{
 
         },
-        "method_short":"RVT-B*",
+        "Model":"RVT-B*",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -618,12 +906,12 @@
     {
         "table_id":3369,
         "row_id":53858,
-        "rank":18,
+        "rank":26,
         "method":"Sequencer2D-L",
         "mlmodel":{
 
         },
-        "method_short":"Sequencer2D-L",
+        "Model":"Sequencer2D-L",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -654,12 +942,12 @@
     {
         "table_id":3369,
         "row_id":33632,
-        "rank":19,
+        "rank":27,
         "method":"RVT-S*",
         "mlmodel":{
 
         },
-        "method_short":"RVT-S*",
+        "Model":"RVT-S*",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -690,12 +978,12 @@
     {
         "table_id":3369,
         "row_id":17686,
-        "rank":20,
+        "rank":28,
         "method":"DeepAugment+AugMix (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"DeepAugment+AugMix ",
+        "Model":"DeepAugment+AugMix ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -730,12 +1018,12 @@
     {
         "table_id":3369,
         "row_id":44978,
-        "rank":21,
+        "rank":29,
         "method":"PRIME with JSD (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"PRIME with JSD ",
+        "Model":"PRIME with JSD ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -770,12 +1058,12 @@
     {
         "table_id":3369,
         "row_id":33631,
-        "rank":22,
+        "rank":30,
         "method":"RVT-Ti*",
         "mlmodel":{
 
         },
-        "method_short":"RVT-Ti*",
+        "Model":"RVT-Ti*",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -806,12 +1094,12 @@
     {
         "table_id":3369,
         "row_id":44945,
-        "rank":23,
+        "rank":31,
         "method":"PRIME (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"PRIME ",
+        "Model":"PRIME ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -846,12 +1134,12 @@
     {
         "table_id":3369,
         "row_id":17685,
-        "rank":24,
+        "rank":32,
         "method":"DeepAugment (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"DeepAugment ",
+        "Model":"DeepAugment ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -886,12 +1174,12 @@
     {
         "table_id":3369,
         "row_id":17683,
-        "rank":25,
+        "rank":33,
         "method":"Stylized ImageNet (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"Stylized ImageNet ",
+        "Model":"Stylized ImageNet ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -926,12 +1214,12 @@
     {
         "table_id":3369,
         "row_id":17684,
-        "rank":26,
+        "rank":34,
         "method":"AugMix (ResNet-50)",
         "mlmodel":{
 
         },
-        "method_short":"AugMix ",
+        "Model":"AugMix ",
         "method_details":"ResNet-50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -966,12 +1254,12 @@
     {
         "table_id":3369,
         "row_id":17682,
-        "rank":27,
+        "rank":35,
         "method":"ResNet-50",
         "mlmodel":{
 
         },
-        "method_short":"ResNet-50",
+        "Model":"ResNet-50",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -1006,12 +1294,12 @@
     {
         "table_id":3369,
         "row_id":34308,
-        "rank":28,
+        "rank":36,
         "method":"ResNet-152x2-SAM",
         "mlmodel":{
 
         },
-        "method_short":"ResNet-152x2-SAM",
+        "Model":"ResNet-152x2-SAM",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -1046,12 +1334,12 @@
     {
         "table_id":3369,
         "row_id":34313,
-        "rank":29,
+        "rank":37,
         "method":"ViT-B\/16-SAM",
         "mlmodel":{
 
         },
-        "method_short":"ViT-B\/16-SAM",
+        "Model":"ViT-B\/16-SAM",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -1082,12 +1370,12 @@
     {
         "table_id":3369,
         "row_id":34318,
-        "rank":30,
+        "rank":38,
         "method":"Mixer-B\/8-SAM",
         "mlmodel":{
 
         },
-        "method_short":"Mixer-B\/8-SAM",
+        "Model":"Mixer-B\/8-SAM",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
