@@ -6,7 +6,7 @@ import re
 
 from pathlib import Path
 
-dataset = 'HumanEval'
+dataset = 'MMLU'
 path_leaderboard = Path(f"data/{dataset.lower()}")
 
 included_links = []
@@ -52,9 +52,10 @@ if __name__ == '__main__':
             table.to_json(path_leaderboard / f'{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
-            table = json.loads(table)
-            table = pd.DataFrame(table)
-            title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-            title = '_'.join(title.lower().replace(f' on {dataset.lower()}', '').split())
-            table.to_json(path_leaderboard / f'{title}.json', orient='records', indent=4)
+            if table != '[]':
+                table = json.loads(table)
+                table = pd.DataFrame(table)
+                title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
+                title = '_'.join(title.lower().replace(f' on {dataset.lower()}', '').split())
+                table.to_json(path_leaderboard / f'{title}.json', orient='records', indent=4)
                 
