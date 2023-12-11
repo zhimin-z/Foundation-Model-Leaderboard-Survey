@@ -1,11 +1,12 @@
 Leaderboard,N-shot,Metrics,Format
-Chatbot Arena Leaderboad,5,EM,100.0
-Flageval,0,EM,1.000
-InstructEval,5,EM,100.0
-LLM Benchmarker Suite,0,?,100.0
-LLM-Leaderboard,"0,3,5,10","Accuracy,EM,ECE (10-bin),EM (Robustness),EM (Fairness),Denoised inference time (s),# eval,# train,truncated,# prompt tokens,# output tokens,# trials","1.000,100.00,100.0%,100.0"
-Open Ko-LLM Leaderboard,5,Accuracy,100.00
-Open LLM Leaderboard,5,Accuracy,100.00
-Open Multilingual LLM Evaluation Leaderboard,5,Accuracy,100.0
-OpenCompass,5,Accuracy,100.0
-PromptBench,3,PDR,"1.00,+-"
+Chatbot Arena Leaderboad,5,EM,1F
+Flageval,0,EM,3F
+HELM,0,"EM,ECE (10-bin),EM (Robustness),EM (Fairness),Denoised inference time (s),# eval,# train,truncated,# prompt tokens,# output tokens,# trials","0F,1F,3F"
+InstructEval,5,EM,1F
+LLM Benchmarker Suite,0,?,1F
+LLM-Leaderboard,"0,3,5,10","Accuracy,EM,ECE (10-bin),EM (Robustness),EM (Fairness),Denoised inference time (s),# eval,# train,truncated,# prompt tokens,# output tokens,# trials","0F,0F%,1F,2F,3F"
+Open Ko-LLM Leaderboard,5,Accuracy,2F
+Open LLM Leaderboard,5,Accuracy,2F
+Open Multilingual LLM Evaluation Leaderboard,5,Accuracy,1F
+OpenCompass,5,Accuracy,1F
+PromptBench,3,PDR,"2F,+-"
