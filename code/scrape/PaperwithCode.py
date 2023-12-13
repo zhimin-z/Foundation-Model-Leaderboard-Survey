@@ -6,7 +6,7 @@ import re
 
 from pathlib import Path
 
-dataset = 'ARC'
+dataset = 'BEIR'
 path_leaderboard = Path(f"data/{dataset.lower()}")
 
 included_links = []
