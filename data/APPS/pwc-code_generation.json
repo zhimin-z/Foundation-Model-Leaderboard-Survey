@@ -1,0 +1,706 @@
+[
+    {
+        "table_id":10864,
+        "row_id":96012,
+        "rank":1,
+        "method":"CodeRL+CodeT5",
+        "mlmodel":{
+
+        },
+        "method_short":"CodeRL+CodeT5",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-09-14",
+        "metrics":{
+            "Competition Pass@any":"15.70%",
+            "Interview Pass@any":"14.33%",
+            "Introductory Pass@any":"38.10%",
+            "Competition Pass@1":"0.69%",
+            "Interview Pass@1":"1.80%",
+            "Introductory Pass@1":"6.77%",
+            "Competition Pass@5":"2.36%",
+            "Interview Pass@5":"4.48%",
+            "Introductory Pass@5":"15.27%",
+            "Competition Pass@1000":"15.70%",
+            "Interview Pass@1000":"14.33%",
+            "Introductory Pass@1000":"38.10%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":15.7,
+            "Interview Pass@any":14.33,
+            "Introductory Pass@any":38.1,
+            "Competition Pass@1":0.69,
+            "Interview Pass@1":1.8,
+            "Introductory Pass@1":6.77,
+            "Competition Pass@5":2.36,
+            "Interview Pass@5":4.48,
+            "Introductory Pass@5":15.27,
+            "Competition Pass@1000":15.7,
+            "Interview Pass@1000":14.33,
+            "Introductory Pass@1000":38.1
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1038242,
+            "title":"CodeRL: Mastering Code Generation through Pretrained Models and Deep Reinforcement Learning",
+            "url":"\/paper\/coderl-mastering-code-generation-through",
+            "published":"2022-07-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/coderl-mastering-code-generation-through\/review\/?hl=96012"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":95922,
+        "rank":2,
+        "method":"Codex davinci-002",
+        "mlmodel":{
+
+        },
+        "method_short":"Codex davinci-002",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-07-21",
+        "metrics":{
+            "Competition Pass@any":"14.5%",
+            "Interview Pass@any":"25.4",
+            "Introductory Pass@any":"60.9",
+            "Competition Pass@1":"2.5",
+            "Interview Pass@1":"6.4",
+            "Introductory Pass@1":"29.3",
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":14.5,
+            "Interview Pass@any":25.4,
+            "Introductory Pass@any":60.9,
+            "Competition Pass@1":2.5,
+            "Interview Pass@1":6.4,
+            "Introductory Pass@1":29.3,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1047522,
+            "title":"CodeT: Code Generation with Generated Tests",
+            "url":"\/paper\/codet-code-generation-with-generated-tests",
+            "published":"2022-07-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/codet-code-generation-with-generated-tests\/review\/?hl=95922"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":96037,
+        "rank":3,
+        "method":"GPT-J 6B (Finetuned)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-J 6B ",
+        "method_details":"Finetuned",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-09-14",
+        "metrics":{
+            "Competition Pass@any":"13.51%",
+            "Interview Pass@any":"13.15%",
+            "Introductory Pass@any":"35.20%",
+            "Competition Pass@1":"0.50%",
+            "Interview Pass@1":"1.00%",
+            "Introductory Pass@1":"5.60%",
+            "Competition Pass@5":"1.00%",
+            "Interview Pass@5":"1.73%",
+            "Introductory Pass@5":"9.20%",
+            "Competition Pass@1000":"13.51%",
+            "Interview Pass@1000":"13.15%",
+            "Introductory Pass@1000":"35.20%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":13.51,
+            "Interview Pass@any":13.15,
+            "Introductory Pass@any":35.2,
+            "Competition Pass@1":0.5,
+            "Interview Pass@1":1.0,
+            "Introductory Pass@1":5.6,
+            "Competition Pass@5":1.0,
+            "Interview Pass@5":1.73,
+            "Introductory Pass@5":9.2,
+            "Competition Pass@1000":13.51,
+            "Interview Pass@1000":13.15,
+            "Introductory Pass@1000":35.2
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1038242,
+            "title":"CodeRL: Mastering Code Generation through Pretrained Models and Deep Reinforcement Learning",
+            "url":"\/paper\/coderl-mastering-code-generation-through",
+            "published":"2022-07-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/coderl-mastering-code-generation-through\/review\/?hl=96037"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":96036,
+        "rank":4,
+        "method":"GPT-Neo 2.7B (Finetuned)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-Neo 2.7B ",
+        "method_details":"Finetuned",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-09-14",
+        "metrics":{
+            "Competition Pass@any":"11.40%",
+            "Interview Pass@any":"9.83%",
+            "Introductory Pass@any":"27.90%",
+            "Competition Pass@1":"0.00%",
+            "Interview Pass@1":"0.57%",
+            "Introductory Pass@1":"3.90%",
+            "Competition Pass@5":"0.00%",
+            "Interview Pass@5":"0.80%",
+            "Introductory Pass@5":"5.50%",
+            "Competition Pass@1000":"11.40%",
+            "Interview Pass@1000":"9.83%",
+            "Introductory Pass@1000":"27.90%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":11.4,
+            "Interview Pass@any":9.83,
+            "Introductory Pass@any":27.9,
+            "Competition Pass@1":0.0,
+            "Interview Pass@1":0.57,
+            "Introductory Pass@1":3.9,
+            "Competition Pass@5":0.0,
+            "Interview Pass@5":0.8,
+            "Introductory Pass@5":5.5,
+            "Competition Pass@1000":11.4,
+            "Interview Pass@1000":9.83,
+            "Introductory Pass@1000":27.9
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1038242,
+            "title":"CodeRL: Mastering Code Generation through Pretrained Models and Deep Reinforcement Learning",
+            "url":"\/paper\/coderl-mastering-code-generation-through",
+            "published":"2022-07-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/coderl-mastering-code-generation-through\/review\/?hl=96036"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":96035,
+        "rank":5,
+        "method":"GPT2 1.5B (Finetuned)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT2 1.5B ",
+        "method_details":"Finetuned",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-09-14",
+        "metrics":{
+            "Competition Pass@any":"8.80%",
+            "Interview Pass@any":"9.27%",
+            "Introductory Pass@any":"25.00%",
+            "Competition Pass@1":"0.00%",
+            "Interview Pass@1":"0.70%",
+            "Introductory Pass@1":"1.30%",
+            "Competition Pass@5":"0.00%",
+            "Interview Pass@5":"1.03%",
+            "Introductory Pass@5":"3.60%",
+            "Competition Pass@1000":"8.80%",
+            "Interview Pass@1000":"9.27%",
+            "Introductory Pass@1000":"25.00%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":8.8,
+            "Interview Pass@any":9.27,
+            "Introductory Pass@any":25.0,
+            "Competition Pass@1":0.0,
+            "Interview Pass@1":0.7,
+            "Introductory Pass@1":1.3,
+            "Competition Pass@5":0.0,
+            "Interview Pass@5":1.03,
+            "Introductory Pass@5":3.6,
+            "Competition Pass@1000":8.8,
+            "Interview Pass@1000":9.27,
+            "Introductory Pass@1000":25.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1038242,
+            "title":"CodeRL: Mastering Code Generation through Pretrained Models and Deep Reinforcement Learning",
+            "url":"\/paper\/coderl-mastering-code-generation-through",
+            "published":"2022-07-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/coderl-mastering-code-generation-through\/review\/?hl=96035"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":88475,
+        "rank":6,
+        "method":"AlphaCode 1B Filtered from  50000",
+        "mlmodel":{
+
+        },
+        "method_short":"AlphaCode 1B Filtered from  50000",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-08",
+        "metrics":{
+            "Competition Pass@any":"7.75%",
+            "Interview Pass@any":"9.66%",
+            "Introductory Pass@any":"20.36%",
+            "Competition Pass@1":null,
+            "Interview Pass@1":null,
+            "Introductory Pass@1":null,
+            "Competition Pass@5":"7.75%",
+            "Interview Pass@5":"9.66%",
+            "Introductory Pass@5":" 20.36%",
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":7.75,
+            "Interview Pass@any":9.66,
+            "Introductory Pass@any":20.36,
+            "Competition Pass@1":null,
+            "Interview Pass@1":null,
+            "Introductory Pass@1":null,
+            "Competition Pass@5":7.75,
+            "Interview Pass@5":9.66,
+            "Introductory Pass@5":20.36,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":977660,
+            "title":"Competition-Level Code Generation with AlphaCode",
+            "url":"\/paper\/competition-level-code-generation-with-1",
+            "published":"2022-02-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":36732,
+        "rank":7,
+        "method":"Codex 12B (Raw)",
+        "mlmodel":{
+
+        },
+        "method_short":"Codex 12B ",
+        "method_details":"Raw",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-07-07",
+        "metrics":{
+            "Competition Pass@any":"3.32%",
+            "Interview Pass@any":"3.70%",
+            "Introductory Pass@any":"25.02%",
+            "Competition Pass@1":"0.02%",
+            "Interview Pass@1":"0.14%",
+            "Introductory Pass@1":"4.14%",
+            "Competition Pass@5":"0.09%",
+            "Interview Pass@5":"0.51%",
+            "Introductory Pass@5":"9.65%",
+            "Competition Pass@1000":"3.23%",
+            "Interview Pass@1000":"3.70%",
+            "Introductory Pass@1000":"25.02%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":3.32,
+            "Interview Pass@any":3.7,
+            "Introductory Pass@any":25.02,
+            "Competition Pass@1":0.02,
+            "Interview Pass@1":0.14,
+            "Introductory Pass@1":4.14,
+            "Competition Pass@5":0.09,
+            "Interview Pass@5":0.51,
+            "Introductory Pass@5":9.65,
+            "Competition Pass@1000":3.23,
+            "Interview Pass@1000":3.7,
+            "Introductory Pass@1000":25.02
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":831822,
+            "title":"Evaluating Large Language Models Trained on Code",
+            "url":"\/paper\/evaluating-large-language-models-trained-on",
+            "published":"2021-07-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/evaluating-large-language-models-trained-on\/review\/?hl=36732"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":66,
+                "name":"GPT",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":36731,
+        "rank":8,
+        "method":"GPT-Neo 2.7B",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-Neo 2.7B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-05-20",
+        "metrics":{
+            "Competition Pass@any":"0.0%",
+            "Interview Pass@any":"0.80%",
+            "Introductory Pass@any":"5.50%",
+            "Competition Pass@1":"0.00%",
+            "Interview Pass@1":"0.57%",
+            "Introductory Pass@1":"3.90%",
+            "Competition Pass@5":"0.00%",
+            "Interview Pass@5":"0.80%",
+            "Introductory Pass@5":"5.50%",
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":0.0,
+            "Interview Pass@any":0.8,
+            "Introductory Pass@any":5.5,
+            "Competition Pass@1":0.0,
+            "Interview Pass@1":0.57,
+            "Introductory Pass@1":3.9,
+            "Competition Pass@5":0.0,
+            "Interview Pass@5":0.8,
+            "Introductory Pass@5":5.5,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":802796,
+            "title":"Measuring Coding Challenge Competence With APPS",
+            "url":"\/paper\/measuring-coding-challenge-competence-with",
+            "published":"2021-05-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/measuring-coding-challenge-competence-with\/review\/?hl=36731"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":66,
+                "name":"GPT",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":112369,
+        "rank":9,
+        "method":"CodeBot-15b",
+        "mlmodel":{
+
+        },
+        "method_short":"CodeBot-15b",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-11-20",
+        "metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":"12.49",
+            "Interview Pass@1":"17.72",
+            "Introductory Pass@1":"31.96",
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":12.49,
+            "Interview Pass@1":17.72,
+            "Introductory Pass@1":31.96,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":112370,
+        "rank":10,
+        "method":"CodeChain+WizardCoder-15b",
+        "mlmodel":{
+
+        },
+        "method_short":"CodeChain+WizardCoder-15b",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-13",
+        "metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":"3.75",
+            "Interview Pass@1":" 7.49",
+            "Introductory Pass@1":" 26.29",
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":3.75,
+            "Interview Pass@1":7.49,
+            "Introductory Pass@1":26.29,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":112371,
+        "rank":11,
+        "method":"WizardCoder-15b",
+        "mlmodel":{
+
+        },
+        "method_short":"WizardCoder-15b",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-14",
+        "metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":"0.81",
+            "Interview Pass@1":"4.21",
+            "Introductory Pass@1":"26.04",
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "raw_metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":0.81,
+            "Interview Pass@1":4.21,
+            "Introductory Pass@1":26.04,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":null,
+            "Interview Pass@1000":null,
+            "Introductory Pass@1000":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10864,
+        "row_id":46923,
+        "rank":12,
+        "method":"AlphaCode 1B",
+        "mlmodel":{
+
+        },
+        "method_short":"AlphaCode 1B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-02",
+        "metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":null,
+            "Interview Pass@1":null,
+            "Introductory Pass@1":null,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":"7.06%",
+            "Interview Pass@1000":"5.24%",
+            "Introductory Pass@1000":"17.67%"
+        },
+        "raw_metrics":{
+            "Competition Pass@any":null,
+            "Interview Pass@any":null,
+            "Introductory Pass@any":null,
+            "Competition Pass@1":null,
+            "Interview Pass@1":null,
+            "Introductory Pass@1":null,
+            "Competition Pass@5":null,
+            "Interview Pass@5":null,
+            "Introductory Pass@5":null,
+            "Competition Pass@1000":7.06,
+            "Interview Pass@1000":5.24,
+            "Introductory Pass@1000":17.67
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":977660,
+            "title":"Competition-Level Code Generation with AlphaCode",
+            "url":"\/paper\/competition-level-code-generation-with-1",
+            "published":"2022-02-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
