@@ -6,19 +6,18 @@ import re
 
 from pathlib import Path
 
-dataset = 'BEIR'
-path_leaderboard = Path(f"data/{dataset.lower()}")
+def name_process(name):
+    name = name.lower()
+    name = name.split()
+    name = '-'.join(name)
+    return name
+
+folder = ''
+dataset = 'BoolQ'
+
+path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
 included_links = []
-
-
-def RefineBaseTitle(title, allUpper=False):
-    title = title.replace('-', '_')
-    if allUpper:
-        title = title.upper()
-    else:
-        title = '_'.join(word.capitalize() for word in title.split('_'))
-    return title
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -26,7 +25,7 @@ if __name__ == '__main__':
 
     leaderboard_links = []
     base_url = 'https://paperswithcode.com'
-    url = f'{base_url}/dataset/{dataset.lower()}'
+    url = f'{base_url}/dataset/{name_process(dataset)}'
     driver.get(url)
     
     if included_links:
@@ -48,7 +47,7 @@ if __name__ == '__main__':
             table = json.loads(table)
             table = pd.DataFrame(table)
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-            title = '_'.join(title.lower().replace(f' on {dataset.lower()}', '').split())
+            title = '_'.join(title.lower().replace(f' on {folder.lower()}', '').replace(f' on {dataset.lower()}', '').split())
             table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
@@ -56,6 +55,6 @@ if __name__ == '__main__':
                 table = json.loads(table)
                 table = pd.DataFrame(table)
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-                title = '_'.join(title.lower().replace(f' on {dataset.lower()}', '').split())
+                title = '_'.join(title.lower().replace(f' on {folder.lower()}', '').replace(f' on {dataset.lower()}', '').split())
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
                 
