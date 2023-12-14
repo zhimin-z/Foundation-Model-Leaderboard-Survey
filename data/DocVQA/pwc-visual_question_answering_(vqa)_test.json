@@ -1,0 +1,1153 @@
+[
+    {
+        "table_id":3425,
+        "row_id":17962,
+        "rank":1,
+        "method":"Human",
+        "mlmodel":{
+
+        },
+        "method_short":"Human",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-07-01",
+        "metrics":{
+            "ANLS":"0.981",
+            "Accuracy":"94.36"
+        },
+        "raw_metrics":{
+            "ANLS":0.981,
+            "Accuracy":94.36
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":206514,
+            "title":"DocVQA: A Dataset for VQA on Document Images",
+            "url":"\/paper\/docvqa-a-dataset-for-vqa-on-document-images",
+            "published":"2020-07-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/docvqa-a-dataset-for-vqa-on-document-images\/review\/?hl=17962"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":70,
+                "name":"Human",
+                "color":"#d32727"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":113317,
+        "rank":2,
+        "method":"qwenvl",
+        "mlmodel":{
+
+        },
+        "method_short":"qwenvl",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-08-24",
+        "metrics":{
+            "ANLS":"0.9024",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.9024,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1269007,
+            "title":"Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
+            "url":"\/paper\/qwen-vl-a-frontier-large-vision-language",
+            "published":"2023-08-24T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110550,
+        "rank":3,
+        "method":"PaLI-3 (w\/ OCR)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLI-3 ",
+        "method_details":"w\/ OCR",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-13",
+        "metrics":{
+            "ANLS":"0.886",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.886,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1300142,
+            "title":"PaLI-3 Vision Language Models: Smaller, Faster, Stronger",
+            "url":"\/paper\/pali-3-vision-language-models-smaller-faster",
+            "published":"2023-10-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pali-3-vision-language-models-smaller-faster\/review\/?hl=110550"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110294,
+        "rank":4,
+        "method":"ERNIE-Layout large (ensemble)",
+        "mlmodel":{
+
+        },
+        "method_short":"ERNIE-Layout large ",
+        "method_details":"ensemble",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-12",
+        "metrics":{
+            "ANLS":"0.8841",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8841,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1091666,
+            "title":"ERNIE-Layout: Layout Knowledge Enhanced Pre-training for Visually-rich Document Understanding",
+            "url":"\/paper\/ernie-layout-layout-knowledge-enhanced-pre",
+            "published":"2022-10-12T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/ernie-layout-layout-knowledge-enhanced-pre\/review\/?hl=110294"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            },
+            {
+                "id":284,
+                "name":"Ensemble",
+                "color":"#77bb41"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110801,
+        "rank":5,
+        "method":"GPT-4",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-4",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-01",
+        "metrics":{
+            "ANLS":"0.884",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.884,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1221165,
+            "title":"Layout and Task Aware Instruction Prompt for Zero-shot Document Image Question Answering",
+            "url":"\/paper\/layout-and-task-aware-instruction-prompt-for",
+            "published":"2023-06-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/layout-and-task-aware-instruction-prompt-for\/review\/?hl=110801"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110452,
+        "rank":6,
+        "method":"DocFormerv2-large",
+        "mlmodel":{
+
+        },
+        "method_short":"DocFormerv2-large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-02",
+        "metrics":{
+            "ANLS":"0.8784",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8784,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1222205,
+            "title":"DocFormerv2: Local Features for Document Understanding",
+            "url":"\/paper\/docformerv2-local-features-for-document",
+            "published":"2023-06-02T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/docformerv2-local-features-for-document\/review\/?hl=110452"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110505,
+        "rank":7,
+        "method":"UDOP (aux)",
+        "mlmodel":{
+
+        },
+        "method_short":"UDOP ",
+        "method_details":"aux",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-05",
+        "metrics":{
+            "ANLS":"0.878",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.878,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1124203,
+            "title":"Unifying Vision, Text, and Layout for Universal Document Processing",
+            "url":"\/paper\/unifying-vision-text-and-layout-for-universal",
+            "published":"2022-12-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/unifying-vision-text-and-layout-for-universal\/review\/?hl=110505"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110552,
+        "rank":8,
+        "method":"PaLI-3",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLI-3",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-13",
+        "metrics":{
+            "ANLS":"0.876",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.876,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1300142,
+            "title":"PaLI-3 Vision Language Models: Smaller, Faster, Stronger",
+            "url":"\/paper\/pali-3-vision-language-models-smaller-faster",
+            "published":"2023-10-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pali-3-vision-language-models-smaller-faster\/review\/?hl=110552"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":26302,
+        "rank":9,
+        "method":"TILT-Large",
+        "mlmodel":{
+
+        },
+        "method_short":"TILT-Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-02-18",
+        "metrics":{
+            "ANLS":"0.8705",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8705,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":746494,
+            "title":"Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer",
+            "url":"\/paper\/going-full-tilt-boogie-on-document",
+            "published":"2021-02-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/going-full-tilt-boogie-on-document\/review\/?hl=26302"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110127,
+        "rank":10,
+        "method":"PaLI-X (Single-task FT w\/ OCR)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLI-X ",
+        "method_details":"Single-task FT w\/ OCR",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-29",
+        "metrics":{
+            "ANLS":"0.868",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.868,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1219485,
+            "title":"PaLI-X: On Scaling up a Multilingual Vision and Language Model",
+            "url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision",
+            "published":"2023-05-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision\/review\/?hl=110127"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110298,
+        "rank":11,
+        "method":"LayoutLMv2LARGE",
+        "mlmodel":{
+
+        },
+        "method_short":"LayoutLMv2LARGE",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-29",
+        "metrics":{
+            "ANLS":"0.8672",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8672,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":732507,
+            "title":"LayoutLMv2: Multi-modal Pre-training for Visually-Rich Document Understanding",
+            "url":"\/paper\/layoutlmv2-multi-modal-pre-training-for",
+            "published":"2020-12-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/layoutlmv2-multi-modal-pre-training-for\/review\/?hl=110298"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110293,
+        "rank":12,
+        "method":"ERNIE-Layout large",
+        "mlmodel":{
+
+        },
+        "method_short":"ERNIE-Layout large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-12",
+        "metrics":{
+            "ANLS":"0.8486",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8486,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1091666,
+            "title":"ERNIE-Layout: Layout Knowledge Enhanced Pre-training for Visually-rich Document Understanding",
+            "url":"\/paper\/ernie-layout-layout-knowledge-enhanced-pre",
+            "published":"2022-10-12T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/ernie-layout-layout-knowledge-enhanced-pre\/review\/?hl=110293"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110281,
+        "rank":13,
+        "method":"UDOP",
+        "mlmodel":{
+
+        },
+        "method_short":"UDOP",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-05",
+        "metrics":{
+            "ANLS":"0.847",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.847,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1124203,
+            "title":"Unifying Vision, Text, and Layout for Universal Document Processing",
+            "url":"\/paper\/unifying-vision-text-and-layout-for-universal",
+            "published":"2022-12-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/unifying-vision-text-and-layout-for-universal\/review\/?hl=110281"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":26305,
+        "rank":14,
+        "method":"TILT-Base",
+        "mlmodel":{
+
+        },
+        "method_short":"TILT-Base",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-02-18",
+        "metrics":{
+            "ANLS":"0.8392",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8392,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":746494,
+            "title":"Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer",
+            "url":"\/paper\/going-full-tilt-boogie-on-document",
+            "published":"2021-02-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/going-full-tilt-boogie-on-document\/review\/?hl=26305"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110800,
+        "rank":15,
+        "method":"Claude + LATIN-Prompt",
+        "mlmodel":{
+
+        },
+        "method_short":"Claude + LATIN-Prompt",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-01",
+        "metrics":{
+            "ANLS":"0.8336",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8336,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1221165,
+            "title":"Layout and Task Aware Instruction Prompt for Zero-shot Document Image Question Answering",
+            "url":"\/paper\/layout-and-task-aware-instruction-prompt-for",
+            "published":"2023-06-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/layout-and-task-aware-instruction-prompt-for\/review\/?hl=110800"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110893,
+        "rank":16,
+        "method":"GPT-3.5 + LATIN-Prompt",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3.5 + LATIN-Prompt",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-01",
+        "metrics":{
+            "ANLS":"0.8255",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8255,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1221165,
+            "title":"Layout and Task Aware Instruction Prompt for Zero-shot Document Image Question Answering",
+            "url":"\/paper\/layout-and-task-aware-instruction-prompt-for",
+            "published":"2023-06-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/layout-and-task-aware-instruction-prompt-for\/review\/?hl=110893"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110125,
+        "rank":17,
+        "method":"PaLI-X (Multi-task FT)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLI-X ",
+        "method_details":"Multi-task FT",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-29",
+        "metrics":{
+            "ANLS":"0.809",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.809,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1219485,
+            "title":"PaLI-X: On Scaling up a Multilingual Vision and Language Model",
+            "url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision",
+            "published":"2023-05-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision\/review\/?hl=110125"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110134,
+        "rank":18,
+        "method":"DUBLIN (variable resolution)",
+        "mlmodel":{
+
+        },
+        "method_short":"DUBLIN ",
+        "method_details":"variable resolution",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-23",
+        "metrics":{
+            "ANLS":"0.803",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.803,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1214268,
+            "title":"DUBLIN -- Document Understanding By Language-Image Network",
+            "url":"\/paper\/dublin-document-understanding-by-language",
+            "published":"2023-05-23T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/dublin-document-understanding-by-language\/review\/?hl=110134"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110123,
+        "rank":19,
+        "method":"PaLI-X (Single-task FT)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLI-X ",
+        "method_details":"Single-task FT",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-29",
+        "metrics":{
+            "ANLS":"0.80",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.8,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1219485,
+            "title":"PaLI-X: On Scaling up a Multilingual Vision and Language Model",
+            "url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision",
+            "published":"2023-05-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pali-x-on-scaling-up-a-multilingual-vision\/review\/?hl=110123"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110133,
+        "rank":20,
+        "method":"DUBLIN",
+        "mlmodel":{
+
+        },
+        "method_short":"DUBLIN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-23",
+        "metrics":{
+            "ANLS":"0.782",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.782,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1214268,
+            "title":"DUBLIN -- Document Understanding By Language-Image Network",
+            "url":"\/paper\/dublin-document-understanding-by-language",
+            "published":"2023-05-23T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/dublin-document-understanding-by-language\/review\/?hl=110133"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110297,
+        "rank":21,
+        "method":"LayoutLMv2BASE",
+        "mlmodel":{
+
+        },
+        "method_short":"LayoutLMv2BASE",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-29",
+        "metrics":{
+            "ANLS":"0.7808",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.7808,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":732507,
+            "title":"LayoutLMv2: Multi-modal Pre-training for Visually-Rich Document Understanding",
+            "url":"\/paper\/layoutlmv2-multi-modal-pre-training-for",
+            "published":"2020-12-29T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/layoutlmv2-multi-modal-pre-training-for\/review\/?hl=110297"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":72,
+                "name":"Multiple-Models",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110280,
+        "rank":22,
+        "method":"Pix2Struct-large",
+        "mlmodel":{
+
+        },
+        "method_short":"Pix2Struct-large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-07",
+        "metrics":{
+            "ANLS":"0.766",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.766,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1088385,
+            "title":"Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",
+            "url":"\/paper\/pix2struct-screenshot-parsing-as-pretraining",
+            "published":"2022-10-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pix2struct-screenshot-parsing-as-pretraining\/review\/?hl=110280"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110833,
+        "rank":23,
+        "method":"MatCha",
+        "mlmodel":{
+
+        },
+        "method_short":"MatCha",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-19",
+        "metrics":{
+            "ANLS":"0.742",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.742,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1130468,
+            "title":"MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering",
+            "url":"\/paper\/matcha-enhancing-visual-language-pretraining",
+            "published":"2022-12-19T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/matcha-enhancing-visual-language-pretraining\/review\/?hl=110833"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110276,
+        "rank":24,
+        "method":"Pix2Struct-base",
+        "mlmodel":{
+
+        },
+        "method_short":"Pix2Struct-base",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-07",
+        "metrics":{
+            "ANLS":"0.721",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.721,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1088385,
+            "title":"Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",
+            "url":"\/paper\/pix2struct-screenshot-parsing-as-pretraining",
+            "published":"2022-10-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pix2struct-screenshot-parsing-as-pretraining\/review\/?hl=110276"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110283,
+        "rank":25,
+        "method":"Donut",
+        "mlmodel":{
+
+        },
+        "method_short":"Donut",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-11-30",
+        "metrics":{
+            "ANLS":"0.675",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.675,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":922990,
+            "title":"OCR-free Document Understanding Transformer",
+            "url":"\/paper\/donut-document-understanding-transformer",
+            "published":"2021-11-30T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/donut-document-understanding-transformer\/review\/?hl=110283"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":17964,
+        "rank":26,
+        "method":"BERT_LARGE_SQUAD_DOCVQA_FINETUNED_Baseline",
+        "mlmodel":{
+
+        },
+        "method_short":"BERT_LARGE_SQUAD_DOCVQA_FINETUNED_Baseline",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-07-01",
+        "metrics":{
+            "ANLS":"0.665",
+            "Accuracy":"55.77"
+        },
+        "raw_metrics":{
+            "ANLS":0.665,
+            "Accuracy":55.77
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":206514,
+            "title":"DocVQA: A Dataset for VQA on Document Images",
+            "url":"\/paper\/docvqa-a-dataset-for-vqa-on-document-images",
+            "published":"2020-07-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/docvqa-a-dataset-for-vqa-on-document-images\/review\/?hl=17964"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110128,
+        "rank":27,
+        "method":"Qwen-VL",
+        "mlmodel":{
+
+        },
+        "method_short":"Qwen-VL",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-08-24",
+        "metrics":{
+            "ANLS":"0.651",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.651,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1269007,
+            "title":"Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
+            "url":"\/paper\/qwen-vl-a-frontier-large-vision-language",
+            "published":"2023-08-24T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":286,
+                "name":"Not fine-tuned",
+                "color":"#2771d3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110284,
+        "rank":28,
+        "method":"Dessurt",
+        "mlmodel":{
+
+        },
+        "method_short":"Dessurt",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-03-30",
+        "metrics":{
+            "ANLS":"0.632",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.632,
+            "Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":986973,
+            "title":"End-to-end Document Recognition and Understanding with Dessurt",
+            "url":"\/paper\/end-to-end-document-recognition-and",
+            "published":"2022-03-30T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/end-to-end-document-recognition-and\/review\/?hl=110284"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3425,
+        "row_id":110129,
+        "rank":29,
+        "method":"Qwen-VL-Chat",
+        "mlmodel":{
+
+        },
+        "method_short":"Qwen-VL-Chat",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-08-24",
+        "metrics":{
+            "ANLS":"0.626",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "ANLS":0.626,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1269007,
+            "title":"Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
+            "url":"\/paper\/qwen-vl-a-frontier-large-vision-language",
+            "published":"2023-08-24T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":286,
+                "name":"Not fine-tuned",
+                "color":"#2771d3"
+            }
+        ],
+        "reports":[
+
+        ]
+    }
+]
