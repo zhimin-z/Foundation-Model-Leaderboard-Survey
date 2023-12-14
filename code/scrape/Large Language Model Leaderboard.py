@@ -10,6 +10,7 @@ def name_process(name, filter_keywords = []):
         name = name.replace(keyword.lower(), '')
     name = name.split()
     name = '_'.join(name)
+    name = name.replace('-', '_')
     return name
 
 folder = 'Large Language Model Leaderboard'
