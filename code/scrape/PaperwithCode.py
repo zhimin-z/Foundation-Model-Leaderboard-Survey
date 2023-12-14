@@ -6,15 +6,17 @@ import re
 
 from pathlib import Path
 
-def name_process(name):
+def dataset_rename(name):
     name = name.lower()
     name = name.split()
     name = '-'.join(name)
     return name
 
+def file_rename(folder, dataset, title):
+    return '_'.join(title.lower().replace(f' on {folder.lower()}', '').replace(f' on {dataset.lower()}', '').split())
+
 folder = ''
 dataset = 'BoolQ'
-
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
 included_links = []
@@ -25,7 +27,7 @@ if __name__ == '__main__':
 
     leaderboard_links = []
     base_url = 'https://paperswithcode.com'
-    url = f'{base_url}/dataset/{name_process(dataset)}'
+    url = f'{base_url}/dataset/{dataset_rename(dataset)}'
     driver.get(url)
     
     if included_links:
@@ -47,7 +49,7 @@ if __name__ == '__main__':
             table = json.loads(table)
             table = pd.DataFrame(table)
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-            title = '_'.join(title.lower().replace(f' on {folder.lower()}', '').replace(f' on {dataset.lower()}', '').split())
+            title = file_rename(folder, dataset, title)
             table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
@@ -55,6 +57,6 @@ if __name__ == '__main__':
                 table = json.loads(table)
                 table = pd.DataFrame(table)
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-                title = '_'.join(title.lower().replace(f' on {folder.lower()}', '').replace(f' on {dataset.lower()}', '').split())
+                title = file_rename(folder, dataset, title)
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
                 
