@@ -15,7 +15,7 @@ def file_rename(folder, dataset, title):
     return '_'.join(title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '').split())
 
 folder = ''
-dataset = 'FewCLUE'
+dataset = 'Flickr30k'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
 included_links = []
