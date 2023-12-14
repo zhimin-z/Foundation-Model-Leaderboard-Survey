@@ -9,7 +9,7 @@ def name_process(name, filter_keywords = []):
     for keyword in filter_keywords:
         name = name.replace(keyword.lower(), '')
     name = name.split()
-    name = '-'.join(name)
+    name = '_'.join(name)
     return name
 
 folder = 'MMBench'
