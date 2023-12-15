@@ -8,6 +8,8 @@ from pathlib import Path
 
 def dataset_rename(name):
     name = name.lower()
+    name = name.replace(' - ', '_')
+    name = name.replace('-', '_')
     name = name.replace(' ', '_')
     return name
 
@@ -15,10 +17,10 @@ def file_rename(folder, dataset, title):
     return '_'.join(title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '').split())
 
 folder = ''
-dataset = 'HallusionBench'
+dataset = 'ImageNet'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
-included_links = []
+included_links = ['few-shot-image-classification-on-imagenet-1-1', 'few-shot-image-classification-on-imagenet-5', 'few-shot-image-classification-on-imagenet-10', 'image-classification-on-imagenet', 'self-supervised-image-classification-on', 'self-supervised-image-classification-on-1', 'zero-shot-transfer-image-classification-on-1', 'zero-shot-transfer-image-classification-on-3']
 
 if __name__ == '__main__':
     driver = uc.Chrome()

@@ -7,7 +7,7 @@
         "mlmodel":{
 
         },
-        "Model":"BASIC ",
+        "method_short":"BASIC ",
         "method_details":"Lion",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -45,7 +45,7 @@
         "mlmodel":{
 
         },
-        "Model":"CoCa",
+        "method_short":"CoCa",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -83,7 +83,7 @@
         "mlmodel":{
 
         },
-        "Model":"LiT-22B",
+        "method_short":"LiT-22B",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -121,7 +121,7 @@
         "mlmodel":{
 
         },
-        "Model":"BASIC",
+        "method_short":"BASIC",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -159,7 +159,7 @@
         "mlmodel":{
 
         },
-        "Model":"LiT ViT-e",
+        "method_short":"LiT ViT-e",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -197,7 +197,7 @@
         "mlmodel":{
 
         },
-        "Model":"LiT-tuning",
+        "method_short":"LiT-tuning",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -229,13 +229,51 @@
     },
     {
         "table_id":7189,
-        "row_id":43155,
+        "row_id":113824,
         "rank":7,
+        "method":"IMP-MoE-L",
+        "mlmodel":{
+
+        },
+        "method_short":"IMP-MoE-L",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-10",
+        "metrics":{
+            "Accuracy (Private)":"83.9",
+            "Accuracy (Public)":null
+        },
+        "raw_metrics":{
+            "Accuracy (Private)":83.9,
+            "Accuracy (Public)":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1205713,
+            "title":"Alternating Gradient Descent and Mixture-of-Experts for Integrated Multimodal Perception",
+            "url":"\/paper\/alternating-gradient-descent-and-mixture-of",
+            "published":"2023-05-10T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/alternating-gradient-descent-and-mixture-of\/review\/?hl=113824"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":7189,
+        "row_id":43155,
+        "rank":8,
         "method":"Florence-CoSwin-H (@384pix)",
         "mlmodel":{
 
         },
-        "Model":"Florence-CoSwin-H ",
+        "method_short":"Florence-CoSwin-H ",
         "method_details":"@384pix",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -268,12 +306,12 @@
     {
         "table_id":7189,
         "row_id":100973,
-        "rank":8,
+        "rank":9,
         "method":"MAWS (ViT-2B)",
         "mlmodel":{
 
         },
-        "Model":"MAWS ",
+        "method_short":"MAWS ",
         "method_details":"ViT-2B",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -306,12 +344,12 @@
     {
         "table_id":7189,
         "row_id":111663,
-        "rank":9,
+        "rank":10,
         "method":"EVA-CLIP-E\/14+",
         "mlmodel":{
 
         },
-        "Model":"EVA-CLIP-E\/14+",
+        "method_short":"EVA-CLIP-E\/14+",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -344,12 +382,12 @@
     {
         "table_id":7189,
         "row_id":105069,
-        "rank":10,
+        "rank":11,
         "method":"CLIPA (ViT-H\/14-336px)",
         "mlmodel":{
 
         },
-        "Model":"CLIPA ",
+        "method_short":"CLIPA ",
         "method_details":"ViT-H\/14-336px",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -382,12 +420,12 @@
     {
         "table_id":7189,
         "row_id":109662,
-        "rank":11,
+        "rank":12,
         "method":"MAWS (ViT-H)",
         "mlmodel":{
 
         },
-        "Model":"MAWS ",
+        "method_short":"MAWS ",
         "method_details":"ViT-H",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -420,12 +458,12 @@
     {
         "table_id":7189,
         "row_id":95496,
-        "rank":12,
+        "rank":13,
         "method":"REACT",
         "mlmodel":{
 
         },
-        "Model":"REACT",
+        "method_short":"REACT",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -458,12 +496,12 @@
     {
         "table_id":7189,
         "row_id":42555,
-        "rank":13,
+        "rank":14,
         "method":"ALIGN",
         "mlmodel":{
 
         },
-        "Model":"ALIGN",
+        "method_short":"ALIGN",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -496,12 +534,12 @@
     {
         "table_id":7189,
         "row_id":83153,
-        "rank":14,
+        "rank":15,
         "method":"CLIP\uff08ViT-L\/14-336px\uff09",
         "mlmodel":{
 
         },
-        "Model":"CLIP\uff08ViT-L\/14-336px\uff09",
+        "method_short":"CLIP\uff08ViT-L\/14-336px\uff09",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -534,12 +572,12 @@
     {
         "table_id":7189,
         "row_id":79788,
-        "rank":15,
+        "rank":16,
         "method":"AltCLIP",
         "mlmodel":{
 
         },
-        "Model":"AltCLIP",
+        "method_short":"AltCLIP",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -572,12 +610,12 @@
     {
         "table_id":7189,
         "row_id":70422,
-        "rank":16,
+        "rank":17,
         "method":"PaLI",
         "mlmodel":{
 
         },
-        "Model":"PaLI",
+        "method_short":"PaLI",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -610,12 +648,12 @@
     {
         "table_id":7189,
         "row_id":109092,
-        "rank":17,
+        "rank":18,
         "method":"Diffusion Classifier (zero-shot)",
         "mlmodel":{
 
         },
-        "Model":"Diffusion Classifier ",
+        "method_short":"Diffusion Classifier ",
         "method_details":"zero-shot",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -648,12 +686,12 @@
     {
         "table_id":7189,
         "row_id":45053,
-        "rank":18,
+        "rank":19,
         "method":"CLIP (ResNet50)",
         "mlmodel":{
 
         },
-        "Model":"CLIP ",
+        "method_short":"CLIP ",
         "method_details":"ResNet50",
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -686,12 +724,12 @@
     {
         "table_id":7189,
         "row_id":110774,
-        "rank":19,
+        "rank":20,
         "method":"CWCL",
         "mlmodel":{
 
         },
-        "Model":"CWCL",
+        "method_short":"CWCL",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
@@ -724,12 +762,12 @@
     {
         "table_id":7189,
         "row_id":27637,
-        "rank":20,
+        "rank":21,
         "method":"CLIP",
         "mlmodel":{
 
         },
-        "Model":"CLIP",
+        "method_short":"CLIP",
         "method_details":null,
         "mlmodel_short":null,
         "mlmodeldetails":null,
