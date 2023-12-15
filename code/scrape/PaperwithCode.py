@@ -17,10 +17,10 @@ def file_rename(folder, dataset, title):
     return '_'.join(title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '').split())
 
 folder = ''
-dataset = 'ImageNet'
+dataset = 'LAMBADA'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
-included_links = ['few-shot-image-classification-on-imagenet-1-1', 'few-shot-image-classification-on-imagenet-5', 'few-shot-image-classification-on-imagenet-10', 'image-classification-on-imagenet', 'self-supervised-image-classification-on', 'self-supervised-image-classification-on-1', 'zero-shot-transfer-image-classification-on-1', 'zero-shot-transfer-image-classification-on-3']
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -28,14 +28,14 @@ if __name__ == '__main__':
 
     leaderboard_links = []
     base_url = 'https://paperswithcode.com'
-    url = f'{base_url}/dataset/{dataset_rename(dataset)}'
-    driver.get(url)
     
     if included_links:
         for match in included_links:
             link = f'{base_url}/sota/{match}'
             leaderboard_links.append(link)
     else:
+        url = f'{base_url}/dataset/{dataset_rename(dataset)}'
+        driver.get(url)
         leaderboard_tables = driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr')
         for leaderboard in leaderboard_tables:
             text = leaderboard.get_attribute('onclick')

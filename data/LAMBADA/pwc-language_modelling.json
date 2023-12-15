@@ -1,0 +1,1370 @@
+[
+    {
+        "table_id":3157,
+        "row_id":51385,
+        "rank":1,
+        "method":"PaLM-540B (Few-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM-540B ",
+        "method_details":"Few-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-05",
+        "metrics":{
+            "Accuracy":"89.7",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":89.7,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":989558,
+            "title":"PaLM: Scaling Language Modeling with Pathways",
+            "url":"\/paper\/palm-scaling-language-modeling-with-pathways-1",
+            "published":"2022-04-05T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":183,
+                "name":"few-shot",
+                "color":"#a1df95"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":51386,
+        "rank":2,
+        "method":"Megatron-Turing NLG 530B (Few-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"Megatron-Turing NLG 530B ",
+        "method_details":"Few-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-01-28",
+        "metrics":{
+            "Accuracy":"87.2",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":87.2,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":952554,
+            "title":"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model",
+            "url":"\/paper\/using-deepspeed-and-megatron-to-train",
+            "published":"2022-01-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/using-deepspeed-and-megatron-to-train\/review\/?hl=51386"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":183,
+                "name":"few-shot",
+                "color":"#a1df95"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":102516,
+        "rank":3,
+        "method":"PaLM 2-L (one-shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM 2-L ",
+        "method_details":"one-shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-17",
+        "metrics":{
+            "Accuracy":"86.9",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":86.9,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1210556,
+            "title":"PaLM 2 Technical Report",
+            "url":"\/paper\/palm-2-technical-report-1",
+            "published":"2023-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/palm-2-technical-report-1\/review\/?hl=102516"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":16794,
+        "rank":4,
+        "method":"GPT-3 175B (Few-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3 175B ",
+        "method_details":"Few-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-28",
+        "metrics":{
+            "Accuracy":"86.4",
+            "Perplexity":"1.92"
+        },
+        "raw_metrics":{
+            "Accuracy":86.4,
+            "Perplexity":1.92
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":198147,
+            "title":"Language Models are Few-Shot Learners",
+            "url":"\/paper\/language-models-are-few-shot-learners",
+            "published":"2020-05-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-models-are-few-shot-learners\/review\/?hl=16794"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":183,
+                "name":"few-shot",
+                "color":"#a1df95"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":105782,
+        "rank":5,
+        "method":"LLaMA-65B+CFG (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"LLaMA-65B+CFG ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-30",
+        "metrics":{
+            "Accuracy":"84.0",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":84.0,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1238561,
+            "title":"Stay on topic with Classifier-Free Guidance",
+            "url":"\/paper\/stay-on-topic-with-classifier-free-guidance",
+            "published":"2023-06-30T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/stay-on-topic-with-classifier-free-guidance\/review\/?hl=105782"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":105784,
+        "rank":6,
+        "method":"LLaMA-30B+CFG (zero-shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"LLaMA-30B+CFG ",
+        "method_details":"zero-shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-30",
+        "metrics":{
+            "Accuracy":"83.9",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":83.9,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1238561,
+            "title":"Stay on topic with Classifier-Free Guidance",
+            "url":"\/paper\/stay-on-topic-with-classifier-free-guidance",
+            "published":"2023-06-30T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/stay-on-topic-with-classifier-free-guidance\/review\/?hl=105784"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":102515,
+        "rank":7,
+        "method":"PaLM 2-M (one-shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM 2-M ",
+        "method_details":"one-shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-17",
+        "metrics":{
+            "Accuracy":"83.7",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":83.7,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1210556,
+            "title":"PaLM 2 Technical Report",
+            "url":"\/paper\/palm-2-technical-report-1",
+            "published":"2023-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/palm-2-technical-report-1\/review\/?hl=102515"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":42546,
+        "rank":8,
+        "method":"Cohere  Large",
+        "mlmodel":{
+
+        },
+        "method_short":"Cohere  Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-11-15",
+        "metrics":{
+            "Accuracy":"82.33",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":82.33,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":105783,
+        "rank":9,
+        "method":"LLaMA-13B+CFG (zero-shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"LLaMA-13B+CFG ",
+        "method_details":"zero-shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-30",
+        "metrics":{
+            "Accuracy":"82.2",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":82.2,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1238561,
+            "title":"Stay on topic with Classifier-Free Guidance",
+            "url":"\/paper\/stay-on-topic-with-classifier-free-guidance",
+            "published":"2023-06-30T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/stay-on-topic-with-classifier-free-guidance\/review\/?hl=105783"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":51384,
+        "rank":10,
+        "method":"PaLM-540B (One-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM-540B ",
+        "method_details":"One-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-05",
+        "metrics":{
+            "Accuracy":"81.8",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":81.8,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":989558,
+            "title":"PaLM: Scaling Language Modeling with Pathways",
+            "url":"\/paper\/palm-scaling-language-modeling-with-pathways-1",
+            "published":"2022-04-05T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":214,
+                "name":"one-shot",
+                "color":"#ea9e57"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":51377,
+        "rank":11,
+        "method":"GLaM 62B\/64E (One-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLaM 62B\/64E ",
+        "method_details":"One-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-12-13",
+        "metrics":{
+            "Accuracy":"80.9",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":80.9,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":929896,
+            "title":"GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
+            "url":"\/paper\/glam-efficient-scaling-of-language-models",
+            "published":"2021-12-13T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/glam-efficient-scaling-of-language-models\/review\/?hl=51377"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":214,
+                "name":"one-shot",
+                "color":"#ea9e57"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":102514,
+        "rank":12,
+        "method":"PaLM 2-S (one-shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM 2-S ",
+        "method_details":"one-shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-17",
+        "metrics":{
+            "Accuracy":"80.7",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":80.7,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1210556,
+            "title":"PaLM 2 Technical Report",
+            "url":"\/paper\/palm-2-technical-report-1",
+            "published":"2023-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/palm-2-technical-report-1\/review\/?hl=102514"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88974,
+        "rank":13,
+        "method":"GLM-130B (bidirectional attention)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLM-130B ",
+        "method_details":"bidirectional attention",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-05",
+        "metrics":{
+            "Accuracy":"80.2",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":80.2,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1086925,
+            "title":"GLM-130B: An Open Bilingual Pre-trained Model",
+            "url":"\/paper\/glm-130b-an-open-bilingual-pre-trained-model",
+            "published":"2022-10-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/glm-130b-an-open-bilingual-pre-trained-model\/review\/?hl=88974"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88777,
+        "rank":14,
+        "method":"SparseGPT (175B, 2:4 Sparsity)",
+        "mlmodel":{
+
+        },
+        "method_short":"SparseGPT ",
+        "method_details":"175B, 2:4 Sparsity",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-02",
+        "metrics":{
+            "Accuracy":"79.47",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":79.47,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136959,
+            "title":"SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "url":"\/paper\/massive-language-models-can-be-accurately",
+            "published":"2023-01-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/massive-language-models-can-be-accurately\/review\/?hl=88777"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88775,
+        "rank":15,
+        "method":"SparseGPT (175B, 4:8 Sparsity)",
+        "mlmodel":{
+
+        },
+        "method_short":"SparseGPT ",
+        "method_details":"175B, 4:8 Sparsity",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-02",
+        "metrics":{
+            "Accuracy":"78.77",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":78.77,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136959,
+            "title":"SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "url":"\/paper\/massive-language-models-can-be-accurately",
+            "published":"2023-01-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/massive-language-models-can-be-accurately\/review\/?hl=88775"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":51379,
+        "rank":16,
+        "method":"PaLM-540B (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"PaLM-540B ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-04-05",
+        "metrics":{
+            "Accuracy":"77.9",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":77.9,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":989558,
+            "title":"PaLM: Scaling Language Modeling with Pathways",
+            "url":"\/paper\/palm-scaling-language-modeling-with-pathways-1",
+            "published":"2022-04-05T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":51378,
+        "rank":17,
+        "method":"Chinchilla (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"Chinchilla ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-03-29",
+        "metrics":{
+            "Accuracy":"77.7",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":77.7,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":985465,
+            "title":"Training Compute-Optimal Large Language Models",
+            "url":"\/paper\/training-compute-optimal-large-language",
+            "published":"2022-03-29T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88773,
+        "rank":18,
+        "method":"SparseGPT (175B, 50% Sparsity)",
+        "mlmodel":{
+
+        },
+        "method_short":"SparseGPT ",
+        "method_details":"175B, 50% Sparsity",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-02",
+        "metrics":{
+            "Accuracy":"76.51",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":76.51,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136959,
+            "title":"SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "url":"\/paper\/massive-language-models-can-be-accurately",
+            "published":"2023-01-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/massive-language-models-can-be-accurately\/review\/?hl=88773"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":60327,
+        "rank":19,
+        "method":"GPT-3 175B (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3 175B ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-28",
+        "metrics":{
+            "Accuracy":"76.2",
+            "Perplexity":"3.00"
+        },
+        "raw_metrics":{
+            "Accuracy":76.2,
+            "Perplexity":3.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":198147,
+            "title":"Language Models are Few-Shot Learners",
+            "url":"\/paper\/language-models-are-few-shot-learners",
+            "published":"2020-05-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-models-are-few-shot-learners\/review\/?hl=60327"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88769,
+        "rank":20,
+        "method":"OPT-175B",
+        "mlmodel":{
+
+        },
+        "method_short":"OPT-175B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-02",
+        "metrics":{
+            "Accuracy":"75.59",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":75.59,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136959,
+            "title":"SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "url":"\/paper\/massive-language-models-can-be-accurately",
+            "published":"2023-01-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/massive-language-models-can-be-accurately\/review\/?hl=88769"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":60328,
+        "rank":21,
+        "method":"GPT-3 13B (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3 13B ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-28",
+        "metrics":{
+            "Accuracy":"72.5",
+            "Perplexity":"3.56"
+        },
+        "raw_metrics":{
+            "Accuracy":72.5,
+            "Perplexity":3.56
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":198147,
+            "title":"Language Models are Few-Shot Learners",
+            "url":"\/paper\/language-models-are-few-shot-learners",
+            "published":"2020-05-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-models-are-few-shot-learners\/review\/?hl=60328"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":39826,
+        "rank":22,
+        "method":"GLM-XXLarge (bidirectional)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLM-XXLarge ",
+        "method_details":"bidirectional",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-18",
+        "metrics":{
+            "Accuracy":"72.35",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":72.35,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":754939,
+            "title":"GLM: General Language Model Pretraining with Autoregressive Blank Infilling",
+            "url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general",
+            "published":"2021-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general\/review\/?hl=39826"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":106559,
+        "rank":23,
+        "method":"Pythia 12B(Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"Pythia 12B",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-04-03",
+        "metrics":{
+            "Accuracy":"70.46",
+            "Perplexity":"3.92"
+        },
+        "raw_metrics":{
+            "Accuracy":70.46,
+            "Perplexity":3.92
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1186187,
+            "title":"Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
+            "url":"\/paper\/pythia-a-suite-for-analyzing-large-language",
+            "published":"2023-04-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pythia-a-suite-for-analyzing-large-language\/review\/?hl=106559"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":60329,
+        "rank":24,
+        "method":"GPT-3 6.7B (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3 6.7B ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-28",
+        "metrics":{
+            "Accuracy":"70.3",
+            "Perplexity":"4.00"
+        },
+        "raw_metrics":{
+            "Accuracy":70.3,
+            "Perplexity":4.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":198147,
+            "title":"Language Models are Few-Shot Learners",
+            "url":"\/paper\/language-models-are-few-shot-learners",
+            "published":"2020-05-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-models-are-few-shot-learners\/review\/?hl=60329"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":44555,
+        "rank":25,
+        "method":"GPT-J-6B",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-J-6B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-08",
+        "metrics":{
+            "Accuracy":"69.7",
+            "Perplexity":"3.99"
+        },
+        "raw_metrics":{
+            "Accuracy":69.7,
+            "Perplexity":3.99
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":113984,
+        "rank":26,
+        "method":"Mamba-2.8B",
+        "mlmodel":{
+
+        },
+        "method_short":"Mamba-2.8B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-12-01",
+        "metrics":{
+            "Accuracy":"69.2",
+            "Perplexity":"4.23"
+        },
+        "raw_metrics":{
+            "Accuracy":69.2,
+            "Perplexity":4.23
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1334747,
+            "title":"Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+            "url":"\/paper\/mamba-linear-time-sequence-modeling-with",
+            "published":"2023-12-01T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":106560,
+        "rank":27,
+        "method":"Pythia 6.9B(Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"Pythia 6.9B",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-04-03",
+        "metrics":{
+            "Accuracy":"67.28",
+            "Perplexity":"4.45"
+        },
+        "raw_metrics":{
+            "Accuracy":67.28,
+            "Perplexity":4.45
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1186187,
+            "title":"Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
+            "url":"\/paper\/pythia-a-suite-for-analyzing-large-language",
+            "published":"2023-04-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pythia-a-suite-for-analyzing-large-language\/review\/?hl=106560"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":39827,
+        "rank":28,
+        "method":"GLM-XXLarge (unidirectional)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLM-XXLarge ",
+        "method_details":"unidirectional",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-18",
+        "metrics":{
+            "Accuracy":"67.18",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":67.18,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":754939,
+            "title":"GLM: General Language Model Pretraining with Autoregressive Blank Infilling",
+            "url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general",
+            "published":"2021-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general\/review\/?hl=39827"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":60330,
+        "rank":29,
+        "method":"GPT-3 2.7B (Zero-Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-3 2.7B ",
+        "method_details":"Zero-Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-28",
+        "metrics":{
+            "Accuracy":"67.1",
+            "Perplexity":"4.60"
+        },
+        "raw_metrics":{
+            "Accuracy":67.1,
+            "Perplexity":4.6
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":198147,
+            "title":"Language Models are Few-Shot Learners",
+            "url":"\/paper\/language-models-are-few-shot-learners",
+            "published":"2020-05-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-models-are-few-shot-learners\/review\/?hl=60330"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":59450,
+        "rank":30,
+        "method":"GPT-2 1.5B (Zero Shot)",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-2 1.5B ",
+        "method_details":"Zero Shot",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-02-14",
+        "metrics":{
+            "Accuracy":"63.24",
+            "Perplexity":"8.63"
+        },
+        "raw_metrics":{
+            "Accuracy":63.24,
+            "Perplexity":8.63
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":105884,
+            "title":"Language Models are Unsupervised Multitask Learners",
+            "url":"\/paper\/language-models-are-unsupervised-multitask",
+            "published":"2019-02-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":188,
+                "name":"zero-shot",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":22620,
+        "rank":31,
+        "method":"Universal Transformer (w\/ dynamic halting)",
+        "mlmodel":{
+
+        },
+        "method_short":"Universal Transformer ",
+        "method_details":"w\/ dynamic halting",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-07-10",
+        "metrics":{
+            "Accuracy":"56.25",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":56.25,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":52491,
+            "title":"Universal Transformers",
+            "url":"\/paper\/universal-transformers",
+            "published":"2018-07-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/universal-transformers\/review\/?hl=22620"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":22613,
+        "rank":32,
+        "method":"Residual Shuffle-Exchange network",
+        "mlmodel":{
+
+        },
+        "method_short":"Residual Shuffle-Exchange network",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-04-06",
+        "metrics":{
+            "Accuracy":"54.34",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":54.34,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":190350,
+            "title":"Residual Shuffle-Exchange Networks for Fast Processing of Long Sequences",
+            "url":"\/paper\/residual-shuffle-exchange-networks-for-fast",
+            "published":"2020-04-06T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/residual-shuffle-exchange-networks-for-fast\/review\/?hl=22613"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":22621,
+        "rank":33,
+        "method":"Gated-Attention Reader (+ features)",
+        "mlmodel":{
+
+        },
+        "method_short":"Gated-Attention Reader ",
+        "method_details":"+ features",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-10-26",
+        "metrics":{
+            "Accuracy":"49.0",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":49.0,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":26218,
+            "title":"Broad Context Language Modeling as Reading Comprehension",
+            "url":"\/paper\/broad-context-language-modeling-as-reading",
+            "published":"2016-10-26T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/broad-context-language-modeling-as-reading\/review\/?hl=22621"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3157,
+        "row_id":88771,
+        "rank":34,
+        "method":"OPT-175B (50% Sparsity)",
+        "mlmodel":{
+
+        },
+        "method_short":"OPT-175B ",
+        "method_details":"50% Sparsity",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-02",
+        "metrics":{
+            "Accuracy":"0.02",
+            "Perplexity":null
+        },
+        "raw_metrics":{
+            "Accuracy":0.02,
+            "Perplexity":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136959,
+            "title":"SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot",
+            "url":"\/paper\/massive-language-models-can-be-accurately",
+            "published":"2023-01-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/massive-language-models-can-be-accurately\/review\/?hl=88771"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
