@@ -11,11 +11,11 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'VCR'
-dataset = 'vcr'
+folder = 'MC-TACO'
+dataset = 'mc-taco'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
-included_links = ['visual-question-answering-on-vcr-q-a-test', 'visual-question-answering-on-vcr-qa-r-test', 'visual-question-answering-on-vcr-q-ar-test']
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
