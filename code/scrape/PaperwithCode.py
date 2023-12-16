@@ -11,11 +11,11 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'SST-2'
-dataset = 'sst-2'
+folder = 'Food-101'
+dataset = 'food-101'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
-included_links = ['sentiment-analysis-on-sst-2-binary']
+included_links = ['zero-shot-transfer-image-classification-on-17']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
