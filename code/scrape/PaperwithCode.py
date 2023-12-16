@@ -6,18 +6,16 @@ import re
 
 from pathlib import Path
 
-def dataset_rename(name):
-    name = name.lower()
-    name = name.replace(' - ', '_')
-    name = name.replace('-', '_')
-    name = name.replace(' ', '_')
-    return name
-
 def file_rename(folder, dataset, title):
-    return '_'.join(title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '').split())
+    title = title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '')
+    title = title.replace(' / ', '_')
+    title = title.replace(' - ', '_')
+    title = title.replace('-', '_')
+    title = title.replace(' ', '_')
+    return title
 
-folder = ''
-dataset = 'LAMBADA'
+folder = 'CivilComments'
+dataset = 'civil-comments'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
 included_links = []
@@ -34,7 +32,7 @@ if __name__ == '__main__':
             link = f'{base_url}/sota/{match}'
             leaderboard_links.append(link)
     else:
-        url = f'{base_url}/dataset/{dataset_rename(dataset)}'
+        url = f'{base_url}/dataset/{dataset}'
         driver.get(url)
         leaderboard_tables = driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr')
         for leaderboard in leaderboard_tables:
