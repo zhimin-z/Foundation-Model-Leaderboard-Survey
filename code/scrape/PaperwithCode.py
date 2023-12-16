@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = ''
-dataset = 'cifar-10'
+folder = 'NoCaps'
+dataset = 'nocaps'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
 included_links = []
