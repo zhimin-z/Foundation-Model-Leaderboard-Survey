@@ -6,19 +6,16 @@ import re
 
 from pathlib import Path
 
-def file_rename(folder, dataset, title):
-    title = title.lower().replace(f' on {dataset.lower()}', '').replace(f' on {folder.lower()}', '')
-    title = title.replace(' / ', '_')
-    title = title.replace(' - ', '_')
-    title = title.replace('-', '_')
-    title = title.replace(' ', '_')
+def file_rename(folder, title):
+    title = title.lower().replace(f' on {folder.lower()}', '')
+    title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'CivilComments'
-dataset = 'civil-comments'
+folder = 'SST-2'
+dataset = 'sst-2'
 path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
 
-included_links = []
+included_links = ['sentiment-analysis-on-sst-2-binary']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -48,7 +45,7 @@ if __name__ == '__main__':
             table = json.loads(table)
             table = pd.DataFrame(table)
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-            title = file_rename(folder, dataset, title)
+            title = file_rename(folder, title)
             table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
@@ -56,6 +53,6 @@ if __name__ == '__main__':
                 table = json.loads(table)
                 table = pd.DataFrame(table)
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-                title = file_rename(folder, dataset, title)
+                title = file_rename(folder, title)
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
                 

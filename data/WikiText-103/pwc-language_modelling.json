@@ -1,0 +1,3474 @@
+[
+    {
+        "table_id":72,
+        "row_id":108501,
+        "rank":1,
+        "method":"RETRO (7.5B)",
+        "mlmodel":{
+
+        },
+        "method_short":"RETRO ",
+        "method_details":"7.5B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-12-08",
+        "metrics":{
+            "Test perplexity":"2.4",
+            "Validation perplexity":null,
+            "Number of params":"7532M"
+        },
+        "raw_metrics":{
+            "Test perplexity":2.4,
+            "Validation perplexity":null,
+            "Number of params":7532000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":928029,
+            "title":"Improving language models by retrieving from trillions of tokens",
+            "url":"\/paper\/improving-language-models-by-retrieving-from",
+            "published":"2021-12-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":97198,
+        "rank":2,
+        "method":"Hybrid H3 (2.7B)",
+        "mlmodel":{
+
+        },
+        "method_short":"Hybrid H3 ",
+        "method_details":"2.7B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-28",
+        "metrics":{
+            "Test perplexity":"10.6",
+            "Validation perplexity":null,
+            "Number of params":"2700M"
+        },
+        "raw_metrics":{
+            "Test perplexity":10.6,
+            "Validation perplexity":null,
+            "Number of params":2700000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1136103,
+            "title":"Hungry Hungry Hippos: Towards Language Modeling with State Space Models",
+            "url":"\/paper\/hungry-hungry-hippos-towards-language",
+            "published":"2022-12-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/hungry-hungry-hippos-towards-language\/review\/?hl=97198"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":7720,
+        "rank":3,
+        "method":"Megatron-LM",
+        "mlmodel":{
+
+        },
+        "method_short":"Megatron-LM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-09-17",
+        "metrics":{
+            "Test perplexity":"10.81",
+            "Validation perplexity":null,
+            "Number of params":"8300M"
+        },
+        "raw_metrics":{
+            "Test perplexity":10.81,
+            "Validation perplexity":null,
+            "Number of params":8300000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":154243,
+            "title":"Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+            "url":"\/paper\/megatron-lm-training-multi-billion-parameter",
+            "published":"2019-09-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/megatron-lm-training-multi-billion-parameter\/review\/?hl=7720"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":39824,
+        "rank":4,
+        "method":"GLM-XXLarge (bidirectional)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLM-XXLarge ",
+        "method_details":"bidirectional",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-18",
+        "metrics":{
+            "Test perplexity":"11.33",
+            "Validation perplexity":null,
+            "Number of params":"10000M"
+        },
+        "raw_metrics":{
+            "Test perplexity":11.33,
+            "Validation perplexity":null,
+            "Number of params":10000000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":754939,
+            "title":"GLM: General Language Model Pretraining with Autoregressive Blank Infilling",
+            "url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general",
+            "published":"2021-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general\/review\/?hl=39824"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":39825,
+        "rank":5,
+        "method":"GLM-XXLarge (unidirectional)",
+        "mlmodel":{
+
+        },
+        "method_short":"GLM-XXLarge ",
+        "method_details":"unidirectional",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-18",
+        "metrics":{
+            "Test perplexity":"12.22",
+            "Validation perplexity":null,
+            "Number of params":"10000M"
+        },
+        "raw_metrics":{
+            "Test perplexity":12.22,
+            "Validation perplexity":null,
+            "Number of params":10000000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":754939,
+            "title":"GLM: General Language Model Pretraining with Autoregressive Blank Infilling",
+            "url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general",
+            "published":"2021-03-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/all-nlp-tasks-are-generation-tasks-a-general\/review\/?hl=39825"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":97197,
+        "rank":6,
+        "method":"Hybrid H3 (1.3B)",
+        "mlmodel":{
+
+        },
+        "method_short":"Hybrid H3 ",
+        "method_details":"1.3B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-28",
+        "metrics":{
+            "Test perplexity":"12.5",
+            "Validation perplexity":null,
+            "Number of params":"1300M"
+        },
+        "raw_metrics":{
+            "Test perplexity":12.5,
+            "Validation perplexity":null,
+            "Number of params":1300000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1136103,
+            "title":"Hungry Hungry Hippos: Towards Language Modeling with State Space Models",
+            "url":"\/paper\/hungry-hungry-hippos-towards-language",
+            "published":"2022-12-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/hungry-hungry-hippos-towards-language\/review\/?hl=97197"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":111774,
+        "rank":7,
+        "method":"GateLoop (125M)",
+        "mlmodel":{
+
+        },
+        "method_short":"GateLoop ",
+        "method_details":"125M",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-11-03",
+        "metrics":{
+            "Test perplexity":"13.4",
+            "Validation perplexity":null,
+            "Number of params":"125M"
+        },
+        "raw_metrics":{
+            "Test perplexity":13.4,
+            "Validation perplexity":null,
+            "Number of params":125000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1314406,
+            "title":"GateLoop: Fully Data-Controlled Linear Recurrence for Sequence Modeling",
+            "url":"\/paper\/gateloop-fully-data-controlled-linear",
+            "published":"2023-11-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/gateloop-fully-data-controlled-linear\/review\/?hl=111774"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":105259,
+        "rank":8,
+        "method":"kNN-LM w\/ Adaptive Coefficient",
+        "mlmodel":{
+
+        },
+        "method_short":"kNN-LM w\/ Adaptive Coefficient",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-10-28",
+        "metrics":{
+            "Test perplexity":"15.5",
+            "Validation perplexity":"15.72",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":15.5,
+            "Validation perplexity":15.72,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1102160,
+            "title":"You can't pick your neighbors, or can you? When and how to rely on retrieval in the $k$NN-LM",
+            "url":"\/paper\/you-can-t-pick-your-neighbors-or-can-you-when",
+            "published":"2022-10-28T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":8697,
+        "rank":9,
+        "method":"kNN-LM w\/ Continuous Cache",
+        "mlmodel":{
+
+        },
+        "method_short":"kNN-LM w\/ Continuous Cache",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-11-01",
+        "metrics":{
+            "Test perplexity":"15.79",
+            "Validation perplexity":"15.81",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":15.79,
+            "Validation perplexity":15.81,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":168848,
+            "title":"Generalization through Memorization: Nearest Neighbor Language Models",
+            "url":"\/paper\/generalization-through-memorization-nearest",
+            "published":"2019-11-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/generalization-through-memorization-nearest\/review\/?hl=8697"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":17070,
+        "rank":10,
+        "method":"Routing Transformer",
+        "mlmodel":{
+
+        },
+        "method_short":"Routing Transformer",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-03-12",
+        "metrics":{
+            "Test perplexity":"15.8",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":15.8,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":186978,
+            "title":"Efficient Content-Based Sparse Attention with Routing Transformers",
+            "url":"\/paper\/efficient-content-based-sparse-attention-with-1",
+            "published":"2020-03-12T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/efficient-content-based-sparse-attention-with-1\/review\/?hl=17070"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":105766,
+        "rank":11,
+        "method":"kNN-LM",
+        "mlmodel":{
+
+        },
+        "method_short":"kNN-LM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-11-01",
+        "metrics":{
+            "Test perplexity":"16.12",
+            "Validation perplexity":"16.06",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":16.12,
+            "Validation perplexity":16.06,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":168848,
+            "title":"Generalization through Memorization: Nearest Neighbor Language Models",
+            "url":"\/paper\/generalization-through-memorization-nearest",
+            "published":"2019-11-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/generalization-through-memorization-nearest\/review\/?hl=105766"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":5037,
+        "rank":12,
+        "method":"Transformer-XL (RMS dynamic eval)",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-XL ",
+        "method_details":"RMS dynamic eval",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-04-17",
+        "metrics":{
+            "Test perplexity":"16.4",
+            "Validation perplexity":"15.8",
+            "Number of params":"257M"
+        },
+        "raw_metrics":{
+            "Test perplexity":16.4,
+            "Validation perplexity":15.8,
+            "Number of params":257000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":111910,
+            "title":"Dynamic Evaluation of Transformer Language Models",
+            "url":"\/paper\/dynamic-evaluation-of-transformer-language",
+            "published":"2019-04-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/dynamic-evaluation-of-transformer-language\/review\/?hl=5037"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":51243,
+        "rank":13,
+        "method":"[?]-former (SM)",
+        "mlmodel":{
+
+        },
+        "method_short":"[?]-former ",
+        "method_details":"SM",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"16.61",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":16.61,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=51243"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":104256,
+        "rank":14,
+        "method":"-former (SM)",
+        "mlmodel":{
+
+        },
+        "method_short":"-former ",
+        "method_details":"SM",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"16.61",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":16.61,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=104256"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":104263,
+        "rank":15,
+        "method":"\u221e-former (Sticky memories + initialized GPT-2 Small)",
+        "mlmodel":{
+
+        },
+        "method_short":"\u221e-former ",
+        "method_details":"Sticky memories + initialized GPT-2 Small",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"16.61",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":16.61,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=104263"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":104262,
+        "rank":16,
+        "method":"\u221e-former (initialized GPT-2 Small)",
+        "mlmodel":{
+
+        },
+        "method_short":"\u221e-former ",
+        "method_details":"initialized GPT-2 Small",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"16.64",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":16.64,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=104262"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":97196,
+        "rank":17,
+        "method":"Hybrid H3 (355M)",
+        "mlmodel":{
+
+        },
+        "method_short":"Hybrid H3 ",
+        "method_details":"355M",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-28",
+        "metrics":{
+            "Test perplexity":"16.9",
+            "Validation perplexity":null,
+            "Number of params":"355M"
+        },
+        "raw_metrics":{
+            "Test perplexity":16.9,
+            "Validation perplexity":null,
+            "Number of params":355000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1136103,
+            "title":"Hungry Hungry Hippos: Towards Language Modeling with State Space Models",
+            "url":"\/paper\/hungry-hungry-hippos-towards-language",
+            "published":"2022-12-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/hungry-hungry-hippos-towards-language\/review\/?hl=97196"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6402,
+        "rank":18,
+        "method":"Transformer-XL (SGD dynamic eval)",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-XL ",
+        "method_details":"SGD dynamic eval",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-04-17",
+        "metrics":{
+            "Test perplexity":"17.0",
+            "Validation perplexity":"16.3",
+            "Number of params":"257M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.0,
+            "Validation perplexity":16.3,
+            "Number of params":257000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":111910,
+            "title":"Dynamic Evaluation of Transformer Language Models",
+            "url":"\/paper\/dynamic-evaluation-of-transformer-language",
+            "published":"2019-04-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/dynamic-evaluation-of-transformer-language\/review\/?hl=6402"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":8044,
+        "rank":19,
+        "method":"Compressive Transformer (18L, M=1024)",
+        "mlmodel":{
+
+        },
+        "method_short":"Compressive Transformer ",
+        "method_details":"18L, M=1024",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-11-13",
+        "metrics":{
+            "Test perplexity":"17.1",
+            "Validation perplexity":"16.0",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":17.1,
+            "Validation perplexity":16.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":172170,
+            "title":"Compressive Transformers for Long-Range Sequence Modelling",
+            "url":"\/paper\/compressive-transformers-for-long-range-1",
+            "published":"2019-11-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/compressive-transformers-for-long-range-1\/review\/?hl=8044"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26853,
+        "rank":20,
+        "method":"SRU++ Large",
+        "mlmodel":{
+
+        },
+        "method_short":"SRU++ Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-02-24",
+        "metrics":{
+            "Test perplexity":"17.1",
+            "Validation perplexity":"16.4",
+            "Number of params":"234M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.1,
+            "Validation perplexity":16.4,
+            "Number of params":234000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":748250,
+            "title":"When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute",
+            "url":"\/paper\/when-attention-meets-fast-recurrence-training",
+            "published":"2021-02-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/when-attention-meets-fast-recurrence-training\/review\/?hl=26853"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26088,
+        "rank":21,
+        "method":"SegaTransformer-XL",
+        "mlmodel":{
+
+        },
+        "method_short":"SegaTransformer-XL",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-04-30",
+        "metrics":{
+            "Test perplexity":"17.1",
+            "Validation perplexity":null,
+            "Number of params":"257M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.1,
+            "Validation perplexity":null,
+            "Number of params":257000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":192980,
+            "title":"Segatron: Segment-Aware Transformer for Language Modeling and Understanding",
+            "url":"\/paper\/segabert-pre-training-of-segment-aware-bert",
+            "published":"2020-04-30T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/segabert-pre-training-of-segment-aware-bert\/review\/?hl=26088"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":105991,
+        "rank":22,
+        "method":"Transformer+SSA+Self-ensemble",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer+SSA+Self-ensemble",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-02",
+        "metrics":{
+            "Test perplexity":"17.18",
+            "Validation perplexity":"16.54",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":17.18,
+            "Validation perplexity":16.54,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1222131,
+            "title":"The Information Pathways Hypothesis: Transformers are Dynamic Self-Ensembles",
+            "url":"\/paper\/the-information-pathways-hypothesis",
+            "published":"2023-06-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/the-information-pathways-hypothesis\/review\/?hl=105991"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":10213,
+        "rank":23,
+        "method":"Transformer-XL Large + Phrase Induction",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-XL Large + Phrase Induction",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-06-04",
+        "metrics":{
+            "Test perplexity":"17.4",
+            "Validation perplexity":null,
+            "Number of params":"257M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.4,
+            "Validation perplexity":null,
+            "Number of params":257000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":118934,
+            "title":"Improving Neural Language Models by Segmenting, Attending, and Predicting the Future",
+            "url":"\/paper\/improving-neural-language-models-by",
+            "published":"2019-06-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-neural-language-models-by\/review\/?hl=10213"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":4041,
+        "rank":24,
+        "method":"GPT-2 Full",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-2 Full",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-02-14",
+        "metrics":{
+            "Test perplexity":"17.48",
+            "Validation perplexity":null,
+            "Number of params":"1542M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.48,
+            "Validation perplexity":null,
+            "Number of params":1542000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":105884,
+            "title":"Language Models are Unsupervised Multitask Learners",
+            "url":"\/paper\/language-models-are-unsupervised-multitask",
+            "published":"2019-02-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":24707,
+        "rank":25,
+        "method":"Staged Training",
+        "mlmodel":{
+
+        },
+        "method_short":"Staged Training",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-31",
+        "metrics":{
+            "Test perplexity":"17.56",
+            "Validation perplexity":"16.89",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.56,
+            "Validation perplexity":16.89,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":732323,
+            "title":"Shortformer: Better Language Modeling using Shorter Inputs",
+            "url":"\/paper\/shortformer-better-language-modeling-using",
+            "published":"2020-12-31T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/shortformer-better-language-modeling-using\/review\/?hl=24707"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":105984,
+        "rank":26,
+        "method":"Transformer+SSA",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer+SSA",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-02",
+        "metrics":{
+            "Test perplexity":"17.60",
+            "Validation perplexity":"16.91",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":17.6,
+            "Validation perplexity":16.91,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1222131,
+            "title":"The Information Pathways Hypothesis: Transformers are Dynamic Self-Ensembles",
+            "url":"\/paper\/the-information-pathways-hypothesis",
+            "published":"2023-06-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/the-information-pathways-hypothesis\/review\/?hl=105984"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":17478,
+        "rank":27,
+        "method":"Sandwich Transformer",
+        "mlmodel":{
+
+        },
+        "method_short":"Sandwich Transformer",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-11-10",
+        "metrics":{
+            "Test perplexity":"17.96",
+            "Validation perplexity":null,
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":17.96,
+            "Validation perplexity":null,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":170192,
+            "title":"Improving Transformer Models by Reordering their Sublayers",
+            "url":"\/paper\/improving-transformer-models-by-reordering",
+            "published":"2019-11-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-transformer-models-by-reordering\/review\/?hl=17478"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":30879,
+        "rank":28,
+        "method":"DIFFQ (\u03bb=1, g=16)",
+        "mlmodel":{
+
+        },
+        "method_short":"DIFFQ ",
+        "method_details":"\u03bb=1, g=16",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-20",
+        "metrics":{
+            "Test perplexity":"18.0",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":18.0,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":785665,
+            "title":"Differentiable Model Compression via Pseudo Quantization Noise",
+            "url":"\/paper\/differentiable-model-compression-via-pseudo",
+            "published":"2021-04-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/differentiable-model-compression-via-pseudo\/review\/?hl=30879"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":103997,
+        "rank":29,
+        "method":"Mega",
+        "mlmodel":{
+
+        },
+        "method_short":"Mega",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-09-21",
+        "metrics":{
+            "Test perplexity":"18.07",
+            "Validation perplexity":null,
+            "Number of params":"252M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.07,
+            "Validation perplexity":null,
+            "Number of params":252000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1078900,
+            "title":"Mega: Moving Average Equipped Gated Attention",
+            "url":"\/paper\/mega-moving-average-equipped-gated-attention",
+            "published":"2022-09-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/mega-moving-average-equipped-gated-attention\/review\/?hl=103997"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":24706,
+        "rank":30,
+        "method":"Shortformer",
+        "mlmodel":{
+
+        },
+        "method_short":"Shortformer",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-31",
+        "metrics":{
+            "Test perplexity":"18.15",
+            "Validation perplexity":"17.47",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.15,
+            "Validation perplexity":17.47,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":732323,
+            "title":"Shortformer: Better Language Modeling using Shorter Inputs",
+            "url":"\/paper\/shortformer-better-language-modeling-using",
+            "published":"2020-12-31T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/shortformer-better-language-modeling-using\/review\/?hl=24706"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":10124,
+        "rank":31,
+        "method":"Feedback Transformer (8 layers)",
+        "mlmodel":{
+
+        },
+        "method_short":"Feedback Transformer ",
+        "method_details":"8 layers",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-02-21",
+        "metrics":{
+            "Test perplexity":"18.2",
+            "Validation perplexity":"17.5",
+            "Number of params":"139M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.2,
+            "Validation perplexity":17.5,
+            "Number of params":139000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":184213,
+            "title":"Addressing Some Limitations of Transformers with Feedback Memory",
+            "url":"\/paper\/accessing-higher-level-representations-in",
+            "published":"2020-02-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/accessing-higher-level-representations-in\/review\/?hl=10124"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26852,
+        "rank":32,
+        "method":"SRU++ Base",
+        "mlmodel":{
+
+        },
+        "method_short":"SRU++ Base",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-02-24",
+        "metrics":{
+            "Test perplexity":"18.3",
+            "Validation perplexity":"17.5",
+            "Number of params":"148M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.3,
+            "Validation perplexity":17.5,
+            "Number of params":148000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":748250,
+            "title":"When Attention Meets Fast Recurrence: Training Language Models with Reduced Compute",
+            "url":"\/paper\/when-attention-meets-fast-recurrence-training",
+            "published":"2021-02-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/when-attention-meets-fast-recurrence-training\/review\/?hl=26852"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":235,
+        "rank":33,
+        "method":"Transformer-XL Large",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-XL Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-01-09",
+        "metrics":{
+            "Test perplexity":"18.3",
+            "Validation perplexity":"18.2",
+            "Number of params":"257M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.3,
+            "Validation perplexity":18.2,
+            "Number of params":257000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":87100,
+            "title":"Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context",
+            "url":"\/paper\/transformer-xl-attentive-language-models",
+            "published":"2019-01-09T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/transformer-xl-attentive-language-models\/review\/?hl=235"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":21024,
+        "rank":34,
+        "method":"PAR Transformer Large",
+        "mlmodel":{
+
+        },
+        "method_short":"PAR Transformer Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-09-09",
+        "metrics":{
+            "Test perplexity":"18.4",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":18.4,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":217445,
+            "title":"Pay Attention when Required",
+            "url":"\/paper\/pay-attention-when-required",
+            "published":"2020-09-09T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pay-attention-when-required\/review\/?hl=21024"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":99160,
+        "rank":35,
+        "method":"Hyena-3-slim",
+        "mlmodel":{
+
+        },
+        "method_short":"Hyena-3-slim",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-02-21",
+        "metrics":{
+            "Test perplexity":"18.5",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":18.5,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1161437,
+            "title":"Hyena Hierarchy: Towards Larger Convolutional Language Models",
+            "url":"\/paper\/hyena-hierarchy-towards-larger-convolutional",
+            "published":"2023-02-21T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":99159,
+        "rank":36,
+        "method":"Hyena-3",
+        "mlmodel":{
+
+        },
+        "method_short":"Hyena-3",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-02-21",
+        "metrics":{
+            "Test perplexity":"18.6",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":18.6,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1161437,
+            "title":"Hyena Hierarchy: Towards Larger Convolutional Language Models",
+            "url":"\/paper\/hyena-hierarchy-towards-larger-convolutional",
+            "published":"2023-02-21T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":236,
+        "rank":37,
+        "method":"Transformer (Adaptive inputs)",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer ",
+        "method_details":"Adaptive inputs",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-09-28",
+        "metrics":{
+            "Test perplexity":"18.70",
+            "Validation perplexity":"17.97",
+            "Number of params":"247M"
+        },
+        "raw_metrics":{
+            "Test perplexity":18.7,
+            "Validation perplexity":17.97,
+            "Number of params":247000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":58231,
+            "title":"Adaptive Input Representations for Neural Language Modeling",
+            "url":"\/paper\/adaptive-input-representations-for-neural",
+            "published":"2018-09-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/adaptive-input-representations-for-neural\/review\/?hl=236"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":28720,
+        "rank":38,
+        "method":"T2R + Pretrain",
+        "mlmodel":{
+
+        },
+        "method_short":"T2R + Pretrain",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-24",
+        "metrics":{
+            "Test perplexity":"19.6",
+            "Validation perplexity":"19",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":19.6,
+            "Validation perplexity":19.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":756839,
+            "title":"Finetuning Pretrained Transformers into RNNs",
+            "url":"\/paper\/finetuning-pretrained-transformers-into-rnns",
+            "published":"2021-03-24T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/finetuning-pretrained-transformers-into-rnns\/review\/?hl=28720"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":20494,
+        "rank":39,
+        "method":"Subformer",
+        "mlmodel":{
+
+        },
+        "method_short":"Subformer",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-10-03",
+        "metrics":{
+            "Test perplexity":"20.39",
+            "Validation perplexity":null,
+            "Number of params":"96M"
+        },
+        "raw_metrics":{
+            "Test perplexity":20.39,
+            "Validation perplexity":null,
+            "Number of params":96000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":223366,
+            "title":"Subformer: A Parameter Reduced Transformer",
+            "url":"\/paper\/subformer-a-parameter-reduced-transformer",
+            "published":"2021-01-01T00:00:00.000000",
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":18131,
+        "rank":40,
+        "method":"BERT-Large-CAS",
+        "mlmodel":{
+
+        },
+        "method_short":"BERT-Large-CAS",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-04-20",
+        "metrics":{
+            "Test perplexity":"20.4",
+            "Validation perplexity":"19.6",
+            "Number of params":"395M"
+        },
+        "raw_metrics":{
+            "Test perplexity":20.4,
+            "Validation perplexity":19.6,
+            "Number of params":395000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":112444,
+            "title":"Language Models with Transformers",
+            "url":"\/paper\/190409408",
+            "published":"2019-04-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/190409408\/review\/?hl=18131"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6173,
+        "rank":41,
+        "method":"All-attention network (36 layers)",
+        "mlmodel":{
+
+        },
+        "method_short":"All-attention network ",
+        "method_details":"36 layers",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-07-02",
+        "metrics":{
+            "Test perplexity":"20.6",
+            "Validation perplexity":"19.7",
+            "Number of params":"133M"
+        },
+        "raw_metrics":{
+            "Test perplexity":20.6,
+            "Validation perplexity":19.7,
+            "Number of params":133000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":144546,
+            "title":"Augmenting Self-attention with Persistent Memory",
+            "url":"\/paper\/augmenting-self-attention-with-persistent",
+            "published":"2019-07-02T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/augmenting-self-attention-with-persistent\/review\/?hl=6173"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":42009,
+        "rank":42,
+        "method":"S4",
+        "mlmodel":{
+
+        },
+        "method_short":"S4",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-10-31",
+        "metrics":{
+            "Test perplexity":"21.28",
+            "Validation perplexity":null,
+            "Number of params":"249M"
+        },
+        "raw_metrics":{
+            "Test perplexity":21.28,
+            "Validation perplexity":null,
+            "Number of params":249000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":898341,
+            "title":"Efficiently Modeling Long Sequences with Structured State Spaces",
+            "url":"\/paper\/efficiently-modeling-long-sequences-with-1",
+            "published":"2021-10-31T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/efficiently-modeling-long-sequences-with-1\/review\/?hl=42009"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6399,
+        "rank":43,
+        "method":"GPT-2 Large",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-2 Large",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-02-14",
+        "metrics":{
+            "Test perplexity":"22.05",
+            "Validation perplexity":null,
+            "Number of params":"774M"
+        },
+        "raw_metrics":{
+            "Test perplexity":22.05,
+            "Validation perplexity":null,
+            "Number of params":774000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":105884,
+            "title":"Language Models are Unsupervised Multitask Learners",
+            "url":"\/paper\/language-models-are-unsupervised-multitask",
+            "published":"2019-02-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":10125,
+        "rank":44,
+        "method":"Feedback Transformer (4 layers)",
+        "mlmodel":{
+
+        },
+        "method_short":"Feedback Transformer ",
+        "method_details":"4 layers",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-02-21",
+        "metrics":{
+            "Test perplexity":"22.4",
+            "Validation perplexity":"21.4",
+            "Number of params":"44M"
+        },
+        "raw_metrics":{
+            "Test perplexity":22.4,
+            "Validation perplexity":21.4,
+            "Number of params":44000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":184213,
+            "title":"Addressing Some Limitations of Transformers with Feedback Memory",
+            "url":"\/paper\/accessing-higher-level-representations-in",
+            "published":"2020-02-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/accessing-higher-level-representations-in\/review\/?hl=10125"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":21023,
+        "rank":45,
+        "method":"PAR Transformer Base",
+        "mlmodel":{
+
+        },
+        "method_short":"PAR Transformer Base",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-09-09",
+        "metrics":{
+            "Test perplexity":"22.7",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":22.7,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":217445,
+            "title":"Pay Attention when Required",
+            "url":"\/paper\/pay-attention-when-required",
+            "published":"2020-09-09T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/pay-attention-when-required\/review\/?hl=21023"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":112440,
+        "rank":46,
+        "method":"Skip Cross-Head Transformer-XL",
+        "mlmodel":{
+
+        },
+        "method_short":"Skip Cross-Head Transformer-XL",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-11-14",
+        "metrics":{
+            "Test perplexity":"22.91",
+            "Validation perplexity":"21.87",
+            "Number of params":"122M"
+        },
+        "raw_metrics":{
+            "Test perplexity":22.91,
+            "Validation perplexity":21.87,
+            "Number of params":122000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1320745,
+            "title":"Memory-efficient Stochastic methods for Memory-based Transformers",
+            "url":"\/paper\/memory-efficient-stochastic-methods-for",
+            "published":"2023-11-14T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/memory-efficient-stochastic-methods-for\/review\/?hl=112440"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":11132,
+        "rank":47,
+        "method":"DEQ-Transformer (medium, adaptive embed)",
+        "mlmodel":{
+
+        },
+        "method_short":"DEQ-Transformer ",
+        "method_details":"medium, adaptive embed",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-09-03",
+        "metrics":{
+            "Test perplexity":"23.2",
+            "Validation perplexity":null,
+            "Number of params":"110M"
+        },
+        "raw_metrics":{
+            "Test perplexity":23.2,
+            "Validation perplexity":null,
+            "Number of params":110000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":152353,
+            "title":"Deep Equilibrium Models",
+            "url":"\/paper\/deep-equilibrium-models",
+            "published":"2019-09-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deep-equilibrium-models\/review\/?hl=11132"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26089,
+        "rank":48,
+        "method":"TaLK Convolutions",
+        "mlmodel":{
+
+        },
+        "method_short":"TaLK Convolutions",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-02-08",
+        "metrics":{
+            "Test perplexity":"23.3",
+            "Validation perplexity":null,
+            "Number of params":"240M"
+        },
+        "raw_metrics":{
+            "Test perplexity":23.3,
+            "Validation perplexity":null,
+            "Number of params":240000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":182734,
+            "title":"Time-aware Large Kernel Convolutions",
+            "url":"\/paper\/time-aware-large-kernel-convolutions",
+            "published":"2020-02-08T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/time-aware-large-kernel-convolutions\/review\/?hl=26089"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":17,
+                "name":"CNN",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":27542,
+        "rank":49,
+        "method":"Rfa-Gate-Gaussian-Stateful (Big)",
+        "mlmodel":{
+
+        },
+        "method_short":"Rfa-Gate-Gaussian-Stateful ",
+        "method_details":"Big",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-03",
+        "metrics":{
+            "Test perplexity":"23.5",
+            "Validation perplexity":"22",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":23.5,
+            "Validation perplexity":22.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":750564,
+            "title":"Random Feature Attention",
+            "url":"\/paper\/random-feature-attention-1",
+            "published":"2021-03-03T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/random-feature-attention-1\/review\/?hl=27542"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":97195,
+        "rank":50,
+        "method":"Hybrid H3 (125M)",
+        "mlmodel":{
+
+        },
+        "method_short":"Hybrid H3 ",
+        "method_details":"125M",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-28",
+        "metrics":{
+            "Test perplexity":"23.7",
+            "Validation perplexity":null,
+            "Number of params":"125M"
+        },
+        "raw_metrics":{
+            "Test perplexity":23.7,
+            "Validation perplexity":null,
+            "Number of params":125000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1136103,
+            "title":"Hungry Hungry Hippos: Towards Language Modeling with State Space Models",
+            "url":"\/paper\/hungry-hungry-hippos-towards-language",
+            "published":"2022-12-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/hungry-hungry-hippos-towards-language\/review\/?hl=97195"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":237,
+        "rank":51,
+        "method":"Transformer-XL Standard",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-XL Standard",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-01-09",
+        "metrics":{
+            "Test perplexity":"24.0",
+            "Validation perplexity":"23.1",
+            "Number of params":"151M"
+        },
+        "raw_metrics":{
+            "Test perplexity":24.0,
+            "Validation perplexity":23.1,
+            "Number of params":151000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":87100,
+            "title":"Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context",
+            "url":"\/paper\/transformer-xl-attentive-language-models",
+            "published":"2019-01-09T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/transformer-xl-attentive-language-models\/review\/?hl=237"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":18874,
+        "rank":52,
+        "method":"DeLighT",
+        "mlmodel":{
+
+        },
+        "method_short":"DeLighT",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-08-03",
+        "metrics":{
+            "Test perplexity":"24.14",
+            "Validation perplexity":null,
+            "Number of params":"99M"
+        },
+        "raw_metrics":{
+            "Test perplexity":24.14,
+            "Validation perplexity":null,
+            "Number of params":99000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":211501,
+            "title":"DeLighT: Deep and Light-weight Transformer",
+            "url":"\/paper\/delight-very-deep-and-light-weight",
+            "published":"2020-08-03T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":51246,
+        "rank":53,
+        "method":"[?]-former (Sticky memories)",
+        "mlmodel":{
+
+        },
+        "method_short":"[?]-former ",
+        "method_details":"Sticky memories",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"24.22",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":24.22,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=51246"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":104257,
+        "rank":54,
+        "method":"\\infty-former (Sticky memories)",
+        "mlmodel":{
+
+        },
+        "method_short":"\\infty-former ",
+        "method_details":"Sticky memories",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"24.22",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":24.22,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=104257"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":104258,
+        "rank":55,
+        "method":"\u221e-former (Sticky memories)",
+        "mlmodel":{
+
+        },
+        "method_short":"\u221e-former ",
+        "method_details":"Sticky memories",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-01",
+        "metrics":{
+            "Test perplexity":"24.22",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":24.22,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":860161,
+            "title":"$\\infty$-former: Infinite Memory Transformer",
+            "url":"\/paper\/infty-former-infinite-memory-transformer",
+            "published":"2021-09-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/infty-former-infinite-memory-transformer\/review\/?hl=104258"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":30054,
+        "rank":56,
+        "method":"Transformer-N",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer-N",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-08",
+        "metrics":{
+            "Test perplexity":"25.2",
+            "Validation perplexity":"24.1",
+            "Number of params":"148M"
+        },
+        "raw_metrics":{
+            "Test perplexity":25.2,
+            "Validation perplexity":24.1,
+            "Number of params":148000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":777413,
+            "title":"Revisiting Simple Neural Probabilistic Language Models",
+            "url":"\/paper\/revisiting-simple-neural-probabilistic",
+            "published":"2021-04-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":37533,
+        "rank":57,
+        "method":"FNetAR Medium",
+        "mlmodel":{
+
+        },
+        "method_short":"FNetAR Medium",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-07-22",
+        "metrics":{
+            "Test perplexity":"25.81",
+            "Validation perplexity":null,
+            "Number of params":"144.4M"
+        },
+        "raw_metrics":{
+            "Test perplexity":25.81,
+            "Validation perplexity":null,
+            "Number of params":144400000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":840584,
+            "title":"FNetAR: Mixing Tokens with Autoregressive Fourier Transforms",
+            "url":"\/paper\/fnetar-mixing-tokens-with-autoregressive",
+            "published":"2021-07-22T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/fnetar-mixing-tokens-with-autoregressive\/review\/?hl=37533"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6400,
+        "rank":58,
+        "method":"GPT-2 Medium",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-2 Medium",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-02-14",
+        "metrics":{
+            "Test perplexity":"26.37",
+            "Validation perplexity":null,
+            "Number of params":"355M"
+        },
+        "raw_metrics":{
+            "Test perplexity":26.37,
+            "Validation perplexity":null,
+            "Number of params":355000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":105884,
+            "title":"Language Models are Unsupervised Multitask Learners",
+            "url":"\/paper\/language-models-are-unsupervised-multitask",
+            "published":"2019-02-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26090,
+        "rank":59,
+        "method":"AdvSoft (+ 4 layer QRNN + dynamic eval)",
+        "mlmodel":{
+
+        },
+        "method_short":"AdvSoft ",
+        "method_details":"+ 4 layer QRNN + dynamic eval",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-06-10",
+        "metrics":{
+            "Test perplexity":"28.0",
+            "Validation perplexity":"27.2",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":28.0,
+            "Validation perplexity":27.2,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":142020,
+            "title":"Improving Neural Language Modeling via Adversarial Training",
+            "url":"\/paper\/improving-neural-language-modeling-via",
+            "published":"2019-06-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-neural-language-modeling-via\/review\/?hl=26090"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":7248,
+        "rank":60,
+        "method":"DEQ-TrellisNet",
+        "mlmodel":{
+
+        },
+        "method_short":"DEQ-TrellisNet",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-09-03",
+        "metrics":{
+            "Test perplexity":"29.0",
+            "Validation perplexity":null,
+            "Number of params":"180M"
+        },
+        "raw_metrics":{
+            "Test perplexity":29.0,
+            "Validation perplexity":null,
+            "Number of params":180000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":152353,
+            "title":"Deep Equilibrium Models",
+            "url":"\/paper\/deep-equilibrium-models",
+            "published":"2019-09-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deep-equilibrium-models\/review\/?hl=7248"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":4332,
+        "rank":61,
+        "method":"Trellis Network",
+        "mlmodel":{
+
+        },
+        "method_short":"Trellis Network",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-09-27",
+        "metrics":{
+            "Test perplexity":"29.19",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":29.19,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":59607,
+            "title":"Trellis Networks for Sequence Modeling",
+            "url":"\/paper\/trellis-networks-for-sequence-modeling",
+            "published":"2018-10-15T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/trellis-networks-for-sequence-modeling\/review\/?hl=4332"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":238,
+        "rank":62,
+        "method":"LSTM (Hebbian, Cache, MbPA)",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM ",
+        "method_details":"Hebbian, Cache, MbPA",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-27",
+        "metrics":{
+            "Test perplexity":"29.2",
+            "Validation perplexity":"29.0",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":29.2,
+            "Validation perplexity":29.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":7373,
+            "title":"Fast Parametric Learning with Activation Memorization",
+            "url":"\/paper\/fast-parametric-learning-with-activation",
+            "published":"2018-03-27T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/fast-parametric-learning-with-activation\/review\/?hl=238"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6403,
+        "rank":63,
+        "method":"LSTM (Hebbian, Cache)",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM ",
+        "method_details":"Hebbian, Cache",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-27",
+        "metrics":{
+            "Test perplexity":"29.7",
+            "Validation perplexity":"29.9",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":29.7,
+            "Validation perplexity":29.9,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":7373,
+            "title":"Fast Parametric Learning with Activation Memorization",
+            "url":"\/paper\/fast-parametric-learning-with-activation",
+            "published":"2018-03-27T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/fast-parametric-learning-with-activation\/review\/?hl=6403"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":27541,
+        "rank":64,
+        "method":"Rfa-Gate-Gaussian-Stateful (Small)",
+        "mlmodel":{
+
+        },
+        "method_short":"Rfa-Gate-Gaussian-Stateful ",
+        "method_details":"Small",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-03-03",
+        "metrics":{
+            "Test perplexity":"30.5",
+            "Validation perplexity":"29.4",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":30.5,
+            "Validation perplexity":29.4,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":750564,
+            "title":"Random Feature Attention",
+            "url":"\/paper\/random-feature-attention-1",
+            "published":"2021-03-03T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/random-feature-attention-1\/review\/?hl=27541"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":113788,
+        "rank":65,
+        "method":"Primal.+Trans.",
+        "mlmodel":{
+
+        },
+        "method_short":"Primal.+Trans.",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-31",
+        "metrics":{
+            "Test perplexity":"31.0",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":31.0,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1220313,
+            "title":"Primal-Attention: Self-attention through Asymmetric Kernel SVD in Primal Representation",
+            "url":"\/paper\/primal-attention-self-attention-through",
+            "published":"2023-05-31T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":5162,
+        "rank":66,
+        "method":"LSTM (RMC)",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM ",
+        "method_details":"RMC",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-06-05",
+        "metrics":{
+            "Test perplexity":"31.6",
+            "Validation perplexity":"30.8",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":31.6,
+            "Validation perplexity":30.8,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1425,
+            "title":"Relational recurrent neural networks",
+            "url":"\/paper\/relational-recurrent-neural-networks",
+            "published":"2018-06-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/relational-recurrent-neural-networks\/review\/?hl=5162"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":7250,
+        "rank":67,
+        "method":"DEQ-Transformer (small)",
+        "mlmodel":{
+
+        },
+        "method_short":"DEQ-Transformer ",
+        "method_details":"small",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-09-03",
+        "metrics":{
+            "Test perplexity":"32.4",
+            "Validation perplexity":null,
+            "Number of params":"138M"
+        },
+        "raw_metrics":{
+            "Test perplexity":32.4,
+            "Validation perplexity":null,
+            "Number of params":138000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":152353,
+            "title":"Deep Equilibrium Models",
+            "url":"\/paper\/deep-equilibrium-models",
+            "published":"2019-09-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/deep-equilibrium-models\/review\/?hl=7250"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":26091,
+        "rank":68,
+        "method":"AWD-LSTM-MoS + ATOI",
+        "mlmodel":{
+
+        },
+        "method_short":"AWD-LSTM-MoS + ATOI",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-09-18",
+        "metrics":{
+            "Test perplexity":"32.85",
+            "Validation perplexity":"31.92",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":32.85,
+            "Validation perplexity":31.92,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":154344,
+            "title":"Alleviating Sequence Information Loss with Data Overlapping and Prime Batch Sizes",
+            "url":"\/paper\/alleviating-sequence-information-loss-with",
+            "published":"2019-09-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/alleviating-sequence-information-loss-with\/review\/?hl=26091"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":3412,
+        "rank":69,
+        "method":"4 layer QRNN",
+        "mlmodel":{
+
+        },
+        "method_short":"4 layer QRNN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-22",
+        "metrics":{
+            "Test perplexity":"33.0",
+            "Validation perplexity":"32.0",
+            "Number of params":"151M"
+        },
+        "raw_metrics":{
+            "Test perplexity":33.0,
+            "Validation perplexity":32.0,
+            "Number of params":151000000.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":7760,
+            "title":"An Analysis of Neural Language Modeling at Multiple Scales",
+            "url":"\/paper\/an-analysis-of-neural-language-modeling-at",
+            "published":"2018-03-22T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/an-analysis-of-neural-language-modeling-at\/review\/?hl=3412"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":239,
+        "rank":70,
+        "method":"LSTM (Hebbian)",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM ",
+        "method_details":"Hebbian",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-27",
+        "metrics":{
+            "Test perplexity":"34.3",
+            "Validation perplexity":"34.1",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":34.3,
+            "Validation perplexity":34.1,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":7373,
+            "title":"Fast Parametric Learning with Activation Memorization",
+            "url":"\/paper\/fast-parametric-learning-with-activation",
+            "published":"2018-03-27T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/fast-parametric-learning-with-activation\/review\/?hl=239"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":240,
+        "rank":71,
+        "method":"LSTM",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-27",
+        "metrics":{
+            "Test perplexity":"36.4",
+            "Validation perplexity":"36.0",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":36.4,
+            "Validation perplexity":36.0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":7373,
+            "title":"Fast Parametric Learning with Activation Memorization",
+            "url":"\/paper\/fast-parametric-learning-with-activation",
+            "published":"2018-03-27T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/fast-parametric-learning-with-activation\/review\/?hl=240"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":241,
+        "rank":72,
+        "method":"GCNN-8",
+        "mlmodel":{
+
+        },
+        "method_short":"GCNN-8",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-12-23",
+        "metrics":{
+            "Test perplexity":"37.2",
+            "Validation perplexity":"-",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":37.2,
+            "Validation perplexity":0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":17780,
+            "title":"Language Modeling with Gated Convolutional Networks",
+            "url":"\/paper\/language-modeling-with-gated-convolutional",
+            "published":"2016-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-modeling-with-gated-convolutional\/review\/?hl=241"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":17,
+                "name":"CNN",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6401,
+        "rank":73,
+        "method":"GPT-2 Small",
+        "mlmodel":{
+
+        },
+        "method_short":"GPT-2 Small",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-02-14",
+        "metrics":{
+            "Test perplexity":"37.50",
+            "Validation perplexity":null,
+            "Number of params":"124M"
+        },
+        "raw_metrics":{
+            "Test perplexity":37.5,
+            "Validation perplexity":null,
+            "Number of params":124000000.0
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":105884,
+            "title":"Language Models are Unsupervised Multitask Learners",
+            "url":"\/paper\/language-models-are-unsupervised-multitask",
+            "published":"2019-02-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":242,
+        "rank":74,
+        "method":"Neural cache model (size = 2,000)",
+        "mlmodel":{
+
+        },
+        "method_short":"Neural cache model ",
+        "method_details":"size = 2,000",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-12-13",
+        "metrics":{
+            "Test perplexity":"40.8",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":40.8,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":27765,
+            "title":"Improving Neural Language Models with a Continuous Cache",
+            "url":"\/paper\/improving-neural-language-models-with-a",
+            "published":"2016-12-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-neural-language-models-with-a\/review\/?hl=242"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6405,
+        "rank":75,
+        "method":"Neural cache model (size = 100)",
+        "mlmodel":{
+
+        },
+        "method_short":"Neural cache model ",
+        "method_details":"size = 100",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-12-13",
+        "metrics":{
+            "Test perplexity":"44.8",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":44.8,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":27765,
+            "title":"Improving Neural Language Models with a Continuous Cache",
+            "url":"\/paper\/improving-neural-language-models-with-a",
+            "published":"2016-12-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-neural-language-models-with-a\/review\/?hl=6405"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":6404,
+        "rank":76,
+        "method":"GCNN-8",
+        "mlmodel":{
+
+        },
+        "method_short":"GCNN-8",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-12-23",
+        "metrics":{
+            "Test perplexity":"44.9",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":44.9,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":17780,
+            "title":"Language Modeling with Gated Convolutional Networks",
+            "url":"\/paper\/language-modeling-with-gated-convolutional",
+            "published":"2016-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/language-modeling-with-gated-convolutional\/review\/?hl=6404"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":17,
+                "name":"CNN",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":5784,
+        "rank":77,
+        "method":"TCN",
+        "mlmodel":{
+
+        },
+        "method_short":"TCN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-03-04",
+        "metrics":{
+            "Test perplexity":"45.19",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":45.19,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":5617,
+            "title":"An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling",
+            "url":"\/paper\/an-empirical-evaluation-of-generic",
+            "published":"2018-03-04T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/an-empirical-evaluation-of-generic\/review\/?hl=5784"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":17,
+                "name":"CNN",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":243,
+        "rank":78,
+        "method":"Temporal CNN",
+        "mlmodel":{
+
+        },
+        "method_short":"Temporal CNN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-01-01",
+        "metrics":{
+            "Test perplexity":"45.2",
+            "Validation perplexity":"-",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":45.2,
+            "Validation perplexity":0,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":85423,
+            "title":"Convolutional Sequence Modeling Revisited",
+            "url":"\/paper\/convolutional-sequence-modeling-revisited",
+            "published":"2018-01-01T00:00:00.000000",
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":17,
+                "name":"CNN",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":244,
+        "rank":79,
+        "method":"LSTM",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2016-12-13",
+        "metrics":{
+            "Test perplexity":"48.7",
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":48.7,
+            "Validation perplexity":null,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":27765,
+            "title":"Improving Neural Language Models with a Continuous Cache",
+            "url":"\/paper\/improving-neural-language-models-with-a",
+            "published":"2016-12-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/improving-neural-language-models-with-a\/review\/?hl=244"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":8687,
+        "rank":80,
+        "method":"Transformer  (Adaptive inputs)",
+        "mlmodel":{
+
+        },
+        "method_short":"Transformer  ",
+        "method_details":"Adaptive inputs",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-10-09",
+        "metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":"19.5",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":19.5,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":157871,
+            "title":"On the adequacy of untuned warmup for adaptive optimization",
+            "url":"\/paper\/on-the-adequacy-of-untuned-warmup-for",
+            "published":"2019-10-09T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":4,
+                "name":"Transformer",
+                "color":"#0037CC"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":16990,
+        "rank":81,
+        "method":"LSTM",
+        "mlmodel":{
+
+        },
+        "method_short":"LSTM",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-17",
+        "metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":"52.73",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":52.73,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":195393,
+            "title":"How much complexity does an RNN architecture need to learn syntax-sensitive dependencies?",
+            "url":"\/paper\/how-much-complexity-does-an-rnn-architecture",
+            "published":"2020-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/how-much-complexity-does-an-rnn-architecture\/review\/?hl=16990"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":8,
+                "name":"LSTM",
+                "color":"#e60000"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":16992,
+        "rank":82,
+        "method":"GRU",
+        "mlmodel":{
+
+        },
+        "method_short":"GRU",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-17",
+        "metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":"53.78",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":53.78,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":195393,
+            "title":"How much complexity does an RNN architecture need to learn syntax-sensitive dependencies?",
+            "url":"\/paper\/how-much-complexity-does-an-rnn-architecture",
+            "published":"2020-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/how-much-complexity-does-an-rnn-architecture\/review\/?hl=16992"
+        },
+        "external_source_url":null,
+        "tags":[
+            {
+                "id":30,
+                "name":"GRU",
+                "color":"#2771D3"
+            }
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":72,
+        "row_id":16991,
+        "rank":83,
+        "method":"Decay RNN",
+        "mlmodel":{
+
+        },
+        "method_short":"Decay RNN",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-17",
+        "metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":"76.67",
+            "Number of params":null
+        },
+        "raw_metrics":{
+            "Test perplexity":null,
+            "Validation perplexity":76.67,
+            "Number of params":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":195393,
+            "title":"How much complexity does an RNN architecture need to learn syntax-sensitive dependencies?",
+            "url":"\/paper\/how-much-complexity-does-an-rnn-architecture",
+            "published":"2020-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/how-much-complexity-does-an-rnn-architecture\/review\/?hl=16991"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
