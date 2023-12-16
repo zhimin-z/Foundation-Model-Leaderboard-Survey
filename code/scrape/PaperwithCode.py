@@ -11,10 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MC-TACO'
-dataset = 'mc-taco'
-path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
-
+folder = 'MM-Vet'
+dataset = 'mm-vet'
 included_links = []
 
 if __name__ == '__main__':
@@ -22,6 +20,7 @@ if __name__ == '__main__':
     driver.implicitly_wait(5)
 
     leaderboard_links = []
+    path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
     base_url = 'https://paperswithcode.com'
     
     if included_links:
@@ -55,4 +54,3 @@ if __name__ == '__main__':
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
                 title = file_rename(folder, title)
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
-                
