@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MNLI'
-dataset = 'mnli'
-included_links = ['natural-language-inference-on-multinli', 'text-generation-on-mnli']
+folder = 'MSVD'
+dataset = 'msvd'
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
