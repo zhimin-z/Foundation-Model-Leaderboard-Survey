@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'STAR'
-dataset = 'situated-reasoning-star'
-included_links = []
+folder = 'STS-B'
+dataset = 'sts-benchmark'
+included_links = ['semantic-textual-similarity-on-sts-benchmark']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
