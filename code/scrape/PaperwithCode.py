@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'QNLI'
-dataset = ''
-included_links = ['natural-language-inference-on-qnli']
+folder = 'RefCOCO'
+dataset = 'refcoco'
+included_links = ['referring-expression-comprehension-on-refcoco', 'referring-expression-comprehension-on-1', 'referring-expression-comprehension-on']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
