@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MultiRC'
-dataset = 'multirc'
+folder = 'STAR'
+dataset = 'situated-reasoning-star'
 included_links = []
 
 if __name__ == '__main__':
