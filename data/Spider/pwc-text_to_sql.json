@@ -1,0 +1,282 @@
+[
+    {
+        "table_id":3444,
+        "row_id":95514,
+        "rank":1,
+        "method":"Graphix-3B+Picard",
+        "mlmodel":{
+
+        },
+        "method_short":"Graphix-3B+Picard",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-01-18",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"77.1",
+            "Exact Match Accuracy (Test)":"74.0",
+            "Execution Accuracy (Dev)":"81.0"
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":77.1,
+            "Exact Match Accuracy (Test)":74.0,
+            "Execution Accuracy (Dev)":81.0
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1143833,
+            "title":"Graphix-T5: Mixing Pre-Trained Transformers with Graph-Aware Layers for Text-to-SQL Parsing",
+            "url":"\/paper\/graphix-t5-mixing-pre-trained-transformers",
+            "published":"2023-01-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/graphix-t5-mixing-pre-trained-transformers\/review\/?hl=95514"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":39692,
+        "rank":2,
+        "method":"T5-3B + PICARD",
+        "mlmodel":{
+
+        },
+        "method_short":"T5-3B + PICARD",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-09-10",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"75.5",
+            "Exact Match Accuracy (Test)":"71.9 ",
+            "Execution Accuracy (Dev)":null
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":75.5,
+            "Exact Match Accuracy (Test)":71.9,
+            "Execution Accuracy (Dev)":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":865822,
+            "title":"PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models",
+            "url":"\/paper\/picard-parsing-incrementally-for-constrained",
+            "published":"2021-09-10T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/picard-parsing-incrementally-for-constrained\/review\/?hl=39692"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":41991,
+        "rank":3,
+        "method":"SADGA + GAP",
+        "mlmodel":{
+
+        },
+        "method_short":"SADGA + GAP",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-04-01",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"73.1",
+            "Exact Match Accuracy (Test)":"70.1",
+            "Execution Accuracy (Dev)":null
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":73.1,
+            "Exact Match Accuracy (Test)":70.1,
+            "Execution Accuracy (Dev)":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":898398,
+            "title":"SADGA: Structure-Aware Dual Graph Aggregation Network for Text-to-SQL",
+            "url":"\/paper\/sadga-structure-aware-dual-graph-aggregation",
+            "published":"2021-11-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/sadga-structure-aware-dual-graph-aggregation\/review\/?hl=41991"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":24047,
+        "rank":4,
+        "method":"RATSQL + GAP",
+        "mlmodel":{
+
+        },
+        "method_short":"RATSQL + GAP",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-12-18",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"71.8",
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":null
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":71.8,
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":729597,
+            "title":"Learning Contextual Representations for Semantic Parsing with Generation-Augmented Pre-Training",
+            "url":"\/paper\/learning-contextual-representations-for",
+            "published":"2020-12-18T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/learning-contextual-representations-for\/review\/?hl=24047"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":18087,
+        "rank":5,
+        "method":"RYANSQL (BERT)",
+        "mlmodel":{
+
+        },
+        "method_short":"RYANSQL ",
+        "method_details":"BERT",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-04-07",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"66.6",
+            "Exact Match Accuracy (Test)":"58.2",
+            "Execution Accuracy (Dev)":null
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":66.6,
+            "Exact Match Accuracy (Test)":58.2,
+            "Execution Accuracy (Dev)":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":189930,
+            "title":"RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases",
+            "url":"\/paper\/ryansql-recursively-applying-sketch-based",
+            "published":"2020-04-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/ryansql-recursively-applying-sketch-based\/review\/?hl=18087"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":18086,
+        "rank":6,
+        "method":"MAPO + TABERTLarge (K = 3)",
+        "mlmodel":{
+
+        },
+        "method_short":"MAPO + TABERTLarge ",
+        "method_details":"K = 3",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-05-17",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":"64.5",
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":null
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":64.5,
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":195372,
+            "title":"TaBERT: Pretraining for Joint Understanding of Textual and Tabular Data",
+            "url":"\/paper\/tabert-pretraining-for-joint-understanding-of",
+            "published":"2020-05-17T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":3444,
+        "row_id":100085,
+        "rank":7,
+        "method":"LEVER + Codex",
+        "mlmodel":{
+
+        },
+        "method_short":"LEVER + Codex",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-02-16",
+        "metrics":{
+            "Exact Match Accuracy (Dev)":null,
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":"81.9"
+        },
+        "raw_metrics":{
+            "Exact Match Accuracy (Dev)":null,
+            "Exact Match Accuracy (Test)":null,
+            "Execution Accuracy (Dev)":81.9
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1158598,
+            "title":"LEVER: Learning to Verify Language-to-Code Generation with Execution",
+            "url":"\/paper\/lever-learning-to-verify-language-to-code",
+            "published":"2023-02-16T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/lever-learning-to-verify-language-to-code\/review\/?hl=100085"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
