@@ -1,0 +1,100 @@
+[
+    {
+        "Model name":"Human annotators\nNew York University",
+        "Accuracy (Test set)":93.5,
+        "Accuracy (Hard subset)":"89.1",
+        "SAT-style score (Test set)":"91.4",
+        "SAT-style score (Hard subset)":"85.4"
+    },
+    {
+        "Model name":"RAPTOR (collapsed tree) + GPT-4\nAnonymous (temporary)",
+        "Accuracy (Test set)":82.6,
+        "Accuracy (Hard subset)":"76.2",
+        "SAT-style score (Test set)":"77.5",
+        "SAT-style score (Hard subset)":"69.3"
+    },
+    {
+        "Model name":"LongMA: Fine-Tuning TechGPT-7B using QLoRA on QuALITY and RACE subset\nQi Ma, Northeastern University",
+        "Accuracy (Test set)":73.0,
+        "Accuracy (Hard subset)":"64",
+        "SAT-style score (Test set)":"64.8",
+        "SAT-style score (Hard subset)":"53"
+    },
+    {
+        "Model name":"CoLISA: DPR & DeBERTaV3-large architecture plus contrastive learning & in-sample attention\nSUDA NLP & I2R at Soochow University",
+        "Accuracy (Test set)":62.3,
+        "Accuracy (Hard subset)":"54.7",
+        "SAT-style score (Test set)":"49.7",
+        "SAT-style score (Hard subset)":"39.6"
+    },
+    {
+        "Model name":"CoLISA: DPR & DeBERTaV3-large architecture & contrastive learning\nSUDA NLP & I2R at Soochow University",
+        "Accuracy (Test set)":62.1,
+        "Accuracy (Hard subset)":"54.3",
+        "SAT-style score (Test set)":"49.5",
+        "SAT-style score (Hard subset)":"39.1"
+    },
+    {
+        "Model name":"Baseline model: DPR retrieval using questions & DeBERTaV3-large with intermediate training on RACE\nNew York University",
+        "Accuracy (Test set)":55.4,
+        "Accuracy (Hard subset)":"46.1",
+        "SAT-style score (Test set)":"40.5",
+        "SAT-style score (Hard subset)":"28.1"
+    },
+    {
+        "Model name":"Baseline model: DPR retrieval using questions & RoBERTa-large with intermediate training on RACE\nNew York University",
+        "Accuracy (Test set)":51.4,
+        "Accuracy (Hard subset)":"44.7",
+        "SAT-style score (Test set)":"35.2",
+        "SAT-style score (Hard subset)":"26.3"
+    },
+    {
+        "Model name":"Baseline model: DPR retrieval using questions & DeBERTaV3-large\nNew York University",
+        "Accuracy (Test set)":49.0,
+        "Accuracy (Hard subset)":"41.2",
+        "SAT-style score (Test set)":"32",
+        "SAT-style score (Hard subset)":"21.6"
+    },
+    {
+        "Model name":"Question-only baseline: DeBERTaV3-large with intermediate training on RACE\nNew York University",
+        "Accuracy (Test set)":43.3,
+        "Accuracy (Hard subset)":"38.2",
+        "SAT-style score (Test set)":"24.4",
+        "SAT-style score (Hard subset)":"17.6"
+    },
+    {
+        "Model name":"Baseline model: fastText retrieval using questions & RoBERTa-large\nNew York University",
+        "Accuracy (Test set)":42.7,
+        "Accuracy (Hard subset)":"35.7",
+        "SAT-style score (Test set)":"23.6",
+        "SAT-style score (Hard subset)":"14.3"
+    },
+    {
+        "Model name":"Question-only baseline: DeBERTaV3-large\nNew York University",
+        "Accuracy (Test set)":39.7,
+        "Accuracy (Hard subset)":"35.2",
+        "SAT-style score (Test set)":"19.6",
+        "SAT-style score (Hard subset)":"13.5"
+    },
+    {
+        "Model name":"Baseline model: Longformer with intermediate training on RACE\nNew York University",
+        "Accuracy (Test set)":39.5,
+        "Accuracy (Hard subset)":"35.3",
+        "SAT-style score (Test set)":"19.4",
+        "SAT-style score (Hard subset)":"13.8"
+    },
+    {
+        "Model name":"Baseline model: Longformer\nNew York University",
+        "Accuracy (Test set)":30.7,
+        "Accuracy (Hard subset)":"29.3",
+        "SAT-style score (Test set)":"7.6",
+        "SAT-style score (Hard subset)":"5.7"
+    },
+    {
+        "Model name":"Best-of-20 chain-of-thought, using a 52B-parameter LM (Bai et al., 2022) fine-tuned by reinforcement learning with human feedback (RLHF) [Note: added by QuALITY authors; unranked given that performance is on dev set only]\nAnthropic, Surge AI",
+        "Accuracy (Test set)":66.9,
+        "Accuracy (Hard subset)":"\u2013",
+        "SAT-style score (Test set)":"\u2013",
+        "SAT-style score (Hard subset)":"\u2013"
+    }
+]
