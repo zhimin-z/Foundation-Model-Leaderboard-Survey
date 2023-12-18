@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'Kinetics'
-dataset = ''
+folder = 'InfiMM-Eval'
+dataset = 'core-mm'
 included_links = []
 
 if __name__ == '__main__':
