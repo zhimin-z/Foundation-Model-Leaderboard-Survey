@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MLS'
+folder = 'Kinetics'
 dataset = ''
-included_links = ['automatic-speech-recognition-on-facebook-7', 'automatic-speech-recognition-on-facebook-6', 'automatic-speech-recognition-on-facebook-8', 'automatic-speech-recognition-on-facebook-9']
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
