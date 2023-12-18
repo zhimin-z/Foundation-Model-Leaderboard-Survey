@@ -1,15 +1,12 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import json
 import re
 
 from pathlib import Path
-
-def file_rename(folder, title):
-    title = title.lower().replace(f' on {folder.lower()}', '')
-    title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
-    return title
 
 folder = 'OpenEval(text)'
 path_leaderboard = Path(f"data/{folder}")
@@ -22,14 +19,19 @@ if __name__ == '__main__':
     base_url = 'http://openeval.org.cn/rank'
     driver.get(base_url)
     
-    for option in driver.find_elements(By.XPATH, '//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li'):
-        table_name = option.text
+    wait = WebDriverWait(driver, 10)
+    
+    for option in driver.find_elements(By.XPATH, "//*[contains(@class, 'el-select-dropdown__item')]"):
+        table_name = option.find_element(By.XPATH, ".//span").text
+        driver.execute_script("arguments[0].click();", option)
+        header = driver.find_element(By.XPATH, './/table[@class="el-table__header"]')
+        column_names = []
+        for column in header.find_elements(By.XPATH, './/div[@class="cell"]'):
+            # element = wait.until(EC.presence_of_element_located((By.XPATH, ".//span")))
+            column_names.append(column.find_element(By.XPATH, './/span').text)
+            # column_names.append(element.text)
         print(table_name)
-        option.click()
-        for column in driver.find_elements(By.XPATH, '//table[@class="el-table__header"]/thead/tr/th'):
-            print(f'{table_name}, {column.text}')
-    
-    
+        print(column_names)
     
 # table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
 # table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
