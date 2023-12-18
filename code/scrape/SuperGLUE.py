@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
 
-from pathlib import Path
-
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
