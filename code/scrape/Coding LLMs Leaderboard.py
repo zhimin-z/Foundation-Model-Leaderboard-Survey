@@ -6,29 +6,20 @@ if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     
-    url = 'https://super.gluebenchmark.com/leaderboard'
+    url = 'https://leaderboard.tabbyml.com'
     driver.get(url)
     
-    column_names = []
-    for column in driver.find_elements(By.XPATH, '//tr[@class="jss209 jss212"]/th')[2:]:
-        column_names.append(column.text)
+    column_names = ['']
     
     df = []
-    for submission in driver.find_elements(By.XPATH, '//tr[@class="jss209"]'):
-        row = []
-        for index, value in enumerate(submission.find_elements(By.XPATH, './/td')):
-            if index < 2:
-                continue
-            elif index == 4:
-                try:
-                    link = value.find_element(By.XPATH, './/a').get_attribute('href')
-                except:
-                    link = None
-                row.append(link)
-            else:
-                row.append(value.text)
-        df.append(row)
+    for submission in driver.find_elements(By.XPATH, '//div[@class="flex flex-col"]/div'):
+        model = submission.find_element(By.XPATH, './/p').text
+        print(model)
+        for value in submission.find_elements(By.XPATH, './/div/div'):
+            print(value.find_element(By.TAG_NAME, 'span').text)
+            # print(value.find_element(By.XPATH, './/span').text)
         
-    df = pd.DataFrame(df, columns=column_names)
-    path_leaderboard = 'data/SuperGLUE/shw.json'
-    df.to_json(path_leaderboard, orient='records', indent=4)
+        
+    # df = pd.DataFrame(df, columns=column_names)
+    # path_leaderboard = 'data/SuperGLUE/shw.json'
+    # df.to_json(path_leaderboard, orient='records', indent=4)
