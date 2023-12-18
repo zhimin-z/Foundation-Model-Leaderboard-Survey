@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'InfographicVQA'
-dataset = 'infographicvqa'
-included_links = []
+folder = 'MathQA'
+dataset = ''
+included_links = ['text-generation-on-mathqa']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
