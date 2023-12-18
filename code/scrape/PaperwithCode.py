@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'StrategyQA'
-dataset = 'strategyqa'
+folder = 'VQA v2'
+dataset = 'visual-question-answering-v2-0'
 included_links = []
 
 if __name__ == '__main__':

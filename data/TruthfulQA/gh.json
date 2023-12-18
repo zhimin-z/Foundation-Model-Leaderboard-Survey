@@ -1,0 +1,46 @@
+[
+    {
+        "Model":"GPT-3 175B",
+        "% true":20.44,
+        "% info":97.55,
+        "% true (GPT-judge)":20.56,
+        "BLEURT":-0.54,
+        "ROUGE":-17.17,
+        "BLEU":-17.18,
+        "MC1":0.21,
+        "MC2":0.33
+    },
+    {
+        "Model":"GPT-J 6B",
+        "% true":26.68,
+        "% info":89.96,
+        "% true (GPT-judge)":27.54,
+        "BLEURT":-0.29,
+        "ROUGE":-10.93,
+        "BLEU":-7.48,
+        "MC1":0.2,
+        "MC2":0.36
+    },
+    {
+        "Model":"GPT-2 1.5B",
+        "% true":29.5,
+        "% info":89.84,
+        "% true (GPT-judge)":30.72,
+        "BLEURT":-0.24,
+        "ROUGE":-9.02,
+        "BLEU":-4.83,
+        "MC1":0.22,
+        "MC2":0.39
+    },
+    {
+        "Model":"UnifiedQA 3B",
+        "% true":53.86,
+        "% info":64.5,
+        "% true (GPT-judge)":56.18,
+        "BLEURT":0.08,
+        "ROUGE":1.92,
+        "BLEU":-0.17,
+        "MC1":0.19,
+        "MC2":0.35
+    }
+]
