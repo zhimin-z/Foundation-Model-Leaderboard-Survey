@@ -3,52 +3,64 @@ import undetected_chromedriver as uc
 
 from pathlib import Path
 
-path_llm = Path("data/LMExamQA")
-# from selenium.webdriver.chrome.service import Service
-# chrome_options = uc.ChromeOptions()
-# prefs = {
-#     "download.default_directory": str(path_llm),
-#     "download.prompt_for_download": False,
-#     "safebrowsing.enabled": True,
-# }
-# chrome_options.add_experimental_option("prefs", prefs)
-# service = Service()
+from selenium.webdriver.chrome.options import Options
+import os
+import time
 
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+options = Options()
+download_path = Path("data/LMExamQA")
+options.add_experimental_option("prefs", {
+    "download.default_directory": str(download_path),
+    "download.prompt_for_download": False,
+    # "download.directory_upgrade": True,
+    "safebrowsing.enabled": True
+})
 
-def download(driver):
-    wait = WebDriverWait(driver, 10)  # Adjust the timeout as needed
-    menu = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@class="highcharts-a11y-proxy-element highcharts-no-tooltip"]')))
+
+def download(driver, menu):
     menu.click()
+    # wait = WebDriverWait(driver, 10)  # Adjust the timeout as needed
+    try:
+        menu = driver.find_element(By.XPATH, '//div[@class="highcharts-contextmenu"]')
+        menu.click()
+    except:
+        menu = driver.find_element(By.XPATH, '//button[@class="highcharts-a11y-proxy-element highcharts-no-tooltip"]')
+        menu.click()
+    # menu = driver.find_element(By.XPATH, '//g[@class="highcharts-exporting-group"]')
+    # except:
+    #     menu = driver.find_element(By.XPATH, '//g[@class="highcharts-no-tooltip highcharts-button highcharts-contextbutton highcharts-button-normal"]')
+    #     menu.click()
     table = driver.find_elements(By.XPATH, '//li[@class="highcharts-menu-item"]')[6]
+    print(table.text)
     table.click()
 
 if __name__ == '__main__':
-    driver = uc.Chrome()#service=service, options=chrome_options)
+    driver = uc.Chrome()#options=options)
     driver.implicitly_wait(5)
 
     base_url = 'https://lmexam.com/'
     driver.get(base_url)
     
     result = driver.find_element(By.XPATH, '//button[@id="pills-result-tab"]')
-    result.click()
-    download(driver)
+    download(driver, result)
+    # time.sleep(10)  # Adjust sleep time as needed
+    # original_file_name = os.path.join(download_path, "original_file_name.ext")
+    # new_file_name = os.path.join(download_path, "new_file_name.ext")
+    # os.rename(original_file_name, new_file_name)
     
     for domain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-primary"]'):
         print(domain.text)
-        domain.click()
-        download(driver)
+        download(driver, domain)
+        time.sleep(1)
         for subdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-danger"]'):
             print(subdomain.text)
-            subdomain.click()
-            download(driver)
+            download(driver, subdomain)
+            time.sleep(1)
             for subsubdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-warning"]'):
                 print(subsubdomain.text)
-                subsubdomain.click()
-                download(driver)
+                download(driver, subsubdomain)
+                time.sleep(1)
                 for subsubsubdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-success"]'):
                     print(subsubsubdomain.text)
-                    subsubsubdomain.click()
-                    download(driver)
-        
+                    download(driver, subsubsubdomain)
+                    time.sleep(1)
