@@ -1,6 +1,7 @@
-from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
+
+import undetected_chromedriver as uc
 import pandas as pd
 
 if __name__ == '__main__':
@@ -27,9 +28,3 @@ if __name__ == '__main__':
     
     df = pd.DataFrame(df, columns=column_names)
     df.to_json('data/Coding LLMs Leaderboard/shw.json', orient='records', indent=4)
-        
-        
-        
-    # df = pd.DataFrame(df, columns=column_names)
-    # path_leaderboard = 'data/SuperGLUE/shw.json'
-    # df.to_json(path_leaderboard, orient='records', indent=4)
