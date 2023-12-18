@@ -1,0 +1,310 @@
+[
+    {
+        "table_id":23261,
+        "row_id":97905,
+        "rank":1,
+        "method":"openai\/whisper-medium",
+        "mlmodel":{
+            "last_updated":"2022-12-16T09:08:10.000000+0000",
+            "id":15375,
+            "url":null
+        },
+        "method_short":"openai\/whisper-medium",
+        "method_details":null,
+        "mlmodel_short":"openai\/whisper-medium",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-15",
+        "metrics":{
+            "Test CER":null,
+            "Test WER":null,
+            "Cer":"1.663",
+            "WER":"4.027"
+        },
+        "raw_metrics":{
+            "Test CER":null,
+            "Test WER":null,
+            "Cer":1.663,
+            "WER":4.027
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/deepdml\/whisper-medium-mix-es",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98003,
+        "rank":2,
+        "method":"deepdml\/whisper-medium-mix-fr",
+        "mlmodel":{
+            "last_updated":"2022-12-15T19:39:29.000000+0000",
+            "id":15773,
+            "url":null
+        },
+        "method_short":"deepdml\/whisper-medium-mix-fr",
+        "method_details":null,
+        "mlmodel_short":"deepdml\/whisper-medium-mix-fr",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-15",
+        "metrics":{
+            "Test CER":null,
+            "Test WER":null,
+            "Cer":"4.144",
+            "WER":"9.353"
+        },
+        "raw_metrics":{
+            "Test CER":null,
+            "Test WER":null,
+            "Cer":4.144,
+            "WER":9.353
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/deepdml\/whisper-medium-mix-fr",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98361,
+        "rank":3,
+        "method":"wav2vec2-xlsr-1b-finnish-lm-v2",
+        "mlmodel":{
+            "last_updated":"2022-05-26T12:49:05.000000+0000",
+            "id":3527,
+            "url":null
+        },
+        "method_short":"wav2vec2-xlsr-1b-finnish-lm-v2",
+        "method_details":null,
+        "mlmodel_short":"wav2vec2-xlsr-1b-finnish-lm-v2",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-26",
+        "metrics":{
+            "Test CER":"5.65%",
+            "Test WER":"12.11%",
+            "Cer":null,
+            "WER":null
+        },
+        "raw_metrics":{
+            "Test CER":5.65,
+            "Test WER":12.11,
+            "Cer":null,
+            "WER":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/Finnish-NLP\/wav2vec2-xlsr-1b-finnish-lm-v2",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98384,
+        "rank":4,
+        "method":"wav2vec2-large-uralic-voxpopuli-v2-finnish",
+        "mlmodel":{
+            "last_updated":"2022-05-26T12:37:37.000000+0000",
+            "id":7705,
+            "url":null
+        },
+        "method_short":"wav2vec2-large-uralic-voxpopuli-v2-finnish",
+        "method_details":null,
+        "mlmodel_short":"wav2vec2-large-uralic-voxpopuli-v2-finnish",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-26",
+        "metrics":{
+            "Test CER":"5.77%",
+            "Test WER":"12.44%",
+            "Cer":null,
+            "WER":null
+        },
+        "raw_metrics":{
+            "Test CER":5.77,
+            "Test WER":12.44,
+            "Cer":null,
+            "WER":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/Finnish-NLP\/wav2vec2-large-uralic-voxpopuli-v2-finnish",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98383,
+        "rank":5,
+        "method":"wav2vec2-base-fi-voxpopuli-v2-finetuned",
+        "mlmodel":{
+            "last_updated":"2022-05-26T12:42:28.000000+0000",
+            "id":7336,
+            "url":null
+        },
+        "method_short":"wav2vec2-base-fi-voxpopuli-v2-finetuned",
+        "method_details":null,
+        "mlmodel_short":"wav2vec2-base-fi-voxpopuli-v2-finetuned",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-26",
+        "metrics":{
+            "Test CER":"6.07%",
+            "Test WER":"13.99%",
+            "Cer":null,
+            "WER":null
+        },
+        "raw_metrics":{
+            "Test CER":6.07,
+            "Test WER":13.99,
+            "Cer":null,
+            "WER":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/Finnish-NLP\/wav2vec2-base-fi-voxpopuli-v2-finetuned",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98363,
+        "rank":6,
+        "method":"wav2vec2-xlsr-300m-finnish-lm",
+        "mlmodel":{
+            "last_updated":"2022-05-26T12:57:16.000000+0000",
+            "id":3621,
+            "url":null
+        },
+        "method_short":"wav2vec2-xlsr-300m-finnish-lm",
+        "method_details":null,
+        "mlmodel_short":"wav2vec2-xlsr-300m-finnish-lm",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-26",
+        "metrics":{
+            "Test CER":"6.78%",
+            "Test WER":"17.72%",
+            "Cer":null,
+            "WER":null
+        },
+        "raw_metrics":{
+            "Test CER":6.78,
+            "Test WER":17.72,
+            "Cer":null,
+            "WER":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/Finnish-NLP\/wav2vec2-xlsr-300m-finnish-lm",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":23261,
+        "row_id":98362,
+        "rank":7,
+        "method":"wav2vec2-xlsr-1b-finnish-lm",
+        "mlmodel":{
+            "last_updated":"2022-05-26T12:53:27.000000+0000",
+            "id":3396,
+            "url":null
+        },
+        "method_short":"wav2vec2-xlsr-1b-finnish-lm",
+        "method_details":null,
+        "mlmodel_short":"wav2vec2-xlsr-1b-finnish-lm",
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-05-26",
+        "metrics":{
+            "Test CER":"6.97%",
+            "Test WER":"20.34%",
+            "Cer":null,
+            "WER":null
+        },
+        "raw_metrics":{
+            "Test CER":6.97,
+            "Test WER":20.34,
+            "Cer":null,
+            "WER":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":null,
+            "title":null,
+            "url":null,
+            "published":null,
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":"https:\/\/huggingface.co\/Finnish-NLP\/wav2vec2-xlsr-1b-finnish-lm",
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]

@@ -8,12 +8,12 @@ from pathlib import Path
 
 def file_rename(folder, title):
     title = title.lower().replace(f' on {folder.lower()}', '')
-    title = title.replace(' / ', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
+    title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MathQA'
+folder = 'MLS'
 dataset = ''
-included_links = ['text-generation-on-mathqa']
+included_links = ['automatic-speech-recognition-on-facebook-7', 'automatic-speech-recognition-on-facebook-6', 'automatic-speech-recognition-on-facebook-8', 'automatic-speech-recognition-on-facebook-9']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
