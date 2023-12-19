@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'InfiMM-Eval'
-dataset = 'core-mm'
-included_links = []
+folder = 'K-400'
+dataset = ''
+included_links = ['action-classification-on-kinetics-400']
 
 if __name__ == '__main__':
     driver = uc.Chrome()

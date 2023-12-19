@@ -1,0 +1,324 @@
+[
+    {
+        "table_id":21939,
+        "row_id":100385,
+        "rank":1,
+        "method":"UMT-L (ViT-L\/16)",
+        "mlmodel":{
+
+        },
+        "method_short":"UMT-L ",
+        "method_details":"ViT-L\/16",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-03-28",
+        "metrics":{
+            "text-to-video R@1":"42.8",
+            "text-to-video R@5":"69.6",
+            "text-to-video R@10":"79.8",
+            "video-to-text R@1":"40.7",
+            "video-to-text R@5":"67.6",
+            "video-to-text R@10":"78.6"
+        },
+        "raw_metrics":{
+            "text-to-video R@1":42.8,
+            "text-to-video R@5":69.6,
+            "text-to-video R@10":79.8,
+            "video-to-text R@1":40.7,
+            "video-to-text R@5":67.6,
+            "video-to-text R@10":78.6
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1181934,
+            "title":"Unmasked Teacher: Towards Training-Efficient Video Foundation Models",
+            "url":"\/paper\/unmasked-teacher-towards-training-efficient",
+            "published":"2023-03-28T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":110312,
+        "rank":2,
+        "method":"LanguageBind",
+        "mlmodel":{
+
+        },
+        "method_short":"LanguageBind",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-03",
+        "metrics":{
+            "text-to-video R@1":"41.0",
+            "text-to-video R@5":"68.4",
+            "text-to-video R@10":"80.0",
+            "video-to-text R@1":"39.1",
+            "video-to-text R@5":"69.8",
+            "video-to-text R@10":"81.1"
+        },
+        "raw_metrics":{
+            "text-to-video R@1":41.0,
+            "text-to-video R@5":68.4,
+            "text-to-video R@10":80.0,
+            "video-to-text R@1":39.1,
+            "video-to-text R@5":69.8,
+            "video-to-text R@10":81.1
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1292471,
+            "title":"LanguageBind: Extending Video-Language Pretraining to N-modality by Language-based Semantic Alignment",
+            "url":"\/paper\/languagebind-extending-video-language",
+            "published":"2023-10-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/languagebind-extending-video-language\/review\/?hl=110312"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":109688,
+        "rank":3,
+        "method":"BT-Adapter",
+        "mlmodel":{
+
+        },
+        "method_short":"BT-Adapter",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-09-27",
+        "metrics":{
+            "text-to-video R@1":"37.0",
+            "text-to-video R@5":"66.7",
+            "text-to-video R@10":"78.9",
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":37.0,
+            "text-to-video R@5":66.7,
+            "text-to-video R@10":78.9,
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1289477,
+            "title":"One For All: Video Conversation is Feasible Without Video Instruction Tuning",
+            "url":"\/paper\/one-for-all-video-conversation-is-feasible",
+            "published":"2023-09-27T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/one-for-all-video-conversation-is-feasible\/review\/?hl=109688"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":87211,
+        "rank":4,
+        "method":"VideoCoCa",
+        "mlmodel":{
+
+        },
+        "method_short":"VideoCoCa",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-09",
+        "metrics":{
+            "text-to-video R@1":"34.5",
+            "text-to-video R@5":"63.2",
+            "text-to-video R@10":"76.6",
+            "video-to-text R@1":"33.0",
+            "video-to-text R@5":"61.6",
+            "video-to-text R@10":"75.3"
+        },
+        "raw_metrics":{
+            "text-to-video R@1":34.5,
+            "text-to-video R@5":63.2,
+            "text-to-video R@10":76.6,
+            "video-to-text R@1":33.0,
+            "video-to-text R@5":61.6,
+            "video-to-text R@10":75.3
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1126258,
+            "title":"VideoCoCa: Video-Text Modeling with Zero-Shot Transfer from Contrastive Captioners",
+            "url":"\/paper\/video-text-modeling-with-zero-shot-transfer",
+            "published":"2022-12-09T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/video-text-modeling-with-zero-shot-transfer\/review\/?hl=87211"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":102849,
+        "rank":5,
+        "method":"Singularity-temporal-5M",
+        "mlmodel":{
+
+        },
+        "method_short":"Singularity-temporal-5M",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-06-07",
+        "metrics":{
+            "text-to-video R@1":"30.8",
+            "text-to-video R@5":"55.9",
+            "text-to-video R@10":"66.3",
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":30.8,
+            "text-to-video R@5":55.9,
+            "text-to-video R@10":66.3,
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1023192,
+            "title":"Revealing Single Frame Bias for Video-and-Language Learning",
+            "url":"\/paper\/revealing-single-frame-bias-for-video-and",
+            "published":"2022-06-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/revealing-single-frame-bias-for-video-and\/review\/?hl=102849"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":86736,
+        "rank":6,
+        "method":"InternVideo",
+        "mlmodel":{
+
+        },
+        "method_short":"InternVideo",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-06",
+        "metrics":{
+            "text-to-video R@1":"30.7",
+            "text-to-video R@5":null,
+            "text-to-video R@10":null,
+            "video-to-text R@1":"31.4",
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":30.7,
+            "text-to-video R@5":null,
+            "text-to-video R@10":null,
+            "video-to-text R@1":31.4,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1124231,
+            "title":"InternVideo: General Video Foundation Models via Generative and Discriminative Learning",
+            "url":"\/paper\/internvideo-general-video-foundation-models",
+            "published":"2022-12-06T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/internvideo-general-video-foundation-models\/review\/?hl=86736"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":21939,
+        "row_id":87210,
+        "rank":7,
+        "method":"Singularity-temporal-17M",
+        "mlmodel":{
+
+        },
+        "method_short":"Singularity-temporal-17M",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-06-07",
+        "metrics":{
+            "text-to-video R@1":"30.6",
+            "text-to-video R@5":"55.6",
+            "text-to-video R@10":"66.9",
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":30.6,
+            "text-to-video R@5":55.6,
+            "text-to-video R@10":66.9,
+            "video-to-text R@1":null,
+            "video-to-text R@5":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1023192,
+            "title":"Revealing Single Frame Bias for Video-and-Language Learning",
+            "url":"\/paper\/revealing-single-frame-bias-for-video-and",
+            "published":"2022-06-07T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/revealing-single-frame-bias-for-video-and\/review\/?hl=87210"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
