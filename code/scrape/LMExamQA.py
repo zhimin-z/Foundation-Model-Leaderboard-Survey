@@ -16,23 +16,28 @@ options.add_experimental_option("prefs", {
     "safebrowsing.enabled": True
 })
 
+def get_latest_file(dir_path):
+    files = os.listdir(dir_path)
+    paths = [os.path.join(dir_path, basename) for basename in files]
+    return max(paths, key=os.path.getctime)
+
 
 def download(driver, menu):
     menu.click()
+    time.sleep(0.2)
     # wait = WebDriverWait(driver, 10)  # Adjust the timeout as needed
-    try:
-        menu = driver.find_element(By.XPATH, '//div[@class="highcharts-contextmenu"]')
-        menu.click()
-    except:
-        menu = driver.find_element(By.XPATH, '//button[@class="highcharts-a11y-proxy-element highcharts-no-tooltip"]')
-        menu.click()
-    # menu = driver.find_element(By.XPATH, '//g[@class="highcharts-exporting-group"]')
+    # try:
+    #     menu = driver.find_element(By.XPATH, '//button[@class="highcharts-a11y-proxy-element highcharts-no-tooltip"]')
     # except:
-    #     menu = driver.find_element(By.XPATH, '//g[@class="highcharts-no-tooltip highcharts-button highcharts-contextbutton highcharts-button-normal"]')
-    #     menu.click()
-    table = driver.find_elements(By.XPATH, '//li[@class="highcharts-menu-item"]')[6]
-    print(table.text)
-    table.click()
+    #     menu = driver.find_element(By.XPATH, '//div[@class="highcharts-contextmenu"]')
+    # menu.click()
+    # # menu = driver.find_element(By.XPATH, '//g[@class="highcharts-exporting-group"]')
+    # # except:
+    # #     menu = driver.find_element(By.XPATH, '//g[@class="highcharts-no-tooltip highcharts-button highcharts-contextbutton highcharts-button-normal"]')
+    # #     menu.click()
+    # table = driver.find_elements(By.XPATH, '//li[@class="highcharts-menu-item"]')[6]
+    # print(table.text)
+    # table.click()
 
 if __name__ == '__main__':
     driver = uc.Chrome()#options=options)
@@ -51,16 +56,15 @@ if __name__ == '__main__':
     for domain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-primary"]'):
         print(domain.text)
         download(driver, domain)
-        time.sleep(1)
+        # time.sleep(1)
         for subdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-danger"]'):
             print(subdomain.text)
             download(driver, subdomain)
-            time.sleep(1)
+            # time.sleep(1)
             for subsubdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-warning"]'):
                 print(subsubdomain.text)
                 download(driver, subsubdomain)
-                time.sleep(1)
+                # time.sleep(1)
                 for subsubsubdomain in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-success"]'):
                     print(subsubsubdomain.text)
                     download(driver, subsubsubdomain)
-                    time.sleep(1)
