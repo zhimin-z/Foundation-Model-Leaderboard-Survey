@@ -1,10 +1,6 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
-import json
-import re
 
 from pathlib import Path
 
@@ -19,19 +15,22 @@ if __name__ == '__main__':
     base_url = 'http://openeval.org.cn/rank'
     driver.get(base_url)
     
-    wait = WebDriverWait(driver, 10)
-    
     for option in driver.find_elements(By.XPATH, "//*[contains(@class, 'el-select-dropdown__item')]"):
-        table_name = option.find_element(By.XPATH, ".//span").text
+        table_name = driver.execute_script("return arguments[0].innerText;", option)
         driver.execute_script("arguments[0].click();", option)
-        header = driver.find_element(By.XPATH, './/table[@class="el-table__header"]')
-        column_names = []
-        for column in header.find_elements(By.XPATH, './/div[@class="cell"]'):
-            # element = wait.until(EC.presence_of_element_located((By.XPATH, ".//span")))
-            column_names.append(column.find_element(By.XPATH, './/span').text)
-            # column_names.append(element.text)
-        print(table_name)
-        print(column_names)
-    
-# table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
-# table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
+        
+        column_names = ['Model']
+        header = driver.find_element(By.XPATH, './/div[@class="el-table__header-wrapper"]')
+        for column in header.find_elements(By.XPATH, './/div[@class="arrow"]'):
+            column_name = driver.execute_script("return arguments[0].innerText;", column)
+            column_names.append(column_name)
+        
+        df = []
+        for row in driver.find_elements(By.XPATH, '//*[contains(@class, "el-table__row")]'):
+            values = []
+            for value in row.find_elements(By.XPATH, './/div[@class="cell"]'):
+                values.append(value.text)
+            df.append(values)
+            
+        df = pd.DataFrame(df, columns=column_names)
+        df.to_json(path_leaderboard / f'shw-{table_name}.json', orient='records', indent=4)
