@@ -8,12 +8,12 @@ from pathlib import Path
 
 def file_rename(folder, title):
     title = title.lower().replace(f' on {folder.lower()}', '')
-    title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
+    title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'WMT14'
-dataset = 'wmt-2014'
-included_links = ['machine-translation-on-wmt2014-english-german', 'unsupervised-machine-translation-on-wmt2014-1', 'unsupervised-machine-translation-on-wmt2014-2']
+folder = 'SST'
+dataset = ''
+included_links = ['text-generation-on-sst', 'sentiment-analysis-on-sst-2-binary']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
