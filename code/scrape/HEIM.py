@@ -1,10 +1,15 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
-import requests
+import pandas as pd
 
-from pathlib import Path
+path_leaderboard = "data/HEIM"
+substrings_to_remove = [" \u2191", " \u2193"]
 
-path_llm = Path("data/llm")
+
+def remove_substrings(s, substrings=substrings_to_remove):
+    for substring in substrings:
+        s = s.replace(substring, '')
+    return s
 
 
 def prepcess_name(s):
@@ -12,7 +17,7 @@ def prepcess_name(s):
     s = s.replace(":", "")
     s = s.replace(" ", "_")
     return s
-    
+
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -25,25 +30,30 @@ if __name__ == '__main__':
 
     for scenario in scenarios.find_elements(By.XPATH, './/a'):
         scenario_url_lst.add(scenario.get_attribute('href'))
-
-    scenario_url_lst = ['https://crfm.stanford.edu/heim/latest/?group=i2p']
+        
     for scenario_url in scenario_url_lst:
         driver.get(scenario_url)
-        table_names = driver.find_elements(By.XPATH, '//div[@class="table-container"]')
-        tables = driver.find_elements(By.XPATH, '//table[@class="query-table results-table"]')
+        table_names = driver.find_elements(
+            By.XPATH, '//div[@class="table-container"]')
+        tables = driver.find_elements(
+            By.XPATH, '//table[@class="query-table results-table"]')
+
         for table_name, table in zip(table_names, tables):
             table_name = table_name.get_attribute('id')
             table_name = prepcess_name(table_name)
+
             column_names = []
             for column in table.find_elements(By.XPATH, './/thead/tr/td/span'):
-                column_names.append(column.text)
-            print(column_names)
-        break
-        # tasks = driver.find_elements(By.XPATH, '//a[text()="JSON"]')
-        # for task in tasks[1:]:
-        #     task_url = task.get_attribute('href').replace('benchmark_outputbenchmark_output', 'benchmark_output')
-        #     response = requests.get(task_url)
-        #     task_id = task_url.split('/')[-1].split('.')[0]
-        #     with open(path_llm / f'HELM-leaderboard-{task_id}-20231024.json', 'wb') as file:
-        #         file.write(response.content)
-                
+                column_name = remove_substrings(column.text)
+                column_names.append(column_name)
+
+            df = []
+            for row in table.find_elements(By.XPATH, './/tbody/tr'):
+                values = []
+                for value in row.find_elements(By.XPATH, './/span'):
+                    values.append(value.text)
+                df.append(values)
+
+            df = pd.DataFrame(df, columns=column_names)
+            df.to_json(f'{path_leaderboard}/shw-{table_name}.json',
+                       orient='records', indent=4)
