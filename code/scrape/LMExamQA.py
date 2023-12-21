@@ -1,10 +1,9 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
+import pandas as pd
+import re
 import os
 import time
-
-def preprocess_name(s):
-    return ' '.join(s.lower().split[:-1])
 
 path_leaderboard = "data/LMExamQA"
 
@@ -24,6 +23,43 @@ def download(driver, table):
     latest_file = get_latest_file(path_leaderboard)
     os.rename(latest_file, f'{path_leaderboard}/shw-{preprocess_name(table.text)}.csv')
 
+def preprocess_name(s):
+    s = s.lower()
+    s = s.split()[:-1]
+    s = ' '.join(s)
+    return s
+
+def extract_number(s):
+    match = re.search(r'-?\b\d+(?:\.\d+)?\b', s)
+    return match.group(0) if match else None
+
+def retrieve_table(driver, table, name=''):
+    table.click()
+    # print(table.text)
+    if name:
+        table_name = name
+    else:
+        table_name = preprocess_name(table.text)
+    # print(table_name)
+    # time.sleep(1)
+    
+    df = []
+    # table = driver.find_element(By.XPATH, '//g[@class="highcharts-series-group"]')
+    for row in driver.find_elements(By.XPATH, "//*[contains(@class, 'highcharts-series highcharts-series')]"):
+        # print(row.tag_name)
+        values = {
+            'Model': row.get_attribute('aria-label').split(',')[0],
+        }
+        for cell in row.find_elements(By.XPATH, ".//*[contains(@class, 'highcharts-point')]"):
+            value = cell.get_attribute('aria-label')
+            column_name = value.split(',')[0]
+            values[column_name] = extract_number(value)
+        df.append(values)
+        # print(values)
+
+    df = pd.DataFrame(df)
+    df.to_json(f'{path_leaderboard}/shw-{table_name}.json', orient='records', indent=4)
+    time.sleep(1)
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -49,15 +85,15 @@ if __name__ == '__main__':
     driver.get(base_url)
 
     zero = driver.find_element(By.XPATH, '//button[@id="pills-result-tab"]')
-    download(driver, zero)
+    retrieve_table(driver, zero, name='overall')
 
     for first in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-primary"]'):
-        download(driver, first)
+        retrieve_table(driver, first)
         for second in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-danger"]'):
-            download(driver, second)
+            retrieve_table(driver, second)
             for third in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-warning"]'):
-                download(driver, third)
+                retrieve_table(driver, third)
                 for fourth in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-success"]'):
-                    download(driver, fourth)
+                    retrieve_table(driver, fourth)
                     for fifth in driver.find_elements(By.XPATH, '//button[@class="btn btn-outline-info"]'):
-                        download(driver, fifth)
+                        retrieve_table(driver, fifth)
