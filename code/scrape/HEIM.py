@@ -14,7 +14,8 @@ def remove_substrings(s, substrings=substrings_to_remove):
 
 def prepcess_name(s):
     s = s.lower()
-    s = s.replace(":", "")
+    s = s.replace(" - ", "_")
+    s = s.replace(": ", "_")
     s = s.replace(" ", "_")
     return s
 
@@ -33,27 +34,25 @@ if __name__ == '__main__':
         
     for scenario_url in scenario_url_lst:
         driver.get(scenario_url)
-        table_names = driver.find_elements(
-            By.XPATH, '//div[@class="table-container"]')
-        tables = driver.find_elements(
-            By.XPATH, '//table[@class="query-table results-table"]')
-
+        print(scenario_url)
+        
+        table_names = driver.find_elements(By.XPATH, '//div[@class="table-container"]')
+        if len(table_names) < 2:
+            table_names = [driver.find_element(By.XPATH, '//div[@class="col-sm-12"]/div/h3').text]
+        else:
+            table_names = [table_name.get_attribute('id') for table_name in table_names]
+            
+        tables = driver.find_elements(By.XPATH, '//table[@class="query-table results-table"]')
         for table_name, table in zip(table_names, tables):
-            table_name = table_name.get_attribute('id')
-            table_name = prepcess_name(table_name)
-
-            column_names = []
-            for column in table.find_elements(By.XPATH, './/thead/tr/td/span'):
-                column_name = remove_substrings(column.text)
-                column_names.append(column_name)
-
+            column_names = [remove_substrings(column.text) for column in table.find_elements(By.XPATH, './/thead/tr/td/span')]
+            
             df = []
             for row in table.find_elements(By.XPATH, './/tbody/tr'):
-                values = []
-                for value in row.find_elements(By.XPATH, './/span'):
-                    values.append(value.text)
-                df.append(values)
+                series = {}
+                values = row.find_elements(By.XPATH, './/span')
+                for column_name, value in zip(column_names, values):
+                    series[column_name] = value.text
+                df.append(series)
 
-            df = pd.DataFrame(df, columns=column_names)
-            df.to_json(f'{path_leaderboard}/shw-{table_name}.json',
-                       orient='records', indent=4)
+            df = pd.DataFrame(df)
+            df.to_json(f'{path_leaderboard}/shw-{prepcess_name(table_name)}.json', orient='records', indent=4)
