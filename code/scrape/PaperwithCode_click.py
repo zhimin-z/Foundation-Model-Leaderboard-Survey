@@ -4,7 +4,7 @@ import undetected_chromedriver as uc
 import time
 import re
 
-dataset = 'kinetics-400-1'
+dataset = 'mteb'
 
 if __name__ == '__main__':
     chrome_options = Options()
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     base_url = 'https://paperswithcode.com'
     url = f'{base_url}/dataset/{dataset}'
     driver.get(url)
-    time.sleep(60)
+    time.sleep(30)
     
     leaderboard_links = []
     leaderboard_tables = driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr')

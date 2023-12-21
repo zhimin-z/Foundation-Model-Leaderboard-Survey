@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MAWPS'
-dataset = 'mawps'
+folder = 'MedQA'
+dataset = 'medqa-usmle'
 included_links = []
 
 if __name__ == '__main__':

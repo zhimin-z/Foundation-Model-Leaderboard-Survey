@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import time
 import re
 
 path_leaderboard = "data/LMExamQA"
@@ -24,6 +25,8 @@ def extract_number(s):
 
 def retrieve_table(driver, table, name=''):
     table.click()
+    time.sleep(0.5)
+    
     if name:
         table_name = name
     else:

@@ -1,0 +1,146 @@
+[
+    {
+        "Model":"Anthropic-LM v4-s3 (52B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.809",
+        "HellaSwag - EM (Robustness)":"0.543",
+        "OpenbookQA - EM (Robustness)":"0.684",
+        "TruthfulQA - EM (Robustness)":"0.361",
+        "MMLU - EM (Robustness)":"0.481"
+    },
+    {
+        "Model":"Anthropic-LM v4-s3 (52B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.765",
+        "HellaSwag - EM (Robustness)":"0.593",
+        "OpenbookQA - EM (Robustness)":"0.558",
+        "TruthfulQA - EM (Robustness)":"0.332",
+        "MMLU - EM (Robustness)":"0.408"
+    },
+    {
+        "Model":"Anthropic-LM v4-s3 (52B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.662",
+        "HellaSwag - EM (Robustness)":"0.807",
+        "OpenbookQA - EM (Robustness)":"0.446",
+        "TruthfulQA - EM (Robustness)":"0.257",
+        "MMLU - EM (Robustness)":"0.37"
+    },
+    {
+        "Model":"BLOOM (176B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.176",
+        "HellaSwag - EM (Robustness)":"0.289",
+        "OpenbookQA - EM (Robustness)":"0.351",
+        "TruthfulQA - EM (Robustness)":"0.204",
+        "MMLU - EM (Robustness)":"0.299"
+    },
+    {
+        "Model":"BLOOM (176B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.735",
+        "HellaSwag - EM (Robustness)":"0.548",
+        "OpenbookQA - EM (Robustness)":"0.534",
+        "TruthfulQA - EM (Robustness)":"0.358",
+        "MMLU - EM (Robustness)":"0.411"
+    },
+    {
+        "Model":"BLOOM (176B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.529",
+        "HellaSwag - EM (Robustness)":"0.744",
+        "OpenbookQA - EM (Robustness)":"0.448",
+        "TruthfulQA - EM (Robustness)":"0.242",
+        "MMLU - EM (Robustness)":"0.345"
+    },
+    {
+        "Model":"GPT-J (6B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.044",
+        "HellaSwag - EM (Robustness)":"0.265",
+        "OpenbookQA - EM (Robustness)":"0.282",
+        "TruthfulQA - EM (Robustness)":"0.196",
+        "MMLU - EM (Robustness)":"0.249"
+    },
+    {
+        "Model":"GPT-J (6B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.603",
+        "HellaSwag - EM (Robustness)":"0.49",
+        "OpenbookQA - EM (Robustness)":"0.514",
+        "TruthfulQA - EM (Robustness)":"0.396",
+        "MMLU - EM (Robustness)":"0.35"
+    },
+    {
+        "Model":"GPT-J (6B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.456",
+        "HellaSwag - EM (Robustness)":"0.663",
+        "OpenbookQA - EM (Robustness)":"0.42",
+        "TruthfulQA - EM (Robustness)":"0.257",
+        "MMLU - EM (Robustness)":"0.328"
+    },
+    {
+        "Model":"GPT-NeoX (20B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.118",
+        "HellaSwag - EM (Robustness)":"0.271",
+        "OpenbookQA - EM (Robustness)":"0.28",
+        "TruthfulQA - EM (Robustness)":"0.213",
+        "MMLU - EM (Robustness)":"0.276"
+    },
+    {
+        "Model":"GPT-NeoX (20B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.676",
+        "HellaSwag - EM (Robustness)":"0.514",
+        "OpenbookQA - EM (Robustness)":"0.524",
+        "TruthfulQA - EM (Robustness)":"0.37",
+        "MMLU - EM (Robustness)":"0.371"
+    },
+    {
+        "Model":"GPT-NeoX (20B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.529",
+        "HellaSwag - EM (Robustness)":"0.718",
+        "OpenbookQA - EM (Robustness)":"0.42",
+        "TruthfulQA - EM (Robustness)":"0.24",
+        "MMLU - EM (Robustness)":"0.361"
+    },
+    {
+        "Model":"OPT (175B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.25",
+        "HellaSwag - EM (Robustness)":"0.305",
+        "OpenbookQA - EM (Robustness)":"0.341",
+        "TruthfulQA - EM (Robustness)":"0.251",
+        "MMLU - EM (Robustness)":"0.318"
+    },
+    {
+        "Model":"OPT (175B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.75",
+        "HellaSwag - EM (Robustness)":"0.548",
+        "OpenbookQA - EM (Robustness)":"0.586",
+        "TruthfulQA - EM (Robustness)":"0.405",
+        "MMLU - EM (Robustness)":"0.35"
+    },
+    {
+        "Model":"OPT (175B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.662",
+        "HellaSwag - EM (Robustness)":"0.791",
+        "OpenbookQA - EM (Robustness)":"0.446",
+        "TruthfulQA - EM (Robustness)":"0.292",
+        "MMLU - EM (Robustness)":"0.353"
+    },
+    {
+        "Model":"OPT (66B) [method: multiple_choice_joint]",
+        "Mean win rate":"0.029",
+        "HellaSwag - EM (Robustness)":"0.253",
+        "OpenbookQA - EM (Robustness)":"0.257",
+        "TruthfulQA - EM (Robustness)":"0.199",
+        "MMLU - EM (Robustness)":"0.276"
+    },
+    {
+        "Model":"OPT (66B) [method: multiple_choice_separate_calibrated]",
+        "Mean win rate":"0.691",
+        "HellaSwag - EM (Robustness)":"0.525",
+        "OpenbookQA - EM (Robustness)":"0.534",
+        "TruthfulQA - EM (Robustness)":"0.385",
+        "MMLU - EM (Robustness)":"0.36"
+    },
+    {
+        "Model":"OPT (66B) [method: multiple_choice_separate_original]",
+        "Mean win rate":"0.515",
+        "HellaSwag - EM (Robustness)":"0.745",
+        "OpenbookQA - EM (Robustness)":"0.41",
+        "TruthfulQA - EM (Robustness)":"0.275",
+        "MMLU - EM (Robustness)":"0.337"
+    }
+]
