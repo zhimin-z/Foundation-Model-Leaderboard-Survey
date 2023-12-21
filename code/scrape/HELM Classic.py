@@ -14,10 +14,8 @@ if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     
-    versions = ['classic', 'lite']
-    for version in versions:
-        url = f'https://crfm.stanford.edu/helm/{version}/latest/#/leaderboard'
-        driver.get(url)
+    url = f'https://crfm.stanford.edu/helm/classic/latest/#/leaderboard'
+    driver.get(url)
         
         select = Select(driver.find_element(By.XPATH, '//select[@name="group" and @id="group"]'))
         for option in select.options:
@@ -35,10 +33,10 @@ if __name__ == '__main__':
                     column_names = [column.text for column in table.find_elements(By.XPATH, './/th/div/span')]
                     df = [[value.text for value in row.find_elements(By.XPATH, './/td')] for row in table.find_elements(By.XPATH, './/tbody/tr')]
                     df = pd.DataFrame(df, columns=column_names)
-                    df.to_json(f'{path_leaderboard}/shw-{version}-{group_name}-{table_name}.json', orient='records', indent=4)
+                    df.to_json(f'{path_leaderboard}/shw-{group_name}-{table_name}.json', orient='records', indent=4)
             else:
                 table = driver.find_element(By.XPATH, f'//table[@class="table w-full px-4"]')
                 column_names = [column.text for column in table.find_elements(By.XPATH, './/th/div/span')]
                 df = [[value.text for value in row.find_elements(By.XPATH, './/td')] for row in table.find_elements(By.XPATH, './/tbody/tr')]
                 df = pd.DataFrame(df, columns=column_names)
-                df.to_json(f'{path_leaderboard}/shw-{version}-{group_name}.json', orient='records', indent=4)
+                df.to_json(f'{path_leaderboard}/shw-{group_name}.json', orient='records', indent=4)
