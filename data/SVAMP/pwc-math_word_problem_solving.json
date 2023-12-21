@@ -229,8 +229,46 @@
     },
     {
         "table_id":8169,
-        "row_id":111643,
+        "row_id":114463,
         "rank":7,
+        "method":"SYRELM (Vicuna 13B)",
+        "mlmodel":{
+
+        },
+        "method_short":"SYRELM ",
+        "method_details":"Vicuna 13B",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-12-09",
+        "metrics":{
+            "Execution Accuracy":"56.65",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "Execution Accuracy":56.65,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1340345,
+            "title":"Frugal LMs Trained to Invoke Symbolic Solvers Achieve Parameter-Efficient Arithmetic Reasoning",
+            "url":"\/paper\/frugal-lms-trained-to-invoke-symbolic-solvers",
+            "published":"2023-12-09T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":8169,
+        "row_id":111643,
+        "rank":8,
         "method":"ATHENA (roberta-large)",
         "mlmodel":{
 
@@ -268,7 +306,7 @@
     {
         "table_id":8169,
         "row_id":104315,
-        "rank":8,
+        "rank":9,
         "method":"MsAT-DeductReasoner",
         "mlmodel":{
 
@@ -306,7 +344,7 @@
     {
         "table_id":8169,
         "row_id":66174,
-        "rank":9,
+        "rank":10,
         "method":"Roberta-DeductReasoner",
         "mlmodel":{
 
@@ -344,7 +382,7 @@
     {
         "table_id":8169,
         "row_id":111639,
-        "rank":10,
+        "rank":11,
         "method":"ATHENA (roberta-base)",
         "mlmodel":{
 
@@ -382,7 +420,7 @@
     {
         "table_id":8169,
         "row_id":29858,
-        "rank":11,
+        "rank":12,
         "method":"Graph2Tree with RoBERTa",
         "mlmodel":{
 
@@ -420,7 +458,7 @@
     {
         "table_id":8169,
         "row_id":29859,
-        "rank":12,
+        "rank":13,
         "method":"GTS with RoBERTa",
         "mlmodel":{
 
@@ -458,7 +496,7 @@
     {
         "table_id":8169,
         "row_id":29860,
-        "rank":13,
+        "rank":14,
         "method":"LSTM Seq2Seq with RoBERTa",
         "mlmodel":{
 
@@ -499,8 +537,46 @@
     },
     {
         "table_id":8169,
+        "row_id":114464,
+        "rank":15,
+        "method":"SYRELM (GPT-J)",
+        "mlmodel":{
+
+        },
+        "method_short":"SYRELM ",
+        "method_details":"GPT-J",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-12-09",
+        "metrics":{
+            "Execution Accuracy":"40.1",
+            "Accuracy":null
+        },
+        "raw_metrics":{
+            "Execution Accuracy":40.1,
+            "Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1340345,
+            "title":"Frugal LMs Trained to Invoke Symbolic Solvers Achieve Parameter-Efficient Arithmetic Reasoning",
+            "url":"\/paper\/frugal-lms-trained-to-invoke-symbolic-solvers",
+            "published":"2023-12-09T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":8169,
         "row_id":29861,
-        "rank":14,
+        "rank":16,
         "method":"Transformer with RoBERTa",
         "mlmodel":{
 
@@ -526,234 +602,6 @@
             "published":"2021-03-12T00:00:00.000000",
             "code":true,
             "review_url":"\/paper\/are-nlp-models-really-able-to-solve-simple\/review\/?hl=29861"
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97005,
-        "rank":15,
-        "method":"Toolformer",
-        "mlmodel":{
-
-        },
-        "method_short":"Toolformer",
-        "method_details":null,
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"29.4",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":29.4,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97007,
-        "rank":16,
-        "method":"GPT-3 (175B)",
-        "mlmodel":{
-
-        },
-        "method_short":"GPT-3 ",
-        "method_details":"175B",
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"10.0",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":10.0,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97004,
-        "rank":17,
-        "method":"Toolformer (disabled)",
-        "mlmodel":{
-
-        },
-        "method_short":"Toolformer ",
-        "method_details":"disabled",
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"6.3",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":6.3,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97002,
-        "rank":18,
-        "method":"GPT-J",
-        "mlmodel":{
-
-        },
-        "method_short":"GPT-J",
-        "method_details":null,
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"5.2",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":5.2,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97003,
-        "rank":19,
-        "method":"GPT-J + CC",
-        "mlmodel":{
-
-        },
-        "method_short":"GPT-J + CC",
-        "method_details":null,
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"5.0",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":5.0,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":8169,
-        "row_id":97006,
-        "rank":20,
-        "method":"OPT (66B)",
-        "mlmodel":{
-
-        },
-        "method_short":"OPT ",
-        "method_details":"66B",
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Execution Accuracy":"4.9",
-            "Accuracy":null
-        },
-        "raw_metrics":{
-            "Execution Accuracy":4.9,
-            "Accuracy":null
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
         },
         "external_source_url":null,
         "tags":[

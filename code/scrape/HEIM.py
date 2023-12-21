@@ -26,6 +26,7 @@ if __name__ == '__main__':
 
     base_url = 'https://crfm.stanford.edu/heim/latest/'
     driver.get(base_url)
+    
     scenarios = driver.find_elements(By.XPATH, '//div[@class="col-sm-3"]')[1]
     scenario_url_lst = set()
 
