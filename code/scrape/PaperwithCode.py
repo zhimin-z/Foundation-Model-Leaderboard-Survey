@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'MedQA'
-dataset = 'medqa-usmle'
-included_links = []
+folder = 'WMT14'
+dataset = 'wmt-2014'
+included_links = ['machine-translation-on-wmt2014-english-german', 'unsupervised-machine-translation-on-wmt2014-1', 'unsupervised-machine-translation-on-wmt2014-2']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
