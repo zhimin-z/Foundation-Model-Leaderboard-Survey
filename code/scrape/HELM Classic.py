@@ -4,7 +4,7 @@ import undetected_chromedriver as uc
 import pandas as pd
 import time
 
-path_leaderboard = "data/HELM"
+path_leaderboard = "data/HELM Classic"
 
 def preprocess_name(s):
     s = s.lower().replace("/", "_").replace(" - ", "_").replace(": ", "_").replace(" ", "_")
