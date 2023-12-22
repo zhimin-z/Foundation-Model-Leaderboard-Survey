@@ -6,7 +6,6 @@ import pickle
 import time
 import os
 
-# checkpoint = {}
 path_leaderboard = "data/HELM Lite"
 url = 'https://crfm.stanford.edu/helm/lite/latest/#/leaderboard'
 
@@ -29,8 +28,8 @@ def load(path_leaderboard):
             return pickle.load(file)
     except FileNotFoundError:
         return {}
-    
-    
+
+
 def remove(path_leaderboard):
     os.remove(f'{path_leaderboard}/checkpoint.pkl')
 
@@ -40,7 +39,6 @@ def scrape_data(driver, url, path_leaderboard, checkpoint):
     select = Select(driver.find_element(
         By.XPATH, '//select[@name="group" and @id="group"]'))
     for option in select.options:
-        # print(option.text)
         if not checkpoint:
             select.select_by_visible_text(option.text)
             time.sleep(1)
@@ -49,13 +47,11 @@ def scrape_data(driver, url, path_leaderboard, checkpoint):
             if scenarios:
                 for scenario in scenarios[::-1]:
                     save(path_leaderboard, option.text, scenario.text)
-                    # checkpoint = {'group': option.text,'scenario': scenario.text}
                     scenario.click()
                     time.sleep(1)
                     process_table(driver, option.text,
                                   scenario.text, path_leaderboard)
             else:
-                # checkpoint = {'group': option.text,'scenario': ''}
                 save(path_leaderboard, option.text, '')
                 process_table(driver, option.text, '', path_leaderboard)
         elif checkpoint and (option.text == checkpoint['group']):
@@ -64,7 +60,6 @@ def scrape_data(driver, url, path_leaderboard, checkpoint):
             if checkpoint['scenario']:
                 for scenario in driver.find_elements(By.XPATH, '//div[@role="navigation"]/div')[::-1]:
                     if not checkpoint:
-                        # checkpoint = {'group': option.text,'scenario': scenario.text}
                         save(path_leaderboard, option.text, scenario.text)
                         scenario.click()
                         time.sleep(1)
@@ -109,5 +104,5 @@ if __name__ == '__main__':
             print(f"Error occurred: {e}. Retrying...")
             checkpoint = load(path_leaderboard)
             driver.refresh()
-            
+
     remove(path_leaderboard)
