@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'SST'
-dataset = ''
-included_links = ['text-generation-on-sst', 'sentiment-analysis-on-sst-2-binary']
+folder = 'CoNaLa'
+dataset = 'conala'
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()

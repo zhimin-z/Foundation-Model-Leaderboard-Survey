@@ -1,0 +1,382 @@
+[
+    {
+        "table_id":9818,
+        "row_id":105458,
+        "rank":1,
+        "method":"PanGu-Coder-FT-I",
+        "mlmodel":{
+
+        },
+        "method_short":"PanGu-Coder-FT-I",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-26",
+        "metrics":{
+            "BLEU":"44.32",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":44.32,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1238549,
+            "title":"Fine-Tuning Large Language Models for Answering Programming Questions with Code Snippets",
+            "url":"\/paper\/fine-tuning-large-language-models-for",
+            "published":"2023-06-26T00:00:00.000000",
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":48795,
+        "rank":2,
+        "method":"MarianCG",
+        "mlmodel":{
+
+        },
+        "method_short":"MarianCG",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-11-22",
+        "metrics":{
+            "BLEU":"34.43",
+            "Exact Match Accuracy":"10.2"
+        },
+        "raw_metrics":{
+            "BLEU":34.43,
+            "Exact Match Accuracy":10.2
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1117475,
+            "title":"MarianCG: a code generation transformer model inspired by machine translation",
+            "url":"\/paper\/mariancg-a-code-generation-transformer-model",
+            "published":"2022-11-22T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":84764,
+        "rank":3,
+        "method":"TranX + BERT w\/mined",
+        "mlmodel":{
+
+        },
+        "method_short":"TranX + BERT w\/mined",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-28",
+        "metrics":{
+            "BLEU":"34.2",
+            "Exact Match Accuracy":"5.8"
+        },
+        "raw_metrics":{
+            "BLEU":34.2,
+            "Exact Match Accuracy":5.8
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":968753,
+            "title":"The impact of lexical and grammatical processing on generating code from natural language",
+            "url":"\/paper\/the-impact-of-lexical-and-grammatical-1",
+            "published":"2022-02-28T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/the-impact-of-lexical-and-grammatical-1\/review\/?hl=84764"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":35431,
+        "rank":4,
+        "method":"BERT + TAE",
+        "mlmodel":{
+
+        },
+        "method_short":"BERT + TAE",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-01-01",
+        "metrics":{
+            "BLEU":"33.41",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":33.41,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":733202,
+            "title":"Code Generation from Natural Language with Less Prior and More Monolingual Data",
+            "url":"\/paper\/semantic-parsing-with-less-prior-and-more",
+            "published":"2021-01-01T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/semantic-parsing-with-less-prior-and-more\/review\/?hl=35431"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34612,
+        "rank":5,
+        "method":"External Knowledge With API + Reranking",
+        "mlmodel":{
+
+        },
+        "method_short":"External Knowledge With API + Reranking",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-04-20",
+        "metrics":{
+            "BLEU":"32.26",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":32.26,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":191437,
+            "title":"Incorporating External Knowledge through Pre-training for Natural Language to Code Generation",
+            "url":"\/paper\/incorporating-external-knowledge-through-pre",
+            "published":"2020-04-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/incorporating-external-knowledge-through-pre\/review\/?hl=34612"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34611,
+        "rank":6,
+        "method":"External Knowledge With API",
+        "mlmodel":{
+
+        },
+        "method_short":"External Knowledge With API",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2020-04-20",
+        "metrics":{
+            "BLEU":"30.69",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":30.69,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":191437,
+            "title":"Incorporating External Knowledge through Pre-training for Natural Language to Code Generation",
+            "url":"\/paper\/incorporating-external-knowledge-through-pre",
+            "published":"2020-04-20T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/incorporating-external-knowledge-through-pre\/review\/?hl=34611"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34614,
+        "rank":7,
+        "method":"BART W\/ Mined",
+        "mlmodel":{
+
+        },
+        "method_short":"BART W\/ Mined",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-08",
+        "metrics":{
+            "BLEU":"30.55",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":30.55,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":813874,
+            "title":"Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation",
+            "url":"\/paper\/reading-stackoverflow-encourages-cheating",
+            "published":"2021-06-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34610,
+        "rank":8,
+        "method":"Reranker",
+        "mlmodel":{
+
+        },
+        "method_short":"Reranker",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2019-07-01",
+        "metrics":{
+            "BLEU":"30.11",
+            "Exact Match Accuracy":"2.8"
+        },
+        "raw_metrics":{
+            "BLEU":30.11,
+            "Exact Match Accuracy":2.8
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":147409,
+            "title":"Reranking for Neural Semantic Parsing",
+            "url":"\/paper\/reranking-for-neural-semantic-parsing",
+            "published":"2019-07-01T00:00:00.000000",
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34613,
+        "rank":9,
+        "method":"BART Base",
+        "mlmodel":{
+
+        },
+        "method_short":"BART Base",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-08",
+        "metrics":{
+            "BLEU":"26.24",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":26.24,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":813874,
+            "title":"Reading StackOverflow Encourages Cheating: Adding Question Text Improves Extractive Code Generation",
+            "url":"\/paper\/reading-stackoverflow-encourages-cheating",
+            "published":"2021-06-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":9818,
+        "row_id":34609,
+        "rank":10,
+        "method":"TranX",
+        "mlmodel":{
+
+        },
+        "method_short":"TranX",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2018-05-01",
+        "metrics":{
+            "BLEU":"24.30",
+            "Exact Match Accuracy":null
+        },
+        "raw_metrics":{
+            "BLEU":24.3,
+            "Exact Match Accuracy":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":58773,
+            "title":"TRANX: A Transition-based Neural Abstract Syntax Parser for Semantic Parsing and Code Generation",
+            "url":"\/paper\/tranx-a-transition-based-neural-abstract",
+            "published":"2018-10-05T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/tranx-a-transition-based-neural-abstract\/review\/?hl=34609"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
