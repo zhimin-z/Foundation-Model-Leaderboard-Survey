@@ -11,7 +11,7 @@ path_leaderboard = Path("data/Big Code Models Leaderboard")
 
 
 def get_json_format_data():
-    url = 'https://bigcode-bigcode-models-leaderboard.hf.space/'
+    url = 'https://bigcode-bigcode-models-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 

@@ -53,7 +53,7 @@ if __name__ == '__main__':
     driver.implicitly_wait(5)
     driver.execute_cdp_cmd("Page.setDownloadBehavior", params)
 
-    base_url = 'https://lmexam.com/'
+    base_url = 'https://lmexam.com'
     driver.get(base_url)
 
     zero = driver.find_element(By.XPATH, '//button[@id="pills-result-tab"]')

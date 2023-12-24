@@ -11,7 +11,7 @@ path_llm = Path("data/llm")
 
 
 def get_json_format_data():
-    url = 'https://ailab-cvc-seed-bench-leaderboard.hf.space/'
+    url = 'https://ailab-cvc-seed-bench-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 

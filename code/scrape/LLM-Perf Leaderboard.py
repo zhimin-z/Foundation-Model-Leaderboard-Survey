@@ -11,7 +11,7 @@ path_leaderboard = Path("data/LLM-Perf Leaderboard")
 
 
 def get_json_format_data():
-    url = 'https://optimum-llm-perf-leaderboard.hf.space/'
+    url = 'https://optimum-llm-perf-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 

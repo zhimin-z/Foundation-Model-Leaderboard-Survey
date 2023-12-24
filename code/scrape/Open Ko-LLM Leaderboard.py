@@ -10,7 +10,7 @@ path_leaderboard = Path("data/Open Ko-LLM Leaderboard")
 
 
 def get_json_format_data():
-    url = 'https://upstage-open-ko-llm-leaderboard.hf.space/'
+    url = 'https://upstage-open-ko-llm-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
