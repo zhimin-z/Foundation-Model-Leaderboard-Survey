@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'CoNaLa'
-dataset = 'conala'
+folder = 'LLaVA-Bench'
+dataset = 'llava-bench-in-the-wild'
 included_links = []
 
 if __name__ == '__main__':
