@@ -1,11 +1,11 @@
+import pandas as pd
 import argparse
 import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 import json
 import re
 
 from pathlib import Path
+from bs4 import BeautifulSoup
 
 path_leaderboard = Path("data/LLM-Perf Leaderboard")
 
