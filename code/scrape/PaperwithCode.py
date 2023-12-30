@@ -11,8 +11,8 @@ def file_rename(folder, title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'AISHELL-1'
-dataset = 'aishell-1'
+folder = 'STS-B'
+dataset = 'sts-benchmark'
 included_links = []
 
 if __name__ == '__main__':
