@@ -11,9 +11,9 @@ def file_rename(folder, title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'STS-B'
-dataset = 'sts-benchmark'
-included_links = []
+folder = 'BANKING77'
+dataset = ''
+included_links = ['intent-detection-on-banking77']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
