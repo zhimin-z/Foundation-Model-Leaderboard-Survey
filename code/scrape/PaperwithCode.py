@@ -6,13 +6,13 @@ import re
 
 from pathlib import Path
 
-def file_rename(folder, title):
-    title = title.lower().replace(f' on {folder.lower()}', '')
+def file_rename(title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-folder = 'StoryCloze'
-dataset = 'storycloze'
+bloom = True
+folder = 'Flores-101'
+dataset = 'flores-101'
 included_links = []
 
 if __name__ == '__main__':
@@ -30,8 +30,10 @@ if __name__ == '__main__':
     else:
         url = f'{base_url}/dataset/{dataset}'
         driver.get(url)
-        leaderboard_tables = driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr')
-        for leaderboard in leaderboard_tables:
+        for leaderboard in driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr'):
+            if bloom:
+                if 'bloom' not in driver.execute_script("return arguments[0].innerText;", leaderboard):
+                    continue
             text = leaderboard.get_attribute('onclick')
             match = re.findall(r"'(.*?)'", text)[0]
             link = f'{base_url}{match}'
@@ -45,7 +47,7 @@ if __name__ == '__main__':
             table = pd.DataFrame(table)
             table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-            title = file_rename(folder, title)
+            title = file_rename(title)
             table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
@@ -54,5 +56,5 @@ if __name__ == '__main__':
                 table = pd.DataFrame(table)
                 table = table.rename(columns={'method': 'Model'})
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-                title = file_rename(folder, title)
+                title = file_rename(title)
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
