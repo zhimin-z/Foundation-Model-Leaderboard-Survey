@@ -43,6 +43,7 @@ if __name__ == '__main__':
         if table != '[]':
             table = json.loads(table)
             table = pd.DataFrame(table)
+            table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(folder, title)
             table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
@@ -51,6 +52,7 @@ if __name__ == '__main__':
             if table != '[]':
                 table = json.loads(table)
                 table = pd.DataFrame(table)
+                table = table.rename(columns={'method': 'Model'})
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
                 title = file_rename(folder, title)
                 table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
