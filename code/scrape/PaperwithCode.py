@@ -10,9 +10,9 @@ def file_rename(title):
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
-bloom = True
-folder = 'Flores-101'
-dataset = 'flores-101'
+bloom = False
+folder = 'ANLI'
+dataset = 'anli'
 included_links = []
 
 if __name__ == '__main__':
