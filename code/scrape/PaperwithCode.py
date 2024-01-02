@@ -11,16 +11,15 @@ def file_rename(title):
     return title
 
 bloom = False
-folder = 'ANLI'
-dataset = 'anli'
-included_links = []
+path_leaderboard = 'data/MSCOCO'
+dataset = ''
+included_links = ['text-to-image-generation-on-coco', 'image-captioning-on-coco', 'zero-shot-cross-modal-retrieval-on-coco-2014', 'image-to-text-retrieval-on-coco', 'image-retrieval-on-coco']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
     leaderboard_links = []
-    path_leaderboard = Path(f"data/{folder}") if folder else Path(f"data/{dataset}")
     base_url = 'https://paperswithcode.com'
     
     if included_links:
@@ -48,7 +47,7 @@ if __name__ == '__main__':
             table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
-            table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
+            table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
         else:
             table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
             if table != '[]':
@@ -57,4 +56,4 @@ if __name__ == '__main__':
                 table = table.rename(columns={'method': 'Model'})
                 title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
                 title = file_rename(title)
-                table.to_json(path_leaderboard / f'pwc-{title}.json', orient='records', indent=4)
+                table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
