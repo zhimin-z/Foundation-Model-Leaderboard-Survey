@@ -7,13 +7,14 @@ import re
 from pathlib import Path
 
 def file_rename(title):
+    title = title.lower()
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
 bloom = False
-path_leaderboard = 'data/MSCOCO'
+path_leaderboard = 'data/SST'
 dataset = ''
-included_links = ['text-to-image-generation-on-coco', 'image-captioning-on-coco', 'zero-shot-cross-modal-retrieval-on-coco-2014', 'image-to-text-retrieval-on-coco', 'image-retrieval-on-coco']
+included_links = ['sentiment-analysis-on-sst-2-binary', 'text-generation-on-sst']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
