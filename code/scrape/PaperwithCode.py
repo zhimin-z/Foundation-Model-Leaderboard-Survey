@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-path_leaderboard = 'data/SST'
+path_leaderboard = 'data/QNLI'
 dataset = ''
-included_links = ['sentiment-analysis-on-sst-2-binary', 'text-generation-on-sst']
+included_links = ['text-generation-on-qnli']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
