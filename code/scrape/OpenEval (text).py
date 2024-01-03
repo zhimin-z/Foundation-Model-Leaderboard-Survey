@@ -4,8 +4,14 @@ import pandas as pd
 
 from pathlib import Path
 
-folder = 'OpenEval(text)'
+folder = 'OpenEval (text)'
 path_leaderboard = Path(f"data/{folder}")
+
+
+def filter_first_row(s):
+    parts = s.split("\n")
+    return "\n".join(parts[1:]) if len(parts) > 1 else s
+
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -33,4 +39,5 @@ if __name__ == '__main__':
             df.append(values)
             
         df = pd.DataFrame(df, columns=column_names)
+        df['Model'] = df['Model'].apply(filter_first_row)
         df.to_json(path_leaderboard / f'shw-{table_name}.json', orient='records', indent=4)
