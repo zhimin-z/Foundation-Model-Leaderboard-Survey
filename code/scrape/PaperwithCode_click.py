@@ -4,7 +4,7 @@ import undetected_chromedriver as uc
 import time
 import re
 
-dataset = 'fashion-mnist'
+dataset = 'stl-10'
 
 if __name__ == '__main__':
     chrome_options = Options()
