@@ -1,6 +1,21 @@
 [
     {
         "Rank":1,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":84.63,
+        "BIOSSES":85.55,
+        "SICK-R":82.64,
+        "STS12":79.66,
+        "STS13":88.43,
+        "STS14":84.54,
+        "STS15":90.43,
+        "STS16":87.68,
+        "STS17 (en-en)":91.75,
+        "STS22 (en)":66.98,
+        "STSBenchmark":88.6
+    },
+    {
+        "Rank":2,
         "Model":"UAE-Large-V1",
         "Average":84.54,
         "BIOSSES":86.14,
@@ -15,7 +30,7 @@
         "STSBenchmark":89.06
     },
     {
-        "Rank":2,
+        "Rank":3,
         "Model":"bge-large-en-v1.5-quant",
         "Average":84.18,
         "BIOSSES":88.37,
@@ -30,7 +45,7 @@
         "STSBenchmark":87.89
     },
     {
-        "Rank":3,
+        "Rank":4,
         "Model":"sf_model_e5",
         "Average":83.85,
         "BIOSSES":86.75,
@@ -45,7 +60,7 @@
         "STSBenchmark":88.33
     },
     {
-        "Rank":4,
+        "Rank":5,
         "Model":"gte-large",
         "Average":83.35,
         "BIOSSES":88.65,
@@ -60,7 +75,7 @@
         "STSBenchmark":86.07
     },
     {
-        "Rank":5,
+        "Rank":6,
         "Model":"ember-v1",
         "Average":83.34,
         "BIOSSES":85.81,
@@ -75,7 +90,7 @@
         "STSBenchmark":87.77
     },
     {
-        "Rank":6,
+        "Rank":7,
         "Model":"Cohere-embed-multilingual-v3.0",
         "Average":83.15,
         "BIOSSES":85.01,
@@ -90,7 +105,7 @@
         "STSBenchmark":88.79
     },
     {
-        "Rank":7,
+        "Rank":8,
         "Model":"instructor-large",
         "Average":83.15,
         "BIOSSES":84.39,
@@ -105,7 +120,7 @@
         "STSBenchmark":86.88
     },
     {
-        "Rank":8,
+        "Rank":9,
         "Model":"bge-large-en-v1.5",
         "Average":83.11,
         "BIOSSES":84.65,
@@ -120,7 +135,7 @@
         "STSBenchmark":87.52
     },
     {
-        "Rank":9,
+        "Rank":10,
         "Model":"instructor-xl",
         "Average":83.06,
         "BIOSSES":84.15,
@@ -135,7 +150,7 @@
         "STSBenchmark":86.56
     },
     {
-        "Rank":10,
+        "Rank":11,
         "Model":"stella-base-en-v2",
         "Average":83.02,
         "BIOSSES":85.94,
@@ -150,7 +165,7 @@
         "STSBenchmark":87.45
     },
     {
-        "Rank":11,
+        "Rank":12,
         "Model":"udever-bloom-7b1",
         "Average":83.01,
         "BIOSSES":85.52,
@@ -165,7 +180,7 @@
         "STSBenchmark":88.02
     },
     {
-        "Rank":12,
+        "Rank":13,
         "Model":"voyage-lite-01-instruct",
         "Average":82.93,
         "BIOSSES":84.85,
@@ -180,7 +195,7 @@
         "STSBenchmark":89.86
     },
     {
-        "Rank":13,
+        "Rank":14,
         "Model":"gte-large-quant",
         "Average":82.88,
         "BIOSSES":87.98,
@@ -195,7 +210,7 @@
         "STSBenchmark":85.4
     },
     {
-        "Rank":14,
+        "Rank":15,
         "Model":"bge-base-en-v1.5-quant",
         "Average":82.79,
         "BIOSSES":86.71,
@@ -210,7 +225,7 @@
         "STSBenchmark":86.79
     },
     {
-        "Rank":15,
+        "Rank":16,
         "Model":"sentence-t5-xxl",
         "Average":82.63,
         "BIOSSES":80.43,
@@ -225,7 +240,7 @@
         "STSBenchmark":84.01
     },
     {
-        "Rank":16,
+        "Rank":17,
         "Model":"Cohere-embed-english-v3.0",
         "Average":82.62,
         "BIOSSES":83.5,
@@ -240,7 +255,7 @@
         "STSBenchmark":88.55
     },
     {
-        "Rank":17,
+        "Rank":18,
         "Model":"bge-large-en-v1.5-sparse",
         "Average":82.5,
         "BIOSSES":85.64,
@@ -253,21 +268,6 @@
         "STS17 (en-en)":89.75,
         "STS22 (en)":64.1,
         "STSBenchmark":86.88
-    },
-    {
-        "Rank":18,
-        "Model":"bge-base-en-v1.5",
-        "Average":82.4,
-        "BIOSSES":86.94,
-        "SICK-R":80.3,
-        "STS12":78.03,
-        "STS13":84.19,
-        "STS14":82.27,
-        "STS15":87.96,
-        "STS16":85.48,
-        "STS17 (en-en)":86.42,
-        "STS22 (en)":65.95,
-        "STSBenchmark":86.42
     },
     {
         "Rank":19,
@@ -286,6 +286,36 @@
     },
     {
         "Rank":20,
+        "Model":"bge-base-en-v1.5",
+        "Average":82.4,
+        "BIOSSES":86.94,
+        "SICK-R":80.3,
+        "STS12":78.03,
+        "STS13":84.19,
+        "STS14":82.27,
+        "STS15":87.96,
+        "STS16":85.48,
+        "STS17 (en-en)":86.42,
+        "STS22 (en)":65.95,
+        "STSBenchmark":86.42
+    },
+    {
+        "Rank":21,
+        "Model":"bge-base-en-v1.5-onnx",
+        "Average":82.4,
+        "BIOSSES":86.94,
+        "SICK-R":80.3,
+        "STS12":78.03,
+        "STS13":84.19,
+        "STS14":82.27,
+        "STS15":87.96,
+        "STS16":85.48,
+        "STS17 (en-en)":86.42,
+        "STS22 (en)":65.95,
+        "STSBenchmark":86.42
+    },
+    {
+        "Rank":22,
         "Model":"udever-bloom-3b",
         "Average":82.37,
         "BIOSSES":84.82,
@@ -300,7 +330,7 @@
         "STSBenchmark":87.71
     },
     {
-        "Rank":21,
+        "Rank":23,
         "Model":"gte-base",
         "Average":82.3,
         "BIOSSES":87.64,
@@ -315,7 +345,7 @@
         "STSBenchmark":85.73
     },
     {
-        "Rank":22,
+        "Rank":24,
         "Model":"instructor-base",
         "Average":82.29,
         "BIOSSES":82.31,
@@ -330,7 +360,7 @@
         "STSBenchmark":86.43
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"gte-small",
         "Average":82.07,
         "BIOSSES":88.17,
@@ -345,7 +375,7 @@
         "STSBenchmark":85.57
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"e5-large",
         "Average":82.06,
         "BIOSSES":84.73,
@@ -360,7 +390,7 @@
         "STSBenchmark":87.21
     },
     {
-        "Rank":25,
+        "Rank":27,
         "Model":"e5-large-v2",
         "Average":82.05,
         "BIOSSES":83.6,
@@ -375,7 +405,7 @@
         "STSBenchmark":87.74
     },
     {
-        "Rank":26,
+        "Rank":28,
         "Model":"bge-small-en-v1.5-quant",
         "Average":82.04,
         "BIOSSES":86.66,
@@ -390,11 +420,11 @@
         "STSBenchmark":86.31
     },
     {
-        "Rank":27,
+        "Rank":29,
         "Model":"gte-large-sparse",
         "Average":81.9,
         "BIOSSES":85.83,
-        "SICK-R":79.0,
+        "SICK-R":79,
         "STS12":73.48,
         "STS13":86.14,
         "STS14":80.36,
@@ -405,7 +435,7 @@
         "STSBenchmark":85.45
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"sentence-t5-large",
         "Average":81.83,
         "BIOSSES":78.93,
@@ -420,7 +450,7 @@
         "STSBenchmark":85.36
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"sentence-t5-xl",
         "Average":81.66,
         "BIOSSES":73.12,
@@ -435,7 +465,7 @@
         "STSBenchmark":83.93
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"bge-small-en-v1.5",
         "Average":81.59,
         "BIOSSES":83.75,
@@ -450,7 +480,7 @@
         "STSBenchmark":85.86
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"multilingual-e5-large",
         "Average":81.56,
         "BIOSSES":82.51,
@@ -465,7 +495,7 @@
         "STSBenchmark":87.29
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"udever-bloom-1b1",
         "Average":81.52,
         "BIOSSES":84.65,
@@ -480,7 +510,7 @@
         "STSBenchmark":85.79
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"gte-small-quant",
         "Average":81.5,
         "BIOSSES":87.81,
@@ -495,7 +525,7 @@
         "STSBenchmark":85.13
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"bge-base-en-v1.5-sparse",
         "Average":81.19,
         "BIOSSES":83.94,
@@ -510,7 +540,7 @@
         "STSBenchmark":85.93
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"sentence-t5-base",
         "Average":81.14,
         "BIOSSES":75.89,
@@ -525,7 +555,7 @@
         "STSBenchmark":85.52
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"e5-base-v2",
         "Average":81.05,
         "BIOSSES":81.4,
@@ -540,7 +570,7 @@
         "STSBenchmark":86.52
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"text-embedding-ada-002",
         "Average":80.97,
         "BIOSSES":86.35,
@@ -555,7 +585,7 @@
         "STSBenchmark":83.17
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"jina-embedding-l-en-v1",
         "Average":80.96,
         "BIOSSES":84.43,
@@ -570,7 +600,7 @@
         "STSBenchmark":84.6
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"e5-base",
         "Average":80.96,
         "BIOSSES":85.1,
@@ -585,7 +615,7 @@
         "STSBenchmark":86.18
     },
     {
-        "Rank":40,
+        "Rank":42,
         "Model":"Cohere-embed-english-light-v3.0",
         "Average":80.92,
         "BIOSSES":81.72,
@@ -600,7 +630,7 @@
         "STSBenchmark":86.58
     },
     {
-        "Rank":41,
+        "Rank":43,
         "Model":"e5-small",
         "Average":80.87,
         "BIOSSES":84.22,
@@ -615,7 +645,7 @@
         "STSBenchmark":86.36
     },
     {
-        "Rank":42,
+        "Rank":44,
         "Model":"jina-embeddings-v2-base-en",
         "Average":80.7,
         "BIOSSES":81.23,
@@ -630,7 +660,7 @@
         "STSBenchmark":84.84
     },
     {
-        "Rank":43,
+        "Rank":45,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Average":80.53,
         "BIOSSES":79.5,
@@ -645,7 +675,7 @@
         "STSBenchmark":85.67
     },
     {
-        "Rank":44,
+        "Rank":46,
         "Model":"XLM-3B5-embedding",
         "Average":80.47,
         "BIOSSES":80.72,
@@ -660,7 +690,7 @@
         "STSBenchmark":86.46
     },
     {
-        "Rank":45,
+        "Rank":47,
         "Model":"gte-tiny",
         "Average":80.46,
         "BIOSSES":86.63,
@@ -675,7 +705,7 @@
         "STSBenchmark":84.38
     },
     {
-        "Rank":46,
+        "Rank":48,
         "Model":"e5-small-v2",
         "Average":80.39,
         "BIOSSES":79.43,
@@ -690,7 +720,7 @@
         "STSBenchmark":85.95
     },
     {
-        "Rank":47,
+        "Rank":49,
         "Model":"all-mpnet-base-v2",
         "Average":80.28,
         "BIOSSES":80.43,
@@ -705,7 +735,7 @@
         "STSBenchmark":83.42
     },
     {
-        "Rank":48,
+        "Rank":50,
         "Model":"multilingual-e5-base",
         "Average":80.26,
         "BIOSSES":85.06,
@@ -720,37 +750,52 @@
         "STSBenchmark":85.64
     },
     {
-        "Rank":49,
-        "Model":"text2vec-base-multilingual",
-        "Average":80.24,
-        "BIOSSES":66.16,
-        "SICK-R":79.97,
-        "STS12":80.91,
-        "STS13":82.86,
-        "STS14":87.36,
-        "STS15":88.31,
-        "STS16":81.61,
-        "STS17 (en-en)":85.81,
-        "STS22 (en)":62.99,
-        "STSBenchmark":86.45
-    },
-    {
-        "Rank":50,
-        "Model":"text2vec-base-multilingual",
-        "Average":80.24,
-        "BIOSSES":66.16,
-        "SICK-R":79.97,
-        "STS12":80.91,
-        "STS13":82.86,
-        "STS14":87.36,
-        "STS15":88.31,
-        "STS16":81.61,
-        "STS17 (en-en)":85.81,
-        "STS22 (en)":62.99,
-        "STSBenchmark":86.45
-    },
-    {
         "Rank":51,
+        "Model":"text2vec-base-multilingual",
+        "Average":80.24,
+        "BIOSSES":66.16,
+        "SICK-R":79.97,
+        "STS12":80.91,
+        "STS13":82.86,
+        "STS14":87.36,
+        "STS15":88.31,
+        "STS16":81.61,
+        "STS17 (en-en)":85.81,
+        "STS22 (en)":62.99,
+        "STSBenchmark":86.45
+    },
+    {
+        "Rank":52,
+        "Model":"text2vec-base-multilingual",
+        "Average":80.24,
+        "BIOSSES":66.16,
+        "SICK-R":79.97,
+        "STS12":80.91,
+        "STS13":82.86,
+        "STS14":87.36,
+        "STS15":88.31,
+        "STS16":81.61,
+        "STS17 (en-en)":85.81,
+        "STS22 (en)":62.99,
+        "STSBenchmark":86.45
+    },
+    {
+        "Rank":53,
+        "Model":"embedder-100p",
+        "Average":80.17,
+        "BIOSSES":75.32,
+        "SICK-R":80.91,
+        "STS12":76.98,
+        "STS13":82.63,
+        "STS14":77.84,
+        "STS15":85.92,
+        "STS16":80.68,
+        "STS17 (en-en)":88.99,
+        "STS22 (en)":68.26,
+        "STSBenchmark":84.2
+    },
+    {
+        "Rank":54,
         "Model":"Cohere-embed-multilingual-light-v3.0",
         "Average":80.09,
         "BIOSSES":84.01,
@@ -765,7 +810,7 @@
         "STSBenchmark":85.46
     },
     {
-        "Rank":52,
+        "Rank":55,
         "Model":"jina-embeddings-v2-small-en",
         "Average":80,
         "BIOSSES":80.52,
@@ -780,7 +825,7 @@
         "STSBenchmark":84.04
     },
     {
-        "Rank":53,
+        "Rank":56,
         "Model":"jina-embedding-b-en-v1",
         "Average":79.93,
         "BIOSSES":83.58,
@@ -795,7 +840,7 @@
         "STSBenchmark":82.57
     },
     {
-        "Rank":54,
+        "Rank":57,
         "Model":"udever-bloom-560m",
         "Average":79.93,
         "BIOSSES":84.44,
@@ -810,7 +855,7 @@
         "STSBenchmark":83.63
     },
     {
-        "Rank":55,
+        "Rank":58,
         "Model":"all-MiniLM-L12-v2",
         "Average":79.8,
         "BIOSSES":83.57,
@@ -825,7 +870,22 @@
         "STSBenchmark":83.09
     },
     {
-        "Rank":56,
+        "Rank":59,
+        "Model":"bi-cse",
+        "Average":79.66,
+        "BIOSSES":70.56,
+        "SICK-R":79.04,
+        "STS12":78.39,
+        "STS13":83.72,
+        "STS14":79.19,
+        "STS15":85.58,
+        "STS16":82.33,
+        "STS17 (en-en)":87.9,
+        "STS22 (en)":63.92,
+        "STSBenchmark":85.99
+    },
+    {
+        "Rank":60,
         "Model":"sup-simcse-bert-base-uncased",
         "Average":79.12,
         "BIOSSES":68.38,
@@ -840,7 +900,7 @@
         "STSBenchmark":84.25
     },
     {
-        "Rank":57,
+        "Rank":61,
         "Model":"MegatronBert-1B3-embedding",
         "Average":79.11,
         "BIOSSES":83.86,
@@ -855,7 +915,7 @@
         "STSBenchmark":83.69
     },
     {
-        "Rank":58,
+        "Rank":62,
         "Model":"multilingual-e5-small",
         "Average":79.1,
         "BIOSSES":82.26,
@@ -870,7 +930,7 @@
         "STSBenchmark":84.01
     },
     {
-        "Rank":59,
+        "Rank":63,
         "Model":"XLM-0B6-embedding",
         "Average":79.02,
         "BIOSSES":80.25,
@@ -885,7 +945,7 @@
         "STSBenchmark":86.5
     },
     {
-        "Rank":60,
+        "Rank":64,
         "Model":"all-MiniLM-L6-v2",
         "Average":78.9,
         "BIOSSES":81.64,
@@ -900,7 +960,7 @@
         "STSBenchmark":82.03
     },
     {
-        "Rank":61,
+        "Rank":65,
         "Model":"bge-micro-v2",
         "Average":78.65,
         "BIOSSES":82.92,
@@ -915,7 +975,7 @@
         "STSBenchmark":82.5
     },
     {
-        "Rank":62,
+        "Rank":66,
         "Model":"text-similarity-ada-001",
         "Average":78.6,
         "BIOSSES":78.04,
@@ -930,7 +990,7 @@
         "STSBenchmark":83.78
     },
     {
-        "Rank":63,
+        "Rank":67,
         "Model":"bge-small-4096",
         "Average":78.59,
         "BIOSSES":81.6,
@@ -945,7 +1005,7 @@
         "STSBenchmark":81.94
     },
     {
-        "Rank":64,
+        "Rank":68,
         "Model":"bge-small-en-v1.5-sparse",
         "Average":78.53,
         "BIOSSES":78.95,
@@ -960,7 +1020,7 @@
         "STSBenchmark":81.77
     },
     {
-        "Rank":65,
+        "Rank":69,
         "Model":"gtr-t5-xxl",
         "Average":78.38,
         "BIOSSES":81.91,
@@ -975,7 +1035,7 @@
         "STSBenchmark":77.73
     },
     {
-        "Rank":66,
+        "Rank":70,
         "Model":"bge-micro",
         "Average":78.37,
         "BIOSSES":83.42,
@@ -990,7 +1050,7 @@
         "STSBenchmark":81.32
     },
     {
-        "Rank":67,
+        "Rank":71,
         "Model":"gtr-t5-large",
         "Average":78.19,
         "BIOSSES":84.86,
@@ -1005,7 +1065,7 @@
         "STSBenchmark":77.6
     },
     {
-        "Rank":68,
+        "Rank":72,
         "Model":"SGPT-5.8B-weightedmean-msmarco-specb-bitfit",
         "Average":78.1,
         "BIOSSES":86.25,
@@ -1020,7 +1080,7 @@
         "STSBenchmark":81.39
     },
     {
-        "Rank":69,
+        "Rank":73,
         "Model":"jina-embedding-s-en-v1",
         "Average":78.06,
         "BIOSSES":82.96,
@@ -1035,7 +1095,7 @@
         "STSBenchmark":79.2
     },
     {
-        "Rank":70,
+        "Rank":74,
         "Model":"gtr-t5-xl",
         "Average":77.8,
         "BIOSSES":78.94,
@@ -1050,7 +1110,7 @@
         "STSBenchmark":77.65
     },
     {
-        "Rank":71,
+        "Rank":75,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":77.74,
         "BIOSSES":85.31,
@@ -1065,7 +1125,7 @@
         "STSBenchmark":80.9
     },
     {
-        "Rank":72,
+        "Rank":76,
         "Model":"gtr-t5-base",
         "Average":77.07,
         "BIOSSES":79,
@@ -1080,7 +1140,7 @@
         "STSBenchmark":79.58
     },
     {
-        "Rank":73,
+        "Rank":77,
         "Model":"SGPT-2.7B-weightedmean-msmarco-specb-bitfit",
         "Average":76.83,
         "BIOSSES":84.84,
@@ -1095,7 +1155,7 @@
         "STSBenchmark":79.21
     },
     {
-        "Rank":74,
+        "Rank":78,
         "Model":"contriever-base-msmarco",
         "Average":76.51,
         "BIOSSES":83.32,
@@ -1110,11 +1170,11 @@
         "STSBenchmark":78.81
     },
     {
-        "Rank":75,
+        "Rank":79,
         "Model":"msmarco-bert-co-condensor",
         "Average":76.47,
         "BIOSSES":77.32,
-        "SICK-R":72.0,
+        "SICK-R":72,
         "STS12":68.19,
         "STS13":80.4,
         "STS14":74.02,
@@ -1125,7 +1185,7 @@
         "STSBenchmark":76.97
     },
     {
-        "Rank":76,
+        "Rank":80,
         "Model":"SGPT-1.3B-weightedmean-msmarco-specb-bitfit",
         "Average":75.74,
         "BIOSSES":83.02,
@@ -1140,7 +1200,7 @@
         "STSBenchmark":77.59
     },
     {
-        "Rank":77,
+        "Rank":81,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":75.6,
         "BIOSSES":78.34,
@@ -1155,7 +1215,7 @@
         "STSBenchmark":80.75
     },
     {
-        "Rank":78,
+        "Rank":82,
         "Model":"universal-sentence-encoder-multilingual-3",
         "Average":75.39,
         "BIOSSES":78.19,
@@ -1170,7 +1230,7 @@
         "STSBenchmark":80.28
     },
     {
-        "Rank":79,
+        "Rank":83,
         "Model":"universal-sentence-encoder-multilingual-large-3",
         "Average":75.35,
         "BIOSSES":79.14,
@@ -1185,7 +1245,7 @@
         "STSBenchmark":81.24
     },
     {
-        "Rank":80,
+        "Rank":84,
         "Model":"paraphrase-multilingual-mpnet-base-v2-KE_Sieve",
         "Average":75.11,
         "BIOSSES":65.29,
@@ -1200,7 +1260,7 @@
         "STSBenchmark":81.34
     },
     {
-        "Rank":81,
+        "Rank":85,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":74.71,
         "BIOSSES":70.93,
@@ -1215,7 +1275,7 @@
         "STSBenchmark":79.54
     },
     {
-        "Rank":82,
+        "Rank":86,
         "Model":"unsup-simcse-bert-base-uncased",
         "Average":74.33,
         "BIOSSES":72.31,
@@ -1230,7 +1290,7 @@
         "STSBenchmark":76.52
     },
     {
-        "Rank":83,
+        "Rank":87,
         "Model":"multi-qa-MiniLM-L6-cos-v1",
         "Average":74.23,
         "BIOSSES":79.76,
@@ -1245,7 +1305,7 @@
         "STSBenchmark":75.98
     },
     {
-        "Rank":84,
+        "Rank":88,
         "Model":"universal-sentence-encoder-large-5",
         "Average":74.05,
         "BIOSSES":69.36,
@@ -1260,7 +1320,7 @@
         "STSBenchmark":79.93
     },
     {
-        "Rank":85,
+        "Rank":89,
         "Model":"lodestone-base-4096-v1",
         "Average":73.7,
         "BIOSSES":70.87,
@@ -1275,7 +1335,7 @@
         "STSBenchmark":75.57
     },
     {
-        "Rank":86,
+        "Rank":90,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":73.41,
         "BIOSSES":75.21,
@@ -1290,7 +1350,7 @@
         "STSBenchmark":75.34
     },
     {
-        "Rank":87,
+        "Rank":91,
         "Model":"universal-sentence-encoder-4",
         "Average":72.04,
         "BIOSSES":63.38,
@@ -1305,7 +1365,7 @@
         "STSBenchmark":77.08
     },
     {
-        "Rank":88,
+        "Rank":92,
         "Model":"cai-lunaris-text-embeddings",
         "Average":70.81,
         "BIOSSES":73.97,
@@ -1320,7 +1380,7 @@
         "STSBenchmark":71.4
     },
     {
-        "Rank":89,
+        "Rank":93,
         "Model":"LaBSE",
         "Average":70.8,
         "BIOSSES":78.7,
@@ -1335,7 +1395,7 @@
         "STSBenchmark":72.25
     },
     {
-        "Rank":90,
+        "Rank":94,
         "Model":"LASER2",
         "Average":63.27,
         "BIOSSES":62.01,
@@ -1350,7 +1410,7 @@
         "STSBenchmark":69.77
     },
     {
-        "Rank":91,
+        "Rank":95,
         "Model":"komninos",
         "Average":62.46,
         "BIOSSES":50.25,
@@ -1365,7 +1425,7 @@
         "STSBenchmark":61.55
     },
     {
-        "Rank":92,
+        "Rank":96,
         "Model":"glove.6B.300d",
         "Average":61.85,
         "BIOSSES":44.93,
@@ -1380,7 +1440,7 @@
         "STSBenchmark":61.54
     },
     {
-        "Rank":93,
+        "Rank":97,
         "Model":"allenai-specter",
         "Average":61.02,
         "BIOSSES":64.95,
@@ -1395,7 +1455,7 @@
         "STSBenchmark":61.26
     },
     {
-        "Rank":94,
+        "Rank":98,
         "Model":"bert-base-uncased",
         "Average":54.36,
         "BIOSSES":54.7,
@@ -1410,7 +1470,22 @@
         "STSBenchmark":47.29
     },
     {
-        "Rank":95,
+        "Rank":99,
+        "Model":"pythia-14m-embedding",
+        "Average":53.34,
+        "BIOSSES":51.84,
+        "SICK-R":54.92,
+        "STS12":43.08,
+        "STS13":56.87,
+        "STS14":50.9,
+        "STS15":62.89,
+        "STS16":57.89,
+        "STS17 (en-en)":65.7,
+        "STS22 (en)":43.26,
+        "STSBenchmark":46.04
+    },
+    {
+        "Rank":100,
         "Model":"ALL_862873",
         "Average":39.1,
         "BIOSSES":21.34,
@@ -1425,7 +1500,7 @@
         "STSBenchmark":44.39
     },
     {
-        "Rank":101,
+        "Rank":106,
         "Model":"text-similarity-babbage-001",
         "Average":"",
         "BIOSSES":78.12,
@@ -1440,7 +1515,7 @@
         "STSBenchmark":84.32
     },
     {
-        "Rank":102,
+        "Rank":107,
         "Model":"text-similarity-curie-001",
         "Average":"",
         "BIOSSES":77.46,
@@ -1455,7 +1530,7 @@
         "STSBenchmark":83.02
     },
     {
-        "Rank":103,
+        "Rank":108,
         "Model":"text-similarity-davinci-001",
         "Average":"",
         "BIOSSES":68.95,
@@ -1470,7 +1545,7 @@
         "STSBenchmark":84.08
     },
     {
-        "Rank":104,
+        "Rank":109,
         "Model":"titan-embed-text-v1",
         "Average":"",
         "BIOSSES":84.17,
@@ -1485,7 +1560,22 @@
         "STSBenchmark":74.85
     },
     {
-        "Rank":109,
+        "Rank":114,
+        "Model":"bge_m3e_stella",
+        "Average":"",
+        "BIOSSES":"",
+        "SICK-R":"",
+        "STS12":"",
+        "STS13":"",
+        "STS14":"",
+        "STS15":"",
+        "STS16":"",
+        "STS17 (en-en)":"",
+        "STS22 (en)":"",
+        "STSBenchmark":61.83
+    },
+    {
+        "Rank":115,
         "Model":"LLaMA-embeeding",
         "Average":"",
         "BIOSSES":67.85,
@@ -1500,7 +1590,7 @@
         "STSBenchmark":52.67
     },
     {
-        "Rank":110,
+        "Rank":116,
         "Model":"yiyouliao",
         "Average":"",
         "BIOSSES":"",
@@ -1515,7 +1605,7 @@
         "STSBenchmark":""
     },
     {
-        "Rank":121,
+        "Rank":127,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Average":"",
         "BIOSSES":74.18,
@@ -1530,7 +1620,7 @@
         "STSBenchmark":84.42
     },
     {
-        "Rank":122,
+        "Rank":128,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":"",
         "BIOSSES":76.27,

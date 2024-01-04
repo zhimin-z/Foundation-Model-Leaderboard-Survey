@@ -2,16 +2,16 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
 
-path_leaderboard = "data/TabMWP"
+path_leaderboard = "data/QuALITY"
 
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(10)
 
-    url = 'https://promptpg.github.io/leaderboard.html'
+    url = 'https://nyu-mll.github.io/quality'
     driver.get(url)
 
-    table = driver.find_element(By.XPATH, '//table[@class="js-sort-table"]')
+    table = driver.find_element(By.XPATH, '//table[@class="table table-responsive"]')
 
     column_names = []
     for column in table.find_elements(By.XPATH, './/thead/tr/td'):
@@ -19,12 +19,7 @@ if __name__ == '__main__':
 
     df = []
     for row in table.find_elements(By.XPATH, './/tbody/tr'):
-        values = []
-        for name, value in zip(column_names, row.find_elements(By.XPATH, './/td')):
-            if name == 'Source':
-                values.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
-            else:
-                values.append(value.text)
+        values = [column.text for column in row.find_elements(By.XPATH, './/td')]
         df.append(values)
 
     df = pd.DataFrame(df, columns=column_names)

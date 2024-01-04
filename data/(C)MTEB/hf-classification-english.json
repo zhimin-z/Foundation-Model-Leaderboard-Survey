@@ -1,6 +1,23 @@
 [
     {
         "Rank":1,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":78.47,
+        "AmazonCounterfactualClassification (en)":78.69,
+        "AmazonPolarityClassification":95.91,
+        "AmazonReviewsClassification (en)":55.79,
+        "Banking77Classification":88.23,
+        "EmotionClassification":49.77,
+        "ImdbClassification":94.78,
+        "MassiveIntentClassification (en)":80.57,
+        "MassiveScenarioClassification (en)":82.39,
+        "MTOPDomainClassification (en)":96.12,
+        "MTOPIntentClassification (en)":86.11,
+        "ToxicConversationsClassification":69.59,
+        "TweetSentimentExtractionClassification":63.72
+    },
+    {
+        "Rank":2,
         "Model":"Cohere-embed-english-v3.0",
         "Average":76.49,
         "AmazonCounterfactualClassification (en)":81.3,
@@ -17,7 +34,7 @@
         "TweetSentimentExtractionClassification":62.02
     },
     {
-        "Rank":2,
+        "Rank":3,
         "Model":"Cohere-embed-multilingual-v3.0",
         "Average":76.01,
         "AmazonCounterfactualClassification (en)":77.85,
@@ -34,7 +51,7 @@
         "TweetSentimentExtractionClassification":62.18
     },
     {
-        "Rank":3,
+        "Rank":4,
         "Model":"ember-v1",
         "Average":75.99,
         "AmazonCounterfactualClassification (en)":76.06,
@@ -51,7 +68,7 @@
         "TweetSentimentExtractionClassification":60
     },
     {
-        "Rank":4,
+        "Rank":5,
         "Model":"bge-large-en-v1.5",
         "Average":75.97,
         "AmazonCounterfactualClassification (en)":75.85,
@@ -68,7 +85,7 @@
         "TweetSentimentExtractionClassification":59.94
     },
     {
-        "Rank":5,
+        "Rank":6,
         "Model":"UAE-Large-V1",
         "Average":75.58,
         "AmazonCounterfactualClassification (en)":75.55,
@@ -85,25 +102,8 @@
         "TweetSentimentExtractionClassification":59.75
     },
     {
-        "Rank":6,
-        "Model":"bge-base-en-v1.5",
-        "Average":75.53,
-        "AmazonCounterfactualClassification (en)":76.15,
-        "AmazonPolarityClassification":93.39,
-        "AmazonReviewsClassification (en)":48.85,
-        "Banking77Classification":86.95,
-        "EmotionClassification":51.9,
-        "ImdbClassification":90.81,
-        "MassiveIntentClassification (en)":76.15,
-        "MassiveScenarioClassification (en)":80.16,
-        "MTOPDomainClassification (en)":94.17,
-        "MTOPIntentClassification (en)":76.91,
-        "ToxicConversationsClassification":71.58,
-        "TweetSentimentExtractionClassification":59.38
-    },
-    {
         "Rank":7,
-        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Model":"bge-base-en-v1.5-onnx",
         "Average":75.53,
         "AmazonCounterfactualClassification (en)":76.15,
         "AmazonPolarityClassification":93.39,
@@ -120,6 +120,40 @@
     },
     {
         "Rank":8,
+        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Average":75.53,
+        "AmazonCounterfactualClassification (en)":76.15,
+        "AmazonPolarityClassification":93.39,
+        "AmazonReviewsClassification (en)":48.85,
+        "Banking77Classification":86.95,
+        "EmotionClassification":51.9,
+        "ImdbClassification":90.81,
+        "MassiveIntentClassification (en)":76.15,
+        "MassiveScenarioClassification (en)":80.16,
+        "MTOPDomainClassification (en)":94.17,
+        "MTOPIntentClassification (en)":76.91,
+        "ToxicConversationsClassification":71.58,
+        "TweetSentimentExtractionClassification":59.38
+    },
+    {
+        "Rank":9,
+        "Model":"bge-base-en-v1.5",
+        "Average":75.53,
+        "AmazonCounterfactualClassification (en)":76.15,
+        "AmazonPolarityClassification":93.39,
+        "AmazonReviewsClassification (en)":48.85,
+        "Banking77Classification":86.95,
+        "EmotionClassification":51.9,
+        "ImdbClassification":90.81,
+        "MassiveIntentClassification (en)":76.15,
+        "MassiveScenarioClassification (en)":80.16,
+        "MTOPDomainClassification (en)":94.17,
+        "MTOPIntentClassification (en)":76.91,
+        "ToxicConversationsClassification":71.58,
+        "TweetSentimentExtractionClassification":59.38
+    },
+    {
+        "Rank":10,
         "Model":"stella-base-en-v2",
         "Average":75.28,
         "AmazonCounterfactualClassification (en)":77.19,
@@ -136,7 +170,7 @@
         "TweetSentimentExtractionClassification":63.07
     },
     {
-        "Rank":9,
+        "Rank":11,
         "Model":"e5-large-v2",
         "Average":75.24,
         "AmazonCounterfactualClassification (en)":79.22,
@@ -153,7 +187,7 @@
         "TweetSentimentExtractionClassification":60.94
     },
     {
-        "Rank":10,
+        "Rank":12,
         "Model":"bge-base-en-v1.5-quant",
         "Average":74.98,
         "AmazonCounterfactualClassification (en)":76.16,
@@ -170,7 +204,7 @@
         "TweetSentimentExtractionClassification":59.67
     },
     {
-        "Rank":11,
+        "Rank":13,
         "Model":"multilingual-e5-large",
         "Average":74.81,
         "AmazonCounterfactualClassification (en)":79.06,
@@ -187,7 +221,7 @@
         "TweetSentimentExtractionClassification":61.98
     },
     {
-        "Rank":12,
+        "Rank":14,
         "Model":"voyage-lite-01-instruct",
         "Average":74.79,
         "AmazonCounterfactualClassification (en)":71.43,
@@ -204,7 +238,7 @@
         "TweetSentimentExtractionClassification":59.44
     },
     {
-        "Rank":13,
+        "Rank":15,
         "Model":"Cohere-embed-english-light-v3.0",
         "Average":74.31,
         "AmazonCounterfactualClassification (en)":78.63,
@@ -221,7 +255,7 @@
         "TweetSentimentExtractionClassification":64.72
     },
     {
-        "Rank":14,
+        "Rank":16,
         "Model":"bge-small-en-v1.5",
         "Average":74.14,
         "AmazonCounterfactualClassification (en)":73.79,
@@ -238,7 +272,7 @@
         "TweetSentimentExtractionClassification":60.51
     },
     {
-        "Rank":15,
+        "Rank":17,
         "Model":"sf_model_e5",
         "Average":73.96,
         "AmazonCounterfactualClassification (en)":70.85,
@@ -255,7 +289,7 @@
         "TweetSentimentExtractionClassification":61.55
     },
     {
-        "Rank":16,
+        "Rank":18,
         "Model":"instructor-large",
         "Average":73.86,
         "AmazonCounterfactualClassification (en)":88.13,
@@ -272,7 +306,7 @@
         "TweetSentimentExtractionClassification":64.13
     },
     {
-        "Rank":17,
+        "Rank":19,
         "Model":"e5-base-v2",
         "Average":73.84,
         "AmazonCounterfactualClassification (en)":77.78,
@@ -289,7 +323,7 @@
         "TweetSentimentExtractionClassification":60.39
     },
     {
-        "Rank":18,
+        "Rank":20,
         "Model":"bge-small-en-v1.5-quant",
         "Average":73.52,
         "AmazonCounterfactualClassification (en)":74.19,
@@ -306,7 +340,7 @@
         "TweetSentimentExtractionClassification":60.02
     },
     {
-        "Rank":19,
+        "Rank":21,
         "Model":"jina-embeddings-v2-base-en",
         "Average":73.45,
         "AmazonCounterfactualClassification (en)":74.73,
@@ -323,7 +357,7 @@
         "TweetSentimentExtractionClassification":62.06
     },
     {
-        "Rank":20,
+        "Rank":22,
         "Model":"sentence-t5-xxl",
         "Average":73.42,
         "AmazonCounterfactualClassification (en)":77.07,
@@ -340,7 +374,7 @@
         "TweetSentimentExtractionClassification":62.01
     },
     {
-        "Rank":21,
+        "Rank":23,
         "Model":"gte-large",
         "Average":73.33,
         "AmazonCounterfactualClassification (en)":72.63,
@@ -357,7 +391,7 @@
         "TweetSentimentExtractionClassification":56.58
     },
     {
-        "Rank":22,
+        "Rank":24,
         "Model":"e5-large",
         "Average":73.14,
         "AmazonCounterfactualClassification (en)":77.69,
@@ -374,7 +408,7 @@
         "TweetSentimentExtractionClassification":61.21
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"instructor-xl",
         "Average":73.12,
         "AmazonCounterfactualClassification (en)":85.09,
@@ -391,7 +425,7 @@
         "TweetSentimentExtractionClassification":61.58
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"multilingual-e5-base",
         "Average":73.02,
         "AmazonCounterfactualClassification (en)":78.97,
@@ -408,7 +442,7 @@
         "TweetSentimentExtractionClassification":61.28
     },
     {
-        "Rank":25,
+        "Rank":27,
         "Model":"gte-base",
         "Average":73.01,
         "AmazonCounterfactualClassification (en)":74.18,
@@ -425,7 +459,7 @@
         "TweetSentimentExtractionClassification":57.01
     },
     {
-        "Rank":26,
+        "Rank":28,
         "Model":"e5-small-v2",
         "Average":72.94,
         "AmazonCounterfactualClassification (en)":77.6,
@@ -442,7 +476,7 @@
         "TweetSentimentExtractionClassification":61.46
     },
     {
-        "Rank":27,
+        "Rank":29,
         "Model":"sentence-t5-xl",
         "Average":72.84,
         "AmazonCounterfactualClassification (en)":76.01,
@@ -459,7 +493,7 @@
         "TweetSentimentExtractionClassification":61.21
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"e5-base",
         "Average":72.63,
         "AmazonCounterfactualClassification (en)":79.72,
@@ -476,7 +510,7 @@
         "TweetSentimentExtractionClassification":61.38
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"bge-base-en-v1.5-sparse",
         "Average":72.62,
         "AmazonCounterfactualClassification (en)":75.39,
@@ -493,7 +527,7 @@
         "TweetSentimentExtractionClassification":59.49
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"instructor-base",
         "Average":72.36,
         "AmazonCounterfactualClassification (en)":86.21,
@@ -510,7 +544,7 @@
         "TweetSentimentExtractionClassification":63.31
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"gte-small",
         "Average":72.31,
         "AmazonCounterfactualClassification (en)":73.22,
@@ -527,7 +561,7 @@
         "TweetSentimentExtractionClassification":58.22
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"sentence-t5-large",
         "Average":72.31,
         "AmazonCounterfactualClassification (en)":75.51,
@@ -544,7 +578,7 @@
         "TweetSentimentExtractionClassification":62.33
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"XLM-3B5-embedding",
         "Average":72.25,
         "AmazonCounterfactualClassification (en)":66.94,
@@ -561,7 +595,7 @@
         "TweetSentimentExtractionClassification":58.71
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"udever-bloom-7b1",
         "Average":72.13,
         "AmazonCounterfactualClassification (en)":73.12,
@@ -578,7 +612,7 @@
         "TweetSentimentExtractionClassification":62.14
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"udever-bloom-3b",
         "Average":71.91,
         "AmazonCounterfactualClassification (en)":78.9,
@@ -595,7 +629,7 @@
         "TweetSentimentExtractionClassification":61.04
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"gte-small-quant",
         "Average":71.7,
         "AmazonCounterfactualClassification (en)":72.88,
@@ -612,7 +646,7 @@
         "TweetSentimentExtractionClassification":57.82
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"e5-small",
         "Average":71.67,
         "AmazonCounterfactualClassification (en)":76.22,
@@ -629,7 +663,7 @@
         "TweetSentimentExtractionClassification":63.31
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"text-embedding-ada-002",
         "Average":70.93,
         "AmazonCounterfactualClassification (en)":75.94,
@@ -646,7 +680,7 @@
         "TweetSentimentExtractionClassification":61.81
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"multilingual-e5-small",
         "Average":70.74,
         "AmazonCounterfactualClassification (en)":73.79,
@@ -663,7 +697,7 @@
         "TweetSentimentExtractionClassification":62.62
     },
     {
-        "Rank":40,
+        "Rank":42,
         "Model":"Cohere-embed-multilingual-light-v3.0",
         "Average":70.57,
         "AmazonCounterfactualClassification (en)":70.03,
@@ -680,7 +714,7 @@
         "TweetSentimentExtractionClassification":64.46
     },
     {
-        "Rank":41,
+        "Rank":43,
         "Model":"XLM-0B6-embedding",
         "Average":70.55,
         "AmazonCounterfactualClassification (en)":68.61,
@@ -697,7 +731,7 @@
         "TweetSentimentExtractionClassification":58.89
     },
     {
-        "Rank":42,
+        "Rank":44,
         "Model":"text-similarity-ada-001",
         "Average":70.44,
         "AmazonCounterfactualClassification (en)":76.4,
@@ -714,7 +748,7 @@
         "TweetSentimentExtractionClassification":63.35
     },
     {
-        "Rank":43,
+        "Rank":45,
         "Model":"gte-tiny",
         "Average":70.35,
         "AmazonCounterfactualClassification (en)":71.76,
@@ -731,7 +765,7 @@
         "TweetSentimentExtractionClassification":58.57
     },
     {
-        "Rank":44,
+        "Rank":46,
         "Model":"udever-bloom-1b1",
         "Average":70.17,
         "AmazonCounterfactualClassification (en)":69.94,
@@ -748,7 +782,7 @@
         "TweetSentimentExtractionClassification":61.51
     },
     {
-        "Rank":45,
+        "Rank":47,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Average":70.14,
         "AmazonCounterfactualClassification (en)":74.07,
@@ -765,7 +799,7 @@
         "TweetSentimentExtractionClassification":62.44
     },
     {
-        "Rank":46,
+        "Rank":48,
         "Model":"sentence-t5-base",
         "Average":69.81,
         "AmazonCounterfactualClassification (en)":75.82,
@@ -782,7 +816,7 @@
         "TweetSentimentExtractionClassification":62.71
     },
     {
-        "Rank":47,
+        "Rank":49,
         "Model":"MegatronBert-1B3-embedding",
         "Average":69.65,
         "AmazonCounterfactualClassification (en)":70.12,
@@ -799,7 +833,7 @@
         "TweetSentimentExtractionClassification":58.25
     },
     {
-        "Rank":48,
+        "Rank":50,
         "Model":"jina-embeddings-v2-small-en",
         "Average":68.82,
         "AmazonCounterfactualClassification (en)":71.36,
@@ -816,7 +850,7 @@
         "TweetSentimentExtractionClassification":59.4
     },
     {
-        "Rank":49,
+        "Rank":51,
         "Model":"bge-small-en-v1.5-sparse",
         "Average":68.55,
         "AmazonCounterfactualClassification (en)":70.72,
@@ -833,7 +867,7 @@
         "TweetSentimentExtractionClassification":57.48
     },
     {
-        "Rank":50,
+        "Rank":52,
         "Model":"SGPT-5.8B-weightedmean-msmarco-specb-bitfit",
         "Average":68.13,
         "AmazonCounterfactualClassification (en)":69.22,
@@ -850,7 +884,7 @@
         "TweetSentimentExtractionClassification":56.85
     },
     {
-        "Rank":51,
+        "Rank":53,
         "Model":"udever-bloom-560m",
         "Average":68.04,
         "AmazonCounterfactualClassification (en)":72.36,
@@ -867,7 +901,7 @@
         "TweetSentimentExtractionClassification":59.6
     },
     {
-        "Rank":52,
+        "Rank":54,
         "Model":"bge-micro-v2",
         "Average":68.04,
         "AmazonCounterfactualClassification (en)":67.76,
@@ -884,7 +918,7 @@
         "TweetSentimentExtractionClassification":57.64
     },
     {
-        "Rank":53,
+        "Rank":55,
         "Model":"universal-sentence-encoder-large-5",
         "Average":67.9,
         "AmazonCounterfactualClassification (en)":76.19,
@@ -901,7 +935,7 @@
         "TweetSentimentExtractionClassification":59.31
     },
     {
-        "Rank":54,
+        "Rank":56,
         "Model":"bge-small-4096",
         "Average":67.8,
         "AmazonCounterfactualClassification (en)":68.75,
@@ -918,7 +952,7 @@
         "TweetSentimentExtractionClassification":57.6
     },
     {
-        "Rank":55,
+        "Rank":57,
         "Model":"jina-embedding-l-en-v1",
         "Average":67.76,
         "AmazonCounterfactualClassification (en)":68.93,
@@ -935,7 +969,7 @@
         "TweetSentimentExtractionClassification":58.16
     },
     {
-        "Rank":56,
+        "Rank":58,
         "Model":"gtr-t5-xxl",
         "Average":67.41,
         "AmazonCounterfactualClassification (en)":67.3,
@@ -952,7 +986,7 @@
         "TweetSentimentExtractionClassification":54.54
     },
     {
-        "Rank":57,
+        "Rank":59,
         "Model":"sup-simcse-bert-base-uncased",
         "Average":67.32,
         "AmazonCounterfactualClassification (en)":75.75,
@@ -969,7 +1003,7 @@
         "TweetSentimentExtractionClassification":59.73
     },
     {
-        "Rank":58,
+        "Rank":60,
         "Model":"lodestone-base-4096-v1",
         "Average":67.3,
         "AmazonCounterfactualClassification (en)":69.73,
@@ -986,7 +1020,7 @@
         "TweetSentimentExtractionClassification":56.41
     },
     {
-        "Rank":59,
+        "Rank":61,
         "Model":"gtr-t5-large",
         "Average":67.14,
         "AmazonCounterfactualClassification (en)":70.03,
@@ -1003,7 +1037,7 @@
         "TweetSentimentExtractionClassification":54.09
     },
     {
-        "Rank":60,
+        "Rank":62,
         "Model":"SGPT-2.7B-weightedmean-msmarco-specb-bitfit",
         "Average":67.13,
         "AmazonCounterfactualClassification (en)":67.57,
@@ -1020,7 +1054,7 @@
         "TweetSentimentExtractionClassification":56.69
     },
     {
-        "Rank":61,
+        "Rank":63,
         "Model":"gtr-t5-xl",
         "Average":67.11,
         "AmazonCounterfactualClassification (en)":68.6,
@@ -1037,7 +1071,24 @@
         "TweetSentimentExtractionClassification":54.77
     },
     {
-        "Rank":62,
+        "Rank":64,
+        "Model":"embedder-100p",
+        "Average":66.95,
+        "AmazonCounterfactualClassification (en)":67.06,
+        "AmazonPolarityClassification":70.41,
+        "AmazonReviewsClassification (en)":33.21,
+        "Banking77Classification":82.73,
+        "EmotionClassification":43.47,
+        "ImdbClassification":67.3,
+        "MassiveIntentClassification (en)":71.77,
+        "MassiveScenarioClassification (en)":77.85,
+        "MTOPDomainClassification (en)":91.82,
+        "MTOPIntentClassification (en)":74.7,
+        "ToxicConversationsClassification":67.48,
+        "TweetSentimentExtractionClassification":55.62
+    },
+    {
+        "Rank":65,
         "Model":"contriever-base-msmarco",
         "Average":66.68,
         "AmazonCounterfactualClassification (en)":72.19,
@@ -1054,7 +1105,7 @@
         "TweetSentimentExtractionClassification":56.1
     },
     {
-        "Rank":63,
+        "Rank":66,
         "Model":"SGPT-1.3B-weightedmean-msmarco-specb-bitfit",
         "Average":66.52,
         "AmazonCounterfactualClassification (en)":65.21,
@@ -1071,7 +1122,7 @@
         "TweetSentimentExtractionClassification":55.67
     },
     {
-        "Rank":64,
+        "Rank":67,
         "Model":"bge-micro",
         "Average":66.35,
         "AmazonCounterfactualClassification (en)":66.27,
@@ -1088,7 +1139,7 @@
         "TweetSentimentExtractionClassification":56.71
     },
     {
-        "Rank":65,
+        "Rank":68,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":66.19,
         "AmazonCounterfactualClassification (en)":68.06,
@@ -1105,7 +1156,7 @@
         "TweetSentimentExtractionClassification":55.85
     },
     {
-        "Rank":66,
+        "Rank":69,
         "Model":"jina-embedding-b-en-v1",
         "Average":66.07,
         "AmazonCounterfactualClassification (en)":66.73,
@@ -1122,7 +1173,7 @@
         "TweetSentimentExtractionClassification":56.85
     },
     {
-        "Rank":67,
+        "Rank":70,
         "Model":"universal-sentence-encoder-multilingual-large-3",
         "Average":65.78,
         "AmazonCounterfactualClassification (en)":70.81,
@@ -1139,7 +1190,7 @@
         "TweetSentimentExtractionClassification":59.19
     },
     {
-        "Rank":68,
+        "Rank":71,
         "Model":"gtr-t5-base",
         "Average":65.25,
         "AmazonCounterfactualClassification (en)":69.33,
@@ -1156,7 +1207,7 @@
         "TweetSentimentExtractionClassification":56.02
     },
     {
-        "Rank":69,
+        "Rank":72,
         "Model":"all-mpnet-base-v2",
         "Average":65.07,
         "AmazonCounterfactualClassification (en)":65.27,
@@ -1173,7 +1224,7 @@
         "TweetSentimentExtractionClassification":55.46
     },
     {
-        "Rank":70,
+        "Rank":73,
         "Model":"paraphrase-multilingual-mpnet-base-v2-KE_Sieve",
         "Average":64.85,
         "AmazonCounterfactualClassification (en)":79.06,
@@ -1190,7 +1241,7 @@
         "TweetSentimentExtractionClassification":54.49
     },
     {
-        "Rank":71,
+        "Rank":74,
         "Model":"msmarco-bert-co-condensor",
         "Average":64.71,
         "AmazonCounterfactualClassification (en)":64.06,
@@ -1207,7 +1258,7 @@
         "TweetSentimentExtractionClassification":55.74
     },
     {
-        "Rank":72,
+        "Rank":75,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":64.67,
         "AmazonCounterfactualClassification (en)":71.81,
@@ -1224,7 +1275,7 @@
         "TweetSentimentExtractionClassification":59.97
     },
     {
-        "Rank":73,
+        "Rank":76,
         "Model":"universal-sentence-encoder-4",
         "Average":64.45,
         "AmazonCounterfactualClassification (en)":70.67,
@@ -1241,8 +1292,8 @@
         "TweetSentimentExtractionClassification":57.01
     },
     {
-        "Rank":74,
-        "Model":"all-MiniLM-L6-v2-ONNX",
+        "Rank":77,
+        "Model":"all-MiniLM-L6-v2-ds",
         "Average":63.67,
         "AmazonCounterfactualClassification (en)":61.99,
         "AmazonPolarityClassification":64.75,
@@ -1258,7 +1309,7 @@
         "TweetSentimentExtractionClassification":52.41
     },
     {
-        "Rank":75,
+        "Rank":78,
         "Model":"universal-sentence-encoder-multilingual-3",
         "Average":63.42,
         "AmazonCounterfactualClassification (en)":69.84,
@@ -1275,7 +1326,7 @@
         "TweetSentimentExtractionClassification":57.24
     },
     {
-        "Rank":76,
+        "Rank":79,
         "Model":"all-MiniLM-L12-v2",
         "Average":63.21,
         "AmazonCounterfactualClassification (en)":65.28,
@@ -1292,7 +1343,7 @@
         "TweetSentimentExtractionClassification":54.25
     },
     {
-        "Rank":77,
+        "Rank":80,
         "Model":"all-MiniLM-L6-v2",
         "Average":63.05,
         "AmazonCounterfactualClassification (en)":64.15,
@@ -1309,7 +1360,7 @@
         "TweetSentimentExtractionClassification":55.41
     },
     {
-        "Rank":78,
+        "Rank":81,
         "Model":"LaBSE",
         "Average":62.71,
         "AmazonCounterfactualClassification (en)":75.93,
@@ -1326,7 +1377,7 @@
         "TweetSentimentExtractionClassification":58.82
     },
     {
-        "Rank":79,
+        "Rank":82,
         "Model":"unsup-simcse-bert-base-uncased",
         "Average":62.5,
         "AmazonCounterfactualClassification (en)":67.09,
@@ -1343,7 +1394,7 @@
         "TweetSentimentExtractionClassification":53.36
     },
     {
-        "Rank":80,
+        "Rank":83,
         "Model":"text2vec-base-multilingual",
         "Average":62.23,
         "AmazonCounterfactualClassification (en)":70.97,
@@ -1360,7 +1411,7 @@
         "TweetSentimentExtractionClassification":55.22
     },
     {
-        "Rank":81,
+        "Rank":84,
         "Model":"text2vec-base-multilingual",
         "Average":62.23,
         "AmazonCounterfactualClassification (en)":70.97,
@@ -1377,7 +1428,7 @@
         "TweetSentimentExtractionClassification":55.22
     },
     {
-        "Rank":82,
+        "Rank":85,
         "Model":"multi-qa-MiniLM-L6-cos-v1",
         "Average":61.67,
         "AmazonCounterfactualClassification (en)":61.79,
@@ -1394,7 +1445,7 @@
         "TweetSentimentExtractionClassification":51.63
     },
     {
-        "Rank":83,
+        "Rank":86,
         "Model":"bert-base-uncased",
         "Average":61.66,
         "AmazonCounterfactualClassification (en)":74.25,
@@ -1411,7 +1462,7 @@
         "TweetSentimentExtractionClassification":51.81
     },
     {
-        "Rank":84,
+        "Rank":87,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":61.46,
         "AmazonCounterfactualClassification (en)":65.88,
@@ -1428,7 +1479,7 @@
         "TweetSentimentExtractionClassification":54.82
     },
     {
-        "Rank":85,
+        "Rank":88,
         "Model":"cai-stellaris-text-embeddings",
         "Average":61.44,
         "AmazonCounterfactualClassification (en)":64.87,
@@ -1445,7 +1496,7 @@
         "TweetSentimentExtractionClassification":51.04
     },
     {
-        "Rank":86,
+        "Rank":89,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":60.72,
         "AmazonCounterfactualClassification (en)":61.24,
@@ -1462,7 +1513,7 @@
         "TweetSentimentExtractionClassification":52.41
     },
     {
-        "Rank":87,
+        "Rank":90,
         "Model":"jina-embedding-s-en-v1",
         "Average":60.56,
         "AmazonCounterfactualClassification (en)":64.82,
@@ -1479,7 +1530,7 @@
         "TweetSentimentExtractionClassification":54.26
     },
     {
-        "Rank":88,
+        "Rank":91,
         "Model":"komninos",
         "Average":57.65,
         "AmazonCounterfactualClassification (en)":60.54,
@@ -1496,7 +1547,7 @@
         "TweetSentimentExtractionClassification":49.68
     },
     {
-        "Rank":89,
+        "Rank":92,
         "Model":"glove.6B.300d",
         "Average":57.29,
         "AmazonCounterfactualClassification (en)":56.91,
@@ -1513,7 +1564,7 @@
         "TweetSentimentExtractionClassification":50.8
     },
     {
-        "Rank":90,
+        "Rank":93,
         "Model":"LASER2",
         "Average":53.18,
         "AmazonCounterfactualClassification (en)":76.84,
@@ -1530,7 +1581,7 @@
         "TweetSentimentExtractionClassification":48.73
     },
     {
-        "Rank":91,
+        "Rank":94,
         "Model":"allenai-specter",
         "Average":52.37,
         "AmazonCounterfactualClassification (en)":58.7,
@@ -1547,7 +1598,7 @@
         "TweetSentimentExtractionClassification":45.52
     },
     {
-        "Rank":92,
+        "Rank":95,
         "Model":"ALL_862873",
         "Average":41.73,
         "AmazonCounterfactualClassification (en)":50.81,
@@ -1564,7 +1615,7 @@
         "TweetSentimentExtractionClassification":40.75
     },
     {
-        "Rank":101,
+        "Rank":104,
         "Model":"titan-embed-text-v1",
         "Average":"",
         "AmazonCounterfactualClassification (en)":61.85,
@@ -1581,7 +1632,7 @@
         "TweetSentimentExtractionClassification":""
     },
     {
-        "Rank":102,
+        "Rank":105,
         "Model":"winberta-base",
         "Average":"",
         "AmazonCounterfactualClassification (en)":69.91,
@@ -1598,7 +1649,7 @@
         "TweetSentimentExtractionClassification":57.41
     },
     {
-        "Rank":103,
+        "Rank":106,
         "Model":"winberta-large",
         "Average":"",
         "AmazonCounterfactualClassification (en)":"",
@@ -1615,7 +1666,7 @@
         "TweetSentimentExtractionClassification":""
     },
     {
-        "Rank":105,
+        "Rank":108,
         "Model":"openai_clip_embeddings",
         "Average":"",
         "AmazonCounterfactualClassification (en)":57.49,
@@ -1632,7 +1683,7 @@
         "TweetSentimentExtractionClassification":49.34
     },
     {
-        "Rank":106,
+        "Rank":110,
         "Model":"LLaMA-embeeding",
         "Average":"",
         "AmazonCounterfactualClassification (en)":84.82,
@@ -1649,7 +1700,7 @@
         "TweetSentimentExtractionClassification":56.28
     },
     {
-        "Rank":107,
+        "Rank":111,
         "Model":"yiyouliao",
         "Average":"",
         "AmazonCounterfactualClassification (en)":74.78,
@@ -1666,7 +1717,24 @@
         "TweetSentimentExtractionClassification":""
     },
     {
-        "Rank":110,
+        "Rank":114,
+        "Model":"pythia-14m-embedding",
+        "Average":"",
+        "AmazonCounterfactualClassification (en)":70.73,
+        "AmazonPolarityClassification":"",
+        "AmazonReviewsClassification (en)":29.17,
+        "Banking77Classification":46.04,
+        "EmotionClassification":23.28,
+        "ImdbClassification":56.96,
+        "MassiveIntentClassification (en)":"",
+        "MassiveScenarioClassification (en)":"",
+        "MTOPDomainClassification (en)":64.4,
+        "MTOPIntentClassification (en)":34.01,
+        "ToxicConversationsClassification":54.63,
+        "TweetSentimentExtractionClassification":42.85
+    },
+    {
+        "Rank":115,
         "Model":"bge-large-en-v1.5-quant",
         "Average":"",
         "AmazonCounterfactualClassification (en)":75.54,
@@ -1683,7 +1751,7 @@
         "TweetSentimentExtractionClassification":""
     },
     {
-        "Rank":119,
+        "Rank":124,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Average":"",
         "AmazonCounterfactualClassification (en)":71.57,
@@ -1700,7 +1768,7 @@
         "TweetSentimentExtractionClassification":56.12
     },
     {
-        "Rank":120,
+        "Rank":125,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":"",
         "AmazonCounterfactualClassification (en)":75.81,

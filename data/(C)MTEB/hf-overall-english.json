@@ -1,6 +1,21 @@
 [
     {
         "Rank":1,
+        "Model":"e5-mistral-7b-instruct",
+        "Model Size (GB)":14.22,
+        "Embedding Dimensions":4096,
+        "Sequence Length":32768,
+        "Average (56 datasets)":66.63,
+        "Classification Average (12 datasets)":78.47,
+        "Clustering Average (11 datasets)":50.26,
+        "Pair Classification Average (3 datasets)":88.34,
+        "Reranking Average (4 datasets)":60.21,
+        "Retrieval Average (15 datasets)":56.89,
+        "STS Average (10 datasets)":84.63,
+        "Summarization Average (1 dataset)":31.4
+    },
+    {
+        "Rank":2,
         "Model":"UAE-Large-V1",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -15,7 +30,7 @@
         "Summarization Average (1 dataset)":32.03
     },
     {
-        "Rank":2,
+        "Rank":3,
         "Model":"voyage-lite-01-instruct",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -30,7 +45,7 @@
         "Summarization Average (1 dataset)":30.97
     },
     {
-        "Rank":3,
+        "Rank":4,
         "Model":"Cohere-embed-english-v3.0",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -45,7 +60,7 @@
         "Summarization Average (1 dataset)":30.18
     },
     {
-        "Rank":4,
+        "Rank":5,
         "Model":"bge-large-en-v1.5",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -60,7 +75,7 @@
         "Summarization Average (1 dataset)":31.61
     },
     {
-        "Rank":5,
+        "Rank":6,
         "Model":"Cohere-embed-multilingual-v3.0",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -75,7 +90,22 @@
         "Summarization Average (1 dataset)":30.99
     },
     {
-        "Rank":6,
+        "Rank":7,
+        "Model":"bge-base-en-v1.5-onnx",
+        "Model Size (GB)":"",
+        "Embedding Dimensions":768,
+        "Sequence Length":512,
+        "Average (56 datasets)":63.55,
+        "Classification Average (12 datasets)":75.53,
+        "Clustering Average (11 datasets)":45.77,
+        "Pair Classification Average (3 datasets)":86.55,
+        "Reranking Average (4 datasets)":58.86,
+        "Retrieval Average (15 datasets)":53.25,
+        "STS Average (10 datasets)":82.4,
+        "Summarization Average (1 dataset)":31.07
+    },
+    {
+        "Rank":8,
         "Model":"bge-base-en-v1.5",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -90,7 +120,7 @@
         "Summarization Average (1 dataset)":31.07
     },
     {
-        "Rank":7,
+        "Rank":9,
         "Model":"ember-v1",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -105,7 +135,7 @@
         "Summarization Average (1 dataset)":30.82
     },
     {
-        "Rank":8,
+        "Rank":10,
         "Model":"sf_model_e5",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -120,7 +150,7 @@
         "Summarization Average (1 dataset)":31.61
     },
     {
-        "Rank":9,
+        "Rank":11,
         "Model":"gte-large",
         "Model Size (GB)":0.67,
         "Embedding Dimensions":1024,
@@ -135,7 +165,7 @@
         "Summarization Average (1 dataset)":31.66
     },
     {
-        "Rank":10,
+        "Rank":12,
         "Model":"stella-base-en-v2",
         "Model Size (GB)":0.22,
         "Embedding Dimensions":768,
@@ -150,7 +180,7 @@
         "Summarization Average (1 dataset)":32.52
     },
     {
-        "Rank":11,
+        "Rank":13,
         "Model":"gte-base",
         "Model Size (GB)":0.22,
         "Embedding Dimensions":768,
@@ -165,7 +195,7 @@
         "Summarization Average (1 dataset)":31.17
     },
     {
-        "Rank":12,
+        "Rank":14,
         "Model":"e5-large-v2",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -180,7 +210,7 @@
         "Summarization Average (1 dataset)":30.19
     },
     {
-        "Rank":13,
+        "Rank":15,
         "Model":"bge-small-en-v1.5",
         "Model Size (GB)":0.13,
         "Embedding Dimensions":384,
@@ -195,7 +225,7 @@
         "Summarization Average (1 dataset)":30.12
     },
     {
-        "Rank":14,
+        "Rank":16,
         "Model":"Cohere-embed-english-light-v3.0",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -210,7 +240,7 @@
         "Summarization Average (1 dataset)":31.29
     },
     {
-        "Rank":15,
+        "Rank":17,
         "Model":"instructor-xl",
         "Model Size (GB)":4.96,
         "Embedding Dimensions":768,
@@ -225,7 +255,7 @@
         "Summarization Average (1 dataset)":32.32
     },
     {
-        "Rank":16,
+        "Rank":18,
         "Model":"instructor-large",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":768,
@@ -240,7 +270,7 @@
         "Summarization Average (1 dataset)":31.84
     },
     {
-        "Rank":17,
+        "Rank":19,
         "Model":"e5-base-v2",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -255,7 +285,7 @@
         "Summarization Average (1 dataset)":30.28
     },
     {
-        "Rank":18,
+        "Rank":20,
         "Model":"multilingual-e5-large",
         "Model Size (GB)":2.24,
         "Embedding Dimensions":1024,
@@ -270,7 +300,7 @@
         "Summarization Average (1 dataset)":29.69
     },
     {
-        "Rank":19,
+        "Rank":21,
         "Model":"e5-large",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -285,7 +315,7 @@
         "Summarization Average (1 dataset)":30.97
     },
     {
-        "Rank":20,
+        "Rank":22,
         "Model":"gte-small",
         "Model Size (GB)":0.07,
         "Embedding Dimensions":384,
@@ -300,7 +330,7 @@
         "Summarization Average (1 dataset)":30.42
     },
     {
-        "Rank":21,
+        "Rank":23,
         "Model":"text-embedding-ada-002",
         "Model Size (GB)":"",
         "Embedding Dimensions":1536,
@@ -315,7 +345,7 @@
         "Summarization Average (1 dataset)":30.8
     },
     {
-        "Rank":22,
+        "Rank":24,
         "Model":"udever-bloom-7b1",
         "Model Size (GB)":28.28,
         "Embedding Dimensions":4096,
@@ -330,7 +360,7 @@
         "Summarization Average (1 dataset)":30.97
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"e5-base",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -345,10 +375,10 @@
         "Summarization Average (1 dataset)":31.01
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"jina-embeddings-v2-base-en",
         "Model Size (GB)":0.27,
-        "Embedding Dimensions":512,
+        "Embedding Dimensions":768,
         "Sequence Length":8192,
         "Average (56 datasets)":60.38,
         "Classification Average (12 datasets)":73.45,
@@ -360,7 +390,7 @@
         "Summarization Average (1 dataset)":31.6
     },
     {
-        "Rank":25,
+        "Rank":27,
         "Model":"Cohere-embed-multilingual-light-v3.0",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -375,7 +405,7 @@
         "Summarization Average (1 dataset)":30.41
     },
     {
-        "Rank":26,
+        "Rank":28,
         "Model":"e5-small-v2",
         "Model Size (GB)":0.13,
         "Embedding Dimensions":384,
@@ -390,7 +420,7 @@
         "Summarization Average (1 dataset)":31.16
     },
     {
-        "Rank":27,
+        "Rank":29,
         "Model":"udever-bloom-3b",
         "Model Size (GB)":12.01,
         "Embedding Dimensions":2560,
@@ -405,7 +435,7 @@
         "Summarization Average (1 dataset)":30.62
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"instructor-base",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -420,7 +450,7 @@
         "Summarization Average (1 dataset)":29.85
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"sentence-t5-xxl",
         "Model Size (GB)":9.73,
         "Embedding Dimensions":768,
@@ -435,7 +465,7 @@
         "Summarization Average (1 dataset)":30.08
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"multilingual-e5-base",
         "Model Size (GB)":1.11,
         "Embedding Dimensions":768,
@@ -450,7 +480,7 @@
         "Summarization Average (1 dataset)":30.11
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"XLM-3B5-embedding",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -465,7 +495,7 @@
         "Summarization Average (1 dataset)":29.02
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"gtr-t5-xxl",
         "Model Size (GB)":9.73,
         "Embedding Dimensions":768,
@@ -480,7 +510,7 @@
         "Summarization Average (1 dataset)":30.64
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"SGPT-5.8B-weightedmean-msmarco-specb-bitfit",
         "Model Size (GB)":23.5,
         "Embedding Dimensions":4096,
@@ -495,7 +525,7 @@
         "Summarization Average (1 dataset)":31.46
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"e5-small",
         "Model Size (GB)":0.13,
         "Embedding Dimensions":384,
@@ -510,7 +540,7 @@
         "Summarization Average (1 dataset)":31.39
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"gte-tiny",
         "Model Size (GB)":0.05,
         "Embedding Dimensions":384,
@@ -525,7 +555,7 @@
         "Summarization Average (1 dataset)":29.47
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"gtr-t5-xl",
         "Model Size (GB)":2.48,
         "Embedding Dimensions":768,
@@ -540,7 +570,7 @@
         "Summarization Average (1 dataset)":30.21
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"udever-bloom-1b1",
         "Model Size (GB)":4.26,
         "Embedding Dimensions":1536,
@@ -555,7 +585,7 @@
         "Summarization Average (1 dataset)":31.1
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"gtr-t5-large",
         "Model Size (GB)":0.67,
         "Embedding Dimensions":768,
@@ -570,7 +600,7 @@
         "Summarization Average (1 dataset)":29.5
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"jina-embeddings-v2-small-en",
         "Model Size (GB)":0.07,
         "Embedding Dimensions":512,
@@ -585,7 +615,7 @@
         "Summarization Average (1 dataset)":30.56
     },
     {
-        "Rank":40,
+        "Rank":42,
         "Model":"XLM-0B6-embedding",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -600,7 +630,7 @@
         "Summarization Average (1 dataset)":30.25
     },
     {
-        "Rank":41,
+        "Rank":43,
         "Model":"multilingual-e5-small",
         "Model Size (GB)":0.47,
         "Embedding Dimensions":384,
@@ -615,7 +645,7 @@
         "Summarization Average (1 dataset)":29.98
     },
     {
-        "Rank":42,
+        "Rank":44,
         "Model":"sentence-t5-xl",
         "Model Size (GB)":2.48,
         "Embedding Dimensions":768,
@@ -630,7 +660,7 @@
         "Summarization Average (1 dataset)":29.91
     },
     {
-        "Rank":43,
+        "Rank":45,
         "Model":"all-mpnet-base-v2",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -645,7 +675,7 @@
         "Summarization Average (1 dataset)":27.49
     },
     {
-        "Rank":44,
+        "Rank":46,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Model Size (GB)":28.27,
         "Embedding Dimensions":4096,
@@ -660,7 +690,7 @@
         "Summarization Average (1 dataset)":33.6
     },
     {
-        "Rank":45,
+        "Rank":47,
         "Model":"jina-embedding-l-en-v1",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -675,7 +705,7 @@
         "Summarization Average (1 dataset)":29.85
     },
     {
-        "Rank":46,
+        "Rank":48,
         "Model":"SGPT-2.7B-weightedmean-msmarco-specb-bitfit",
         "Model Size (GB)":10.74,
         "Embedding Dimensions":2560,
@@ -690,7 +720,7 @@
         "Summarization Average (1 dataset)":31.03
     },
     {
-        "Rank":47,
+        "Rank":49,
         "Model":"sentence-t5-large",
         "Model Size (GB)":0.67,
         "Embedding Dimensions":768,
@@ -705,7 +735,7 @@
         "Summarization Average (1 dataset)":29.64
     },
     {
-        "Rank":48,
+        "Rank":50,
         "Model":"MegatronBert-1B3-embedding",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -720,7 +750,7 @@
         "Summarization Average (1 dataset)":31.01
     },
     {
-        "Rank":49,
+        "Rank":51,
         "Model":"bge-micro-v2",
         "Model Size (GB)":0.03,
         "Embedding Dimensions":384,
@@ -735,7 +765,7 @@
         "Summarization Average (1 dataset)":29.87
     },
     {
-        "Rank":50,
+        "Rank":52,
         "Model":"all-MiniLM-L12-v2",
         "Model Size (GB)":0.13,
         "Embedding Dimensions":384,
@@ -750,7 +780,7 @@
         "Summarization Average (1 dataset)":27.9
     },
     {
-        "Rank":51,
+        "Rank":53,
         "Model":"all-MiniLM-L6-v2",
         "Model Size (GB)":0.09,
         "Embedding Dimensions":384,
@@ -765,7 +795,7 @@
         "Summarization Average (1 dataset)":30.81
     },
     {
-        "Rank":52,
+        "Rank":54,
         "Model":"jina-embedding-b-en-v1",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -780,7 +810,7 @@
         "Summarization Average (1 dataset)":30.71
     },
     {
-        "Rank":53,
+        "Rank":55,
         "Model":"SGPT-1.3B-weightedmean-msmarco-specb-bitfit",
         "Model Size (GB)":5.36,
         "Embedding Dimensions":2048,
@@ -795,7 +825,7 @@
         "Summarization Average (1 dataset)":30.43
     },
     {
-        "Rank":54,
+        "Rank":56,
         "Model":"gtr-t5-base",
         "Model Size (GB)":0.22,
         "Embedding Dimensions":768,
@@ -810,7 +840,7 @@
         "Summarization Average (1 dataset)":29.67
     },
     {
-        "Rank":55,
+        "Rank":57,
         "Model":"contriever-base-msmarco",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -825,7 +855,7 @@
         "Summarization Average (1 dataset)":30.36
     },
     {
-        "Rank":56,
+        "Rank":58,
         "Model":"udever-bloom-560m",
         "Model Size (GB)":2.24,
         "Embedding Dimensions":1024,
@@ -840,7 +870,7 @@
         "Summarization Average (1 dataset)":32.06
     },
     {
-        "Rank":57,
+        "Rank":59,
         "Model":"bge-micro",
         "Model Size (GB)":0.03,
         "Embedding Dimensions":384,
@@ -855,7 +885,7 @@
         "Summarization Average (1 dataset)":31.16
     },
     {
-        "Rank":58,
+        "Rank":60,
         "Model":"sentence-t5-base",
         "Model Size (GB)":0.22,
         "Embedding Dimensions":768,
@@ -870,7 +900,7 @@
         "Summarization Average (1 dataset)":31.39
     },
     {
-        "Rank":59,
+        "Rank":61,
         "Model":"bge-small-4096",
         "Model Size (GB)":0.14,
         "Embedding Dimensions":384,
@@ -885,7 +915,7 @@
         "Summarization Average (1 dataset)":29.83
     },
     {
-        "Rank":60,
+        "Rank":62,
         "Model":"lodestone-base-4096-v1",
         "Model Size (GB)":0.27,
         "Embedding Dimensions":768,
@@ -900,7 +930,7 @@
         "Summarization Average (1 dataset)":31.23
     },
     {
-        "Rank":61,
+        "Rank":63,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Model Size (GB)":23.5,
         "Embedding Dimensions":4096,
@@ -915,7 +945,7 @@
         "Summarization Average (1 dataset)":30.38
     },
     {
-        "Rank":62,
+        "Rank":64,
         "Model":"multi-qa-MiniLM-L6-cos-v1",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -930,7 +960,7 @@
         "Summarization Average (1 dataset)":31.05
     },
     {
-        "Rank":63,
+        "Rank":65,
         "Model":"msmarco-bert-co-condensor",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -945,7 +975,7 @@
         "Summarization Average (1 dataset)":29.5
     },
     {
-        "Rank":64,
+        "Rank":66,
         "Model":"jina-embedding-s-en-v1",
         "Model Size (GB)":0.14,
         "Embedding Dimensions":512,
@@ -960,7 +990,7 @@
         "Summarization Average (1 dataset)":31.25
     },
     {
-        "Rank":65,
+        "Rank":67,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Model Size (GB)":0.55,
         "Embedding Dimensions":768,
@@ -975,7 +1005,7 @@
         "Summarization Average (1 dataset)":29.71
     },
     {
-        "Rank":66,
+        "Rank":68,
         "Model":"text-similarity-ada-001",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -990,7 +1020,7 @@
         "Summarization Average (1 dataset)":26.94
     },
     {
-        "Rank":67,
+        "Rank":69,
         "Model":"sup-simcse-bert-base-uncased",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -1005,7 +1035,7 @@
         "Summarization Average (1 dataset)":31.17
     },
     {
-        "Rank":68,
+        "Rank":70,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Model Size (GB)":0.55,
         "Embedding Dimensions":768,
@@ -1020,7 +1050,7 @@
         "Summarization Average (1 dataset)":30.26
     },
     {
-        "Rank":69,
+        "Rank":71,
         "Model":"unsup-simcse-bert-base-uncased",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -1035,7 +1065,7 @@
         "Summarization Average (1 dataset)":31.15
     },
     {
-        "Rank":70,
+        "Rank":72,
         "Model":"LaBSE",
         "Model Size (GB)":1.88,
         "Embedding Dimensions":768,
@@ -1050,7 +1080,7 @@
         "Summarization Average (1 dataset)":31.05
     },
     {
-        "Rank":71,
+        "Rank":73,
         "Model":"komninos",
         "Model Size (GB)":0.27,
         "Embedding Dimensions":300,
@@ -1065,7 +1095,7 @@
         "Summarization Average (1 dataset)":30.49
     },
     {
-        "Rank":72,
+        "Rank":74,
         "Model":"glove.6B.300d",
         "Model Size (GB)":0.48,
         "Embedding Dimensions":300,
@@ -1080,7 +1110,7 @@
         "Summarization Average (1 dataset)":28.87
     },
     {
-        "Rank":73,
+        "Rank":75,
         "Model":"allenai-specter",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -1095,7 +1125,7 @@
         "Summarization Average (1 dataset)":27.66
     },
     {
-        "Rank":74,
+        "Rank":76,
         "Model":"bert-base-uncased",
         "Model Size (GB)":0.44,
         "Embedding Dimensions":768,
@@ -1110,7 +1140,7 @@
         "Summarization Average (1 dataset)":29.82
     },
     {
-        "Rank":75,
+        "Rank":77,
         "Model":"LASER2",
         "Model Size (GB)":0.17,
         "Embedding Dimensions":1024,
@@ -1125,7 +1155,7 @@
         "Summarization Average (1 dataset)":26.8
     },
     {
-        "Rank":81,
+        "Rank":83,
         "Model":"text-similarity-babbage-001",
         "Model Size (GB)":"",
         "Embedding Dimensions":2048,
@@ -1140,7 +1170,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":82,
+        "Rank":84,
         "Model":"text-similarity-curie-001",
         "Model Size (GB)":"",
         "Embedding Dimensions":4096,
@@ -1155,7 +1185,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":83,
+        "Rank":85,
         "Model":"text-similarity-davinci-001",
         "Model Size (GB)":"",
         "Embedding Dimensions":12288,
@@ -1170,7 +1200,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":85,
+        "Rank":87,
         "Model":"winberta-base",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1185,7 +1215,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":89,
+        "Rank":91,
         "Model":"paraphrase-multilingual-mpnet-base-v2-KE_Sieve",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1200,7 +1230,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":90,
+        "Rank":93,
         "Model":"LLaMA-embeeding",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1215,7 +1245,7 @@
         "Summarization Average (1 dataset)":30.62
     },
     {
-        "Rank":91,
+        "Rank":94,
         "Model":"yiyouliao",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1230,7 +1260,7 @@
         "Summarization Average (1 dataset)":32.47
     },
     {
-        "Rank":92,
+        "Rank":95,
         "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
         "Model Size (GB)":"",
         "Embedding Dimensions":768,
@@ -1245,7 +1275,7 @@
         "Summarization Average (1 dataset)":31.07
     },
     {
-        "Rank":93,
+        "Rank":96,
         "Model":"text2vec-base-multilingual",
         "Model Size (GB)":0.47,
         "Embedding Dimensions":384,
@@ -1260,7 +1290,7 @@
         "Summarization Average (1 dataset)":30.1
     },
     {
-        "Rank":94,
+        "Rank":97,
         "Model":"cai-lunaris-text-embeddings",
         "Model Size (GB)":1.34,
         "Embedding Dimensions":1024,
@@ -1275,7 +1305,7 @@
         "Summarization Average (1 dataset)":29.02
     },
     {
-        "Rank":95,
+        "Rank":98,
         "Model":"cai-stellaris-text-embeddings",
         "Model Size (GB)":0.21,
         "Embedding Dimensions":768,
@@ -1290,8 +1320,38 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":97,
-        "Model":"all-MiniLM-L6-v2-ONNX",
+        "Rank":99,
+        "Model":"embedder-100p",
+        "Model Size (GB)":1.11,
+        "Embedding Dimensions":768,
+        "Sequence Length":514,
+        "Average (56 datasets)":"",
+        "Classification Average (12 datasets)":66.95,
+        "Clustering Average (11 datasets)":40.83,
+        "Pair Classification Average (3 datasets)":81.03,
+        "Reranking Average (4 datasets)":54.63,
+        "Retrieval Average (15 datasets)":38.79,
+        "STS Average (10 datasets)":80.17,
+        "Summarization Average (1 dataset)":""
+    },
+    {
+        "Rank":101,
+        "Model":"pythia-14m-embedding",
+        "Model Size (GB)":"",
+        "Embedding Dimensions":"",
+        "Sequence Length":"",
+        "Average (56 datasets)":"",
+        "Classification Average (12 datasets)":"",
+        "Clustering Average (11 datasets)":"",
+        "Pair Classification Average (3 datasets)":58.21,
+        "Reranking Average (4 datasets)":"",
+        "Retrieval Average (15 datasets)":"",
+        "STS Average (10 datasets)":53.34,
+        "Summarization Average (1 dataset)":""
+    },
+    {
+        "Rank":102,
+        "Model":"all-MiniLM-L6-v2-ds",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
         "Sequence Length":512,
@@ -1305,7 +1365,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":98,
+        "Rank":103,
         "Model":"bge-base-en-v1.5-quant",
         "Model Size (GB)":"",
         "Embedding Dimensions":768,
@@ -1320,7 +1380,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":99,
+        "Rank":104,
         "Model":"bge-base-en-v1.5-sparse",
         "Model Size (GB)":"",
         "Embedding Dimensions":768,
@@ -1335,7 +1395,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":100,
+        "Rank":105,
         "Model":"bge-large-en-v1.5-quant",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -1350,7 +1410,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":101,
+        "Rank":106,
         "Model":"bge-large-en-v1.5-sparse",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -1365,7 +1425,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":102,
+        "Rank":107,
         "Model":"bge-small-en-v1.5-quant",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -1380,7 +1440,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":103,
+        "Rank":108,
         "Model":"bge-small-en-v1.5-sparse",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -1395,7 +1455,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":111,
+        "Rank":116,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Model Size (GB)":0.54,
         "Embedding Dimensions":512,
@@ -1410,7 +1470,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":112,
+        "Rank":117,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Model Size (GB)":0.47,
         "Embedding Dimensions":384,
@@ -1425,7 +1485,7 @@
         "Summarization Average (1 dataset)":30.67
     },
     {
-        "Rank":113,
+        "Rank":118,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Model Size (GB)":1.11,
         "Embedding Dimensions":768,
@@ -1440,7 +1500,7 @@
         "Summarization Average (1 dataset)":31.57
     },
     {
-        "Rank":114,
+        "Rank":119,
         "Model":"text2vec-base-multilingual",
         "Model Size (GB)":0.47,
         "Embedding Dimensions":384,
@@ -1455,7 +1515,7 @@
         "Summarization Average (1 dataset)":30.1
     },
     {
-        "Rank":115,
+        "Rank":120,
         "Model":"ALL_862873",
         "Model Size (GB)":0.47,
         "Embedding Dimensions":384,
@@ -1470,7 +1530,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":116,
+        "Rank":121,
         "Model":"universal-sentence-encoder-4",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1485,7 +1545,7 @@
         "Summarization Average (1 dataset)":29.42
     },
     {
-        "Rank":117,
+        "Rank":122,
         "Model":"universal-sentence-encoder-large-5",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1500,7 +1560,7 @@
         "Summarization Average (1 dataset)":29.01
     },
     {
-        "Rank":118,
+        "Rank":123,
         "Model":"universal-sentence-encoder-multilingual-3",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1515,7 +1575,7 @@
         "Summarization Average (1 dataset)":30.79
     },
     {
-        "Rank":119,
+        "Rank":124,
         "Model":"universal-sentence-encoder-multilingual-large-3",
         "Model Size (GB)":"",
         "Embedding Dimensions":"",
@@ -1530,7 +1590,7 @@
         "Summarization Average (1 dataset)":29.71
     },
     {
-        "Rank":120,
+        "Rank":125,
         "Model":"gte-large-quant",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -1545,7 +1605,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":121,
+        "Rank":126,
         "Model":"gte-large-sparse",
         "Model Size (GB)":"",
         "Embedding Dimensions":1024,
@@ -1560,7 +1620,7 @@
         "Summarization Average (1 dataset)":""
     },
     {
-        "Rank":122,
+        "Rank":127,
         "Model":"gte-small-quant",
         "Model Size (GB)":"",
         "Embedding Dimensions":384,
@@ -1572,6 +1632,21 @@
         "Reranking Average (4 datasets)":"",
         "Retrieval Average (15 datasets)":"",
         "STS Average (10 datasets)":81.5,
+        "Summarization Average (1 dataset)":""
+    },
+    {
+        "Rank":128,
+        "Model":"bi-cse",
+        "Model Size (GB)":2.24,
+        "Embedding Dimensions":1024,
+        "Sequence Length":514,
+        "Average (56 datasets)":"",
+        "Classification Average (12 datasets)":"",
+        "Clustering Average (11 datasets)":"",
+        "Pair Classification Average (3 datasets)":"",
+        "Reranking Average (4 datasets)":"",
+        "Retrieval Average (15 datasets)":"",
+        "STS Average (10 datasets)":79.66,
         "Summarization Average (1 dataset)":""
     }
 ]

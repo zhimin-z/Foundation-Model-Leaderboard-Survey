@@ -1,6 +1,15 @@
 [
     {
         "Rank":1,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":60.21,
+        "AskUbuntuDupQuestions":66.98,
+        "MindSmallReranking":32.6,
+        "SciDocsRR":86.33,
+        "StackOverflowDupQuestions":54.91
+    },
+    {
+        "Rank":2,
         "Model":"ember-v1",
         "Average":60.04,
         "AskUbuntuDupQuestions":64.46,
@@ -9,7 +18,7 @@
         "StackOverflowDupQuestions":55.85
     },
     {
-        "Rank":2,
+        "Rank":3,
         "Model":"bge-large-en-v1.5",
         "Average":60.03,
         "AskUbuntuDupQuestions":64.47,
@@ -18,7 +27,7 @@
         "StackOverflowDupQuestions":55.95
     },
     {
-        "Rank":3,
+        "Rank":4,
         "Model":"UAE-Large-V1",
         "Average":59.88,
         "AskUbuntuDupQuestions":64.2,
@@ -27,7 +36,7 @@
         "StackOverflowDupQuestions":55.32
     },
     {
-        "Rank":4,
+        "Rank":5,
         "Model":"sf_model_e5",
         "Average":59.86,
         "AskUbuntuDupQuestions":64.32,
@@ -36,7 +45,7 @@
         "StackOverflowDupQuestions":55.4
     },
     {
-        "Rank":5,
+        "Rank":6,
         "Model":"voyage-lite-01-instruct",
         "Average":59.74,
         "AskUbuntuDupQuestions":65.77,
@@ -45,7 +54,7 @@
         "StackOverflowDupQuestions":54.49
     },
     {
-        "Rank":6,
+        "Rank":7,
         "Model":"all-mpnet-base-v2",
         "Average":59.36,
         "AskUbuntuDupQuestions":65.85,
@@ -54,7 +63,7 @@
         "StackOverflowDupQuestions":51.98
     },
     {
-        "Rank":7,
+        "Rank":8,
         "Model":"gte-large",
         "Average":59.13,
         "AskUbuntuDupQuestions":63.06,
@@ -63,7 +72,7 @@
         "StackOverflowDupQuestions":53.63
     },
     {
-        "Rank":8,
+        "Rank":9,
         "Model":"bge-base-en-v1.5-quant",
         "Average":58.94,
         "AskUbuntuDupQuestions":62.39,
@@ -72,17 +81,8 @@
         "StackOverflowDupQuestions":54.45
     },
     {
-        "Rank":9,
-        "Model":"bge-base-en-v1.5",
-        "Average":58.86,
-        "AskUbuntuDupQuestions":62.13,
-        "MindSmallReranking":31.2,
-        "SciDocsRR":87.49,
-        "StackOverflowDupQuestions":54.61
-    },
-    {
         "Rank":10,
-        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Model":"bge-base-en-v1.5-onnx",
         "Average":58.86,
         "AskUbuntuDupQuestions":62.13,
         "MindSmallReranking":31.2,
@@ -91,6 +91,24 @@
     },
     {
         "Rank":11,
+        "Model":"bge-base-en-v1.5",
+        "Average":58.86,
+        "AskUbuntuDupQuestions":62.13,
+        "MindSmallReranking":31.2,
+        "SciDocsRR":87.49,
+        "StackOverflowDupQuestions":54.61
+    },
+    {
+        "Rank":12,
+        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Average":58.86,
+        "AskUbuntuDupQuestions":62.13,
+        "MindSmallReranking":31.2,
+        "SciDocsRR":87.49,
+        "StackOverflowDupQuestions":54.61
+    },
+    {
+        "Rank":13,
         "Model":"stella-base-en-v2",
         "Average":58.78,
         "AskUbuntuDupQuestions":62.72,
@@ -99,7 +117,7 @@
         "StackOverflowDupQuestions":53.81
     },
     {
-        "Rank":12,
+        "Rank":14,
         "Model":"gte-base",
         "Average":58.61,
         "AskUbuntuDupQuestions":61.8,
@@ -108,7 +126,7 @@
         "StackOverflowDupQuestions":53.01
     },
     {
-        "Rank":13,
+        "Rank":15,
         "Model":"all-MiniLM-L12-v2",
         "Average":58.44,
         "AskUbuntuDupQuestions":64.06,
@@ -117,7 +135,7 @@
         "StackOverflowDupQuestions":51.47
     },
     {
-        "Rank":14,
+        "Rank":16,
         "Model":"bge-small-en-v1.5",
         "Average":58.36,
         "AskUbuntuDupQuestions":62.59,
@@ -126,16 +144,7 @@
         "StackOverflowDupQuestions":53.64
     },
     {
-        "Rank":15,
-        "Model":"all-MiniLM-L6-v2-ONNX",
-        "Average":58.04,
-        "AskUbuntuDupQuestions":63.48,
-        "MindSmallReranking":30.8,
-        "SciDocsRR":87.12,
-        "StackOverflowDupQuestions":50.76
-    },
-    {
-        "Rank":16,
+        "Rank":17,
         "Model":"all-MiniLM-L6-v2",
         "Average":58.04,
         "AskUbuntuDupQuestions":63.48,
@@ -144,7 +153,16 @@
         "StackOverflowDupQuestions":50.76
     },
     {
-        "Rank":17,
+        "Rank":18,
+        "Model":"all-MiniLM-L6-v2-ds",
+        "Average":58.04,
+        "AskUbuntuDupQuestions":63.48,
+        "MindSmallReranking":30.8,
+        "SciDocsRR":87.12,
+        "StackOverflowDupQuestions":50.76
+    },
+    {
+        "Rank":19,
         "Model":"Cohere-embed-english-v3.0",
         "Average":58.01,
         "AskUbuntuDupQuestions":61.7,
@@ -153,7 +171,7 @@
         "StackOverflowDupQuestions":52.48
     },
     {
-        "Rank":18,
+        "Rank":20,
         "Model":"bge-small-en-v1.5-quant",
         "Average":57.86,
         "AskUbuntuDupQuestions":62.4,
@@ -162,7 +180,7 @@
         "StackOverflowDupQuestions":52.75
     },
     {
-        "Rank":19,
+        "Rank":21,
         "Model":"Cohere-embed-multilingual-v3.0",
         "Average":57.86,
         "AskUbuntuDupQuestions":62.13,
@@ -171,7 +189,7 @@
         "StackOverflowDupQuestions":52.4
     },
     {
-        "Rank":20,
+        "Rank":22,
         "Model":"gte-small",
         "Average":57.7,
         "AskUbuntuDupQuestions":61.72,
@@ -180,7 +198,7 @@
         "StackOverflowDupQuestions":52.03
     },
     {
-        "Rank":21,
+        "Rank":23,
         "Model":"instructor-large",
         "Average":57.54,
         "AskUbuntuDupQuestions":64.3,
@@ -189,7 +207,7 @@
         "StackOverflowDupQuestions":52.17
     },
     {
-        "Rank":22,
+        "Rank":24,
         "Model":"instructor-xl",
         "Average":57.29,
         "AskUbuntuDupQuestions":65.35,
@@ -198,7 +216,7 @@
         "StackOverflowDupQuestions":52.52
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"bge-base-en-v1.5-sparse",
         "Average":57.18,
         "AskUbuntuDupQuestions":60.23,
@@ -207,7 +225,7 @@
         "StackOverflowDupQuestions":52.32
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"XLM-3B5-embedding",
         "Average":57.12,
         "AskUbuntuDupQuestions":62.73,
@@ -216,7 +234,7 @@
         "StackOverflowDupQuestions":49.85
     },
     {
-        "Rank":25,
+        "Rank":27,
         "Model":"jina-embeddings-v2-base-en",
         "Average":56.98,
         "AskUbuntuDupQuestions":62.25,
@@ -225,7 +243,7 @@
         "StackOverflowDupQuestions":52.05
     },
     {
-        "Rank":26,
+        "Rank":28,
         "Model":"gtr-t5-xxl",
         "Average":56.66,
         "AskUbuntuDupQuestions":63.23,
@@ -234,7 +252,7 @@
         "StackOverflowDupQuestions":53.5
     },
     {
-        "Rank":27,
+        "Rank":29,
         "Model":"e5-large-v2",
         "Average":56.61,
         "AskUbuntuDupQuestions":59.62,
@@ -243,7 +261,7 @@
         "StackOverflowDupQuestions":50.68
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"SGPT-5.8B-weightedmean-msmarco-specb-bitfit",
         "Average":56.56,
         "AskUbuntuDupQuestions":61.63,
@@ -252,7 +270,7 @@
         "StackOverflowDupQuestions":51.53
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"e5-large",
         "Average":56.53,
         "AskUbuntuDupQuestions":60.07,
@@ -261,7 +279,7 @@
         "StackOverflowDupQuestions":51.33
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"sentence-t5-xxl",
         "Average":56.42,
         "AskUbuntuDupQuestions":66.16,
@@ -270,7 +288,7 @@
         "StackOverflowDupQuestions":52.85
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"jina-embedding-l-en-v1",
         "Average":56.42,
         "AskUbuntuDupQuestions":62.83,
@@ -279,7 +297,7 @@
         "StackOverflowDupQuestions":50.38
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"text-embedding-ada-002",
         "Average":56.32,
         "AskUbuntuDupQuestions":62.05,
@@ -288,7 +306,7 @@
         "StackOverflowDupQuestions":50.54
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"instructor-base",
         "Average":56.2,
         "AskUbuntuDupQuestions":63.17,
@@ -297,7 +315,7 @@
         "StackOverflowDupQuestions":50.99
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"Cohere-embed-english-light-v3.0",
         "Average":56.09,
         "AskUbuntuDupQuestions":60.11,
@@ -306,7 +324,7 @@
         "StackOverflowDupQuestions":50.76
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"gtr-t5-xl",
         "Average":55.96,
         "AskUbuntuDupQuestions":63.08,
@@ -315,7 +333,7 @@
         "StackOverflowDupQuestions":52.79
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"udever-bloom-7b1",
         "Average":55.91,
         "AskUbuntuDupQuestions":61.6,
@@ -324,7 +342,7 @@
         "StackOverflowDupQuestions":50.55
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"e5-base-v2",
         "Average":55.91,
         "AskUbuntuDupQuestions":58.98,
@@ -333,7 +351,7 @@
         "StackOverflowDupQuestions":50.34
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"multilingual-e5-large",
         "Average":55.86,
         "AskUbuntuDupQuestions":60.28,
@@ -342,7 +360,7 @@
         "StackOverflowDupQuestions":49.72
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"jina-embedding-b-en-v1",
         "Average":55.84,
         "AskUbuntuDupQuestions":62.4,
@@ -351,7 +369,7 @@
         "StackOverflowDupQuestions":50.11
     },
     {
-        "Rank":40,
+        "Rank":42,
         "Model":"gte-tiny",
         "Average":55.77,
         "AskUbuntuDupQuestions":59.83,
@@ -360,7 +378,7 @@
         "StackOverflowDupQuestions":49.65
     },
     {
-        "Rank":41,
+        "Rank":43,
         "Model":"e5-base",
         "Average":55.7,
         "AskUbuntuDupQuestions":59.66,
@@ -369,7 +387,7 @@
         "StackOverflowDupQuestions":50.15
     },
     {
-        "Rank":42,
+        "Rank":44,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":55.65,
         "AskUbuntuDupQuestions":59.97,
@@ -378,7 +396,7 @@
         "StackOverflowDupQuestions":51.07
     },
     {
-        "Rank":43,
+        "Rank":45,
         "Model":"XLM-0B6-embedding",
         "Average":55.6,
         "AskUbuntuDupQuestions":61.11,
@@ -387,7 +405,7 @@
         "StackOverflowDupQuestions":46.52
     },
     {
-        "Rank":44,
+        "Rank":46,
         "Model":"MegatronBert-1B3-embedding",
         "Average":55.5,
         "AskUbuntuDupQuestions":58.96,
@@ -396,7 +414,7 @@
         "StackOverflowDupQuestions":45.71
     },
     {
-        "Rank":45,
+        "Rank":47,
         "Model":"gtr-t5-large",
         "Average":55.36,
         "AskUbuntuDupQuestions":61.64,
@@ -405,7 +423,7 @@
         "StackOverflowDupQuestions":51.58
     },
     {
-        "Rank":46,
+        "Rank":48,
         "Model":"cai-stellaris-text-embeddings",
         "Average":55.24,
         "AskUbuntuDupQuestions":60.35,
@@ -414,7 +432,7 @@
         "StackOverflowDupQuestions":48.17
     },
     {
-        "Rank":47,
+        "Rank":49,
         "Model":"jina-embeddings-v2-small-en",
         "Average":55.09,
         "AskUbuntuDupQuestions":59.62,
@@ -423,7 +441,7 @@
         "StackOverflowDupQuestions":49.99
     },
     {
-        "Rank":48,
+        "Rank":50,
         "Model":"Cohere-embed-multilingual-light-v3.0",
         "Average":55.06,
         "AskUbuntuDupQuestions":58.54,
@@ -432,7 +450,7 @@
         "StackOverflowDupQuestions":50.45
     },
     {
-        "Rank":49,
+        "Rank":51,
         "Model":"udever-bloom-3b",
         "Average":54.9,
         "AskUbuntuDupQuestions":59.92,
@@ -441,7 +459,7 @@
         "StackOverflowDupQuestions":50.07
     },
     {
-        "Rank":50,
+        "Rank":52,
         "Model":"multilingual-e5-base",
         "Average":54.84,
         "AskUbuntuDupQuestions":58.23,
@@ -450,7 +468,7 @@
         "StackOverflowDupQuestions":49.41
     },
     {
-        "Rank":51,
+        "Rank":53,
         "Model":"sentence-t5-xl",
         "Average":54.71,
         "AskUbuntuDupQuestions":62.86,
@@ -459,7 +477,7 @@
         "StackOverflowDupQuestions":51.05
     },
     {
-        "Rank":52,
+        "Rank":54,
         "Model":"SGPT-2.7B-weightedmean-msmarco-specb-bitfit",
         "Average":54.67,
         "AskUbuntuDupQuestions":59.63,
@@ -468,7 +486,16 @@
         "StackOverflowDupQuestions":49.61
     },
     {
-        "Rank":53,
+        "Rank":55,
+        "Model":"embedder-100p",
+        "Average":54.63,
+        "AskUbuntuDupQuestions":61.05,
+        "MindSmallReranking":30.55,
+        "SciDocsRR":79.83,
+        "StackOverflowDupQuestions":47.1
+    },
+    {
+        "Rank":56,
         "Model":"multi-qa-MiniLM-L6-cos-v1",
         "Average":54.58,
         "AskUbuntuDupQuestions":63.09,
@@ -477,7 +504,7 @@
         "StackOverflowDupQuestions":50.06
     },
     {
-        "Rank":54,
+        "Rank":57,
         "Model":"e5-small",
         "Average":54.45,
         "AskUbuntuDupQuestions":59.36,
@@ -486,7 +513,7 @@
         "StackOverflowDupQuestions":49.13
     },
     {
-        "Rank":55,
+        "Rank":58,
         "Model":"e5-small-v2",
         "Average":54.32,
         "AskUbuntuDupQuestions":58.11,
@@ -495,7 +522,7 @@
         "StackOverflowDupQuestions":49.93
     },
     {
-        "Rank":56,
+        "Rank":59,
         "Model":"bge-micro-v2",
         "Average":54.29,
         "AskUbuntuDupQuestions":58.08,
@@ -504,7 +531,7 @@
         "StackOverflowDupQuestions":49.43
     },
     {
-        "Rank":57,
+        "Rank":60,
         "Model":"udever-bloom-1b1",
         "Average":54.28,
         "AskUbuntuDupQuestions":59.5,
@@ -513,7 +540,7 @@
         "StackOverflowDupQuestions":49
     },
     {
-        "Rank":58,
+        "Rank":61,
         "Model":"bge-micro",
         "Average":54.28,
         "AskUbuntuDupQuestions":58.09,
@@ -522,7 +549,7 @@
         "StackOverflowDupQuestions":48.96
     },
     {
-        "Rank":59,
+        "Rank":62,
         "Model":"gtr-t5-base",
         "Average":54.23,
         "AskUbuntuDupQuestions":60.86,
@@ -531,7 +558,7 @@
         "StackOverflowDupQuestions":51.01
     },
     {
-        "Rank":60,
+        "Rank":63,
         "Model":"bge-small-en-v1.5-sparse",
         "Average":54.14,
         "AskUbuntuDupQuestions":56.97,
@@ -540,7 +567,7 @@
         "StackOverflowDupQuestions":48.75
     },
     {
-        "Rank":61,
+        "Rank":64,
         "Model":"sentence-t5-large",
         "Average":54,
         "AskUbuntuDupQuestions":61.51,
@@ -549,7 +576,7 @@
         "StackOverflowDupQuestions":49.34
     },
     {
-        "Rank":62,
+        "Rank":65,
         "Model":"SGPT-1.3B-weightedmean-msmarco-specb-bitfit",
         "Average":54,
         "AskUbuntuDupQuestions":58.13,
@@ -558,7 +585,7 @@
         "StackOverflowDupQuestions":49.32
     },
     {
-        "Rank":63,
+        "Rank":66,
         "Model":"lodestone-base-4096-v1",
         "Average":53.95,
         "AskUbuntuDupQuestions":58.79,
@@ -567,7 +594,7 @@
         "StackOverflowDupQuestions":46.44
     },
     {
-        "Rank":64,
+        "Rank":67,
         "Model":"multilingual-e5-small",
         "Average":53.87,
         "AskUbuntuDupQuestions":57.88,
@@ -576,7 +603,7 @@
         "StackOverflowDupQuestions":49.2
     },
     {
-        "Rank":65,
+        "Rank":68,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":53.8,
         "AskUbuntuDupQuestions":60.16,
@@ -585,7 +612,7 @@
         "StackOverflowDupQuestions":46.79
     },
     {
-        "Rank":66,
+        "Rank":69,
         "Model":"bge-small-4096",
         "Average":53.64,
         "AskUbuntuDupQuestions":58.54,
@@ -594,7 +621,7 @@
         "StackOverflowDupQuestions":47.85
     },
     {
-        "Rank":67,
+        "Rank":70,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Average":53.62,
         "AskUbuntuDupQuestions":60.49,
@@ -603,7 +630,7 @@
         "StackOverflowDupQuestions":45.85
     },
     {
-        "Rank":68,
+        "Rank":71,
         "Model":"contriever-base-msmarco",
         "Average":53.14,
         "AskUbuntuDupQuestions":56.69,
@@ -612,7 +639,7 @@
         "StackOverflowDupQuestions":47.78
     },
     {
-        "Rank":69,
+        "Rank":72,
         "Model":"sentence-t5-base",
         "Average":53.09,
         "AskUbuntuDupQuestions":59.73,
@@ -621,7 +648,7 @@
         "StackOverflowDupQuestions":48.46
     },
     {
-        "Rank":70,
+        "Rank":73,
         "Model":"jina-embedding-s-en-v1",
         "Average":53.07,
         "AskUbuntuDupQuestions":60.25,
@@ -630,7 +657,7 @@
         "StackOverflowDupQuestions":47.18
     },
     {
-        "Rank":71,
+        "Rank":74,
         "Model":"udever-bloom-560m",
         "Average":52.6,
         "AskUbuntuDupQuestions":57.38,
@@ -639,7 +666,7 @@
         "StackOverflowDupQuestions":47.38
     },
     {
-        "Rank":72,
+        "Rank":75,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Average":52.33,
         "AskUbuntuDupQuestions":55.9,
@@ -648,7 +675,7 @@
         "StackOverflowDupQuestions":44.77
     },
     {
-        "Rank":73,
+        "Rank":76,
         "Model":"msmarco-bert-co-condensor",
         "Average":51.84,
         "AskUbuntuDupQuestions":58.99,
@@ -657,7 +684,7 @@
         "StackOverflowDupQuestions":48.48
     },
     {
-        "Rank":74,
+        "Rank":77,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":50.58,
         "AskUbuntuDupQuestions":55.84,
@@ -666,7 +693,7 @@
         "StackOverflowDupQuestions":44.74
     },
     {
-        "Rank":75,
+        "Rank":78,
         "Model":"text-similarity-ada-001",
         "Average":49.02,
         "AskUbuntuDupQuestions":53.49,
@@ -675,7 +702,7 @@
         "StackOverflowDupQuestions":40.85
     },
     {
-        "Rank":76,
+        "Rank":79,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":48.82,
         "AskUbuntuDupQuestions":53.75,
@@ -684,7 +711,7 @@
         "StackOverflowDupQuestions":41.92
     },
     {
-        "Rank":77,
+        "Rank":80,
         "Model":"LaBSE",
         "Average":48.42,
         "AskUbuntuDupQuestions":52.75,
@@ -693,7 +720,7 @@
         "StackOverflowDupQuestions":42.42
     },
     {
-        "Rank":78,
+        "Rank":81,
         "Model":"allenai-specter",
         "Average":48.1,
         "AskUbuntuDupQuestions":50.07,
@@ -702,7 +729,7 @@
         "StackOverflowDupQuestions":36.22
     },
     {
-        "Rank":79,
+        "Rank":82,
         "Model":"cai-lunaris-text-embeddings",
         "Average":47.85,
         "AskUbuntuDupQuestions":53.44,
@@ -711,7 +738,7 @@
         "StackOverflowDupQuestions":40.76
     },
     {
-        "Rank":80,
+        "Rank":83,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":47.56,
         "AskUbuntuDupQuestions":52.63,
@@ -720,7 +747,7 @@
         "StackOverflowDupQuestions":39.97
     },
     {
-        "Rank":81,
+        "Rank":84,
         "Model":"sup-simcse-bert-base-uncased",
         "Average":47.54,
         "AskUbuntuDupQuestions":51.8,
@@ -729,7 +756,7 @@
         "StackOverflowDupQuestions":38.9
     },
     {
-        "Rank":82,
+        "Rank":85,
         "Model":"unsup-simcse-bert-base-uncased",
         "Average":46.47,
         "AskUbuntuDupQuestions":51.57,
@@ -738,7 +765,7 @@
         "StackOverflowDupQuestions":39.35
     },
     {
-        "Rank":83,
+        "Rank":86,
         "Model":"komninos",
         "Average":44.75,
         "AskUbuntuDupQuestions":50.88,
@@ -747,7 +774,7 @@
         "StackOverflowDupQuestions":35.65
     },
     {
-        "Rank":84,
+        "Rank":87,
         "Model":"bert-base-uncased",
         "Average":43.44,
         "AskUbuntuDupQuestions":45.84,
@@ -756,7 +783,7 @@
         "StackOverflowDupQuestions":34.62
     },
     {
-        "Rank":85,
+        "Rank":88,
         "Model":"glove.6B.300d",
         "Average":43.29,
         "AskUbuntuDupQuestions":49.57,
@@ -765,7 +792,7 @@
         "StackOverflowDupQuestions":34.03
     },
     {
-        "Rank":86,
+        "Rank":89,
         "Model":"LASER2",
         "Average":41.44,
         "AskUbuntuDupQuestions":48.99,
@@ -774,7 +801,7 @@
         "StackOverflowDupQuestions":36.98
     },
     {
-        "Rank":87,
+        "Rank":90,
         "Model":"ALL_862873",
         "Average":34.44,
         "AskUbuntuDupQuestions":44.88,
@@ -783,7 +810,7 @@
         "StackOverflowDupQuestions":23.35
     },
     {
-        "Rank":93,
+        "Rank":96,
         "Model":"text-similarity-babbage-001",
         "Average":"",
         "AskUbuntuDupQuestions":54.68,
@@ -792,7 +819,7 @@
         "StackOverflowDupQuestions":40.65
     },
     {
-        "Rank":94,
+        "Rank":97,
         "Model":"text-similarity-curie-001",
         "Average":"",
         "AskUbuntuDupQuestions":55.09,
@@ -801,7 +828,7 @@
         "StackOverflowDupQuestions":42.42
     },
     {
-        "Rank":95,
+        "Rank":98,
         "Model":"text-similarity-davinci-001",
         "Average":"",
         "AskUbuntuDupQuestions":53.56,
@@ -810,7 +837,7 @@
         "StackOverflowDupQuestions":39.41
     },
     {
-        "Rank":96,
+        "Rank":99,
         "Model":"titan-embed-text-v1",
         "Average":"",
         "AskUbuntuDupQuestions":"",
@@ -819,7 +846,7 @@
         "StackOverflowDupQuestions":""
     },
     {
-        "Rank":97,
+        "Rank":100,
         "Model":"winberta-base",
         "Average":"",
         "AskUbuntuDupQuestions":53.99,
@@ -828,7 +855,7 @@
         "StackOverflowDupQuestions":""
     },
     {
-        "Rank":102,
+        "Rank":106,
         "Model":"LLaMA-embeeding",
         "Average":"",
         "AskUbuntuDupQuestions":48.66,
@@ -837,7 +864,7 @@
         "StackOverflowDupQuestions":39.5
     },
     {
-        "Rank":103,
+        "Rank":107,
         "Model":"yiyouliao",
         "Average":"",
         "AskUbuntuDupQuestions":59.82,
@@ -846,7 +873,7 @@
         "StackOverflowDupQuestions":""
     },
     {
-        "Rank":104,
+        "Rank":108,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "AskUbuntuDupQuestions":57.91,
@@ -855,7 +882,16 @@
         "StackOverflowDupQuestions":44.9
     },
     {
-        "Rank":115,
+        "Rank":110,
+        "Model":"pythia-14m-embedding",
+        "Average":"",
+        "AskUbuntuDupQuestions":47.93,
+        "MindSmallReranking":"",
+        "SciDocsRR":49.76,
+        "StackOverflowDupQuestions":35.36
+    },
+    {
+        "Rank":120,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "AskUbuntuDupQuestions":57.91,
@@ -864,7 +900,7 @@
         "StackOverflowDupQuestions":44.9
     },
     {
-        "Rank":122,
+        "Rank":127,
         "Model":"gte-small-quant",
         "Average":"",
         "AskUbuntuDupQuestions":60.76,

@@ -51,7 +51,7 @@
         "Classification Average (9 datasets)":71.26,
         "Clustering Average (4 datasets)":53.86,
         "Pair Classification Average (2 datasets)":80.44,
-        "Reranking Average (4 datasets)":67.0,
+        "Reranking Average (4 datasets)":67,
         "Retrieval Average (8 datasets)":71.71,
         "STS Average (8 datasets)":55.96
     },
@@ -289,7 +289,7 @@
         "Classification Average (9 datasets)":67.34,
         "Clustering Average (4 datasets)":48.23,
         "Pair Classification Average (2 datasets)":69.89,
-        "Reranking Average (4 datasets)":56.0,
+        "Reranking Average (4 datasets)":56,
         "Retrieval Average (8 datasets)":63.66,
         "STS Average (8 datasets)":48.29
     },
@@ -504,7 +504,7 @@
         "STS Average (8 datasets)":""
     },
     {
-        "Rank":63,
+        "Rank":64,
         "Model":"PEG",
         "Model Size (GB)":1.3,
         "Embedding Dimensions":1024,
@@ -518,7 +518,21 @@
         "STS Average (8 datasets)":""
     },
     {
-        "Rank":83,
+        "Rank":66,
+        "Model":"cloudy-large-zh",
+        "Model Size (GB)":1.3,
+        "Embedding Dimensions":1024,
+        "Sequence Length":1024,
+        "Average (35 datasets)":"",
+        "Classification Average (9 datasets)":"",
+        "Clustering Average (4 datasets)":"",
+        "Pair Classification Average (2 datasets)":"",
+        "Reranking Average (4 datasets)":"",
+        "Retrieval Average (8 datasets)":72.92,
+        "STS Average (8 datasets)":""
+    },
+    {
+        "Rank":87,
         "Model":"udever-bloom-3b",
         "Model Size (GB)":12.01,
         "Embedding Dimensions":2560,
@@ -532,7 +546,7 @@
         "STS Average (8 datasets)":""
     },
     {
-        "Rank":84,
+        "Rank":88,
         "Model":"udever-bloom-7b1",
         "Model Size (GB)":28.28,
         "Embedding Dimensions":4096,
@@ -544,5 +558,33 @@
         "Reranking Average (4 datasets)":59.11,
         "Retrieval Average (8 datasets)":62.87,
         "STS Average (8 datasets)":""
+    },
+    {
+        "Rank":96,
+        "Model":"lim_base_zh",
+        "Model Size (GB)":0.41,
+        "Embedding Dimensions":768,
+        "Sequence Length":512,
+        "Average (35 datasets)":"",
+        "Classification Average (9 datasets)":70.83,
+        "Clustering Average (4 datasets)":48.35,
+        "Pair Classification Average (2 datasets)":74.64,
+        "Reranking Average (4 datasets)":63.73,
+        "Retrieval Average (8 datasets)":"",
+        "STS Average (8 datasets)":""
+    },
+    {
+        "Rank":141,
+        "Model":"bi-cse",
+        "Model Size (GB)":2.24,
+        "Embedding Dimensions":1024,
+        "Sequence Length":514,
+        "Average (35 datasets)":"",
+        "Classification Average (9 datasets)":"",
+        "Clustering Average (4 datasets)":"",
+        "Pair Classification Average (2 datasets)":"",
+        "Reranking Average (4 datasets)":"",
+        "Retrieval Average (8 datasets)":"",
+        "STS Average (8 datasets)":57.91
     }
 ]

@@ -3,7 +3,7 @@ import json
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = 'data/MTEB'
+path_leaderboard = 'data/(C)MTEB'
 
 
 def preprocess_name(s):
@@ -17,7 +17,7 @@ def extract_text_from_html(html_string):
 
 
 # Check the dataset from https://github.com/AI-Northstar-Tech/mteb-info/blob/main/data/data.json
-with open('data.json', 'r') as f:
+with open('/Users/jimmy/Downloads/data.json', 'r') as f:
     data = json.load(f)
     for group in data['table']:
         group_name = preprocess_name(group['name'])

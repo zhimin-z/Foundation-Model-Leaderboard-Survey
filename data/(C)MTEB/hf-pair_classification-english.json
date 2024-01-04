@@ -1,6 +1,14 @@
 [
     {
         "Rank":1,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":88.34,
+        "SprintDuplicateQuestions":95.66,
+        "TwitterSemEval2015":81.62,
+        "TwitterURLCorpus":87.75
+    },
+    {
+        "Rank":2,
         "Model":"ember-v1",
         "Average":87.37,
         "SprintDuplicateQuestions":96.83,
@@ -8,7 +16,7 @@
         "TwitterURLCorpus":85.98
     },
     {
-        "Rank":2,
+        "Rank":3,
         "Model":"UAE-Large-V1",
         "Average":87.25,
         "SprintDuplicateQuestions":97.24,
@@ -16,7 +24,7 @@
         "TwitterURLCorpus":86.33
     },
     {
-        "Rank":3,
+        "Rank":4,
         "Model":"bge-large-en-v1.5",
         "Average":87.12,
         "SprintDuplicateQuestions":96.73,
@@ -24,7 +32,7 @@
         "TwitterURLCorpus":85.6
     },
     {
-        "Rank":4,
+        "Rank":5,
         "Model":"sf_model_e5",
         "Average":86.85,
         "SprintDuplicateQuestions":96.79,
@@ -32,7 +40,7 @@
         "TwitterURLCorpus":85.53
     },
     {
-        "Rank":5,
+        "Rank":6,
         "Model":"bge-large-en-v1.5-quant",
         "Average":86.74,
         "SprintDuplicateQuestions":96.49,
@@ -40,7 +48,7 @@
         "TwitterURLCorpus":85.94
     },
     {
-        "Rank":6,
+        "Rank":7,
         "Model":"instructor-xl",
         "Average":86.62,
         "SprintDuplicateQuestions":94.94,
@@ -48,7 +56,7 @@
         "TwitterURLCorpus":86.93
     },
     {
-        "Rank":7,
+        "Rank":8,
         "Model":"voyage-lite-01-instruct",
         "Average":86.57,
         "SprintDuplicateQuestions":96.01,
@@ -56,16 +64,8 @@
         "TwitterURLCorpus":86.84
     },
     {
-        "Rank":8,
-        "Model":"bge-base-en-v1.5",
-        "Average":86.55,
-        "SprintDuplicateQuestions":96.33,
-        "TwitterSemEval2015":77.68,
-        "TwitterURLCorpus":85.65
-    },
-    {
         "Rank":9,
-        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Model":"bge-base-en-v1.5-onnx",
         "Average":86.55,
         "SprintDuplicateQuestions":96.33,
         "TwitterSemEval2015":77.68,
@@ -73,6 +73,22 @@
     },
     {
         "Rank":10,
+        "Model":"bge-base-en-v1.5",
+        "Average":86.55,
+        "SprintDuplicateQuestions":96.33,
+        "TwitterSemEval2015":77.68,
+        "TwitterURLCorpus":85.65
+    },
+    {
+        "Rank":11,
+        "Model":"bge-base-en-v1-5-seqlen-384-bs-1",
+        "Average":86.55,
+        "SprintDuplicateQuestions":96.33,
+        "TwitterSemEval2015":77.68,
+        "TwitterURLCorpus":85.65
+    },
+    {
+        "Rank":12,
         "Model":"stella-base-en-v2",
         "Average":86.45,
         "SprintDuplicateQuestions":95.69,
@@ -80,7 +96,7 @@
         "TwitterURLCorpus":86
     },
     {
-        "Rank":11,
+        "Rank":13,
         "Model":"bge-base-en-v1.5-quant",
         "Average":86.24,
         "SprintDuplicateQuestions":96.38,
@@ -88,7 +104,7 @@
         "TwitterURLCorpus":85.93
     },
     {
-        "Rank":12,
+        "Rank":14,
         "Model":"Cohere-embed-multilingual-v3.0",
         "Average":86.15,
         "SprintDuplicateQuestions":96.79,
@@ -96,7 +112,7 @@
         "TwitterURLCorpus":86.49
     },
     {
-        "Rank":13,
+        "Rank":15,
         "Model":"gtr-t5-xl",
         "Average":86.13,
         "SprintDuplicateQuestions":95.45,
@@ -104,7 +120,7 @@
         "TwitterURLCorpus":85.14
     },
     {
-        "Rank":14,
+        "Rank":16,
         "Model":"gtr-t5-xxl",
         "Average":86.12,
         "SprintDuplicateQuestions":95.68,
@@ -112,7 +128,7 @@
         "TwitterURLCorpus":85.13
     },
     {
-        "Rank":15,
+        "Rank":17,
         "Model":"sentence-t5-xl",
         "Average":86.06,
         "SprintDuplicateQuestions":91.44,
@@ -120,7 +136,7 @@
         "TwitterURLCorpus":85.86
     },
     {
-        "Rank":16,
+        "Rank":18,
         "Model":"e5-large-v2",
         "Average":86.03,
         "SprintDuplicateQuestions":94.92,
@@ -128,7 +144,7 @@
         "TwitterURLCorpus":86.25
     },
     {
-        "Rank":17,
+        "Rank":19,
         "Model":"e5-large",
         "Average":85.94,
         "SprintDuplicateQuestions":95.42,
@@ -136,7 +152,7 @@
         "TwitterURLCorpus":86.31
     },
     {
-        "Rank":18,
+        "Rank":20,
         "Model":"instructor-large",
         "Average":85.89,
         "SprintDuplicateQuestions":93.07,
@@ -144,7 +160,7 @@
         "TwitterURLCorpus":87.18
     },
     {
-        "Rank":19,
+        "Rank":21,
         "Model":"Cohere-embed-english-v3.0",
         "Average":85.84,
         "SprintDuplicateQuestions":96.25,
@@ -152,7 +168,7 @@
         "TwitterURLCorpus":86.46
     },
     {
-        "Rank":20,
+        "Rank":22,
         "Model":"e5-base-v2",
         "Average":85.73,
         "SprintDuplicateQuestions":94.58,
@@ -160,7 +176,7 @@
         "TwitterURLCorpus":86.63
     },
     {
-        "Rank":21,
+        "Rank":23,
         "Model":"udever-bloom-7b1",
         "Average":85.4,
         "SprintDuplicateQuestions":95.62,
@@ -168,7 +184,7 @@
         "TwitterURLCorpus":86.78
     },
     {
-        "Rank":22,
+        "Rank":24,
         "Model":"jina-embeddings-v2-base-en",
         "Average":85.38,
         "SprintDuplicateQuestions":95.3,
@@ -176,7 +192,7 @@
         "TwitterURLCorpus":86.09
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"gtr-t5-large",
         "Average":85.32,
         "SprintDuplicateQuestions":95.05,
@@ -184,7 +200,7 @@
         "TwitterURLCorpus":84.89
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"sentence-t5-base",
         "Average":85.18,
         "SprintDuplicateQuestions":91.23,
@@ -192,7 +208,7 @@
         "TwitterURLCorpus":86.05
     },
     {
-        "Rank":25,
+        "Rank":27,
         "Model":"e5-base",
         "Average":85.09,
         "SprintDuplicateQuestions":94.88,
@@ -200,7 +216,7 @@
         "TwitterURLCorpus":85.98
     },
     {
-        "Rank":26,
+        "Rank":28,
         "Model":"e5-small",
         "Average":85.08,
         "SprintDuplicateQuestions":95.29,
@@ -208,7 +224,7 @@
         "TwitterURLCorpus":85.79
     },
     {
-        "Rank":27,
+        "Rank":29,
         "Model":"bge-large-en-v1.5-sparse",
         "Average":85.06,
         "SprintDuplicateQuestions":95.0,
@@ -216,7 +232,7 @@
         "TwitterURLCorpus":85.69
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"sentence-t5-xxl",
         "Average":85.06,
         "SprintDuplicateQuestions":88.89,
@@ -224,7 +240,7 @@
         "TwitterURLCorpus":86.01
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"bge-small-en-v1.5-quant",
         "Average":85.05,
         "SprintDuplicateQuestions":96.25,
@@ -232,7 +248,7 @@
         "TwitterURLCorpus":85.64
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"Cohere-embed-english-light-v3.0",
         "Average":85.05,
         "SprintDuplicateQuestions":96.59,
@@ -240,7 +256,7 @@
         "TwitterURLCorpus":86.32
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"gte-large",
         "Average":85,
         "SprintDuplicateQuestions":95.75,
@@ -248,7 +264,7 @@
         "TwitterURLCorpus":85.53
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"sentence-t5-large",
         "Average":84.97,
         "SprintDuplicateQuestions":89.01,
@@ -256,7 +272,7 @@
         "TwitterURLCorpus":86.14
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"bge-small-en-v1.5",
         "Average":84.92,
         "SprintDuplicateQuestions":96.67,
@@ -264,7 +280,7 @@
         "TwitterURLCorpus":84.84
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"text-embedding-ada-002",
         "Average":84.89,
         "SprintDuplicateQuestions":92.17,
@@ -272,7 +288,7 @@
         "TwitterURLCorpus":87.22
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"jina-embedding-l-en-v1",
         "Average":84.8,
         "SprintDuplicateQuestions":96.09,
@@ -280,7 +296,7 @@
         "TwitterURLCorpus":85.98
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"multilingual-e5-large",
         "Average":84.75,
         "SprintDuplicateQuestions":93.13,
@@ -288,7 +304,7 @@
         "TwitterURLCorpus":85.83
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"bge-base-en-v1.5-sparse",
         "Average":84.69,
         "SprintDuplicateQuestions":95.5,
@@ -296,7 +312,7 @@
         "TwitterURLCorpus":85.66
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"gte-large-quant",
         "Average":84.69,
         "SprintDuplicateQuestions":95.63,
@@ -304,7 +320,7 @@
         "TwitterURLCorpus":85.58
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"e5-small-v2",
         "Average":84.67,
         "SprintDuplicateQuestions":94.88,
@@ -312,7 +328,7 @@
         "TwitterURLCorpus":85.79
     },
     {
-        "Rank":40,
+        "Rank":42,
         "Model":"gte-base",
         "Average":84.57,
         "SprintDuplicateQuestions":95.71,
@@ -320,7 +336,7 @@
         "TwitterURLCorpus":85.52
     },
     {
-        "Rank":41,
+        "Rank":43,
         "Model":"jina-embeddings-v2-small-en",
         "Average":84.44,
         "SprintDuplicateQuestions":95.12,
@@ -328,7 +344,7 @@
         "TwitterURLCorpus":86.05
     },
     {
-        "Rank":42,
+        "Rank":44,
         "Model":"udever-bloom-3b",
         "Average":84.06,
         "SprintDuplicateQuestions":95.36,
@@ -336,7 +352,7 @@
         "TwitterURLCorpus":86.18
     },
     {
-        "Rank":43,
+        "Rank":45,
         "Model":"Cohere-embed-multilingual-light-v3.0",
         "Average":83.95,
         "SprintDuplicateQuestions":96.6,
@@ -344,7 +360,7 @@
         "TwitterURLCorpus":85.85
     },
     {
-        "Rank":44,
+        "Rank":46,
         "Model":"gtr-t5-base",
         "Average":83.85,
         "SprintDuplicateQuestions":94.55,
@@ -352,7 +368,7 @@
         "TwitterURLCorpus":84.77
     },
     {
-        "Rank":45,
+        "Rank":47,
         "Model":"gte-large-sparse",
         "Average":83.58,
         "SprintDuplicateQuestions":94.67,
@@ -360,7 +376,7 @@
         "TwitterURLCorpus":85.72
     },
     {
-        "Rank":46,
+        "Rank":48,
         "Model":"multilingual-e5-base",
         "Average":83.57,
         "SprintDuplicateQuestions":93.01,
@@ -368,7 +384,7 @@
         "TwitterURLCorpus":85.48
     },
     {
-        "Rank":47,
+        "Rank":49,
         "Model":"gte-small",
         "Average":83.54,
         "SprintDuplicateQuestions":95.57,
@@ -376,7 +392,7 @@
         "TwitterURLCorpus":84.92
     },
     {
-        "Rank":48,
+        "Rank":50,
         "Model":"instructor-base",
         "Average":83.51,
         "SprintDuplicateQuestions":90.35,
@@ -384,7 +400,7 @@
         "TwitterURLCorpus":86.2
     },
     {
-        "Rank":49,
+        "Rank":51,
         "Model":"udever-bloom-1b1",
         "Average":83.11,
         "SprintDuplicateQuestions":94.58,
@@ -392,7 +408,7 @@
         "TwitterURLCorpus":85.62
     },
     {
-        "Rank":50,
+        "Rank":52,
         "Model":"gte-small-quant",
         "Average":83.09,
         "SprintDuplicateQuestions":95.49,
@@ -400,7 +416,7 @@
         "TwitterURLCorpus":85.16
     },
     {
-        "Rank":51,
+        "Rank":53,
         "Model":"jina-embedding-b-en-v1",
         "Average":83.04,
         "SprintDuplicateQuestions":95.48,
@@ -408,7 +424,7 @@
         "TwitterURLCorpus":85.33
     },
     {
-        "Rank":52,
+        "Rank":54,
         "Model":"all-mpnet-base-v2",
         "Average":83.04,
         "SprintDuplicateQuestions":90.15,
@@ -416,7 +432,7 @@
         "TwitterURLCorpus":85.11
     },
     {
-        "Rank":53,
+        "Rank":55,
         "Model":"gte-tiny",
         "Average":82.83,
         "SprintDuplicateQuestions":95.48,
@@ -424,7 +440,7 @@
         "TwitterURLCorpus":84.84
     },
     {
-        "Rank":54,
+        "Rank":56,
         "Model":"bge-micro-v2",
         "Average":82.81,
         "SprintDuplicateQuestions":95.78,
@@ -432,7 +448,7 @@
         "TwitterURLCorpus":84.89
     },
     {
-        "Rank":55,
+        "Rank":57,
         "Model":"multilingual-e5-small",
         "Average":82.59,
         "SprintDuplicateQuestions":92.18,
@@ -440,7 +456,7 @@
         "TwitterURLCorpus":84.83
     },
     {
-        "Rank":56,
+        "Rank":58,
         "Model":"contriever-base-msmarco",
         "Average":82.54,
         "SprintDuplicateQuestions":95.55,
@@ -448,7 +464,7 @@
         "TwitterURLCorpus":85.21
     },
     {
-        "Rank":57,
+        "Rank":59,
         "Model":"all-MiniLM-L12-v2",
         "Average":82.41,
         "SprintDuplicateQuestions":92.45,
@@ -456,15 +472,15 @@
         "TwitterURLCorpus":84.77
     },
     {
-        "Rank":58,
-        "Model":"all-MiniLM-L6-v2-ONNX",
+        "Rank":60,
+        "Model":"all-MiniLM-L6-v2-ds",
         "Average":82.37,
         "SprintDuplicateQuestions":94.55,
         "TwitterSemEval2015":67.86,
         "TwitterURLCorpus":84.7
     },
     {
-        "Rank":59,
+        "Rank":61,
         "Model":"all-MiniLM-L6-v2",
         "Average":82.37,
         "SprintDuplicateQuestions":94.55,
@@ -472,7 +488,7 @@
         "TwitterURLCorpus":84.7
     },
     {
-        "Rank":60,
+        "Rank":62,
         "Model":"cai-stellaris-text-embeddings",
         "Average":82.11,
         "SprintDuplicateQuestions":93.23,
@@ -480,7 +496,7 @@
         "TwitterURLCorpus":83.49
     },
     {
-        "Rank":61,
+        "Rank":63,
         "Model":"SGPT-5.8B-weightedmean-msmarco-specb-bitfit",
         "Average":82,
         "SprintDuplicateQuestions":93.84,
@@ -488,7 +504,7 @@
         "TwitterURLCorpus":85.29
     },
     {
-        "Rank":62,
+        "Rank":64,
         "Model":"bge-small-en-v1.5-sparse",
         "Average":81.93,
         "SprintDuplicateQuestions":94.59,
@@ -496,7 +512,7 @@
         "TwitterURLCorpus":84.2
     },
     {
-        "Rank":63,
+        "Rank":65,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":81.9,
         "SprintDuplicateQuestions":94.93,
@@ -504,7 +520,7 @@
         "TwitterURLCorpus":85.46
     },
     {
-        "Rank":64,
+        "Rank":66,
         "Model":"bge-micro",
         "Average":81.77,
         "SprintDuplicateQuestions":95.3,
@@ -512,7 +528,7 @@
         "TwitterURLCorpus":84.22
     },
     {
-        "Rank":65,
+        "Rank":67,
         "Model":"msmarco-bert-co-condensor",
         "Average":81.74,
         "SprintDuplicateQuestions":96.09,
@@ -520,7 +536,7 @@
         "TwitterURLCorpus":83.17
     },
     {
-        "Rank":66,
+        "Rank":68,
         "Model":"bge-small-4096",
         "Average":81.4,
         "SprintDuplicateQuestions":95.15,
@@ -528,7 +544,7 @@
         "TwitterURLCorpus":83.27
     },
     {
-        "Rank":67,
+        "Rank":69,
         "Model":"udever-bloom-560m",
         "Average":81.05,
         "SprintDuplicateQuestions":92.09,
@@ -536,7 +552,15 @@
         "TwitterURLCorpus":85.11
     },
     {
-        "Rank":68,
+        "Rank":70,
+        "Model":"embedder-100p",
+        "Average":81.03,
+        "SprintDuplicateQuestions":90.68,
+        "TwitterSemEval2015":67.77,
+        "TwitterURLCorpus":84.65
+    },
+    {
+        "Rank":71,
         "Model":"multi-qa-MiniLM-L6-cos-v1",
         "Average":80.86,
         "SprintDuplicateQuestions":93.84,
@@ -544,7 +568,7 @@
         "TwitterURLCorpus":84.01
     },
     {
-        "Rank":69,
+        "Rank":72,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":80.81,
         "SprintDuplicateQuestions":90.55,
@@ -552,7 +576,7 @@
         "TwitterURLCorpus":85.14
     },
     {
-        "Rank":70,
+        "Rank":73,
         "Model":"SGPT-2.7B-weightedmean-msmarco-specb-bitfit",
         "Average":80.65,
         "SprintDuplicateQuestions":93.47,
@@ -560,7 +584,7 @@
         "TwitterURLCorpus":84.8
     },
     {
-        "Rank":71,
+        "Rank":74,
         "Model":"lodestone-base-4096-v1",
         "Average":80.4,
         "SprintDuplicateQuestions":90.41,
@@ -568,7 +592,7 @@
         "TwitterURLCorpus":83.11
     },
     {
-        "Rank":72,
+        "Rank":75,
         "Model":"yiyouliao",
         "Average":79.84,
         "SprintDuplicateQuestions":92.98,
@@ -576,7 +600,7 @@
         "TwitterURLCorpus":84.1
     },
     {
-        "Rank":73,
+        "Rank":76,
         "Model":"universal-sentence-encoder-multilingual-large-3",
         "Average":79.62,
         "SprintDuplicateQuestions":90.89,
@@ -584,7 +608,7 @@
         "TwitterURLCorpus":84.2
     },
     {
-        "Rank":74,
+        "Rank":77,
         "Model":"SGPT-1.3B-weightedmean-msmarco-specb-bitfit",
         "Average":79.58,
         "SprintDuplicateQuestions":92.58,
@@ -592,7 +616,7 @@
         "TwitterURLCorpus":83.79
     },
     {
-        "Rank":75,
+        "Rank":78,
         "Model":"universal-sentence-encoder-large-5",
         "Average":79.53,
         "SprintDuplicateQuestions":84.37,
@@ -600,7 +624,7 @@
         "TwitterURLCorpus":84.09
     },
     {
-        "Rank":76,
+        "Rank":79,
         "Model":"XLM-3B5-embedding",
         "Average":79.23,
         "SprintDuplicateQuestions":86.13,
@@ -608,7 +632,7 @@
         "TwitterURLCorpus":83.52
     },
     {
-        "Rank":77,
+        "Rank":80,
         "Model":"jina-embedding-s-en-v1",
         "Average":79.22,
         "SprintDuplicateQuestions":94.93,
@@ -616,7 +640,7 @@
         "TwitterURLCorpus":83.44
     },
     {
-        "Rank":78,
+        "Rank":81,
         "Model":"LaBSE",
         "Average":78.87,
         "SprintDuplicateQuestions":89.26,
@@ -624,7 +648,7 @@
         "TwitterURLCorpus":84.58
     },
     {
-        "Rank":79,
+        "Rank":82,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Average":78.45,
         "SprintDuplicateQuestions":89.46,
@@ -632,7 +656,7 @@
         "TwitterURLCorpus":83.83
     },
     {
-        "Rank":80,
+        "Rank":83,
         "Model":"XLM-0B6-embedding",
         "Average":77.83,
         "SprintDuplicateQuestions":88.21,
@@ -640,7 +664,7 @@
         "TwitterURLCorpus":80.49
     },
     {
-        "Rank":81,
+        "Rank":84,
         "Model":"text-similarity-curie-001",
         "Average":77.79,
         "SprintDuplicateQuestions":79.85,
@@ -648,7 +672,7 @@
         "TwitterURLCorpus":84.06
     },
     {
-        "Rank":82,
+        "Rank":85,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":77.61,
         "SprintDuplicateQuestions":87.15,
@@ -656,7 +680,7 @@
         "TwitterURLCorpus":84.02
     },
     {
-        "Rank":83,
+        "Rank":86,
         "Model":"text-similarity-babbage-001",
         "Average":77.46,
         "SprintDuplicateQuestions":76.46,
@@ -664,7 +688,7 @@
         "TwitterURLCorpus":85.08
     },
     {
-        "Rank":84,
+        "Rank":87,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Average":77.03,
         "SprintDuplicateQuestions":80.54,
@@ -672,7 +696,7 @@
         "TwitterURLCorpus":84.54
     },
     {
-        "Rank":85,
+        "Rank":88,
         "Model":"winberta-base",
         "Average":76.96,
         "SprintDuplicateQuestions":90.71,
@@ -680,7 +704,7 @@
         "TwitterURLCorpus":82.09
     },
     {
-        "Rank":86,
+        "Rank":89,
         "Model":"MegatronBert-1B3-embedding",
         "Average":76.9,
         "SprintDuplicateQuestions":87.07,
@@ -688,7 +712,7 @@
         "TwitterURLCorpus":81.11
     },
     {
-        "Rank":87,
+        "Rank":90,
         "Model":"text-similarity-ada-001",
         "Average":76.86,
         "SprintDuplicateQuestions":77.85,
@@ -696,7 +720,7 @@
         "TwitterURLCorpus":83.69
     },
     {
-        "Rank":88,
+        "Rank":91,
         "Model":"text2vec-base-multilingual",
         "Average":76.49,
         "SprintDuplicateQuestions":83.53,
@@ -704,7 +728,7 @@
         "TwitterURLCorpus":83.46
     },
     {
-        "Rank":89,
+        "Rank":92,
         "Model":"text2vec-base-multilingual",
         "Average":76.49,
         "SprintDuplicateQuestions":83.53,
@@ -712,7 +736,7 @@
         "TwitterURLCorpus":83.46
     },
     {
-        "Rank":90,
+        "Rank":93,
         "Model":"universal-sentence-encoder-4",
         "Average":76.23,
         "SprintDuplicateQuestions":86.37,
@@ -720,7 +744,7 @@
         "TwitterURLCorpus":81.68
     },
     {
-        "Rank":91,
+        "Rank":94,
         "Model":"text-similarity-davinci-001",
         "Average":75.9,
         "SprintDuplicateQuestions":69.52,
@@ -728,7 +752,7 @@
         "TwitterURLCorpus":83.75
     },
     {
-        "Rank":92,
+        "Rank":95,
         "Model":"universal-sentence-encoder-multilingual-3",
         "Average":75.43,
         "SprintDuplicateQuestions":87.05,
@@ -736,7 +760,7 @@
         "TwitterURLCorpus":82.21
     },
     {
-        "Rank":93,
+        "Rank":96,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":75.23,
         "SprintDuplicateQuestions":89.89,
@@ -744,7 +768,7 @@
         "TwitterURLCorpus":81.06
     },
     {
-        "Rank":94,
+        "Rank":97,
         "Model":"paraphrase-multilingual-mpnet-base-v2-KE_Sieve",
         "Average":74.53,
         "SprintDuplicateQuestions":77.36,
@@ -752,7 +776,7 @@
         "TwitterURLCorpus":82.64
     },
     {
-        "Rank":95,
+        "Rank":98,
         "Model":"sup-simcse-bert-base-uncased",
         "Average":73.68,
         "SprintDuplicateQuestions":69.39,
@@ -760,7 +784,7 @@
         "TwitterURLCorpus":83.89
     },
     {
-        "Rank":96,
+        "Rank":99,
         "Model":"komninos",
         "Average":72.94,
         "SprintDuplicateQuestions":85.55,
@@ -768,7 +792,7 @@
         "TwitterURLCorpus":79.41
     },
     {
-        "Rank":97,
+        "Rank":100,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":71.78,
         "SprintDuplicateQuestions":77.73,
@@ -776,7 +800,7 @@
         "TwitterURLCorpus":80.51
     },
     {
-        "Rank":98,
+        "Rank":101,
         "Model":"glove.6B.300d",
         "Average":70.92,
         "SprintDuplicateQuestions":86.96,
@@ -784,7 +808,7 @@
         "TwitterURLCorpus":77.35
     },
     {
-        "Rank":99,
+        "Rank":102,
         "Model":"unsup-simcse-bert-base-uncased",
         "Average":70.33,
         "SprintDuplicateQuestions":69.41,
@@ -792,7 +816,7 @@
         "TwitterURLCorpus":81.37
     },
     {
-        "Rank":100,
+        "Rank":103,
         "Model":"LASER2",
         "Average":68.86,
         "SprintDuplicateQuestions":65.54,
@@ -800,7 +824,7 @@
         "TwitterURLCorpus":81.47
     },
     {
-        "Rank":101,
+        "Rank":104,
         "Model":"allenai-specter",
         "Average":61.37,
         "SprintDuplicateQuestions":71.63,
@@ -808,7 +832,15 @@
         "TwitterURLCorpus":69.22
     },
     {
-        "Rank":102,
+        "Rank":105,
+        "Model":"pythia-14m-embedding",
+        "Average":58.21,
+        "SprintDuplicateQuestions":62.6,
+        "TwitterSemEval2015":47.45,
+        "TwitterURLCorpus":64.59
+    },
+    {
+        "Rank":106,
         "Model":"bert-base-uncased",
         "Average":56.33,
         "SprintDuplicateQuestions":36.81,
@@ -816,7 +848,7 @@
         "TwitterURLCorpus":76.29
     },
     {
-        "Rank":103,
+        "Rank":107,
         "Model":"ALL_862873",
         "Average":30.61,
         "SprintDuplicateQuestions":17.4,
@@ -824,7 +856,7 @@
         "TwitterURLCorpus":44.04
     },
     {
-        "Rank":113,
+        "Rank":118,
         "Model":"LLaMA-embeeding",
         "Average":"",
         "SprintDuplicateQuestions":57.56,
