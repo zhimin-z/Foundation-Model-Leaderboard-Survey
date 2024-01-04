@@ -12,7 +12,6 @@ if __name__ == '__main__':
     driver.get(url)
 
     table = driver.find_element(By.XPATH, '//table[@class="js-sort-table"]')
-
     column_names = []
     for column in table.find_elements(By.XPATH, './/thead/tr/td'):
         column_names.append(column.text)

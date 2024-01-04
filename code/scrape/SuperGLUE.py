@@ -19,10 +19,9 @@ if __name__ == '__main__':
         for name, value in zip(column_names, submission.find_elements(By.XPATH, './/td')[1:]):
             if name == 'URL':
                 try:
-                    link = value.find_element(By.XPATH, './/a').get_attribute('href')
+                    row.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
                 except:
-                    link = ''
-                row.append(link)
+                    row.append('')
             elif name == 'Name':
                 if submission.get_attribute('style') == 'display: none;':
                     row.append(last_name)
