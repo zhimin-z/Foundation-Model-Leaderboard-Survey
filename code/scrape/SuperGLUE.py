@@ -10,25 +10,25 @@ if __name__ == '__main__':
     driver.get(url)
     
     column_names = []
-    for column in driver.find_elements(By.XPATH, '//tr[@class="jss209 jss212"]/th')[2:]:
+    for column in driver.find_elements(By.XPATH, '//tr[@class="jss209 jss212"]/th')[1:]:
         column_names.append(column.text)
     
     df = []
     for submission in driver.find_elements(By.XPATH, '//tr[@class="jss209"]'):
+        if submission.get_attribute('style') == 'display: none;':
+            continue
         row = []
-        for index, value in enumerate(submission.find_elements(By.XPATH, './/td')):
-            if index < 2:
-                continue
-            elif index == 4:
+        for name, value in zip(column_names, submission.find_elements(By.XPATH, './/td')[1:]):
+            if name == 'URL':
                 try:
                     link = value.find_element(By.XPATH, './/a').get_attribute('href')
                 except:
-                    link = None
+                    link = ''
                 row.append(link)
             else:
-                row.append(value.text)
+                row.append(value.text.split('\n')[-1])
         df.append(row)
         
     df = pd.DataFrame(df, columns=column_names)
-    path_leaderboard = 'data/SuperGLUE/shw.json'
-    df.to_json(path_leaderboard, orient='records', indent=4)
+    df.drop(columns=['Rank'], inplace=True)
+    df.to_json('data/SuperGLUE/shw.json', orient='records', indent=4)
