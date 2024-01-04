@@ -15,8 +15,6 @@ if __name__ == '__main__':
     
     df = []
     for submission in driver.find_elements(By.XPATH, '//tr[@class="jss209"]'):
-        if submission.get_attribute('style') == 'display: none;':
-            continue
         row = []
         for name, value in zip(column_names, submission.find_elements(By.XPATH, './/td')[1:]):
             if name == 'URL':
@@ -25,8 +23,15 @@ if __name__ == '__main__':
                 except:
                     link = ''
                 row.append(link)
+            elif name == 'Name':
+                if submission.get_attribute('style') == 'display: none;':
+                    row.append(last_name)
+                else:
+                    last_name = value.text.split('\n')[-1]
+                    row.append(last_name)
             else:
                 row.append(value.text.split('\n')[-1])
+        
         df.append(row)
         
     df = pd.DataFrame(df, columns=column_names)
