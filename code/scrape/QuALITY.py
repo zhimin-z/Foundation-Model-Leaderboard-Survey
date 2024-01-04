@@ -50,4 +50,5 @@ if __name__ == '__main__':
         df.append(values)
 
     df = pd.DataFrame(df, columns=column_names)
+    df.rename(columns={'Model name': 'Model'}, inplace=True)
     df.to_json(f'{path_leaderboard}/gh.json', orient='records', indent=4)
