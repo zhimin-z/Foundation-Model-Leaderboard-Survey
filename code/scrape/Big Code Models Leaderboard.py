@@ -14,7 +14,6 @@ def get_json_format_data():
     url = 'https://bigcode-bigcode-models-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-
     script_elements = soup.find_all('script')
     json_format_data = json.loads(str(script_elements[1])[31:-10])
     return json_format_data
