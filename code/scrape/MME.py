@@ -3,6 +3,7 @@ import re
 
 path_leaderboard = "data/MME"
 
+
 def remove_preceding_content(original_string, target_substring):
     # Find the position of the target substring
     position = original_string.find(target_substring)
@@ -14,24 +15,6 @@ def remove_preceding_content(original_string, target_substring):
         # If the substring is not found, return the original string
         return original_string
 
-# # Sample markdown content (replace this with the actual markdown file reading)
-# markdown_content = """
-# ### Text Translation
-
-# | Rank | Model | Version | Score |
-# | :--: | :--: | :--: | :--: |
-# | 🏅️ | [Qwen-VL-Plus](https://help.aliyun.com/zh/dashscope/developer-reference/vl-plus-quick-start) | [-](https://help.aliyun.com/zh/dashscope/developer-reference/vl-plus-quick-start) | 185.00 |
-# | 🥈 | [Qwen-VL-Chat](https://github.com/QwenLM/Qwen-VL/) | [Qwen-7B](https://github.com/QwenLM/Qwen-VL) | 147.50 |
-# | 🥉 | [Gemini Pro](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf) | [-](https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf) | 145.00 |
-
-# ### Code Reasoning
-
-# | Rank | Model | Version | Score |
-# | :--: | :--: | :--: | :--: |
-# | 🏅️ | [GPT-4V](https://cdn.openai.com/papers/GPTV_System_Card.pdf) | [-](https://cdn.openai.com/papers/GPTV_System_Card.pdf) | 170.00 |
-# | 🥈 | [WeMM](https://github.com/scenarios/WeMM) | [InternLM-7B](https://github.com/scenarios/WeMM) | 117.50 |
-# | 🥉 | [LLaMA-Adapter V2](https://arxiv.org/pdf/2304.15010.pdf) | [LLaMA-Adapter-v2.1-7B](https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/llama_adapter_v2_multimodal7b) | 90.00 |
-# """
 
 def extract_tables_and_titles(markdown_text):
     tables = []
@@ -65,6 +48,7 @@ def extract_tables_and_titles(markdown_text):
 
     return tables
 
+
 def clean_table(table):
     cleaned_table = []
     for row in table:
@@ -75,6 +59,7 @@ def clean_table(table):
         cleaned_table.append(columns)
     return cleaned_table
 
+
 def markdown_to_dataframe(tables):
     dataframes = {}
     for title, table in tables:
@@ -83,9 +68,14 @@ def markdown_to_dataframe(tables):
             cleaned_table = clean_table(table)
             # Convert to DataFrame
             df = pd.DataFrame(cleaned_table[1:], columns=cleaned_table[0])
+            df.drop(columns=['Rank'], inplace=True)
+            for column in df.columns:
+                df[column] = df[column].apply(lambda x: x.replace('**', ''))
             dataframes[title.replace(' ', '_')] = df
     return dataframes
 
+
+# Check the latest leaderboards at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/blob/Evaluation/README.md
 with open('/Users/jimmy/Downloads/README.md', 'r') as f:
     markdown_content = f.read()
     markdown_content = remove_preceding_content(markdown_content, '## Perception')
@@ -93,5 +83,4 @@ with open('/Users/jimmy/Downloads/README.md', 'r') as f:
     dataframes = markdown_to_dataframe(tables_and_titles)
 
     for title, df in dataframes.items():
-        df.to_json(f'{path_leaderboard}/gh-{title.lower()}', orient='records', indent=4)
-        print(f"Saved '{title}'")
+        df.to_json(f'{path_leaderboard}/gh-{title.lower()}.json', orient='records', indent=4)
