@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-path_leaderboard = 'data/SVAMP'
+path_leaderboard = 'data/Something-Something (v2)'
 dataset = ''
-included_links = ['math-word-problem-solving-on-svamp']
+included_links = ['action-recognition-in-videos-on-something']
 
 if __name__ == '__main__':
     driver = uc.Chrome()

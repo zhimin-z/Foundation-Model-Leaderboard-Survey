@@ -22,7 +22,12 @@ if __name__ == '__main__':
             column_names.append(column.text)
         df = []
         for row in leaderboard_table.find_elements(By.XPATH, './/tbody/tr'):
-            values = [column.text for column in row.find_elements(By.XPATH, './/td')]
+            values = []
+            for name, value in zip(column_names, row.find_elements(By.XPATH, './/td')):
+                if name == 'Source':
+                    values.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
+                else:
+                    values.append(value.text)
             df.append(values)
         df = pd.DataFrame(df, columns=column_names)
         df.drop(columns=['#'], inplace=True)
