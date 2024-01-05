@@ -28,6 +28,7 @@ def process_script_content(script_content, pattern):
 
 
 if __name__ == '__main__':
+    # Check the leaderboards from https://github.com/MMMU-Benchmark/mmmu-benchmark.github.io/blob/main/index.html
     absolute_html_file_path = '/Users/jimmy/Downloads/index.html'
     with open(absolute_html_file_path, 'r') as file:
         soup = BeautifulSoup(file, 'html.parser')

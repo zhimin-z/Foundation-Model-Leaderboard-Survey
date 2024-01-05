@@ -16,7 +16,7 @@ def extract_text_from_html(html_string):
     return soup.get_text()
 
 
-# Check the dataset from https://github.com/AI-Northstar-Tech/mteb-info/blob/main/data/data.json
+# Check the latest leaderboards from https://github.com/AI-Northstar-Tech/mteb-info/blob/main/data/data.json
 with open('/Users/jimmy/Downloads/data.json', 'r') as f:
     data = json.load(f)
     for group in data['table']:
