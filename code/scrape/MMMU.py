@@ -38,8 +38,8 @@ if __name__ == '__main__':
         table_name = table.find('canvas').get('id').replace('chart', 'data')
         data = process_script_content(
             script_content, pattern=rf'const {table_name}\s*=\s*(\{{.*?\}});')
-        df = pd.DataFrame([data['datasets'][0]['data']],
-                          columns=data['labels'])
+        combined_data = list(zip(data['labels'], data['datasets'][0]['data']))
+        df = pd.DataFrame(combined_data, columns=['Model', 'Score'])
         df.to_json(f"{path_leaderboard}/gh-image_type-{camel_to_snake(table_name.replace('data_', ''))}.json",
                    orient='records', indent=4)
 
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     for index, label in enumerate(data["labels"]):
         rows = []
         for dataset in data["datasets"]:
-            row = {"label": dataset["label"], "data": dataset["data"][index]}
+            row = {"Model": dataset["label"], "Score": dataset["data"][index]}
             rows.append(row)
         df = pd.DataFrame(rows)
         df.to_json(f'{path_leaderboard}/gh-difficulty_level-{label.lower()}.json',
