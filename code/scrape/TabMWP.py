@@ -6,7 +6,7 @@ path_leaderboard = "data/TabMWP"
 
 if __name__ == '__main__':
     driver = uc.Chrome()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
 
     url = 'https://promptpg.github.io/leaderboard.html'
     driver.get(url)

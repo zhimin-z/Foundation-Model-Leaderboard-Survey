@@ -4,17 +4,15 @@ import pandas as pd
 import json
 import re
 
-from pathlib import Path
-
 def file_rename(title):
     title = title.lower()
     title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
     return title
 
 bloom = False
-path_leaderboard = 'data/Something-Something (v2)'
+path_leaderboard = 'data/ActivityNet Captions'
 dataset = ''
-included_links = ['action-recognition-in-videos-on-something']
+included_links = ['video-captioning-on-activitynet-captions']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
