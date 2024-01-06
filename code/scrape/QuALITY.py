@@ -6,7 +6,7 @@ path_leaderboard = "data/QuALITY"
 
 if __name__ == '__main__':
     driver = uc.Chrome()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
 
     url = 'https://nyu-mll.github.io/quality'
     driver.get(url)
