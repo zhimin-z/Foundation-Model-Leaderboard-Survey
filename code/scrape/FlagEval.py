@@ -119,31 +119,31 @@ if __name__ == '__main__':
     english.click()
 
     for domain in driver.find_element(By.XPATH, '//div[@class="el-form-item__content"]').find_elements(By.XPATH, './/div'):
-        domain_name = domain.text
         domain.click()
-        metric_list = driver.find_elements(
-            By.XPATH, '//div[@class="el-form-item__content"]')[1].find_elements(By.XPATH, './/div')
-        if metric_list:
-            for metric in metric_list:
-                metric_name = metric.text
-                metric.click()
-                try:
-                    for type in driver.find_elements(By.XPATH, '//div[@class="el-form-item__content"]')[2].find_elements(By.XPATH, './/div'):
-                        type_name = type.text
-                        type.click()
+        domain_name = domain.text
+        for level1 in driver.find_elements(By.XPATH, '//div[@class="el-form-item__content"]')[1].find_elements(By.XPATH, './/div'):
+            level1.click()
+            level1_name = level1.text
+            try:
+                for level2 in driver.find_elements(By.XPATH, '//div[@class="el-form-item__content"]')[2].find_elements(By.XPATH, './/div'):
+                    level2.click()
+                    level2_name = level2.text
+                    try:
+                        raise Exception
+                        # for level3 in driver.find_elements(By.XPATH, '//div[@class="el-form-item__content"]')[3].find_elements(By.XPATH, './/div'):
+                        #     level3.click()
+                        #     level3_name = level3.text
+                        #     df = retrieve_table(driver)
+                        #     if not df.empty:
+                        #         df.to_json(
+                        #             f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}-{prepcess_name(level2_name)}-{prepcess_name(level3_name)}.json', orient='records', indent=4)
+                    except:
                         df = retrieve_table(driver)
-                    if len(df):
-                        df.to_json(
-                            f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(metric_name)}-{prepcess_name(type_name)}.json', orient='records', indent=4)
-                except:
-                    df = retrieve_table(driver)
-                    if len(df):
-                        df.to_json(
-                            f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(metric_name)}.json', orient='records', indent=4)
-                    print('No model types')
-        else:
-            df = retrieve_table(driver)
-            if len(df):
-                df.to_json(
-                    f'{path_leaderboard}/shw-{prepcess_name(domain_name)}.json', orient='records', indent=4)
-            print('No metrics')
+                        if not df.empty:
+                            df.to_json(
+                                f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}-{prepcess_name(level2_name)}.json', orient='records', indent=4)
+            except:
+                df = retrieve_table(driver)
+                if not df.empty:
+                    df.to_json(
+                        f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}.json', orient='records', indent=4)
