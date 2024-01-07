@@ -10,9 +10,9 @@ def file_rename(title):
     return title
 
 bloom = False
-path_leaderboard = 'data/ActivityNet Captions'
-dataset = ''
-included_links = ['video-captioning-on-activitynet-captions']
+path_leaderboard = 'data/SWE-bench'
+dataset = 'swe-bench'
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
