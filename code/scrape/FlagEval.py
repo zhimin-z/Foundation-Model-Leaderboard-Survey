@@ -135,15 +135,18 @@ if __name__ == '__main__':
                         #     level3_name = level3.text
                         #     df = retrieve_table(driver)
                         #     if not df.empty:
+                        #         df.rename(columns={'Model name': 'Model'}, inplace=True)
                         #         df.to_json(
                         #             f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}-{prepcess_name(level2_name)}-{prepcess_name(level3_name)}.json', orient='records', indent=4)
                     except:
                         df = retrieve_table(driver)
                         if not df.empty:
+                            df.rename(columns={'Model name': 'Model'}, inplace=True)
                             df.to_json(
                                 f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}-{prepcess_name(level2_name)}.json', orient='records', indent=4)
             except:
                 df = retrieve_table(driver)
                 if not df.empty:
+                    df.rename(columns={'Model name': 'Model'}, inplace=True)
                     df.to_json(
                         f'{path_leaderboard}/shw-{prepcess_name(domain_name)}-{prepcess_name(level1_name)}.json', orient='records', indent=4)
