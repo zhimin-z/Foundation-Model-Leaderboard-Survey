@@ -1,0 +1,101 @@
+[
+    {
+        "Model":"alpaca_eval_gpt4_fn",
+        "Human agreement [%]":71.0,
+        "Price [$\/1000 examples]":14.5,
+        "Time [seconds\/1000 examples]":5046,
+        "Bias":27.6,
+        "Variance":11.1,
+        "Proba. prefer longer":0.75
+    },
+    {
+        "Model":"alpaca_eval_gpt4",
+        "Human agreement [%]":69.2,
+        "Price [$\/1000 examples]":13.6,
+        "Time [seconds\/1000 examples]":1455,
+        "Bias":28.4,
+        "Variance":14.6,
+        "Proba. prefer longer":0.68
+    },
+    {
+        "Model":"aviary_gpt4",
+        "Human agreement [%]":69.1,
+        "Price [$\/1000 examples]":12.8,
+        "Time [seconds\/1000 examples]":1869,
+        "Bias":29.5,
+        "Variance":13.1,
+        "Proba. prefer longer":0.7
+    },
+    {
+        "Model":"gpt4",
+        "Human agreement [%]":66.9,
+        "Price [$\/1000 examples]":12.5,
+        "Time [seconds\/1000 examples]":1037,
+        "Bias":31.5,
+        "Variance":14.6,
+        "Proba. prefer longer":0.65
+    },
+    {
+        "Model":"alpaca_farm_greedy_gpt4",
+        "Human agreement [%]":66.4,
+        "Price [$\/1000 examples]":15.3,
+        "Time [seconds\/1000 examples]":878,
+        "Bias":30.2,
+        "Variance":19.3,
+        "Proba. prefer longer":0.6
+    },
+    {
+        "Model":"humans",
+        "Human agreement [%]":65.7,
+        "Price [$\/1000 examples]":300.0,
+        "Time [seconds\/1000 examples]":36800,
+        "Bias":0.0,
+        "Variance":34.3,
+        "Proba. prefer longer":0.64
+    },
+    {
+        "Model":"claude",
+        "Human agreement [%]":65.5,
+        "Price [$\/1000 examples]":11.1,
+        "Time [seconds\/1000 examples]":173,
+        "Bias":31.9,
+        "Variance":18.0,
+        "Proba. prefer longer":0.62
+    },
+    {
+        "Model":"text_davinci_003",
+        "Human agreement [%]":64.1,
+        "Price [$\/1000 examples]":8.7,
+        "Time [seconds\/1000 examples]":121,
+        "Bias":33.8,
+        "Variance":22.7,
+        "Proba. prefer longer":0.7
+    },
+    {
+        "Model":"lmsys_gpt4",
+        "Human agreement [%]":63.2,
+        "Price [$\/1000 examples]":13.9,
+        "Time [seconds\/1000 examples]":17982,
+        "Bias":34.7,
+        "Variance":16.1,
+        "Proba. prefer longer":0.74
+    },
+    {
+        "Model":"chatgpt_fn",
+        "Human agreement [%]":60.0,
+        "Price [$\/1000 examples]":1.0,
+        "Time [seconds\/1000 examples]":530,
+        "Bias":36.9,
+        "Variance":27.7,
+        "Proba. prefer longer":0.62
+    },
+    {
+        "Model":"chatgpt",
+        "Human agreement [%]":57.2,
+        "Price [$\/1000 examples]":0.8,
+        "Time [seconds\/1000 examples]":285,
+        "Bias":39.4,
+        "Variance":34.1,
+        "Proba. prefer longer":0.59
+    }
+]
