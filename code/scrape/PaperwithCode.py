@@ -6,13 +6,15 @@ import re
 
 def file_rename(title):
     title = title.lower()
-    title = title.replace(', ', '_').replace(' / ', '_').replace('/', '_').replace(' - ', '_').replace('-', '_').replace(' ', '_')
+    title = title.replace(',', '').replace('/', '').replace('-', '').replace(':', '')
+    title = title.split()
+    title = '_'.join(title)
     return title
 
 bloom = False
-path_leaderboard = 'data/SWE-bench'
-dataset = 'swe-bench'
-included_links = []
+path_leaderboard = 'data/STAR'
+dataset = 'situated-reasoning-star'
+included_links = ['zero-shot-video-question-answer-on-star-1', 'video-question-answering-on-situated']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
