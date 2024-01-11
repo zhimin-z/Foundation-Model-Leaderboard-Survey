@@ -8,8 +8,8 @@ ADE20K,pwc,,,0,"text,image",English
 AgentBench,gh-shw,,,0,text,English
 AI2D,pwc,,,0,"text,image",English
 AISHELL-1,pwc,,,0,"text,audio",English
-AlignBench,gh-shw,evaluation model,,0,text,Chinese
-AlpacaEval,gh,evaluation model,gh,0,text,English
+AlignBench,gh-shw,evaluator,,0,text,Chinese
+AlpacaEval,gh,evaluator,gh,0,text,English
 ANGO,hf,model capability,,0,text,Chinese
 ANLI,"gh,pwc",,gh,0,text,English
 APPS,pwc,,,0,"text,code",English
@@ -76,10 +76,10 @@ GSM8K,pwc,,,0,text,English
 Hallucination Leaderboard,gh,,,0,text,English
 HalluQA,gh,,,0,text,"English,Chinese"
 HallusionBench,"gh,pwc",,,0,"text,image",English
-HEIM,shw,"evaluation benchmark,evaluation metrics,evaluation setup,language support,model capability,evaluation model,domain task",,0,"text,image","English,Chinese,Hindi,Spanish"
+HEIM,shw,"evaluation benchmark,evaluation metrics,language support,model capability,evaluator,domain task",,0,"text,image","English,Chinese,Hindi,Spanish"
 HellaSwag,"pwc,shw",,shw,0,text,English
-HELM Classic,shw,"evaluation benchmark,evaluation metrics,evaluation setup,language support,model capability,task modality,domain task,tokenizer",,?,"text,code","English,Chinese"
-HELM Lite,shw,"evaluation benchmark,evaluation setup,domain task",,0,text,"English,Czech,German,French,Hindi,Russian"
+HELM Classic,shw,"#prompt token,evaluation benchmark,evaluation metrics,language support,model capability,task modality,domain task,tokenizer",,?,"text,code","English,Chinese"
+HELM Lite,shw,"evaluation benchmark,domain task",,0,text,"English,Czech,German,French,Hindi,Russian"
 HMDB51,pwc,,,0,"text,video",English
 HumanEval,"gh,pwc",,gh,0,"text,code",English
 ImageNet,pwc,,,0,"text,image",English
@@ -91,11 +91,11 @@ InstructEval,gh-shw,"model capability,domain task",gh-shw,0,text,English
 InterCode,gh,evaluation benchmark,,2,"text,code",English
 iVQA,pwc,,,0,"text,video",English
 JustEval,gh,,,0,text,English
-KAgentBench,gh,evaluation model,,0,text,English
+KAgentBench,gh,evaluator,,0,text,English
 Kinetics,pwc,,,0,"text,video",English
 KoLA,shw,release date,,0,text,English
 KQA Pro,pwc,,,0,text,English
-L-Eval,gh,"evaluation model,evaluation metrics",,0,text,English
+L-Eval,gh,"evaluator,evaluation metrics",,0,text,English
 LAiW Leaderboard,"gh,hf",domain task,,2,text,Chinese
 LAMBADA,pwc,,,0,text,English
 Large Language Model Leaderboard,hf-shw,"language support,model capability",hf-shw,1,"text,code","English,Chinese"
@@ -104,7 +104,7 @@ LLaVA-Bench,pwc,,,0,"text,image",English
 LLM Benchmarker Suite,gh-shw,,,0,"text,code",English
 LLM-Leaderboard,gh-hf-shw,,gh-hf-shw,0,"text,code",English
 LLM-Perf Leaderboard,hf,,hf,0,text,English
-LLMEval,gh-shw,"evaluation model,leaderboard series",,0,text,Chinese
+LLMEval,gh-shw,"evaluator,leaderboard series",,0,text,Chinese
 LLMonitor,shw,,,0,text,English
 LLMPerf Leaderboard,gh,"evaluation metrics,model size",,0,text,English
 LMExamQA,shw,domain task,,0,text,English

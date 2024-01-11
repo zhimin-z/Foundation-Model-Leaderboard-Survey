@@ -8,8 +8,8 @@ ADE20K,"[('PapersWithCode',)]",[],[],0,"['Text', 'Image']",['English']
 AgentBench,"[('GitHub', 'Self-hosted website')]",[],[],0,['Text'],['English']
 AI2D,"[('PapersWithCode',)]",[],[],0,"['Text', 'Image']",['English']
 AISHELL-1,"[('PapersWithCode',)]",[],[],0,"['Text', 'Audio']",['English']
-AlignBench,"[('GitHub', 'Self-hosted website')]",['Evaluation model'],[],0,['Text'],['Chinese']
-AlpacaEval,"[('GitHub',)]",['Evaluation model'],"[('GitHub',)]",0,['Text'],['English']
+AlignBench,"[('GitHub', 'Self-hosted website')]",['Evaluator'],[],0,['Text'],['Chinese']
+AlpacaEval,"[('GitHub',)]",['Evaluator'],"[('GitHub',)]",0,['Text'],['English']
 ANGO,"[('HuggingFace',)]",['Model capability'],[],0,['Text'],['Chinese']
 ANLI,"[('GitHub',), ('PapersWithCode',)]",[],"[('GitHub',)]",0,['Text'],['English']
 APPS,"[('PapersWithCode',)]",[],[],0,"['Text', 'Code']",['English']
@@ -76,10 +76,10 @@ GSM8K,"[('PapersWithCode',)]",[],[],0,['Text'],['English']
 Hallucination Leaderboard,"[('GitHub',)]",[],[],0,['Text'],['English']
 HalluQA,"[('GitHub',)]",[],[],0,['Text'],"['English', 'Chinese']"
 HallusionBench,"[('GitHub',), ('PapersWithCode',)]",[],[],0,"['Text', 'Image']",['English']
-HEIM,"[('Self-hosted website',)]","['Evaluation benchmark', 'Evaluation metrics', 'Evaluation setup', 'Language support', 'Model capability', 'Evaluation model', 'Domain task']",[],0,"['Text', 'Image']","['English', 'Chinese', 'Hindi', 'Spanish']"
+HEIM,"[('Self-hosted website',)]","['Evaluation benchmark', 'Evaluation metrics', 'Language support', 'Model capability', 'Evaluator', 'Domain task']",[],0,"['Text', 'Image']","['English', 'Chinese', 'Hindi', 'Spanish']"
 HellaSwag,"[('PapersWithCode',), ('Self-hosted website',)]",[],"[('Self-hosted website',)]",0,['Text'],['English']
-HELM Classic,"[('Self-hosted website',)]","['Evaluation benchmark', 'Evaluation metrics', 'Evaluation setup', 'Language support', 'Model capability', 'Task modality', 'Domain task', 'Tokenizer']",[],?,"['Text', 'Code']","['English', 'Chinese']"
-HELM Lite,"[('Self-hosted website',)]","['Evaluation benchmark', 'Evaluation setup', 'Domain task']",[],0,['Text'],"['English', 'Czech', 'German', 'French', 'Hindi', 'Russian']"
+HELM Classic,"[('Self-hosted website',)]","['#prompt token', 'Evaluation benchmark', 'Evaluation metrics', 'Language support', 'Model capability', 'Task modality', 'Domain task', 'Tokenizer']",[],?,"['Text', 'Code']","['English', 'Chinese']"
+HELM Lite,"[('Self-hosted website',)]","['Evaluation benchmark', 'Domain task']",[],0,['Text'],"['English', 'Czech', 'German', 'French', 'Hindi', 'Russian']"
 HMDB51,"[('PapersWithCode',)]",[],[],0,"['Text', 'Video']",['English']
 HumanEval,"[('GitHub',), ('PapersWithCode',)]",[],"[('GitHub',)]",0,"['Text', 'Code']",['English']
 ImageNet,"[('PapersWithCode',)]",[],[],0,"['Text', 'Image']",['English']
@@ -91,11 +91,11 @@ InstructEval,"[('GitHub', 'Self-hosted website')]","['Model capability', 'Domain
 InterCode,"[('GitHub',)]",['Evaluation benchmark'],[],2,"['Text', 'Code']",['English']
 iVQA,"[('PapersWithCode',)]",[],[],0,"['Text', 'Video']",['English']
 JustEval,"[('GitHub',)]",[],[],0,['Text'],['English']
-KAgentBench,"[('GitHub',)]",['Evaluation model'],[],0,['Text'],['English']
+KAgentBench,"[('GitHub',)]",['Evaluator'],[],0,['Text'],['English']
 Kinetics,"[('PapersWithCode',)]",[],[],0,"['Text', 'Video']",['English']
 KoLA,"[('Self-hosted website',)]",['Release date'],[],0,['Text'],['English']
 KQA Pro,"[('PapersWithCode',)]",[],[],0,['Text'],['English']
-L-Eval,"[('GitHub',)]","['Evaluation model', 'Evaluation metrics']",[],0,['Text'],['English']
+L-Eval,"[('GitHub',)]","['Evaluator', 'Evaluation metrics']",[],0,['Text'],['English']
 LAiW Leaderboard,"[('GitHub',), ('HuggingFace',)]",['Domain task'],[],2,['Text'],['Chinese']
 LAMBADA,"[('PapersWithCode',)]",[],[],0,['Text'],['English']
 Large Language Model Leaderboard,"[('HuggingFace', 'Self-hosted website')]","['Language support', 'Model capability']","[('HuggingFace', 'Self-hosted website')]",1,"['Text', 'Code']","['English', 'Chinese']"
@@ -104,7 +104,7 @@ LLaVA-Bench,"[('PapersWithCode',)]",[],[],0,"['Text', 'Image']",['English']
 LLM Benchmarker Suite,"[('GitHub', 'Self-hosted website')]",[],[],0,"['Text', 'Code']",['English']
 LLM-Leaderboard,"[('GitHub', 'HuggingFace', 'Self-hosted website')]",[],"[('GitHub', 'HuggingFace', 'Self-hosted website')]",0,"['Text', 'Code']",['English']
 LLM-Perf Leaderboard,"[('HuggingFace',)]",[],"[('HuggingFace',)]",0,['Text'],['English']
-LLMEval,"[('GitHub', 'Self-hosted website')]","['Evaluation model', 'Leaderboard series']",[],0,['Text'],['Chinese']
+LLMEval,"[('GitHub', 'Self-hosted website')]","['Evaluator', 'Leaderboard series']",[],0,['Text'],['Chinese']
 LLMonitor,"[('Self-hosted website',)]",[],[],0,['Text'],['English']
 LLMPerf Leaderboard,"[('GitHub',)]","['Evaluation metrics', 'Model size']",[],0,['Text'],['English']
 LMExamQA,"[('Self-hosted website',)]",['Domain task'],[],0,['Text'],['English']
