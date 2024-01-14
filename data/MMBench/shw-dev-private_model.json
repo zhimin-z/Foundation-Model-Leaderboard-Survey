@@ -1,5 +1,33 @@
 [
     {
+        "Model":"Qwen-VL-Plus Base",
+        "Time":"2023\/12\/15",
+        "Parameters":"",
+        "Language Model":"QwenLM",
+        "Vision Model":"",
+        "Overall":83.2,
+        "LR":69.5,
+        "AR":86.9,
+        "RR":82.6,
+        "FP-S":87.7,
+        "FP-C":72.7,
+        "CP":87.2
+    },
+    {
+        "Model":"Marco-VL-34B",
+        "Time":"2023\/12\/14",
+        "Parameters":"34.2B",
+        "Language Model":"Marco-Chat-34B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":78.8,
+        "LR":55.9,
+        "AR":81.4,
+        "RR":82.6,
+        "FP-S":79.2,
+        "FP-C":70.6,
+        "CP":88.2
+    },
+    {
         "Model":"AntGMM-Chat",
         "Time":"2023\/11\/30",
         "Parameters":"8B",
@@ -54,6 +82,34 @@
         "FP-S":74.4,
         "FP-C":60.7,
         "CP":80.2
+    },
+    {
+        "Model":"Marco-VL-13B",
+        "Time":"2023\/12\/14",
+        "Parameters":"13.2B",
+        "Language Model":"Marco-Chat-13B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":72.2,
+        "LR":42.4,
+        "AR":71.4,
+        "RR":69.6,
+        "FP-S":76.1,
+        "FP-C":62.2,
+        "CP":86.5
+    },
+    {
+        "Model":"Marco-VL-6B",
+        "Time":"2023\/12\/14",
+        "Parameters":"6.2B",
+        "Language Model":"Marco-Chat-6B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":71.5,
+        "LR":35.6,
+        "AR":76.9,
+        "RR":61.7,
+        "FP-S":74.1,
+        "FP-C":64.3,
+        "CP":86.8
     },
     {
         "Model":"Kanva-7B",

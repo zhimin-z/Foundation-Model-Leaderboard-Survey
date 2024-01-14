@@ -1,5 +1,47 @@
 [
     {
+        "Model":"ChatTruth-7B",
+        "Time":"2023\/12\/01",
+        "Parameters":"9.7B",
+        "Language Model":"Qwen-7B",
+        "Vision Model":"ViT-G\/16",
+        "Overall":76.3,
+        "LR":55.1,
+        "AR":79.9,
+        "RR":79.1,
+        "FP-S":81.2,
+        "FP-C":62.9,
+        "CP":82.8
+    },
+    {
+        "Model":"GPT-4v (detail: low)\nVerified",
+        "Time":"2023\/12\/23",
+        "Parameters":"",
+        "Language Model":"",
+        "Vision Model":"",
+        "Overall":74.7,
+        "LR":63.6,
+        "AR":79.4,
+        "RR":77.4,
+        "FP-S":67.2,
+        "FP-C":69.9,
+        "CP":84.8
+    },
+    {
+        "Model":"GeminiProVision\nVerified",
+        "Time":"2023\/12\/23",
+        "Parameters":"",
+        "Language Model":"",
+        "Vision Model":"",
+        "Overall":74.0,
+        "LR":49.2,
+        "AR":79.4,
+        "RR":72.2,
+        "FP-S":77.5,
+        "FP-C":65.7,
+        "CP":81.4
+    },
+    {
         "Model":"InternLM-XComposer-VL\nVerified",
         "Time":"2023\/9\/26",
         "Parameters":"8B",
@@ -14,6 +56,20 @@
         "CP":85.8
     },
     {
+        "Model":"Qwen-VL-Plus\nVerified",
+        "Time":"2024\/01\/10",
+        "Parameters":"",
+        "Language Model":"QwenLM",
+        "Vision Model":"",
+        "Overall":69.6,
+        "LR":37.3,
+        "AR":68.8,
+        "RR":73.9,
+        "FP-S":80.5,
+        "FP-C":55.9,
+        "CP":77.0
+    },
+    {
         "Model":"TransCore-M\nVerified",
         "Time":"2023\/11\/30",
         "Parameters":"13.4B",
@@ -26,6 +82,48 @@
         "FP-S":64.5,
         "FP-C":58.0,
         "CP":79.7
+    },
+    {
+        "Model":"LLaVA-InternLM-7B (LoRA)\nVerified",
+        "Time":"2023\/12\/28",
+        "Parameters":"7.6B",
+        "Language Model":"InternLM-7B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":64.4,
+        "LR":42.4,
+        "AR":69.3,
+        "RR":63.5,
+        "FP-S":64.5,
+        "FP-C":48.3,
+        "CP":78.0
+    },
+    {
+        "Model":"LLaVA-v1.5-13B (LoRA, XTuner)\nVerified",
+        "Time":"2023\/12\/28",
+        "Parameters":"13.4B",
+        "Language Model":"Vicuna-v1.5-13B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":63.0,
+        "LR":36.4,
+        "AR":70.4,
+        "RR":52.2,
+        "FP-S":63.5,
+        "FP-C":54.5,
+        "CP":76.4
+    },
+    {
+        "Model":"RBDash-v1-13B",
+        "Time":"2023\/12\/28",
+        "Parameters":"13.4B",
+        "Language Model":"Vicuna-v1.5-13B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":62.0,
+        "LR":32.2,
+        "AR":65.3,
+        "RR":49.6,
+        "FP-S":62.8,
+        "FP-C":56.6,
+        "CP":78.4
     },
     {
         "Model":"LLaVA-v1.5-13B\nVerified",
@@ -56,6 +154,20 @@
         "CP":79.1
     },
     {
+        "Model":"LLaVA-v1.5-7B (LoRA, XTuner)\nVerified",
+        "Time":"2023\/12\/28",
+        "Parameters":"7.2B",
+        "Language Model":"Vicuna-v1.5-7B",
+        "Vision Model":"CLIP ViT-L\/14",
+        "Overall":59.6,
+        "LR":30.5,
+        "AR":65.8,
+        "RR":48.7,
+        "FP-S":57.7,
+        "FP-C":52.4,
+        "CP":76.7
+    },
+    {
         "Model":"mPLUG-Owl2\nVerified",
         "Time":"2023\/11\/10",
         "Parameters":"8.2B",
@@ -82,6 +194,20 @@
         "FP-S":62.1,
         "FP-C":58.7,
         "CP":73.6
+    },
+    {
+        "Model":"SharedCaptioner\nVerified",
+        "Time":"2024\/01\/03",
+        "Parameters":"8B",
+        "Language Model":"InternLM-7B",
+        "Vision Model":"EVA-G",
+        "Overall":57.4,
+        "LR":35.6,
+        "AR":55.8,
+        "RR":60.0,
+        "FP-S":67.9,
+        "FP-C":39.9,
+        "CP":64.2
     },
     {
         "Model":"LLaVA-v1.5-7B\nVerified",
@@ -126,6 +252,34 @@
         "CP":76.0
     },
     {
+        "Model":"CogVLM-17B-Chat\nVerified",
+        "Time":"2024\/01\/03",
+        "Parameters":"17B",
+        "Language Model":"Vicuna-v1.5-7B",
+        "Vision Model":"EVA2-CLIP-E",
+        "Overall":53.8,
+        "LR":23.7,
+        "AR":58.8,
+        "RR":47.8,
+        "FP-S":52.2,
+        "FP-C":42.0,
+        "CP":72.0
+    },
+    {
+        "Model":"Monkey\nVerified",
+        "Time":"2024\/01\/11",
+        "Parameters":"9.8B",
+        "Language Model":"Qwen-7B",
+        "Vision Model":"ViT-BigHuge",
+        "Overall":53.4,
+        "LR":21.2,
+        "AR":59.3,
+        "RR":40.0,
+        "FP-S":59.7,
+        "FP-C":41.3,
+        "CP":67.2
+    },
+    {
         "Model":"VisualGLM\nVerified",
         "Time":"2023\/5\/17",
         "Parameters":"8B",
@@ -154,7 +308,7 @@
         "CP":51.2
     },
     {
-        "Model":"LLaVA\nVerified",
+        "Model":"LLaVA-v1-7B\nVerified",
         "Time":"2023\/4\/17",
         "Parameters":"7.2B",
         "Language Model":"LLaMA 7B",
@@ -168,7 +322,7 @@
         "CP":55.7
     },
     {
-        "Model":"PandaGPT\nVerified",
+        "Model":"PandaGPT-13B\nVerified",
         "Time":"2023\/5\/25",
         "Parameters":"14B",
         "Language Model":"Vicuna 13B",
@@ -196,7 +350,7 @@
         "CP":39.4
     },
     {
-        "Model":"InstructBLIP\nVerified",
+        "Model":"InstructBLIP-7B\nVerified",
         "Time":"2023\/5\/11",
         "Parameters":"8B",
         "Language Model":"Vicuna 7B",
@@ -224,7 +378,7 @@
         "CP":18.8
     },
     {
-        "Model":"MiniGPT-4\nVerified",
+        "Model":"MiniGPT-4-v1-7B\nVerified",
         "Time":"2023\/4\/20",
         "Parameters":"8B",
         "Language Model":"Vicuna 7B",
@@ -252,7 +406,7 @@
         "CP":7.4
     },
     {
-        "Model":"MiniGPT4-v2\nVerified",
+        "Model":"MiniGPT-4-v2\nVerified",
         "Time":"2023\/10\/27",
         "Parameters":"8B",
         "Language Model":"LLaMA2 13B",

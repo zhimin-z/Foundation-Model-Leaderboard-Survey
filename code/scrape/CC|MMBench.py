@@ -7,7 +7,7 @@ from pathlib import Path
 def name_process(name, filter_keywords = []):
     name = name.lower()
     for keyword in filter_keywords:
-        name = name.replace(keyword.lower(), '')
+        name = name.replace(keyword, '')
     name = name.split()
     name = '_'.join(name)
     name = name.replace('-', '_')
@@ -41,5 +41,6 @@ if __name__ == '__main__':
                     entry_values.append(cell.text)
                 df.append(pd.Series(entry_values, index=column_names))
             df = pd.DataFrame(df)
-            df.to_json(path_leaderboard / f'shw-{name_process(benchmark_name.text, filter_keywords=[folder])}-{name_process(table_name.text)}.json', orient='records', indent=4)
+            df.rename(columns={'Method': 'Model'}, inplace=True)
+            df.to_json(path_leaderboard / f"shw-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
                 
