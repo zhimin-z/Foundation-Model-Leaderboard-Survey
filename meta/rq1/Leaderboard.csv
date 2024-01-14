@@ -1,220 +1,233 @@
 Leaderboard,Sources,Leaderboard splitting criteria for all sources (non-pwc),Sources (non-template) with model provenance links,#Empty multi-scenario leaderboards (non-pwc),Modality,Language
-CMMLU,gh,#prompt example,gh,0,text,Chinese
-FinanceIQ,gh,#prompt example,gh,0,text,English
-M3KE,gh,#prompt example,gh,0,text,Chinese
-LawBench,shw,#prompt example,,0,text,English
-HELM Classic,shw,"#prompt token,evaluation benchmark,evaluation metrics,language support,model capability,task modality,domain task,tokenizer",,,"text,code","English,Chinese"
-MMCU,gh,domain task,,0,text,Chinese
-MVBench,gh,domain task,,0,"text,video",English
-SuperCLUE-Auto,gh-shw,domain task,,0,text,Chinese
-SuperCLUE-Safety,gh-shw,domain task,,0,text,Chinese
-LAiW Leaderboard,"gh,hf",domain task,,2,text,Chinese
-VideoInstruct,"gh,pwc",domain task,,0,"text,video",English
-CanAiCode Leaderboard,hf,domain task,hf,0,"text,code",English
-CMB,shw,domain task,,0,text,Chinese
-LMExamQA,shw,domain task,,0,text,English
-MedBench,shw,domain task,,0,text,Chinese
-MMMU,gh,"domain task,evaluation data,evaluation metrics",gh,0,"text,image",English
-MME,gh,"domain task,model capability",gh,0,"text,image",English
-UHGEval,gh,"domain task,model capability",,0,text,Chinese
-SuperCLUE-Agent,gh-shw,"domain task,model capability",,0,text,Chinese
-SuperCLUE,gh-shw,"domain task,model capability,model accessibility,release date",,0,text,Chinese
-GENIE,ai2,evaluation benchmark,,0,text,English
-EvalPlus,gh,evaluation benchmark,gh,0,"text,code",English
-InterCode,gh,evaluation benchmark,,2,"text,code",English
-SEED-Bench Leaderboard,hf,evaluation benchmark,hf,0,"text,image,video",English
-HELM Lite,shw,"evaluation benchmark,domain task",,0,text,"English,Czech,German,French,Hindi,Russian"
-HEIM,shw,"evaluation benchmark,evaluation metrics,language support,model capability,evaluator,domain task",,0,"text,image","English,Chinese,Hindi,Spanish"
-MathVista,gh,evaluation data,gh,0,text,English
-GAIA,hf,evaluation data,hf,0,text,English
-Safety-Prompts,shw,evaluation data,shw,0,text,Chinese
-SafetyBench,gh-shw,"evaluation data,language support",gh-shw,0,text,"English,Chinese"
-MMBench,hf-shw,"evaluation data,language support,model accessibility",hf-shw,1,"text,image","English,Chinese"
-C-Eval,gh-shw,"evaluation data,model accessibility",gh-shw,0,text,Chinese
-BIRD,gh,evaluation metrics,gh,0,"text,code",English
-MATH401,gh,evaluation metrics,,0,text,English
-MINT-Bench,gh,evaluation metrics,,0,text,English
-LLMPerf Leaderboard,gh,"evaluation metrics,model size",,0,text,English
-AlpacaEval,gh,evaluator,gh,0,text,English
-KAgentBench,gh,evaluator,,0,text,English
-AlignBench,gh-shw,evaluator,,0,text,Chinese
-L-Eval,gh,"evaluator,evaluation metrics",,0,text,English
-LLMEval,gh-shw,"evaluator,leaderboard series",,0,text,Chinese
-LongBench,gh,"language support,domain task",,0,"text,code","English,Chinese"
-MTEB,gh-hf-pwc-shw,"language support,domain task",gh-hf-shw,0,text,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek"
-Large Language Model Leaderboard,hf-shw,"language support,model capability",hf-shw,1,"text,code","English,Chinese"
-CCBench,hf-shw,model accessibility,hf-shw,1,"text,image",Chinese
-PromptBench,gh,model capability,,0,text,English
-ANGO,hf,model capability,,0,text,Chinese
-CLEVA,shw,model capability,,0,"text,code",English
-OpenEval (text),shw,model capability,,0,text,Chinese
-InstructEval,gh-shw,"model capability,domain task",gh-shw,0,text,English
-LVLM-eHub,shw,"model capability,evaluation metrics",shw,0,"text,image",English
-ChEF,gh,"model capability,model accessibility",,0,"text,image",English
-CLiB,gh,"model capability,model size",,0,text,Chinese
-FlagEval,shw,"model capability,task modality,model size,model type",,4,"text,code,image,audio","English,Chinese"
-KoLA,shw,release date,,0,text,English
 a-NLI,ai2,,,,text,English
-CosmosQA,ai2,,,,text,English
-MOCHA,ai2,,,,text,English
-Natural Instructions,ai2,,,,text,English
-ProtoQA,ai2,,,,text,English
-QASC,ai2,,,,text,English
-Sherlock,ai2,,,,"text,image",English
 A-OKVQA,"ai2,pwc",,,,"text,image",English
-ARC,"ai2,pwc",,,,text,"English,Chinese"
-"CSQA (v1,v2)","ai2,pwc",,,,text,English
-MC-TACO,"ai2,pwc",,,,text,English
-OpenbookQA,"ai2,pwc",,,,text,English
-PIQA,"ai2,pwc",,,,text,English
-SIQA,"ai2,pwc",,,,text,English
-StrategyQA,"ai2,pwc",,,,text,English
-WinoGrande,"ai2,pwc",,,,text,English
-BotChat,gh,,gh,,text,English
-C-Eval Hard,gh,,,,text,Chinese
-ChineseFactEval,gh,,,,text,English
-Colossal-AI,gh,,,,text,"English,Chinese"
-DecodingTrust,gh,,,,text,English
-DS-1000,gh,,gh,,"text,code",English
-FacTool,gh,,,,"text,code",English
-FActScore,gh,,gh,,text,English
-FELM,gh,,,,text,English
-GAOKAO-Bench,gh,,,,text,"English,Chinese"
-Hallucination Leaderboard,gh,,,,text,English
-HalluQA,gh,,,,text,"English,Chinese"
-InfiCoder-Eval,gh,,gh,,"text,code",English
-JustEval,gh,,,,text,English
-ODEX,gh,,,,"text,code",English
-OpenEval (code),gh,,,,"text,code",English
-Q-Bench,gh,,,,"text,image","English,Chinese"
-QuALITY,gh,,gh,,text,English
-ReForm-Eval,gh,,,,"text,image",English
-ScandEval,gh,,,,text,"English,Danish,Swedish,Norwegian,Icelandic,German,Dutch,Finnish,Russian,Arabic"
-SciGraphQA,gh,,,,"text,image",English
-SummEdits,gh,,,,text,English
-SuperCLUEgkzw,gh,,,,text,Chinese
-SuperCLUElyb,gh,,,,text,Chinese
-TabMWP,gh,,gh,,text,English
-TouchStone,gh,,,,"text,image",English
-tStoryCloze,gh,,,,text,English
-VisIT-Bench,gh,,,,"text,image",English
-VLM-Eval,gh,,gh,,"text,video",English
-Xiezhi,gh,,,,text,"English,Chinese"
-LLM-Leaderboard,gh-hf-shw,,gh-hf-shw,,"text,code",English
-InfiMM-Eval,gh-pwc,,,,"text,image",English
-TheoremQA,gh-pwc,,,,text,English
-AgentBench,gh-shw,,,,text,English
-LLM Benchmarker Suite,gh-shw,,,,"text,code",English
-MMLU,"gh,hf,pwc",,"gh,hf",,text,English
-ANLI,"gh,pwc",,gh,,text,English
-HallusionBench,"gh,pwc",,,,"text,image",English
-HumanEval,"gh,pwc",,gh,,"text,code",English
-PubMedQA,"gh,pwc",,gh,,text,English
-ScienceQA,"gh,pwc",,gh,,"text,image",English
-Spider,"gh,pwc",,gh,,"text,code",English
-TruthfulQA,"gh,pwc",,,,text,English
-Big Code Models Leaderboard,hf,,hf,,"text,code",English
-LLM-Perf Leaderboard,hf,,hf,,text,English
-Open Ko-LLM Leaderboard,hf,,hf,,text,Korean
-Open LLM Leaderboard,hf,,hf,,text,English
-Open Multilingual LLM Evaluation Leaderboard,hf,,hf,,text,"Vietnamese,Ukrainian,Telugu,Tamil,Swedish,Spanish,Slovak,Serbian,Russian,Romanian,Portuguese,Nepali,Marathi,Malayalam,Kannada,Italian,Indonesian,Hungarian,Hindi,Gujarati,German,French,Dutch,Danish,Croatian,Chinese,Catalan,Bengali,Basque,Armenian,Arabic"
-Toolbench Leaderboard,hf,,hf,,text,English
-Video-Bench Leaderboard,hf,,,,"text,video",English
-Chatbot Arena Leaderboad,hf-shw,,hf-shw,,text,English
-Toloka LLM Leaderboard,hf-shw,,,,text,English
-RAFT,"hf,pwc",,,,text,English
 ActivityNet,pwc,,,,"text,video",English
+ActivityNet Captions,pwc,,shw,,"text,video",English
 ActivityNet-QA,pwc,,,,"text,video",English
 ADE20K,pwc,,,,"text,image",English
+AgentBench,gh-shw,,,,text,English
 AI2D,pwc,,,,"text,image",English
 AISHELL-1,pwc,,,,"text,audio",English
+AlignBench,gh-shw,evaluator,,0,text,Chinese
+AlpacaEval,gh,evaluator,gh,0,text,English
+ANGO,hf,model capability,,0,text,Chinese
+ANLI,"gh,pwc",,gh,,text,English
 APPS,pwc,,,,"text,code",English
+ARC,"ai2,pwc",,,,text,"English,Chinese"
 ASDiv,pwc,,,,text,English
 AVA,pwc,,,,"text,video",English
 BANKING77,pwc,,,,text,English
 BBH,pwc,,,,"text,image",English
 BEIR,pwc,,,,text,English
+Big Code Models Leaderboard,hf,,hf,,"text,code",English
 BIG-Bench,pwc,,,,"text,code,image",English
 BioASQ,pwc,,,,text,English
+BIRD,gh,evaluation metrics,gh,0,"text,code",English
 BoolQ,pwc,,,,text,English
+BotChat,gh,,gh,,text,English
+C-Eval,gh-shw,"evaluation data,model accessibility",gh-shw,0,text,Chinese
+C-Eval Hard,gh,,,,text,Chinese
+CanAiCode Leaderboard,hf,domain task,hf,0,"text,code",English
 CB,pwc,,,,text,English
+CCBench,hf-shw,model accessibility,hf-shw,1,"text,image",Chinese
+CG-Eval,shw,,shw,,text,Chinese
 Charades,pwc,,,,"text,video",English
 ChartQA,pwc,,,,"text,image",English
+Chatbot Arena Leaderboad,hf-shw,,hf-shw,,text,English
+ChEF,gh,"model capability,model accessibility",,0,"text,image",English
+ChineseFactEval,gh,,,,text,English
 CIFAR-10,pwc,,,,"text,image",English
 Civil Comments,pwc,,,,text,English
+CLEVA,shw,model capability,,0,"text,code",English
+CLiB,gh,"model capability,model size",,0,text,Chinese
 CLUE,pwc,,,,text,Chinese
+CMB,shw,domain task,,0,text,Chinese
+CMMLU,gh,#prompt example,gh,0,text,Chinese
 CNN DM,pwc,,,,text,English
+Coding LLMs Leaderboard,shw,,,,"text,code",English
 CoLA,pwc,,,,text,English
+Colossal-AI,gh,,,,text,"English,Chinese"
 CoNaLa,pwc,,,,"text,code",English
 COPA,pwc,,,,text,English
 CoQA,pwc,,,,text,English
+CosmosQA,ai2,,,,text,English
 CrowS-Pairs,pwc,,,,text,English
+"CSQA (v1,v2)","ai2,pwc",,,,text,English
+DecodingTrust,gh,,,,text,English
 DiDeMo,pwc,,,,"text,video",English
+DocVQA,"pwc,shw",,shw,,"text,image",English
 DROP,pwc,,,,text,English
+DS-1000,gh,,gh,,"text,code",English
+EvalPlus,gh,evaluation benchmark,gh,0,"text,code",English
+FacTool,gh,,,,"text,code",English
+FActScore,gh,,gh,,text,English
+FELM,gh,,,,text,English
 FewCLUE,pwc,,,,text,Chinese
+FinanceIQ,gh,#prompt example,gh,0,text,English
+FlagEval,shw,"model capability,task modality,model size,model type",,4,"text,code,image,audio","English,Chinese"
 FLEURS,pwc,,,,"text,audio",English
 Flickr30K,pwc,,,,"text,image",English
 Flores-101,pwc,,,,text,English
 Food-101,pwc,,,,"text,video",English
+GAIA,hf,evaluation data,hf,0,text,English
+GAOKAO-Bench,gh,,,,text,"English,Chinese"
+GENIE,ai2,evaluation benchmark,,0,text,English
 GQA,pwc,,,,"text,image",English
 GSM8K,pwc,,,,text,English
+Hallucination Leaderboard,gh,,,,text,English
+HalluQA,gh,,,,text,"English,Chinese"
+HallusionBench,"gh,pwc",,,,"text,image",English
+HEIM,shw,"evaluation benchmark,evaluation metrics,language support,model capability,evaluator,domain task",,0,"text,image","English,Chinese,Hindi,Spanish"
+HellaSwag,pwc,,,,text,English
+HellaSwag Leaderboard,shw,,shw,,text,English
+HELM Classic,shw,"#prompt token,evaluation benchmark,evaluation metrics,language support,model capability,task modality,domain task,tokenizer",,,"text,code","English,Chinese"
+HELM Lite,shw,"evaluation benchmark,domain task",,0,text,"English,Czech,German,French,Hindi,Russian"
 HMDB51,pwc,,,,"text,video",English
+HumanEval,"gh,pwc",,gh,,"text,code",English
 ImageNet,pwc,,,,"text,image",English
 iNaturalist,pwc,,,,"text,image",English
+InfiCoder-Eval,gh,,gh,,"text,code",English
+InfiMM-Eval,gh-pwc,,,,"text,image",English
+InfographicVQA,"pwc,shw",,shw,,"text,image",English
+InstructEval,gh-shw,"model capability,domain task",gh-shw,0,text,English
+InterCode,gh,evaluation benchmark,,2,"text,code",English
 iVQA,pwc,,,,"text,video",English
+JustEval,gh,,,,text,English
+KAgentBench,gh,evaluator,,0,text,English
 Kinetics,pwc,,,,"text,video",English
+KoLA,shw,release date,,0,text,English
 KQA Pro,pwc,,,,text,English
+L-Eval,gh,"evaluator,evaluation metrics",,0,text,English
+LAiW Leaderboard,"gh,hf",domain task,,2,text,Chinese
 LAMBADA,pwc,,,,text,English
+Large Language Model Leaderboard,hf-shw,"language support,model capability",hf-shw,1,"text,code","English,Chinese"
+LawBench,shw,#prompt example,,0,text,English
 LLaVA-Bench,pwc,,,,"text,image",English
+LLM Benchmarker Suite,gh-shw,,,,"text,code",English
+LLM-Leaderboard,gh-hf-shw,,gh-hf-shw,,"text,code",English
+LLM-Perf Leaderboard,hf,,hf,,text,English
+LLMEval,gh-shw,"evaluator,leaderboard series",,0,text,Chinese
+LLMonitor,shw,,,,text,English
+LLMPerf Leaderboard,gh,"evaluation metrics,model size",,0,text,English
+LMExamQA,shw,domain task,,0,text,English
 LogiQA,pwc,,,,text,English
+LongBench,gh,"language support,domain task",,0,"text,code","English,Chinese"
+LVLM-eHub,shw,"model capability,evaluation metrics",shw,0,"text,image",English
+M3KE,gh,#prompt example,gh,0,text,Chinese
 MATH,pwc,,,,text,English
+MATH401,gh,evaluation metrics,,0,text,English
 MathQA,pwc,,,,text,English
+MathVista,gh,evaluation data,gh,0,text,English
 MAWPS,pwc,,,,text,English
 MBPP,pwc,,,,"text,code",English
+MC-TACO,"ai2,pwc",,,,text,English
+MedBench,shw,domain task,,0,text,Chinese
 MedQA,pwc,,,,text,English
+MINT-Bench,gh,evaluation metrics,,0,text,English
 MiT,pwc,,,,"text,video",English
 MLS,pwc,,,,"text,audio",English
 MM-Vet,pwc,,,,"text,image",English
+MMBench,hf-shw,"evaluation data,language support,model accessibility",hf-shw,1,"text,image","English,Chinese"
+MMCU,gh,domain task,,0,text,Chinese
+MME,gh,"domain task,model capability",gh,0,"text,image",English
+MMLU,"gh,pwc",,gh,,text,English
+MMLU-by-task Leaderboard,hf,,hf,,text,English
+MMMU,gh,"domain task,evaluation data,evaluation metrics",gh,0,"text,image",English
 MNLI,pwc,,,,text,English
+MOCHA,ai2,,,,text,English
 MRPC,pwc,,,,text,English
 MSCOCO,pwc,,,,"text,image",English
 MSRVTT,pwc,,,,"text,video",English
 MSRVTT-QA,pwc,,,,"text,video",English
 MSVD,pwc,,,,"text,video",English
 MSVD-QA,pwc,,,,"text,video",English
+MTEB,gh-hf-pwc-shw,"language support,domain task",gh-hf-shw,0,text,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek"
+Multi-modal Modal Leaderboard,shw,,shw,,"text,image","English,Chinese"
 MultiRC,pwc,,,,text,English
+MVBench,gh,domain task,,0,"text,video",English
+Natural Instructions,ai2,,,,text,English
 NExT-QA,pwc,,,,"text,video",English
 NoCaps,pwc,,,,"text,image",English
 NQ,pwc,,,,text,English
+ODEX,gh,,,,"text,code",English
 OK-VQA,pwc,,,,"text,image",English
 OmniBenchmark,pwc,,,,"text,image",English
+Open Ko-LLM Leaderboard,hf,,hf,,text,Korean
+Open LLM Leaderboard,hf,,hf,,text,English
+Open Multilingual LLM Evaluation Leaderboard,hf,,hf,,text,"Vietnamese,Ukrainian,Telugu,Tamil,Swedish,Spanish,Slovak,Serbian,Russian,Romanian,Portuguese,Nepali,Marathi,Malayalam,Kannada,Italian,Indonesian,Hungarian,Hindi,Gujarati,German,French,Dutch,Danish,Croatian,Chinese,Catalan,Bengali,Basque,Armenian,Arabic"
+OpenbookQA,"ai2,pwc",,,,text,English
+OpenEval (code),gh,,,,"text,code",English
+OpenEval (text),shw,model capability,,0,text,Chinese
 Pets37,pwc,,,,"text,image",English
+PIQA,"ai2,pwc",,,,text,English
+Program Synthesis Models Leaderboard,shw,,shw,,"text,code",English
+PromptBench,gh,model capability,,0,text,English
+ProtoQA,ai2,,,,text,English
+PubMedQA,"gh,pwc",,gh,,text,English
+Q-Bench,gh,,,,"text,image","English,Chinese"
+QASC,ai2,,,,text,English
 QNLI,pwc,,,,text,English
 QQP,pwc,,,,text,English
+QuALITY,gh,,gh,,text,English
 RACE,pwc,,,,text,English
+RAFT,"hf,pwc",,,,text,English
 ReCoRD,pwc,,,,text,English
 RefCOCO,pwc,,,,"text,image",English
+ReForm-Eval,gh,,,,"text,image",English
 Robust04,pwc,,,,text,English
 RTE,pwc,,,,text,English
+Safety-Prompts,shw,evaluation data,shw,0,text,Chinese
+SafetyBench,gh-shw,"evaluation data,language support",gh-shw,0,text,"English,Chinese"
+ScandEval,gh,,,,text,"English,Danish,Swedish,Norwegian,Icelandic,German,Dutch,Finnish,Russian,Arabic"
+ScienceQA,"gh,pwc",,gh,,"text,image",English
+SciGraphQA,gh,,,,"text,image",English
+SCROLLS,shw,,,,text,English
+SEED-Bench Leaderboard,hf,evaluation benchmark,hf,0,"text,image,video",English
+Sherlock,ai2,,,,"text,image",English
 SICK,pwc,,,,text,English
+SIQA,"ai2,pwc",,,,text,English
 "Something-Something (v1,v2)",pwc,,,,"text,video",English
+Spider,"gh,pwc",,gh,,"text,code",English
 SQuAD,pwc,,,,text,English
 SST,pwc,,,,text,English
 STAR,pwc,,,,"text,video",English
 StereoSet,pwc,,,,text,English
 StoryCloze,pwc,,,,text,English
+StrategyQA,"ai2,pwc",,,,text,English
 STS-B,pwc,,,,text,English
+SummEdits,gh,,,,text,English
+SuperCLUE,gh-shw,"domain task,model capability,model accessibility,release date",,0,text,Chinese
+SuperCLUE-Agent,gh-shw,"domain task,model capability",,0,text,Chinese
+SuperCLUE-Auto,gh-shw,domain task,,0,text,Chinese
+SuperCLUE-Safety,gh-shw,domain task,,0,text,Chinese
+SuperCLUEgkzw,gh,,,,text,Chinese
+SuperCLUElyb,gh,,,,text,Chinese
+SuperGLUE,shw,,shw,,text,English
+SuperLim (v2),shw,,,,text,Swedish
 SVAMP,pwc,,,,text,English
+SWE-bench,"pwc,shw",,,,"text,code",English
+TabMWP,gh,,gh,,text,English
 TGIF-QA,pwc,,,,"text,video",English
 The Pile,pwc,,,,text,English
+TheoremQA,gh-pwc,,,,text,English
+Toloka LLM Leaderboard,hf-shw,,,,text,English
+Toolbench Leaderboard,hf,,hf,,text,English
+TouchStone,gh,,,,"text,image",English
 TREC-COVID,pwc,,,,text,English
 TriviaQA,pwc,,,,text,English
+TruthfulQA,"gh,pwc",,,,text,English
+tStoryCloze,gh,,,,text,English
 TVQA,pwc,,,,"text,video",English
 TyDiQA,pwc,,,,text,"English,Arabic,Bengali,Finnish,Japanese,Indonesian,Kiswahili,Korean,Russian,Telugu,Thai"
 UCF101,pwc,,,,"text,video",English
+UHGEval,gh,"domain task,model capability",,0,text,Chinese
 VCR,pwc,,,,"text,image",English
+Video-Bench Leaderboard,hf,,,,"text,video",English
+VideoInstruct,"gh,pwc",domain task,,0,"text,video",English
 VisDial,pwc,,,,"text,image",English
+VisIT-Bench,gh,,,,"text,image",English
 VizWiz,pwc,,,,"text,image",English
+VLM-Eval,gh,,gh,,"text,video",English
 VNHSGE,pwc,,,,text,"English,Vietnamese"
 VQA (v2),pwc,,,,"text,image",English
 WebVid,pwc,,,,"text,video",English
@@ -223,24 +236,12 @@ WiC,pwc,,,,text,English
 WikiEvents,pwc,,,,text,English
 WikiText-103,pwc,,,,text,English
 WikiText-2,pwc,,,,text,English
+WinoGrande,"ai2,pwc",,,,text,English
 Winoground,pwc,,,,"text,image",English
 WMT (2014),pwc,,,,text,English
 WNLI,pwc,,,,text,English
 WQSP,pwc,,,,text,English
 WSC,pwc,,,,text,English
+Xiezhi,gh,,,,text,"English,Chinese"
 XSUM,pwc,,,,text,English
 YouCook2,pwc,,,,"text,video",English
-ActivityNet Captions,"pwc,shw",,shw,,"text,video",English
-DocVQA,"pwc,shw",,shw,,"text,image",English
-HellaSwag,"pwc,shw",,shw,,text,English
-InfographicVQA,"pwc,shw",,shw,,"text,image",English
-SWE-bench,"pwc,shw",,,,"text,code",English
-CG-Eval,shw,,shw,,text,Chinese
-Coding LLMs Leaderboard,shw,,,,"text,code",English
-LLMonitor,shw,,,,text,English
-Multi-modal Modal Leaderboard,shw,,shw,,"text,image","English,Chinese"
-Program Synthesis Models Leaderboard,shw,,shw,,"text,code",English
-SCROLLS,shw,,,,text,English
-SuperGLUE,shw,,shw,,text,English
-SuperLim (v2),shw,,,,text,Swedish
-WikiHow,shw,,,,text,English
