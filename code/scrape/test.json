@@ -1,0 +1,627 @@
+window.gradio_config = {
+    "version": "4.3.0",
+    "mode": "blocks",
+    "app_id": 699167329971487968,
+    "dev_mode": false,
+    "analytics_enabled": true,
+    "components": [
+        {
+            "id": 1,
+            "type": "html",
+            "props": {
+                "value": "\u003cimg src=\"https://huggingface.co/spaces/optimum/llm-perf-leaderboard/resolve/main/logo.png\"\u003e",
+                "show_label": true,
+                "visible": true,
+                "elem_classes": [
+                    "logo"
+                ],
+                "name": "html",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "0ef1a4eade65d710fcd9fc56f6586b0e",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "\u003cp\u003eHello\u003c/p\u003e"
+        },
+        {
+            "id": 2,
+            "type": "html",
+            "props": {
+                "value": "\u003ch1 align=\"center\" id=\"space-title\"\u003e🤗 LLM-Perf Leaderboard 🏋️\u003c/h1\u003e",
+                "show_label": true,
+                "visible": true,
+                "elem_classes": [
+                    "title"
+                ],
+                "name": "html",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "0ef1a4eade65d710fcd9fc56f6586b0e",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "\u003cp\u003eHello\u003c/p\u003e"
+        },
+        {
+            "id": 3,
+            "type": "markdown",
+            "props": {
+                "value": "The 🤗 LLM-Perf Leaderboard 🏋️ aims to benchmark the performance (latency, throughput, memory \u0026 energy) of Large Language Models (LLMs) with different hardwares, backends and optimizations using [Optimum-Benchmark](https://github.com/huggingface/optimum-benchmark) and [Optimum](https://github.com/huggingface/optimum) flavors.\n\nAnyone from the community can request a model or a hardware/backend/optimization configuration for automated benchmarking:\n- Model evaluation requests should be made in the [🤗 Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) and will be added to the [🤗 LLM Performance Leaderboard 🏋️](https://huggingface.co/spaces/optimum/llm-perf-leaderboard) automatically.\n- Hardware/Backend/Optimization performance requests should be made in the [llm-perf-backend repository](https://github.com/IlyasMoutawwakil/llm-perf-backend) and will be added to the [🤗 LLM Performance Leaderboard 🏋️](https://huggingface.co/spaces/optimum/llm-perf-leaderboard) automatically.",
+                "show_label": true,
+                "rtl": false,
+                "latex_delimiters": [
+                    {
+                        "left": "$$",
+                        "right": "$$",
+                        "display": true
+                    }
+                ],
+                "visible": true,
+                "elem_classes": [
+                    "descriptive-text"
+                ],
+                "sanitize_html": true,
+                "line_breaks": false,
+                "name": "markdown",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "810c5f8552642d85df14958a33f75123",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "# Hello!"
+        },
+        {
+            "id": 4,
+            "type": "tabs",
+            "props": {
+                "visible": true,
+                "elem_classes": [
+                    "tabs"
+                ],
+                "name": "tabs"
+            },
+            "skip_api": true,
+            "component_class_id": "9e076167ca1265948472576573f64ef5"
+        },
+        {
+            "id": 5,
+            "type": "tabitem",
+            "props": {
+                "label": "A100-80GB-275W 🖥️",
+                "id": 0,
+                "name": "tabitem"
+            },
+            "skip_api": true,
+            "component_class_id": "f72faf2b8abb615823b199272218625a"
+        },
+        {
+            "id": 6,
+            "type": "html",
+            "props": {
+                "value": "Use this control panel to filter the leaderboard.",
+                "show_label": true,
+                "visible": true,
+                "elem_id": "text",
+                "elem_classes": [],
+                "name": "html",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "0ef1a4eade65d710fcd9fc56f6586b0e",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "\u003cp\u003eHello\u003c/p\u003e"
+        },
+        {
+            "id": 7,
+            "type": "textbox",
+            "props": {
+                "value": "hf-dgx-01",
+                "lines": 1,
+                "max_lines": 20,
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": false,
+                "autofocus": false,
+                "autoscroll": true,
+                "elem_classes": [],
+                "type": "text",
+                "rtl": false,
+                "show_copy_button": false,
+                "name": "textbox",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "777333cda51df020195231508683831a",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "Hello!!"
+        },
+        {
+            "id": 8,
+            "type": "row",
+            "props": {
+                "variant": "default",
+                "visible": true,
+                "equal_height": true,
+                "name": "row"
+            },
+            "skip_api": true,
+            "component_class_id": "9a37ebd52f5e3ac2d2a1b25e6c1b3eba"
+        },
+        {
+            "id": 9,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "default",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 10,
+            "type": "textbox",
+            "props": {
+                "value": "",
+                "lines": 1,
+                "max_lines": 20,
+                "label": "Model 🤗",
+                "info": "🔍 Search for a model name",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "search-bar",
+                "autofocus": false,
+                "autoscroll": true,
+                "elem_classes": [],
+                "type": "text",
+                "rtl": false,
+                "show_copy_button": false,
+                "name": "textbox",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "777333cda51df020195231508683831a",
+            "api_info": {
+                "type": "string"
+            },
+            "example_inputs": "Hello!!"
+        },
+        {
+            "id": 11,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 12,
+            "type": "row",
+            "props": {
+                "variant": "default",
+                "visible": true,
+                "equal_height": true,
+                "name": "row"
+            },
+            "skip_api": true,
+            "component_class_id": "9a37ebd52f5e3ac2d2a1b25e6c1b3eba"
+        },
+        {
+            "id": 13,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "panel",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 14,
+            "type": "slider",
+            "props": {
+                "minimum": 0,
+                "maximum": 100,
+                "value": 0,
+                "step": 1,
+                "label": "Open LLM Score (%) 📈",
+                "info": "🎚️ Slide to minimum Open LLM score",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "threshold-slider",
+                "elem_classes": [],
+                "name": "slider",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "92d475377d8dbf22997635901e7c301a",
+            "api_info": {
+                "type": "number",
+                "description": "numeric value between 0 and 100"
+            },
+            "example_inputs": 0
+        },
+        {
+            "id": 15,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 16,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "panel",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 17,
+            "type": "slider",
+            "props": {
+                "minimum": 0,
+                "maximum": 81920,
+                "value": 81920,
+                "step": 100,
+                "label": "Peak Memory (MB) 📈",
+                "info": "🎚️ Slide to maximum Peak Memory",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "memory-slider",
+                "elem_classes": [],
+                "name": "slider",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "92d475377d8dbf22997635901e7c301a",
+            "api_info": {
+                "type": "number",
+                "description": "numeric value between 0 and 81920"
+            },
+            "example_inputs": 0
+        },
+        {
+            "id": 18,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 19,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "default",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 20,
+            "type": "checkboxgroup",
+            "props": {
+                "choices": [
+                    [
+                        "pytorch",
+                        "pytorch"
+                    ]
+                ],
+                "value": [
+                    "pytorch"
+                ],
+                "type": "value",
+                "label": "Backends 🏭",
+                "info": "☑️ Select the backends",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "backend-checkboxes",
+                "elem_classes": [],
+                "name": "checkboxgroup",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "cf1be62e677c31d1fe76c5501de84c66",
+            "api_info": {
+                "items": {
+                    "enum": [
+                        "pytorch"
+                    ],
+                    "type": "string"
+                },
+                "title": "Checkbox Group",
+                "type": "array"
+            },
+            "example_inputs": [
+                "pytorch"
+            ]
+        },
+        {
+            "id": 21,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 22,
+            "type": "row",
+            "props": {
+                "variant": "default",
+                "visible": true,
+                "equal_height": true,
+                "name": "row"
+            },
+            "skip_api": true,
+            "component_class_id": "9a37ebd52f5e3ac2d2a1b25e6c1b3eba"
+        },
+        {
+            "id": 23,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "panel",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 24,
+            "type": "checkboxgroup",
+            "props": {
+                "choices": [
+                    [
+                        "float32",
+                        "float32"
+                    ],
+                    [
+                        "float16",
+                        "float16"
+                    ],
+                    [
+                        "bfloat16",
+                        "bfloat16"
+                    ]
+                ],
+                "value": [
+                    "float32",
+                    "float16",
+                    "bfloat16"
+                ],
+                "type": "value",
+                "label": "Load DTypes 📥",
+                "info": "☑️ Select the load data types",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "dtype-checkboxes",
+                "elem_classes": [],
+                "name": "checkboxgroup",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "cf1be62e677c31d1fe76c5501de84c66",
+            "api_info": {
+                "items": {
+                    "enum": [
+                        "float32",
+                        "float16",
+                        "bfloat16"
+                    ],
+                    "type": "string"
+                },
+                "title": "Checkbox Group",
+                "type": "array"
+            },
+            "example_inputs": [
+                "float32"
+            ]
+        },
+        {
+            "id": 25,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 26,
+            "type": "column",
+            "props": {
+                "scale": 1,
+                "min_width": 320,
+                "variant": "panel",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 27,
+            "type": "checkboxgroup",
+            "props": {
+                "choices": [
+                    [
+                        "None",
+                        "None"
+                    ],
+                    [
+                        "BetterTransformer",
+                        "BetterTransformer"
+                    ],
+                    [
+                        "FlashAttentionV2",
+                        "FlashAttentionV2"
+                    ]
+                ],
+                "value": [
+                    "None",
+                    "BetterTransformer",
+                    "FlashAttentionV2"
+                ],
+                "type": "value",
+                "label": "Optimizations 🛠️",
+                "info": "☑️ Select the optimization",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "optimization-checkboxes",
+                "elem_classes": [],
+                "name": "checkboxgroup",
+                "_selectable": false
+            },
+            "skip_api": false,
+            "component_class_id": "cf1be62e677c31d1fe76c5501de84c66",
+            "api_info": {
+                "items": {
+                    "enum": [
+                        "None",
+                        "BetterTransformer",
+                        "FlashAttentionV2"
+                    ],
+                    "type": "string"
+                },
+                "title": "Checkbox Group",
+                "type": "array"
+            },
+            "example_inputs": [
+                "None"
+            ]
+        },
+        {
+            "id": 28,
+            "type": "form",
+            "props": {
+                "scale": 0,
+                "min_width": 0,
+                "name": "form"
+            },
+            "skip_api": true,
+            "component_class_id": "8a922308b8adf2794816d4dee399dbae"
+        },
+        {
+            "id": 29,
+            "type": "column",
+            "props": {
+                "scale": 2,
+                "min_width": 320,
+                "variant": "default",
+                "visible": true,
+                "name": "column"
+            },
+            "skip_api": true,
+            "component_class_id": "cc17d07a8a70ee1001b1e05bebd9e3a3"
+        },
+        {
+            "id": 30,
+            "type": "checkboxgroup",
+            "props": {
+                "choices": [
+                    [
+                        "None",
+                        "None"
+                    ],
+                    [
+                        "BnB.4bit",
+                        "BnB.4bit"
+                    ],
+                    [
+                        "BnB.8bit",
+                        "BnB.8bit"
+                    ],
+                    [
+                        "GPTQ.4bit",
+                        "GPTQ.4bit"
+                    ],
+                    [
+                        "GPTQ.4bit+ExllamaV1",
+                        "GPTQ.4bit+ExllamaV1"
+                    ],
+                    [
+                        "GPTQ.4bit+ExllamaV2",
+                        "GPTQ.4bit+ExllamaV2"
+                    ],
+                    [
+                        "AWQ.4bit+GEMM",
+                        "AWQ.4bit+GEMM"
+                    ],
+                    [
+                        "AWQ.4bit+GEMV",
+                        "AWQ.4bit+GEMV"
+                    ]
+                ],
+                "value": [
+                    "None",
+                    "BnB.4bit",
+                    "BnB.8bit",
+                    "GPTQ.4bit",
+                    "GPTQ.4bit+ExllamaV1",
+                    "GPTQ.4bit+ExllamaV2",
+                    "AWQ.4bit+GEMM",
+                    "AWQ.4bit+GEMV"
+                ],
+                "type": "value",
+                "label": "Quantizations 🗜️",
+                "info": "☑️ Select the quantization schemes",
+                "show_label": true,
+                "container": true,
+                "min_width": 160,
+                "visible": true,
+                "elem_id": "quantization-checkboxes","e…
