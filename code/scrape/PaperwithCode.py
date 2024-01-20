@@ -12,9 +12,10 @@ def file_rename(title):
     return title
 
 bloom = False
-path_leaderboard = 'data/STAR'
-dataset = 'situated-reasoning-star'
-included_links = ['zero-shot-video-question-answer-on-star-1', 'video-question-answering-on-situated']
+community_indicator = ''
+path_leaderboard = 'data/SciQ'
+dataset = 'sciq'
+included_links = []
 
 if __name__ == '__main__':
     driver = uc.Chrome()
@@ -49,12 +50,12 @@ if __name__ == '__main__':
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
             table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
-        else:
-            table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
-            if table != '[]':
-                table = json.loads(table)
-                table = pd.DataFrame(table)
-                table = table.rename(columns={'method': 'Model'})
-                title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
-                title = file_rename(title)
-                table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
+            community_indicator = 'community-'
+        table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
+        if table != '[]':
+            table = json.loads(table)
+            table = pd.DataFrame(table)
+            table = table.rename(columns={'method': 'Model'})
+            title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
+            title = file_rename(title)
+            table.to_json(f'{path_leaderboard}/pwc-{community_indicator}{title}.json', orient='records', indent=4)
