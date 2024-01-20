@@ -11,10 +11,11 @@ def file_rename(title):
     title = '_'.join(title)
     return title
 
+dataset = 'sciq'
+path_leaderboard = 'data/SciQ'
+
 bloom = False
 community_indicator = ''
-path_leaderboard = 'data/SciQ'
-dataset = 'sciq'
 included_links = []
 
 if __name__ == '__main__':
