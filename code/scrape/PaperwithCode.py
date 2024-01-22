@@ -11,12 +11,12 @@ def file_rename(title):
     title = '_'.join(title)
     return title
 
-dataset = 'sciq'
-path_leaderboard = 'data/SciQ'
+dataset = ''
+path_leaderboard = 'data/MusicCaps'
 
 bloom = False
 community_indicator = ''
-included_links = []
+included_links = ['text-to-music-generation-on-musiccaps']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
