@@ -11,18 +11,17 @@ def file_rename(title):
     title = '_'.join(title)
     return title
 
-dataset = ''
-path_leaderboard = 'data/MusicCaps'
-
 bloom = False
-community_indicator = ''
-included_links = ['text-to-music-generation-on-musiccaps']
+dataset = 'benchlmm'
+path_leaderboard = 'data/BenchLMM'
 
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
-
+    
+    included_links = []
     leaderboard_links = []
+    community_indicator = ''
     base_url = 'https://paperswithcode.com'
     
     if included_links:
