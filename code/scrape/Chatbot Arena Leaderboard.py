@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
+# import undetected_chromedriver as uc
+from selenium import webdriver as uc
 import pandas as pd
 import time
 import re

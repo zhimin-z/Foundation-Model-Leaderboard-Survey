@@ -8,8 +8,16 @@
         "License":"Proprietary"
     },
     {
+        "Model":"Bard (Gemini Pro)",
+        "Arena Elo":"1215",
+        "MT-bench":"",
+        "MMLU":"",
+        "Organization":"Google",
+        "License":"Proprietary"
+    },
+    {
         "Model":"GPT-4-0314",
-        "Arena Elo":"1191",
+        "Arena Elo":"1189",
         "MT-bench":"8.96",
         "MMLU":"86.4",
         "Organization":"OpenAI",
@@ -17,7 +25,7 @@
     },
     {
         "Model":"GPT-4-0613",
-        "Arena Elo":"1160",
+        "Arena Elo":"1161",
         "MT-bench":"9.18",
         "MMLU":"",
         "Organization":"OpenAI",
@@ -33,7 +41,7 @@
     },
     {
         "Model":"Mistral Medium",
-        "Arena Elo":"1148",
+        "Arena Elo":"1150",
         "MT-bench":"8.61",
         "MMLU":"75.3",
         "Organization":"Mistral",
@@ -49,15 +57,15 @@
     },
     {
         "Model":"Mixtral-8x7b-Instruct-v0.1",
-        "Arena Elo":"1124",
+        "Arena Elo":"1123",
         "MT-bench":"8.3",
         "MMLU":"70.6",
         "Organization":"Mistral",
         "License":"Apache 2.0"
     },
     {
-        "Model":"Gemini Pro (Dev)",
-        "Arena Elo":"1121",
+        "Model":"Gemini Pro (Dev API)",
+        "Arena Elo":"1122",
         "MT-bench":"",
         "MMLU":"71.8",
         "Organization":"Google",
@@ -73,7 +81,7 @@
     },
     {
         "Model":"GPT-3.5-Turbo-0613",
-        "Arena Elo":"1116",
+        "Arena Elo":"1117",
         "MT-bench":"8.39",
         "MMLU":"",
         "Organization":"OpenAI",
@@ -89,7 +97,7 @@
     },
     {
         "Model":"Yi-34B-Chat",
-        "Arena Elo":"1111",
+        "Arena Elo":"1112",
         "MT-bench":"",
         "MMLU":"73.5",
         "Organization":"01 AI",
@@ -104,12 +112,12 @@
         "License":"Proprietary"
     },
     {
-        "Model":"GPT-3.5-Turbo-0314",
-        "Arena Elo":"1105",
-        "MT-bench":"7.94",
-        "MMLU":"70",
-        "Organization":"OpenAI",
-        "License":"Proprietary"
+        "Model":"WizardLM-70B-v1.0",
+        "Arena Elo":"1106",
+        "MT-bench":"7.71",
+        "MMLU":"63.7",
+        "Organization":"Microsoft",
+        "License":"Llama 2 Community"
     },
     {
         "Model":"Tulu-2-DPO-70B",
@@ -120,12 +128,12 @@
         "License":"AI2 ImpACT Low-risk"
     },
     {
-        "Model":"WizardLM-70B-v1.0",
+        "Model":"GPT-3.5-Turbo-0314",
         "Arena Elo":"1104",
-        "MT-bench":"7.71",
-        "MMLU":"63.7",
-        "Organization":"Microsoft",
-        "License":"Llama 2 Community"
+        "MT-bench":"7.94",
+        "MMLU":"70",
+        "Organization":"OpenAI",
+        "License":"Proprietary"
     },
     {
         "Model":"Vicuna-33B",
@@ -152,27 +160,27 @@
         "License":"Llama 2 Community"
     },
     {
-        "Model":"Llama2-70B-SteerLM-Chat",
-        "Arena Elo":"1078",
+        "Model":"OpenChat-3.5",
+        "Arena Elo":"1077",
+        "MT-bench":"7.81",
+        "MMLU":"64.3",
+        "Organization":"OpenChat",
+        "License":"Apache-2.0"
+    },
+    {
+        "Model":"NV-Llama2-70B-SteerLM-Chat",
+        "Arena Elo":"1077",
         "MT-bench":"7.54",
-        "MMLU":"",
+        "MMLU":"68.5",
         "Organization":"Nvidia",
         "License":"Llama 2 Community"
     },
     {
         "Model":"OpenHermes-2.5-Mistral-7b",
-        "Arena Elo":"1077",
+        "Arena Elo":"1075",
         "MT-bench":"",
         "MMLU":"",
         "Organization":"NousResearch",
-        "License":"Apache-2.0"
-    },
-    {
-        "Model":"OpenChat-3.5",
-        "Arena Elo":"1076",
-        "MT-bench":"7.81",
-        "MMLU":"64.3",
-        "Organization":"OpenChat",
         "License":"Apache-2.0"
     },
     {
@@ -209,7 +217,7 @@
     },
     {
         "Model":"WizardLM-13b-v1.2",
-        "Arena Elo":"1057",
+        "Arena Elo":"1058",
         "MT-bench":"7.2",
         "MMLU":"52.7",
         "Organization":"Microsoft",
@@ -217,7 +225,7 @@
     },
     {
         "Model":"Zephyr-7b-beta",
-        "Arena Elo":"1049",
+        "Arena Elo":"1050",
         "MT-bench":"7.34",
         "MMLU":"61.4",
         "Organization":"HuggingFace",
@@ -249,7 +257,7 @@
     },
     {
         "Model":"Llama-2-13b-chat",
-        "Arena Elo":"1038",
+        "Arena Elo":"1039",
         "MT-bench":"6.65",
         "MMLU":"53.6",
         "Organization":"Meta",
@@ -281,7 +289,7 @@
     },
     {
         "Model":"falcon-180b-chat",
-        "Arena Elo":"1031",
+        "Arena Elo":"1032",
         "MT-bench":"",
         "MMLU":"68",
         "Organization":"TII",
@@ -296,28 +304,36 @@
         "License":"Non-commercial"
     },
     {
-        "Model":"StripedHyena-Nous-7B",
-        "Arena Elo":"1021",
-        "MT-bench":"",
-        "MMLU":"",
-        "Organization":"Together AI",
-        "License":"Apache 2.0"
-    },
-    {
         "Model":"Llama-2-7b-chat",
-        "Arena Elo":"1020",
+        "Arena Elo":"1021",
         "MT-bench":"6.27",
         "MMLU":"45.8",
         "Organization":"Meta",
         "License":"Llama 2 Community"
     },
     {
+        "Model":"StripedHyena-Nous-7B",
+        "Arena Elo":"1017",
+        "MT-bench":"",
+        "MMLU":"",
+        "Organization":"Together AI",
+        "License":"Apache 2.0"
+    },
+    {
         "Model":"Mistral-7B-Instruct-v0.1",
-        "Arena Elo":"1012",
+        "Arena Elo":"1010",
         "MT-bench":"6.84",
         "MMLU":"55.4",
         "Organization":"Mistral",
         "License":"Apache 2.0"
+    },
+    {
+        "Model":"Vicuna-7B",
+        "Arena Elo":"1005",
+        "MT-bench":"6.17",
+        "MMLU":"49.8",
+        "Organization":"LMSYS",
+        "License":"Llama 2 Community"
     },
     {
         "Model":"PaLM-Chat-Bison-001",
@@ -326,14 +342,6 @@
         "MMLU":"",
         "Organization":"Google",
         "License":"Proprietary"
-    },
-    {
-        "Model":"Vicuna-7B",
-        "Arena Elo":"1004",
-        "MT-bench":"6.17",
-        "MMLU":"49.8",
-        "Organization":"LMSYS",
-        "License":"Llama 2 Community"
     },
     {
         "Model":"Koala-13B",
@@ -345,7 +353,7 @@
     },
     {
         "Model":"ChatGLM3-6B",
-        "Arena Elo":"961",
+        "Arena Elo":"960",
         "MT-bench":"",
         "MMLU":"",
         "Organization":"Tsinghua",
@@ -550,5 +558,13 @@
         "MMLU":"42.8",
         "Organization":"h2oai",
         "License":"Apache 2.0"
+    },
+    {
+        "Model":"DeepSeek-LLM-67B-Chat",
+        "Arena Elo":"",
+        "MT-bench":"",
+        "MMLU":"71.3",
+        "Organization":"DeepSeek AI",
+        "License":"DeepSeek License"
     }
 ]

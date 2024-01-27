@@ -1,0 +1,233 @@
+[
+    {
+        "Model":"DEEPINFRA\nmixtral-8x7b",
+        "COST\nIN":"#1\n$0.27\/M",
+        "COST\nOUT":"#1\n$0.27\/M",
+        "RATE LIMIT":"Unlimited",
+        "THROUGHPUT\nP50":"8tks\/s",
+        "THROUGHPUT\nP90":"30tks\/s",
+        "TTFT\nP50":"2.74s",
+        "TTFT\nP90":"4.54s",
+        "Link":"https:\/\/deepinfra.com\/docs"
+    },
+    {
+        "Model":"ABACUS\nmixtral-8x7b",
+        "COST\nIN":"#2\n$0.3\/M",
+        "COST\nOUT":"$1\/M",
+        "RATE LIMIT":"20 RPS",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"33tks\/s",
+        "TTFT\nP50":"2.13s",
+        "TTFT\nP90":"5.17s",
+        "Link":"https:\/\/abacus.ai\/app\/llmapis\/playground"
+    },
+    {
+        "Model":"REPLICATE\nmixtral-8x7b",
+        "COST\nIN":"#2\n$0.3\/M",
+        "COST\nOUT":"$1\/M",
+        "RATE LIMIT":"10 RPS",
+        "THROUGHPUT\nP50":"7tks\/s",
+        "THROUGHPUT\nP90":"29tks\/s",
+        "TTFT\nP50":"3.12s",
+        "TTFT\nP90":"10.55s",
+        "Link":"https:\/\/replicate.com\/docs\/get-started\/python"
+    },
+    {
+        "Model":"FIREWORKS\nmixtral-8x7b",
+        "COST\nIN":"#3\n$0.4\/M",
+        "COST\nOUT":"$1.6\/M",
+        "RATE LIMIT":"100 RPM",
+        "THROUGHPUT\nP50":"29tks\/s",
+        "THROUGHPUT\nP90":"58tks\/s",
+        "TTFT\nP50":"#2\n0.69s",
+        "TTFT\nP90":"3.32s",
+        "Link":"https:\/\/readme.fireworks.ai\/docs\/quickstart"
+    },
+    {
+        "Model":"ANYSCALE\nmixtral-8x7b",
+        "COST\nIN":"$0.5\/M",
+        "COST\nOUT":"#2\n$0.5\/M",
+        "RATE LIMIT":"30 RPS",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"40tks\/s",
+        "TTFT\nP50":"2.7s",
+        "TTFT\nP90":"4.62s",
+        "Link":"https:\/\/docs.endpoints.anyscale.com\/?_gl=1*egjt7v*_ga*MTg2OTk4MjI1MC4xNjk4Mzg3MzA5*_ga_T6EXHYG44V*MTcwNTM1OTQxMi4yNi4xLjE3MDUzNTk0MjIuNTAuMC4xNDU2NDY0ODEz"
+    },
+    {
+        "Model":"DECART\nllama2-70b-chat",
+        "COST\nIN":"$0.5\/M",
+        "COST\nOUT":"#2\n$0.5\/M",
+        "RATE LIMIT":"1M TPM",
+        "THROUGHPUT\nP50":"9tks\/s",
+        "THROUGHPUT\nP90":"14tks\/s",
+        "TTFT\nP50":"3.8s",
+        "TTFT\nP90":"5.38s",
+        "Link":"https:\/\/dashboard.decart.ai\/"
+    },
+    {
+        "Model":"LEPTON\nmixtral-8x7b",
+        "COST\nIN":"$0.5\/M",
+        "COST\nOUT":"#2\n$0.5\/M",
+        "RATE LIMIT":"10 RPM",
+        "THROUGHPUT\nP50":"#2\n35tks\/s",
+        "THROUGHPUT\nP90":"53tks\/s",
+        "TTFT\nP50":"5.02s",
+        "TTFT\nP90":"10.3s",
+        "Link":"https:\/\/www.lepton.ai\/docs\/overview\/quickstart"
+    },
+    {
+        "Model":"PERPLEXITY\nmixtral-8x7b",
+        "COST\nIN":"$0.6\/M",
+        "COST\nOUT":"$1.8\/M",
+        "RATE LIMIT":"12 RPM",
+        "THROUGHPUT\nP50":"16tks\/s",
+        "THROUGHPUT\nP90":"#1\n108tks\/s",
+        "TTFT\nP50":"#3\n0.74s",
+        "TTFT\nP90":"#3\n2.28s",
+        "Link":"https:\/\/docs.perplexity.ai\/docs\/getting-started"
+    },
+    {
+        "Model":"TOGETHER\nmixtral-8x7b",
+        "COST\nIN":"$0.6\/M",
+        "COST\nOUT":"#3\n$0.6\/M",
+        "RATE LIMIT":"100 RPS",
+        "THROUGHPUT\nP50":"#3\n29tks\/s",
+        "THROUGHPUT\nP90":"#3\n68tks\/s",
+        "TTFT\nP50":"1.11s",
+        "TTFT\nP90":"#2\n1.58s",
+        "Link":"https:\/\/docs.together.ai\/docs\/quickstart"
+    },
+    {
+        "Model":"REPLICATE\nllama2-70b-chat",
+        "COST\nIN":"$0.65\/M",
+        "COST\nOUT":"$2.75\/M",
+        "RATE LIMIT":"10 RPS",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"35tks\/s",
+        "TTFT\nP50":"1.79s",
+        "TTFT\nP90":"5.53s",
+        "Link":"https:\/\/replicate.com\/docs\/get-started\/python"
+    },
+    {
+        "Model":"DEEPINFRA\nllama2-70b-chat",
+        "COST\nIN":"$0.7\/M",
+        "COST\nOUT":"$0.9\/M",
+        "RATE LIMIT":"Unlimited",
+        "THROUGHPUT\nP50":"7tks\/s",
+        "THROUGHPUT\nP90":"22tks\/s",
+        "TTFT\nP50":"2.75s",
+        "TTFT\nP90":"5.01s",
+        "Link":"https:\/\/deepinfra.com\/docs"
+    },
+    {
+        "Model":"FIREWORKS\nllama2-70b-chat",
+        "COST\nIN":"$0.7\/M",
+        "COST\nOUT":"$2.8\/M",
+        "RATE LIMIT":"100 RPM",
+        "THROUGHPUT\nP50":"17tks\/s",
+        "THROUGHPUT\nP90":"32tks\/s",
+        "TTFT\nP50":"2.06s",
+        "TTFT\nP90":"2.9s",
+        "Link":"https:\/\/readme.fireworks.ai\/docs\/quickstart"
+    },
+    {
+        "Model":"PERPLEXITY\nllama2-70b-chat",
+        "COST\nIN":"$0.7\/M",
+        "COST\nOUT":"$2.8\/M",
+        "RATE LIMIT":"12 RPM",
+        "THROUGHPUT\nP50":"7tks\/s",
+        "THROUGHPUT\nP90":"30tks\/s",
+        "TTFT\nP50":"0.75s",
+        "TTFT\nP90":"#1\n1.02s",
+        "Link":"https:\/\/docs.perplexity.ai\/docs\/getting-started"
+    },
+    {
+        "Model":"ANTHROPIC\nclaude-instant-1.2",
+        "COST\nIN":"$0.8\/M",
+        "COST\nOUT":"$2.4\/M",
+        "RATE LIMIT":"Customized",
+        "THROUGHPUT\nP50":"#1\n94tks\/s",
+        "THROUGHPUT\nP90":"#2\n97tks\/s",
+        "TTFT\nP50":"#1\n0.58s",
+        "TTFT\nP90":"3.63s",
+        "Link":"https:\/\/docs.anthropic.com\/claude\/reference\/getting-started-with-the-api"
+    },
+    {
+        "Model":"LEPTON\nllama2-70b-chat",
+        "COST\nIN":"$0.8\/M",
+        "COST\nOUT":"$0.8\/M",
+        "RATE LIMIT":"10 RPM",
+        "THROUGHPUT\nP50":"19tks\/s",
+        "THROUGHPUT\nP90":"38tks\/s",
+        "TTFT\nP50":"5.12s",
+        "TTFT\nP90":"8.39s",
+        "Link":"https:\/\/www.lepton.ai\/docs\/overview\/quickstart"
+    },
+    {
+        "Model":"TOGETHER\nllama2-70b-chat",
+        "COST\nIN":"$0.9\/M",
+        "COST\nOUT":"$0.9\/M",
+        "RATE LIMIT":"100 RPS",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"37tks\/s",
+        "TTFT\nP50":"1.43s",
+        "TTFT\nP90":"3.44s",
+        "Link":"https:\/\/docs.together.ai\/docs\/quickstart"
+    },
+    {
+        "Model":"ANYSCALE\nllama2-70b-chat",
+        "COST\nIN":"$1\/M",
+        "COST\nOUT":"$1\/M",
+        "RATE LIMIT":"30 RPS",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"37tks\/s",
+        "TTFT\nP50":"3.34s",
+        "TTFT\nP90":"7.37s",
+        "Link":"https:\/\/docs.endpoints.anyscale.com\/?_gl=1*egjt7v*_ga*MTg2OTk4MjI1MC4xNjk4Mzg3MzA5*_ga_T6EXHYG44V*MTcwNTM1OTQxMi4yNi4xLjE3MDUzNTk0MjIuNTAuMC4xNDU2NDY0ODEz"
+    },
+    {
+        "Model":"OPENAI\ngpt-3.5-turbo",
+        "COST\nIN":"$1\/M",
+        "COST\nOUT":"$2\/M",
+        "RATE LIMIT":"10K RPM",
+        "THROUGHPUT\nP50":"15tks\/s",
+        "THROUGHPUT\nP90":"64tks\/s",
+        "TTFT\nP50":"1.74s",
+        "TTFT\nP90":"3.18s",
+        "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
+    },
+    {
+        "Model":"ANTHROPIC\nclaude-2.1",
+        "COST\nIN":"$8\/M",
+        "COST\nOUT":"$24\/M",
+        "RATE LIMIT":"Customized",
+        "THROUGHPUT\nP50":"14tks\/s",
+        "THROUGHPUT\nP90":"16tks\/s",
+        "TTFT\nP50":"0.79s",
+        "TTFT\nP90":"7.24s",
+        "Link":"https:\/\/docs.anthropic.com\/claude\/reference\/getting-started-with-the-api"
+    },
+    {
+        "Model":"OPENAI\ngpt-4-turbo",
+        "COST\nIN":"$10\/M",
+        "COST\nOUT":"$30\/M",
+        "RATE LIMIT":"10K RPM",
+        "THROUGHPUT\nP50":"8tks\/s",
+        "THROUGHPUT\nP90":"17tks\/s",
+        "TTFT\nP50":"3.35s",
+        "TTFT\nP90":"5.3s",
+        "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
+    },
+    {
+        "Model":"OPENAI\ngpt-4",
+        "COST\nIN":"$30\/M",
+        "COST\nOUT":"$60\/M",
+        "RATE LIMIT":"10K RPM",
+        "THROUGHPUT\nP50":"9tks\/s",
+        "THROUGHPUT\nP90":"13tks\/s",
+        "TTFT\nP50":"3.25s",
+        "TTFT\nP90":"4.24s",
+        "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
+    }
+]
