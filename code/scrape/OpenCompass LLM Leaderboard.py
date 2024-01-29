@@ -13,7 +13,7 @@ def name_process(name, filter_keywords = []):
     name = name.replace('-', '_')
     return name
 
-folder = 'Large Language Model Leaderboard'
+folder = 'OpenCompass LLM Leaderboard (v2)'
 path_leaderboard = Path(f"data/{folder}")
 
 if __name__ == '__main__':

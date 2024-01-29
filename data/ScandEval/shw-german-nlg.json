@@ -1,0 +1,38 @@
+[
+    {
+        "rank":1,
+        "model_id":"gpt-3.5-turbo-0613 (few-shot, val)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":100,
+        "max_sequence_length":4095,
+        "speed":1344,
+        "score":51.56,
+        "de_score":51.56,
+        "germeval":61.5,
+        "sb10k":55.5,
+        "scala_de":38.96,
+        "germanquad":30.2,
+        "mlsum":64.9,
+        "mmlu_de":35.39,
+        "arc_de":70.58,
+        "hellaswag_de":56.88
+    },
+    {
+        "rank":2,
+        "model_id":"mistralai\/Mistral-7B-v0.1 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":2657,
+        "score":42.69,
+        "de_score":42.69,
+        "germeval":55.37,
+        "sb10k":54.27,
+        "scala_de":23.12,
+        "germanquad":22.94,
+        "mlsum":68.72,
+        "mmlu_de":35.63,
+        "arc_de":60.46,
+        "hellaswag_de":26.4
+    }
+]
