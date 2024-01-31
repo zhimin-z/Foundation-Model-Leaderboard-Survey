@@ -6,11 +6,11 @@ import json
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-path_leaderboard = Path("data/Open LLM Leaderboard")
+path_leaderboard = Path("data/HHEM Leaderboard")
 
 
 def get_json_format_data():
-    url = 'https://huggingfaceh4-open-llm-leaderboard.hf.space'
+    url = 'https://vectara-leaderboard.hf.space/'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
@@ -27,7 +27,7 @@ def get_datas(data):
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
                     try:
-                        results_json = {"T": results[0], "Model": results[-1], "Average": results[2], "ARC": results[3], "HellaSwag": results[4], "MMLU": results[5], "TruthfulQA": results[6], "Winogrande": results[7], "GSM8K": results[8], "Type": results[9], "Architecture": results[10], "Precision": results[11], "Hub License": results[12], "#Params (B)": results[13], "Hub": results[14], "Available on the Hub": results[15], "Model Sha": results[16]}
+                        results_json = {"T": results[0], "Model": results[-1], "Model Hallucination Rate (%)": results[2][0], "Factual Consistency Rate (%)": results[3][0], "Answer Rate (%)": results[4][0], "Average Summary Length": results[5][0], "Type": results[6], "Architecture": results[7], "Precision": results[8], "Hub License": results[9], "#Params (B)": results[10], "Hub": results[11], "Available on the hub": results[12], "Model sha": results[13]}
                     except IndexError:  # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)

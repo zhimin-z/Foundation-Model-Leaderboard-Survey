@@ -55,8 +55,6 @@ if __name__ == '__main__':
                     column_name = column.get_attribute('aria-label')
                 else:
                     continue
-                #     span_element = column.find_element(By.XPATH, './/span[@class="ant-table-column-title"]')
-                #     column_name = span_element.text or span_element.find_element(By.XPATH, './span').text
                 column_names.append(column_name)
             column_names.extend(column_names_extra)
         df = []

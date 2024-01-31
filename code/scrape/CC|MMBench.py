@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
 
-from pathlib import Path
-
 def name_process(name, filter_keywords = []):
     name = name.lower()
     for keyword in filter_keywords:
@@ -13,9 +11,6 @@ def name_process(name, filter_keywords = []):
     name = name.replace('-', '_')
     return name
 
-folder = 'MMBench'
-path_leaderboard = Path(f"data/{folder}")
-
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
@@ -24,6 +19,7 @@ if __name__ == '__main__':
     driver.get(base_url)
     
     for index, benchmark_name in enumerate(driver.find_elements(By.XPATH, '//div[@class="ant-tabs-tab-btn"]')):
+        path_leaderboard = "data/MMBench"
         benchmark_name.click()
         benchmark = driver.find_elements(By.XPATH, '//div[@class="_table_8bhzs_28"]')[index]
         table_names = benchmark.find_elements(By.XPATH, './/div[@class="_table-title_8bhzs_33"]')
@@ -42,5 +38,7 @@ if __name__ == '__main__':
                 df.append(pd.Series(entry_values, index=column_names))
             df = pd.DataFrame(df)
             df.rename(columns={'Method': 'Model'}, inplace=True)
-            df.to_json(path_leaderboard / f"shw-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
+            if 'ccbench' in benchmark_name.text.lower():
+                path_leaderboard = "data/CCBench"
+            df.to_json(f"{path_leaderboard}/shw-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
                 
