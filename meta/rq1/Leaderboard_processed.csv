@@ -31,7 +31,7 @@ C-Eval Hard,,[],['Chinese'],[],['Text'],[['GitHub']],[],['Preprint'],"['Shanghai
 CanAiCode Leaderboard,,[],['English'],['Domain Task'],"['Text', 'Code']",[['HuggingFace']],['hf'],[],['Independent Contributor'],['Evaluation Result'],['Pull Request']
 CB,,[],['English'],[],['Text'],[['PapersWithCode']],[],['Sinn und Bedeutung'],[],[],[]
 CCBench,2,[],['Chinese'],['Model Accessibility'],"['Text', 'Image']","[['HuggingFace', 'Self-hosted website']]","['hf', 'shw']",['Preprint'],"['Shanghai AI Laboratory', 'Nanyang Technological University', 'Chinese University of Hong Kong', 'National University of Singapore', 'Zhejiang University']",['Evaluation Result'],['Submission Portal']
-CCEval,,[],['English'],"['Domain Task', 'Evaluation Metrics']","['Text', 'Code']",[['GitHub']],[],['NeurIPS'],"['Columbia University', 'Amazon AWS AI Lab']",[],[]
+CCEval,,"['Contact', 'Issue']",['English'],['Domain Task'],"['Text', 'Code']","[['GitHub'], ['Self-hosted website']]",[],['NeurIPS'],"['Columbia University', 'Amazon AWS AI Lab']",[],[]
 CG-Eval,,"['Contact', 'Issue']",['Chinese'],[],['Text'],[['Self-hosted website']],['shw'],['Preprint'],"['Besteasy', 'LanguageX AI Lab']",['Evaluation Result'],['Submission Portal']
 Charades,,[],['English'],[],"['Text', 'Video']",[['PapersWithCode']],[],['ECCV'],[],[],[]
 ChartQA,,[],['English'],[],"['Text', 'Image']",[['PapersWithCode']],[],['ACL'],[],[],[]
@@ -47,7 +47,6 @@ CMB,,"['Contact', 'Issue']",['Chinese'],['Domain Task'],['Text'],[['Self-hosted 
 CMMLU,,[],['Chinese'],['#Prompt Example'],['Text'],[['GitHub']],['gh'],['Preprint'],"['Mohamed bin Zayed University of Artificial Intelligence', 'Shanghai Jiao Tong University', 'Microsoft Research Asia', 'University of Melbourne']",['Evaluation Result'],"['Email', 'Pull Request']"
 CMMMU,,[],['Chinese'],['Task Modality'],['Text'],[['GitHub']],[],['Preprint'],"['Multimodal Art Projection Research Community', 'Hong Kong University of Science and Technology', 'University of Waterloo', 'Chinese Academy of Sciences', 'University of Chinese Academy of Sciences', 'Peking University', 'Hong Kong Polytechnic University', 'Waseda University', 'University of Manchester', '01.AI']",[],[]
 CNN DM,,[],['English'],[],['Text'],[['PapersWithCode']],[],['CoNLL'],[],[],[]
-Coding LLMs Leaderboard,,"['Contact', 'Issue']",['English'],['Model Type'],"['Text', 'Code']",[['Self-hosted website']],[],[],['Tabby'],[],[]
 CoLA,,[],['English'],[],['Text'],[['PapersWithCode']],[],['TACL'],[],[],[]
 Colossal-AI,,[],"['English', 'Chinese']",[],['Text'],[['GitHub']],[],[],['HPC-AI Tech'],[],[]
 CoNaLa,,[],['English'],[],"['Text', 'Code']",[['PapersWithCode']],[],['MSR'],[],[],[]
@@ -64,6 +63,7 @@ DocVQA,,['Contact'],['English'],[],"['Text', 'Image']","[['PapersWithCode'], ['S
 DROP,,[],['English'],[],['Text'],[['PapersWithCode']],[],['NAACL'],[],[],[]
 DS-1000,,[],['English'],[],"['Text', 'Code']",[['GitHub']],['gh'],['PMLR'],"['University of Hong Kong', 'Peking University', 'Stanford University', 'University of California Berkeley', 'University of Washington', 'Meta', 'Carnegie Mellon University']",[],[]
 DyVal,,[],['English'],"['Evaluation Aggregation', 'Model Capability']",['Text'],[['GitHub']],[],['Preprint'],"['Microsoft', 'Georgia Institute of Technology', 'Duke University', 'Stanford University']",[],[]
+EQ-Bench (v2),,"['Contact', 'Issue']",['English'],[],['Text'],[['Self-hosted website']],['shw'],['Preprint'],['Independent Contributor'],[],[]
 EvalPlus,,[],['English'],"['Evaluation Aggregation', 'Evaluation Benchmark']","['Text', 'Code']",[['GitHub']],['gh'],['NeurIPS'],"['University of Illinois Urbana-Champaign', 'Nanjing University']","['Inference API', 'Model Repository']",['Issue']
 FacTool,,[],['English'],[],"['Text', 'Code']",[['GitHub']],[],['Preprint'],"['Shanghai Jiao Tong University', 'Carnegie Mellon University', 'City University of Hong Kong', 'New York University', 'Meta', 'Hong Kong University of Science and Technology', 'Shanghai AI Laboratory']",[],[]
 FActScore,,[],['English'],[],['Text'],[['GitHub']],['gh'],['EMNLP'],"['University of Washington', 'University of Massachusetts Amherst', 'Allen Institute for AI', 'Meta']",[],[]
@@ -160,6 +160,7 @@ Natural Instructions (v2),,[],['English'],[],['Text'],[['Allen Institute for AI'
 NExT-QA,,[],['English'],[],"['Text', 'Video']",[['PapersWithCode']],[],['CVPR'],[],[],[]
 NoCaps,,[],['English'],[],"['Text', 'Image']",[['PapersWithCode']],[],['ICCV'],[],[],[]
 NQ,,[],['English'],[],['Text'],[['PapersWithCode']],[],['TACL'],[],[],[]
+OCRBench,,[],['English'],[],"['Text', 'Image']","[['HuggingFace', 'Self-hosted website']]",['hf'],['Preprint'],"['Huazhong University of Science and Technology', 'Microsoft', 'University of Science and Technology Beijing', 'Chinese Academy of Sciences', 'South China University of Technology']",['Evaluation Result'],['Email']
 ODEX,,[],"['English', ' Spanish', 'Japanese', 'Russian']",[],"['Text', 'Code']",[['GitHub']],[],['Preprint'],"['Carnegie Mellon University', 'Inspired Cognition']",[],[]
 OK-VQA,,[],['English'],[],"['Text', 'Image']",[['PapersWithCode']],[],['CVPR'],[],[],[]
 OmniBenchmark,,[],['English'],[],"['Text', 'Image']",[['PapersWithCode']],[],['ECCV'],[],[],[]
@@ -214,7 +215,7 @@ SummEdits,,[],['English'],[],['Text'],[['GitHub']],[],['Preprint'],['Salesforce'
 SuperCLUE,,[],['Chinese'],"['Domain Task', 'Evaluation Aggregation', 'Model Capability', 'Model Accessibility', 'Release Date']",['Text'],"[['GitHub', 'Self-hosted website']]",[],['Preprint'],"['CLUE', 'Westlake University']",['Contact'],"['Email', 'WeChat']"
 SuperCLUE-Agent,,[],['Chinese'],"['Domain Task', 'Evaluation Aggregation', 'Model Capability']",['Text'],"[['GitHub', 'Self-hosted website']]",[],[],['CLUE'],['Contact'],"['Email', 'WeChat']"
 SuperCLUE-Auto,,[],['Chinese'],"['Domain Task', 'Evaluation Aggregation']",['Text'],"[['GitHub', 'Self-hosted website']]",[],[],['CLUE'],['Contact'],"['Email', 'WeChat']"
-SuperCLUE-Math6,,[],['Chinese'],"['Evaluation Benchmark', 'Evaluation Metrics']",['Text'],"[['GitHub', 'Self-hosted website']]",[],['Preprint'],['CLUE'],['Contact'],"['Questionaire', 'WeChat']"
+SuperCLUE-Math6,,[],['Chinese'],"['Evaluation Benchmark', 'Evaluation Metrics']",['Text'],"[['GitHub', 'Self-hosted website']]",[],['Preprint'],['CLUE'],['Contact'],"['Email', 'Questionaire', 'WeChat']"
 SuperCLUE-Safety,,[],['Chinese'],"['Domain Task', 'Evaluation Aggregation']",['Text'],"[['GitHub', 'Self-hosted website']]",[],['Preprint'],['CLUE'],['Contact'],"['Email', 'WeChat']"
 SuperCLUEgkzw,,[],['Chinese'],[],['Text'],[['GitHub']],[],[],['CLUE'],['Contact'],"['Email', 'WeChat']"
 SuperCLUElyb,,[],['Chinese'],[],['Text'],[['GitHub']],[],[],['CLUE'],"['Inference API', 'Model Repository']",['Questionaire']
