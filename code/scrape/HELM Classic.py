@@ -38,7 +38,7 @@ def scrape_data(driver, url, path_leaderboard, checkpoint):
     driver.get(url)
     select = Select(driver.find_element(
         By.XPATH, '//select[@name="group" and @id="group"]'))
-    for option in select.options:
+    for option in select.options[::-1]:
         if not checkpoint:
             select.select_by_visible_text(option.text)
             time.sleep(1)
