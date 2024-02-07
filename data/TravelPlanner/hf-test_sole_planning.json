@@ -1,0 +1,98 @@
+[
+    {
+        "Model":"human",
+        "Tool-use Strategy":"human",
+        "Planning Strategy":"human",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":100.0,
+        "Commonsense Constraint Micro Pass Rate":100.0,
+        "Commonsense Constraint Macro Pass Rate":100.0,
+        "Hard Constraint Micro Pass Rate":100.0,
+        "Hard Constraint Macro Pass Rate":100.0,
+        "Final Pass Rate":100.0
+    },
+    {
+        "Model":"gpt-4-1106-preview",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"Direct",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":100.0,
+        "Commonsense Constraint Micro Pass Rate":80.55,
+        "Commonsense Constraint Macro Pass Rate":15.2,
+        "Hard Constraint Micro Pass Rate":44.28,
+        "Hard Constraint Macro Pass Rate":23.1,
+        "Final Pass Rate":4.4
+    },
+    {
+        "Model":"Gemini Pro",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"Direct",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":93.7,
+        "Commonsense Constraint Micro Pass Rate":64.7,
+        "Commonsense Constraint Macro Pass Rate":7.9,
+        "Hard Constraint Micro Pass Rate":10.57,
+        "Hard Constraint Macro Pass Rate":4.7,
+        "Final Pass Rate":2.1
+    },
+    {
+        "Model":"gpt-3.5-turbo-1106",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"ReAct",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":81.6,
+        "Commonsense Constraint Micro Pass Rate":45.85,
+        "Commonsense Constraint Macro Pass Rate":2.5,
+        "Hard Constraint Micro Pass Rate":10.66,
+        "Hard Constraint Macro Pass Rate":3.1,
+        "Final Pass Rate":0.7
+    },
+    {
+        "Model":"Mixtral-8\u00d77B-MoE",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"Direct",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":99.3,
+        "Commonsense Constraint Micro Pass Rate":67.03,
+        "Commonsense Constraint Macro Pass Rate":3.7,
+        "Hard Constraint Micro Pass Rate":3.93,
+        "Hard Constraint Macro Pass Rate":1.6,
+        "Final Pass Rate":0.7
+    },
+    {
+        "Model":"gpt-3.5-turbo-1106",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"Direct",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":100.0,
+        "Commonsense Constraint Micro Pass Rate":59.49,
+        "Commonsense Constraint Macro Pass Rate":2.7,
+        "Hard Constraint Micro Pass Rate":9.48,
+        "Hard Constraint Macro Pass Rate":4.4,
+        "Final Pass Rate":0.6
+    },
+    {
+        "Model":"gpt-3.5-turbo-1106",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"Reflexion",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":92.1,
+        "Commonsense Constraint Micro Pass Rate":52.05,
+        "Commonsense Constraint Macro Pass Rate":2.2,
+        "Hard Constraint Micro Pass Rate":9.91,
+        "Hard Constraint Macro Pass Rate":3.8,
+        "Final Pass Rate":0.6
+    },
+    {
+        "Model":"gpt-3.5-turbo-1106",
+        "Tool-use Strategy":"-",
+        "Planning Strategy":"CoT",
+        "Organization":"TravelPlanner Team",
+        "Delivery Rate":100.0,
+        "Commonsense Constraint Micro Pass Rate":64.38,
+        "Commonsense Constraint Macro Pass Rate":2.3,
+        "Hard Constraint Micro Pass Rate":9.83,
+        "Hard Constraint Macro Pass Rate":3.8,
+        "Final Pass Rate":0.4
+    }
+]
