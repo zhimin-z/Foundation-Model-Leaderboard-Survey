@@ -4,13 +4,6 @@ import pandas as pd
 
 path_leaderboard = "data/TrustLLM"
 
-
-# def prepcess_name(s):
-#     s = s.lower()
-#     s = s.replace('leaderboard - ', '')
-#     s = s.replace(' ', '_')
-#     return s
-
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
