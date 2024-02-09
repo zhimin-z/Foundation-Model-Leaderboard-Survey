@@ -1,7 +1,6 @@
 import pandas as pd
 import requests
 import json
-import re
 
 from pathlib import Path
 from bs4 import BeautifulSoup
