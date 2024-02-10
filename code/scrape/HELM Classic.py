@@ -8,6 +8,7 @@ import os
 
 path_leaderboard = "data/HELM Classic"
 url = 'https://crfm.stanford.edu/helm/classic/latest/#/leaderboard'
+leaderboard_excluded = ['general information']
 
 
 def preprocess_name(s):
@@ -77,6 +78,8 @@ def scrape_data(driver, url, path_leaderboard, checkpoint):
 
 
 def process_table(driver, group_name, table_name, path_leaderboard):
+    if group_name.lower() in leaderboard_excluded:
+        return
     table = driver.find_element(
         By.XPATH, f'//table[@class="table w-full px-4"]')
     column_names = [column.text for column in table.find_elements(
