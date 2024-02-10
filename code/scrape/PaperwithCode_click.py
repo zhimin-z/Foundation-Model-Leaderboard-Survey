@@ -4,7 +4,8 @@ import undetected_chromedriver as uc
 import time
 import re
 
-dataset = 'imagenet'
+max_page = -1
+dataset = 'common-voice'
 
 if __name__ == '__main__':
     chrome_options = Options()
@@ -23,7 +24,8 @@ if __name__ == '__main__':
         link = f'{base_url}{match}'
         leaderboard_links.append(link)
 
-    for url in leaderboard_links:
+    max_page = len(leaderboard_links) if max_page == -1 else max_page
+    for url in leaderboard_links[:max_page]:
         driver.execute_script(f"window.open('{url}');")
     
     time.sleep(100000)

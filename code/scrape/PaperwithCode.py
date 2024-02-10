@@ -19,13 +19,13 @@ if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     
-    included_links = []
+    included_leaderboards = []
     leaderboard_links = []
     community_indicator = ''
     base_url = 'https://paperswithcode.com'
     
-    if included_links:
-        for match in included_links:
+    if included_leaderboards:
+        for match in included_leaderboards:
             link = f'{base_url}/sota/{match}'
             leaderboard_links.append(link)
     else:
