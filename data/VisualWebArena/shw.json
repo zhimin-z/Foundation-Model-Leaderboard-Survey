@@ -1,0 +1,142 @@
+[
+    {
+        "Model Type":"Text-only",
+        "Model":"LLaMA-2-70B",
+        "Visual Backbone":null,
+        "Inputs":"Accessibility Tree",
+        "Success Rate":"1.10%"
+    },
+    {
+        "Model Type":"Text-only",
+        "Model":"Mixtral-8x7B",
+        "Visual Backbone":null,
+        "Inputs":"Accessibility Tree",
+        "Success Rate":"1.76%"
+    },
+    {
+        "Model Type":"Text-only",
+        "Model":"Gemini-Pro",
+        "Visual Backbone":null,
+        "Inputs":"Accessibility Tree",
+        "Success Rate":"2.20%"
+    },
+    {
+        "Model Type":"Text-only",
+        "Model":"GPT-3.5",
+        "Visual Backbone":null,
+        "Inputs":"Accessibility Tree",
+        "Success Rate":"2.20%"
+    },
+    {
+        "Model Type":"Text-only",
+        "Model":"GPT-4",
+        "Visual Backbone":null,
+        "Inputs":"Accessibility Tree",
+        "Success Rate":"7.25%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"LLaMA-2-70B",
+        "Visual Backbone":"BLIP-2-T5XL",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"0.66%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"Mixtral-8x7B",
+        "Visual Backbone":"BLIP-2-T5XL",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"1.87%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"GPT-3.5",
+        "Visual Backbone":"LLaVA-7B",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"2.75%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"GPT-3.5",
+        "Visual Backbone":"BLIP-2-T5XL",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"2.97%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"Gemini-Pro",
+        "Visual Backbone":"BLIP-2-T5XL",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"3.85%"
+    },
+    {
+        "Model Type":"Caption-augmented",
+        "Model":"GPT-4",
+        "Visual Backbone":"BLIP-2-T5XL",
+        "Inputs":"Accessibility Tree + Captions",
+        "Success Rate":"12.75%"
+    },
+    {
+        "Model Type":"Multimodal",
+        "Model":"IDEFICS-80B-Instruct",
+        "Visual Backbone":"IDEFICS-80B-Instruct",
+        "Inputs":"Image + Captions + Accessibility Tree",
+        "Success Rate":"0.77%"
+    },
+    {
+        "Model Type":"Multimodal",
+        "Model":"CogVLM",
+        "Visual Backbone":"CogVLM",
+        "Inputs":"Image + Captions + Accessibility Tree",
+        "Success Rate":"0.33%"
+    },
+    {
+        "Model Type":"Multimodal",
+        "Model":"Gemini-Pro",
+        "Visual Backbone":"Gemini-Pro",
+        "Inputs":"Image + Captions + Accessibility Tree",
+        "Success Rate":"6.04%"
+    },
+    {
+        "Model Type":"Multimodal",
+        "Model":"GPT-4V",
+        "Visual Backbone":"GPT-4V",
+        "Inputs":"Image + Captions + Accessibility Tree",
+        "Success Rate":"15.05%"
+    },
+    {
+        "Model Type":"Multimodal (SoM)",
+        "Model":"IDEFICS-80B-Instruct",
+        "Visual Backbone":"IDEFICS-80B-Instruct",
+        "Inputs":"Image + Captions + SoM",
+        "Success Rate":"0.99%"
+    },
+    {
+        "Model Type":"Multimodal (SoM)",
+        "Model":"CogVLM",
+        "Visual Backbone":"CogVLM",
+        "Inputs":"Image + Captions + SoM",
+        "Success Rate":"0.33%"
+    },
+    {
+        "Model Type":"Multimodal (SoM)",
+        "Model":"Gemini-Pro",
+        "Visual Backbone":"Gemini-Pro",
+        "Inputs":"Image + Captions + SoM",
+        "Success Rate":"5.71%"
+    },
+    {
+        "Model Type":"Multimodal (SoM)",
+        "Model":"GPT-4V",
+        "Visual Backbone":"GPT-4V",
+        "Inputs":"Image + Captions + SoM",
+        "Success Rate":"16.37%"
+    },
+    {
+        "Model Type":"Human Performance",
+        "Model":"-",
+        "Visual Backbone":"-",
+        "Inputs":"Webpage",
+        "Success Rate":"88.70%"
+    }
+]

@@ -1,4 +1,4 @@
-Leaderboard name,#Empty multi-scenario leaderboards (non-pwc),Feedback manners (ihw-only),Leaderboard segmentation criteria (non-pwc),Host platforms,Host platforms with model linkage (non-template),Publishers (non-template),Publication venues,Submission artifacts (non-template),Submission channels (non-template),Supported languages,Task modalities
+Leaderboard name,#Empty multi-scenario leaderboards (non-pwc),Feedback manners (ihw-only),Leaderboard organization strategies (non-pwc),Host platforms,Host platforms with model linkage (non-template),Publishers (non-template),Publication venues,Submission artifacts (non-template),Submission channels (non-template),Supported languages,Task modalities
 a-NLI,,,,ai2,,,ICLR,,,English,Text
 A-OKVQA,,,,"ai2,pwc",,,ECCV,,,English,"Text,Image"
 ActivityNet,,,,pwc,,,CVPR,,,English,"Text,Video"
@@ -10,7 +10,7 @@ AI2D,,,,pwc,,,ECCV,,,English,"Text,Image"
 AISHELL-1,,,,pwc,,,O-COCOSDA,,,English,"Text,Audio"
 AlignBench,,,Evaluator,gh_ihw,,"Tsinghua University,Zhipu AI,Renmin University of China,Sichuan University,Lehigh University",Preprint,Evaluation Results,Submission Portal,Chinese,Text
 AlpacaEval (v2),,,Leaderboard Version,gh,gh,Stanford University,,Evaluation Results,Pull Request,English,Text
-ANGO,,,Model Functionality,hf,,Independent Contributor,Preprint,Evaluation Results,Pull Request,Chinese,Text
+ANGO,,,Supported Functionality,hf,,Independent Contributor,Preprint,Evaluation Results,Pull Request,Chinese,Text
 ANLI,,,,"gh,pwc",gh,"University of North Carolina Chapel Hill,Meta",ACL,,,English,Text
 APPS,,,,pwc,,,NeurIPS,,,English,"Text,Code"
 ARC,,,,"ai2,pwc",,,Preprint,,,"English,Chinese",Text
@@ -19,7 +19,7 @@ AVA,,,,pwc,,,CVPR,,,English,"Text,Video"
 BANKING77,,,,pwc,,,NLP4ConvAI,,,English,Text
 BBH,,,,pwc,,,Preprint,,,English,"Text,Image"
 BEIR,,,,pwc,,,NeurIPS,,,English,Text
-BenchLMM,,,Domain-specific Task,"gh,pwc",,"Nanyang Technological University,University of Technology Sydney,Northeastern University,Mohamed bin Zayed University of Artificial Intelligence,Zhejiang University",Preprint,,,English,"Text,Image"
+BenchLMM,,,Task,"gh,pwc",,"Nanyang Technological University,University of Technology Sydney,Northeastern University,Mohamed bin Zayed University of Artificial Intelligence,Zhejiang University",Preprint,,,English,"Text,Image"
 Big Code Models Leaderboard,,,,hf,hf,BigCode,,Evaluation Results,Pull Request,English,"Text,Code"
 BIG-Bench,,,,pwc,,,Preprint,,,English,"Text,Code,Image"
 BioASQ,,,,pwc,,,AAAI,,,English,Text
@@ -28,22 +28,22 @@ BoolQ,,,,pwc,,,NAACL,,,English,Text
 BotChat,,,,gh,gh,"Shanghai AI Laboratory,Fudan University,Shanghai Jiao Tong University,Chinese University of Hong Kong",Preprint,,,English,Text
 C-Eval,,,"Evaluation Dataset,Model Accessibility",gh_ihw,"gh,ihw","Shanghai Jiao Tong University,Tsinghua University,University of Edinburgh,Hong Kong University of Science and Technology",Preprint,Evaluation Results,Submission Portal,Chinese,Text
 C-Eval Hard,,,,gh,,"Shanghai Jiao Tong University,Tsinghua University,University of Edinburgh,Hong Kong University of Science and Technology",Preprint,,,Chinese,Text
-CanAiCode Leaderboard,,,Domain-specific Task,hf,hf,Independent Contributor,,Evaluation Results,Pull Request,English,"Text,Code"
+CanAiCode Leaderboard,,,Task,hf,hf,Independent Contributor,,Evaluation Results,Pull Request,English,"Text,Code"
 CB,,,,pwc,,,Sinn und Bedeutung,,,English,Text
 CCBench,2,,Model Accessibility,hf_ihw,"hf,ihw","Shanghai AI Laboratory,Nanyang Technological University,Chinese University of Hong Kong,National University of Singapore,Zhejiang University",Preprint,Evaluation Results,Submission Portal,Chinese,"Text,Image"
-CCEval,,"Contact,Issue",Domain-specific Task,"gh,ihw",,"Columbia University,Amazon AWS AI Lab",NeurIPS,,,English,"Text,Code"
+CCEval,,"Contact,Issue",Task,"gh,ihw",,"Columbia University,Amazon AWS AI Lab",NeurIPS,,,English,"Text,Code"
 CG-Eval,,"Contact,Issue",,ihw,ihw,"Besteasy,LanguageX AI Lab",Preprint,Evaluation Results,Submission Portal,Chinese,Text
 Charades,,,,pwc,,,ECCV,,,English,"Text,Video"
 ChartQA,,,,pwc,,,ACL,,,English,"Text,Image"
 Chatbot Arena Leaderboard,,,Evaluation Metrics,hf_ihw,"hf,ihw","University of California Berkeley,University of California San Diego,Carnegie Mellon University,Stanford University,Mohamed bin Zayed University of Artificial Intelligence",Preprint,,,English,Text
-ChEF,,,"Model Functionality,Model Accessibility,Supported Modality",gh,,"Shanghai AI Laboratory,Beihang University,University of Sydney",Preprint,,,English,"Text,Image"
+ChEF,,,"Supported Functionality,Model Accessibility,Supported Modality",gh,,"Shanghai AI Laboratory,Beihang University,University of Sydney",Preprint,,,English,"Text,Image"
 ChineseFactEval,,,,gh,,"Shanghai Jiao Tong University,Shanghai AI Laboratory",Preprint,,,English,Text
 CIFAR-10,,,,pwc,,,Preprint,,,English,"Text,Image"
 Civil Comments,,,,pwc,,,,,,English,Text
-CLEVA,,"Contact,Issue",Model Functionality,ihw,,"Chinese University of Hong Kong,Shanghai AI Laboratory",EMNLP,Inference API,Questionaire,English,"Text,Code"
-CLiB,,,"Aggregated Result,Model Functionality,Model Size",gh,,Independent Contributor,,,,Chinese,Text
+CLEVA,,"Contact,Issue",Supported Functionality,ihw,,"Chinese University of Hong Kong,Shanghai AI Laboratory",EMNLP,Inference API,Questionaire,English,"Text,Code"
+CLiB,,,"Aggregated Result,Supported Functionality,Model Size",gh,,Independent Contributor,,,,Chinese,Text
 CLUE,,,,pwc,,,COLING,,,Chinese,Text
-CMB,,"Contact,Issue",Domain-specific Task,ihw,,"Chinese University of Hong Kong,Shenzhen Research Institute of Big Data",Preprint,Evaluation Results,Submission Portal,Chinese,Text
+CMB,,"Contact,Issue",Task,ihw,,"Chinese University of Hong Kong,Shenzhen Research Institute of Big Data",Preprint,Evaluation Results,Submission Portal,Chinese,Text
 CMMLU,,,#Prompt Example,gh,gh,"Mohamed bin Zayed University of Artificial Intelligence,Shanghai Jiao Tong University,Microsoft Research Asia,University of Melbourne",Preprint,Evaluation Results,"Email,Pull Request",Chinese,Text
 CMMMU,,,Supported Modality,gh,,"Multimodal Art Projection Research Community,Hong Kong University of Science and Technology,University of Waterloo,Chinese Academy of Sciences,University of Chinese Academy of Sciences,Peking University,Hong Kong Polytechnic University,Waseda University,University of Manchester,01.AI",Preprint,,,Chinese,Text
 CNN DM,,,,pwc,,,CoNLL,,,English,Text
@@ -55,7 +55,7 @@ CoQA,,,,pwc,,,TACL,,,English,Text
 CORE-MM,,,,gh_pwc,,ByteDance,Preprint,Evaluation Results,Email,English,"Text,Image"
 CosmosQA,,,,ai2,,,EMNLP,,,English,Text
 CrowS-Pairs,,,,pwc,,,EMNLP,,,English,Text
-CRUXEval,,,Domain-specific Task,gh,gh,"Massachusetts Institute of Technology,Meta",Preprint,,,English,"Text,Code"
+CRUXEval,,,Task,gh,gh,"Massachusetts Institute of Technology,Meta",Preprint,,,English,"Text,Code"
 CSQA (v2),,,,ai2,,,NAACL,,,English,Text
 DecodingTrust,,,,"gh,hf",,"University of Illinois Urbana Champaign,Stanford University,University of California Berkeley,Center for AI Safety,Microsoft,Chinese University of Hong Kong",NeurIPS,Model Repository,Submission Portal,English,Text
 DiDeMo,,,,pwc,,,ICCV,,,English,"Text,Video"
@@ -63,7 +63,7 @@ Do-Not-Answer,,,,gh,,"LibrAI,Mohamed bin Zayed University of Artificial Intellig
 DocVQA,,Contact,,"pwc,ihw",ihw,Computer Vision Center ,WACV,Evaluation Results,Submission Portal,English,"Text,Image"
 DROP,,,,pwc,,,NAACL,,,English,Text
 DS-1000,,,,gh,gh,"University of Hong Kong,Peking University,Stanford University,University of California Berkeley,University of Washington,Meta,Carnegie Mellon University",PMLR,,,English,"Text,Code"
-DyVal,,,"Aggregated Result,Model Functionality",gh,,"Microsoft,Georgia Institute of Technology,Duke University,Stanford University",Preprint,,,English,Text
+DyVal,,,"Aggregated Result,Supported Functionality",gh,,"Microsoft,Georgia Institute of Technology,Duke University,Stanford University",Preprint,,,English,Text
 EQ-Bench (v2),,"Contact,Issue",,ihw,ihw,Independent Contributor,Preprint,,,English,Text
 EvalPlus,,,"Aggregated Result,Benchmark",gh,gh,"University of Illinois Urbana Champaign,Nanjing University",NeurIPS,"Inference API,Model Repository",Issue,English,"Text,Code"
 FacTool,,,,gh,,"Shanghai Jiao Tong University,Carnegie Mellon University,City University of Hong Kong,New York University,Meta,Hong Kong University of Science and Technology,Shanghai AI Laboratory",Preprint,,,English,"Text,Code"
@@ -71,7 +71,7 @@ FActScore,,,,gh,gh,"University of Washington,University of Massachusetts Amherst
 FELM,,,,gh,,"City University of Hong Kong,Hong Kong University of Science and Technology,National University of Singapore,Carnegie Mellon University,Shanghai Jiao Tong University",NeurIPS,,,English,Text
 FewCLUE,,,,pwc,,,Preprint,,,Chinese,Text
 FinanceIQ,,,#Prompt Example,gh,gh,Duxiaoman,,,,English,Text
-FlagEval,18,"Contact,Issue","Model Functionality,Supported Modality,Model Size,Model Type",ihw,,"Peking University,Nankai University,Beijing Normal University,Chinese Academy of Sciences,Beijing University of Posts and Telecommunications,Beihang University,China Electronics Standardization Institute,Minjiang University",,Model Repository,Submission Portal,"English,Chinese","Text,Code,Image,Audio"
+FlagEval,18,"Contact,Issue","Supported Functionality,Supported Modality,Model Size,Model Type",ihw,,"Peking University,Nankai University,Beijing Normal University,Chinese Academy of Sciences,Beijing University of Posts and Telecommunications,Beihang University,China Electronics Standardization Institute,Minjiang University",,Model Repository,Submission Portal,"English,Chinese","Text,Code,Image,Audio"
 FLEURS,,,,pwc,,,SLT,,,English,"Text,Audio"
 Flickr30K,,,,pwc,,,TACL,,,English,"Text,Image"
 Flores-101,,,,pwc,,,TACL,,,English,Text
@@ -83,11 +83,11 @@ GQA,,,,pwc,,,CVPR,,,English,"Text,Image"
 GSM8K,,,,pwc,,,Preprint,,,English,Text
 HalluQA,,,,gh,,"Fudan University,Shanghai AI Laboratory",Preprint,,,"English,Chinese",Text
 HallusionBench,,,,"gh,pwc",,University of Maryland College Park,Preprint,,,English,"Text,Image"
-HEIM,,"Contact,Issue","Benchmark,Supported Language,Model Functionality,Domain-specific Task",ihw,,"Stanford University,Microsoft,Aleph Alpha,Pohang University of Science and Technology,Adobe,Carnegie Mellon University",NeurIPS,,,"English,Chinese,Hindi,Spanish","Text,Image"
+HEIM,,"Contact,Issue","Benchmark,Supported Language,Supported Functionality,Task",ihw,,"Stanford University,Microsoft,Aleph Alpha,Pohang University of Science and Technology,Adobe,Carnegie Mellon University",NeurIPS,,,"English,Chinese,Hindi,Spanish","Text,Image"
 HellaSwag,,,,pwc,,,ACL,,,English,Text
 HellaSwag Leaderboard,,"Contact,Issue",,ihw,ihw,"University of Washington,Allen Institute for AI",ACL,,,English,Text
-HELM Classic,?,"Contact,Issue","#MC Options,#Prompt Example,Ablation Study,Domain-specific Task,Benchmark,Aggregated Result,Evaluation Dataset,Evaluation Metrics,Supported Language,Model Functionality,Prompt Length,Prompt Pipeline,Supported Modality,Tokenizer",ihw,,Stanford University,Preprint,,,"English,Chinese","Text,Code"
-HELM Lite,,"Contact,Issue","Benchmark,Domain-specific Task,Model Functionality",ihw,,Stanford University,,,,"English,Czech,German,French,Hindi,Russian",Text
+HELM Classic,?,"Contact,Issue","#MC Options,#Prompt Example,Ablation Study,Task,Benchmark,Aggregated Result,Evaluation Dataset,Evaluation Metrics,Supported Language,Supported Functionality,Prompt Length,Prompt Pipeline,Supported Modality,Tokenizer",ihw,,Stanford University,Preprint,,,"English,Chinese","Text,Code"
+HELM Lite,,"Contact,Issue","Benchmark,Task,Supported Functionality",ihw,,Stanford University,,,,"English,Czech,German,French,Hindi,Russian",Text
 HHEM Leaderboard,,,,gh_hf,,Vectara,,Model Repository,Submission Portal,English,Text
 HMDB51,,,,pwc,,,ICCV,,,English,"Text,Video"
 HumanEval,,,,"gh,pwc",gh,"OpenAI,Anthropic,Zipline",Preprint,,,English,"Text,Code"
@@ -95,16 +95,16 @@ ImageNet,,,,pwc,,,CVPR,,,English,"Text,Image"
 iNaturalist,,,,pwc,,,CVPR,,,English,"Text,Image"
 InfiCoder-Eval,,,,gh,gh,"ByteDance,Peking University",Preprint,,,English,"Text,Code"
 InfographicVQA,,Contact,,"pwc,ihw",ihw,Computer Vision Center ,WACV,Evaluation Results,Submission Portal,English,"Text,Image"
-InstructEval,,,"Domain-specific Task,Model Functionality",gh_ihw,"gh,ihw","Singapore University of Technology and Design,Alibaba Group DAMO Academy",Preprint,,,English,Text
+InstructEval,,,"Task,Supported Functionality",gh_ihw,"gh,ihw","Singapore University of Technology and Design,Alibaba Group DAMO Academy",Preprint,,,English,Text
 InterCode,2,,Benchmark,gh,,Princeton University,Preprint,,,English,"Text,Code"
 iVQA,,,,pwc,,,ICCV,,,English,"Text,Video"
-JustEval,,,"Domain-specific Task,Evaluation Dataset",gh,,"Allen Institute for AI,University of Washington",Preprint,,,English,Text
+JustEval,,,"Task,Evaluation Dataset",gh,,"Allen Institute for AI,University of Washington",Preprint,,,English,Text
 KAgentBench,,,Evaluator,gh,,"Kuaishou,Harbin Institute of Technology",Preprint,,,English,Text
 Kinetics,,,,pwc,,,Preprint,,,English,"Text,Video"
-KoLA,,"Contact,Issue",Leaderboard Release Date,ihw,,Tsinghua University,Preprint,"Inference API,Model Repository",Submission Portal,English,Text
+KoLA,,"Contact,Issue",Leaderboard Launch Date,ihw,,Tsinghua University,Preprint,"Inference API,Model Repository",Submission Portal,English,Text
 KQA Pro,,,,pwc,,,ACL,,,English,Text
 L-Eval,,,"Evaluator,Evaluation Metrics",gh,,"Fudan University,University of Hong Kong,University of Illinois Urbana Champaign,Shanghai AI Laboratory",Preprint,Evaluation Results,Email,English,Text
-LAiW Leaderboard,2,,"Domain-specific Task,Aggregated Result",gh_hf,,"Sichuan University,ChanceFocus,Wuhan University,Southwest Petroleum University",Preprint,,,Chinese,Text
+LAiW Leaderboard,2,,"Task,Aggregated Result",gh_hf,,"Sichuan University,ChanceFocus,Wuhan University,Southwest Petroleum University",Preprint,,,Chinese,Text
 LAMBADA,,,,pwc,,,ACL,,,English,Text
 LawBench,,"Contact,Issue",#Prompt Example,ihw,,"Nanjing University,Amazon Alexa AI Lab,Saarland University,Shanghai AI Laboratory",Preprint,Evaluation Results,Email,English,Text
 LLaVA-Bench,,,,pwc,,,NeurIPS,,,English,"Text,Image"
@@ -114,10 +114,10 @@ LLM-Perf Leaderboard,,,,hf,hf,Hugging Face,,,,English,Text
 LLMEval,,,"Evaluator,Leaderboard Version",gh_ihw,,Fudan University,,Evaluation Results,Submission Portal,Chinese,Text
 LLMonitor,,"Contact,Issue",,ihw,,Lunary,,,,English,Text
 LLMPerf,,,"Evaluation Metrics,Model Size",gh,,Anyscale,,"Inference API,Model Repository","Email,Issue",English,Text
-LMExamQA,,Contact,"Aggregated Result,Domain-specific Task",ihw,,"Tsinghua University,Singapore Management University,University of California Los Angeles,Beijing University of Posts and Telecommunications",Preprint,,,English,Text
+LMExamQA,,Contact,"Aggregated Result,Task",ihw,,"Tsinghua University,Singapore Management University,University of California Los Angeles,Beijing University of Posts and Telecommunications",Preprint,,,English,Text
 LogiQA,,,,pwc,,,IJCAI,,,English,Text
-LongBench,,,"Supported Language,Domain-specific Task",gh,,"Tsinghua University,Chinese Academy of Sciences",Preprint,,,"English,Chinese","Text,Code"
-LVLM-eHub,,Contact,"Aggregated Result,Model Functionality,Evaluation Metrics",ihw,ihw,"Shanghai AI Laboratory,University of Hong Kong,Peking University",Preprint,"Evaluation Results,Inference API,Model Repository",Email,English,"Text,Image"
+LongBench,,,"Supported Language,Task",gh,,"Tsinghua University,Chinese Academy of Sciences",Preprint,,,"English,Chinese","Text,Code"
+LVLM-eHub,,Contact,"Aggregated Result,Supported Functionality,Evaluation Metrics",ihw,ihw,"Shanghai AI Laboratory,University of Hong Kong,Peking University",Preprint,"Evaluation Results,Inference API,Model Repository",Email,English,"Text,Image"
 M3DBench,,,,gh,,"Fudan University,Tencent,Institute for Infocomm Research,A*STAR",Preprint,,,English,"Text,Model"
 M3KE,,,#Prompt Example,gh,gh,"Tianjin University,Huawei Noah's Ark Lab",Preprint,Evaluation Results,"Email,Pull Request",Chinese,Text
 MATH,,,,pwc,,,NeurIPS,,,English,Text
@@ -127,7 +127,7 @@ MathVista,,,Evaluation Dataset,gh,gh,"University of California Los Angeles,Unive
 MAWPS,,,,pwc,,,NAACL,,,English,Text
 MBPP,,,,pwc,,,Preprint,,,English,"Text,Code"
 MC-TACO,,,,"ai2,pwc",,,EMNLP,,,English,Text
-MedBench,,"Contact,Issue","Domain-specific Task,Aggregated Result",ihw,,"East China Normal University,Shanghai AI Laboratory,Hasso Plattner Institute,University of Potsdam,Shanghai Jiao Tong University",Preprint,Evaluation Results,Submission Portal,Chinese,Text
+MedBench,,"Contact,Issue","Task,Aggregated Result",ihw,,"East China Normal University,Shanghai AI Laboratory,Hasso Plattner Institute,University of Potsdam,Shanghai Jiao Tong University",Preprint,Evaluation Results,Submission Portal,Chinese,Text
 MedQA,,,,pwc,,,Applied Sciences,,,English,Text
 Mementos,,,,gh,gh,"University of Maryland College Park,University of North Carolina Chapel Hill",Preprint,Evaluation Results,Email,English,"Text,Image"
 MINT-Bench,,,Evaluation Metrics,gh,,"University of Illinois Urbana Champaign,Renmin University of China",Preprint,Evaluation Results,Pull Request,English,Text
@@ -136,11 +136,11 @@ MLLM-Bench,,,,gh_ihw,,"Shenzhen Research Institute of Big Data,Chinese Universit
 MLS,,,,pwc,,,Interspeech,,,English,"Text,Audio"
 MM-Vet,,,,pwc,,,Preprint,,,English,"Text,Image"
 MMBench,,,"Evaluation Dataset,Supported Language,Model Accessibility",hf_ihw,"hf,ihw","Shanghai AI Laboratory,Nanyang Technological University,Chinese University of Hong Kong,National University of Singapore,Zhejiang University",Preprint,Evaluation Results,Submission Portal,"English,Chinese","Text,Image"
-MMCU,,,"Domain-specific Task,Aggregated Result",gh,,Besteasy,Preprint,,,Chinese,Text
-MME,,,"Domain-specific Task,Model Functionality,Model Type",gh,gh,"Tencent Youtu Lab,Xiamen University",Preprint,,,English,"Text,Image"
+MMCU,,,"Task,Aggregated Result",gh,,Besteasy,Preprint,,,Chinese,Text
+MME,,,"Task,Supported Functionality,Model Type",gh,gh,"Tencent Youtu Lab,Xiamen University",Preprint,,,English,"Text,Image"
 MMLU,,,,"gh,pwc",gh,"University of California Berkeley,Columbia University,University of Chicago,University of Illinois Urbana Champaign",ICLR,Evaluation Results,"Email,Pull Request",English,Text
 MMLU-by-task Leaderboard,,,,hf,hf,"Hugging Face,Independent Contributor",,,,English,Text
-MMMU,,,"Domain-specific Task,Evaluation Dataset,Evaluation Metrics",gh,gh,"in.ai,University of Waterloo,Ohio State University,Carnegie Mellon University,University of Victoria,Princeton University,Independent Contributor",Preprint,,,English,"Text,Image"
+MMMU,,,"Task,Evaluation Dataset,Evaluation Metrics",gh,gh,"in.ai,University of Waterloo,Ohio State University,Carnegie Mellon University,University of Victoria,Princeton University,Independent Contributor",Preprint,,,English,"Text,Image"
 MMVP,,,,gh,,"New York University,University of California Berkeley",ICCV,,,English,"Text,Image"
 MMVP-VLM,,,,gh,,"New York University,University of California Berkeley",ICCV,,,English,"Text,Image"
 MNLI,,,,pwc,,,NAACL,,,English,Text
@@ -151,12 +151,12 @@ MSRVTT,,,,pwc,,,CVPR,,,English,"Text,Video"
 MSRVTT-QA,,,,pwc,,,ACM-MM,,,English,"Text,Video"
 MSVD,,,,pwc,,,ACL,,,English,"Text,Video"
 MSVD-QA,,,,pwc,,,ACM-MM,,,English,"Text,Video"
-MTEB,,,"Supported Language,Domain-specific Task",gh_hf_pwc_ihw,"gh,hf,ihw","Hugging Face,Cohere",EACL,Evaluation Results,Metadata Upload,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek",Text
+MTEB,,,"Supported Language,Task",gh_hf_pwc_ihw,"gh,hf,ihw","Hugging Face,Cohere",EACL,Evaluation Results,Metadata Upload,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek",Text
 Multi-modal Modal Leaderboard,,,Aggregated Result,hf_ihw,ihw,"Shanghai AI Laboratory,Nanyang Technological University,Chinese University of Hong Kong,National University of Singapore,Zhejiang University,Nanjing University",,"Inference API,Model Repository",Submission Portal,"English,Chinese","Text,Image"
 MultiRC,,,,pwc,,,NAACL,,,English,Text
 MusicCaps,,,,pwc,,Google,Preprint,,,English,"Text,Audio"
 MusicQA,,,,gh_pwc,,"Tencent,National University of Singapore",Preprint,,,English,"Text,Audio"
-MVBench,,,"Domain-specific Task,Aggregated Result",gh_hf,,"Chinese Academy of Sciences,University of Chinese Academy of Sciences,Shanghai AI Laboratory,University of Hong Kong,Fudan University,Nanjing University",Preprint,Evaluation Results,Submission Portal,English,"Text,Video"
+MVBench,,,"Task,Aggregated Result",gh_hf,,"Chinese Academy of Sciences,University of Chinese Academy of Sciences,Shanghai AI Laboratory,University of Hong Kong,Fudan University,Nanjing University",Preprint,Evaluation Results,Submission Portal,English,"Text,Video"
 Natural Instructions (v2),,,,ai2,,,EMNLP,,,English,Text
 NExT-QA,,,,pwc,,,CVPR,,,English,"Text,Video"
 NoCaps,,,,pwc,,,ICCV,,,English,"Text,Image"
@@ -169,13 +169,13 @@ Open Ko-LLM Leaderboard,,,,hf,hf,Upstage,,Model Repository,Submission Portal,Kor
 Open LLM Leaderboard,,,,hf,hf,Hugging Face,,Model Repository,Submission Portal,English,Text
 Open Multilingual LLM Evaluation Leaderboard,,,,hf,hf,University of Oregon,,Evaluation Results,Pull Request,"Vietnamese,Ukrainian,Telugu,Tamil,Swedish,Spanish,Slovak,Serbian,Russian,Romanian,Portuguese,Nepali,Marathi,Malayalam,Kannada,Italian,Indonesian,Hungarian,Hindi,Gujarati,German,French,Dutch,Danish,Croatian,Chinese,Catalan,Bengali,Basque,Armenian,Arabic",Text
 OpenbookQA,,,,"ai2,pwc",,,EMNLP,,,English,Text
-OpenCompass LLM Leaderboard (v2),,,"Aggregated Result,Model Functionality",hf_ihw,"hf,ihw","Shanghai AI Laboratory,Nanyang Technological University,Chinese University of Hong Kong,National University of Singapore,Zhejiang University,Nanjing University",,"Inference API,Model Repository",Submission Portal,"English,Chinese","Text,Code"
+OpenCompass LLM Leaderboard (v2),,,"Aggregated Result,Supported Functionality",hf_ihw,"hf,ihw","Shanghai AI Laboratory,Nanyang Technological University,Chinese University of Hong Kong,National University of Singapore,Zhejiang University,Nanjing University",,"Inference API,Model Repository",Submission Portal,"English,Chinese","Text,Code"
 OpenEval (code),,,,gh,,Independent Contributor,,,,English,"Text,Code"
-OpenEval (text),,,Model Functionality,ihw,,"Tianjin University,Zhengzhou University,China Academy of Information and Communications Technology,China Software Test Center,University of Macau,Macau University of Science and Technology,Chinese University of Hong Kong,Shanghai Jiao Tong University",,"Evaluation Results,Inference API,Model Repository",Submission Portal,Chinese,Text
+OpenEval (text),,,Supported Functionality,ihw,,"Tianjin University,Zhengzhou University,China Academy of Information and Communications Technology,China Software Test Center,University of Macau,Macau University of Science and Technology,Chinese University of Hong Kong,Shanghai Jiao Tong University",,"Evaluation Results,Inference API,Model Repository",Submission Portal,Chinese,Text
 Pets37,,,,pwc,,,CVPR,,,English,"Text,Image"
 PIQA,,,,"ai2,pwc",,,AAAI,,,English,Text
 Program Synthesis Models Leaderboard,,"Contact,Issue",,ihw,ihw,Accubits,,,,English,"Text,Code"
-PromptBench,,,Model Functionality,gh,,"Microsoft Research Asia,Chinese Academy of Sciences,University of Science and Technology of China,Carnegie Mellon University",Preprint,,,English,Text
+PromptBench,,,Supported Functionality,gh,,"Microsoft Research Asia,Chinese Academy of Sciences,University of Science and Technology of China,Carnegie Mellon University",Preprint,,,English,Text
 ProtoQA,,,,ai2,,,EMNLP,,,English,Text
 Provider Leaderboard,,Contact,,ihw,,Martian,,,,English,Text
 PubMedQA,,,,"gh,pwc",gh,"University of Pittsburgh,Carnegie Mellon University,Google",EMNLP,Evaluation Results,Email,English,Text
@@ -213,11 +213,11 @@ StoryCloze,,,,pwc,,,NAACL,,,English,Text
 StrategyQA,,,,"ai2,pwc",,,TACL,,,English,Text
 STS-B,,,,pwc,,,EMNLP,,,English,Text
 SummEdits,,,,gh,,Salesforce,Preprint,,,English,Text
-SuperCLUE,,,"Domain-specific Task,Aggregated Result,Model Functionality,Model Accessibility,Leaderboard Release Date",gh_ihw,,"CLUE,Westlake University",Preprint,?,"Email,WeChat",Chinese,Text
-SuperCLUE-Agent,,,"Domain-specific Task,Aggregated Result,Model Functionality",gh_ihw,,CLUE,,?,"Email,WeChat",Chinese,Text
-SuperCLUE-Auto,,,"Domain-specific Task,Aggregated Result",gh_ihw,,CLUE,,?,"Email,WeChat",Chinese,Text
+SuperCLUE,,,"Task,Aggregated Result,Supported Functionality,Model Accessibility,Leaderboard Launch Date",gh_ihw,,"CLUE,Westlake University",Preprint,?,"Email,WeChat",Chinese,Text
+SuperCLUE-Agent,,,"Task,Aggregated Result,Supported Functionality",gh_ihw,,CLUE,,?,"Email,WeChat",Chinese,Text
+SuperCLUE-Auto,,,"Task,Aggregated Result",gh_ihw,,CLUE,,?,"Email,WeChat",Chinese,Text
 SuperCLUE-Math6,,,"Benchmark,Evaluation Metrics",gh_ihw,,CLUE,Preprint,?,"Email,Questionaire,WeChat",Chinese,Text
-SuperCLUE-Safety,,,"Domain-specific Task,Aggregated Result",gh_ihw,,CLUE,Preprint,?,"Email,WeChat",Chinese,Text
+SuperCLUE-Safety,,,"Task,Aggregated Result",gh_ihw,,CLUE,Preprint,?,"Email,WeChat",Chinese,Text
 SuperCLUEgkzw,,,,gh,,CLUE,,?,"Email,WeChat",Chinese,Text
 SuperCLUElyb,,,,gh,,CLUE,,"Inference API,Model Repository",Questionaire,Chinese,Text
 SuperGLUE,,"Contact,Issue",,ihw,ihw,"New York University,Meta,University of Washington,Google DeepMind",NeurIPS,Evaluation Results,Submission Portal,English,Text
@@ -232,22 +232,23 @@ TheoremQA,,,,gh_pwc,,"University of Waterloo,UC Santa Barbara,University of Cali
 Toloka LLM Leaderboard,,,,hf_ihw,,Toloka,,,,English,Text
 Toolbench Leaderboard,,,,hf,hf,SambaNova Systems,Preprint,,,English,Text
 TouchStone,,,,gh,,"Alibaba Group,Huazhong University of Science and Technology,Tsinghua University",Preprint,,,English,"Text,Image"
-TravelPlanner,,,"Domain-specific Task,Evaluation Dataset",gh_hf,,"Fudan University,Ohio State University,Pennsylvania State University,Meta",Preprint,Evaluation Results,Submission Portal,English,Text
+TravelPlanner,,,"Task,Evaluation Dataset",gh_hf,,"Fudan University,Ohio State University,Pennsylvania State University,Meta",Preprint,Evaluation Results,Submission Portal,English,Text
 TREC-COVID,,,,pwc,,,SIGIR Forum,,,English,Text
 TriviaQA,,,,pwc,,,ACL,,,English,Text
-TrustLLM,,,Model Functionality,gh,,"Lehigh University,Illinois Institute of Technology,Institut Polytechnique de Paris,College of William & Mary,Texas A&M University,University of Georgia,Samsung Research America,Stanford University,Lawrence Livermore National Laboratory,Salesforce,University of Wisconsin Madison,Microsoft,Carnegie Mellon University,University of Maryland,University of California Berkeley,University of Illinois Urbana Champaign,University of North Carolina Chapel Hill,Massachusetts Institute of Technology,Harvard University,University of Notre Dame,Duke University,University of Tennessee Knoxville,University of Southern California,Michigan State University,Microsoft Research Asia,Drexel University,University of California Los Angeles,Virginia Polytechnic Institute and State University,Cyber Intelligence Sharing and Protection Act,University of Illinois Chicago,International Business Machines,Yale University,Columbia University,University of California Santa Barbara,Massachusetts General Hospital,Northwestern University,Florida International University,Johns Hopkins University,University of Pennsylvania,Mohamed bin Zayed University of Artificial Intelligence",Preprint,Evaluation Results,Questionaire,English,Text
+TrustLLM,,,Supported Functionality,gh,,"Lehigh University,Illinois Institute of Technology,Institut Polytechnique de Paris,College of William & Mary,Texas A&M University,University of Georgia,Samsung Research America,Stanford University,Lawrence Livermore National Laboratory,Salesforce,University of Wisconsin Madison,Microsoft,Carnegie Mellon University,University of Maryland,University of California Berkeley,University of Illinois Urbana Champaign,University of North Carolina Chapel Hill,Massachusetts Institute of Technology,Harvard University,University of Notre Dame,Duke University,University of Tennessee Knoxville,University of Southern California,Michigan State University,Microsoft Research Asia,Drexel University,University of California Los Angeles,Virginia Polytechnic Institute and State University,Cyber Intelligence Sharing and Protection Act,University of Illinois Chicago,International Business Machines,Yale University,Columbia University,University of California Santa Barbara,Massachusetts General Hospital,Northwestern University,Florida International University,Johns Hopkins University,University of Pennsylvania,Mohamed bin Zayed University of Artificial Intelligence",Preprint,Evaluation Results,Questionaire,English,Text
 TruthfulQA,,,,"gh,pwc",,"University of Oxford,OpenAI",ACL,,,English,Text
 tStoryCloze,,,,gh,,"Meta FAIR,OpenAI,Hebrew University of Jerusalem",NeurIPS,,,English,Text
 TVQA,,,,pwc,,,EMNLP,,,English,"Text,Video"
 TyDiQA,,,,pwc,,,TACL,,,"English,Arabic,Bengali,Finnish,Japanese,Indonesian,Kiswahili,Korean,Russian,Telugu,Thai",Text
 UCF101,,,,pwc,,,Preprint,,,English,"Text,Video"
-UHGEval,,,"Domain-specific Task,Model Functionality",gh_hf,,"Renmin University of China,Institute for Advanced Algorithms Research,Xinhua",Preprint,,,Chinese,Text
+UHGEval,,,"Task,Supported Functionality",gh_hf,,"Renmin University of China,Institute for Advanced Algorithms Research,Xinhua",Preprint,,,Chinese,Text
 VBench,,,,gh_hf,"gh,hf","Nanyang Technological University,Shanghai AI Laboratory,Chinese University of Hong Kong,Nanjing University",Preprint,Evaluation Results,Submission Portal,English,"Text,Video"
 VCR,,,,pwc,,,CVPR,,,English,"Text,Image"
 Video-Bench Leaderboard,,,,hf,,"Peking University,Peng Cheng Laboratory,Microsoft,FarReel AI Lab",Preprint,Evaluation Results,Submission Portal,English,"Text,Video"
-VideoInstruct,,,Domain-specific Task,"gh,pwc",,Mohamed bin Zayed University of Artificial Intelligence,Preprint,,,English,"Text,Video"
+VideoInstruct,,,Task,"gh,pwc",,Mohamed bin Zayed University of Artificial Intelligence,Preprint,,,English,"Text,Video"
 VisDial,,,,pwc,,,CVPR,,,English,"Text,Image"
 VisIT-Bench,,,,gh_hf,,"Hebrew University of Jerusalem,Google,University of California Los Angeles,Allen Institute for AI,University of Washington,UC Santa Barbara,Stanford University,Large-scale Artificial Intelligence Open Network",NeurIPS,Evaluation Results,Email,English,"Text,Image"
+VisualWebArena,,"Contact,Issue",,ihw,,Carnegie Mellon University,Preprint,,,English,"Text,Image"
 VizWiz,,,,pwc,,,CVPR,,,English,"Text,Image"
 VLM-Eval,,,,gh,gh,"Megvii,Shanghai Jiao Tong University",Preprint,Evaluation Results,Pull Request,English,"Text,Video"
 VNHSGE,,,,pwc,,,Preprint,,,"English,Vietnamese",Text
@@ -268,4 +269,4 @@ Xiezhi,,,,gh,,Fudan University,Preprint,,,"English,Chinese",Text
 XSUM,,,,pwc,,,EMNLP,,,English,Text
 YALL,,,,gh_hf,gh,Independent Contributor,,,,English,Text
 YouCook2,,,,pwc,,,AAAI,,,English,"Text,Video"
-Youku-mPLUG,,,Domain-specific Task,gh,,Alibaba Group DAMO Academy,Preprint,,,Chinese,Text
+Youku-mPLUG,,,Task,gh,,Alibaba Group DAMO Academy,Preprint,,,Chinese,Text
