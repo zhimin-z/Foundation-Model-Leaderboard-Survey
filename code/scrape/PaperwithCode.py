@@ -12,14 +12,14 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'crossner'
-path_leaderboard = 'data/CrossNER'
+dataset = 'ace-2005'
+path_leaderboard = 'data/ACE (2005)'
+included_leaderboards = ['relation-extraction-on-ace-2005']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     
-    included_leaderboards = []
     leaderboard_links = []
     community_indicator = ''
     base_url = 'https://paperswithcode.com'
