@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'benchlmm'
-path_leaderboard = 'data/BenchLMM'
+dataset = 'crossner'
+path_leaderboard = 'data/CrossNER'
 
 if __name__ == '__main__':
     driver = uc.Chrome()
