@@ -4,7 +4,6 @@ import pandas as pd
 
 path_leaderboard = "data/HEIM"
 substrings_to_remove = [" \u2191", " \u2193"]
-leaderboard_excluded = ['general information']
 
 
 def remove_substrings(s, substrings=substrings_to_remove):
@@ -46,9 +45,6 @@ if __name__ == '__main__':
             
         tables = driver.find_elements(By.XPATH, '//table[@class="query-table results-table"]')
         for table_name, table in zip(table_names, tables):
-            if table_name.lower() in leaderboard_excluded:
-                continue
-            
             column_names = [remove_substrings(column.text) for column in table.find_elements(By.XPATH, './/thead/tr/td/span')]
             
             df = []
