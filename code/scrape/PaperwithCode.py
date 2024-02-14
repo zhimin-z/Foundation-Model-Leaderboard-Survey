@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'conll04'
-path_leaderboard = 'data/CoNLL (2004)'
-included_leaderboards = ['relation-extraction-on-conll04']
+dataset = ''
+path_leaderboard = 'data/GENIA'
+included_leaderboards = ['named-entity-recognition-on-genia']
 
 if __name__ == '__main__':
     driver = uc.Chrome()
