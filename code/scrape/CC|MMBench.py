@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
 def name_process(name, filter_keywords = []):
     name = name.lower()
@@ -40,5 +41,7 @@ if __name__ == '__main__':
             df.rename(columns={'Method': 'Model'}, inplace=True)
             if 'ccbench' in benchmark_name.text.lower():
                 path_leaderboard = "data/CCBench"
+            if not os.path.exists(path_leaderboard):
+                os.makedirs(path_leaderboard)
             df.to_json(f"{path_leaderboard}/shw-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
                 

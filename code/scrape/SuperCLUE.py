@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
 
 if __name__ == '__main__':
@@ -19,6 +20,9 @@ if __name__ == '__main__':
         leaderboard_name = leaderboard.text.encode('ascii', 'ignore').decode('ascii')
         leaderboard.click()
         
+        if not os.path.exists(leaderboard_name):
+            os.makedirs(leaderboard_name)
+    
         for subleaderboard in leaderboards[index + 1].find_elements(By.XPATH, ".//button[contains(@class, 'svelte-kqij2n')]"):
             subleaderboard_name = subleaderboard.text.lower().replace('auto', '').replace('agent', '').replace('superclue-safety', '')
             subleaderboard.click()

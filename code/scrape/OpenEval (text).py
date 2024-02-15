@@ -1,11 +1,9 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
-from pathlib import Path
-
-folder = 'OpenEval (text)'
-path_leaderboard = Path(f"data/{folder}")
+path_leaderboard = "data/OpenEval (text)"
 
 
 def filter_first_row(s):
@@ -14,6 +12,9 @@ def filter_first_row(s):
 
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+    
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
@@ -40,4 +41,4 @@ if __name__ == '__main__':
             
         df = pd.DataFrame(df, columns=column_names)
         df['Model'] = df['Model'].apply(filter_first_row)
-        df.to_json(path_leaderboard / f'shw-{table_name}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/shw-{table_name}.json', orient='records', indent=4)

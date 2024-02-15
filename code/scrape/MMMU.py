@@ -4,6 +4,7 @@ import undetected_chromedriver as uc
 import pandas as pd
 import json
 import re
+import os
 
 path_leaderboard = "data/MMMU"
 
@@ -28,6 +29,9 @@ def process_script_content(script_content, pattern):
 
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     # Check the leaderboards from https://github.com/MMMU-Benchmark/mmmu-benchmark.github.io/blob/main/index.html
     absolute_html_file_path = '/Users/jimmy/Downloads/index.html'
     with open(absolute_html_file_path, 'r') as file:

@@ -1,20 +1,9 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
-from pathlib import Path
-
-def name_process(name, filter_keywords = []):
-    name = name.lower()
-    for keyword in filter_keywords:
-        name = name.replace(keyword.lower(), '')
-    name = name.split()
-    name = '_'.join(name)
-    name = name.replace('-', '_')
-    return name
-
-folder = 'LawBench'
-path_leaderboard = Path(f"data/{folder}")
+path_leaderboard = "data/LawBench"
 
 column_names_extra = [
     "Dispute Focus Identification",
@@ -36,7 +25,19 @@ column_names_extra = [
     "Consultation",
 ]
 
+def name_process(name, filter_keywords = []):
+    name = name.lower()
+    for keyword in filter_keywords:
+        name = name.replace(keyword.lower(), '')
+    name = name.split()
+    name = '_'.join(name)
+    name = name.replace('-', '_')
+    return name
+
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
@@ -64,5 +65,5 @@ if __name__ == '__main__':
                 entry_values.append(cell.text)
             df.append(pd.Series(entry_values, index=column_names))
         df = pd.DataFrame(df)
-        df.to_json(path_leaderboard / f'shw-{name_process(setting.text)}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/shw-{name_process(setting.text)}.json', orient='records', indent=4)
                 

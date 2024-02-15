@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import os
 
 path_leaderboard = "data/LLMPerf Leaderboard"
 
@@ -88,12 +89,14 @@ def markdown_to_dataframe(tables):
     return dataframes
 
 
-# Check the latest leaderboards at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/blob/Evaluation/README.md
-with open('/Users/jimmy/Downloads/README.md', 'r') as f:
-    markdown_content = f.read()
-    markdown_content = remove_preceding_content(markdown_content, '### Output Tokens Throughput (tokens/s)')
-    tables_and_titles = extract_tables_and_titles(markdown_content)
-    dataframes = markdown_to_dataframe(tables_and_titles)
-
-    for title, df in dataframes.items():
-        df.to_json(f'{path_leaderboard}/gh-{title.lower()}.json', orient='records', indent=4)
+if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+    # Check the latest leaderboards at https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/blob/Evaluation/README.md
+    with open('/Users/jimmy/Downloads/README.md', 'r') as f:
+        markdown_content = f.read()
+        markdown_content = remove_preceding_content(markdown_content, '### Output Tokens Throughput (tokens/s)')
+        tables_and_titles = extract_tables_and_titles(markdown_content)
+        dataframes = markdown_to_dataframe(tables_and_titles)
+        for title, df in dataframes.items():
+            df.to_json(f'{path_leaderboard}/gh-{title.lower()}.json', orient='records', indent=4)

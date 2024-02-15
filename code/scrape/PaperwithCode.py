@@ -3,6 +3,7 @@ import undetected_chromedriver as uc
 import pandas as pd
 import json
 import re
+import os
 
 def file_rename(title):
     title = title.lower()
@@ -13,10 +14,13 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/GENIA'
-included_leaderboards = ['named-entity-recognition-on-genia']
+path_leaderboard = 'data/WebQuestionsSP'
+included_leaderboards = ['semantic-parsing-on-webquestionssp', 'knowledge-base-question-answering-on-1']
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+    
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     

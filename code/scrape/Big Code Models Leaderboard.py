@@ -1,13 +1,12 @@
 import pandas as pd
-import argparse
 import requests
 import json
 import re
+import os
 
-from pathlib import Path
 from bs4 import BeautifulSoup
 
-path_leaderboard = Path("data/Big Code Models Leaderboard")
+path_leaderboard = "data/Big Code Models Leaderboard"
 
 
 def get_json_format_data():
@@ -49,32 +48,10 @@ def get_datas(data):
     return result_list
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Scrape and export data from the Hugging Face leaderboard")
-    parser.add_argument("-csv", action="store_true", help="Export data to CSV")
-    parser.add_argument("-html", action="store_true", help="Export data to HTML")
-    parser.add_argument("-json", action="store_true", help="Export data to JSON")
-    
-    args = parser.parse_args()
-
+if __name__ == "__main__":
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
     data = get_json_format_data()
     finished_models = get_datas(data)
     df = pd.DataFrame(finished_models)
-
-    if not args.csv and not args.html and not args.json:
-        args.json = True  # If no arguments are provided, default to JSON export
-
-    if args.csv:
-        df.to_csv(path_leaderboard / "hf.csv", index=False)
-        print("Data exported to CSV")
-
-    if args.html:
-        df.to_html(path_leaderboard / "hf.html", index=False)
-        print("Data exported to HTML")
-
-    if args.json:
-        df.to_json(path_leaderboard / "hf.json", orient='records', indent=4)
-        print("Data exported to JSON")
-
-if __name__ == "__main__":
-    main()
+    df.to_json(path_leaderboard / "hf.json", orient='records', indent=4)

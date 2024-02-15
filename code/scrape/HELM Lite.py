@@ -97,6 +97,9 @@ def process_table(driver, group_name, table_name, path_leaderboard):
 
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     checkpoint = load(path_leaderboard)

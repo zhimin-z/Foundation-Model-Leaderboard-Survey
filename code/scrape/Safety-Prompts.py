@@ -2,8 +2,14 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
 import time
+import os
+
+path_leaderboard = "data/Safety-Prompts"
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     driver.implicitly_wait(5)
     
@@ -48,4 +54,4 @@ if __name__ == '__main__':
             time.sleep(1)
             
         df = pd.DataFrame(df, columns=column_names)
-        df.to_json(f'data/Safety-Prompts/shw-{suffix}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/shw-{suffix}.json', orient='records', indent=4)

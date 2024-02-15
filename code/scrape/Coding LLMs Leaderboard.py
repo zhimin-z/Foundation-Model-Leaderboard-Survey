@@ -1,13 +1,17 @@
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
-
 import undetected_chromedriver as uc
 import pandas as pd
+import os
+
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
 
 path_leaderboard = 'data/CCEval'
 leaderboard_names = ['overall', 'instruct_fine_tuning', 'model_type']
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     actions = ActionChains(driver)
     driver.implicitly_wait(5)

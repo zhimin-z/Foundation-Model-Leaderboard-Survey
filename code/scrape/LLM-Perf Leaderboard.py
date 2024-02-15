@@ -2,11 +2,11 @@ import pandas as pd
 import requests
 import json
 import re
+import os
 
-from pathlib import Path
 from bs4 import BeautifulSoup
 
-path_leaderboard = Path("data/LLM-Perf Leaderboard")
+path_leaderboard = "data/LLM-Perf Leaderboard"
 leaderboard_names = ['A100-80GB-275W', 'RTX4090-24GB-450W']
 
 
@@ -31,8 +31,7 @@ def get_json_format_data(script_elements):
             df = pd.DataFrame(data, columns=columns)
             df['Model'] = df['Model'].apply(
                 lambda x: extract_model_repo_names(x))
-            df.to_json(
-                path_leaderboard / f'hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)
 
 
 def extract_model_repo_names(html):
@@ -44,6 +43,8 @@ def extract_model_repo_names(html):
 
 
 if __name__ == "__main__":
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
     url = 'https://optimum-llm-perf-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')

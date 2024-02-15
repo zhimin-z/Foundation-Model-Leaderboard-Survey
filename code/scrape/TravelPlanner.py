@@ -1,11 +1,11 @@
 import pandas as pd
 import requests
 import json
+import os
 
-from pathlib import Path
 from bs4 import BeautifulSoup
 
-path_leaderboard = Path("data/TravelPlanner")
+path_leaderboard = 'data/TravelPlanner'
 leaderboard_names = ['Validation | Two-Stage', 'Validation | Sole-Planning', 'Test | Two-Stage', 'Test | Sole-Planning']
 
 
@@ -23,11 +23,12 @@ def get_json_format_data(script_elements):
             print(columns)
             data = item['props']['value']['data']
             df = pd.DataFrame(data, columns=columns)
-            df.to_json(
-                path_leaderboard / f'hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)
 
 
 if __name__ == "__main__":
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
     url = 'https://osunlp-travelplannerleaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')

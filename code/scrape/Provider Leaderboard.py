@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
 path_leaderboard = "data/Provider Leaderboard"
     
@@ -18,6 +19,9 @@ output_token_length_list_inverse = {v: k for k, v in output_token_length_list.it
 service_load_list_inverse = {v: k for k, v in service_load_list.items()}
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+    
     driver = uc.Chrome()
     driver.implicitly_wait(10)
     

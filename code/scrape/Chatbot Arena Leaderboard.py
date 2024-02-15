@@ -3,10 +3,9 @@ import undetected_chromedriver as uc
 import pandas as pd
 import time
 import re
+import os
 
-from pathlib import Path
-
-path_leaderboard = Path("data/Chatbot Arena Leaderboard")
+path_leaderboard = "data/Chatbot Arena Leaderboard"
 
 
 def filter_string(text):
@@ -22,6 +21,9 @@ def prepcess_name(s):
 
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 

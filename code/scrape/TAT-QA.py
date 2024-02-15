@@ -3,13 +3,7 @@ import undetected_chromedriver as uc
 import pandas as pd
 import os
 
-path_leaderboard = "data/PubMedQA"
-
-
-def prepcess_name(s):
-    s = s.split('(')[-1][:-1]
-    return s.lower()
-
+path_leaderboard = "data/TAT-QA"
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
@@ -18,29 +12,27 @@ if __name__ == '__main__':
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
-    url = 'https://pubmedqa.github.io'
+    url = 'https://nextplusplus.github.io/TAT-QA'
     driver.get(url)
-        
-    table = driver.find_element(By.XPATH, '//table[@class="table table-responsive"]')
-    column_names = ['Date']
-    for column in table.find_elements(By.XPATH, './/thead/tr/th'):
-        if column.text.strip():
-            column_names.append(column.text)
+
+    table = driver.find_element(By.XPATH, '//table[@class="table well"]')
+    column_names = [column.text for column in table.find_elements(By.XPATH, './/thead/tr/th')]
 
     df = []
     for row in table.find_elements(By.XPATH, './/tbody/tr'):
         values = []
         for name, value in zip(column_names, row.find_elements(By.XPATH, './/td')):
-            if name == 'Date':
-                values.append(value.text.split('\n')[-1])
-            elif name == 'Code':
-                try:
+            if name in ['Paper', 'Codes']:
+                if value.text in ['Paper', 'Code']:
                     values.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
-                except:
-                    values.append('')
+                else:
+                    values.append(value.text)
             else:
                 values.append(value.text)
         df.append(values)
-        
+
     df = pd.DataFrame(df, columns=column_names)
+    df.drop(columns=['Rank'], inplace=True)
+    df.rename(columns={'Model Name': 'Model'}, inplace=True)
     df.to_json(f'{path_leaderboard}/gh.json', orient='records', indent=4)
+    

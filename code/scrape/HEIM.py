@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 import pandas as pd
+import os
 
 path_leaderboard = "data/HEIM"
 substrings_to_remove = [" \u2191", " \u2193"]
@@ -21,6 +22,9 @@ def prepcess_name(s):
 
 
 if __name__ == '__main__':
+    if not os.path.exists(path_leaderboard):
+        os.makedirs(path_leaderboard)
+        
     driver = uc.Chrome()
     driver.implicitly_wait(5)
 
