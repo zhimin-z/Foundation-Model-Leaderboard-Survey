@@ -14,8 +14,8 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/WebQuestionsSP'
-included_leaderboards = ['semantic-parsing-on-webquestionssp', 'knowledge-base-question-answering-on-1']
+path_leaderboard = 'data/LibriSpeech'
+included_leaderboards = ['speech-recognition-on-librispeech-test-other', 'speech-recognition-on-librispeech-test-clean']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
