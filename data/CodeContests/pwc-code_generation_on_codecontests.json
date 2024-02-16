@@ -1,0 +1,178 @@
+[
+    {
+        "table_id":14905,
+        "row_id":46924,
+        "rank":1,
+        "Model":"AlphaCode 41B + clustering",
+        "mlmodel":{
+
+        },
+        "method_short":"AlphaCode 41B + clustering",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-02-02",
+        "metrics":{
+            "Test Set 10@100k":"29.6",
+            "Test Set pass@1":null,
+            "Test Set pass@5":null,
+            "Val Set pass@1":null,
+            "Val Set pass@5":null
+        },
+        "raw_metrics":{
+            "Test Set 10@100k":29.6,
+            "Test Set pass@1":null,
+            "Test Set pass@5":null,
+            "Val Set pass@1":null,
+            "Val Set pass@5":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":977660,
+            "title":"Competition-Level Code Generation with AlphaCode",
+            "url":"\/paper\/competition-level-code-generation-with-1",
+            "published":"2022-02-08T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":14905,
+        "row_id":115189,
+        "rank":2,
+        "Model":"MoTCoder-15B",
+        "mlmodel":{
+
+        },
+        "method_short":"MoTCoder-15B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-12-26",
+        "metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":"2.39",
+            "Test Set pass@5":"7.69",
+            "Val Set pass@1":"6.18",
+            "Val Set pass@5":"12.73"
+        },
+        "raw_metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":2.39,
+            "Test Set pass@5":7.69,
+            "Val Set pass@1":6.18,
+            "Val Set pass@5":12.73
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1349840,
+            "title":"MoTCoder: Elevating Large Language Models with Modular of Thought for Challenging Programming Tasks",
+            "url":"\/paper\/motcoder-elevating-large-language-models-with",
+            "published":"2023-12-26T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":14905,
+        "row_id":115190,
+        "rank":3,
+        "Model":"CodeChain + WizardCoder-15B",
+        "mlmodel":{
+
+        },
+        "method_short":"CodeChain + WizardCoder-15B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-13",
+        "metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":"2.35",
+            "Test Set pass@5":"3.29",
+            "Val Set pass@1":"2.48",
+            "Val Set pass@5":"3.30"
+        },
+        "raw_metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":2.35,
+            "Test Set pass@5":3.29,
+            "Val Set pass@1":2.48,
+            "Val Set pass@5":3.3
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1300081,
+            "title":"CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+            "url":"\/paper\/codechain-towards-modular-code-generation",
+            "published":"2023-10-13T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/codechain-towards-modular-code-generation\/review\/?hl=115190"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":14905,
+        "row_id":115191,
+        "rank":4,
+        "Model":"WizardCoder-15B",
+        "mlmodel":{
+
+        },
+        "method_short":"WizardCoder-15B",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-06-14",
+        "metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":"1.11",
+            "Test Set pass@5":"3.18",
+            "Val Set pass@1":"1.98",
+            "Val Set pass@5":"3.27"
+        },
+        "raw_metrics":{
+            "Test Set 10@100k":null,
+            "Test Set pass@1":1.11,
+            "Test Set pass@5":3.18,
+            "Val Set pass@1":1.98,
+            "Val Set pass@5":3.27
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1229315,
+            "title":"WizardCoder: Empowering Code Large Language Models with Evol-Instruct",
+            "url":"\/paper\/wizardcoder-empowering-code-large-language",
+            "published":"2023-06-14T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]

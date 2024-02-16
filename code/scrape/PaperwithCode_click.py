@@ -4,8 +4,8 @@ import undetected_chromedriver as uc
 import time
 import re
 
-dataset = 'common-voice'
-stop_link = 'automatic-speech-recognition-on-mozilla-65'
+dataset = 'nuscenes'
+stop_page = ''
 
 if __name__ == '__main__':
     chrome_options = Options()
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     for leaderboard in leaderboard_tables:
         text = leaderboard.get_attribute('onclick')
         match = re.findall(r"'(.*?)'", text)[0]
-        if stop_link and (stop_link in match):
+        if stop_page and (stop_page in match):
             break
         link = f'{base_url}{match}'
         leaderboard_links.append(link)
