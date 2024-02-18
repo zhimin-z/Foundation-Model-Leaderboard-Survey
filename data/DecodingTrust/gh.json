@@ -21,7 +21,7 @@
         "Privacy":97.39,
         "Machine Ethics":40.58,
         "Fairness":100.0,
-        "Overall":74.72125
+        "Overall":74.72
     },
     {
         "Model":"GPT-3.5",
@@ -33,7 +33,19 @@
         "Privacy":70.13,
         "Machine Ethics":86.38,
         "Fairness":77.57,
-        "Overall":72.45375
+        "Overall":72.45
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@4bit_128g_1seed",
+        "Toxicity":76.18,
+        "Stereotype Bias":93.67,
+        "Adversarial Robustness":33.71,
+        "Out-of-Distribution Robustness":52.39,
+        "Robustness to Adversarial Demonstrations":66.14,
+        "Privacy":94.04,
+        "Machine Ethics":80.04,
+        "Fairness":92.06,
+        "Overall":69.73
     },
     {
         "Model":"GPT-4",
@@ -45,7 +57,79 @@
         "Privacy":66.11,
         "Machine Ethics":76.6,
         "Fairness":63.67,
-        "Overall":69.23875
+        "Overall":69.24
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@4bit_128g_0seed",
+        "Toxicity":78.3,
+        "Stereotype Bias":95.67,
+        "Adversarial Robustness":34.99,
+        "Out-of-Distribution Robustness":54.39,
+        "Robustness to Adversarial Demonstrations":68.62,
+        "Privacy":92.96,
+        "Machine Ethics":77.13,
+        "Fairness":86.55,
+        "Overall":69.11
+    },
+    {
+        "Model":"hf\/vita-group\/vicuna-13b-v1.3_gptq@4bit_128g",
+        "Toxicity":48.34,
+        "Stereotype Bias":62.33,
+        "Adversarial Robustness":39.27,
+        "Out-of-Distribution Robustness":62.9,
+        "Robustness to Adversarial Demonstrations":60.38,
+        "Privacy":79.3,
+        "Machine Ethics":73.63,
+        "Fairness":95.92,
+        "Overall":68.57
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-gptq@8bit_128g",
+        "Toxicity":81.06,
+        "Stereotype Bias":97.67,
+        "Adversarial Robustness":37.12,
+        "Out-of-Distribution Robustness":59.1,
+        "Robustness to Adversarial Demonstrations":67.2,
+        "Privacy":95.56,
+        "Machine Ethics":61.84,
+        "Fairness":84.8,
+        "Overall":67.6
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-awq@4bit_128g",
+        "Toxicity":81.04,
+        "Stereotype Bias":98.0,
+        "Adversarial Robustness":39.48,
+        "Out-of-Distribution Robustness":58.16,
+        "Robustness to Adversarial Demonstrations":61.38,
+        "Privacy":95.59,
+        "Machine Ethics":69.17,
+        "Fairness":80.83,
+        "Overall":67.43
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@4bit_128g_2seed",
+        "Toxicity":77.09,
+        "Stereotype Bias":93.67,
+        "Adversarial Robustness":33.65,
+        "Out-of-Distribution Robustness":55.58,
+        "Robustness to Adversarial Demonstrations":64.37,
+        "Privacy":93.05,
+        "Machine Ethics":71.33,
+        "Fairness":85.31,
+        "Overall":67.21
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-awq@8bit_128g",
+        "Toxicity":81.13,
+        "Stereotype Bias":97.67,
+        "Adversarial Robustness":37.39,
+        "Out-of-Distribution Robustness":58.38,
+        "Robustness to Adversarial Demonstrations":66.29,
+        "Privacy":96.31,
+        "Machine Ethics":61.51,
+        "Fairness":82.04,
+        "Overall":66.99
     },
     {
         "Model":"Tulu-2-13b",
@@ -57,7 +141,91 @@
         "Privacy":78.9,
         "Machine Ethics":36.64,
         "Fairness":97.9,
-        "Overall":66.50625
+        "Overall":66.51
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-awq@8bit_128g",
+        "Toxicity":22.46,
+        "Stereotype Bias":35.0,
+        "Adversarial Robustness":40.64,
+        "Out-of-Distribution Robustness":55.65,
+        "Robustness to Adversarial Demonstrations":49.48,
+        "Privacy":74.38,
+        "Machine Ethics":82.48,
+        "Fairness":87.68,
+        "Overall":65.05
+    },
+    {
+        "Model":"hf\/compressed-llm\/vicuna-13b-v1.3-wanda@0.5_2to4",
+        "Toxicity":42.04,
+        "Stereotype Bias":42.67,
+        "Adversarial Robustness":56.26,
+        "Out-of-Distribution Robustness":48.95,
+        "Robustness to Adversarial Demonstrations":39.36,
+        "Privacy":69.47,
+        "Machine Ethics":75.77,
+        "Fairness":97.12,
+        "Overall":64.49
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-gptq@8bit_128g",
+        "Toxicity":22.32,
+        "Stereotype Bias":35.33,
+        "Adversarial Robustness":40.76,
+        "Out-of-Distribution Robustness":55.63,
+        "Robustness to Adversarial Demonstrations":49.65,
+        "Privacy":72.14,
+        "Machine Ethics":82.42,
+        "Fairness":86.26,
+        "Overall":64.48
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-awq@3bit_128g",
+        "Toxicity":23.31,
+        "Stereotype Bias":48.67,
+        "Adversarial Robustness":50.35,
+        "Out-of-Distribution Robustness":53.13,
+        "Robustness to Adversarial Demonstrations":38.97,
+        "Privacy":75.53,
+        "Machine Ethics":81.85,
+        "Fairness":86.46,
+        "Overall":64.38
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-awq@4bit_128g",
+        "Toxicity":22.77,
+        "Stereotype Bias":31.67,
+        "Adversarial Robustness":43.16,
+        "Out-of-Distribution Robustness":54.56,
+        "Robustness to Adversarial Demonstrations":46.68,
+        "Privacy":74.82,
+        "Machine Ethics":78.56,
+        "Fairness":87.32,
+        "Overall":64.18
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-awq-128example-randomseed@3bit_128g_2seed",
+        "Toxicity":77.46,
+        "Stereotype Bias":90.67,
+        "Adversarial Robustness":37.75,
+        "Out-of-Distribution Robustness":60.9,
+        "Robustness to Adversarial Demonstrations":58.52,
+        "Privacy":93.5,
+        "Machine Ethics":59.19,
+        "Fairness":75.03,
+        "Overall":64.15
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-awq-128example-randomseed@3bit_128g_1seed",
+        "Toxicity":78.94,
+        "Stereotype Bias":95.0,
+        "Adversarial Robustness":37.68,
+        "Out-of-Distribution Robustness":59.75,
+        "Robustness to Adversarial Demonstrations":56.72,
+        "Privacy":93.83,
+        "Machine Ethics":61.73,
+        "Fairness":72.61,
+        "Overall":63.72
     },
     {
         "Model":"Tulu-2-7b",
@@ -69,7 +237,7 @@
         "Privacy":75.82,
         "Machine Ethics":49.0,
         "Fairness":83.21,
-        "Overall":63.5625
+        "Overall":63.56
     },
     {
         "Model":"Zephyr-7B-beta",
@@ -84,6 +252,66 @@
         "Overall":63.24
     },
     {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-wanda-semistruct@0.5_4to8",
+        "Toxicity":74.75,
+        "Stereotype Bias":87.67,
+        "Adversarial Robustness":30.2,
+        "Out-of-Distribution Robustness":52.15,
+        "Robustness to Adversarial Demonstrations":53.55,
+        "Privacy":91.19,
+        "Machine Ethics":66.55,
+        "Fairness":84.09,
+        "Overall":62.95
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-awq-128example-randomseed@3bit_128g_0seed",
+        "Toxicity":77.85,
+        "Stereotype Bias":91.67,
+        "Adversarial Robustness":38.63,
+        "Out-of-Distribution Robustness":55.3,
+        "Robustness to Adversarial Demonstrations":58.88,
+        "Privacy":92.54,
+        "Machine Ethics":57.1,
+        "Fairness":74.47,
+        "Overall":62.82
+    },
+    {
+        "Model":"hf\/vita-group\/llama-2-13b_sparsegpt_semistruct@0.5_2to4",
+        "Toxicity":26.82,
+        "Stereotype Bias":39.33,
+        "Adversarial Robustness":43.68,
+        "Out-of-Distribution Robustness":38.86,
+        "Robustness to Adversarial Demonstrations":58.32,
+        "Privacy":77.89,
+        "Machine Ethics":69.52,
+        "Fairness":88.06,
+        "Overall":62.72
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-gptq@3bit_128g",
+        "Toxicity":23.68,
+        "Stereotype Bias":35.67,
+        "Adversarial Robustness":44.06,
+        "Out-of-Distribution Robustness":45.27,
+        "Robustness to Adversarial Demonstrations":48.22,
+        "Privacy":77.72,
+        "Machine Ethics":73.0,
+        "Fairness":87.55,
+        "Overall":62.64
+    },
+    {
+        "Model":"hf\/vita-group\/vicuna-13b-v1.3_sparsegpt_semistruct@0.5_2to4",
+        "Toxicity":38.97,
+        "Stereotype Bias":51.33,
+        "Adversarial Robustness":53.39,
+        "Out-of-Distribution Robustness":54.01,
+        "Robustness to Adversarial Demonstrations":38.28,
+        "Privacy":66.28,
+        "Machine Ethics":71.67,
+        "Fairness":91.67,
+        "Overall":62.55
+    },
+    {
         "Model":"MPT",
         "Toxicity":40.0,
         "Stereotype Bias":84.6,
@@ -93,7 +321,91 @@
         "Privacy":78.93,
         "Machine Ethics":26.11,
         "Fairness":100.0,
-        "Overall":62.29375
+        "Overall":62.29
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-gptq@4bit_128g",
+        "Toxicity":22.42,
+        "Stereotype Bias":30.33,
+        "Adversarial Robustness":36.31,
+        "Out-of-Distribution Robustness":49.95,
+        "Robustness to Adversarial Demonstrations":45.11,
+        "Privacy":76.87,
+        "Machine Ethics":81.62,
+        "Fairness":83.38,
+        "Overall":62.21
+    },
+    {
+        "Model":"hf\/compressed-llm\/vicuna-13b-v1.3-awq@4bit_128g",
+        "Toxicity":28.45,
+        "Stereotype Bias":74.0,
+        "Adversarial Robustness":39.91,
+        "Out-of-Distribution Robustness":61.61,
+        "Robustness to Adversarial Demonstrations":60.81,
+        "Privacy":79.55,
+        "Machine Ethics":57.76,
+        "Fairness":73.11,
+        "Overall":62.13
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-magnitude-semistruct@0.5_4to8",
+        "Toxicity":71.08,
+        "Stereotype Bias":95.67,
+        "Adversarial Robustness":37.72,
+        "Out-of-Distribution Robustness":48.82,
+        "Robustness to Adversarial Demonstrations":53.89,
+        "Privacy":94.54,
+        "Machine Ethics":43.87,
+        "Fairness":91.63,
+        "Overall":61.75
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-sparsegpt-semistruct@0.5_2to4_seed2",
+        "Toxicity":68.26,
+        "Stereotype Bias":77.0,
+        "Adversarial Robustness":40.95,
+        "Out-of-Distribution Robustness":46.02,
+        "Robustness to Adversarial Demonstrations":48.23,
+        "Privacy":88.5,
+        "Machine Ethics":65.62,
+        "Fairness":79.13,
+        "Overall":61.41
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-sparsegpt-semistruct@0.5_2to4_seed0",
+        "Toxicity":74.04,
+        "Stereotype Bias":94.0,
+        "Adversarial Robustness":40.3,
+        "Out-of-Distribution Robustness":54.14,
+        "Robustness to Adversarial Demonstrations":47.87,
+        "Privacy":89.15,
+        "Machine Ethics":43.73,
+        "Fairness":90.38,
+        "Overall":60.93
+    },
+    {
+        "Model":"hf\/compressed-llm\/vicuna-13b-v1.3-awq@8bit_128g",
+        "Toxicity":29.55,
+        "Stereotype Bias":80.0,
+        "Adversarial Robustness":39.53,
+        "Out-of-Distribution Robustness":59.47,
+        "Robustness to Adversarial Demonstrations":62.49,
+        "Privacy":79.11,
+        "Machine Ethics":54.03,
+        "Fairness":70.44,
+        "Overall":60.85
+    },
+    {
+        "Model":"hf\/vita-group\/vicuna-13b-v1.3_magnitude_semistruct@0.5_2to4",
+        "Toxicity":39.82,
+        "Stereotype Bias":94.0,
+        "Adversarial Robustness":47.14,
+        "Out-of-Distribution Robustness":53.41,
+        "Robustness to Adversarial Demonstrations":62.18,
+        "Privacy":65.69,
+        "Machine Ethics":44.28,
+        "Fairness":91.36,
+        "Overall":60.68
     },
     {
         "Model":"Vicuna",
@@ -108,6 +420,42 @@
         "Overall":60.62
     },
     {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-sparsegpt-semistruct@0.5_4to8",
+        "Toxicity":77.94,
+        "Stereotype Bias":94.67,
+        "Adversarial Robustness":39.76,
+        "Out-of-Distribution Robustness":53.03,
+        "Robustness to Adversarial Demonstrations":52.47,
+        "Privacy":90.05,
+        "Machine Ethics":44.4,
+        "Fairness":83.99,
+        "Overall":60.62
+    },
+    {
+        "Model":"hf\/vita-group\/vicuna-13b-v1.3_gptq@8bit_128g",
+        "Toxicity":49.79,
+        "Stereotype Bias":80.33,
+        "Adversarial Robustness":39.96,
+        "Out-of-Distribution Robustness":59.44,
+        "Robustness to Adversarial Demonstrations":60.59,
+        "Privacy":78.51,
+        "Machine Ethics":54.64,
+        "Fairness":69.68,
+        "Overall":60.47
+    },
+    {
+        "Model":"hf\/vita-group\/llama-2-13b_magnitude_semistruct@0.5_2to4",
+        "Toxicity":18.19,
+        "Stereotype Bias":61.33,
+        "Adversarial Robustness":37.84,
+        "Out-of-Distribution Robustness":27.4,
+        "Robustness to Adversarial Demonstrations":58.63,
+        "Privacy":82.7,
+        "Machine Ethics":59.65,
+        "Fairness":91.28,
+        "Overall":59.58
+    },
+    {
         "Model":"Falcon",
         "Toxicity":39.0,
         "Stereotype Bias":87.0,
@@ -118,6 +466,30 @@
         "Machine Ethics":50.28,
         "Fairness":100.0,
         "Overall":59.49
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-magnitude-semistruct@0.5_1to2",
+        "Toxicity":31.81,
+        "Stereotype Bias":92.0,
+        "Adversarial Robustness":37.17,
+        "Out-of-Distribution Robustness":32.63,
+        "Robustness to Adversarial Demonstrations":41.41,
+        "Privacy":94.72,
+        "Machine Ethics":55.23,
+        "Fairness":94.8,
+        "Overall":59.33
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-wanda-semistruct@0.5_1to2",
+        "Toxicity":39.84,
+        "Stereotype Bias":95.67,
+        "Adversarial Robustness":43.88,
+        "Out-of-Distribution Robustness":24.15,
+        "Robustness to Adversarial Demonstrations":47.85,
+        "Privacy":79.48,
+        "Machine Ethics":72.09,
+        "Fairness":87.62,
+        "Overall":59.18
     },
     {
         "Model":"Open-Orca\/Mistral-7B-OpenOrca",
@@ -132,6 +504,102 @@
         "Overall":58.82
     },
     {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@3bit_128g_0seed",
+        "Toxicity":29.41,
+        "Stereotype Bias":95.33,
+        "Adversarial Robustness":39.33,
+        "Out-of-Distribution Robustness":33.21,
+        "Robustness to Adversarial Demonstrations":49.03,
+        "Privacy":85.86,
+        "Machine Ethics":60.63,
+        "Fairness":84.83,
+        "Overall":58.82
+    },
+    {
+        "Model":"hf\/efficient-llm\/vicuna-13b-v1.3-gptq@3bit_128g",
+        "Toxicity":50.92,
+        "Stereotype Bias":87.0,
+        "Adversarial Robustness":31.83,
+        "Out-of-Distribution Robustness":53.48,
+        "Robustness to Adversarial Demonstrations":49.22,
+        "Privacy":75.93,
+        "Machine Ethics":50.38,
+        "Fairness":90.08,
+        "Overall":58.49
+    },
+    {
+        "Model":"hf\/compressed-llm\/vicuna-13b-v1.3-awq@3bit_128g",
+        "Toxicity":30.77,
+        "Stereotype Bias":72.67,
+        "Adversarial Robustness":42.19,
+        "Out-of-Distribution Robustness":59.2,
+        "Robustness to Adversarial Demonstrations":56.31,
+        "Privacy":79.18,
+        "Machine Ethics":45.99,
+        "Fairness":67.9,
+        "Overall":58.46
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-sparsegpt-semistruct@0.5_1to2",
+        "Toxicity":43.13,
+        "Stereotype Bias":89.67,
+        "Adversarial Robustness":50.83,
+        "Out-of-Distribution Robustness":32.85,
+        "Robustness to Adversarial Demonstrations":42.88,
+        "Privacy":67.73,
+        "Machine Ethics":68.36,
+        "Fairness":86.35,
+        "Overall":58.17
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-wanda@0.5_2to4",
+        "Toxicity":25.84,
+        "Stereotype Bias":75.33,
+        "Adversarial Robustness":38.63,
+        "Out-of-Distribution Robustness":28.49,
+        "Robustness to Adversarial Demonstrations":55.95,
+        "Privacy":76.51,
+        "Machine Ethics":64.76,
+        "Fairness":83.78,
+        "Overall":58.02
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-sparsegpt-semistruct@0.5_2to4_seed1",
+        "Toxicity":69.91,
+        "Stereotype Bias":90.33,
+        "Adversarial Robustness":40.31,
+        "Out-of-Distribution Robustness":51.36,
+        "Robustness to Adversarial Demonstrations":52.93,
+        "Privacy":87.7,
+        "Machine Ethics":33.05,
+        "Fairness":81.39,
+        "Overall":57.79
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@3bit_128g_1seed",
+        "Toxicity":33.96,
+        "Stereotype Bias":94.67,
+        "Adversarial Robustness":36.03,
+        "Out-of-Distribution Robustness":30.14,
+        "Robustness to Adversarial Demonstrations":44.87,
+        "Privacy":88.3,
+        "Machine Ethics":53.75,
+        "Fairness":87.82,
+        "Overall":56.82
+    },
+    {
+        "Model":"hf\/vita-group\/llama-2-13b-chat_magnitude_semistruct@0.5_2to4",
+        "Toxicity":49.31,
+        "Stereotype Bias":75.33,
+        "Adversarial Robustness":46.44,
+        "Out-of-Distribution Robustness":50.91,
+        "Robustness to Adversarial Demonstrations":52.15,
+        "Privacy":89.36,
+        "Machine Ethics":22.08,
+        "Fairness":79.56,
+        "Overall":56.75
+    },
+    {
         "Model":"RedPajama",
         "Toxicity":18.0,
         "Stereotype Bias":73.0,
@@ -141,7 +609,31 @@
         "Privacy":76.64,
         "Machine Ethics":27.49,
         "Fairness":100.0,
-        "Overall":56.5825
+        "Overall":56.58
+    },
+    {
+        "Model":"hf\/compressed-llm\/llama-2-13b-chat-wanda@0.5_2to4",
+        "Toxicity":49.25,
+        "Stereotype Bias":92.67,
+        "Adversarial Robustness":39.85,
+        "Out-of-Distribution Robustness":44.09,
+        "Robustness to Adversarial Demonstrations":50.08,
+        "Privacy":81.0,
+        "Machine Ethics":30.5,
+        "Fairness":88.39,
+        "Overall":55.65
+    },
+    {
+        "Model":"hf\/efficient-llm\/llama-2-13b-chat-gptq-larger-caliset-llama2-temp@3bit_128g_2seed",
+        "Toxicity":32.86,
+        "Stereotype Bias":95.0,
+        "Adversarial Robustness":37.49,
+        "Out-of-Distribution Robustness":34.02,
+        "Robustness to Adversarial Demonstrations":48.21,
+        "Privacy":90.67,
+        "Machine Ethics":41.27,
+        "Fairness":76.64,
+        "Overall":54.71
     },
     {
         "Model":"Alpaca",
@@ -153,6 +645,6 @@
         "Privacy":46.39,
         "Machine Ethics":30.43,
         "Fairness":92.63,
-        "Overall":45.8525
+        "Overall":45.85
     }
 ]

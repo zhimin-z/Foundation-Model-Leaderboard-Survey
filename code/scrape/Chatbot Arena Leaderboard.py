@@ -1,12 +1,13 @@
-from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
 import pandas as pd
 import time
 import re
 import os
 
-path_leaderboard = "data/Chatbot Arena Leaderboard"
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
+path_leaderboard = "data/Chatbot Arena Leaderboard"
+leaderboard_names = ['arena_leaderboard', 'full_leaderboard']
 
 def filter_string(text):
     regex_pattern = r'🤖|⭐|📈|📚|📊|🗳️'
@@ -24,34 +25,47 @@ if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
         
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
 
     url = 'https://chat.lmsys.org'
     driver.get(url)
     time.sleep(10)
 
-    leaderboard_button = driver.find_element(
-        By.XPATH, '//div[@id="component-1"]/div[1]/button[4]')
+    leaderboard_button = driver.find_element(By.XPATH, '//button[@aria-controls="component-140"]')
     leaderboard_button.click()
-
-    leaderboards = driver.find_element(By.XPATH, '//div[@id="component-105"]')
-    for index, button in enumerate(leaderboards.find_elements(By.XPATH, ".//button[contains(@class, 'svelte-kqij2n')]")):
-        leaderboard_name = prepcess_name(button.text)
-        button.click()
-        table = leaderboards.find_elements(
-            By.XPATH, f'.//table[@class="svelte-1tclfmr"]')[index]
+    
+    for leaderboard_name in leaderboard_names:
+        leaderboard = driver.find_element(By.XPATH, f'//table[@class="table svelte-1jok1de"]')
         column_names = []
-        for column in table.find_elements(By.XPATH, './/thead/tr/th'):
+        for column in leaderboard.find_elements(By.XPATH, './/thead/tr/th'):
             column_name = filter_string(column.text)
             column_names.append(column_name)
-        df = []
-        for row in table.find_elements(By.XPATH, './/tbody/tr'):
-            values = [value.text for value in row.find_elements(
-                By.XPATH, './/td')]
-            df.append(values)
+        
+        df = set()
+        while True:
+            # Find the current set of rows
+            current_df = set()
+            for row in leaderboard.find_elements(By.XPATH, './/tbody/tr'):
+                values = tuple(value.text for value in row.find_elements(By.XPATH, './/td'))
+                df.add(values)
+        
+            # Attempt to scroll
+            driver.execute_script("arguments[0].scrollTop += 200;", leaderboard)
+            time.sleep(0.5)  # Adjust based on the loading time, ensuring that new rows load
+            
+            if current_df.issubset(df):
+                # No new rows found, assuming all rows are loaded
+                break
+            else:
+                df.update(current_df)
+        
+        df = [list(tup) for tup in df]
         df = pd.DataFrame(df, columns=column_names)
+        
         if 'Rank' in df.columns:
             df = df.drop('Rank', axis=1)
         df.to_json(f'{path_leaderboard}/shw-{leaderboard_name}.json',
                    orient='records', indent=4)
+        
+    driver.quit()
