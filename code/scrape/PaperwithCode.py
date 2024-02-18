@@ -7,15 +7,13 @@ import os
 
 def file_rename(title):
     title = title.lower()
-    title = title.replace(',', '').replace('/', '').replace('-', '').replace(':', '')
-    title = title.split()
-    title = '_'.join(title)
+    title = title.replace(',', '_').replace('/', '_').replace('-', '_').replace(':', '_').replace(' ', '_')
     return title
 
 bloom = False
-dataset = 'codecontests'
-path_leaderboard = 'data/CodeContests'
-included_leaderboards = []
+dataset = ''
+path_leaderboard = 'data/Amazon Review'
+included_leaderboards = ['causal-language-modeling-on-alekseykorshuk']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
