@@ -44,7 +44,7 @@ if __name__ == '__main__':
                 df.append(values)
             
             df = pd.DataFrame(df, columns=column_names)
-            df.to_json(f'{path_leaderboard}/shw-{leaderboard_name}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/iw-{leaderboard_name}.json', orient='records', indent=4)
             
             index += 1
         except:

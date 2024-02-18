@@ -32,4 +32,4 @@ if __name__ == '__main__':
             
         df = pd.DataFrame(df, columns=column_names)
         table_name = table.find_element(By.XPATH, './/div[@class="home-item-title"]').text
-        df.to_json(f'{path_leaderboard}/shw-{table_name.lower()}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/iw-{table_name.lower()}.json', orient='records', indent=4)

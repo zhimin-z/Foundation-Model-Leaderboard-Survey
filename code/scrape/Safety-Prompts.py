@@ -54,4 +54,4 @@ if __name__ == '__main__':
             time.sleep(1)
             
         df = pd.DataFrame(df, columns=column_names)
-        df.to_json(f'{path_leaderboard}/shw-{suffix}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/iw-{suffix}.json', orient='records', indent=4)

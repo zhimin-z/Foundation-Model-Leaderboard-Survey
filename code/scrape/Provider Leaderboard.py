@@ -53,5 +53,5 @@ if __name__ == '__main__':
             
             df = pd.DataFrame(df, columns=column_names)
             df.rename(columns={'PROVIDER': 'Model'}, inplace=True)
-            df.to_json(f'{path_leaderboard}/shw-{output_token_length_list_inverse[output_token_length]}-{service_load_list_inverse[service_load]}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/iw-{output_token_length_list_inverse[output_token_length]}-{service_load_list_inverse[service_load]}.json', orient='records', indent=4)
                     

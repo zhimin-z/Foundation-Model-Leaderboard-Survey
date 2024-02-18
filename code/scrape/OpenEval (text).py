@@ -41,4 +41,4 @@ if __name__ == '__main__':
             
         df = pd.DataFrame(df, columns=column_names)
         df['Model'] = df['Model'].apply(filter_first_row)
-        df.to_json(f'{path_leaderboard}/shw-{table_name}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/iw-{table_name}.json', orient='records', indent=4)

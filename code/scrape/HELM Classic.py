@@ -90,7 +90,7 @@ def process_table(driver, group_name, table_name, path_leaderboard):
     df = [[value.text for value in row.find_elements(
         By.XPATH, './/td')] for row in table.find_elements(By.XPATH, './/tbody/tr')]
     df = pd.DataFrame(df, columns=column_names)
-    file_name = f'{path_leaderboard}/shw-{preprocess_name(group_name)}'
+    file_name = f'{path_leaderboard}/iw-{preprocess_name(group_name)}'
     if table_name:
         file_name += f'-{preprocess_name(table_name)}'
     df.to_json(f'{file_name}.json', orient='records', indent=4)

@@ -37,4 +37,4 @@ if __name__ == '__main__':
             df.append(row)
     
         df = pd.DataFrame(df, columns=column_names)
-        df.to_json(f'{path_leaderboard}/shw-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/iw-{leaderboard_names.pop(0)}.json', orient='records', indent=4)

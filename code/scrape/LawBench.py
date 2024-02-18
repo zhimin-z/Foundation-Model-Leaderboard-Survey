@@ -65,5 +65,5 @@ if __name__ == '__main__':
                 entry_values.append(cell.text)
             df.append(pd.Series(entry_values, index=column_names))
         df = pd.DataFrame(df)
-        df.to_json(f'{path_leaderboard}/shw-{name_process(setting.text)}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/iw-{name_process(setting.text)}.json', orient='records', indent=4)
                 

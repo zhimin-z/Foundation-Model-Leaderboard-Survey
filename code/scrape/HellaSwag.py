@@ -26,4 +26,4 @@ if __name__ == '__main__':
     df = pd.DataFrame(df, columns=column_names)
     df.rename(columns={'Rank': 'Date'}, inplace=True)
     df['Date'] = df['Date'].apply(lambda x: x.split('\n')[-1])
-    df.to_json(f'{path_leaderboard}/shw.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/iw.json', orient='records', indent=4)

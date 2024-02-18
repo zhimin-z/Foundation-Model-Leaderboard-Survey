@@ -45,7 +45,7 @@ def retrieve_table(driver, table, name=''):
         df.append(values)
 
     df = pd.DataFrame(df)
-    df.to_json(f'{path_leaderboard}/shw-{table_name}.json',
+    df.to_json(f'{path_leaderboard}/iw-{table_name}.json',
                orient='records', indent=4)
 
 

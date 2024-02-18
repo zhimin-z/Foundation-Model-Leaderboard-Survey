@@ -41,6 +41,6 @@ if __name__ == '__main__':
                 pass
             
             df.rename(columns={'模型': 'Model'}, inplace=True)
-            df.to_json(f"data/{leaderboard_name}/shw-{subleaderboard_name}.json", orient='records', indent=4)
+            df.to_json(f"data/{leaderboard_name}/iw-{subleaderboard_name}.json", orient='records', indent=4)
             
             iteration += 1
