@@ -11,9 +11,9 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = ''
-path_leaderboard = 'data/Amazon Review'
-included_leaderboards = ['causal-language-modeling-on-alekseykorshuk']
+dataset = 'musicqa'
+path_leaderboard = 'data/MusicQA'
+included_leaderboards = []
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):

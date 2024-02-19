@@ -133,17 +133,28 @@
     },
     {
         "Rank":13,
+        "Model":"SONAR",
+        "Average":58.09,
+        "DalajClassification":49.75,
+        "MassiveIntentClassification (sv)":62.86,
+        "MassiveScenarioClassification (sv)":67.93,
+        "NordicLangClassification":48.4,
+        "ScalaSvClassification":51.15,
+        "SweRecClassification":68.47
+    },
+    {
+        "Rank":14,
         "Model":"e5-base",
         "Average":51.88,
         "DalajClassification":49.62,
         "MassiveIntentClassification (sv)":41.34,
-        "MassiveScenarioClassification (sv)":50.0,
+        "MassiveScenarioClassification (sv)":50,
         "NordicLangClassification":59.34,
         "ScalaSvClassification":49.95,
         "SweRecClassification":61.04
     },
     {
-        "Rank":14,
+        "Rank":15,
         "Model":"e5-large",
         "Average":51.61,
         "DalajClassification":49.76,
@@ -154,7 +165,7 @@
         "SweRecClassification":60.09
     },
     {
-        "Rank":15,
+        "Rank":16,
         "Model":"electra-small-nordic",
         "Average":50.35,
         "DalajClassification":55.84,
@@ -165,7 +176,7 @@
         "SweRecClassification":58.98
     },
     {
-        "Rank":16,
+        "Rank":17,
         "Model":"e5-small",
         "Average":50.19,
         "DalajClassification":49.85,
@@ -176,7 +187,7 @@
         "SweRecClassification":60.91
     },
     {
-        "Rank":17,
+        "Rank":18,
         "Model":"all-MiniLM-L6-v2",
         "Average":49.4,
         "DalajClassification":49.9,
@@ -187,7 +198,7 @@
         "SweRecClassification":60.84
     },
     {
-        "Rank":18,
+        "Rank":19,
         "Model":"electra-small-swedish-cased-discriminator",
         "Average":40.79,
         "DalajClassification":55.64,
@@ -198,7 +209,7 @@
         "SweRecClassification":54.96
     },
     {
-        "Rank":19,
+        "Rank":20,
         "Model":"LASER2",
         "Average":"",
         "DalajClassification":"",
@@ -209,7 +220,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":20,
+        "Rank":21,
         "Model":"winberta-base",
         "Average":"",
         "DalajClassification":49.77,
@@ -220,7 +231,7 @@
         "SweRecClassification":62.97
     },
     {
-        "Rank":21,
+        "Rank":22,
         "Model":"winberta-large",
         "Average":"",
         "DalajClassification":"",
@@ -231,7 +242,18 @@
         "SweRecClassification":""
     },
     {
-        "Rank":22,
+        "Rank":23,
+        "Model":"e5-dansk-test-0.1",
+        "Average":"",
+        "DalajClassification":"",
+        "MassiveIntentClassification (sv)":"",
+        "MassiveScenarioClassification (sv)":"",
+        "NordicLangClassification":61,
+        "ScalaSvClassification":"",
+        "SweRecClassification":""
+    },
+    {
+        "Rank":24,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":"",
         "DalajClassification":"",
@@ -242,7 +264,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":23,
+        "Rank":25,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":"",
         "DalajClassification":"",
@@ -253,18 +275,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":24,
-        "Model":"text2vec-base-multilingual",
-        "Average":"",
-        "DalajClassification":"",
-        "MassiveIntentClassification (sv)":58.44,
-        "MassiveScenarioClassification (sv)":64.43,
-        "NordicLangClassification":"",
-        "ScalaSvClassification":"",
-        "SweRecClassification":""
-    },
-    {
-        "Rank":25,
+        "Rank":26,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":"",
         "DalajClassification":"",
@@ -275,7 +286,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":26,
+        "Rank":27,
         "Model":"e5-mistral-7b-instruct",
         "Average":"",
         "DalajClassification":"",
@@ -286,7 +297,18 @@
         "SweRecClassification":""
     },
     {
-        "Rank":27,
+        "Rank":28,
+        "Model":"multilingual-e5-large-instruct",
+        "Average":"",
+        "DalajClassification":"",
+        "MassiveIntentClassification (sv)":74.68,
+        "MassiveScenarioClassification (sv)":79.07,
+        "NordicLangClassification":"",
+        "ScalaSvClassification":"",
+        "SweRecClassification":""
+    },
+    {
+        "Rank":29,
         "Model":"udever-bloom-1b1",
         "Average":"",
         "DalajClassification":"",
@@ -297,7 +319,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":28,
+        "Rank":30,
         "Model":"udever-bloom-560m",
         "Average":"",
         "DalajClassification":"",
@@ -308,7 +330,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"LaBSE",
         "Average":"",
         "DalajClassification":"",
@@ -319,7 +341,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"all-MiniLM-L12-v2",
         "Average":"",
         "DalajClassification":"",
@@ -330,18 +352,18 @@
         "SweRecClassification":""
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"allenai-specter",
         "Average":"",
         "DalajClassification":"",
-        "MassiveIntentClassification (sv)":36.0,
+        "MassiveIntentClassification (sv)":36,
         "MassiveScenarioClassification (sv)":35.35,
         "NordicLangClassification":"",
         "ScalaSvClassification":"",
         "SweRecClassification":""
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":"",
         "DalajClassification":"",
@@ -352,7 +374,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"gtr-t5-large",
         "Average":"",
         "DalajClassification":"",
@@ -363,7 +385,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"gtr-t5-xl",
         "Average":"",
         "DalajClassification":"",
@@ -374,7 +396,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"sentence-t5-base",
         "Average":"",
         "DalajClassification":"",
@@ -385,7 +407,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"sentence-t5-large",
         "Average":"",
         "DalajClassification":"",
@@ -396,7 +418,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"sentence-t5-xl",
         "Average":"",
         "DalajClassification":"",
@@ -407,7 +429,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "DalajClassification":"",
@@ -418,7 +440,7 @@
         "SweRecClassification":""
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"DanskBERT",
         "Average":"",
         "DalajClassification":50.32,

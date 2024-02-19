@@ -1,6 +1,20 @@
 [
     {
         "Rank":1,
+        "Model":"acge-large-zh",
+        "Average":73.39,
+        "AmazonReviewsClassification (zh)":50.3,
+        "IFlyTek":49.41,
+        "JDReview":86.49,
+        "MassiveIntentClassification (zh-CN)":81,
+        "MassiveScenarioClassification (zh-CN)":84.31,
+        "MultilingualSentiment":75.72,
+        "OnlineShopping":92.27,
+        "TNews":52.58,
+        "Waimai":88.44
+    },
+    {
+        "Rank":2,
         "Model":"Baichuan-text-embedding",
         "Average":72.84,
         "AmazonReviewsClassification (zh)":48.3,
@@ -14,7 +28,21 @@
         "Waimai":88.77
     },
     {
-        "Rank":2,
+        "Rank":3,
+        "Model":"alime-embedding-large-zh",
+        "Average":71.35,
+        "AmazonReviewsClassification (zh)":46.95,
+        "IFlyTek":49.67,
+        "JDReview":86.53,
+        "MassiveIntentClassification (zh-CN)":73.39,
+        "MassiveScenarioClassification (zh-CN)":76.04,
+        "MultilingualSentiment":76.4,
+        "OnlineShopping":92.6,
+        "TNews":52.04,
+        "Waimai":88.49
+    },
+    {
+        "Rank":4,
         "Model":"gte-large-zh",
         "Average":71.34,
         "AmazonReviewsClassification (zh)":47.23,
@@ -28,7 +56,7 @@
         "Waimai":88.37
     },
     {
-        "Rank":3,
+        "Rank":5,
         "Model":"gte-base-zh",
         "Average":71.26,
         "AmazonReviewsClassification (zh)":45.82,
@@ -42,21 +70,21 @@
         "Waimai":88.07
     },
     {
-        "Rank":4,
-        "Model":"acge-large-zh",
-        "Average":71.1,
-        "AmazonReviewsClassification (zh)":46.43,
-        "IFlyTek":48.88,
-        "JDReview":86.36,
-        "MassiveIntentClassification (zh-CN)":73.43,
-        "MassiveScenarioClassification (zh-CN)":76.18,
-        "MultilingualSentiment":75.84,
-        "OnlineShopping":92.31,
-        "TNews":51.99,
-        "Waimai":88.5
+        "Rank":6,
+        "Model":"xiaobu-embedding",
+        "Average":71.2,
+        "AmazonReviewsClassification (zh)":46.72,
+        "IFlyTek":49.74,
+        "JDReview":86.74,
+        "MassiveIntentClassification (zh-CN)":72.87,
+        "MassiveScenarioClassification (zh-CN)":75.47,
+        "MultilingualSentiment":76.28,
+        "OnlineShopping":92.49,
+        "TNews":52.16,
+        "Waimai":88.36
     },
     {
-        "Rank":5,
+        "Rank":7,
         "Model":"lim_base_zh",
         "Average":70.83,
         "AmazonReviewsClassification (zh)":46.67,
@@ -70,7 +98,35 @@
         "Waimai":87.96
     },
     {
-        "Rank":6,
+        "Rank":8,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":70.17,
+        "AmazonReviewsClassification (zh)":46.24,
+        "IFlyTek":45.05,
+        "JDReview":85.82,
+        "MassiveIntentClassification (zh-CN)":74.99,
+        "MassiveScenarioClassification (zh-CN)":79.93,
+        "MultilingualSentiment":73.31,
+        "OnlineShopping":92.19,
+        "TNews":47.05,
+        "Waimai":86.94
+    },
+    {
+        "Rank":9,
+        "Model":"Dmeta-embedding",
+        "Average":70,
+        "AmazonReviewsClassification (zh)":44.93,
+        "IFlyTek":48.3,
+        "JDReview":85.07,
+        "MassiveIntentClassification (zh-CN)":71.16,
+        "MassiveScenarioClassification (zh-CN)":73.54,
+        "MultilingualSentiment":75.16,
+        "OnlineShopping":93.25,
+        "TNews":52.41,
+        "Waimai":86.21
+    },
+    {
+        "Rank":10,
         "Model":"bge-large-zh-v1.5",
         "Average":69.13,
         "AmazonReviewsClassification (zh)":41.38,
@@ -84,7 +140,7 @@
         "Waimai":86.9
     },
     {
-        "Rank":7,
+        "Rank":11,
         "Model":"tao",
         "Average":69.05,
         "AmazonReviewsClassification (zh)":40.81,
@@ -98,7 +154,7 @@
         "Waimai":87.1
     },
     {
-        "Rank":8,
+        "Rank":12,
         "Model":"stella-large-zh-v2",
         "Average":69.05,
         "AmazonReviewsClassification (zh)":40.82,
@@ -112,7 +168,7 @@
         "Waimai":87.12
     },
     {
-        "Rank":9,
+        "Rank":13,
         "Model":"tao-8k",
         "Average":69.05,
         "AmazonReviewsClassification (zh)":40.8,
@@ -126,7 +182,7 @@
         "Waimai":87.1
     },
     {
-        "Rank":10,
+        "Rank":14,
         "Model":"IYun-large-zh",
         "Average":68.88,
         "AmazonReviewsClassification (zh)":40.14,
@@ -140,7 +196,7 @@
         "Waimai":86.96
     },
     {
-        "Rank":11,
+        "Rank":15,
         "Model":"bge-large-zh-noinstruct",
         "Average":68.58,
         "AmazonReviewsClassification (zh)":41.94,
@@ -154,7 +210,7 @@
         "Waimai":86.83
     },
     {
-        "Rank":12,
+        "Rank":16,
         "Model":"stella-base-zh-v2",
         "Average":68.29,
         "AmazonReviewsClassification (zh)":39.64,
@@ -168,7 +224,7 @@
         "Waimai":86.68
     },
     {
-        "Rank":13,
+        "Rank":17,
         "Model":"mist-zh",
         "Average":68.21,
         "AmazonReviewsClassification (zh)":39.32,
@@ -182,7 +238,7 @@
         "Waimai":86.66
     },
     {
-        "Rank":14,
+        "Rank":18,
         "Model":"m3e-large",
         "Average":68.2,
         "AmazonReviewsClassification (zh)":44.44,
@@ -196,7 +252,7 @@
         "Waimai":86.08
     },
     {
-        "Rank":15,
+        "Rank":19,
         "Model":"bge-base-zh-v1.5",
         "Average":68.07,
         "AmazonReviewsClassification (zh)":40.15,
@@ -210,7 +266,7 @@
         "Waimai":85.36
     },
     {
-        "Rank":16,
+        "Rank":20,
         "Model":"winberta-large",
         "Average":67.89,
         "AmazonReviewsClassification (zh)":42.04,
@@ -224,7 +280,7 @@
         "Waimai":85.98
     },
     {
-        "Rank":17,
+        "Rank":21,
         "Model":"stella-base-zh",
         "Average":67.77,
         "AmazonReviewsClassification (zh)":40.25,
@@ -238,7 +294,7 @@
         "Waimai":86.62
     },
     {
-        "Rank":18,
+        "Rank":22,
         "Model":"stella-large-zh",
         "Average":67.62,
         "AmazonReviewsClassification (zh)":40.57,
@@ -252,7 +308,7 @@
         "Waimai":86.77
     },
     {
-        "Rank":19,
+        "Rank":23,
         "Model":"m3e-base",
         "Average":67.52,
         "AmazonReviewsClassification (zh)":43.02,
@@ -266,7 +322,7 @@
         "Waimai":83.99
     },
     {
-        "Rank":20,
+        "Rank":24,
         "Model":"multilingual-e5-large",
         "Average":67.34,
         "AmazonReviewsClassification (zh)":38.83,
@@ -280,7 +336,7 @@
         "Waimai":85.02
     },
     {
-        "Rank":21,
+        "Rank":25,
         "Model":"winberta-base",
         "Average":67.08,
         "AmazonReviewsClassification (zh)":39.68,
@@ -294,7 +350,7 @@
         "Waimai":84.34
     },
     {
-        "Rank":22,
+        "Rank":26,
         "Model":"piccolo-large-zh",
         "Average":67.03,
         "AmazonReviewsClassification (zh)":40.33,
@@ -308,7 +364,7 @@
         "Waimai":85.54
     },
     {
-        "Rank":23,
+        "Rank":27,
         "Model":"piccolo-base-zh",
         "Average":66.98,
         "AmazonReviewsClassification (zh)":40.24,
@@ -322,7 +378,7 @@
         "Waimai":84.7
     },
     {
-        "Rank":24,
+        "Rank":28,
         "Model":"multilingual-e5-small",
         "Average":65.85,
         "AmazonReviewsClassification (zh)":37.5,
@@ -336,7 +392,7 @@
         "Waimai":83.9
     },
     {
-        "Rank":25,
+        "Rank":29,
         "Model":"multilingual-e5-base",
         "Average":65.35,
         "AmazonReviewsClassification (zh)":37.23,
@@ -350,7 +406,7 @@
         "Waimai":84.42
     },
     {
-        "Rank":26,
+        "Rank":30,
         "Model":"udever-bloom-1b1",
         "Average":65.31,
         "AmazonReviewsClassification (zh)":38.12,
@@ -364,7 +420,21 @@
         "Waimai":82.67
     },
     {
-        "Rank":27,
+        "Rank":31,
+        "Model":"jina-embeddings-v2-base-zh",
+        "Average":64.94,
+        "AmazonReviewsClassification (zh)":34.94,
+        "IFlyTek":47.36,
+        "JDReview":79.57,
+        "MassiveIntentClassification (zh-CN)":68.2,
+        "MassiveScenarioClassification (zh-CN)":71.93,
+        "MultilingualSentiment":63.29,
+        "OnlineShopping":87,
+        "TNews":47.65,
+        "Waimai":84.54
+    },
+    {
+        "Rank":32,
         "Model":"gte-small-zh",
         "Average":64.49,
         "AmazonReviewsClassification (zh)":38.69,
@@ -378,7 +448,7 @@
         "Waimai":84.96
     },
     {
-        "Rank":28,
+        "Rank":33,
         "Model":"text-embedding-ada-002",
         "Average":64.31,
         "AmazonReviewsClassification (zh)":38.3,
@@ -392,7 +462,7 @@
         "Waimai":82.37
     },
     {
-        "Rank":29,
+        "Rank":34,
         "Model":"bge-small-zh-v1.5",
         "Average":63.96,
         "AmazonReviewsClassification (zh)":35.91,
@@ -406,7 +476,7 @@
         "Waimai":83.18
     },
     {
-        "Rank":30,
+        "Rank":35,
         "Model":"udever-bloom-560m",
         "Average":62.85,
         "AmazonReviewsClassification (zh)":35.7,
@@ -420,7 +490,7 @@
         "Waimai":80.65
     },
     {
-        "Rank":31,
+        "Rank":36,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":62.7,
         "AmazonReviewsClassification (zh)":38.25,
@@ -434,7 +504,7 @@
         "Waimai":84.15
     },
     {
-        "Rank":32,
+        "Rank":37,
         "Model":"sbert-chinese-general-v1",
         "Average":62.54,
         "AmazonReviewsClassification (zh)":37.51,
@@ -448,7 +518,7 @@
         "Waimai":83.96
     },
     {
-        "Rank":33,
+        "Rank":38,
         "Model":"text2vec-base-chinese",
         "Average":62.19,
         "AmazonReviewsClassification (zh)":34.12,
@@ -462,7 +532,7 @@
         "Waimai":77.22
     },
     {
-        "Rank":34,
+        "Rank":39,
         "Model":"luotuo-bert-medium",
         "Average":61,
         "AmazonReviewsClassification (zh)":34.46,
@@ -476,7 +546,7 @@
         "Waimai":79.57
     },
     {
-        "Rank":35,
+        "Rank":40,
         "Model":"text2vec-large-chinese",
         "Average":60.66,
         "AmazonReviewsClassification (zh)":33.77,
@@ -490,7 +560,21 @@
         "Waimai":76.01
     },
     {
-        "Rank":36,
+        "Rank":41,
+        "Model":"SONAR",
+        "Average":57.87,
+        "AmazonReviewsClassification (zh)":31.91,
+        "IFlyTek":38.01,
+        "JDReview":69.59,
+        "MassiveIntentClassification (zh-CN)":62.08,
+        "MassiveScenarioClassification (zh-CN)":68.88,
+        "MultilingualSentiment":57.69,
+        "OnlineShopping":75.64,
+        "TNews":40.95,
+        "Waimai":76.12
+    },
+    {
+        "Rank":42,
         "Model":"ALL_862873",
         "Average":38.04,
         "AmazonReviewsClassification (zh)":21.96,
@@ -504,7 +588,7 @@
         "Waimai":56.22
     },
     {
-        "Rank":43,
+        "Rank":46,
         "Model":"LASER2",
         "Average":"",
         "AmazonReviewsClassification (zh)":30.89,
@@ -518,7 +602,21 @@
         "Waimai":""
     },
     {
-        "Rank":54,
+        "Rank":52,
+        "Model":"windberta-large",
+        "Average":"",
+        "AmazonReviewsClassification (zh)":43.32,
+        "IFlyTek":47.08,
+        "JDReview":84.48,
+        "MassiveIntentClassification (zh-CN)":"",
+        "MassiveScenarioClassification (zh-CN)":"",
+        "MultilingualSentiment":72.68,
+        "OnlineShopping":92.11,
+        "TNews":49.85,
+        "Waimai":86.44
+    },
+    {
+        "Rank":62,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":"",
         "AmazonReviewsClassification (zh)":24.27,
@@ -532,7 +630,7 @@
         "Waimai":""
     },
     {
-        "Rank":55,
+        "Rank":63,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":"",
         "AmazonReviewsClassification (zh)":23.98,
@@ -546,7 +644,7 @@
         "Waimai":""
     },
     {
-        "Rank":58,
+        "Rank":66,
         "Model":"SGPT-5.8B-weightedmean-nli-bitfit",
         "Average":"",
         "AmazonReviewsClassification (zh)":33.75,
@@ -560,21 +658,7 @@
         "Waimai":""
     },
     {
-        "Rank":70,
-        "Model":"text2vec-base-multilingual",
-        "Average":"",
-        "AmazonReviewsClassification (zh)":32.52,
-        "IFlyTek":"",
-        "JDReview":"",
-        "MassiveIntentClassification (zh-CN)":60.86,
-        "MassiveScenarioClassification (zh-CN)":65.83,
-        "MultilingualSentiment":"",
-        "OnlineShopping":"",
-        "TNews":"",
-        "Waimai":""
-    },
-    {
-        "Rank":72,
+        "Rank":85,
         "Model":"sgpt-bloom-1b7-nli",
         "Average":"",
         "AmazonReviewsClassification (zh)":37.63,
@@ -588,7 +672,7 @@
         "Waimai":""
     },
     {
-        "Rank":73,
+        "Rank":86,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":"",
         "AmazonReviewsClassification (zh)":32.63,
@@ -602,21 +686,21 @@
         "Waimai":""
     },
     {
-        "Rank":85,
-        "Model":"e5-mistral-7b-instruct",
+        "Rank":101,
+        "Model":"multilingual-e5-large-instruct",
         "Average":"",
-        "AmazonReviewsClassification (zh)":46.24,
+        "AmazonReviewsClassification (zh)":44.66,
         "IFlyTek":"",
         "JDReview":"",
-        "MassiveIntentClassification (zh-CN)":74.99,
-        "MassiveScenarioClassification (zh-CN)":79.93,
+        "MassiveIntentClassification (zh-CN)":73.32,
+        "MassiveScenarioClassification (zh-CN)":78.7,
         "MultilingualSentiment":"",
         "OnlineShopping":"",
         "TNews":"",
         "Waimai":""
     },
     {
-        "Rank":88,
+        "Rank":102,
         "Model":"udever-bloom-3b",
         "Average":"",
         "AmazonReviewsClassification (zh)":"",
@@ -630,7 +714,7 @@
         "Waimai":84.07
     },
     {
-        "Rank":89,
+        "Rank":103,
         "Model":"udever-bloom-7b1",
         "Average":"",
         "AmazonReviewsClassification (zh)":"",
@@ -644,21 +728,7 @@
         "Waimai":84.68
     },
     {
-        "Rank":96,
-        "Model":"pythia-14m-embedding",
-        "Average":"",
-        "AmazonReviewsClassification (zh)":26.41,
-        "IFlyTek":"",
-        "JDReview":"",
-        "MassiveIntentClassification (zh-CN)":"",
-        "MassiveScenarioClassification (zh-CN)":"",
-        "MultilingualSentiment":"",
-        "OnlineShopping":"",
-        "TNews":"",
-        "Waimai":""
-    },
-    {
-        "Rank":110,
+        "Rank":132,
         "Model":"LaBSE",
         "Average":"",
         "AmazonReviewsClassification (zh)":36.45,
@@ -672,7 +742,7 @@
         "Waimai":""
     },
     {
-        "Rank":111,
+        "Rank":133,
         "Model":"all-MiniLM-L12-v2",
         "Average":"",
         "AmazonReviewsClassification (zh)":22.99,
@@ -686,7 +756,7 @@
         "Waimai":""
     },
     {
-        "Rank":114,
+        "Rank":136,
         "Model":"allenai-specter",
         "Average":"",
         "AmazonReviewsClassification (zh)":20.49,
@@ -700,7 +770,7 @@
         "Waimai":""
     },
     {
-        "Rank":117,
+        "Rank":139,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":"",
         "AmazonReviewsClassification (zh)":33.89,
@@ -714,7 +784,7 @@
         "Waimai":""
     },
     {
-        "Rank":119,
+        "Rank":141,
         "Model":"gtr-t5-large",
         "Average":"",
         "AmazonReviewsClassification (zh)":21.83,
@@ -728,7 +798,7 @@
         "Waimai":""
     },
     {
-        "Rank":120,
+        "Rank":142,
         "Model":"gtr-t5-xl",
         "Average":"",
         "AmazonReviewsClassification (zh)":21.89,
@@ -742,7 +812,7 @@
         "Waimai":""
     },
     {
-        "Rank":123,
+        "Rank":145,
         "Model":"paraphrase-multilingual-MiniLM-L12-v2",
         "Average":"",
         "AmazonReviewsClassification (zh)":35.26,
@@ -756,7 +826,7 @@
         "Waimai":""
     },
     {
-        "Rank":124,
+        "Rank":146,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":"",
         "AmazonReviewsClassification (zh)":37.74,
@@ -770,7 +840,7 @@
         "Waimai":""
     },
     {
-        "Rank":125,
+        "Rank":147,
         "Model":"sentence-t5-base",
         "Average":"",
         "AmazonReviewsClassification (zh)":21.53,
@@ -784,7 +854,7 @@
         "Waimai":""
     },
     {
-        "Rank":126,
+        "Rank":148,
         "Model":"sentence-t5-large",
         "Average":"",
         "AmazonReviewsClassification (zh)":22.12,
@@ -798,7 +868,7 @@
         "Waimai":""
     },
     {
-        "Rank":127,
+        "Rank":149,
         "Model":"sentence-t5-xl",
         "Average":"",
         "AmazonReviewsClassification (zh)":21.88,
@@ -812,7 +882,7 @@
         "Waimai":""
     },
     {
-        "Rank":129,
+        "Rank":151,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "AmazonReviewsClassification (zh)":32.52,

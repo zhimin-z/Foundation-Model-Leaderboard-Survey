@@ -1,6 +1,45 @@
 [
     {
         "Rank":1,
+        "Model":"PEG",
+        "Average":73.43,
+        "CmedqaRetrieval":39.23,
+        "CovidRetrieval":82.93,
+        "DuRetrieval":88.35,
+        "EcomRetrieval":68.14,
+        "MedicalRetrieval":61.73,
+        "MMarcoRetrieval":83.33,
+        "T2Retrieval":86.27,
+        "VideoRetrieval":77.43
+    },
+    {
+        "Rank":2,
+        "Model":"xiaobu-embedding",
+        "Average":73.41,
+        "CmedqaRetrieval":44.22,
+        "CovidRetrieval":87.69,
+        "DuRetrieval":86.45,
+        "EcomRetrieval":68.04,
+        "MedicalRetrieval":63.38,
+        "MMarcoRetrieval":78.47,
+        "T2Retrieval":85.45,
+        "VideoRetrieval":73.59
+    },
+    {
+        "Rank":3,
+        "Model":"alime-embedding-large-zh",
+        "Average":73.3,
+        "CmedqaRetrieval":43.93,
+        "CovidRetrieval":88.14,
+        "DuRetrieval":86.23,
+        "EcomRetrieval":67.56,
+        "MedicalRetrieval":63.57,
+        "MMarcoRetrieval":78.25,
+        "T2Retrieval":84.58,
+        "VideoRetrieval":74.16
+    },
+    {
+        "Rank":4,
         "Model":"Baichuan-text-embedding",
         "Average":73.12,
         "CmedqaRetrieval":47.64,
@@ -13,7 +52,7 @@
         "VideoRetrieval":74.28
     },
     {
-        "Rank":2,
+        "Rank":5,
         "Model":"cloudy-large-zh",
         "Average":72.92,
         "CmedqaRetrieval":43.58,
@@ -26,20 +65,7 @@
         "VideoRetrieval":73.86
     },
     {
-        "Rank":3,
-        "Model":"PEG",
-        "Average":72.63,
-        "CmedqaRetrieval":42.56,
-        "CovidRetrieval":82.1,
-        "DuRetrieval":86.83,
-        "EcomRetrieval":66.4,
-        "MedicalRetrieval":60.66,
-        "MMarcoRetrieval":81.04,
-        "T2Retrieval":84.94,
-        "VideoRetrieval":76.53
-    },
-    {
-        "Rank":4,
+        "Rank":6,
         "Model":"gte-large-zh",
         "Average":72.49,
         "CmedqaRetrieval":43.15,
@@ -52,7 +78,7 @@
         "VideoRetrieval":73.7
     },
     {
-        "Rank":5,
+        "Rank":7,
         "Model":"tao-8k",
         "Average":71.85,
         "CmedqaRetrieval":42.73,
@@ -65,7 +91,7 @@
         "VideoRetrieval":72.25
     },
     {
-        "Rank":6,
+        "Rank":8,
         "Model":"gte-base-zh",
         "Average":71.71,
         "CmedqaRetrieval":44.38,
@@ -78,7 +104,7 @@
         "VideoRetrieval":74.67
     },
     {
-        "Rank":7,
+        "Rank":9,
         "Model":"IYun-large-zh",
         "Average":71.54,
         "CmedqaRetrieval":42.53,
@@ -91,20 +117,7 @@
         "VideoRetrieval":72.09
     },
     {
-        "Rank":8,
-        "Model":"acge-large-zh",
-        "Average":71.27,
-        "CmedqaRetrieval":43.45,
-        "CovidRetrieval":83.89,
-        "DuRetrieval":83.13,
-        "EcomRetrieval":67.11,
-        "MedicalRetrieval":61.87,
-        "MMarcoRetrieval":77.94,
-        "T2Retrieval":80.12,
-        "VideoRetrieval":72.65
-    },
-    {
-        "Rank":9,
+        "Rank":10,
         "Model":"piccolo-base-zh",
         "Average":71.2,
         "CmedqaRetrieval":42.02,
@@ -117,7 +130,7 @@
         "VideoRetrieval":73.54
     },
     {
-        "Rank":10,
+        "Rank":11,
         "Model":"stella-base-zh",
         "Average":71.07,
         "CmedqaRetrieval":41.86,
@@ -130,7 +143,7 @@
         "VideoRetrieval":73.04
     },
     {
-        "Rank":11,
+        "Rank":12,
         "Model":"stella-large-zh",
         "Average":71.02,
         "CmedqaRetrieval":42.28,
@@ -143,7 +156,20 @@
         "VideoRetrieval":70.96
     },
     {
-        "Rank":12,
+        "Rank":13,
+        "Model":"acge-large-zh",
+        "Average":70.96,
+        "CmedqaRetrieval":43.69,
+        "CovidRetrieval":83.43,
+        "DuRetrieval":83.93,
+        "EcomRetrieval":66.11,
+        "MedicalRetrieval":61.4,
+        "MMarcoRetrieval":77.29,
+        "T2Retrieval":80.83,
+        "VideoRetrieval":71.03
+    },
+    {
+        "Rank":14,
         "Model":"piccolo-large-zh",
         "Average":70.93,
         "CmedqaRetrieval":41.98,
@@ -156,7 +182,7 @@
         "VideoRetrieval":71.18
     },
     {
-        "Rank":13,
+        "Rank":15,
         "Model":"bge-large-zh-noinstruct",
         "Average":70.54,
         "CmedqaRetrieval":41.03,
@@ -169,7 +195,7 @@
         "VideoRetrieval":73.93
     },
     {
-        "Rank":14,
+        "Rank":16,
         "Model":"bge-large-zh-v1.5",
         "Average":70.46,
         "CmedqaRetrieval":42.57,
@@ -182,7 +208,20 @@
         "VideoRetrieval":73.32
     },
     {
-        "Rank":15,
+        "Rank":17,
+        "Model":"Dmeta-embedding",
+        "Average":70.41,
+        "CmedqaRetrieval":45.83,
+        "CovidRetrieval":76.77,
+        "DuRetrieval":81.47,
+        "EcomRetrieval":68.42,
+        "MedicalRetrieval":64.42,
+        "MMarcoRetrieval":71.7,
+        "T2Retrieval":81.33,
+        "VideoRetrieval":73.31
+    },
+    {
+        "Rank":18,
         "Model":"tao",
         "Average":70.26,
         "CmedqaRetrieval":42.68,
@@ -195,7 +234,7 @@
         "VideoRetrieval":67.96
     },
     {
-        "Rank":16,
+        "Rank":19,
         "Model":"stella-large-zh-v2",
         "Average":70.14,
         "CmedqaRetrieval":42.63,
@@ -208,7 +247,7 @@
         "VideoRetrieval":67.93
     },
     {
-        "Rank":17,
+        "Rank":20,
         "Model":"stella-base-zh-v2",
         "Average":70.08,
         "CmedqaRetrieval":42.03,
@@ -221,7 +260,7 @@
         "VideoRetrieval":68.27
     },
     {
-        "Rank":18,
+        "Rank":21,
         "Model":"mist-zh",
         "Average":69.59,
         "CmedqaRetrieval":41.8,
@@ -234,7 +273,7 @@
         "VideoRetrieval":67.96
     },
     {
-        "Rank":19,
+        "Rank":22,
         "Model":"bge-base-zh-v1.5",
         "Average":69.49,
         "CmedqaRetrieval":41.61,
@@ -247,7 +286,20 @@
         "VideoRetrieval":72.35
     },
     {
-        "Rank":20,
+        "Rank":23,
+        "Model":"jina-embeddings-v2-base-zh",
+        "Average":69.4,
+        "CmedqaRetrieval":39.15,
+        "CovidRetrieval":81.22,
+        "DuRetrieval":84.57,
+        "EcomRetrieval":63.95,
+        "MedicalRetrieval":57.12,
+        "MMarcoRetrieval":77.96,
+        "T2Retrieval":80.59,
+        "VideoRetrieval":70.62
+    },
+    {
+        "Rank":24,
         "Model":"gte-small-zh",
         "Average":65.5,
         "CmedqaRetrieval":42.46,
@@ -260,7 +312,7 @@
         "VideoRetrieval":67.69
     },
     {
-        "Rank":21,
+        "Rank":25,
         "Model":"winberta-large",
         "Average":64.11,
         "CmedqaRetrieval":34.08,
@@ -273,7 +325,7 @@
         "VideoRetrieval":64.67
     },
     {
-        "Rank":22,
+        "Rank":26,
         "Model":"multilingual-e5-large",
         "Average":63.66,
         "CmedqaRetrieval":28.67,
@@ -286,7 +338,20 @@
         "VideoRetrieval":58.25
     },
     {
-        "Rank":23,
+        "Rank":27,
+        "Model":"windberta-large",
+        "Average":63.52,
+        "CmedqaRetrieval":33.45,
+        "CovidRetrieval":73.36,
+        "DuRetrieval":80.13,
+        "EcomRetrieval":55.89,
+        "MedicalRetrieval":50.67,
+        "MMarcoRetrieval":74.14,
+        "T2Retrieval":76.84,
+        "VideoRetrieval":63.66
+    },
+    {
+        "Rank":28,
         "Model":"udever-bloom-7b1",
         "Average":62.87,
         "CmedqaRetrieval":27.0,
@@ -299,7 +364,7 @@
         "VideoRetrieval":62.44
     },
     {
-        "Rank":24,
+        "Rank":29,
         "Model":"bge-small-zh-v1.5",
         "Average":61.77,
         "CmedqaRetrieval":35.11,
@@ -312,7 +377,20 @@
         "VideoRetrieval":66.19
     },
     {
-        "Rank":25,
+        "Rank":30,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":61.75,
+        "CmedqaRetrieval":34.22,
+        "CovidRetrieval":73.13,
+        "DuRetrieval":87.02,
+        "EcomRetrieval":45.96,
+        "MedicalRetrieval":52.75,
+        "MMarcoRetrieval":74.83,
+        "T2Retrieval":80.68,
+        "VideoRetrieval":45.39
+    },
+    {
+        "Rank":31,
         "Model":"multilingual-e5-base",
         "Average":61.63,
         "CmedqaRetrieval":27.2,
@@ -325,7 +403,7 @@
         "VideoRetrieval":61.3
     },
     {
-        "Rank":26,
+        "Rank":32,
         "Model":"winberta-base",
         "Average":60.6,
         "CmedqaRetrieval":31.79,
@@ -338,7 +416,7 @@
         "VideoRetrieval":59.76
     },
     {
-        "Rank":27,
+        "Rank":33,
         "Model":"multilingual-e5-small",
         "Average":59.95,
         "CmedqaRetrieval":24.38,
@@ -351,7 +429,7 @@
         "VideoRetrieval":58.09
     },
     {
-        "Rank":28,
+        "Rank":34,
         "Model":"udever-bloom-3b",
         "Average":59.77,
         "CmedqaRetrieval":26.18,
@@ -364,7 +442,7 @@
         "VideoRetrieval":56.54
     },
     {
-        "Rank":29,
+        "Rank":35,
         "Model":"udever-bloom-1b1",
         "Average":57.96,
         "CmedqaRetrieval":23.91,
@@ -377,7 +455,7 @@
         "VideoRetrieval":56.07
     },
     {
-        "Rank":30,
+        "Rank":36,
         "Model":"m3e-base",
         "Average":56.91,
         "CmedqaRetrieval":30.33,
@@ -390,7 +468,7 @@
         "VideoRetrieval":51.11
     },
     {
-        "Rank":31,
+        "Rank":37,
         "Model":"m3e-large",
         "Average":54.75,
         "CmedqaRetrieval":30.73,
@@ -403,7 +481,7 @@
         "VideoRetrieval":44.02
     },
     {
-        "Rank":32,
+        "Rank":38,
         "Model":"text-embedding-ada-002",
         "Average":52.0,
         "CmedqaRetrieval":22.36,
@@ -416,7 +494,7 @@
         "VideoRetrieval":43.85
     },
     {
-        "Rank":33,
+        "Rank":39,
         "Model":"udever-bloom-560m",
         "Average":46.16,
         "CmedqaRetrieval":20.03,
@@ -429,7 +507,7 @@
         "VideoRetrieval":55.07
     },
     {
-        "Rank":34,
+        "Rank":40,
         "Model":"luotuo-bert-medium",
         "Average":44.4,
         "CmedqaRetrieval":18.04,
@@ -442,7 +520,7 @@
         "VideoRetrieval":38.04
     },
     {
-        "Rank":35,
+        "Rank":41,
         "Model":"text2vec-large-chinese",
         "Average":41.94,
         "CmedqaRetrieval":15.53,
@@ -455,7 +533,7 @@
         "VideoRetrieval":42.65
     },
     {
-        "Rank":36,
+        "Rank":42,
         "Model":"text2vec-base-chinese",
         "Average":38.79,
         "CmedqaRetrieval":15.91,
@@ -468,7 +546,7 @@
         "VideoRetrieval":39.52
     },
     {
-        "Rank":37,
+        "Rank":43,
         "Model":"sbert-chinese-general-v1",
         "Average":32.1,
         "CmedqaRetrieval":11.35,
@@ -481,7 +559,7 @@
         "VideoRetrieval":35.15
     },
     {
-        "Rank":38,
+        "Rank":44,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":22.92,
         "CmedqaRetrieval":10.15,
@@ -494,7 +572,20 @@
         "VideoRetrieval":14.17
     },
     {
-        "Rank":39,
+        "Rank":45,
+        "Model":"SONAR",
+        "Average":7.15,
+        "CmedqaRetrieval":7.22,
+        "CovidRetrieval":10.38,
+        "DuRetrieval":1.44,
+        "EcomRetrieval":4.68,
+        "MedicalRetrieval":4.08,
+        "MMarcoRetrieval":11.0,
+        "T2Retrieval":1.31,
+        "VideoRetrieval":17.05
+    },
+    {
+        "Rank":46,
         "Model":"ALL_862873",
         "Average":4.52,
         "CmedqaRetrieval":2.22,

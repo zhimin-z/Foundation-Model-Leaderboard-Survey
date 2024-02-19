@@ -118,6 +118,19 @@
     },
     {
         "Rank":10,
+        "Model":"SONAR",
+        "Average":55.03,
+        "AngryTweetsClassification":49.62,
+        "DKHateClassification":69.97,
+        "DanishPoliticalCommentsClassification":37.59,
+        "LccSentimentClassification":54.27,
+        "MassiveIntentClassification (da)":62.03,
+        "MassiveScenarioClassification (da)":67.76,
+        "NordicLangClassification":48.4,
+        "ScalaDaClassification":50.63
+    },
+    {
+        "Rank":11,
         "Model":"norbert3-large",
         "Average":54.21,
         "AngryTweetsClassification":49.04,
@@ -130,7 +143,7 @@
         "ScalaDaClassification":60.72
     },
     {
-        "Rank":11,
+        "Rank":12,
         "Model":"xlm-roberta-base",
         "Average":52.14,
         "AngryTweetsClassification":52.41,
@@ -143,7 +156,7 @@
         "ScalaDaClassification":57.3
     },
     {
-        "Rank":12,
+        "Rank":13,
         "Model":"e5-large",
         "Average":47.39,
         "AngryTweetsClassification":46.14,
@@ -156,7 +169,7 @@
         "ScalaDaClassification":49.9
     },
     {
-        "Rank":13,
+        "Rank":14,
         "Model":"e5-base",
         "Average":47.02,
         "AngryTweetsClassification":45.06,
@@ -169,7 +182,7 @@
         "ScalaDaClassification":50.08
     },
     {
-        "Rank":14,
+        "Rank":15,
         "Model":"sentence-bert-swedish-cased",
         "Average":46.67,
         "AngryTweetsClassification":44.46,
@@ -182,7 +195,7 @@
         "ScalaDaClassification":50.12
     },
     {
-        "Rank":15,
+        "Rank":16,
         "Model":"electra-small-nordic",
         "Average":46.33,
         "AngryTweetsClassification":47.91,
@@ -195,7 +208,7 @@
         "ScalaDaClassification":70.41
     },
     {
-        "Rank":16,
+        "Rank":17,
         "Model":"e5-small",
         "Average":45.66,
         "AngryTweetsClassification":43.6,
@@ -208,7 +221,7 @@
         "ScalaDaClassification":50.15
     },
     {
-        "Rank":17,
+        "Rank":18,
         "Model":"bert-base-swedish-cased",
         "Average":45.58,
         "AngryTweetsClassification":44.58,
@@ -221,7 +234,7 @@
         "ScalaDaClassification":53.53
     },
     {
-        "Rank":18,
+        "Rank":19,
         "Model":"all-MiniLM-L6-v2",
         "Average":44.46,
         "AngryTweetsClassification":42.49,
@@ -234,7 +247,7 @@
         "ScalaDaClassification":50.03
     },
     {
-        "Rank":19,
+        "Rank":20,
         "Model":"electra-small-swedish-cased-discriminator",
         "Average":33.61,
         "AngryTweetsClassification":40.52,
@@ -247,7 +260,7 @@
         "ScalaDaClassification":51.66
     },
     {
-        "Rank":20,
+        "Rank":21,
         "Model":"LASER2",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -260,7 +273,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":21,
+        "Rank":22,
         "Model":"winberta-base",
         "Average":"",
         "AngryTweetsClassification":46.17,
@@ -273,7 +286,7 @@
         "ScalaDaClassification":50.11
     },
     {
-        "Rank":22,
+        "Rank":23,
         "Model":"winberta-large",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -286,7 +299,20 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":23,
+        "Rank":24,
+        "Model":"e5-dansk-test-0.1",
+        "Average":"",
+        "AngryTweetsClassification":56.08,
+        "DKHateClassification":"",
+        "DanishPoliticalCommentsClassification":40.88,
+        "LccSentimentClassification":59.6,
+        "MassiveIntentClassification (da)":"",
+        "MassiveScenarioClassification (da)":"",
+        "NordicLangClassification":61,
+        "ScalaDaClassification":50.43
+    },
+    {
+        "Rank":25,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -299,7 +325,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -312,20 +338,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":25,
-        "Model":"text2vec-base-multilingual",
-        "Average":"",
-        "AngryTweetsClassification":"",
-        "DKHateClassification":"",
-        "DanishPoliticalCommentsClassification":"",
-        "LccSentimentClassification":"",
-        "MassiveIntentClassification (da)":56.74,
-        "MassiveScenarioClassification (da)":63.07,
-        "NordicLangClassification":"",
-        "ScalaDaClassification":""
-    },
-    {
-        "Rank":26,
+        "Rank":27,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -338,7 +351,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":27,
+        "Rank":28,
         "Model":"e5-mistral-7b-instruct",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -351,7 +364,20 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":28,
+        "Rank":29,
+        "Model":"multilingual-e5-large-instruct",
+        "Average":"",
+        "AngryTweetsClassification":"",
+        "DKHateClassification":"",
+        "DanishPoliticalCommentsClassification":"",
+        "LccSentimentClassification":"",
+        "MassiveIntentClassification (da)":71.81,
+        "MassiveScenarioClassification (da)":77.61,
+        "NordicLangClassification":"",
+        "ScalaDaClassification":""
+    },
+    {
+        "Rank":30,
         "Model":"udever-bloom-1b1",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -364,7 +390,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"udever-bloom-560m",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -377,7 +403,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"LaBSE",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -390,7 +416,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"all-MiniLM-L12-v2",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -403,7 +429,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"allenai-specter",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -416,7 +442,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -429,7 +455,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"gtr-t5-large",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -442,7 +468,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"gtr-t5-xl",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -455,7 +481,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"sentence-t5-base",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -468,7 +494,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"sentence-t5-large",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -481,7 +507,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"sentence-t5-xl",
         "Average":"",
         "AngryTweetsClassification":"",
@@ -494,7 +520,7 @@
         "ScalaDaClassification":""
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "AngryTweetsClassification":"",

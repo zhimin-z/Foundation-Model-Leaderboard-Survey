@@ -10,6 +10,33 @@
     },
     {
         "Rank":2,
+        "Model":"acge-large-zh",
+        "Average":55.89,
+        "CLSClusteringP2P":43.56,
+        "CLSClusteringS2S":41.07,
+        "ThuNewsClusteringP2P":72.06,
+        "ThuNewsClusteringS2S":66.86
+    },
+    {
+        "Rank":3,
+        "Model":"xiaobu-embedding",
+        "Average":54.62,
+        "CLSClusteringP2P":43.24,
+        "CLSClusteringS2S":41.23,
+        "ThuNewsClusteringP2P":70.06,
+        "ThuNewsClusteringS2S":63.94
+    },
+    {
+        "Rank":4,
+        "Model":"alime-embedding-large-zh",
+        "Average":54.0,
+        "CLSClusteringP2P":42.52,
+        "CLSClusteringS2S":39.73,
+        "ThuNewsClusteringP2P":70.1,
+        "ThuNewsClusteringS2S":63.67
+    },
+    {
+        "Rank":5,
         "Model":"gte-base-zh",
         "Average":53.86,
         "CLSClusteringP2P":42.58,
@@ -18,16 +45,7 @@
         "ThuNewsClusteringS2S":63.61
     },
     {
-        "Rank":3,
-        "Model":"acge-large-zh",
-        "Average":53.78,
-        "CLSClusteringP2P":41.81,
-        "CLSClusteringS2S":40.49,
-        "ThuNewsClusteringP2P":68.98,
-        "ThuNewsClusteringS2S":63.85
-    },
-    {
-        "Rank":4,
+        "Rank":6,
         "Model":"gte-large-zh",
         "Average":53.07,
         "CLSClusteringP2P":42.1,
@@ -36,7 +54,25 @@
         "ThuNewsClusteringS2S":62.92
     },
     {
-        "Rank":5,
+        "Rank":7,
+        "Model":"e5-mistral-7b-instruct",
+        "Average":52.3,
+        "CLSClusteringP2P":44.42,
+        "CLSClusteringS2S":42.58,
+        "ThuNewsClusteringP2P":64.68,
+        "ThuNewsClusteringS2S":57.53
+    },
+    {
+        "Rank":8,
+        "Model":"Dmeta-embedding",
+        "Average":50.96,
+        "CLSClusteringP2P":40.24,
+        "CLSClusteringS2S":39.17,
+        "ThuNewsClusteringP2P":65.58,
+        "ThuNewsClusteringS2S":58.84
+    },
+    {
+        "Rank":9,
         "Model":"bge-large-zh-noinstruct",
         "Average":50.01,
         "CLSClusteringP2P":41.23,
@@ -45,7 +81,7 @@
         "ThuNewsClusteringS2S":56.75
     },
     {
-        "Rank":6,
+        "Rank":10,
         "Model":"IYun-large-zh",
         "Average":49.93,
         "CLSClusteringP2P":40.65,
@@ -54,7 +90,7 @@
         "ThuNewsClusteringS2S":57.73
     },
     {
-        "Rank":7,
+        "Rank":11,
         "Model":"mist-zh",
         "Average":49.48,
         "CLSClusteringP2P":39.51,
@@ -63,7 +99,7 @@
         "ThuNewsClusteringS2S":57.84
     },
     {
-        "Rank":8,
+        "Rank":12,
         "Model":"stella-base-zh-v2",
         "Average":49.4,
         "CLSClusteringP2P":40.26,
@@ -72,7 +108,7 @@
         "ThuNewsClusteringS2S":57.97
     },
     {
-        "Rank":9,
+        "Rank":13,
         "Model":"stella-large-zh-v2",
         "Average":49.16,
         "CLSClusteringP2P":39.95,
@@ -81,7 +117,7 @@
         "ThuNewsClusteringS2S":57.11
     },
     {
-        "Rank":10,
+        "Rank":14,
         "Model":"tao-8k",
         "Average":49.04,
         "CLSClusteringP2P":40.03,
@@ -90,7 +126,7 @@
         "ThuNewsClusteringS2S":57.09
     },
     {
-        "Rank":11,
+        "Rank":15,
         "Model":"tao",
         "Average":49.0,
         "CLSClusteringP2P":39.96,
@@ -99,7 +135,7 @@
         "ThuNewsClusteringS2S":57.09
     },
     {
-        "Rank":12,
+        "Rank":16,
         "Model":"bge-large-zh-v1.5",
         "Average":48.99,
         "CLSClusteringP2P":41.44,
@@ -108,7 +144,7 @@
         "ThuNewsClusteringS2S":56.58
     },
     {
-        "Rank":13,
+        "Rank":17,
         "Model":"gte-small-zh",
         "Average":48.95,
         "CLSClusteringP2P":39.54,
@@ -117,7 +153,16 @@
         "ThuNewsClusteringS2S":55.14
     },
     {
-        "Rank":14,
+        "Rank":18,
+        "Model":"windberta-large",
+        "Average":48.88,
+        "CLSClusteringP2P":42.46,
+        "CLSClusteringS2S":40.38,
+        "ThuNewsClusteringP2P":58.54,
+        "ThuNewsClusteringS2S":54.15
+    },
+    {
+        "Rank":19,
         "Model":"m3e-large",
         "Average":48.88,
         "CLSClusteringP2P":38.6,
@@ -126,7 +171,7 @@
         "ThuNewsClusteringS2S":58.51
     },
     {
-        "Rank":15,
+        "Rank":20,
         "Model":"winberta-large",
         "Average":48.81,
         "CLSClusteringP2P":42.84,
@@ -135,7 +180,7 @@
         "ThuNewsClusteringS2S":53.71
     },
     {
-        "Rank":16,
+        "Rank":21,
         "Model":"stella-base-zh",
         "Average":48.7,
         "CLSClusteringP2P":39.71,
@@ -144,7 +189,7 @@
         "ThuNewsClusteringS2S":55.36
     },
     {
-        "Rank":17,
+        "Rank":22,
         "Model":"stella-large-zh",
         "Average":48.65,
         "CLSClusteringP2P":40.27,
@@ -153,7 +198,7 @@
         "ThuNewsClusteringS2S":54.67
     },
     {
-        "Rank":18,
+        "Rank":23,
         "Model":"lim_base_zh",
         "Average":48.35,
         "CLSClusteringP2P":33.55,
@@ -162,7 +207,7 @@
         "ThuNewsClusteringS2S":60.33
     },
     {
-        "Rank":19,
+        "Rank":24,
         "Model":"multilingual-e5-large",
         "Average":48.23,
         "CLSClusteringP2P":40.68,
@@ -171,7 +216,7 @@
         "ThuNewsClusteringS2S":55.59
     },
     {
-        "Rank":20,
+        "Rank":25,
         "Model":"m3e-base",
         "Average":47.68,
         "CLSClusteringP2P":39.81,
@@ -180,7 +225,7 @@
         "ThuNewsClusteringS2S":53.78
     },
     {
-        "Rank":21,
+        "Rank":26,
         "Model":"bge-base-zh-v1.5",
         "Average":47.53,
         "CLSClusteringP2P":39.91,
@@ -189,7 +234,7 @@
         "ThuNewsClusteringS2S":54.12
     },
     {
-        "Rank":22,
+        "Rank":27,
         "Model":"winberta-base",
         "Average":47.21,
         "CLSClusteringP2P":42.21,
@@ -198,7 +243,7 @@
         "ThuNewsClusteringS2S":50.5
     },
     {
-        "Rank":23,
+        "Rank":28,
         "Model":"piccolo-base-zh",
         "Average":47.12,
         "CLSClusteringP2P":38.36,
@@ -207,7 +252,7 @@
         "ThuNewsClusteringS2S":53.02
     },
     {
-        "Rank":24,
+        "Rank":29,
         "Model":"piccolo-large-zh",
         "Average":47.04,
         "CLSClusteringP2P":38.98,
@@ -216,7 +261,16 @@
         "ThuNewsClusteringS2S":52.56
     },
     {
-        "Rank":25,
+        "Rank":30,
+        "Model":"jina-embeddings-v2-base-zh",
+        "Average":46.47,
+        "CLSClusteringP2P":39.97,
+        "CLSClusteringS2S":38.4,
+        "ThuNewsClusteringP2P":54.08,
+        "ThuNewsClusteringS2S":53.42
+    },
+    {
+        "Rank":31,
         "Model":"text-embedding-ada-002",
         "Average":45.68,
         "CLSClusteringP2P":38.26,
@@ -225,7 +279,7 @@
         "ThuNewsClusteringS2S":49.86
     },
     {
-        "Rank":26,
+        "Rank":32,
         "Model":"multilingual-e5-small",
         "Average":45.26,
         "CLSClusteringP2P":39.14,
@@ -234,7 +288,7 @@
         "ThuNewsClusteringS2S":48.93
     },
     {
-        "Rank":27,
+        "Rank":33,
         "Model":"luotuo-bert-medium",
         "Average":44.39,
         "CLSClusteringP2P":37.01,
@@ -243,7 +297,7 @@
         "ThuNewsClusteringS2S":48.26
     },
     {
-        "Rank":28,
+        "Rank":34,
         "Model":"bge-small-zh-v1.5",
         "Average":44.18,
         "CLSClusteringP2P":38.14,
@@ -252,7 +306,7 @@
         "ThuNewsClusteringS2S":49.22
     },
     {
-        "Rank":29,
+        "Rank":35,
         "Model":"udever-bloom-3b",
         "Average":43.24,
         "CLSClusteringP2P":36.73,
@@ -261,16 +315,7 @@
         "ThuNewsClusteringS2S":49.54
     },
     {
-        "Rank":30,
-        "Model":"udever-bloom-1b1",
-        "Average":42.42,
-        "CLSClusteringP2P":35.36,
-        "CLSClusteringS2S":37.07,
-        "ThuNewsClusteringP2P":48.91,
-        "ThuNewsClusteringS2S":48.34
-    },
-    {
-        "Rank":31,
+        "Rank":36,
         "Model":"udever-bloom-560m",
         "Average":42.42,
         "CLSClusteringP2P":35.21,
@@ -279,7 +324,16 @@
         "ThuNewsClusteringS2S":48.32
     },
     {
-        "Rank":32,
+        "Rank":37,
+        "Model":"udever-bloom-1b1",
+        "Average":42.42,
+        "CLSClusteringP2P":35.36,
+        "CLSClusteringS2S":37.07,
+        "ThuNewsClusteringP2P":48.91,
+        "ThuNewsClusteringS2S":48.34
+    },
+    {
+        "Rank":38,
         "Model":"udever-bloom-7b1",
         "Average":42.32,
         "CLSClusteringP2P":36.0,
@@ -288,7 +342,7 @@
         "ThuNewsClusteringS2S":47.76
     },
     {
-        "Rank":33,
+        "Rank":39,
         "Model":"multilingual-e5-base",
         "Average":40.68,
         "CLSClusteringP2P":32.41,
@@ -297,7 +351,7 @@
         "ThuNewsClusteringS2S":52.36
     },
     {
-        "Rank":34,
+        "Rank":40,
         "Model":"paraphrase-multilingual-mpnet-base-v2",
         "Average":39.67,
         "CLSClusteringP2P":39.24,
@@ -306,7 +360,7 @@
         "ThuNewsClusteringS2S":36.77
     },
     {
-        "Rank":35,
+        "Rank":41,
         "Model":"text2vec-base-chinese",
         "Average":37.66,
         "CLSClusteringP2P":35.27,
@@ -315,7 +369,16 @@
         "ThuNewsClusteringS2S":40.01
     },
     {
-        "Rank":36,
+        "Rank":42,
+        "Model":"SONAR",
+        "Average":34.44,
+        "CLSClusteringP2P":27.43,
+        "CLSClusteringS2S":28.32,
+        "ThuNewsClusteringP2P":38.54,
+        "ThuNewsClusteringS2S":43.45
+    },
+    {
+        "Rank":43,
         "Model":"sbert-chinese-general-v1",
         "Average":31.8,
         "CLSClusteringP2P":34.98,
@@ -324,7 +387,7 @@
         "ThuNewsClusteringS2S":24.23
     },
     {
-        "Rank":37,
+        "Rank":44,
         "Model":"text2vec-large-chinese",
         "Average":30.02,
         "CLSClusteringP2P":30.13,
@@ -333,7 +396,7 @@
         "ThuNewsClusteringS2S":26.14
     },
     {
-        "Rank":38,
+        "Rank":45,
         "Model":"ALL_862873",
         "Average":18.34,
         "CLSClusteringP2P":18.66,

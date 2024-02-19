@@ -111,6 +111,17 @@
     },
     {
         "Rank":11,
+        "Model":"SONAR",
+        "Average":54.92,
+        "MassiveIntentClassification (nb)":59.9,
+        "MassiveScenarioClassification (nb)":65.81,
+        "NoRecClassification":48.25,
+        "NordicLangClassification":48.4,
+        "NorwegianParliament":55.99,
+        "ScalaNbClassification":51.18
+    },
+    {
+        "Rank":12,
         "Model":"xlm-roberta-base",
         "Average":54.34,
         "MassiveIntentClassification (nb)":40.46,
@@ -121,7 +132,7 @@
         "ScalaNbClassification":58.33
     },
     {
-        "Rank":12,
+        "Rank":13,
         "Model":"e5-base",
         "Average":50.14,
         "MassiveIntentClassification (nb)":41.57,
@@ -132,7 +143,7 @@
         "ScalaNbClassification":50.18
     },
     {
-        "Rank":13,
+        "Rank":14,
         "Model":"e5-large",
         "Average":50.01,
         "MassiveIntentClassification (nb)":40.63,
@@ -143,7 +154,7 @@
         "ScalaNbClassification":50.13
     },
     {
-        "Rank":14,
+        "Rank":15,
         "Model":"sentence-bert-swedish-cased",
         "Average":48.88,
         "MassiveIntentClassification (nb)":42.74,
@@ -154,7 +165,7 @@
         "ScalaNbClassification":50.34
     },
     {
-        "Rank":15,
+        "Rank":16,
         "Model":"e5-small",
         "Average":48.46,
         "MassiveIntentClassification (nb)":40.25,
@@ -165,7 +176,7 @@
         "ScalaNbClassification":50.03
     },
     {
-        "Rank":16,
+        "Rank":17,
         "Model":"bert-base-swedish-cased",
         "Average":48.18,
         "MassiveIntentClassification (nb)":35.75,
@@ -176,7 +187,7 @@
         "ScalaNbClassification":53.63
     },
     {
-        "Rank":17,
+        "Rank":18,
         "Model":"all-MiniLM-L6-v2",
         "Average":47.28,
         "MassiveIntentClassification (nb)":39.34,
@@ -187,7 +198,7 @@
         "ScalaNbClassification":50.17
     },
     {
-        "Rank":18,
+        "Rank":19,
         "Model":"electra-small-nordic",
         "Average":47.28,
         "MassiveIntentClassification (nb)":24.6,
@@ -198,7 +209,7 @@
         "ScalaNbClassification":75.28
     },
     {
-        "Rank":19,
+        "Rank":20,
         "Model":"electra-small-swedish-cased-discriminator",
         "Average":34.34,
         "MassiveIntentClassification (nb)":5.66,
@@ -209,7 +220,7 @@
         "ScalaNbClassification":52.41
     },
     {
-        "Rank":20,
+        "Rank":21,
         "Model":"LASER2",
         "Average":"",
         "MassiveIntentClassification (nb)":37.74,
@@ -220,7 +231,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":21,
+        "Rank":22,
         "Model":"winberta-base",
         "Average":"",
         "MassiveIntentClassification (nb)":36.89,
@@ -231,7 +242,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":22,
+        "Rank":23,
         "Model":"winberta-large",
         "Average":"",
         "MassiveIntentClassification (nb)":28.65,
@@ -242,7 +253,18 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":23,
+        "Rank":24,
+        "Model":"e5-dansk-test-0.1",
+        "Average":"",
+        "MassiveIntentClassification (nb)":"",
+        "MassiveScenarioClassification (nb)":"",
+        "NoRecClassification":"",
+        "NordicLangClassification":61,
+        "NorwegianParliament":"",
+        "ScalaNbClassification":""
+    },
+    {
+        "Rank":25,
         "Model":"SGPT-125M-weightedmean-msmarco-specb-bitfit",
         "Average":"",
         "MassiveIntentClassification (nb)":39.82,
@@ -253,7 +275,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":24,
+        "Rank":26,
         "Model":"SGPT-125M-weightedmean-nli-bitfit",
         "Average":"",
         "MassiveIntentClassification (nb)":39.48,
@@ -264,18 +286,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":25,
-        "Model":"text2vec-base-multilingual",
-        "Average":"",
-        "MassiveIntentClassification (nb)":54.64,
-        "MassiveScenarioClassification (nb)":60.26,
-        "NoRecClassification":"",
-        "NordicLangClassification":"",
-        "NorwegianParliament":"",
-        "ScalaNbClassification":""
-    },
-    {
-        "Rank":26,
+        "Rank":27,
         "Model":"sgpt-bloom-7b1-msmarco",
         "Average":"",
         "MassiveIntentClassification (nb)":49.41,
@@ -286,7 +297,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":27,
+        "Rank":28,
         "Model":"e5-mistral-7b-instruct",
         "Average":"",
         "MassiveIntentClassification (nb)":70.93,
@@ -297,7 +308,18 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":28,
+        "Rank":29,
+        "Model":"multilingual-e5-large-instruct",
+        "Average":"",
+        "MassiveIntentClassification (nb)":71.66,
+        "MassiveScenarioClassification (nb)":77.21,
+        "NoRecClassification":"",
+        "NordicLangClassification":"",
+        "NorwegianParliament":"",
+        "ScalaNbClassification":""
+    },
+    {
+        "Rank":30,
         "Model":"udever-bloom-1b1",
         "Average":"",
         "MassiveIntentClassification (nb)":46.18,
@@ -308,7 +330,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":29,
+        "Rank":31,
         "Model":"udever-bloom-560m",
         "Average":"",
         "MassiveIntentClassification (nb)":44.12,
@@ -319,7 +341,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":30,
+        "Rank":32,
         "Model":"LaBSE",
         "Average":"",
         "MassiveIntentClassification (nb)":57.91,
@@ -330,7 +352,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":31,
+        "Rank":33,
         "Model":"all-MiniLM-L12-v2",
         "Average":"",
         "MassiveIntentClassification (nb)":41.91,
@@ -341,7 +363,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":32,
+        "Rank":34,
         "Model":"allenai-specter",
         "Average":"",
         "MassiveIntentClassification (nb)":34.75,
@@ -352,7 +374,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":33,
+        "Rank":35,
         "Model":"distiluse-base-multilingual-cased-v2",
         "Average":"",
         "MassiveIntentClassification (nb)":46.01,
@@ -363,7 +385,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":34,
+        "Rank":36,
         "Model":"gtr-t5-large",
         "Average":"",
         "MassiveIntentClassification (nb)":43.78,
@@ -374,7 +396,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":35,
+        "Rank":37,
         "Model":"gtr-t5-xl",
         "Average":"",
         "MassiveIntentClassification (nb)":45.87,
@@ -385,7 +407,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":36,
+        "Rank":38,
         "Model":"sentence-t5-base",
         "Average":"",
         "MassiveIntentClassification (nb)":38.53,
@@ -396,7 +418,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":37,
+        "Rank":39,
         "Model":"sentence-t5-large",
         "Average":"",
         "MassiveIntentClassification (nb)":41.29,
@@ -407,7 +429,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":38,
+        "Rank":40,
         "Model":"sentence-t5-xl",
         "Average":"",
         "MassiveIntentClassification (nb)":45.91,
@@ -418,7 +440,7 @@
         "ScalaNbClassification":""
     },
     {
-        "Rank":39,
+        "Rank":41,
         "Model":"text2vec-base-multilingual",
         "Average":"",
         "MassiveIntentClassification (nb)":54.64,
