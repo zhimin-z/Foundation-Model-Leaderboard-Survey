@@ -1,7 +1,84 @@
 [
     {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"GPTQ-4b",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/CodeLlama-70B-Instruct-GPTQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"vllm",
+        "Passed":72,
+        "Score":0.972972973
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-5.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-5.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":71,
+        "Score":0.9594594595
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"GPTQ-4b",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/CodeLlama-70B-Instruct-GPTQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"vllm",
+        "Passed":70,
+        "Score":0.9459459459
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"AWQ-4b",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/CodeLlama-70B-Instruct-AWQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"vllm",
+        "Passed":70,
+        "Score":0.9459459459
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2-th",
+        "Passed":70,
+        "Score":0.9459459459
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2-th",
+        "Passed":70,
+        "Score":0.9459459459
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"AWQ-4b",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/CodeLlama-70B-Instruct-AWQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"vllm",
+        "Passed":70,
+        "Score":0.9459459459
+    },
+    {
         "Model":"Magicoder-DS",
-        "Size":6.7,
+        "Size (B)":6.7,
         "Quant":null,
         "URL":"https:\/\/huggingface.co\/ise-uiuc\/Magicoder-DS-6.7B",
         "Params":"greedy-vllm",
@@ -11,8 +88,30 @@
         "Score":0.9459459459
     },
     {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-4.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-4.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":69,
+        "Score":0.9324324324
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-2.65",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-2.65bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":68,
+        "Score":0.9189189189
+    },
+    {
         "Model":"OpenAI gpt-4-0613",
-        "Size":null,
+        "Size (B)":null,
         "Quant":null,
         "URL":"https:\/\/openai.com\/",
         "Params":"greedy-openai",
@@ -22,8 +121,30 @@
         "Score":0.9189189189
     },
     {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.5",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.5bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2-th",
+        "Passed":65,
+        "Score":0.8783783784
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.5",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.5bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2-th",
+        "Passed":65,
+        "Score":0.8783783784
+    },
+    {
         "Model":"OpenAI gpt-3.5-turbo-1106",
-        "Size":170.0,
+        "Size (B)":170.0,
         "Quant":null,
         "URL":"https:\/\/openai.com\/",
         "Params":"greedy-openai",
@@ -33,8 +154,30 @@
         "Score":0.8648648649
     },
     {
+        "Model":"Speechless CodeLlama v2",
+        "Size (B)":34.0,
+        "Quant":"AWQ",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/speechless-codellama-34b-v2.0-AWQ",
+        "Params":"greedy-vllm",
+        "Template":"Alpaca-Speechless",
+        "Runtime":"vllm",
+        "Passed":63,
+        "Score":0.8513513514
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.5",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.5bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-v2-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":62,
+        "Score":0.8378378378
+    },
+    {
         "Model":"WizardCoder-Python",
-        "Size":13.0,
+        "Size (B)":13.0,
         "Quant":null,
         "URL":"https:\/\/huggingface.co\/WizardLM\/WizardCoder-Python-13B-V1.0",
         "Params":"greedy-vllm",
@@ -44,8 +187,19 @@
         "Score":0.8243243243
     },
     {
+        "Model":"Code Millenials",
+        "Size (B)":13.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/budecosystem\/code-millenials-13b",
+        "Params":"greedy-vllm",
+        "Template":"code-millenials",
+        "Runtime":"vllm",
+        "Passed":60,
+        "Score":0.8108108108
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-2.5",
         "URL":"https:\/\/huggingface.co\/turboderp\/Mixtral-8x7B-instruct-exl2",
         "Params":"topk1",
@@ -55,8 +209,19 @@
         "Score":0.7972972973
     },
     {
+        "Model":"Code Millenials",
+        "Size (B)":34.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/budecosystem\/code-millenials-34b",
+        "Params":"greedy-vllm",
+        "Template":"code-millenials",
+        "Runtime":"vllm",
+        "Passed":57,
+        "Score":0.7702702703
+    },
+    {
         "Model":"CodeBooga",
-        "Size":34.0,
+        "Size (B)":34.0,
         "Quant":"EXL2-4.0",
         "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeBooga-34B-v0.1-4.0bpw-h6-exl2",
         "Params":"topk1",
@@ -66,8 +231,19 @@
         "Score":0.7567567568
     },
     {
+        "Model":"SOLAR-Instruct",
+        "Size (B)":10.7,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/upstage\/SOLAR-10.7B-Instruct-v1.0",
+        "Params":"greedy-vllm",
+        "Template":"orca-1p3",
+        "Runtime":"vllm",
+        "Passed":54,
+        "Score":0.7297297297
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-3.0",
         "URL":"https:\/\/huggingface.co\/turboderp\/Mixtral-8x7B-instruct-exl2",
         "Params":"topk1",
@@ -77,8 +253,19 @@
         "Score":0.7162162162
     },
     {
+        "Model":"Beyonder-4x7B-v2",
+        "Size (B)":46.0,
+        "Quant":"AWQ-4b",
+        "URL":"https:\/\/huggingface.co\/TheBloke\/Beyonder-4x7B-v2-AWQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-mlabonne-Beyonder-4x7B-v2",
+        "Runtime":"vllm",
+        "Passed":48,
+        "Score":0.6486486486
+    },
+    {
         "Model":"Dolphin-2.7-Mixtral-8x7B",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-3.0",
         "URL":"https:\/\/huggingface.co\/LoneStriker\/dolphin-2.7-mixtral-8x7b-3.0bpw-h6-exl2",
         "Params":"topk1",
@@ -89,7 +276,7 @@
     },
     {
         "Model":"Dolphin-2.7-Mixtral-8x7B",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-4.0",
         "URL":"https:\/\/huggingface.co\/LoneStriker\/dolphin-2.7-mixtral-8x7b-4.0bpw-h6-exl2",
         "Params":"topk1",
@@ -100,7 +287,7 @@
     },
     {
         "Model":"WizardCoder-Python",
-        "Size":7.0,
+        "Size (B)":7.0,
         "Quant":null,
         "URL":"https:\/\/huggingface.co\/WizardLM\/WizardCoder-Python-7B-V1.0",
         "Params":"greedy-vllm",
@@ -110,8 +297,19 @@
         "Score":0.5945945946
     },
     {
+        "Model":"Code Millenials",
+        "Size (B)":3.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/budecosystem\/code-millenials-3b",
+        "Params":"greedy-hf",
+        "Template":"code-millenials",
+        "Runtime":"transformers",
+        "Passed":44,
+        "Score":0.5945945946
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-3.0",
         "URL":"https:\/\/huggingface.co\/turboderp\/Mixtral-8x7B-instruct-exl2",
         "Params":"topk1",
@@ -121,8 +319,19 @@
         "Score":0.5810810811
     },
     {
+        "Model":"Qwen1.5-Chat",
+        "Size (B)":72.0,
+        "Quant":"AWQ-4b",
+        "URL":"https:\/\/huggingface.co\/Qwen\/Qwen1.5-72B-Chat-AWQ",
+        "Params":"greedy-vllm",
+        "Template":"chat-qwen-Qwen-Qwen1.5-7B-Chat",
+        "Runtime":"vllm",
+        "Passed":39,
+        "Score":0.527027027
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-Q3_K_S-new",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/mixtral-instruct-8x7b-quantized-gguf",
         "Params":"topk1",
@@ -132,8 +341,30 @@
         "Score":0.527027027
     },
     {
+        "Model":"Code Millenials",
+        "Size (B)":1.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/budecosystem\/code-millenials-1b",
+        "Params":"greedy-hf",
+        "Template":"code-millenials",
+        "Runtime":"transformers",
+        "Passed":38,
+        "Score":0.5135135135
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-2.65",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-2.65bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":36,
+        "Score":0.4864864865
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-2.1b",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/various-2bit-sota-gguf",
         "Params":"topk1",
@@ -143,8 +374,19 @@
         "Score":0.4189189189
     },
     {
+        "Model":"SOLAR-Instruct",
+        "Size (B)":10.7,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/upstage\/SOLAR-10.7B-Instruct-v1.0",
+        "Params":"greedy-vllm",
+        "Template":"chat-simple-upstage-SOLAR-10.7B-Instruct-v1.0",
+        "Runtime":"vllm",
+        "Passed":30,
+        "Score":0.4054054054
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"EXL2-2.5",
         "URL":"https:\/\/huggingface.co\/turboderp\/Mixtral-8x7B-instruct-exl2",
         "Params":"topk1",
@@ -155,7 +397,7 @@
     },
     {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-Q2_K-new",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/mixtral-instruct-8x7b-quantized-gguf",
         "Params":"topk1",
@@ -165,8 +407,30 @@
         "Score":0.3648648649
     },
     {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-5.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-5.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":26,
+        "Score":0.3513513514
+    },
+    {
+        "Model":"Qwen1.5-Chat",
+        "Size (B)":7.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/Qwen\/Qwen1.5-7B-Chat",
+        "Params":"greedy-vllm",
+        "Template":"chat-qwen-Qwen-Qwen1.5-7B-Chat",
+        "Runtime":"vllm",
+        "Passed":25,
+        "Score":0.3378378378
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-Q2_K-new",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/mixtral-instruct-8x7b-quantized-gguf",
         "Params":"topk1",
@@ -176,8 +440,41 @@
         "Score":0.3108108108
     },
     {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-4.0",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-4.0bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":22,
+        "Score":0.2972972973
+    },
+    {
+        "Model":"CodeLlama-Instruct",
+        "Size (B)":70.0,
+        "Quant":"EXL2-3.5",
+        "URL":"https:\/\/huggingface.co\/LoneStriker\/CodeLlama-70b-Instruct-hf-3.5bpw-h6-exl2",
+        "Params":"topk1",
+        "Template":"chat-codellama70b-codellama-CodeLlama-70b-Instruct-hf",
+        "Runtime":"exllama2",
+        "Passed":22,
+        "Score":0.2972972973
+    },
+    {
+        "Model":"Dolphin 2.6 Mistral 7b - DPO Laser",
+        "Size (B)":7.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/cognitivecomputations\/dolphin-2.6-mistral-7b-dpo-laser",
+        "Params":"greedy-vllm",
+        "Template":"dolphin",
+        "Runtime":"vllm",
+        "Passed":21,
+        "Score":0.2837837838
+    },
+    {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-2.1b",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/various-2bit-sota-gguf",
         "Params":"topk1",
@@ -188,7 +485,7 @@
     },
     {
         "Model":"Mixtral-8x7B-Instruct",
-        "Size":46.0,
+        "Size (B)":46.0,
         "Quant":"GGUF-Q3_K_S-new",
         "URL":"https:\/\/huggingface.co\/ikawrakow\/mixtral-instruct-8x7b-quantized-gguf",
         "Params":"topk1",
@@ -196,5 +493,27 @@
         "Runtime":"llamacpp",
         "Passed":15,
         "Score":0.2027027027
+    },
+    {
+        "Model":"Qwen1.5-Chat",
+        "Size (B)":4.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/Qwen\/Qwen1.5-4B-Chat",
+        "Params":"greedy-vllm",
+        "Template":"chat-qwen-Qwen-Qwen1.5-7B-Chat",
+        "Runtime":"vllm",
+        "Passed":14,
+        "Score":0.1891891892
+    },
+    {
+        "Model":"Qwen1.5-Chat",
+        "Size (B)":14.0,
+        "Quant":null,
+        "URL":"https:\/\/huggingface.co\/Qwen\/Qwen1.5-14B-Chat",
+        "Params":"greedy-vllm",
+        "Template":"chat-qwen-Qwen-Qwen1.5-7B-Chat",
+        "Runtime":"vllm",
+        "Passed":8,
+        "Score":0.1081081081
     }
 ]

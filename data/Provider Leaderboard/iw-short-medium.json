@@ -4,10 +4,10 @@
         "COST\nIN":"#1\n$0.27\/M",
         "COST\nOUT":"#1\n$0.27\/M",
         "RATE LIMIT":"Unlimited",
-        "THROUGHPUT\nP50":"25tks\/s",
-        "THROUGHPUT\nP90":"33tks\/s",
-        "TTFT\nP50":"2.74s",
-        "TTFT\nP90":"4.54s",
+        "THROUGHPUT\nP50":"20tks\/s",
+        "THROUGHPUT\nP90":"31tks\/s",
+        "TTFT\nP50":"3.06s",
+        "TTFT\nP90":"10.76s",
         "Link":"https:\/\/deepinfra.com\/docs"
     },
     {
@@ -15,10 +15,10 @@
         "COST\nIN":"#2\n$0.3\/M",
         "COST\nOUT":"$1\/M",
         "RATE LIMIT":"20 RPS",
-        "THROUGHPUT\nP50":"6tks\/s",
-        "THROUGHPUT\nP90":"28tks\/s",
-        "TTFT\nP50":"2.13s",
-        "TTFT\nP90":"5.17s",
+        "THROUGHPUT\nP50":"27tks\/s",
+        "THROUGHPUT\nP90":"29tks\/s",
+        "TTFT\nP50":"3.38s",
+        "TTFT\nP90":"11s",
         "Link":"https:\/\/abacus.ai\/app\/llmapis\/playground"
     },
     {
@@ -26,10 +26,10 @@
         "COST\nIN":"#2\n$0.3\/M",
         "COST\nOUT":"$1\/M",
         "RATE LIMIT":"10 RPS",
-        "THROUGHPUT\nP50":"5tks\/s",
-        "THROUGHPUT\nP90":"16tks\/s",
-        "TTFT\nP50":"3.12s",
-        "TTFT\nP90":"10.55s",
+        "THROUGHPUT\nP50":"2tks\/s",
+        "THROUGHPUT\nP90":"9tks\/s",
+        "TTFT\nP50":"2.63s",
+        "TTFT\nP90":"19.07s",
         "Link":"https:\/\/replicate.com\/docs\/get-started\/python"
     },
     {
@@ -37,10 +37,10 @@
         "COST\nIN":"#3\n$0.4\/M",
         "COST\nOUT":"$1.6\/M",
         "RATE LIMIT":"100 RPM",
-        "THROUGHPUT\nP50":"#2\n46tks\/s",
-        "THROUGHPUT\nP90":"#2\n76tks\/s",
-        "TTFT\nP50":"#2\n0.69s",
-        "TTFT\nP90":"3.32s",
+        "THROUGHPUT\nP50":"#2\n66tks\/s",
+        "THROUGHPUT\nP90":"#2\n97tks\/s",
+        "TTFT\nP50":"#1\n0.53s",
+        "TTFT\nP90":"#1\n5.06s",
         "Link":"https:\/\/readme.fireworks.ai\/docs\/quickstart"
     },
     {
@@ -48,32 +48,21 @@
         "COST\nIN":"$0.5\/M",
         "COST\nOUT":"#2\n$0.5\/M",
         "RATE LIMIT":"30 RPS",
-        "THROUGHPUT\nP50":"18tks\/s",
-        "THROUGHPUT\nP90":"42tks\/s",
-        "TTFT\nP50":"2.7s",
-        "TTFT\nP90":"4.62s",
+        "THROUGHPUT\nP50":"28tks\/s",
+        "THROUGHPUT\nP90":"33tks\/s",
+        "TTFT\nP50":"4.43s",
+        "TTFT\nP90":"16.01s",
         "Link":"https:\/\/docs.endpoints.anyscale.com\/?_gl=1*egjt7v*_ga*MTg2OTk4MjI1MC4xNjk4Mzg3MzA5*_ga_T6EXHYG44V*MTcwNTM1OTQxMi4yNi4xLjE3MDUzNTk0MjIuNTAuMC4xNDU2NDY0ODEz"
-    },
-    {
-        "Model":"DECART\nllama2-70b-chat",
-        "COST\nIN":"$0.5\/M",
-        "COST\nOUT":"#2\n$0.5\/M",
-        "RATE LIMIT":"1M TPM",
-        "THROUGHPUT\nP50":"14tks\/s",
-        "THROUGHPUT\nP90":"19tks\/s",
-        "TTFT\nP50":"3.04s",
-        "TTFT\nP90":"5.38s",
-        "Link":"https:\/\/dashboard.decart.ai\/"
     },
     {
         "Model":"LEPTON\nmixtral-8x7b",
         "COST\nIN":"$0.5\/M",
         "COST\nOUT":"#2\n$0.5\/M",
         "RATE LIMIT":"10 RPM",
-        "THROUGHPUT\nP50":"24tks\/s",
-        "THROUGHPUT\nP90":"37tks\/s",
-        "TTFT\nP50":"5.02s",
-        "TTFT\nP90":"10.3s",
+        "THROUGHPUT\nP50":"21tks\/s",
+        "THROUGHPUT\nP90":"26tks\/s",
+        "TTFT\nP50":"2.6s",
+        "TTFT\nP90":"#3\n7.23s",
         "Link":"https:\/\/www.lepton.ai\/docs\/overview\/quickstart"
     },
     {
@@ -81,10 +70,10 @@
         "COST\nIN":"$0.6\/M",
         "COST\nOUT":"$1.8\/M",
         "RATE LIMIT":"12 RPM",
-        "THROUGHPUT\nP50":"9tks\/s",
-        "THROUGHPUT\nP90":"#1\n84tks\/s",
-        "TTFT\nP50":"#3\n0.74s",
-        "TTFT\nP90":"#3\n2.28s",
+        "THROUGHPUT\nP50":"#3\n64tks\/s",
+        "THROUGHPUT\nP90":"#3\n80tks\/s",
+        "TTFT\nP50":"1.86s",
+        "TTFT\nP90":"12.01s",
         "Link":"https:\/\/docs.perplexity.ai\/docs\/getting-started"
     },
     {
@@ -92,10 +81,10 @@
         "COST\nIN":"$0.6\/M",
         "COST\nOUT":"#3\n$0.6\/M",
         "RATE LIMIT":"100 RPS",
-        "THROUGHPUT\nP50":"11tks\/s",
-        "THROUGHPUT\nP90":"49tks\/s",
-        "TTFT\nP50":"1.11s",
-        "TTFT\nP90":"#2\n1.58s",
+        "THROUGHPUT\nP50":"#1\n73tks\/s",
+        "THROUGHPUT\nP90":"#1\n117tks\/s",
+        "TTFT\nP50":"2.61s",
+        "TTFT\nP90":"11.27s",
         "Link":"https:\/\/docs.together.ai\/docs\/quickstart"
     },
     {
@@ -103,10 +92,10 @@
         "COST\nIN":"$0.65\/M",
         "COST\nOUT":"$2.75\/M",
         "RATE LIMIT":"10 RPS",
-        "THROUGHPUT\nP50":"10tks\/s",
-        "THROUGHPUT\nP90":"21tks\/s",
-        "TTFT\nP50":"1.81s",
-        "TTFT\nP90":"5.18s",
+        "THROUGHPUT\nP50":"5tks\/s",
+        "THROUGHPUT\nP90":"11tks\/s",
+        "TTFT\nP50":"2.54s",
+        "TTFT\nP90":"11.95s",
         "Link":"https:\/\/replicate.com\/docs\/get-started\/python"
     },
     {
@@ -114,10 +103,10 @@
         "COST\nIN":"$0.7\/M",
         "COST\nOUT":"$0.9\/M",
         "RATE LIMIT":"Unlimited",
-        "THROUGHPUT\nP50":"18tks\/s",
-        "THROUGHPUT\nP90":"21tks\/s",
-        "TTFT\nP50":"1.43s",
-        "TTFT\nP90":"4.87s",
+        "THROUGHPUT\nP50":"16tks\/s",
+        "THROUGHPUT\nP90":"20tks\/s",
+        "TTFT\nP50":"2.89s",
+        "TTFT\nP90":"10.92s",
         "Link":"https:\/\/deepinfra.com\/docs"
     },
     {
@@ -125,10 +114,10 @@
         "COST\nIN":"$0.7\/M",
         "COST\nOUT":"$2.8\/M",
         "RATE LIMIT":"100 RPM",
-        "THROUGHPUT\nP50":"18tks\/s",
-        "THROUGHPUT\nP90":"25tks\/s",
-        "TTFT\nP50":"1.66s",
-        "TTFT\nP90":"2.9s",
+        "THROUGHPUT\nP50":"37tks\/s",
+        "THROUGHPUT\nP90":"41tks\/s",
+        "TTFT\nP50":"#3\n0.81s",
+        "TTFT\nP90":"#2\n6.23s",
         "Link":"https:\/\/readme.fireworks.ai\/docs\/quickstart"
     },
     {
@@ -136,10 +125,10 @@
         "COST\nIN":"$0.7\/M",
         "COST\nOUT":"$2.8\/M",
         "RATE LIMIT":"12 RPM",
-        "THROUGHPUT\nP50":"25tks\/s",
-        "THROUGHPUT\nP90":"26tks\/s",
-        "TTFT\nP50":"0.74s",
-        "TTFT\nP90":"#1\n1.02s",
+        "THROUGHPUT\nP50":"37tks\/s",
+        "THROUGHPUT\nP90":"39tks\/s",
+        "TTFT\nP50":"1.36s",
+        "TTFT\nP90":"14.43s",
         "Link":"https:\/\/docs.perplexity.ai\/docs\/getting-started"
     },
     {
@@ -147,10 +136,10 @@
         "COST\nIN":"$0.8\/M",
         "COST\nOUT":"$2.4\/M",
         "RATE LIMIT":"Customized",
-        "THROUGHPUT\nP50":"#1\n67tks\/s",
-        "THROUGHPUT\nP90":"#3\n71tks\/s",
-        "TTFT\nP50":"#1\n0.58s",
-        "TTFT\nP90":"3.63s",
+        "THROUGHPUT\nP50":"46tks\/s",
+        "THROUGHPUT\nP90":"54tks\/s",
+        "TTFT\nP50":"#2\n0.76s",
+        "TTFT\nP90":"23.82s",
         "Link":"https:\/\/docs.anthropic.com\/claude\/reference\/getting-started-with-the-api"
     },
     {
@@ -158,10 +147,10 @@
         "COST\nIN":"$0.8\/M",
         "COST\nOUT":"$0.8\/M",
         "RATE LIMIT":"10 RPM",
-        "THROUGHPUT\nP50":"9tks\/s",
-        "THROUGHPUT\nP90":"30tks\/s",
-        "TTFT\nP50":"4.7s",
-        "TTFT\nP90":"8.21s",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"22tks\/s",
+        "TTFT\nP50":"3.54s",
+        "TTFT\nP90":"8.4s",
         "Link":"https:\/\/www.lepton.ai\/docs\/overview\/quickstart"
     },
     {
@@ -169,10 +158,10 @@
         "COST\nIN":"$0.9\/M",
         "COST\nOUT":"$0.9\/M",
         "RATE LIMIT":"100 RPS",
-        "THROUGHPUT\nP50":"24tks\/s",
-        "THROUGHPUT\nP90":"32tks\/s",
-        "TTFT\nP50":"1.31s",
-        "TTFT\nP90":"3.35s",
+        "THROUGHPUT\nP50":"32tks\/s",
+        "THROUGHPUT\nP90":"47tks\/s",
+        "TTFT\nP50":"2.69s",
+        "TTFT\nP90":"11.35s",
         "Link":"https:\/\/docs.together.ai\/docs\/quickstart"
     },
     {
@@ -180,10 +169,10 @@
         "COST\nIN":"$1\/M",
         "COST\nOUT":"$1\/M",
         "RATE LIMIT":"30 RPS",
-        "THROUGHPUT\nP50":"4tks\/s",
-        "THROUGHPUT\nP90":"38tks\/s",
-        "TTFT\nP50":"3.12s",
-        "TTFT\nP90":"7.36s",
+        "THROUGHPUT\nP50":"19tks\/s",
+        "THROUGHPUT\nP90":"22tks\/s",
+        "TTFT\nP50":"3.72s",
+        "TTFT\nP90":"11.18s",
         "Link":"https:\/\/docs.endpoints.anyscale.com\/?_gl=1*egjt7v*_ga*MTg2OTk4MjI1MC4xNjk4Mzg3MzA5*_ga_T6EXHYG44V*MTcwNTM1OTQxMi4yNi4xLjE3MDUzNTk0MjIuNTAuMC4xNDU2NDY0ODEz"
     },
     {
@@ -191,10 +180,10 @@
         "COST\nIN":"$1\/M",
         "COST\nOUT":"$2\/M",
         "RATE LIMIT":"10K RPM",
-        "THROUGHPUT\nP50":"#3\n32tks\/s",
-        "THROUGHPUT\nP90":"56tks\/s",
-        "TTFT\nP50":"1.74s",
-        "TTFT\nP90":"3.18s",
+        "THROUGHPUT\nP50":"53tks\/s",
+        "THROUGHPUT\nP90":"64tks\/s",
+        "TTFT\nP50":"2.69s",
+        "TTFT\nP90":"11.02s",
         "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
     },
     {
@@ -202,10 +191,10 @@
         "COST\nIN":"$8\/M",
         "COST\nOUT":"$24\/M",
         "RATE LIMIT":"Customized",
-        "THROUGHPUT\nP50":"15tks\/s",
-        "THROUGHPUT\nP90":"17tks\/s",
-        "TTFT\nP50":"0.79s",
-        "TTFT\nP90":"7.24s",
+        "THROUGHPUT\nP50":"16tks\/s",
+        "THROUGHPUT\nP90":"19tks\/s",
+        "TTFT\nP50":"9.22s",
+        "TTFT\nP90":"22.67s",
         "Link":"https:\/\/docs.anthropic.com\/claude\/reference\/getting-started-with-the-api"
     },
     {
@@ -213,10 +202,10 @@
         "COST\nIN":"$10\/M",
         "COST\nOUT":"$30\/M",
         "RATE LIMIT":"10K RPM",
-        "THROUGHPUT\nP50":"14tks\/s",
-        "THROUGHPUT\nP90":"25tks\/s",
-        "TTFT\nP50":"3.35s",
-        "TTFT\nP90":"5.3s",
+        "THROUGHPUT\nP50":"18tks\/s",
+        "THROUGHPUT\nP90":"28tks\/s",
+        "TTFT\nP50":"2.71s",
+        "TTFT\nP90":"11.69s",
         "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
     },
     {
@@ -224,10 +213,10 @@
         "COST\nIN":"$30\/M",
         "COST\nOUT":"$60\/M",
         "RATE LIMIT":"10K RPM",
-        "THROUGHPUT\nP50":"12tks\/s",
-        "THROUGHPUT\nP90":"16tks\/s",
-        "TTFT\nP50":"3.25s",
-        "TTFT\nP90":"4.24s",
+        "THROUGHPUT\nP50":"23tks\/s",
+        "THROUGHPUT\nP90":"34tks\/s",
+        "TTFT\nP50":"3.06s",
+        "TTFT\nP90":"10.83s",
         "Link":"https:\/\/platform.openai.com\/docs\/api-reference\/introduction"
     }
 ]
