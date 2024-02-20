@@ -7,19 +7,13 @@ import os
 from bs4 import BeautifulSoup
 
 path_leaderboard = "data/LLM-Perf Leaderboard"
-leaderboard_names = ['A100-80GB-275W', 'RTX4090-24GB-450W']
+leaderboard_names = ['a100_80gb_275w', 'rtx4090-24gb-450w']
 
 
 def filter_string(text):
     regex_pattern = r'🤗|🏛️|📥|🏭|🛠️|🗜️'
     filtered_string = re.sub(regex_pattern, '', text)
     return filtered_string.strip()
-
-
-def preprocess_name(name):
-    name = name.lower()
-    name = name.replace('-', '_')
-    return name
 
 
 def get_json_format_data(script_elements):
@@ -31,7 +25,7 @@ def get_json_format_data(script_elements):
             df = pd.DataFrame(data, columns=columns)
             df['Model'] = df['Model'].apply(
                 lambda x: extract_model_repo_names(x))
-            df.to_json(f'{path_leaderboard}/hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/hf-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
 
 
 def extract_model_repo_names(html):
