@@ -1,6 +1,7 @@
 [
     {
-        "Model":"microsoft\/deberta-v3-large",
+        "rank":1,
+        "model_id":"microsoft\/deberta-v3-large",
         "num_model_parameters":"434.0",
         "vocabulary_size":128,
         "max_sequence_length":512,
@@ -13,7 +14,8 @@
         "squad":74.47
     },
     {
-        "Model":"microsoft\/deberta-v3-base",
+        "rank":2,
+        "model_id":"microsoft\/deberta-v3-base",
         "num_model_parameters":"184.0",
         "vocabulary_size":128,
         "max_sequence_length":512,
@@ -26,7 +28,8 @@
         "squad":68.69
     },
     {
-        "Model":"google\/electra-base-discriminator",
+        "rank":3,
+        "model_id":"google\/electra-base-discriminator",
         "num_model_parameters":"109.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -39,7 +42,8 @@
         "squad":58.27
     },
     {
-        "Model":"roberta-large",
+        "rank":4,
+        "model_id":"roberta-large",
         "num_model_parameters":"354.0",
         "vocabulary_size":50,
         "max_sequence_length":512,
@@ -52,7 +56,8 @@
         "squad":71.23
     },
     {
-        "Model":"roberta-base",
+        "rank":5,
+        "model_id":"roberta-base",
         "num_model_parameters":"124.0",
         "vocabulary_size":50,
         "max_sequence_length":512,
@@ -65,7 +70,8 @@
         "squad":62.75
     },
     {
-        "Model":"microsoft\/mdeberta-v3-base",
+        "rank":5,
+        "model_id":"microsoft\/mdeberta-v3-base",
         "num_model_parameters":"278.0",
         "vocabulary_size":251,
         "max_sequence_length":512,
@@ -78,7 +84,8 @@
         "squad":62.1
     },
     {
-        "Model":"bert-large-cased",
+        "rank":6,
+        "model_id":"bert-large-cased",
         "num_model_parameters":"333.0",
         "vocabulary_size":29,
         "max_sequence_length":512,
@@ -91,7 +98,8 @@
         "squad":55.17
     },
     {
-        "Model":"bert-large-uncased",
+        "rank":7,
+        "model_id":"bert-large-uncased",
         "num_model_parameters":"334.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -104,7 +112,8 @@
         "squad":52.38
     },
     {
-        "Model":"distilroberta-base",
+        "rank":7,
+        "model_id":"distilroberta-base",
         "num_model_parameters":"82.0",
         "vocabulary_size":50,
         "max_sequence_length":512,
@@ -117,7 +126,8 @@
         "squad":49.36
     },
     {
-        "Model":"gpt-3.5-turbo-0613 (few-shot, val)",
+        "rank":7,
+        "model_id":"gpt-3.5-turbo-0613 (few-shot, val)",
         "num_model_parameters":"unknown",
         "vocabulary_size":100,
         "max_sequence_length":4095,
@@ -130,7 +140,8 @@
         "squad":67.9
     },
     {
-        "Model":"google\/electra-large-discriminator",
+        "rank":8,
+        "model_id":"google\/electra-large-discriminator",
         "num_model_parameters":"334.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -143,7 +154,8 @@
         "squad":70.66
     },
     {
-        "Model":"bert-base-uncased",
+        "rank":9,
+        "model_id":"bert-base-uncased",
         "num_model_parameters":"109.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -156,7 +168,8 @@
         "squad":42.37
     },
     {
-        "Model":"xlm-roberta-large",
+        "rank":10,
+        "model_id":"xlm-roberta-large",
         "num_model_parameters":"559.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -169,7 +182,8 @@
         "squad":68.88
     },
     {
-        "Model":"bert-base-multilingual-cased",
+        "rank":11,
+        "model_id":"bert-base-multilingual-cased",
         "num_model_parameters":"177.0",
         "vocabulary_size":120,
         "max_sequence_length":512,
@@ -182,7 +196,22 @@
         "squad":55.19
     },
     {
-        "Model":"mistralai\/Mistral-7B-v0.1 (few-shot)",
+        "rank":12,
+        "model_id":"01-ai\/Yi-6B (few-shot)",
+        "num_model_parameters":"6061.0",
+        "vocabulary_size":64,
+        "max_sequence_length":4096,
+        "speed":2786,
+        "score":55.62,
+        "en_score":55.62,
+        "conll_en":52.7,
+        "sst5":68.66,
+        "scala_en":25.29,
+        "squad":75.83
+    },
+    {
+        "rank":12,
+        "model_id":"mistralai\/Mistral-7B-v0.1 (few-shot)",
         "num_model_parameters":"7242.0",
         "vocabulary_size":32,
         "max_sequence_length":32768,
@@ -195,7 +224,36 @@
         "squad":58.79
     },
     {
-        "Model":"distilbert-base-cased",
+        "rank":13,
+        "model_id":"mistralai\/Mistral-7B-Instruct-v0.1 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":5443,
+        "score":54.85,
+        "en_score":54.85,
+        "conll_en":57.58,
+        "sst5":61.44,
+        "scala_en":34.92,
+        "squad":65.46
+    },
+    {
+        "rank":13,
+        "model_id":"RuterNorway\/Llama-2-13b-chat-norwegian (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":7778,
+        "score":54.81,
+        "en_score":54.81,
+        "conll_en":64.93,
+        "sst5":64.14,
+        "scala_en":28.08,
+        "squad":62.09
+    },
+    {
+        "rank":13,
+        "model_id":"distilbert-base-cased",
         "num_model_parameters":"65.0",
         "vocabulary_size":29,
         "max_sequence_length":512,
@@ -208,7 +266,64 @@
         "squad":24.93
     },
     {
-        "Model":"distilbert-base-multilingual-cased",
+        "rank":13,
+        "model_id":"mlabonne\/NeuralBeagle14-7B (few-shot, val)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":8192,
+        "speed":2549,
+        "score":53.52,
+        "en_score":53.52,
+        "conll_en":69.16,
+        "sst5":63.85,
+        "scala_en":28.4,
+        "squad":52.69
+    },
+    {
+        "rank":13,
+        "model_id":"meta-llama\/Llama-2-7b-chat-hf (few-shot)",
+        "num_model_parameters":"6738.0",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":2643,
+        "score":53.0,
+        "en_score":53.0,
+        "conll_en":62.53,
+        "sst5":62.23,
+        "scala_en":22.71,
+        "squad":64.54
+    },
+    {
+        "rank":13,
+        "model_id":"mistralai\/Mistral-7B-Instruct-v0.2 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":2538,
+        "score":52.75,
+        "en_score":52.75,
+        "conll_en":62.11,
+        "sst5":59.91,
+        "scala_en":30.66,
+        "squad":58.3
+    },
+    {
+        "rank":14,
+        "model_id":"Rijgersberg\/GEITje-7B (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":10401,
+        "score":49.24,
+        "en_score":49.24,
+        "conll_en":53.39,
+        "sst5":65.21,
+        "scala_en":12.63,
+        "squad":65.74
+    },
+    {
+        "rank":15,
+        "model_id":"distilbert-base-multilingual-cased",
         "num_model_parameters":"135.0",
         "vocabulary_size":120,
         "max_sequence_length":512,
@@ -219,5 +334,75 @@
         "sst5":36.48,
         "scala_en":40.79,
         "squad":29.0
+    },
+    {
+        "rank":15,
+        "model_id":"meta-llama\/Llama-2-7b-hf (few-shot)",
+        "num_model_parameters":"6738.0",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":2648,
+        "score":46.38,
+        "en_score":46.38,
+        "conll_en":55.27,
+        "sst5":65.16,
+        "scala_en":20.43,
+        "squad":44.64
+    },
+    {
+        "rank":15,
+        "model_id":"AI-Sweden-Models\/gpt-sw3-20b (few-shot)",
+        "num_model_parameters":"20918.0",
+        "vocabulary_size":64,
+        "max_sequence_length":2048,
+        "speed":4880,
+        "score":44.96,
+        "en_score":44.96,
+        "conll_en":45.86,
+        "sst5":62.08,
+        "scala_en":6.62,
+        "squad":65.29
+    },
+    {
+        "rank":16,
+        "model_id":"RuterNorway\/Llama-2-7b-chat-norwegian (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":10890,
+        "score":19.34,
+        "en_score":19.34,
+        "conll_en":18.69,
+        "sst5":21.95,
+        "scala_en":0.01,
+        "squad":36.7
+    },
+    {
+        "rank":17,
+        "model_id":"ai-forever\/mGPT (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":100,
+        "max_sequence_length":1024,
+        "speed":13551,
+        "score":2.6,
+        "en_score":2.6,
+        "conll_en":1.55,
+        "sst5":3.71,
+        "scala_en":-0.42,
+        "squad":5.57
+    },
+    {
+        "rank":17,
+        "model_id":"RJuro\/kanelsnegl-v0.1 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":512,
+        "speed":9757,
+        "score":0.1,
+        "en_score":0.1,
+        "conll_en":0.0,
+        "sst5":0.0,
+        "scala_en":0.41,
+        "squad":0.0
     }
 ]

@@ -1,6 +1,7 @@
 [
     {
-        "Model":"deepset\/gbert-large",
+        "rank":1,
+        "model_id":"deepset\/gbert-large",
         "num_model_parameters":"335.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -13,7 +14,8 @@
         "germanquad":32.63
     },
     {
-        "Model":"google\/rembert",
+        "rank":2,
+        "model_id":"google\/rembert",
         "num_model_parameters":"575.0",
         "vocabulary_size":250,
         "max_sequence_length":256,
@@ -26,7 +28,8 @@
         "germanquad":34.48
     },
     {
-        "Model":"microsoft\/mdeberta-v3-base",
+        "rank":2,
+        "model_id":"microsoft\/mdeberta-v3-base",
         "num_model_parameters":"278.0",
         "vocabulary_size":251,
         "max_sequence_length":512,
@@ -39,7 +42,8 @@
         "germanquad":26.25
     },
     {
-        "Model":"xlm-roberta-large",
+        "rank":2,
+        "model_id":"xlm-roberta-large",
         "num_model_parameters":"559.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -52,7 +56,8 @@
         "germanquad":32.23
     },
     {
-        "Model":"sentence-transformers\/use-cmlm-multilingual",
+        "rank":3,
+        "model_id":"sentence-transformers\/use-cmlm-multilingual",
         "num_model_parameters":"470.0",
         "vocabulary_size":501,
         "max_sequence_length":512,
@@ -65,7 +70,8 @@
         "germanquad":30.42
     },
     {
-        "Model":"deepset\/gbert-base",
+        "rank":4,
+        "model_id":"deepset\/gbert-base",
         "num_model_parameters":"109.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -78,7 +84,8 @@
         "germanquad":16.68
     },
     {
-        "Model":"dbmdz\/bert-base-german-uncased",
+        "rank":4,
+        "model_id":"dbmdz\/bert-base-german-uncased",
         "num_model_parameters":"109.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -91,7 +98,8 @@
         "germanquad":13.87
     },
     {
-        "Model":"dbmdz\/bert-base-german-cased",
+        "rank":4,
+        "model_id":"dbmdz\/bert-base-german-cased",
         "num_model_parameters":"109.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -104,7 +112,8 @@
         "germanquad":14.49
     },
     {
-        "Model":"setu4993\/LaBSE",
+        "rank":4,
+        "model_id":"setu4993\/LaBSE",
         "num_model_parameters":"470.0",
         "vocabulary_size":501,
         "max_sequence_length":512,
@@ -117,7 +126,8 @@
         "germanquad":23.55
     },
     {
-        "Model":"ZurichNLP\/unsup-simcse-xlm-roberta-base",
+        "rank":5,
+        "model_id":"ZurichNLP\/unsup-simcse-xlm-roberta-base",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -130,7 +140,8 @@
         "germanquad":18.24
     },
     {
-        "Model":"cardiffnlp\/twitter-xlm-roberta-base",
+        "rank":6,
+        "model_id":"cardiffnlp\/twitter-xlm-roberta-base",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -143,7 +154,8 @@
         "germanquad":1.43
     },
     {
-        "Model":"facebook\/xlm-v-base",
+        "rank":7,
+        "model_id":"facebook\/xlm-v-base",
         "num_model_parameters":"778.0",
         "vocabulary_size":902,
         "max_sequence_length":512,
@@ -156,7 +168,8 @@
         "germanquad":20.81
     },
     {
-        "Model":"gpt-3.5-turbo-0613 (few-shot, val)",
+        "rank":7,
+        "model_id":"gpt-3.5-turbo-0613 (few-shot, val)",
         "num_model_parameters":"unknown",
         "vocabulary_size":100,
         "max_sequence_length":4095,
@@ -169,7 +182,8 @@
         "germanquad":30.2
     },
     {
-        "Model":"jhu-clsp\/bernice",
+        "rank":8,
+        "model_id":"jhu-clsp\/bernice",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":128,
@@ -182,7 +196,22 @@
         "germanquad":0.0
     },
     {
-        "Model":"Twitter\/twhin-bert-large",
+        "rank":8,
+        "model_id":"mlabonne\/NeuralBeagle14-7B (few-shot, val)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":8192,
+        "speed":2549,
+        "score":44.17,
+        "de_score":44.17,
+        "germeval":64.81,
+        "sb10k":59.6,
+        "scala_de":27.06,
+        "germanquad":25.22
+    },
+    {
+        "rank":8,
+        "model_id":"Twitter\/twhin-bert-large",
         "num_model_parameters":"560.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -195,7 +224,8 @@
         "germanquad":11.93
     },
     {
-        "Model":"clips\/mfaq",
+        "rank":8,
+        "model_id":"clips\/mfaq",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":128,
@@ -208,7 +238,8 @@
         "germanquad":1.53
     },
     {
-        "Model":"microsoft\/xlm-align-base",
+        "rank":8,
+        "model_id":"microsoft\/xlm-align-base",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -221,7 +252,8 @@
         "germanquad":16.58
     },
     {
-        "Model":"microsoft\/infoxlm-base",
+        "rank":9,
+        "model_id":"microsoft\/infoxlm-base",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -234,7 +266,8 @@
         "germanquad":19.63
     },
     {
-        "Model":"sentence-transformers\/paraphrase-xlm-r-multilingual-v1",
+        "rank":10,
+        "model_id":"sentence-transformers\/paraphrase-xlm-r-multilingual-v1",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -247,7 +280,8 @@
         "germanquad":0.3
     },
     {
-        "Model":"dbmdz\/bert-base-historic-multilingual-cased",
+        "rank":10,
+        "model_id":"dbmdz\/bert-base-historic-multilingual-cased",
         "num_model_parameters":"110.0",
         "vocabulary_size":32,
         "max_sequence_length":512,
@@ -260,7 +294,8 @@
         "germanquad":7.75
     },
     {
-        "Model":"sentence-transformers\/stsb-xlm-r-multilingual",
+        "rank":10,
+        "model_id":"sentence-transformers\/stsb-xlm-r-multilingual",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -273,7 +308,8 @@
         "germanquad":0.73
     },
     {
-        "Model":"mistralai\/Mistral-7B-v0.1 (few-shot)",
+        "rank":11,
+        "model_id":"mistralai\/Mistral-7B-v0.1 (few-shot)",
         "num_model_parameters":"7242.0",
         "vocabulary_size":32,
         "max_sequence_length":32768,
@@ -286,7 +322,22 @@
         "germanquad":22.94
     },
     {
-        "Model":"sentence-transformers\/paraphrase-multilingual-MiniLM-L12-v2",
+        "rank":11,
+        "model_id":"RuterNorway\/Llama-2-13b-chat-norwegian (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":7778,
+        "score":38.57,
+        "de_score":38.57,
+        "germeval":56.71,
+        "sb10k":49.77,
+        "scala_de":19.92,
+        "germanquad":27.87
+    },
+    {
+        "rank":11,
+        "model_id":"sentence-transformers\/paraphrase-multilingual-MiniLM-L12-v2",
         "num_model_parameters":"118.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -299,7 +350,64 @@
         "germanquad":0.64
     },
     {
-        "Model":"sentence-transformers\/distilbert-multilingual-nli-stsb-quora-ranking",
+        "rank":11,
+        "model_id":"mistralai\/Mistral-7B-Instruct-v0.2 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":2538,
+        "score":37.82,
+        "de_score":37.82,
+        "germeval":55.15,
+        "sb10k":47.85,
+        "scala_de":24.29,
+        "germanquad":23.98
+    },
+    {
+        "rank":12,
+        "model_id":"mistralai\/Mistral-7B-Instruct-v0.1 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":5443,
+        "score":36.38,
+        "de_score":36.38,
+        "germeval":51.79,
+        "sb10k":47.27,
+        "scala_de":22.15,
+        "germanquad":24.3
+    },
+    {
+        "rank":13,
+        "model_id":"meta-llama\/Llama-2-7b-chat-hf (few-shot)",
+        "num_model_parameters":"6738.0",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":2643,
+        "score":34.35,
+        "de_score":34.35,
+        "germeval":50.0,
+        "sb10k":46.54,
+        "scala_de":15.3,
+        "germanquad":25.57
+    },
+    {
+        "rank":13,
+        "model_id":"01-ai\/Yi-6B (few-shot)",
+        "num_model_parameters":"6061.0",
+        "vocabulary_size":64,
+        "max_sequence_length":4096,
+        "speed":2786,
+        "score":33.97,
+        "de_score":33.97,
+        "germeval":44.97,
+        "sb10k":53.14,
+        "scala_de":7.64,
+        "germanquad":30.12
+    },
+    {
+        "rank":14,
+        "model_id":"sentence-transformers\/distilbert-multilingual-nli-stsb-quora-ranking",
         "num_model_parameters":"135.0",
         "vocabulary_size":120,
         "max_sequence_length":512,
@@ -312,7 +420,8 @@
         "germanquad":0.36
     },
     {
-        "Model":"sentence-transformers\/distiluse-base-multilingual-cased-v1",
+        "rank":15,
+        "model_id":"sentence-transformers\/distiluse-base-multilingual-cased-v1",
         "num_model_parameters":"135.0",
         "vocabulary_size":120,
         "max_sequence_length":512,
@@ -325,7 +434,36 @@
         "germanquad":0.58
     },
     {
-        "Model":"sentence-transformers\/distiluse-base-multilingual-cased-v2",
+        "rank":15,
+        "model_id":"meta-llama\/Llama-2-7b-hf (few-shot)",
+        "num_model_parameters":"6738.0",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":2648,
+        "score":31.55,
+        "de_score":31.55,
+        "germeval":41.88,
+        "sb10k":50.17,
+        "scala_de":15.82,
+        "germanquad":18.35
+    },
+    {
+        "rank":15,
+        "model_id":"Rijgersberg\/GEITje-7B (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":32768,
+        "speed":10401,
+        "score":30.84,
+        "de_score":30.84,
+        "germeval":39.09,
+        "sb10k":47.83,
+        "scala_de":10.31,
+        "germanquad":26.13
+    },
+    {
+        "rank":15,
+        "model_id":"sentence-transformers\/distiluse-base-multilingual-cased-v2",
         "num_model_parameters":"135.0",
         "vocabulary_size":120,
         "max_sequence_length":512,
@@ -338,7 +476,36 @@
         "germanquad":0.06
     },
     {
-        "Model":"3ebdola\/Dialectal-Arabic-XLM-R-Base",
+        "rank":16,
+        "model_id":"AI-Sweden-Models\/gpt-sw3-20b (few-shot)",
+        "num_model_parameters":"20918.0",
+        "vocabulary_size":64,
+        "max_sequence_length":2048,
+        "speed":4880,
+        "score":22.52,
+        "de_score":22.52,
+        "germeval":35.78,
+        "sb10k":34.13,
+        "scala_de":2.18,
+        "germanquad":17.99
+    },
+    {
+        "rank":17,
+        "model_id":"RuterNorway\/Llama-2-7b-chat-norwegian (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":32,
+        "max_sequence_length":4096,
+        "speed":10890,
+        "score":20.4,
+        "de_score":20.4,
+        "germeval":27.22,
+        "sb10k":33.54,
+        "scala_de":0.45,
+        "germanquad":20.4
+    },
+    {
+        "rank":18,
+        "model_id":"3ebdola\/Dialectal-Arabic-XLM-R-Base",
         "num_model_parameters":"277.0",
         "vocabulary_size":250,
         "max_sequence_length":512,
@@ -351,7 +518,8 @@
         "germanquad":0.46
     },
     {
-        "Model":"fresh-electra-small",
+        "rank":19,
+        "model_id":"fresh-electra-small",
         "num_model_parameters":"13.0",
         "vocabulary_size":31,
         "max_sequence_length":512,
@@ -361,6 +529,34 @@
         "germeval":9.42,
         "sb10k":9.76,
         "scala_de":-0.18,
+        "germanquad":0.0
+    },
+    {
+        "rank":19,
+        "model_id":"ai-forever\/mGPT (few-shot)",
+        "num_model_parameters":"unknown",
+        "vocabulary_size":100,
+        "max_sequence_length":1024,
+        "speed":13551,
+        "score":0.12,
+        "de_score":0.12,
+        "germeval":0.3,
+        "sb10k":0.29,
+        "scala_de":-0.11,
+        "germanquad":0.0
+    },
+    {
+        "rank":19,
+        "model_id":"RJuro\/kanelsnegl-v0.1 (few-shot)",
+        "num_model_parameters":"7242.0",
+        "vocabulary_size":32,
+        "max_sequence_length":512,
+        "speed":9757,
+        "score":0.0,
+        "de_score":0.0,
+        "germeval":0.0,
+        "sb10k":0.0,
+        "scala_de":0.0,
         "germanquad":0.0
     }
 ]
