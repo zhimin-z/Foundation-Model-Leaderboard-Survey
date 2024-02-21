@@ -43,9 +43,8 @@ if __name__ == '__main__':
             df = []
             for row in driver.find_elements(By.XPATH, '//div[@role="rowgroup"]/div'):
                 values = []
-                elements = row.find_elements(By.XPATH, './/div[@role="cell"]')
-                for index, value in enumerate(elements):
-                    if index == len(elements) - 1:
+                for index, value in enumerate(row.find_elements(By.XPATH, './/div[@role="cell"]')):
+                    if index == len(column_names) - 1:
                         values.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
                     else:
                         values.append(value.text)
