@@ -111,7 +111,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":72.29,
-        "Model Sha":307.0
+        "Model Sha":313.0
     },
     {
         "T":"\ud83d\udd36",
@@ -149,7 +149,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":72.29,
-        "Model Sha":58.0
+        "Model Sha":60.0
     },
     {
         "T":"\ud83d\udd36",
@@ -187,7 +187,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":12.88,
-        "Model Sha":7.0
+        "Model Sha":8.0
     },
     {
         "T":"\ud83d\udd36",
@@ -305,6 +305,25 @@
     },
     {
         "T":"\ud83d\udcac",
+        "Model":"moreh\/MoMo-72B-lora-1.8.6-DPO",
+        "Average":77.29,
+        "ARC":70.14,
+        "HellaSwag":86.03,
+        "MMLU":77.4,
+        "TruthfulQA":69.0,
+        "Winogrande":84.37,
+        "GSM8K":76.8,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":72.29,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
         "Model":"moreh\/MoMo-70B-lora-1.8.6-DPO",
         "Average":77.29,
         "ARC":70.14,
@@ -323,22 +342,22 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udcac",
-        "Model":"moreh\/MoMo-72B-lora-1.8.6-DPO",
+        "T":"\ud83d\udd36",
+        "Model":"abacusai\/Smaugv0.1",
         "Average":77.29,
-        "ARC":70.14,
-        "HellaSwag":86.03,
-        "MMLU":77.4,
-        "TruthfulQA":69.0,
-        "Winogrande":84.37,
-        "GSM8K":76.8,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "ARC":74.23,
+        "HellaSwag":86.76,
+        "MMLU":76.66,
+        "TruthfulQA":70.22,
+        "Winogrande":83.66,
+        "GSM8K":72.18,
+        "Type":"fine-tuned on domain-specific datasets",
         "Architecture":"LlamaForCausalLM",
         "Precision":"Original",
         "Hub License":"bfloat16",
         "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":72.29,
+        "Hub":"apache-2.0",
+        "Available on the Hub":34.39,
         "Model Sha":0.0
     },
     {
@@ -359,25 +378,6 @@
         "Hub":"other",
         "Available on the Hub":34.39,
         "Model Sha":34.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"abacusai\/Smaugv0.1",
-        "Average":77.29,
-        "ARC":74.23,
-        "HellaSwag":86.76,
-        "MMLU":76.66,
-        "TruthfulQA":70.22,
-        "Winogrande":83.66,
-        "GSM8K":72.18,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":34.39,
-        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -721,7 +721,7 @@
         "#Params (B)":false,
         "Hub":"",
         "Available on the Hub":70.0,
-        "Model Sha":2.0
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udcac",
@@ -740,7 +740,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":68.98,
-        "Model Sha":180.0
+        "Model Sha":182.0
     },
     {
         "T":"\ud83d\udcac",
@@ -892,6 +892,63 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":68.98,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"CultriX\/MonaTrix-v4",
+        "Average":76.38,
+        "ARC":73.38,
+        "HellaSwag":89.11,
+        "MMLU":64.08,
+        "TruthfulQA":78.02,
+        "Winogrande":84.85,
+        "GSM8K":68.84,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"bardsai\/jaskier-7b-dpo-v6.1",
+        "Average":76.36,
+        "ARC":73.29,
+        "HellaSwag":88.89,
+        "MMLU":64.39,
+        "TruthfulQA":77.47,
+        "Winogrande":84.69,
+        "GSM8K":69.45,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"cc-by-4.0",
+        "Available on the Hub":7.24,
+        "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"eren23\/ogno-monarch-jaskier-merge-7b-v2",
+        "Average":76.35,
+        "ARC":72.87,
+        "HellaSwag":89.15,
+        "MMLU":64.77,
+        "TruthfulQA":77.76,
+        "Winogrande":84.29,
+        "GSM8K":69.29,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"cc-by-nc-4.0",
+        "Available on the Hub":7.24,
         "Model Sha":0.0
     },
     {
@@ -1105,25 +1162,6 @@
     },
     {
         "T":"\ud83d\udcac",
-        "Model":"moreh\/MoMo-70B-lora-1.8.4-DPO",
-        "Average":76.23,
-        "ARC":69.62,
-        "HellaSwag":85.35,
-        "MMLU":77.33,
-        "TruthfulQA":64.64,
-        "Winogrande":84.14,
-        "GSM8K":76.27,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"mit",
-        "Available on the Hub":72.29,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udcac",
         "Model":"moreh\/MoMo-72B-lora-1.8.4-DPO",
         "Average":76.23,
         "ARC":69.62,
@@ -1138,6 +1176,25 @@
         "Hub License":"bfloat16",
         "#Params (B)":false,
         "Hub":"?",
+        "Available on the Hub":72.29,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"moreh\/MoMo-70B-lora-1.8.4-DPO",
+        "Average":76.23,
+        "ARC":69.62,
+        "HellaSwag":85.35,
+        "MMLU":77.33,
+        "TruthfulQA":64.64,
+        "Winogrande":84.14,
+        "GSM8K":76.27,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"mit",
         "Available on the Hub":72.29,
         "Model Sha":0.0
     },
@@ -1291,7 +1348,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":3.0
+        "Model Sha":4.0
     },
     {
         "T":"\ud83d\udd36",
@@ -1348,6 +1405,25 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":87.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"Gille\/StrangeMerges_27-7B-dare_ties",
+        "Average":76.17,
+        "ARC":73.72,
+        "HellaSwag":89.0,
+        "MMLU":64.5,
+        "TruthfulQA":76.36,
+        "Winogrande":84.61,
+        "GSM8K":68.84,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
         "Model Sha":0.0
     },
     {
@@ -1576,7 +1652,7 @@
         "#Params (B)":false,
         "Hub":"cc",
         "Available on the Hub":7.24,
-        "Model Sha":2.0
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udd36",
@@ -1732,6 +1808,25 @@
     },
     {
         "T":"\ud83d\udcac",
+        "Model":"abideen\/AlphaMonarch-laser",
+        "Average":76.0,
+        "ARC":73.12,
+        "HellaSwag":89.21,
+        "MMLU":64.43,
+        "TruthfulQA":77.9,
+        "Winogrande":84.61,
+        "GSM8K":66.72,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-4.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
         "Model":"mlabonne\/AlphaMonarch-7B",
         "Average":75.99,
         "ARC":73.04,
@@ -1747,7 +1842,7 @@
         "#Params (B)":true,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":45.0
+        "Model Sha":61.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -1785,7 +1880,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":2.0
+        "Model Sha":3.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -2431,7 +2526,7 @@
         "#Params (B)":true,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":18.0
+        "Model Sha":19.0
     },
     {
         "T":"\ud83d\udd36",
@@ -2470,6 +2565,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.0,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"abacusai\/Smaug-Mixtral-v0.1",
+        "Average":75.64,
+        "ARC":74.91,
+        "HellaSwag":87.79,
+        "MMLU":70.08,
+        "TruthfulQA":66.88,
+        "Winogrande":81.69,
+        "GSM8K":72.48,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":46.7,
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -2583,7 +2697,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":34.39,
-        "Model Sha":0.0
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -2739,25 +2853,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"one-man-army\/UNA-34Beagles-32K-bf16-v1",
-        "Average":75.41,
-        "ARC":73.55,
-        "HellaSwag":85.93,
-        "MMLU":76.45,
-        "TruthfulQA":73.55,
-        "Winogrande":82.95,
-        "GSM8K":60.05,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"other",
-        "Available on the Hub":34.39,
-        "Model Sha":9.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"fblgit\/UNA-34Beagles-32K-v1",
         "Average":75.41,
         "ARC":73.55,
@@ -2774,6 +2869,25 @@
         "Hub":"other",
         "Available on the Hub":34.39,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"one-man-army\/UNA-34Beagles-32K-bf16-v1",
+        "Average":75.41,
+        "ARC":73.55,
+        "HellaSwag":85.93,
+        "MMLU":76.45,
+        "TruthfulQA":73.55,
+        "Winogrande":82.95,
+        "GSM8K":60.05,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":34.39,
+        "Model Sha":9.0
     },
     {
         "T":"\ud83d\udd36",
@@ -3191,7 +3305,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-sa-4.0",
         "Available on the Hub":68.98,
-        "Model Sha":13.0
+        "Model Sha":14.0
     },
     {
         "T":"\ud83d\udd36",
@@ -3252,25 +3366,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"alnrg2arg\/test3_sft_16bit",
-        "Average":75.28,
-        "ARC":73.55,
-        "HellaSwag":88.87,
-        "MMLU":64.63,
-        "TruthfulQA":69.77,
-        "Winogrande":84.45,
-        "GSM8K":70.43,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"cc-by-nc-4.0",
-        "Available on the Hub":7.24,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"alnrg2arg\/blockchainlabs_7B_merged_test2_4",
         "Average":75.28,
         "ARC":73.55,
@@ -3287,6 +3382,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
         "Model Sha":2.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"alnrg2arg\/test3_sft_16bit",
+        "Average":75.28,
+        "ARC":73.55,
+        "HellaSwag":88.87,
+        "MMLU":64.63,
+        "TruthfulQA":69.77,
+        "Winogrande":84.45,
+        "GSM8K":70.43,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-4.0",
+        "Available on the Hub":7.24,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -3461,25 +3575,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"SilverCoder66\/Mistral-7B-Instruct-adapt-v0.21",
-        "Average":75.23,
-        "ARC":72.53,
-        "HellaSwag":88.5,
-        "MMLU":65.0,
-        "TruthfulQA":71.26,
-        "Winogrande":83.9,
-        "GSM8K":70.2,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"?",
-        "Precision":"Adapter",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"cc-by-nc-4.0",
-        "Available on the Hub":7.0,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"SilverCoder66\/Mistral-7B-Instruct-adapt-v0.22",
         "Average":75.23,
         "ARC":72.53,
@@ -3500,6 +3595,25 @@
     {
         "T":"\ud83d\udd36",
         "Model":"SilverCoder66\/Mistral-7B-Instruct-adapt-v0.23",
+        "Average":75.23,
+        "ARC":72.53,
+        "HellaSwag":88.5,
+        "MMLU":65.0,
+        "TruthfulQA":71.26,
+        "Winogrande":83.9,
+        "GSM8K":70.2,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"?",
+        "Precision":"Adapter",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-4.0",
+        "Available on the Hub":7.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"SilverCoder66\/Mistral-7B-Instruct-adapt-v0.21",
         "Average":75.23,
         "ARC":72.53,
         "HellaSwag":88.5,
@@ -3932,7 +4046,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":0.0
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -4008,7 +4122,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":2.0
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udd36",
@@ -4201,6 +4315,25 @@
         "Model Sha":1.0
     },
     {
+        "T":"\ud83e\udd1d",
+        "Model":"AbacusResearch\/jaLLAbi2-7b",
+        "Average":75.06,
+        "ARC":71.67,
+        "HellaSwag":88.29,
+        "MMLU":64.92,
+        "TruthfulQA":70.16,
+        "Winogrande":83.35,
+        "GSM8K":71.95,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83d\udd36",
         "Model":"BarryFutureman\/WestLakeX-7B-EvoMerge-Variant2",
         "Average":75.04,
@@ -4388,7 +4521,26 @@
         "#Params (B)":true,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":46.7,
-        "Model Sha":7.0
+        "Model Sha":8.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"Eric111\/CatunaMayo",
+        "Average":74.95,
+        "ARC":71.76,
+        "HellaSwag":87.9,
+        "MMLU":65.21,
+        "TruthfulQA":69.96,
+        "Winogrande":82.56,
+        "GSM8K":72.33,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -4524,25 +4676,6 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udcac",
-        "Model":"NLPinas\/yi-bagel-2x34b-moe",
-        "Average":74.93,
-        "ARC":72.7,
-        "HellaSwag":85.44,
-        "MMLU":76.6,
-        "TruthfulQA":71.42,
-        "Winogrande":82.72,
-        "GSM8K":60.73,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":true,
-        "Hub":"other",
-        "Available on the Hub":34.39,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83e\udd1d",
         "Model":"NLPinas\/yi-bagel-2x34b",
         "Average":74.93,
@@ -4560,6 +4693,25 @@
         "Hub":"other",
         "Available on the Hub":34.39,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"NLPinas\/yi-bagel-2x34b-moe",
+        "Average":74.93,
+        "ARC":72.7,
+        "HellaSwag":85.44,
+        "MMLU":76.6,
+        "TruthfulQA":71.42,
+        "Winogrande":82.72,
+        "GSM8K":60.73,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"other",
+        "Available on the Hub":34.39,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -4829,25 +4981,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"jan-hq\/trinity-v1",
-        "Average":74.8,
-        "ARC":72.27,
-        "HellaSwag":88.36,
-        "MMLU":65.2,
-        "TruthfulQA":69.31,
-        "Winogrande":82.0,
-        "GSM8K":71.65,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.24,
-        "Model Sha":12.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"janai-hq\/trinity-v1",
         "Average":74.8,
         "ARC":72.27,
@@ -4864,6 +4997,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":5.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"jan-hq\/trinity-v1",
+        "Average":74.8,
+        "ARC":72.27,
+        "HellaSwag":88.36,
+        "MMLU":65.2,
+        "TruthfulQA":69.31,
+        "Winogrande":82.0,
+        "GSM8K":71.65,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":12.0
     },
     {
         "T":"\ud83d\udcac",
@@ -4996,7 +5148,7 @@
         "#Params (B)":true,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":12.0
+        "Model Sha":13.0
     },
     {
         "T":"\ud83d\udd36",
@@ -5262,7 +5414,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":51.0
+        "Model Sha":53.0
     },
     {
         "T":"\ud83d\udd36",
@@ -5598,6 +5750,25 @@
         "Winogrande":82.56,
         "GSM8K":72.25,
         "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"DreadPoor\/iWillChangeTheNameLater",
+        "Average":74.56,
+        "ARC":72.01,
+        "HellaSwag":88.23,
+        "MMLU":64.97,
+        "TruthfulQA":69.41,
+        "Winogrande":84.21,
+        "GSM8K":68.54,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
         "Architecture":"MistralForCausalLM",
         "Precision":"Original",
         "Hub License":"bfloat16",
@@ -6041,7 +6212,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":19.19,
-        "Model Sha":30.0
+        "Model Sha":31.0
     },
     {
         "T":"\ud83d\udcac",
@@ -6269,7 +6440,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":18.52,
-        "Model Sha":6.0
+        "Model Sha":7.0
     },
     {
         "T":"\ud83d\udd36",
@@ -6501,25 +6672,6 @@
     },
     {
         "T":"\ud83d\udcac",
-        "Model":"jeonsworld\/CarbonVillain-en-13B-v1",
-        "Average":74.28,
-        "ARC":71.25,
-        "HellaSwag":88.46,
-        "MMLU":66.42,
-        "TruthfulQA":71.98,
-        "Winogrande":83.27,
-        "GSM8K":64.29,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":10.73,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udcac",
         "Model":"jeonsworld\/CarbonVillain-en-10.7B-v1",
         "Average":74.28,
         "ARC":71.25,
@@ -6536,6 +6688,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":10.73,
         "Model Sha":5.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"jeonsworld\/CarbonVillain-en-13B-v1",
+        "Average":74.28,
+        "ARC":71.25,
+        "HellaSwag":88.46,
+        "MMLU":66.42,
+        "TruthfulQA":71.98,
+        "Winogrande":83.27,
+        "GSM8K":64.29,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":10.73,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -6709,6 +6880,25 @@
         "Model Sha":0.0
     },
     {
+        "T":"\ud83d\udd36",
+        "Model":"abideen\/MonarchCoder-MoE-2x7B",
+        "Average":74.23,
+        "ARC":70.99,
+        "HellaSwag":87.99,
+        "MMLU":65.11,
+        "TruthfulQA":71.25,
+        "Winogrande":80.66,
+        "GSM8K":69.37,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":12.88,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83e\udd1d",
         "Model":"BryanSwk\/LaserPipe-7B-SLERP",
         "Average":74.22,
@@ -6801,7 +6991,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":10.73,
-        "Model Sha":40.0
+        "Model Sha":41.0
     },
     {
         "T":"\ud83d\udd36",
@@ -6858,7 +7048,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":10.73,
-        "Model Sha":508.0
+        "Model Sha":511.0
     },
     {
         "T":"\ud83d\udd36",
@@ -6991,7 +7181,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-nd-4.0",
         "Available on the Hub":34.39,
-        "Model Sha":81.0
+        "Model Sha":82.0
     },
     {
         "T":"\ud83d\udcac",
@@ -7998,7 +8188,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":34.39,
-        "Model Sha":178.0
+        "Model Sha":180.0
     },
     {
         "T":"\ud83d\udd36",
@@ -8302,7 +8492,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":72.29,
-        "Model Sha":296.0
+        "Model Sha":297.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -8948,7 +9138,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":211.0
+        "Model Sha":215.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -9347,7 +9537,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":34.0,
-        "Model Sha":103.0
+        "Model Sha":105.0
     },
     {
         "T":"\ud83d\udd36",
@@ -9594,7 +9784,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":211.0
+        "Model Sha":215.0
     },
     {
         "T":"\ud83d\udd36",
@@ -9671,6 +9861,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"ChaoticNeutrals\/Prima-LelantaclesV5-7b",
+        "Average":73.09,
+        "ARC":70.65,
+        "HellaSwag":87.87,
+        "MMLU":64.52,
+        "TruthfulQA":68.26,
+        "Winogrande":82.4,
+        "GSM8K":64.82,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"other",
+        "Available on the Hub":7.24,
+        "Model Sha":2.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -9769,25 +9978,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"shadowml\/Marcoro14-7B-ties",
-        "Average":73.01,
-        "ARC":69.8,
-        "HellaSwag":87.13,
-        "MMLU":65.11,
-        "TruthfulQA":63.54,
-        "Winogrande":81.61,
-        "GSM8K":70.89,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"mlabonne\/Marcoro14-7B-slerp",
         "Average":73.01,
         "ARC":69.8,
@@ -9804,6 +9994,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
         "Model Sha":20.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"shadowml\/Marcoro14-7B-ties",
+        "Average":73.01,
+        "ARC":69.8,
+        "HellaSwag":87.13,
+        "MMLU":65.11,
+        "TruthfulQA":63.54,
+        "Winogrande":81.61,
+        "GSM8K":70.89,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -9993,7 +10202,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":72.29,
-        "Model Sha":20.0
+        "Model Sha":21.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -10506,7 +10715,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":2923.0
+        "Model Sha":2944.0
     },
     {
         "T":"\ud83d\udd36",
@@ -10582,7 +10791,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":10.73,
-        "Model Sha":17.0
+        "Model Sha":18.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -10620,7 +10829,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":2923.0
+        "Model Sha":2944.0
     },
     {
         "T":"\ud83d\udcac",
@@ -11155,6 +11364,25 @@
         "Model Sha":20.0
     },
     {
+        "T":"\ud83d\udcac",
+        "Model":"DreadPoor\/IamSoTired-7B-slerp",
+        "Average":72.37,
+        "ARC":69.88,
+        "HellaSwag":87.15,
+        "MMLU":64.85,
+        "TruthfulQA":63.75,
+        "Winogrande":82.4,
+        "GSM8K":66.19,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83e\udd1d",
         "Model":"Inv\/Konstanta-Alpha-V2-7B",
         "Average":72.35,
@@ -11494,7 +11722,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":30.0
+        "Model Sha":32.0
     },
     {
         "T":"\ud83d\udd36",
@@ -11703,7 +11931,7 @@
         "#Params (B)":true,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":58.0
+        "Model Sha":59.0
     },
     {
         "T":"\ud83d\udcac",
@@ -11817,7 +12045,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":49.0
+        "Model Sha":50.0
     },
     {
         "T":"\ud83d\udd36",
@@ -12178,7 +12406,26 @@
         "#Params (B)":true,
         "Hub":"other",
         "Available on the Hub":7.24,
-        "Model Sha":0.0
+        "Model Sha":1.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"ChaoticNeutrals\/Cookie_7B",
+        "Average":71.87,
+        "ARC":69.71,
+        "HellaSwag":87.57,
+        "MMLU":64.51,
+        "TruthfulQA":66.88,
+        "Winogrande":81.37,
+        "GSM8K":61.18,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"other",
+        "Available on the Hub":7.24,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udcac",
@@ -12919,7 +13166,7 @@
         "#Params (B)":false,
         "Hub":"wtfpl",
         "Available on the Hub":24.15,
-        "Model Sha":4.0
+        "Model Sha":5.0
     },
     {
         "T":"\ud83d\udcac",
@@ -13531,25 +13778,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Jingyu6\/MergeTest-7B-slerp",
-        "Average":71.17,
-        "ARC":67.75,
-        "HellaSwag":86.15,
-        "MMLU":63.94,
-        "TruthfulQA":59.8,
-        "Winogrande":79.64,
-        "GSM8K":69.75,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"mlabonne\/NeuralPipe-7B-slerp",
         "Average":71.17,
         "ARC":67.75,
@@ -13566,6 +13794,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":3.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Jingyu6\/MergeTest-7B-slerp",
+        "Average":71.17,
+        "ARC":67.75,
+        "HellaSwag":86.15,
+        "MMLU":63.94,
+        "TruthfulQA":59.8,
+        "Winogrande":79.64,
+        "GSM8K":69.75,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -13604,6 +13851,25 @@
         "Hub":"cc-by-nc-sa-4.0",
         "Available on the Hub":34.39,
         "Model Sha":5.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"Eric111\/Mathral",
+        "Average":71.13,
+        "ARC":66.3,
+        "HellaSwag":86.17,
+        "MMLU":63.27,
+        "TruthfulQA":58.79,
+        "Winogrande":79.56,
+        "GSM8K":72.71,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -13676,7 +13942,7 @@
         "Architecture":"MistralForCausalLM",
         "Precision":"Original",
         "Hub License":"bfloat16",
-        "#Params (B)":false,
+        "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":3.0
@@ -13930,25 +14196,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"mlabonne\/NeuralPipe-7B-slerp",
-        "Average":71.01,
-        "ARC":67.58,
-        "HellaSwag":86.17,
-        "MMLU":64.06,
-        "TruthfulQA":59.84,
-        "Winogrande":80.19,
-        "GSM8K":68.23,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.24,
-        "Model Sha":3.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"DeepKarkhanis\/Mistral-Passthrough-8L-10B",
         "Average":71.01,
         "ARC":67.58,
@@ -13965,6 +14212,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"mlabonne\/NeuralPipe-7B-slerp",
+        "Average":71.01,
+        "ARC":67.58,
+        "HellaSwag":86.17,
+        "MMLU":64.06,
+        "TruthfulQA":59.84,
+        "Winogrande":80.19,
+        "GSM8K":68.23,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udcac",
@@ -14021,7 +14287,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":10.73,
-        "Model Sha":155.0
+        "Model Sha":157.0
     },
     {
         "T":"\ud83d\udcac",
@@ -14078,7 +14344,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.74,
-        "Model Sha":3.0
+        "Model Sha":4.0
     },
     {
         "T":"\ud83d\udd36",
@@ -14173,26 +14439,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"PulsarAI\/Draco-8x7B",
-        "Average":70.89,
-        "ARC":65.02,
-        "HellaSwag":85.24,
-        "MMLU":64.96,
-        "TruthfulQA":62.65,
-        "Winogrande":80.66,
-        "GSM8K":66.79,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MixtralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":46.7,
-        "Model Sha":0.0
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -14210,6 +14457,25 @@
         "Hub License":"bfloat16",
         "#Params (B)":false,
         "Hub":"?",
+        "Available on the Hub":46.7,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"PulsarAI\/Draco-8x7B",
+        "Average":70.89,
+        "ARC":65.02,
+        "HellaSwag":85.24,
+        "MMLU":64.96,
+        "TruthfulQA":62.65,
+        "Winogrande":80.66,
+        "GSM8K":66.79,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
         "Available on the Hub":46.7,
         "Model Sha":0.0
     },
@@ -14705,7 +14971,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":65.0
+        "Model Sha":66.0
     },
     {
         "T":"\ud83d\udd36",
@@ -14728,7 +14994,7 @@
     },
     {
         "T":"\ud83e\udd1d",
-        "Model":"giraffe176\/Open_Maid_Samantha_Hermes_Orca_dare_ties",
+        "Model":"giraffe176\/Open_Hermes_Maid_Sam_Mistral_dtv0.1",
         "Average":70.53,
         "ARC":67.75,
         "HellaSwag":86.39,
@@ -14747,7 +15013,7 @@
     },
     {
         "T":"\ud83e\udd1d",
-        "Model":"giraffe176\/Open_Hermes_Maid_Sam_Mistral_dtv0.1",
+        "Model":"giraffe176\/Open_Maid_Samantha_Hermes_Orca_dare_ties",
         "Average":70.53,
         "ARC":67.75,
         "HellaSwag":86.39,
@@ -14857,7 +15123,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":65.0
+        "Model Sha":66.0
     },
     {
         "T":"\ud83d\udd36",
@@ -15184,7 +15450,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"YeungNLP\/firefly-mixtral-8x7b-v1",
+        "Model":"YeungNLP\/firefly-mixtral-8x7b-v0.1",
         "Average":70.34,
         "ARC":68.09,
         "HellaSwag":85.76,
@@ -15203,7 +15469,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"YeungNLP\/firefly-mixtral-8x7b-v0.1",
+        "Model":"YeungNLP\/firefly-mixtral-8x7b-v1",
         "Average":70.34,
         "ARC":68.09,
         "HellaSwag":85.76,
@@ -15887,6 +16153,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"GritLM\/GritLM-8x7B",
+        "Average":70.06,
+        "ARC":67.83,
+        "HellaSwag":86.42,
+        "MMLU":71.48,
+        "TruthfulQA":49.37,
+        "Winogrande":82.79,
+        "GSM8K":62.47,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":46.7,
+        "Model Sha":15.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"ICBU-NPU\/FashionGPT-70B-V1.1",
         "Average":70.05,
         "ARC":71.76,
@@ -15925,25 +16210,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"indischepartij\/OpenMia-Indo-Engineering-7b",
-        "Average":70.03,
-        "ARC":67.15,
-        "HellaSwag":85.01,
-        "MMLU":62.86,
-        "TruthfulQA":57.94,
-        "Winogrande":82.32,
-        "GSM8K":64.9,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"cc-by-nc-4.0",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"gmonsoon\/OpenMia-Indo-Engineering",
         "Average":70.03,
         "ARC":67.15,
@@ -15958,6 +16224,25 @@
         "Hub License":"bfloat16",
         "#Params (B)":false,
         "Hub":"?",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"indischepartij\/OpenMia-Indo-Engineering-7b",
+        "Average":70.03,
+        "ARC":67.15,
+        "HellaSwag":85.01,
+        "MMLU":62.86,
+        "TruthfulQA":57.94,
+        "Winogrande":82.32,
+        "GSM8K":64.9,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
         "Model Sha":0.0
     },
@@ -16529,7 +16814,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":113.0
+        "Model Sha":114.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -17023,7 +17308,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":34.39,
-        "Model Sha":1179.0
+        "Model Sha":1182.0
     },
     {
         "T":"\ud83d\udd36",
@@ -17331,25 +17616,6 @@
     },
     {
         "T":"\ud83d\udcac",
-        "Model":"openchat\/openchat-3.5-0106",
-        "Average":69.3,
-        "ARC":66.04,
-        "HellaSwag":82.93,
-        "MMLU":65.04,
-        "TruthfulQA":51.9,
-        "Winogrande":81.77,
-        "GSM8K":68.16,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.24,
-        "Model Sha":185.0
-    },
-    {
-        "T":"\ud83d\udcac",
         "Model":"Jaume\/openchat-3.5-0106-mod-gpt5",
         "Average":69.3,
         "ARC":66.04,
@@ -17366,6 +17632,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"openchat\/openchat-3.5-0106",
+        "Average":69.3,
+        "ARC":66.04,
+        "HellaSwag":82.93,
+        "MMLU":65.04,
+        "TruthfulQA":51.9,
+        "Winogrande":81.77,
+        "GSM8K":68.16,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":191.0
     },
     {
         "T":"\ud83d\udd36",
@@ -18144,7 +18429,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":1.0
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -18182,7 +18467,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":120.32,
-        "Model Sha":59.0
+        "Model Sha":60.0
     },
     {
         "T":"\ud83d\udcac",
@@ -18927,6 +19212,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"uproai\/RosMistral-2x7B",
+        "Average":68.56,
+        "ARC":66.21,
+        "HellaSwag":85.54,
+        "MMLU":65.35,
+        "TruthfulQA":52.87,
+        "Winogrande":79.24,
+        "GSM8K":62.17,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"sequelbox\/SpellBlade",
         "Average":68.54,
         "ARC":69.28,
@@ -19151,7 +19455,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":1310.0
+        "Model Sha":1323.0
     },
     {
         "T":"\ud83d\udd36",
@@ -19284,7 +19588,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":46.7,
-        "Model Sha":1310.0
+        "Model Sha":1323.0
     },
     {
         "T":"\ud83d\udcac",
@@ -19589,6 +19893,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
         "Model Sha":51.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"ChaoticNeutrals\/Prima-LelantaclesV4-7b-16k-bf16",
+        "Average":68.28,
+        "ARC":66.04,
+        "HellaSwag":85.07,
+        "MMLU":64.7,
+        "TruthfulQA":54.76,
+        "Winogrande":80.27,
+        "GSM8K":58.83,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"other",
+        "Available on the Hub":7.24,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -20028,6 +20351,25 @@
         "Model Sha":7.0
     },
     {
+        "T":"\ud83d\udcac",
+        "Model":"NousResearch\/Nous-Hermes-2-Mistral-7B-DPO",
+        "Average":68.1,
+        "ARC":65.7,
+        "HellaSwag":84.94,
+        "MMLU":63.25,
+        "TruthfulQA":55.78,
+        "Winogrande":78.45,
+        "GSM8K":60.5,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":38.0
+    },
+    {
         "T":"\ud83d\udd36",
         "Model":"mncai\/agiin-11.1B-v0.0",
         "Average":68.1,
@@ -20064,6 +20406,25 @@
         "Hub":"cc-by-nc-sa-4.0",
         "Available on the Hub":34.39,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"NousResearch\/Nous-Hermes-2-Mistral-7B-DPO",
+        "Average":68.1,
+        "ARC":66.04,
+        "HellaSwag":84.95,
+        "MMLU":63.36,
+        "TruthfulQA":55.75,
+        "Winogrande":78.06,
+        "GSM8K":60.42,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":38.0
     },
     {
         "T":"\ud83d\udd36",
@@ -20656,25 +21017,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"FelixChao\/NarutoDolphin-10B",
-        "Average":67.82,
-        "ARC":63.82,
-        "HellaSwag":84.17,
-        "MMLU":62.85,
-        "TruthfulQA":59.13,
-        "Winogrande":77.51,
-        "GSM8K":59.44,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":10.73,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"FelixChao\/NarutoDolphin-7B",
         "Average":67.82,
         "ARC":63.82,
@@ -20691,6 +21033,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":10.73,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"FelixChao\/NarutoDolphin-10B",
+        "Average":67.82,
+        "ARC":63.82,
+        "HellaSwag":84.17,
+        "MMLU":62.85,
+        "TruthfulQA":59.13,
+        "Winogrande":77.51,
+        "GSM8K":59.44,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":10.73,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -20956,7 +21317,7 @@
         "#Params (B)":true,
         "Hub":"llama2",
         "Available on the Hub":70.0,
-        "Model Sha":37.0
+        "Model Sha":38.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -20975,7 +21336,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":12.88,
-        "Model Sha":1.0
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -21184,7 +21545,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.0,
-        "Model Sha":31.0
+        "Model Sha":32.0
     },
     {
         "T":"\ud83d\udd36",
@@ -21545,7 +21906,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":0.0,
-        "Model Sha":872.0
+        "Model Sha":873.0
     },
     {
         "T":"\ud83d\udd36",
@@ -21754,7 +22115,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":8.0
+        "Model Sha":12.0
     },
     {
         "T":"\ud83d\udd36",
@@ -21792,7 +22153,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":90.0
+        "Model Sha":91.0
     },
     {
         "T":"\ud83d\udcac",
@@ -21812,6 +22173,44 @@
         "Hub":"?",
         "Available on the Hub":68.72,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"jeiku\/Lunar_10.7B",
+        "Average":67.25,
+        "ARC":65.87,
+        "HellaSwag":84.85,
+        "MMLU":64.23,
+        "TruthfulQA":53.51,
+        "Winogrande":81.37,
+        "GSM8K":53.68,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-sa-4.0",
+        "Available on the Hub":10.73,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"ChaoticNeutrals\/Lunar_10.7B",
+        "Average":67.25,
+        "ARC":65.87,
+        "HellaSwag":84.85,
+        "MMLU":64.23,
+        "TruthfulQA":53.51,
+        "Winogrande":81.37,
+        "GSM8K":53.68,
+        "Type":"base merges and moerges",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"cc-by-nc-sa-4.0",
+        "Available on the Hub":10.73,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -21849,7 +22248,7 @@
         "#Params (B)":true,
         "Hub":"other",
         "Available on the Hub":7.24,
-        "Model Sha":5.0
+        "Model Sha":6.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -22058,7 +22457,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":465.0
+        "Model Sha":468.0
     },
     {
         "T":"\ud83d\udcac",
@@ -22324,7 +22723,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":465.0
+        "Model Sha":468.0
     },
     {
         "T":"\ud83d\udcac",
@@ -22989,7 +23388,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":7.0,
-        "Model Sha":60.0
+        "Model Sha":61.0
     },
     {
         "T":"\ud83d\udcac",
@@ -23540,7 +23939,7 @@
         "#Params (B)":true,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":0.0
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udcac",
@@ -23559,11 +23958,11 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
-        "Model Sha":69.0
+        "Model Sha":70.0
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"augtoma\/qCammel70",
+        "Model":"augtoma\/qCammel-70x",
         "Average":66.31,
         "ARC":68.34,
         "HellaSwag":87.87,
@@ -23582,7 +23981,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"augtoma\/qCammel-70x",
+        "Model":"augtoma\/qCammel70",
         "Average":66.31,
         "ARC":68.34,
         "HellaSwag":87.87,
@@ -23692,7 +24091,7 @@
         "#Params (B)":true,
         "Hub":"agpl-3.0",
         "Available on the Hub":70.0,
-        "Model Sha":1.0
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -23768,7 +24167,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
-        "Model Sha":69.0
+        "Model Sha":70.0
     },
     {
         "T":"\ud83d\udd36",
@@ -23806,7 +24205,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.0,
-        "Model Sha":7.0
+        "Model Sha":8.0
     },
     {
         "T":"\ud83d\udd36",
@@ -24015,7 +24414,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":10.73,
-        "Model Sha":186.0
+        "Model Sha":189.0
     },
     {
         "T":"\ud83d\udd36",
@@ -24300,7 +24699,7 @@
         "#Params (B)":false,
         "Hub":"wtfpl",
         "Available on the Hub":14.0,
-        "Model Sha":94.0
+        "Model Sha":95.0
     },
     {
         "T":"\ud83d\udd36",
@@ -24737,7 +25136,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":894.0
+        "Model Sha":910.0
     },
     {
         "T":"\ud83d\udd36",
@@ -24775,6 +25174,25 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Mihaiii\/Bucharest-0.3",
+        "Average":65.69,
+        "ARC":63.99,
+        "HellaSwag":84.46,
+        "MMLU":65.61,
+        "TruthfulQA":46.19,
+        "Winogrande":82.72,
+        "GSM8K":51.18,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":10.73,
         "Model Sha":0.0
     },
     {
@@ -25402,7 +25820,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":34.39,
-        "Model Sha":261.0
+        "Model Sha":262.0
     },
     {
         "T":"?",
@@ -25577,26 +25995,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"BarraHome\/Lucie-7b",
-        "Average":65.23,
-        "ARC":62.2,
-        "HellaSwag":84.81,
-        "MMLU":60.34,
-        "TruthfulQA":67.67,
-        "Winogrande":76.8,
-        "GSM8K":39.58,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"BarraHome\/Lucie-7b-3e-5",
+        "Model":"BarraHome\/Wistral-7B-Instruct-v0.4",
         "Average":65.23,
         "ARC":62.2,
         "HellaSwag":84.81,
@@ -25634,7 +26033,45 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"BarraHome\/Wistral-7B-Instruct-v0.4",
+        "Model":"BarraHome\/Lucie-7b-3e-5",
+        "Average":65.23,
+        "ARC":62.2,
+        "HellaSwag":84.81,
+        "MMLU":60.34,
+        "TruthfulQA":67.67,
+        "Winogrande":76.8,
+        "GSM8K":39.58,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"BarraHome\/Lucie-7b",
+        "Average":65.23,
+        "ARC":62.2,
+        "HellaSwag":84.81,
+        "MMLU":60.34,
+        "TruthfulQA":67.67,
+        "Winogrande":76.8,
+        "GSM8K":39.58,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"BarraHome\/Mistroll-7B-v0.1-16bit",
         "Average":65.23,
         "ARC":62.2,
         "HellaSwag":84.81,
@@ -25976,6 +26413,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"lodrick-the-lafted\/Hermes-Instruct-7B-100K",
+        "Average":64.96,
+        "ARC":61.52,
+        "HellaSwag":82.84,
+        "MMLU":60.95,
+        "TruthfulQA":63.62,
+        "Winogrande":76.87,
+        "GSM8K":43.97,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.0,
+        "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"NeuralNovel\/Mistral-7B-Instruct-v0.2-Neural-Story",
         "Average":64.96,
         "ARC":64.08,
@@ -26164,7 +26620,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":7.0
+        "Model Sha":9.0
     },
     {
         "T":"\ud83d\udcac",
@@ -26183,7 +26639,26 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.29,
-        "Model Sha":26.0
+        "Model Sha":31.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"lodrick-the-lafted\/Hermes-Instruct-7B-217K",
+        "Average":64.81,
+        "ARC":61.01,
+        "HellaSwag":82.64,
+        "MMLU":61.23,
+        "TruthfulQA":61.81,
+        "Winogrande":77.66,
+        "GSM8K":44.5,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.0,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -26848,7 +27323,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":70.0,
-        "Model Sha":72.0
+        "Model Sha":73.0
     },
     {
         "T":"\ud83d\udd36",
@@ -26928,25 +27403,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"hedronstone\/OpenHermes-7B-Reasoner",
-        "Average":64.44,
-        "ARC":63.14,
-        "HellaSwag":82.73,
-        "MMLU":62.62,
-        "TruthfulQA":48.82,
-        "Winogrande":75.85,
-        "GSM8K":53.45,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"hedronstone\/OpenHermes-7B-Symbolic",
         "Average":64.44,
         "ARC":63.14,
@@ -26961,6 +27417,25 @@
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"hedronstone\/OpenHermes-7B-Reasoner",
+        "Average":64.44,
+        "ARC":63.14,
+        "HellaSwag":82.73,
+        "MMLU":62.62,
+        "TruthfulQA":48.82,
+        "Winogrande":75.85,
+        "GSM8K":53.45,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
         "Available on the Hub":7.24,
         "Model Sha":0.0
     },
@@ -27194,25 +27669,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Weyaxi\/Einstein-v3-7B",
-        "Average":64.09,
-        "ARC":62.29,
-        "HellaSwag":83.01,
-        "MMLU":63.32,
-        "TruthfulQA":51.18,
-        "Winogrande":79.95,
-        "GSM8K":44.81,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"PulsarAI\/Einstein-v3-7B",
         "Average":64.09,
         "ARC":62.29,
@@ -27227,6 +27683,25 @@
         "Hub License":"bfloat16",
         "#Params (B)":false,
         "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Weyaxi\/Einstein-v3-7B",
+        "Average":64.09,
+        "ARC":62.29,
+        "HellaSwag":83.01,
+        "MMLU":63.32,
+        "TruthfulQA":51.18,
+        "Winogrande":79.95,
+        "GSM8K":44.81,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"?",
         "Available on the Hub":7.24,
         "Model Sha":0.0
     },
@@ -27383,6 +27858,25 @@
         "Model Sha":0.0
     },
     {
+        "T":"\ud83d\udcac",
+        "Model":"Novocoders\/Mistral-NeuralDPO-v0.4-Laser",
+        "Average":63.89,
+        "ARC":66.89,
+        "HellaSwag":85.23,
+        "MMLU":63.47,
+        "TruthfulQA":50.91,
+        "Winogrande":80.27,
+        "GSM8K":36.54,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83d\udd36",
         "Model":"silvercoder67\/Mistral-7b-instruct-v0.2-summ-sft-e2m",
         "Average":63.86,
@@ -27418,7 +27912,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":0.0
+        "Model Sha":1.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -27479,25 +27973,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"CausalLM\/14B",
-        "Average":63.81,
-        "ARC":56.66,
-        "HellaSwag":79.08,
-        "MMLU":65.86,
-        "TruthfulQA":47.75,
-        "Winogrande":74.9,
-        "GSM8K":58.61,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"wtfpl",
-        "Available on the Hub":14.0,
-        "Model Sha":253.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"Medilora\/medilora-qwen-14b",
         "Average":63.81,
         "ARC":56.66,
@@ -27514,6 +27989,25 @@
         "Hub":"?",
         "Available on the Hub":14.17,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"CausalLM\/14B",
+        "Average":63.81,
+        "ARC":56.66,
+        "HellaSwag":79.08,
+        "MMLU":65.86,
+        "TruthfulQA":47.75,
+        "Winogrande":74.9,
+        "GSM8K":58.61,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"wtfpl",
+        "Available on the Hub":14.0,
+        "Model Sha":253.0
     },
     {
         "T":"\ud83d\udcac",
@@ -27611,6 +28105,25 @@
         "Model Sha":0.0
     },
     {
+        "T":"\ud83d\udfe2",
+        "Model":"google\/gemma-7b",
+        "Average":63.75,
+        "ARC":61.09,
+        "HellaSwag":82.2,
+        "MMLU":64.56,
+        "TruthfulQA":44.79,
+        "Winogrande":79.01,
+        "GSM8K":50.87,
+        "Type":"pretrained",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":7.0,
+        "Model Sha":229.0
+    },
+    {
         "T":"\ud83e\udd1d",
         "Model":"fhai50032\/xLakeChat",
         "Average":63.72,
@@ -27649,25 +28162,6 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udcac",
-        "Model":"UCLA-AGI\/zephyr-7b-sft-full-SPIN-iter3",
-        "Average":63.7,
-        "ARC":66.13,
-        "HellaSwag":85.85,
-        "MMLU":61.51,
-        "TruthfulQA":57.89,
-        "Winogrande":76.64,
-        "GSM8K":34.19,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"mit",
-        "Available on the Hub":7.24,
-        "Model Sha":23.0
-    },
-    {
         "T":"\ud83d\udd36",
         "Model":"UCLA-AGI\/test_final",
         "Average":63.7,
@@ -27685,6 +28179,25 @@
         "Hub":"mit",
         "Available on the Hub":7.24,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"UCLA-AGI\/zephyr-7b-sft-full-SPIN-iter3",
+        "Average":63.7,
+        "ARC":66.13,
+        "HellaSwag":85.85,
+        "MMLU":61.51,
+        "TruthfulQA":57.89,
+        "Winogrande":76.64,
+        "GSM8K":34.19,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"mit",
+        "Available on the Hub":7.24,
+        "Model Sha":23.0
     },
     {
         "T":"\ud83d\udd36",
@@ -27836,7 +28349,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":13.0
+        "Model Sha":14.0
     },
     {
         "T":"\ud83d\udd36",
@@ -28045,7 +28558,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":104.0
+        "Model Sha":105.0
     },
     {
         "T":"\ud83d\udd36",
@@ -28558,7 +29071,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":34.39,
-        "Model Sha":261.0
+        "Model Sha":262.0
     },
     {
         "T":"\ud83d\udd36",
@@ -28771,6 +29284,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"Novocoders\/Mistral-NeuralDPO-v0.6",
+        "Average":63.04,
+        "ARC":65.87,
+        "HellaSwag":84.68,
+        "MMLU":62.19,
+        "TruthfulQA":48.22,
+        "Winogrande":80.27,
+        "GSM8K":37.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"maywell\/PiVoT-MoE",
         "Average":63.04,
         "ARC":63.91,
@@ -28923,7 +29455,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"UCLA-AGI\/test",
+        "Model":"UCLA-AGI\/zephyr-7b-sft-full-spin-iter1",
         "Average":62.86,
         "ARC":65.87,
         "HellaSwag":85.44,
@@ -28961,7 +29493,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"UCLA-AGI\/zephyr-7b-sft-full-spin-iter1",
+        "Model":"UCLA-AGI\/test",
         "Average":62.86,
         "ARC":65.87,
         "HellaSwag":85.44,
@@ -29641,7 +30173,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":68.98,
-        "Model Sha":1963.0
+        "Model Sha":1970.0
     },
     {
         "T":"\ud83d\udd36",
@@ -29755,7 +30287,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":2.0
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udcac",
@@ -29774,7 +30306,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":69.2,
-        "Model Sha":15.0
+        "Model Sha":16.0
     },
     {
         "T":"\ud83d\udd36",
@@ -29968,25 +30500,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"vmajor\/Orca2-13B-selfmerge-39B",
-        "Average":62.24,
-        "ARC":60.84,
-        "HellaSwag":79.84,
-        "MMLU":60.32,
-        "TruthfulQA":56.38,
-        "Winogrande":76.87,
-        "GSM8K":39.2,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":true,
-        "Hub":"ms-pl",
-        "Available on the Hub":13.02,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"vmajor\/Orca2-13B-selfmerge-26B",
         "Average":62.24,
         "ARC":60.84,
@@ -30003,6 +30516,25 @@
         "Hub":"ms-pl",
         "Available on the Hub":13.02,
         "Model Sha":2.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"vmajor\/Orca2-13B-selfmerge-39B",
+        "Average":62.24,
+        "ARC":60.84,
+        "HellaSwag":79.84,
+        "MMLU":60.32,
+        "TruthfulQA":56.38,
+        "Winogrande":76.87,
+        "GSM8K":39.2,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"ms-pl",
+        "Available on the Hub":13.02,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -30344,7 +30876,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":13.0,
-        "Model Sha":617.0
+        "Model Sha":618.0
     },
     {
         "T":"\ud83d\udcac",
@@ -30382,7 +30914,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":1292.0
+        "Model Sha":1296.0
     },
     {
         "T":"\ud83d\udcac",
@@ -30686,7 +31218,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.72,
-        "Model Sha":8.0
+        "Model Sha":9.0
     },
     {
         "T":"\ud83d\udd36",
@@ -30971,7 +31503,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":1292.0
+        "Model Sha":1296.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -31066,7 +31598,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":646.0
+        "Model Sha":648.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -31237,7 +31769,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":646.0
+        "Model Sha":648.0
     },
     {
         "T":"\ud83d\udd36",
@@ -31294,7 +31826,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":22.0
+        "Model Sha":24.0
     },
     {
         "T":"\ud83d\udd36",
@@ -31484,7 +32016,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":2.78,
-        "Model Sha":2765.0
+        "Model Sha":2781.0
     },
     {
         "T":"\ud83d\udcac",
@@ -31636,7 +32168,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":70.0,
-        "Model Sha":215.0
+        "Model Sha":216.0
     },
     {
         "T":"\ud83d\udd36",
@@ -31655,7 +32187,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
-        "Model Sha":1038.0
+        "Model Sha":1040.0
     },
     {
         "T":"\ud83d\udcac",
@@ -31693,7 +32225,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
-        "Model Sha":1038.0
+        "Model Sha":1040.0
     },
     {
         "T":"\ud83d\udcac",
@@ -32130,7 +32662,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":2795.0
+        "Model Sha":2811.0
     },
     {
         "T":"\ud83d\udd36",
@@ -32191,25 +32723,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Reverb\/Mistral-7B-LoreWeaver",
-        "Average":60.93,
-        "ARC":59.98,
-        "HellaSwag":83.29,
-        "MMLU":64.12,
-        "TruthfulQA":42.15,
-        "Winogrande":78.37,
-        "GSM8K":37.68,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"?",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"mit",
-        "Available on the Hub":7.24,
-        "Model Sha":3.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"uukuguy\/speechless-mistral-moloras-7b",
         "Average":60.93,
         "ARC":59.98,
@@ -32226,6 +32739,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
         "Model Sha":5.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Reverb\/Mistral-7B-LoreWeaver",
+        "Average":60.93,
+        "ARC":59.98,
+        "HellaSwag":83.29,
+        "MMLU":64.12,
+        "TruthfulQA":42.15,
+        "Winogrande":78.37,
+        "GSM8K":37.68,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"?",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"mit",
+        "Available on the Hub":7.24,
+        "Model Sha":3.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -32301,7 +32833,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.28,
-        "Model Sha":5.0
+        "Model Sha":6.0
     },
     {
         "T":"\ud83d\udd36",
@@ -32700,7 +33232,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.28,
-        "Model Sha":5.0
+        "Model Sha":6.0
     },
     {
         "T":"\ud83d\udd36",
@@ -32928,7 +33460,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-sa-4.0",
         "Available on the Hub":7.0,
-        "Model Sha":16.0
+        "Model Sha":17.0
     },
     {
         "T":"\ud83d\udd36",
@@ -33118,7 +33650,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":1.0
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -33479,7 +34011,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
-        "Model Sha":1038.0
+        "Model Sha":1040.0
     },
     {
         "T":"\ud83d\udd36",
@@ -33612,7 +34144,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":104.0
+        "Model Sha":105.0
     },
     {
         "T":"\ud83d\udd36",
@@ -33821,7 +34353,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":35.43,
-        "Model Sha":1.0
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -34296,7 +34828,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.0,
-        "Model Sha":19.0
+        "Model Sha":20.0
     },
     {
         "T":"\ud83d\udd36",
@@ -34604,6 +35136,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"NLUHOPOE\/test-case-2",
+        "Average":59.63,
+        "ARC":58.53,
+        "HellaSwag":79.4,
+        "MMLU":56.14,
+        "TruthfulQA":49.59,
+        "Winogrande":75.3,
+        "GSM8K":38.82,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"sequelbox\/DiamondForce",
         "Average":59.63,
         "ARC":62.12,
@@ -34904,7 +35455,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":1044.0
+        "Model Sha":1046.0
     },
     {
         "T":"\ud83d\udd36",
@@ -35056,7 +35607,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.0,
-        "Model Sha":56.0
+        "Model Sha":58.0
     },
     {
         "T":"\ud83d\udd36",
@@ -35189,7 +35740,7 @@
         "#Params (B)":false,
         "Hub":"gpl",
         "Available on the Hub":33.0,
-        "Model Sha":13.0
+        "Model Sha":14.0
     },
     {
         "T":"\ud83d\udcac",
@@ -35303,7 +35854,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.0,
-        "Model Sha":56.0
+        "Model Sha":58.0
     },
     {
         "T":"\ud83d\udcac",
@@ -35493,7 +36044,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.72,
-        "Model Sha":325.0
+        "Model Sha":326.0
     },
     {
         "T":"\ud83d\udd36",
@@ -35626,7 +36177,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":16.0
+        "Model Sha":17.0
     },
     {
         "T":"\ud83d\udd36",
@@ -35664,7 +36215,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":7.24,
-        "Model Sha":1292.0
+        "Model Sha":1296.0
     },
     {
         "T":"\ud83d\udcac",
@@ -35949,7 +36500,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.24,
-        "Model Sha":16.0
+        "Model Sha":17.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -35968,7 +36519,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":68.98,
-        "Model Sha":264.0
+        "Model Sha":265.0
     },
     {
         "T":"\ud83d\udd36",
@@ -36086,6 +36637,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"Charlie911\/zephyr-7b-beta-MultiLoRA-mmlu-merged",
+        "Average":58.89,
+        "ARC":57.94,
+        "HellaSwag":81.43,
+        "MMLU":58.57,
+        "TruthfulQA":51.98,
+        "Winogrande":76.64,
+        "GSM8K":26.76,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"mit",
+        "Available on the Hub":7.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"openaccess-ai-collective\/manticore-30b-chat-pyg-alpha",
         "Average":58.86,
         "ARC":64.16,
@@ -36120,7 +36690,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":13.0
+        "Model Sha":14.0
     },
     {
         "T":"\ud83d\udcac",
@@ -36272,7 +36842,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":13.02,
-        "Model Sha":19.0
+        "Model Sha":20.0
     },
     {
         "T":"\ud83d\udd36",
@@ -36576,7 +37146,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":13.0,
-        "Model Sha":617.0
+        "Model Sha":618.0
     },
     {
         "T":"\ud83d\udd36",
@@ -36937,7 +37507,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":35.58,
-        "Model Sha":518.0
+        "Model Sha":519.0
     },
     {
         "T":"\ud83d\udd36",
@@ -37032,7 +37602,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":30.0,
-        "Model Sha":118.0
+        "Model Sha":119.0
     },
     {
         "T":"\ud83d\udd36",
@@ -37549,7 +38119,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"caisarl76\/mistral-guanaco1k-ep2",
+        "Model":"caisarl76\/Mistral-7B-guanaco1k-ep2",
         "Average":58.13,
         "ARC":60.07,
         "HellaSwag":82.76,
@@ -37568,7 +38138,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"caisarl76\/Mistral-7B-guanaco1k-ep2",
+        "Model":"caisarl76\/mistral-guanaco1k-ep2",
         "Average":58.13,
         "ARC":60.07,
         "HellaSwag":82.76,
@@ -37735,7 +38305,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":8.36,
-        "Model Sha":54.0
+        "Model Sha":55.0
     },
     {
         "T":"\ud83d\udd36",
@@ -37773,7 +38343,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":60.0
+        "Model Sha":61.0
     },
     {
         "T":"\ud83d\udd36",
@@ -38289,25 +38859,6 @@
         "Model Sha":3.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"Sao10K\/Stheno-V2-Delta-fp16",
-        "Average":57.81,
-        "ARC":62.46,
-        "HellaSwag":83.45,
-        "MMLU":59.04,
-        "TruthfulQA":55.25,
-        "Winogrande":73.88,
-        "GSM8K":12.81,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":13.02,
-        "Model Sha":0.0
-    },
-    {
         "T":"?",
         "Model":"Sao10K\/Stheno-v2-Delta-fp16",
         "Average":57.81,
@@ -38325,6 +38876,25 @@
         "Hub":"llama2",
         "Available on the Hub":13.02,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Sao10K\/Stheno-V2-Delta-fp16",
+        "Average":57.81,
+        "ARC":62.46,
+        "HellaSwag":83.45,
+        "MMLU":59.04,
+        "TruthfulQA":55.25,
+        "Winogrande":73.88,
+        "GSM8K":12.81,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":13.02,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -38499,7 +39069,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Zangs3011\/mistral_7b_DolphinCoder",
+        "Model":"qblocks\/mistral_7b_DolphinCoder",
         "Average":57.67,
         "ARC":59.73,
         "HellaSwag":81.64,
@@ -38518,7 +39088,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"qblocks\/mistral_7b_DolphinCoder",
+        "Model":"Zangs3011\/mistral_7b_DolphinCoder",
         "Average":57.67,
         "ARC":59.73,
         "HellaSwag":81.64,
@@ -38704,7 +39274,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":14.0
+        "Model Sha":15.0
     },
     {
         "T":"\ud83d\udd36",
@@ -38818,7 +39388,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":14.0
+        "Model Sha":15.0
     },
     {
         "T":"\ud83d\udd36",
@@ -39312,7 +39882,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":19.99,
-        "Model Sha":4.0
+        "Model Sha":5.0
     },
     {
         "T":"\ud83d\udd36",
@@ -39353,25 +39923,6 @@
         "Model Sha":2.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"psmathur\/orca_mini_v3_13b",
-        "Average":57.24,
-        "ARC":63.14,
-        "HellaSwag":82.35,
-        "MMLU":56.52,
-        "TruthfulQA":51.81,
-        "Winogrande":76.48,
-        "GSM8K":13.12,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":12.85,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83d\udcac",
         "Model":"pankajmathur\/orca_mini_v3_13b",
         "Average":57.24,
@@ -39392,6 +39943,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"psmathur\/orca_mini_v3_13b",
+        "Average":57.24,
+        "ARC":63.14,
+        "HellaSwag":82.35,
+        "MMLU":56.52,
+        "TruthfulQA":51.81,
+        "Winogrande":76.48,
+        "GSM8K":13.12,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":12.85,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"Undi95\/MLewd-Chat-v2-13B",
         "Average":57.23,
         "ARC":61.86,
@@ -39407,7 +39977,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":13.0,
-        "Model Sha":17.0
+        "Model Sha":18.0
     },
     {
         "T":"\ud83d\udd36",
@@ -40076,22 +40646,22 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Yhyu13\/llama-30B-hf-openassitant",
-        "Average":56.94,
-        "ARC":61.26,
-        "HellaSwag":84.73,
-        "MMLU":58.47,
-        "TruthfulQA":42.27,
-        "Winogrande":80.03,
-        "GSM8K":14.86,
+        "Model":"Radiantloom\/radintloom-mistral-7b-fusion-dpo",
+        "Average":56.95,
+        "ARC":63.14,
+        "HellaSwag":83.68,
+        "MMLU":63.42,
+        "TruthfulQA":51.14,
+        "Winogrande":79.95,
+        "GSM8K":0.38,
         "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
+        "Architecture":"MistralForCausalLM",
         "Precision":"Original",
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":"apache-2.0",
-        "Available on the Hub":30.0,
-        "Model Sha":1.0
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -40111,6 +40681,25 @@
         "Hub":"other",
         "Available on the Hub":32.53,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Yhyu13\/llama-30B-hf-openassitant",
+        "Average":56.94,
+        "ARC":61.26,
+        "HellaSwag":84.73,
+        "MMLU":58.47,
+        "TruthfulQA":42.27,
+        "Winogrande":80.03,
+        "GSM8K":14.86,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":30.0,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -40167,7 +40756,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":13.0,
-        "Model Sha":10.0
+        "Model Sha":11.0
     },
     {
         "T":"\ud83d\udd36",
@@ -40912,6 +41501,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"fangzhaoz\/pearl7B_tuneonGSM8K",
+        "Average":56.56,
+        "ARC":55.63,
+        "HellaSwag":73.31,
+        "MMLU":44.95,
+        "TruthfulQA":54.16,
+        "Winogrande":71.35,
+        "GSM8K":39.95,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.24,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"Undi95\/MM-ReMM-L2-20B",
         "Average":56.55,
         "ARC":60.84,
@@ -41615,7 +42223,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"arlineka\/Brunhilde-13b",
+        "Model":"KatyTheCutie\/EstopianMaid-13B",
         "Average":56.2,
         "ARC":60.49,
         "HellaSwag":83.49,
@@ -41634,7 +42242,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"KatyTheCutie\/EstopianMaid-13B",
+        "Model":"arlineka\/Brunhilde-13b",
         "Average":56.2,
         "ARC":60.49,
         "HellaSwag":83.49,
@@ -42547,25 +43155,6 @@
         "Model Sha":1.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"maywell\/Synatra-V0.1-7B",
-        "Average":55.86,
-        "ARC":55.29,
-        "HellaSwag":76.63,
-        "MMLU":55.29,
-        "TruthfulQA":55.76,
-        "Winogrande":72.77,
-        "GSM8K":19.41,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":7.11,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83d\udcac",
         "Model":"maywell\/Synatra-V0.1-7B-Instruct",
         "Average":55.86,
@@ -42583,6 +43172,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":7.0,
         "Model Sha":16.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"maywell\/Synatra-V0.1-7B",
+        "Average":55.86,
+        "ARC":55.29,
+        "HellaSwag":76.63,
+        "MMLU":55.29,
+        "TruthfulQA":55.76,
+        "Winogrande":72.77,
+        "GSM8K":19.41,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":7.11,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -42945,7 +43553,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.02,
-        "Model Sha":498.0
+        "Model Sha":500.0
     },
     {
         "T":"\ud83d\udd36",
@@ -44260,7 +44868,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.72,
-        "Model Sha":42.0
+        "Model Sha":46.0
     },
     {
         "T":"\ud83d\udcac",
@@ -44393,7 +45001,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":7.72,
-        "Model Sha":42.0
+        "Model Sha":46.0
     },
     {
         "T":"\ud83d\udd36",
@@ -44944,7 +45552,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":1316.0
+        "Model Sha":1323.0
     },
     {
         "T":"\ud83d\udd36",
@@ -45077,7 +45685,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.02,
-        "Model Sha":850.0
+        "Model Sha":855.0
     },
     {
         "T":"\ud83d\udd36",
@@ -45898,7 +46506,7 @@
         "#Params (B)":true,
         "Hub":"llama2",
         "Available on the Hub":13.0,
-        "Model Sha":55.0
+        "Model Sha":56.0
     },
     {
         "T":"\ud83d\udd36",
@@ -46259,7 +46867,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":9.05,
-        "Model Sha":11.0
+        "Model Sha":12.0
     },
     {
         "T":"\ud83d\udd36",
@@ -46795,25 +47403,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"TheBloke\/Wizard-Vicuna-13B-Uncensored-HF",
-        "Average":54.14,
-        "ARC":58.96,
-        "HellaSwag":81.95,
-        "MMLU":47.92,
-        "TruthfulQA":51.69,
-        "Winogrande":75.69,
-        "GSM8K":8.64,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"other",
-        "Available on the Hub":13.0,
-        "Model Sha":201.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"ehartford\/Wizard-Vicuna-13B-Uncensored",
         "Average":54.14,
         "ARC":58.96,
@@ -46830,6 +47419,25 @@
         "Hub":"?",
         "Available on the Hub":12.85,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"TheBloke\/Wizard-Vicuna-13B-Uncensored-HF",
+        "Average":54.14,
+        "ARC":58.96,
+        "HellaSwag":81.95,
+        "MMLU":47.92,
+        "TruthfulQA":51.69,
+        "Winogrande":75.69,
+        "GSM8K":8.64,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":13.0,
+        "Model Sha":201.0
     },
     {
         "T":"\ud83d\udcac",
@@ -47266,7 +47874,7 @@
         "#Params (B)":false,
         "Hub":"gpl",
         "Available on the Hub":13.0,
-        "Model Sha":418.0
+        "Model Sha":419.0
     },
     {
         "T":"\ud83d\udcac",
@@ -47285,6 +47893,25 @@
         "#Params (B)":false,
         "Hub":"?",
         "Available on the Hub":13.16,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"The-Face-Of-Goonery\/Huginn-13b-V4",
+        "Average":54.04,
+        "ARC":60.67,
+        "HellaSwag":82.34,
+        "MMLU":52.32,
+        "TruthfulQA":50.62,
+        "Winogrande":73.64,
+        "GSM8K":4.62,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":13.0,
         "Model Sha":0.0
     },
     {
@@ -47324,25 +47951,6 @@
         "Hub":"",
         "Available on the Hub":13.0,
         "Model Sha":3.0
-    },
-    {
-        "T":"\ud83d\udcac",
-        "Model":"The-Face-Of-Goonery\/Huginn-13b-V4",
-        "Average":54.04,
-        "ARC":60.67,
-        "HellaSwag":82.34,
-        "MMLU":52.32,
-        "TruthfulQA":50.62,
-        "Winogrande":73.64,
-        "GSM8K":4.62,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":13.0,
-        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -47456,7 +48064,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":4.0
+        "Model Sha":6.0
     },
     {
         "T":"\ud83d\udd36",
@@ -47935,25 +48543,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"jondurbin\/airoboros-13b-gpt4-1.4-fp16",
-        "Average":53.87,
-        "ARC":59.64,
-        "HellaSwag":83.22,
-        "MMLU":47.56,
-        "TruthfulQA":48.82,
-        "Winogrande":76.24,
-        "GSM8K":7.73,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"other",
-        "Available on the Hub":13.0,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"jondurbin\/airoboros-13b-gpt4-1.4",
         "Average":53.87,
         "ARC":59.64,
@@ -47970,6 +48559,25 @@
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":13.0,
         "Model Sha":19.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"jondurbin\/airoboros-13b-gpt4-1.4-fp16",
+        "Average":53.87,
+        "ARC":59.64,
+        "HellaSwag":83.22,
+        "MMLU":47.56,
+        "TruthfulQA":48.82,
+        "Winogrande":76.24,
+        "GSM8K":7.73,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":13.0,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -48504,8 +49112,8 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"NewstaR\/Starlight-13B",
+        "T":"\ud83d\udfe2",
+        "Model":"TheBloke\/Llama-2-13B-fp16",
         "Average":53.67,
         "ARC":59.3,
         "HellaSwag":82.15,
@@ -48513,14 +49121,14 @@
         "TruthfulQA":37.39,
         "Winogrande":76.64,
         "GSM8K":10.84,
-        "Type":"fine-tuned on domain-specific datasets",
+        "Type":"pretrained",
         "Architecture":"LlamaForCausalLM",
         "Precision":"Original",
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.0,
-        "Model Sha":0.0
+        "Model Sha":56.0
     },
     {
         "T":"\ud83d\udd36",
@@ -48542,8 +49150,8 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udfe2",
-        "Model":"TheBloke\/Llama-2-13B-fp16",
+        "T":"\ud83d\udd36",
+        "Model":"NewstaR\/Starlight-13B",
         "Average":53.67,
         "ARC":59.3,
         "HellaSwag":82.15,
@@ -48551,14 +49159,14 @@
         "TruthfulQA":37.39,
         "Winogrande":76.64,
         "GSM8K":10.84,
-        "Type":"pretrained",
+        "Type":"fine-tuned on domain-specific datasets",
         "Architecture":"LlamaForCausalLM",
         "Precision":"Original",
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.0,
-        "Model Sha":56.0
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -49721,44 +50329,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"kevinpro\/Vicuna-13B-CoT",
-        "Average":53.29,
-        "ARC":52.73,
-        "HellaSwag":80.13,
-        "MMLU":51.94,
-        "TruthfulQA":52.08,
-        "Winogrande":74.19,
-        "GSM8K":8.64,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":null,
-        "Available on the Hub":13.0,
-        "Model Sha":4.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"pillowtalks-ai\/delta13b",
-        "Average":53.29,
-        "ARC":52.73,
-        "HellaSwag":80.13,
-        "MMLU":51.94,
-        "TruthfulQA":52.08,
-        "Winogrande":74.19,
-        "GSM8K":8.64,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":13.0,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"eachadea\/vicuna-13b-1.1",
         "Average":53.29,
         "ARC":52.73,
@@ -49797,11 +50367,11 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"lmsys\/vicuna-13b-delta-v1.1",
-        "Average":53.28,
+        "Model":"kevinpro\/Vicuna-13B-CoT",
+        "Average":53.29,
         "ARC":52.73,
-        "HellaSwag":80.14,
-        "MMLU":51.9,
+        "HellaSwag":80.13,
+        "MMLU":51.94,
         "TruthfulQA":52.08,
         "Winogrande":74.19,
         "GSM8K":8.64,
@@ -49812,7 +50382,26 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.0,
-        "Model Sha":409.0
+        "Model Sha":4.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"pillowtalks-ai\/delta13b",
+        "Average":53.29,
+        "ARC":52.73,
+        "HellaSwag":80.13,
+        "MMLU":51.94,
+        "TruthfulQA":52.08,
+        "Winogrande":74.19,
+        "GSM8K":8.64,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":13.0,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -49832,6 +50421,25 @@
         "Hub":null,
         "Available on the Hub":13.0,
         "Model Sha":97.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"lmsys\/vicuna-13b-delta-v1.1",
+        "Average":53.28,
+        "ARC":52.73,
+        "HellaSwag":80.14,
+        "MMLU":51.9,
+        "TruthfulQA":52.08,
+        "Winogrande":74.19,
+        "GSM8K":8.64,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":null,
+        "Available on the Hub":13.0,
+        "Model Sha":409.0
     },
     {
         "T":"\ud83d\udd36",
@@ -49888,7 +50496,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":0.0,
-        "Model Sha":35.0
+        "Model Sha":37.0
     },
     {
         "T":"\ud83d\udd36",
@@ -50553,7 +51161,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":0.0,
-        "Model Sha":20.0
+        "Model Sha":21.0
     },
     {
         "T":"\ud83d\udcac",
@@ -51199,7 +51807,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":13.0,
-        "Model Sha":15.0
+        "Model Sha":16.0
     },
     {
         "T":"\ud83d\udd36",
@@ -51446,7 +52054,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":163.0
+        "Model Sha":164.0
     },
     {
         "T":"\ud83d\udd36",
@@ -51697,25 +52305,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"uukuguy\/speechless-codellama-dolphin-orca-platypus-34b",
-        "Average":52.53,
-        "ARC":52.47,
-        "HellaSwag":74.13,
-        "MMLU":53.47,
-        "TruthfulQA":47.14,
-        "Winogrande":73.24,
-        "GSM8K":14.71,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"llama2",
-        "Available on the Hub":34.0,
-        "Model Sha":6.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"speechlessai\/speechless-codellama-34b-v1.0",
         "Average":52.53,
         "ARC":52.47,
@@ -51732,6 +52321,25 @@
         "Hub":"llama2",
         "Available on the Hub":34.0,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"uukuguy\/speechless-codellama-dolphin-orca-platypus-34b",
+        "Average":52.53,
+        "ARC":52.47,
+        "HellaSwag":74.13,
+        "MMLU":53.47,
+        "TruthfulQA":47.14,
+        "Winogrande":73.24,
+        "GSM8K":14.71,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"llama2",
+        "Available on the Hub":34.0,
+        "Model Sha":6.0
     },
     {
         "T":"\ud83d\udcac",
@@ -52206,7 +52814,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":85.0
+        "Model Sha":171.0
     },
     {
         "T":"\ud83d\udcac",
@@ -52738,7 +53346,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":7.0,
-        "Model Sha":169.0
+        "Model Sha":170.0
     },
     {
         "T":"\ud83d\udd36",
@@ -52871,7 +53479,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":7.0,
-        "Model Sha":169.0
+        "Model Sha":170.0
     },
     {
         "T":"\ud83d\udd36",
@@ -53367,7 +53975,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":8.36,
-        "Model Sha":160.0
+        "Model Sha":161.0
     },
     {
         "T":"\ud83d\udd36",
@@ -54184,7 +54792,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":13.0,
-        "Model Sha":24.0
+        "Model Sha":25.0
     },
     {
         "T":"\ud83d\udcac",
@@ -54868,7 +55476,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":6.74,
-        "Model Sha":1103.0
+        "Model Sha":1111.0
     },
     {
         "T":"\ud83d\udd36",
@@ -55134,7 +55742,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":6.74,
-        "Model Sha":2764.0
+        "Model Sha":2788.0
     },
     {
         "T":"\ud83d\udd36",
@@ -55723,7 +56331,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":34.0,
-        "Model Sha":723.0
+        "Model Sha":724.0
     },
     {
         "T":"\ud83d\udd36",
@@ -55917,25 +56525,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"eachadea\/vicuna-7b-1.1",
-        "Average":50.37,
-        "ARC":53.67,
-        "HellaSwag":77.46,
-        "MMLU":45.63,
-        "TruthfulQA":48.94,
-        "Winogrande":70.96,
-        "GSM8K":5.53,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.0,
-        "Model Sha":109.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"Ejafa\/vicuna_7B_vanilla_1.1",
         "Average":50.37,
         "ARC":53.67,
@@ -55952,6 +56541,25 @@
         "Hub":"",
         "Available on the Hub":7.0,
         "Model Sha":2.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"eachadea\/vicuna-7b-1.1",
+        "Average":50.37,
+        "ARC":53.67,
+        "HellaSwag":77.46,
+        "MMLU":45.63,
+        "TruthfulQA":48.94,
+        "Winogrande":70.96,
+        "GSM8K":5.53,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.0,
+        "Model Sha":109.0
     },
     {
         "T":"\ud83d\udd36",
@@ -56487,7 +57095,7 @@
     },
     {
         "T":"\ud83e\udd1d",
-        "Model":"TeeZee\/Buttocks-7B-v1.1",
+        "Model":"TeeZee\/Buttocks-7B-v1.0",
         "Average":49.97,
         "ARC":54.61,
         "HellaSwag":75.61,
@@ -56506,7 +57114,7 @@
     },
     {
         "T":"\ud83e\udd1d",
-        "Model":"TeeZee\/Buttocks-7B-v1.0",
+        "Model":"TeeZee\/Buttocks-7B-v1.1",
         "Average":49.97,
         "ARC":54.61,
         "HellaSwag":75.61,
@@ -56654,7 +57262,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":46.0
+        "Model Sha":47.0
     },
     {
         "T":"\ud83d\udd36",
@@ -56920,7 +57528,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":7.0,
-        "Model Sha":46.0
+        "Model Sha":47.0
     },
     {
         "T":"\ud83d\udd36",
@@ -56943,25 +57551,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v4",
-        "Average":49.78,
-        "ARC":53.41,
-        "HellaSwag":78.56,
-        "MMLU":46.43,
-        "TruthfulQA":38.71,
-        "Winogrande":74.03,
-        "GSM8K":7.51,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":6.74,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"undi95\/llama2-to-mistral-diff",
         "Average":49.78,
         "ARC":53.41,
@@ -56977,6 +57566,25 @@
         "#Params (B)":false,
         "Hub":"?",
         "Available on the Hub":0.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v4",
+        "Average":49.78,
+        "ARC":53.41,
+        "HellaSwag":78.56,
+        "MMLU":46.43,
+        "TruthfulQA":38.71,
+        "Winogrande":74.03,
+        "GSM8K":7.51,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":6.74,
         "Model Sha":0.0
     },
     {
@@ -57114,25 +57722,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v2",
-        "Average":49.73,
-        "ARC":53.07,
-        "HellaSwag":78.57,
-        "MMLU":46.8,
-        "TruthfulQA":38.75,
-        "Winogrande":74.03,
-        "GSM8K":7.13,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":6.74,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"NewstaR\/Starlight-7B",
         "Average":49.73,
         "ARC":53.07,
@@ -57171,6 +57760,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v4",
+        "Average":49.73,
+        "ARC":53.07,
+        "HellaSwag":78.57,
+        "MMLU":46.8,
+        "TruthfulQA":38.75,
+        "Winogrande":74.03,
+        "GSM8K":7.13,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":6.74,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"ibranze\/araproje-llama2-7b-hf",
         "Average":49.73,
         "ARC":53.07,
@@ -57190,7 +57798,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v4",
+        "Model":"TheTravellingEngineer\/llama2-7b-chat-hf-v2",
         "Average":49.73,
         "ARC":53.07,
         "HellaSwag":78.57,
@@ -57395,7 +58003,7 @@
         "#Params (B)":false,
         "Hub":"bigcode-openrail-m",
         "Available on the Hub":15.52,
-        "Model Sha":248.0
+        "Model Sha":249.0
     },
     {
         "T":"\ud83d\udcac",
@@ -57889,7 +58497,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":13.02,
-        "Model Sha":57.0
+        "Model Sha":58.0
     },
     {
         "T":"\ud83d\udd36",
@@ -58193,7 +58801,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":6.74,
-        "Model Sha":41.0
+        "Model Sha":42.0
     },
     {
         "T":"\ud83d\udd36",
@@ -58212,7 +58820,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":13.0,
-        "Model Sha":291.0
+        "Model Sha":295.0
     },
     {
         "T":"\ud83d\udd36",
@@ -58364,7 +58972,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.24,
-        "Model Sha":3.0
+        "Model Sha":4.0
     },
     {
         "T":"\ud83d\udd36",
@@ -58497,7 +59105,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":7.0,
-        "Model Sha":66.0
+        "Model Sha":67.0
     },
     {
         "T":"\ud83d\udd36",
@@ -58573,7 +59181,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":7.0,
-        "Model Sha":62.0
+        "Model Sha":63.0
     },
     {
         "T":"\ud83d\udd36",
@@ -59086,7 +59694,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":13.0,
-        "Model Sha":377.0
+        "Model Sha":378.0
     },
     {
         "T":"\ud83d\udd36",
@@ -59561,7 +60169,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":7.0,
-        "Model Sha":35.0
+        "Model Sha":36.0
     },
     {
         "T":"\ud83d\udd36",
@@ -59618,7 +60226,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":0.0,
-        "Model Sha":1212.0
+        "Model Sha":1213.0
     },
     {
         "T":"\ud83d\udd36",
@@ -60002,6 +60610,25 @@
     },
     {
         "T":"\ud83d\udd36",
+        "Model":"BarraHome\/LLaMarada-7B-v0.1-16bit",
+        "Average":47.35,
+        "ARC":53.33,
+        "HellaSwag":76.02,
+        "MMLU":39.68,
+        "TruthfulQA":37.13,
+        "Winogrande":70.96,
+        "GSM8K":6.97,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":6.74,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
         "Model":"TheBloke\/guanaco-7B-HF",
         "Average":47.34,
         "ARC":52.99,
@@ -60131,7 +60758,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":46.7,
-        "Model Sha":31.0
+        "Model Sha":32.0
     },
     {
         "T":"\ud83d\udd36",
@@ -60568,7 +61195,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":6.87,
-        "Model Sha":68.0
+        "Model Sha":69.0
     },
     {
         "T":"\ud83d\udd36",
@@ -60683,6 +61310,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":13.0,
         "Model Sha":4.0
+    },
+    {
+        "T":"\ud83d\udfe2",
+        "Model":"google\/gemma-2b",
+        "Average":46.51,
+        "ARC":48.46,
+        "HellaSwag":71.65,
+        "MMLU":41.68,
+        "TruthfulQA":33.13,
+        "Winogrande":66.77,
+        "GSM8K":17.36,
+        "Type":"pretrained",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":2.0,
+        "Model Sha":70.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61043,7 +61689,7 @@
         "#Params (B)":false,
         "Hub":"bigscience-bloom-rail-1.0",
         "Available on the Hub":176.25,
-        "Model Sha":4391.0
+        "Model Sha":4395.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61176,7 +61822,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":1.84,
-        "Model Sha":7.0
+        "Model Sha":8.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61198,25 +61844,6 @@
         "Model Sha":0.0
     },
     {
-        "T":"\ud83d\udcac",
-        "Model":"qnguyen3\/quan-1.8b-chat",
-        "Average":45.91,
-        "ARC":39.08,
-        "HellaSwag":62.37,
-        "MMLU":44.09,
-        "TruthfulQA":43.15,
-        "Winogrande":59.27,
-        "GSM8K":27.52,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"other",
-        "Available on the Hub":1.8,
-        "Model Sha":8.0
-    },
-    {
         "T":"\ud83d\udd36",
         "Model":"Sharathhebbar24\/ssh_1.8B",
         "Average":45.91,
@@ -61234,6 +61861,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":1.84,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"qnguyen3\/quan-1.8b-chat",
+        "Average":45.91,
+        "ARC":39.08,
+        "HellaSwag":62.37,
+        "MMLU":44.09,
+        "TruthfulQA":43.15,
+        "Winogrande":59.27,
+        "GSM8K":27.52,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":1.8,
+        "Model Sha":8.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61351,7 +61997,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"ewqr2130\/llama2-7b-raw-sft",
+        "Model":"ewqr2130\/mistral-7b-raw-sft",
         "Average":45.67,
         "ARC":47.44,
         "HellaSwag":75.25,
@@ -61370,7 +62016,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"ewqr2130\/mistral-7b-raw-sft",
+        "Model":"ewqr2130\/llama2-7b-raw-sft",
         "Average":45.67,
         "ARC":47.44,
         "HellaSwag":75.25,
@@ -61384,6 +62030,25 @@
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":"mit",
+        "Available on the Hub":6.74,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udfe2",
+        "Model":"huggingface\/llama-7b",
+        "Average":45.65,
+        "ARC":51.02,
+        "HellaSwag":77.82,
+        "MMLU":35.71,
+        "TruthfulQA":34.33,
+        "Winogrande":71.43,
+        "GSM8K":3.56,
+        "Type":"pretrained",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"other",
         "Available on the Hub":6.74,
         "Model Sha":0.0
     },
@@ -61405,25 +62070,6 @@
         "Hub":"other",
         "Available on the Hub":7.0,
         "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udfe2",
-        "Model":"huggingface\/llama-7b",
-        "Average":45.65,
-        "ARC":51.02,
-        "HellaSwag":77.82,
-        "MMLU":35.71,
-        "TruthfulQA":34.33,
-        "Winogrande":71.43,
-        "GSM8K":3.56,
-        "Type":"pretrained",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"other",
-        "Available on the Hub":6.74,
-        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udcac",
@@ -61500,6 +62146,25 @@
         "Hub":"",
         "Available on the Hub":13.0,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"jisukim8873\/falcon-7B-case-4",
+        "Average":45.54,
+        "ARC":47.61,
+        "HellaSwag":78.69,
+        "MMLU":29.21,
+        "TruthfulQA":37.79,
+        "Winogrande":71.67,
+        "GSM8K":8.26,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"FalconForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":6.92,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61689,7 +62354,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":6.86,
-        "Model Sha":145.0
+        "Model Sha":149.0
     },
     {
         "T":"\ud83d\udd36",
@@ -61765,7 +62430,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":30.0,
-        "Model Sha":34.0
+        "Model Sha":35.0
     },
     {
         "T":"\ud83d\udd36",
@@ -62069,7 +62734,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":13.02,
-        "Model Sha":61.0
+        "Model Sha":62.0
     },
     {
         "T":"\ud83d\udcac",
@@ -62528,25 +63193,6 @@
         "Model Sha":18.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"anas-awadalla\/mpt-7b",
-        "Average":44.28,
-        "ARC":47.7,
-        "HellaSwag":77.57,
-        "MMLU":30.8,
-        "TruthfulQA":33.44,
-        "Winogrande":72.14,
-        "GSM8K":4.02,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MPTForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":7.0,
-        "Model Sha":1.0
-    },
-    {
         "T":"\ud83d\udfe2",
         "Model":"mosaicml\/mpt-7b",
         "Average":44.28,
@@ -62564,6 +63210,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
         "Model Sha":1126.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"anas-awadalla\/mpt-7b",
+        "Average":44.28,
+        "ARC":47.7,
+        "HellaSwag":77.57,
+        "MMLU":30.8,
+        "TruthfulQA":33.44,
+        "Winogrande":72.14,
+        "GSM8K":4.02,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MPTForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":7.0,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -62677,7 +63342,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":992.0
+        "Model Sha":994.0
     },
     {
         "T":"\ud83d\udd36",
@@ -62981,7 +63646,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":6.74,
-        "Model Sha":204.0
+        "Model Sha":206.0
     },
     {
         "T":"\ud83d\udd36",
@@ -63783,7 +64448,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"qblocks\/codellama_7b_DolphinCoder",
+        "Model":"Zangs3011\/codellama_7b_DolphinCoder",
         "Average":42.39,
         "ARC":41.98,
         "HellaSwag":65.5,
@@ -63802,7 +64467,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Zangs3011\/codellama_7b_DolphinCoder",
+        "Model":"qblocks\/codellama_7b_DolphinCoder",
         "Average":42.39,
         "ARC":41.98,
         "HellaSwag":65.5,
@@ -64197,7 +64862,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":14.0,
-        "Model Sha":54.0
+        "Model Sha":55.0
     },
     {
         "T":"\ud83d\udd36",
@@ -64463,7 +65128,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":1.84,
-        "Model Sha":4.0
+        "Model Sha":6.0
     },
     {
         "T":"\ud83d\udd36",
@@ -64558,7 +65223,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":20.74,
-        "Model Sha":473.0
+        "Model Sha":474.0
     },
     {
         "T":"?",
@@ -64729,7 +65394,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":1.84,
-        "Model Sha":1.0
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -64881,7 +65546,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":12.0,
-        "Model Sha":348.0
+        "Model Sha":349.0
     },
     {
         "T":"\ud83d\udd36",
@@ -65853,25 +66518,6 @@
         "Model Sha":1.0
     },
     {
-        "T":"\ud83d\udcac",
-        "Model":"KnutJaegersberg\/openllama_3b_EvolInstruct_lora_merged",
-        "Average":40.28,
-        "ARC":40.27,
-        "HellaSwag":71.6,
-        "MMLU":27.12,
-        "TruthfulQA":34.78,
-        "Winogrande":67.01,
-        "GSM8K":0.91,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"cc-by-4.0",
-        "Available on the Hub":3.0,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83d\udfe2",
         "Model":"openlm-research\/open_llama_3b_v2",
         "Average":40.28,
@@ -65891,6 +66537,25 @@
         "Model Sha":112.0
     },
     {
+        "T":"\ud83d\udcac",
+        "Model":"KnutJaegersberg\/openllama_3b_EvolInstruct_lora_merged",
+        "Average":40.28,
+        "ARC":40.27,
+        "HellaSwag":71.6,
+        "MMLU":27.12,
+        "TruthfulQA":34.78,
+        "Winogrande":67.01,
+        "GSM8K":0.91,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"cc-by-4.0",
+        "Available on the Hub":3.0,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83d\udd36",
         "Model":"kfkas\/Llama-2-ko-7b-Chat",
         "Average":40.27,
@@ -65907,7 +66572,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":7.0,
-        "Model Sha":63.0
+        "Model Sha":64.0
     },
     {
         "T":"\ud83d\udcac",
@@ -65983,7 +66648,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":7.0,
-        "Model Sha":63.0
+        "Model Sha":64.0
     },
     {
         "T":"\ud83d\udd36",
@@ -66116,7 +66781,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":6.0,
-        "Model Sha":1344.0
+        "Model Sha":1345.0
     },
     {
         "T":"\ud83d\udd36",
@@ -66211,7 +66876,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":6.74,
-        "Model Sha":160.0
+        "Model Sha":161.0
     },
     {
         "T":"\ud83d\udd36",
@@ -66572,7 +67237,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":6.74,
-        "Model Sha":253.0
+        "Model Sha":254.0
     },
     {
         "T":"\ud83d\udd36",
@@ -66633,25 +67298,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"mwitiderrick\/open_llama_3b_glaive_code_v0.1",
-        "Average":39.74,
-        "ARC":40.7,
-        "HellaSwag":67.45,
-        "MMLU":27.74,
-        "TruthfulQA":35.86,
-        "Winogrande":64.72,
-        "GSM8K":1.97,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":3.43,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"mwitiderrick\/open_llama_3b_glaive_v0.1",
         "Average":39.74,
         "ARC":40.7,
@@ -66668,6 +67314,25 @@
         "Hub":"?",
         "Available on the Hub":3.43,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"mwitiderrick\/open_llama_3b_glaive_code_v0.1",
+        "Average":39.74,
+        "ARC":40.7,
+        "HellaSwag":67.45,
+        "MMLU":27.74,
+        "TruthfulQA":35.86,
+        "Winogrande":64.72,
+        "GSM8K":1.97,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":3.43,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -66838,7 +67503,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":13.0,
-        "Model Sha":187.0
+        "Model Sha":188.0
     },
     {
         "T":"\ud83d\udd36",
@@ -67085,7 +67750,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":12.0,
-        "Model Sha":1917.0
+        "Model Sha":1918.0
     },
     {
         "T":"\ud83d\udd36",
@@ -67275,7 +67940,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":7.0,
-        "Model Sha":756.0
+        "Model Sha":757.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -67921,7 +68586,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":12.0,
-        "Model Sha":124.0
+        "Model Sha":125.0
     },
     {
         "T":"\ud83d\udcac",
@@ -68054,7 +68719,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":0.62,
-        "Model Sha":39.0
+        "Model Sha":44.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -68434,7 +69099,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":3.0,
-        "Model Sha":138.0
+        "Model Sha":139.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -69023,7 +69688,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":1.1,
-        "Model Sha":800.0
+        "Model Sha":803.0
     },
     {
         "T":"?",
@@ -69213,7 +69878,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":1.1,
-        "Model Sha":800.0
+        "Model Sha":803.0
     },
     {
         "T":"\ud83d\udd36",
@@ -69688,7 +70353,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":34.0,
-        "Model Sha":689.0
+        "Model Sha":691.0
     },
     {
         "T":"\ud83d\udcac",
@@ -69707,7 +70372,7 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":6.74,
-        "Model Sha":105.0
+        "Model Sha":107.0
     },
     {
         "T":"\ud83d\udcac",
@@ -69935,7 +70600,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":2.7,
-        "Model Sha":60.0
+        "Model Sha":62.0
     },
     {
         "T":"\ud83d\udd36",
@@ -70110,6 +70775,25 @@
     },
     {
         "T":"\ud83d\udcac",
+        "Model":"HuggingFaceTB\/cosmo-1b",
+        "Average":36.59,
+        "ARC":38.57,
+        "HellaSwag":55.13,
+        "MMLU":26.69,
+        "TruthfulQA":38.15,
+        "Winogrande":55.49,
+        "GSM8K":5.53,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":1.74,
+        "Model Sha":45.0
+    },
+    {
+        "T":"\ud83d\udcac",
         "Model":"PSanni\/Deer-3b",
         "Average":36.55,
         "ARC":38.48,
@@ -70147,6 +70831,25 @@
         "Model Sha":0.0
     },
     {
+        "T":"\ud83d\udcac",
+        "Model":"HuggingFaceTB\/cosmo-1b",
+        "Average":36.52,
+        "ARC":38.57,
+        "HellaSwag":55.08,
+        "MMLU":26.5,
+        "TruthfulQA":38.26,
+        "Winogrande":55.33,
+        "GSM8K":5.38,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":1.74,
+        "Model Sha":45.0
+    },
+    {
         "T":"\ud83d\udd36",
         "Model":"BEE-spoke-data\/TinyLlama-3T-1.1bee",
         "Average":36.46,
@@ -70182,7 +70885,26 @@
         "#Params (B)":false,
         "Hub":"llama2",
         "Available on the Hub":6.74,
-        "Model Sha":105.0
+        "Model Sha":107.0
+    },
+    {
+        "T":"\ud83d\udfe2",
+        "Model":"TinyLlama\/TinyLlama-1.1B-intermediate-step-1431k-3T",
+        "Average":36.42,
+        "ARC":33.87,
+        "HellaSwag":60.31,
+        "MMLU":26.04,
+        "TruthfulQA":37.32,
+        "Winogrande":59.51,
+        "GSM8K":1.44,
+        "Type":"pretrained",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":1.1,
+        "Model Sha":106.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -70202,25 +70924,6 @@
         "Hub":"apache-2.0",
         "Available on the Hub":1.1,
         "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udfe2",
-        "Model":"TinyLlama\/TinyLlama-1.1B-intermediate-step-1431k-3T",
-        "Average":36.42,
-        "ARC":33.87,
-        "HellaSwag":60.31,
-        "MMLU":26.04,
-        "TruthfulQA":37.32,
-        "Winogrande":59.51,
-        "GSM8K":1.44,
-        "Type":"pretrained",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":1.1,
-        "Model Sha":105.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -70277,7 +70980,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":1.1,
-        "Model Sha":21.0
+        "Model Sha":23.0
     },
     {
         "T":"\ud83d\udd36",
@@ -70790,7 +71493,7 @@
         "#Params (B)":false,
         "Hub":"bigcode-openrail-m",
         "Available on the Hub":0.0,
-        "Model Sha":2617.0
+        "Model Sha":2622.0
     },
     {
         "T":"\ud83d\udd36",
@@ -70870,7 +71573,7 @@
     },
     {
         "T":"\ud83d\udfe2",
-        "Model":"freecs\/Llama-3-7b",
+        "Model":"freecs\/Tiny-Llama-3-7b",
         "Average":35.6,
         "ARC":34.64,
         "HellaSwag":56.39,
@@ -70889,7 +71592,7 @@
     },
     {
         "T":"\ud83d\udfe2",
-        "Model":"freecs\/Tiny-Llama-3-7b",
+        "Model":"freecs\/Llama-3-7b",
         "Average":35.6,
         "ARC":34.64,
         "HellaSwag":56.39,
@@ -71018,7 +71721,7 @@
         "#Params (B)":false,
         "Hub":"bigcode-openrail-m",
         "Available on the Hub":0.0,
-        "Model Sha":374.0
+        "Model Sha":375.0
     },
     {
         "T":"\ud83d\udd36",
@@ -71535,25 +72238,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"HWERI\/pythia-1.4b-deduped-sharegpt",
-        "Average":35.11,
-        "ARC":34.3,
-        "HellaSwag":54.49,
-        "MMLU":24.0,
-        "TruthfulQA":41.81,
-        "Winogrande":55.25,
-        "GSM8K":0.83,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"GPTNeoXForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":1.42,
-        "Model Sha":2.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"beaugogh\/pythia-1.4b-deduped-sharegpt",
         "Average":35.11,
         "ARC":34.3,
@@ -71570,6 +72254,25 @@
         "Hub":"apache-2.0",
         "Available on the Hub":1.42,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"HWERI\/pythia-1.4b-deduped-sharegpt",
+        "Average":35.11,
+        "ARC":34.3,
+        "HellaSwag":54.49,
+        "MMLU":24.0,
+        "TruthfulQA":41.81,
+        "Winogrande":55.25,
+        "GSM8K":0.83,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"GPTNeoXForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":1.42,
+        "Model Sha":2.0
     },
     {
         "T":"\ud83d\udd36",
@@ -71721,7 +72424,7 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":1.1,
-        "Model Sha":58.0
+        "Model Sha":59.0
     },
     {
         "T":"\ud83d\udd36",
@@ -72120,7 +72823,7 @@
         "#Params (B)":false,
         "Hub":"cc-by-nc-4.0",
         "Available on the Hub":0.0,
-        "Model Sha":8.0
+        "Model Sha":9.0
     },
     {
         "T":"\ud83d\udfe2",
@@ -72963,25 +73666,6 @@
         "Model Sha":6.0
     },
     {
-        "T":"?",
-        "Model":"shaohang\/SparseOPT-1.3B",
-        "Average":33.19,
-        "ARC":27.13,
-        "HellaSwag":48.69,
-        "MMLU":25.6,
-        "TruthfulQA":39.11,
-        "Winogrande":58.56,
-        "GSM8K":0.08,
-        "Type":"",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":1.32,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83d\udd36",
         "Model":"shaohang\/Sparse0.5_OPT-1.3",
         "Average":33.19,
@@ -72998,6 +73682,25 @@
         "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":0.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"?",
+        "Model":"shaohang\/SparseOPT-1.3B",
+        "Average":33.19,
+        "ARC":27.13,
+        "HellaSwag":48.69,
+        "MMLU":25.6,
+        "TruthfulQA":39.11,
+        "Winogrande":58.56,
+        "GSM8K":0.08,
+        "Type":"",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":1.32,
         "Model Sha":0.0
     },
     {
@@ -74526,7 +75229,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"KaeriJenti\/Kaori-34b-v2",
+        "Model":"KaeriJenti\/kaori-34b-v4",
         "Average":30.97,
         "ARC":23.89,
         "HellaSwag":28.97,
@@ -74545,7 +75248,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"KaeriJenti\/kaori-34b-v4",
+        "Model":"KaeriJenti\/Kaori-34b-v2",
         "Average":30.97,
         "ARC":23.89,
         "HellaSwag":28.97,
@@ -75130,7 +75833,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":0.46,
-        "Model Sha":144.0
+        "Model Sha":145.0
     },
     {
         "T":"\ud83d\udd36",
@@ -75434,7 +76137,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":0.35,
-        "Model Sha":102.0
+        "Model Sha":103.0
     },
     {
         "T":"\ud83d\udd36",
@@ -76538,7 +77241,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":0.0,
-        "Model Sha":63.0
+        "Model Sha":64.0
     },
     {
         "T":"\ud83d\udd36",
@@ -76709,7 +77412,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":0.0,
-        "Model Sha":93.0
+        "Model Sha":94.0
     },
     {
         "T":"\ud83d\udcac",
@@ -76747,7 +77450,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":0.15,
-        "Model Sha":150.0
+        "Model Sha":151.0
     },
     {
         "T":"\ud83d\udd36",
@@ -76959,25 +77662,6 @@
         "Model Sha":2.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"breadlicker45\/dough-base-001",
-        "Average":29.37,
-        "ARC":23.89,
-        "HellaSwag":24.76,
-        "MMLU":23.13,
-        "TruthfulQA":53.4,
-        "Winogrande":51.07,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":null,
-        "Available on the Hub":0.0,
-        "Model Sha":0.0
-    },
-    {
         "T":"\ud83d\udcac",
         "Model":"breadlicker45\/dough-instruct-base-001",
         "Average":29.37,
@@ -76994,6 +77678,25 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":0.19,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"breadlicker45\/dough-base-001",
+        "Average":29.37,
+        "ARC":23.89,
+        "HellaSwag":24.76,
+        "MMLU":23.13,
+        "TruthfulQA":53.4,
+        "Winogrande":51.07,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":null,
+        "Available on the Hub":0.0,
         "Model Sha":0.0
     },
     {
@@ -77150,25 +77853,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Technoculture\/Mediquad-orca-20B",
-        "Average":29.35,
-        "ARC":29.35,
-        "HellaSwag":25.72,
-        "MMLU":24.28,
-        "TruthfulQA":48.42,
-        "Winogrande":48.3,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MixtralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":19.73,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"Technoculture\/Medorca-4x7b",
         "Average":29.35,
         "ARC":29.35,
@@ -77182,6 +77866,25 @@
         "Precision":"Original",
         "Hub License":"bfloat16",
         "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":19.73,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Technoculture\/Mediquad-orca-20B",
+        "Average":29.35,
+        "ARC":29.35,
+        "HellaSwag":25.72,
+        "MMLU":24.28,
+        "TruthfulQA":48.42,
+        "Winogrande":48.3,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
         "Hub":"apache-2.0",
         "Available on the Hub":19.73,
         "Model Sha":0.0
@@ -77868,7 +78571,7 @@
         "#Params (B)":false,
         "Hub":"other",
         "Available on the Hub":0.12,
-        "Model Sha":101.0
+        "Model Sha":102.0
     },
     {
         "T":"\ud83d\udd36",
@@ -78005,25 +78708,6 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Yash21\/TinyYi-7b-Test",
-        "Average":29.11,
-        "ARC":26.88,
-        "HellaSwag":26.14,
-        "MMLU":24.41,
-        "TruthfulQA":46.35,
-        "Winogrande":50.91,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":6.06,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
         "Model":"Yash21\/TinyYi-7B-Test",
         "Average":29.11,
         "ARC":26.88,
@@ -78038,6 +78722,25 @@
         "Hub License":"bfloat16",
         "#Params (B)":true,
         "Hub":"apache-2.0",
+        "Available on the Hub":6.06,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"Yash21\/TinyYi-7b-Test",
+        "Average":29.11,
+        "ARC":26.88,
+        "HellaSwag":26.14,
+        "MMLU":24.41,
+        "TruthfulQA":46.35,
+        "Winogrande":50.91,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"?",
         "Available on the Hub":6.06,
         "Model Sha":0.0
     },
@@ -78632,7 +79335,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"qblocks\/gpt2_137m_DolphinCoder",
+        "Model":"Zangs3011\/gpt2_137m_DolphinCoder",
         "Average":28.87,
         "ARC":21.84,
         "HellaSwag":31.35,
@@ -78651,7 +79354,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"Zangs3011\/gpt2_137m_DolphinCoder",
+        "Model":"qblocks\/gpt2_137m_DolphinCoder",
         "Average":28.87,
         "ARC":21.84,
         "HellaSwag":31.35,
@@ -78685,7 +79388,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":0.0,
-        "Model Sha":281.0
+        "Model Sha":282.0
     },
     {
         "T":"\ud83d\udd36",
@@ -78954,6 +79657,25 @@
         "Model Sha":0.0
     },
     {
+        "T":"\ud83d\udd36",
+        "Model":"binbi\/SF-72B-V1.8.6-V1.2",
+        "Average":28.75,
+        "ARC":26.28,
+        "HellaSwag":24.87,
+        "MMLU":23.03,
+        "TruthfulQA":48.78,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":72.29,
+        "Model Sha":0.0
+    },
+    {
         "T":"\ud83d\udcac",
         "Model":"binbi\/SF-72B-V1",
         "Average":28.75,
@@ -78974,21 +79696,21 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"binbi\/SF-72B-V1.8.6-V1.2",
+        "Model":"Tensoic\/Qwixtral-4x1.8B-SFT",
         "Average":28.75,
-        "ARC":26.28,
-        "HellaSwag":24.87,
-        "MMLU":23.03,
-        "TruthfulQA":48.78,
-        "Winogrande":49.57,
+        "ARC":21.42,
+        "HellaSwag":24.96,
+        "MMLU":23.42,
+        "TruthfulQA":50.15,
+        "Winogrande":52.57,
         "GSM8K":0.0,
         "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
+        "Architecture":"MixtralForCausalLM",
         "Precision":"Original",
         "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":72.29,
+        "#Params (B)":false,
+        "Hub":"other",
+        "Available on the Hub":1.8,
         "Model Sha":0.0
     },
     {
@@ -79487,25 +80209,6 @@
     },
     {
         "T":"\ud83d\udfe2",
-        "Model":"openai-community\/gpt2",
-        "Average":28.53,
-        "ARC":22.01,
-        "HellaSwag":31.53,
-        "MMLU":25.83,
-        "TruthfulQA":40.69,
-        "Winogrande":50.43,
-        "GSM8K":0.68,
-        "Type":"pretrained",
-        "Architecture":"GPT2LMHeadModel",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"mit",
-        "Available on the Hub":0.14,
-        "Model Sha":1673.0
-    },
-    {
-        "T":"\ud83d\udfe2",
         "Model":"gpt2",
         "Average":28.53,
         "ARC":22.01,
@@ -79522,6 +80225,25 @@
         "Hub":"mit",
         "Available on the Hub":0.14,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udfe2",
+        "Model":"openai-community\/gpt2",
+        "Average":28.53,
+        "ARC":22.01,
+        "HellaSwag":31.53,
+        "MMLU":25.83,
+        "TruthfulQA":40.69,
+        "Winogrande":50.43,
+        "GSM8K":0.68,
+        "Type":"pretrained",
+        "Architecture":"GPT2LMHeadModel",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"mit",
+        "Available on the Hub":0.14,
+        "Model Sha":1677.0
     },
     {
         "T":"\ud83d\udd36",
@@ -79939,26 +80661,7 @@
         "#Params (B)":false,
         "Hub":null,
         "Available on the Hub":0.03,
-        "Model Sha":78.0
-    },
-    {
-        "T":"\ud83d\udcac",
-        "Model":"lgaalves\/gpt2_platypus-camel_physics",
-        "Average":28.41,
-        "ARC":23.04,
-        "HellaSwag":31.32,
-        "MMLU":26.91,
-        "TruthfulQA":39.56,
-        "Winogrande":49.64,
-        "GSM8K":0.0,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":0.12,
-        "Model Sha":0.0
+        "Model Sha":79.0
     },
     {
         "T":"\ud83d\udcac",
@@ -79976,6 +80679,25 @@
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":"mit",
+        "Available on the Hub":0.12,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"lgaalves\/gpt2_platypus-camel_physics",
+        "Average":28.41,
+        "ARC":23.04,
+        "HellaSwag":31.32,
+        "MMLU":26.91,
+        "TruthfulQA":39.56,
+        "Winogrande":49.64,
+        "GSM8K":0.0,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
         "Available on the Hub":0.12,
         "Model Sha":0.0
     },
@@ -81005,7 +81727,7 @@
         "#Params (B)":false,
         "Hub":"mit",
         "Available on the Hub":3.0,
-        "Model Sha":260.0
+        "Model Sha":262.0
     },
     {
         "T":"\ud83d\udd36",
@@ -81351,159 +82073,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"uukuguy\/speechless-mistral-six-in-one-7b-orth-1.0",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.0,
-        "Model Sha":1.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"antiven0m\/brugle-rp",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"unknown",
-        "Available on the Hub":7.24,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"mathurinache\/Odysseas-11B",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":0.48,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"ewqr2130\/mistral-moe-scratch",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":46.7,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udcac",
-        "Model":"TheTravellingEngineer\/bloom-1b1-RLHF-v2",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"BloomForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"",
-        "Available on the Hub":1.0,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83e\udd1d",
-        "Model":"kihoonlee\/Merge-13B-v1-test",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"base merges and moerges",
-        "Architecture":"MixtralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":11.54,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83e\udd1d",
-        "Model":"rizla\/rizla-11",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"base merges and moerges",
-        "Architecture":"MixtralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"cc-by-nc-2.0",
-        "Available on the Hub":9.42,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udcac",
-        "Model":"kyujinpy\/Sakura-SOLAR-Instruct-DPO-v1",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"chat models (RLHF, DPO, IFT, ...)",
-        "Architecture":"Unknown",
-        "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":10.73,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"clibrain\/Llama-2-ft-instruct-es",
+        "Model":"APMIC\/caigun-lora-model-33B",
         "Average":20.07,
         "ARC":22.7,
         "HellaSwag":25.04,
@@ -81514,48 +82084,10 @@
         "Type":"fine-tuned on domain-specific datasets",
         "Architecture":"LlamaForCausalLM",
         "Precision":"Original",
-        "Hub License":"float16",
+        "Hub License":"8bit",
         "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":0.0,
-        "Model Sha":17.0
-    },
-    {
-        "T":"\ud83d\udd36",
-        "Model":"dfurman\/llama-2-13b-dolphin-peft",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"Unknown",
-        "Precision":"Adapter",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"?",
-        "Available on the Hub":13.0,
-        "Model Sha":0.0
-    },
-    {
-        "T":"\ud83e\udd1d",
-        "Model":"mathurinache\/Odysseas-11B",
-        "Average":20.07,
-        "ARC":22.7,
-        "HellaSwag":25.04,
-        "MMLU":23.12,
-        "TruthfulQA":0.0,
-        "Winogrande":49.57,
-        "GSM8K":0.0,
-        "Type":"base merges and moerges",
-        "Architecture":"MistralForCausalLM",
-        "Precision":"Original",
-        "Hub License":"bfloat16",
-        "#Params (B)":true,
-        "Hub":"apache-2.0",
-        "Available on the Hub":0.48,
+        "Hub":"cc-by-nc-nd-4.0",
+        "Available on the Hub":18.25,
         "Model Sha":0.0
     },
     {
@@ -81576,6 +82108,44 @@
         "Hub":"apache-2.0",
         "Available on the Hub":0.12,
         "Model Sha":1.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"mathurinache\/Odysseas-11B",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"base merges and moerges",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":0.48,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"mathurinache\/Odysseas-11B",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":0.48,
+        "Model Sha":0.0
     },
     {
         "T":"?",
@@ -81635,8 +82205,8 @@
         "Model Sha":1.0
     },
     {
-        "T":"\ud83d\udd36",
-        "Model":"shitshow123\/stablelm_sft_dpo",
+        "T":"\ud83e\udd1d",
+        "Model":"rizla\/rizla-11",
         "Average":20.07,
         "ARC":22.7,
         "HellaSwag":25.04,
@@ -81644,18 +82214,18 @@
         "TruthfulQA":0.0,
         "Winogrande":49.57,
         "GSM8K":0.0,
-        "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"GPTNeoXForCausalLM",
+        "Type":"base merges and moerges",
+        "Architecture":"MixtralForCausalLM",
         "Precision":"Original",
-        "Hub License":"float16",
-        "#Params (B)":false,
-        "Hub":"apache-2.0",
-        "Available on the Hub":7.87,
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"cc-by-nc-2.0",
+        "Available on the Hub":9.42,
         "Model Sha":0.0
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"APMIC\/caigun-lora-model-33B",
+        "Model":"antiven0m\/brugle-rp",
         "Average":20.07,
         "ARC":22.7,
         "HellaSwag":25.04,
@@ -81664,13 +82234,108 @@
         "Winogrande":49.57,
         "GSM8K":0.0,
         "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"LlamaForCausalLM",
+        "Architecture":"MistralForCausalLM",
         "Precision":"Original",
-        "Hub License":"8bit",
-        "#Params (B)":false,
-        "Hub":"cc-by-nc-nd-4.0",
-        "Available on the Hub":18.25,
+        "Hub License":"bfloat16",
+        "#Params (B)":true,
+        "Hub":"unknown",
+        "Available on the Hub":7.24,
         "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"TheTravellingEngineer\/bloom-1b1-RLHF-v2",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"BloomForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"",
+        "Available on the Hub":1.0,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udcac",
+        "Model":"kyujinpy\/Sakura-SOLAR-Instruct-DPO-v1",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"chat models (RLHF, DPO, IFT, ...)",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":10.73,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"ewqr2130\/mistral-moe-scratch",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":46.7,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83e\udd1d",
+        "Model":"kihoonlee\/Merge-13B-v1-test",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"base merges and moerges",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":true,
+        "Hub":"apache-2.0",
+        "Available on the Hub":11.54,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"uukuguy\/speechless-mistral-six-in-one-7b-orth-1.0",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MistralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"bfloat16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":7.0,
+        "Model Sha":1.0
     },
     {
         "T":"\ud83d\udd36",
@@ -81690,6 +82355,63 @@
         "Hub":"apache-2.0",
         "Available on the Hub":13.0,
         "Model Sha":8.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"shitshow123\/moe_scratch",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"MixtralForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":46.7,
+        "Model Sha":0.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"clibrain\/Llama-2-ft-instruct-es",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"LlamaForCausalLM",
+        "Precision":"Original",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"apache-2.0",
+        "Available on the Hub":0.0,
+        "Model Sha":17.0
+    },
+    {
+        "T":"\ud83d\udd36",
+        "Model":"dfurman\/llama-2-13b-dolphin-peft",
+        "Average":20.07,
+        "ARC":22.7,
+        "HellaSwag":25.04,
+        "MMLU":23.12,
+        "TruthfulQA":0.0,
+        "Winogrande":49.57,
+        "GSM8K":0.0,
+        "Type":"fine-tuned on domain-specific datasets",
+        "Architecture":"Unknown",
+        "Precision":"Adapter",
+        "Hub License":"float16",
+        "#Params (B)":false,
+        "Hub":"?",
+        "Available on the Hub":13.0,
+        "Model Sha":0.0
     },
     {
         "T":"\ud83e\udd1d",
@@ -81712,7 +82434,7 @@
     },
     {
         "T":"\ud83d\udd36",
-        "Model":"shitshow123\/moe_scratch",
+        "Model":"shitshow123\/stablelm_sft_dpo",
         "Average":20.07,
         "ARC":22.7,
         "HellaSwag":25.04,
@@ -81721,12 +82443,12 @@
         "Winogrande":49.57,
         "GSM8K":0.0,
         "Type":"fine-tuned on domain-specific datasets",
-        "Architecture":"MixtralForCausalLM",
+        "Architecture":"GPTNeoXForCausalLM",
         "Precision":"Original",
         "Hub License":"float16",
         "#Params (B)":false,
         "Hub":"apache-2.0",
-        "Available on the Hub":46.7,
+        "Available on the Hub":7.87,
         "Model Sha":0.0
     },
     {
