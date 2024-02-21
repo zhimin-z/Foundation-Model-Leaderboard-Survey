@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
+from seleniumbase import Driver
 import pandas as pd
 import os
 
@@ -13,7 +13,7 @@ def name_process(name, filter_keywords = []):
     return name
 
 if __name__ == '__main__':
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
 
     base_url = 'https://mmbench.opencompass.org.cn/leaderboard'

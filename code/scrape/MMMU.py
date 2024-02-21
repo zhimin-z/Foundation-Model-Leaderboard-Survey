@@ -1,13 +1,13 @@
-from selenium.webdriver.common.by import By
-from bs4 import BeautifulSoup
-import undetected_chromedriver as uc
 import pandas as pd
 import json
 import re
 import os
 
-path_leaderboard = "data/MMMU"
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
+from bs4 import BeautifulSoup
 
+path_leaderboard = "data/MMMU"
 
 def camel_to_snake(name):
     # Insert an underscore before each uppercase letter (that is not at the start of the string) and convert to lowercase
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         df.to_json(f"{path_leaderboard}/gh-image_type-{camel_to_snake(table_name.replace('data_', ''))}.json",
                    orient='records', indent=4)
 
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
     driver.get('https://mmmu-benchmark.github.io')
     script = """

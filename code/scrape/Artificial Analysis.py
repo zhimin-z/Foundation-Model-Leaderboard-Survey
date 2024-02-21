@@ -1,7 +1,8 @@
-from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
 import pandas as pd
 import os
+
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 path_leaderboard = ['LLM API Hosts Leaderboard', 'Models Leaderboard']
 suffix_leaderboard = ['hosts', 'models']
@@ -10,7 +11,7 @@ parallel_queries = ['single', 'multiple']
 prompt_length = ['short', 'long']
 
 if __name__ == '__main__':
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(10)
     
     base_url = 'https://artificialanalysis.ai/leaderboards'

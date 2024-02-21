@@ -1,18 +1,17 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-import undetected_chromedriver as uc
 import time
 import re
+
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 dataset = 'nuscenes'
 stop_page = ''
 
 if __name__ == '__main__':
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-popup-blocking")
-    driver = uc.Chrome(options=chrome_options)
     base_url = 'https://paperswithcode.com'
     url = f'{base_url}/dataset/{dataset}'
+    
+    driver = Driver(uc=True)
     driver.get(url)
     
     leaderboard_links = []

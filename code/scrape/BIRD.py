@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
+from seleniumbase import Driver
 import pandas as pd
 import os
 
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
         
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
 
     url = 'https://bird-bench.github.io'

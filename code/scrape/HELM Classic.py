@@ -1,10 +1,11 @@
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
 import pandas as pd
 import pickle
 import time
 import os
+
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 path_leaderboard = "data/HELM Classic"
 url = 'https://crfm.stanford.edu/helm/classic/latest/#/leaderboard'
@@ -100,7 +101,7 @@ if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
         
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
     checkpoint = load(path_leaderboard)
 

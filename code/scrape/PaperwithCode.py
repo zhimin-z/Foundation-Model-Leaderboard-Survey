@@ -1,9 +1,10 @@
-from selenium.webdriver.common.by import By
-from seleniumbase import Driver
 import pandas as pd
 import json
 import re
 import os
+
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 def file_rename(title):
     title = title.lower()

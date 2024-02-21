@@ -1,7 +1,8 @@
-from selenium.webdriver.common.by import By
-from seleniumbase import Driver
 import pandas as pd
 import os
+
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 path_leaderboard = "data/CompMix"
 

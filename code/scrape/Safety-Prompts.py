@@ -1,8 +1,9 @@
-from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
 import pandas as pd
 import time
 import os
+
+from selenium.webdriver.common.by import By
+from seleniumbase import Driver
 
 path_leaderboard = "data/Safety-Prompts"
 
@@ -10,7 +11,7 @@ if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
         
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
     
     base_url = 'http://115.182.62.166:18000'
