@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-import undetected_chromedriver as uc
+from seleniumbase import Driver
 import pandas as pd
 import json
 import re
@@ -11,15 +11,15 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = ''
-path_leaderboard = 'data/The Pile'
-included_leaderboards = ['language-modelling-on-the-pile']
+dataset = 'cfq'
+path_leaderboard = 'data/CFQ'
+included_leaderboards = []
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
     
-    driver = uc.Chrome()
+    driver = Driver(uc=True)
     driver.implicitly_wait(5)
     
     leaderboard_links = []
