@@ -1,57 +1,66 @@
 [
     {
-        "Category":"Accuracy",
-        "ChatGPT":3,
-        "Vicuna-13B":3,
-        "LLaMA-65B":3,
-        "BLOOMZ":3,
-        "GLM-130B":3,
-        "LLaMA-13B":3,
-        "Flan-UL2":2,
-        "Flan-T5":3
+        "Model":"ChatGPT",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Coherence",
-        "ChatGPT":3,
-        "Vicuna-13B":3,
-        "LLaMA-65B":3,
-        "BLOOMZ":3,
-        "GLM-130B":3,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "Flan-T5":3
+        "Model":"Vicuna-13B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Factuality",
-        "ChatGPT":3,
-        "Vicuna-13B":3,
-        "LLaMA-65B":3,
-        "BLOOMZ":3,
-        "GLM-130B":3,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "Flan-T5":3
+        "Model":"LLaMA-65B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Comprehensiveness",
-        "ChatGPT":3,
-        "Vicuna-13B":3,
-        "LLaMA-65B":3,
-        "BLOOMZ":3,
-        "GLM-130B":2,
-        "LLaMA-13B":2,
-        "Flan-UL2":2,
-        "Flan-T5":2
+        "Model":"BLOOMZ",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Overall",
-        "ChatGPT":5,
-        "Vicuna-13B":5,
-        "LLaMA-65B":5,
-        "BLOOMZ":5,
-        "GLM-130B":4,
-        "LLaMA-13B":4,
-        "Flan-UL2":3,
-        "Flan-T5":4
+        "Model":"GLM-130B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":2,
+        "Overall":4
+    },
+    {
+        "Model":"LLaMA-13B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":2,
+        "Overall":4
+    },
+    {
+        "Model":"Flan-UL2",
+        "Accuracy":2,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":2,
+        "Overall":3
+    },
+    {
+        "Model":"Flan-T5",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":2,
+        "Overall":4
     }
 ]

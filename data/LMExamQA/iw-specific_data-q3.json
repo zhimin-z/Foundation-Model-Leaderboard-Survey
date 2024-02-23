@@ -1,57 +1,66 @@
 [
     {
-        "Category":"Accuracy",
-        "ChatGPT":3,
-        "LLaMA-65B":3,
-        "Vicuna-13B":2,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "BLOOMZ":2,
-        "Flan-T5":2,
-        "GLM-130B":2
+        "Model":"ChatGPT",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Coherence",
-        "ChatGPT":3,
-        "LLaMA-65B":3,
-        "Vicuna-13B":3,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "BLOOMZ":3,
-        "Flan-T5":3,
-        "GLM-130B":3
+        "Model":"LLaMA-65B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Factuality",
-        "ChatGPT":3,
-        "LLaMA-65B":3,
-        "Vicuna-13B":2,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "BLOOMZ":2,
-        "Flan-T5":2,
-        "GLM-130B":2
+        "Model":"Vicuna-13B",
+        "Accuracy":2,
+        "Coherence":3,
+        "Factuality":2,
+        "Comprehensiveness":3,
+        "Overall":3
     },
     {
-        "Category":"Comprehensiveness",
-        "ChatGPT":3,
-        "LLaMA-65B":3,
-        "Vicuna-13B":3,
-        "LLaMA-13B":3,
-        "Flan-UL2":3,
-        "BLOOMZ":3,
-        "Flan-T5":3,
-        "GLM-130B":3
+        "Model":"LLaMA-13B",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
     },
     {
-        "Category":"Overall",
-        "ChatGPT":5,
-        "LLaMA-65B":5,
-        "Vicuna-13B":3,
-        "LLaMA-13B":5,
-        "Flan-UL2":5,
-        "BLOOMZ":3,
-        "Flan-T5":3,
-        "GLM-130B":3
+        "Model":"Flan-UL2",
+        "Accuracy":3,
+        "Coherence":3,
+        "Factuality":3,
+        "Comprehensiveness":3,
+        "Overall":5
+    },
+    {
+        "Model":"BLOOMZ",
+        "Accuracy":2,
+        "Coherence":3,
+        "Factuality":2,
+        "Comprehensiveness":3,
+        "Overall":3
+    },
+    {
+        "Model":"Flan-T5",
+        "Accuracy":2,
+        "Coherence":3,
+        "Factuality":2,
+        "Comprehensiveness":3,
+        "Overall":3
+    },
+    {
+        "Model":"GLM-130B",
+        "Accuracy":2,
+        "Coherence":3,
+        "Factuality":2,
+        "Comprehensiveness":3,
+        "Overall":3
     }
 ]
