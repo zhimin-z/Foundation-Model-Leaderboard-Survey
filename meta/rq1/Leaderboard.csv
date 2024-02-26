@@ -1,4 +1,4 @@
-Leaderboard name,#Empty leaderboards (non-pwc),Display format (non-pwc),Feedback manners (iw),Host platforms,Host platforms with leaderboard downloading functionality (non-pwc),Host platforms with model linkage (non-pwc),Publishing organizations (non-pwc),Publishing venues,Structuring strategies (non-pwc),Submission artifacts (non-pwc),Submission manners (non-pwc),Supported languages,Supported modalities
+Leaderboard name,#Empty leaderboards (non-pwc),Display formats (non-pwc),Feedback media (iw),Host platforms,Host platforms with leaderboard downloading functionality (non-pwc),Host platforms with model linkage (non-pwc),Publishing organizations (non-pwc),Publishing venues,Structuring strategies (non-pwc),Submission artifacts (non-pwc),Submission media (non-pwc),Supported languages,Supported modalities
 A-OKVQA,,,,pwc,,,,ECCV,,,,English,"Text,Image"
 A-OKVQA,,iw:Sortable Table+Scatter Plot,Contact,iw,iw,iw,Allen Institute for AI,ECCV,,Prediction Results,Submission Portal,English,"Text,Image"
 ACE (2005),,,,pwc,,,,AAAI,,,,English,Text
@@ -160,7 +160,7 @@ MedBench,,iw:Sortable Table,"Contact,Issue",iw,,,"East China Normal University,S
 MedQA,,,,pwc,,,,Applied Sciences,,,,English,Text
 Mementos,,gh:Table Screenshot+Regular Table,,gh,,gh,"University of Maryland College Park,University of North Carolina Chapel Hill",Preprint,Aggregated Result,Prediction Results,Email,English,"Text,Image"
 MGSM,,,,pwc,,,,ICLR,,,,"Bengali,Chinese,French,German,Japanese,Russian,Spanish,Swahili,Telugu,Thai.",Text
-MINT-Bench,,iw:Sortable Bar Chart+Line Chart+Sortable Table,,iw,,,"University of Illinois Urbana Champaign,Renmin University of China",Preprint,"Aggregated Result,Supported Functionality",Prediction Results,Pull Request,English,Text
+MINT-Bench,,iw:Sortable Bar Chart+Line Chart+Sortable Table,"Contact,Issue",iw,,,"University of Illinois Urbana Champaign,Renmin University of China",Preprint,"Aggregated Result,Supported Functionality",Prediction Results,Pull Request,English,Text
 MiT,,,,pwc,,,,PAMI,,,,English,"Text,Video"
 MLLM-Bench,,"gh:Regular Table,iw:Regular Table",,"gh,iw",,,"Shenzhen Research Institute of Big Data,Chinese University of Hong Kong",Preprint,,,,English,"Text,Image"
 MLS,,,,pwc,,,,Interspeech,,,,"English,German,Dutch,Spanish,French,Italian,Portuguese,Polish","Text,Audio"
@@ -177,14 +177,14 @@ MMVP-VLM,,gh:Table Screenshot,,gh,,,"New York University,University of Californi
 MNLI,,,,pwc,,,,NAACL,,,,English,Text
 MOCHA,,iw:Sortable Table+Scatter Plot,Contact,iw,iw,iw,Allen Institute for AI,EMNLP,,Prediction Results,Submission Portal,English,Text
 Models Leaderboard,,iw:Sortable Table+Scatter Plot+Box Plot+Bar Chart+Line Chart,Contact,iw,,iw,Artificial Analysis,,"Service Load,Prompt Length,Benchmark,Evaluation Metric",,,English,Text
-MP-DocVQA,,iw:Sortable Table+Bar Chart,,iw,,iw,Autonomous University of Barcelona,Pattern Recognition,,Prediction Results,Submission Portal,English,"Text,Image"
+MP-DocVQA,,iw:Sortable Table+Bar Chart,Contact,iw,,iw,Autonomous University of Barcelona,Pattern Recognition,,Prediction Results,Submission Portal,English,"Text,Image"
 MRPC,,,,pwc,,,,IJCNLP,,,,English,Text
 MSCOCO,,,,pwc,,,,ECCV,,,,English,"Text,Image"
 MSRVTT,,,,pwc,,,,CVPR,,,,English,"Text,Video"
 MSRVTT-QA,,,,pwc,,,,ACM-MM,,,,English,"Text,Video"
 MSVD,,,,pwc,,,,ACL,,,,English,"Text,Video"
 MSVD-QA,,,,pwc,,,,ACM-MM,,,,English,"Text,Video"
-MTEB,,"hf:Sortable Table,gh:Regular Table,iw:Sortable Table",,"gh,hf,pwc,iw",iw,"gh,hf,iw","Hugging Face,Cohere",EACL,"Supported Language,Task",Evaluation Results,Metadata Upload,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek",Text
+MTEB,,"hf:Sortable Table,gh:Regular Table,iw:Sortable Table",,"gh,hf,pwc,iw",iw,"gh,hf,iw","Hugging Face,Cohere",EACL,"Supported Language,Task",Evaluation Results,Model Card,"Afrikaans,Albanian,Amharic,Arabic,Armenian,Assamese,Azerbaijani,Bangla,Basque,Belarusian,Bosnian,Breton,Bulgarian,Burmese,Catalan,Cebuano,Chichewa,Chinese (Simplified),Chinese (Traditional),Corsican,Croatian,Czech,Danish,Dhivehi,Dutch,English,Esperanto,Estonian,Ewe,Filipino,Finnish,French,Frisian,Galician,Georgian,German,Greek,Guarani,Gujarati,Haitian Creole,Hausa,Hawaiian,Hebrew,Hindi,Hmong,Hungarian,Icelandic,Igbo,Indonesian,Irish,Italian,Japanese,Javanese,Kannada,Kazakh,Khmer,Kinyarwanda,Korean,Kurdish (Kurmanji),Kyrgyz,Lao,Latin,Latvian,Lithuanian,Luxembourgish,Macedonian,Malagasy,Malay,Malayalam,Maltese,Maori,Marathi,Mongolian,Nepali,Norwegian,Odia (Oriya),Pashto,Persian,Polish,Portuguese,Punjabi,Quechua,Romanian,Russian,Samoan,Sanskrit,Scots Gaelic,Serbian,Sesotho,Shona,Sindhi,Sinhala,Slovak,Slovenian,Somali,Spanish,Sundanese,Swahili,Swedish,Tajik,Tamil,Tatar,Telugu,Thai,Tigrinya,Tsonga,Turkish,Turkmen,Ukrainian,Urdu,Uyghur,Uzbek",Text
 Multi-modal Model Leaderboard,,"iw:Sortable Table,hf:Sortable Table",,"hf,iw",,"hf,iw","Aliyun,East Money,Duxiaoman,Fudan University,Nanjing University,Nanyang Technological University,OPPO,Shanghai AI Laboratory,Tencent,TigerResearch,Chinese University of Hong Kong,Zhejiang University,Zhipu AI",,,"Inference API+Model Configuration,Model Repository+Model Configuration",Submission Portal,"English,Chinese","Text,Image"
 MultiRC,,,,pwc,,,,NAACL,,,,English,Text
 MusicCaps,,,,pwc,,,,Preprint,,,,English,"Text,Audio"
@@ -225,7 +225,7 @@ QQP,,,,pwc,,,,,,,,English,Text
 QuALITY,,gh:Regular Table,,gh,,gh,New York University,NAACL,,Prediction Results,"Email,Questionaire",English,Text
 RACE,,,,pwc,,,,EMNLP,,,,English,Text
 RAFT,,,,pwc,,,,NeurIPS,,,,English,Text
-RAFT,,hf:Regular Table,,hf,,,"Ought,Hugging Face,Stiftung Neue Verantwortung,Nippon Telegraph and Telephone,University of Oxford,Alan Turing Institute,Harvard University,Australian Catholic University",NeurIPS,,Evaluation Results,Metadata Upload,English,Text
+RAFT,,hf:Regular Table,,hf,,,"Ought,Hugging Face,Stiftung Neue Verantwortung,Nippon Telegraph and Telephone,University of Oxford,Alan Turing Institute,Harvard University,Australian Catholic University",NeurIPS,,Evaluation Results,Model Card,English,Text
 ReCoRD,,,,pwc,,,,Preprint,,,,English,Text
 Red-Eval,,gh:Regular Table,,gh,,,Singapore University of Technology and Design,Preprint,,,,English,Text
 RefCOCO,,,,pwc,,,,EMNLP,,,,English,"Text,Image"
@@ -235,7 +235,7 @@ RoleEval,,gh:Regular Table,,gh,,,"Tianjin University,China Academy of Informatio
 RTE,,,,pwc,,,,TAC,,,,English,Text
 Safety-Prompts,,iw:Regular Table,"Contact,Issue",iw,,iw,Tsinghua University,Preprint,Evaluation Dataset,Prediction Results,Submission Portal,Chinese,Text
 SafetyBench,,"iw:Regular Table,gh:Bar Chart",,"gh,iw",,"gh,iw","Tsinghua University,Northwest Minzu University,Peking University,China Mobile",Preprint,"Evaluation Dataset,Supported Language",Prediction Results,Submission Portal,"English,Chinese",Text
-ScandEval,,iw:Sortable Table,,iw,iw,,Alexandra Institute,NoDaLiDa,Supported Language,,,"English,Danish,Swedish,Norwegian,Icelandic,German,Dutch,Finnish,Russian,Arabic",Text
+ScandEval,,iw:Sortable Table,Contact,iw,iw,,Alexandra Institute,NoDaLiDa,Supported Language,,,"English,Danish,Swedish,Norwegian,Icelandic,German,Dutch,Finnish,Russian,Arabic",Text
 ScienceQA,,,,pwc,,,,NeurIPS,,,,English,"Text,Image"
 ScienceQA,,gh:Sortable Table,,gh,,gh,"University of California Los Angeles,Arizona State University,Allen Institute for AI",NeurIPS,,Evaluation Results,"Email,Issue",English,"Text,Image"
 SciGraphQA,,gh:Regular Table,,gh,,,Independent Contributor,Preprint,,,,English,"Text,Image"
