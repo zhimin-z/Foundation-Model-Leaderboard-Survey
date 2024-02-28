@@ -6,7 +6,7 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/Chatbot Arena Leaderboard"
+path_leaderboard = "data/LMSYS Chatbot Arena Leaderboard"
 leaderboard_names = ['arena_leaderboard', 'full_leaderboard']
 
 def filter_string(text):
