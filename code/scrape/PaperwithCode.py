@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'cfq'
-path_leaderboard = 'data/CFQ'
-included_leaderboards = []
+dataset = ''
+path_leaderboard = 'data/BC5CDR'
+included_leaderboards = ['named-entity-recognition-ner-on-bc5cdr']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
@@ -27,11 +27,7 @@ if __name__ == '__main__':
     community_indicator = ''
     base_url = 'https://paperswithcode.com'
     
-    if included_leaderboards:
-        for match in included_leaderboards:
-            link = f'{base_url}/sota/{match}'
-            leaderboard_links.append(link)
-    else:
+    if dataset:
         url = f'{base_url}/dataset/{dataset}'
         driver.get(url)
         for leaderboard in driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr'):
@@ -41,6 +37,10 @@ if __name__ == '__main__':
             text = leaderboard.get_attribute('onclick')
             match = re.findall(r"'(.*?)'", text)[0]
             link = f'{base_url}{match}'
+            leaderboard_links.append(link)
+    else:
+        for match in included_leaderboards:
+            link = f'{base_url}/sota/{match}'
             leaderboard_links.append(link)
     
     for link in leaderboard_links:
@@ -62,3 +62,5 @@ if __name__ == '__main__':
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
             table.to_json(f'{path_leaderboard}/pwc-{community_indicator}{title}.json', orient='records', indent=4)
+    
+    driver.quit()
