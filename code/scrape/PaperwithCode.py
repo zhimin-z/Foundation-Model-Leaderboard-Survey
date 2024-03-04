@@ -13,8 +13,8 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/BC5CDR'
-included_leaderboards = ['named-entity-recognition-ner-on-bc5cdr']
+path_leaderboard = 'data/HIV'
+included_leaderboards = ['molecular-property-prediction-on-hiv-dataset']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
