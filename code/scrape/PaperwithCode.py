@@ -13,8 +13,8 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/HIV'
-included_leaderboards = ['molecular-property-prediction-on-hiv-dataset']
+path_leaderboard = 'data/CoNLL'
+included_leaderboards = ['semantic-role-labeling-on-conll12', 'semantic-role-labeling-on-conll05-brown', 'semantic-role-labeling-on-conll05-wsj', 'coreference-resolution-on-conll12', 'joint-entity-and-relation-extraction-on-2', 'named-entity-recognition-on-conll03', 'relation-extraction-on-conll04', 'coreference-resolution-on-conll-2012', 'named-entity-recognition-ner-on-conll-2003']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):

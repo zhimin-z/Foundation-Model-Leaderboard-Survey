@@ -4,7 +4,7 @@ import re
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-dataset = 'nuscenes'
+dataset = 'universal-dependencies'
 stop_page = ''
 
 if __name__ == '__main__':
