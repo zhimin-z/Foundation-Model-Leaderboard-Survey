@@ -4,7 +4,7 @@ import re
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-dataset = 'universal-dependencies'
+dataset = 'pubmed'
 stop_page = ''
 
 if __name__ == '__main__':
@@ -12,6 +12,7 @@ if __name__ == '__main__':
     url = f'{base_url}/dataset/{dataset}'
     
     driver = Driver(uc=True)
+    driver.implicitly_wait(5)
     driver.get(url)
     
     leaderboard_links = []
@@ -21,8 +22,8 @@ if __name__ == '__main__':
         match = re.findall(r"'(.*?)'", text)[0]
         if stop_page and (stop_page in match):
             break
-        link = f'{base_url}{match}'
-        leaderboard_links.append(link)
+        url = f'{base_url}{match}'
+        leaderboard_links.append(url)
 
     for url in leaderboard_links:
         driver.execute_script(f"window.open('{url}');")
