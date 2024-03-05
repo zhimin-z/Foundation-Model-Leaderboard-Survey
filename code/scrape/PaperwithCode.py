@@ -14,7 +14,7 @@ def file_rename(title):
 bloom = False
 dataset = 'medmcqa'
 path_leaderboard = 'data/CMRC'
-included_leaderboards = []
+included_leaderboards = ['3d-object-detection-on-nuscenes']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
