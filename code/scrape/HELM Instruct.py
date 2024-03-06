@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/HELM Lite"
-url = 'https://crfm.stanford.edu/helm/lite/latest/#/leaderboard'
+path_leaderboard = "data/HELM Instruct"
+url = 'https://crfm.stanford.edu/helm/instruct/latest/#/leaderboard'
 # group_excluded = ['core scenarios', 'targeted evaluations']
 table_excluded = ['general information']
 
