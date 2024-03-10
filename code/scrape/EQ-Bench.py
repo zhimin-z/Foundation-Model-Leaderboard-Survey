@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/EQ-Bench Leaderboard"
+path_leaderboard = "data/EQ-Bench"
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
