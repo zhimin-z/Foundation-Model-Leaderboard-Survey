@@ -13,8 +13,8 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/Ego4D'
-included_leaderboards = ['3d-object-detection-on-nuscenes']
+path_leaderboard = 'data/VeRi-776'
+included_leaderboards = ['vehicle-re-identification-on-veri-776']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
