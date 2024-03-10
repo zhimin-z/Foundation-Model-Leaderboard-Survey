@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'medmcqa'
-path_leaderboard = 'data/CMRC'
+dataset = ''
+path_leaderboard = 'data/Ego4D'
 included_leaderboards = ['3d-object-detection-on-nuscenes']
 
 if __name__ == '__main__':
