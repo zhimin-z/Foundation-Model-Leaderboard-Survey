@@ -4,7 +4,7 @@ import re
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-dataset = 'ego4d'
+dataset = 'bdd100k'
 stop_page = ''
 
 if __name__ == '__main__':
@@ -29,4 +29,3 @@ if __name__ == '__main__':
         driver.execute_script(f"window.open('{url}');")
     
     time.sleep(100000)
-                
