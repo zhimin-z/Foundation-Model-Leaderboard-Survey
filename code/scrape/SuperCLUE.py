@@ -4,6 +4,9 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
+def preprocess_text(name):
+    return name.text.lower().replace('auto', '').replace('agent', '').replace('superclue-safety', '')
+
 if __name__ == '__main__':
     driver = Driver(uc=True)
     driver.implicitly_wait(10)
@@ -12,19 +15,21 @@ if __name__ == '__main__':
     driver.get(url)
     
     iteration = 0
-    leaderboard_columns = driver.find_elements(By.XPATH, '//thead[@class="thead svelte-1jok1de"]')
-    leaderboard_tables = driver.find_elements(By.XPATH, '//tbody[@class="tbody svelte-1jok1de"]')
-    leaderboards = driver.find_elements(By.XPATH, '//div[@id="component-162"]/div')
+    leaderboard_columns = driver.find_elements(By.XPATH, '//thead[@class="svelte-1tclfmr"]')
+    leaderboard_tables = driver.find_elements(By.XPATH, '//tbody[@class="svelte-1tclfmr"]')
+    leaderboards = driver.find_elements(By.XPATH, '//div[@id="component-204"]/div')
     
     for index, leaderboard in enumerate(leaderboards[0].find_elements(By.XPATH, './/button')):
         leaderboard_name = leaderboard.text.encode('ascii', 'ignore').decode('ascii')
-        leaderboard.click()
+        leaderboard_path = f"data/{leaderboard_name}"
         
-        if not os.path.exists(leaderboard_name):
-            os.makedirs(leaderboard_name)
+        if not os.path.exists(leaderboard_path):
+            os.makedirs(leaderboard_path)
+            
+        leaderboard.click()
     
-        for subleaderboard in leaderboards[index + 1].find_elements(By.XPATH, ".//button[contains(@class, 'svelte-kqij2n')]"):
-            subleaderboard_name = subleaderboard.text.lower().replace('auto', '').replace('agent', '').replace('superclue-safety', '')
+        for subleaderboard in leaderboards[index + 1].find_elements(By.XPATH, ".//button"):
+            subleaderboard_name = preprocess_text(subleaderboard)
             subleaderboard.click()
             
             df = []
@@ -40,7 +45,11 @@ if __name__ == '__main__':
             except:
                 pass
             
-            df.rename(columns={'模型': 'Model'}, inplace=True)
-            df.to_json(f"data/{leaderboard_name}/iw-{subleaderboard_name}.json", orient='records', indent=4)
+            try:
+                df.rename(columns={'模型': 'Model'}, inplace=True)
+            except:
+                df.rename(columns={'模型名称': 'Model'}, inplace=True)
+                
+            df.to_json(f"{leaderboard_path}/iw-{subleaderboard_name}.json", orient='records', indent=4)
             
             iteration += 1
