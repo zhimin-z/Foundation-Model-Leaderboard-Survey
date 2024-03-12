@@ -4,7 +4,7 @@ import re
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-dataset = 'bdd100k'
+dataset = 'thumos14-1'
 stop_page = ''
 
 if __name__ == '__main__':

@@ -1,0 +1,502 @@
+[
+    {
+        "table_id":10196,
+        "row_id":104630,
+        "rank":1,
+        "Model":"VAST",
+        "mlmodel":{
+
+        },
+        "method_short":"VAST",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-05-29",
+        "metrics":{
+            "text-to-video R@1":"83.0",
+            "text-to-video R@5":"98.2",
+            "text-to-video R@10":"99.2",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":83.0,
+            "text-to-video R@5":98.2,
+            "text-to-video R@10":99.2,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1352653,
+            "title":"VAST: A Vision-Audio-Subtitle-Text Omni-Modality Foundation Model and Dataset",
+            "url":"\/paper\/vast-a-vision-audio-subtitle-text-omni-1",
+            "published":"2023-05-29T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":101411,
+        "rank":2,
+        "Model":"VALOR",
+        "mlmodel":{
+
+        },
+        "method_short":"VALOR",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-04-17",
+        "metrics":{
+            "text-to-video R@1":"78.5",
+            "text-to-video R@5":"97.1",
+            "text-to-video R@10":"98.7",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":78.5,
+            "text-to-video R@5":97.1,
+            "text-to-video R@10":98.7,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":1191887,
+            "title":"VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and Dataset",
+            "url":"\/paper\/valor-vision-audio-language-omni-perception",
+            "published":"2023-04-17T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/valor-vision-audio-language-omni-perception\/review\/?hl=101411"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":112131,
+        "rank":3,
+        "Model":"Unmasked Teacher",
+        "mlmodel":{
+
+        },
+        "method_short":"Unmasked Teacher",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-03-28",
+        "metrics":{
+            "text-to-video R@1":"72",
+            "text-to-video R@5":"95.1",
+            "text-to-video R@10":"97.8",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":"86.0",
+            "video-to-text R@10":"99.6"
+        },
+        "raw_metrics":{
+            "text-to-video R@1":72.0,
+            "text-to-video R@5":95.1,
+            "text-to-video R@10":97.8,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":86.0,
+            "video-to-text R@10":99.6
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1181934,
+            "title":"Unmasked Teacher: Towards Training-Efficient Video Foundation Models",
+            "url":"\/paper\/unmasked-teacher-towards-training-efficient",
+            "published":"2023-03-28T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":86726,
+        "rank":4,
+        "Model":"InternVideo",
+        "mlmodel":{
+
+        },
+        "method_short":"InternVideo",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-06",
+        "metrics":{
+            "text-to-video R@1":"71.1",
+            "text-to-video R@5":null,
+            "text-to-video R@10":null,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":"87.2",
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":71.1,
+            "text-to-video R@5":null,
+            "text-to-video R@10":null,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":87.2,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1124231,
+            "title":"InternVideo: General Video Foundation Models via Generative and Discriminative Learning",
+            "url":"\/paper\/internvideo-general-video-foundation-models",
+            "published":"2022-12-06T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/internvideo-general-video-foundation-models\/review\/?hl=86726"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":112698,
+        "rank":5,
+        "Model":"Side4Video",
+        "mlmodel":{
+
+        },
+        "method_short":"Side4Video",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-11-27",
+        "metrics":{
+            "text-to-video R@1":"68.8",
+            "text-to-video R@5":"93.5",
+            "text-to-video R@10":"97.0",
+            "text-to-video R@50":"1.0",
+            "text-to-video MedianR":"2.7",
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":68.8,
+            "text-to-video R@5":93.5,
+            "text-to-video R@10":97.0,
+            "text-to-video R@50":1.0,
+            "text-to-video MedianR":2.7,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1327957,
+            "title":"Side4Video: Spatial-Temporal Side Network for Memory-Efficient Image-to-Video Transfer Learning",
+            "url":"\/paper\/side4video-spatial-temporal-side-network-for",
+            "published":"2023-11-27T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/side4video-spatial-temporal-side-network-for\/review\/?hl=112698"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":88698,
+        "rank":6,
+        "Model":"Cap4Video",
+        "mlmodel":{
+
+        },
+        "method_short":"Cap4Video",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-12-31",
+        "metrics":{
+            "text-to-video R@1":"66.6",
+            "text-to-video R@5":"93.1",
+            "text-to-video R@10":"97.0",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":"1",
+            "text-to-video MeanR":"2.7",
+            "video-to-text R@1":"80.9",
+            "video-to-text R@10":"99.6"
+        },
+        "raw_metrics":{
+            "text-to-video R@1":66.6,
+            "text-to-video R@5":93.1,
+            "text-to-video R@10":97.0,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":1.0,
+            "text-to-video MeanR":2.7,
+            "video-to-text R@1":80.9,
+            "video-to-text R@10":99.6
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1136847,
+            "title":"Cap4Video: What Can Auxiliary Captions Do for Text-Video Retrieval?",
+            "url":"\/paper\/cap4video-what-can-auxiliary-captions-do-for",
+            "published":"2022-12-31T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/cap4video-what-can-auxiliary-captions-do-for\/review\/?hl=88698"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":60004,
+        "rank":7,
+        "Model":"TS2-Net",
+        "mlmodel":{
+
+        },
+        "method_short":"TS2-Net",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2022-07-16",
+        "metrics":{
+            "text-to-video R@1":"59.1",
+            "text-to-video R@5":null,
+            "text-to-video R@10":"95.2",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":59.1,
+            "text-to-video R@5":null,
+            "text-to-video R@10":95.2,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1045033,
+            "title":"TS2-Net: Token Shift and Selection Transformer for Text-Video Retrieval",
+            "url":"\/paper\/ts2-net-token-shift-and-selection-transformer",
+            "published":"2022-07-16T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/ts2-net-token-shift-and-selection-transformer\/review\/?hl=60004"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":35399,
+        "rank":8,
+        "Model":"LAFF",
+        "mlmodel":{
+
+        },
+        "method_short":"LAFF",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-12-03",
+        "metrics":{
+            "text-to-video R@1":"59.1",
+            "text-to-video R@5":null,
+            "text-to-video R@10":"91.7",
+            "text-to-video R@50":"96.3",
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":59.1,
+            "text-to-video R@5":null,
+            "text-to-video R@10":91.7,
+            "text-to-video R@50":96.3,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":925470,
+            "title":"Lightweight Attentional Feature Fusion: A New Baseline for Text-to-Video Retrieval",
+            "url":"\/paper\/lightweight-attentional-feature-fusion-for",
+            "published":"2021-12-03T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/lightweight-attentional-feature-fusion-for\/review\/?hl=35399"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":45087,
+        "rank":9,
+        "Model":"QB-Norm+CLIP2Video",
+        "mlmodel":{
+
+        },
+        "method_short":"QB-Norm+CLIP2Video",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-12-23",
+        "metrics":{
+            "text-to-video R@1":"58.8",
+            "text-to-video R@5":null,
+            "text-to-video R@10":"93.8",
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":58.8,
+            "text-to-video R@5":null,
+            "text-to-video R@10":93.8,
+            "text-to-video R@50":null,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":933091,
+            "title":"Cross Modal Retrieval with Querybank Normalisation",
+            "url":"\/paper\/cross-modal-retrieval-with-querybank",
+            "published":"2021-12-23T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/cross-modal-retrieval-with-querybank\/review\/?hl=45087"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":10196,
+        "row_id":43910,
+        "rank":10,
+        "Model":"CLIP2Video",
+        "mlmodel":{
+
+        },
+        "method_short":"CLIP2Video",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2021-06-21",
+        "metrics":{
+            "text-to-video R@1":"57.3",
+            "text-to-video R@5":null,
+            "text-to-video R@10":"90",
+            "text-to-video R@50":"95.5",
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "raw_metrics":{
+            "text-to-video R@1":57.3,
+            "text-to-video R@5":null,
+            "text-to-video R@10":90.0,
+            "text-to-video R@50":95.5,
+            "text-to-video MedianR":null,
+            "text-to-video MeanR":null,
+            "video-to-text R@1":null,
+            "video-to-text R@10":null
+        },
+        "uses_additional_data":true,
+        "paper":{
+            "id":821802,
+            "title":"CLIP2Video: Mastering Video-Text Retrieval via Image CLIP",
+            "url":"\/paper\/clip2video-mastering-video-text-retrieval-via",
+            "published":"2021-06-21T00:00:00.000000",
+            "code":true,
+            "review_url":"\/paper\/clip2video-mastering-video-text-retrieval-via\/review\/?hl=43910"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    }
+]
