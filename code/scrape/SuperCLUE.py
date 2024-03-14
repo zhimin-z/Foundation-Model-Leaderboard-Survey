@@ -32,12 +32,13 @@ if __name__ == '__main__':
             subleaderboard_name = preprocess_text(subleaderboard)
             subleaderboard.click()
             
+            column_names = [column.text for column in leaderboard_columns[iteration].find_elements(By.XPATH, './/tr/th')]
+            print(f"Scraping {column_names[0]}...")
             df = []
             for row in leaderboard_tables[iteration].find_elements(By.XPATH, './/tr'):
                 values = [value.text for value in row.find_elements(By.XPATH, './/td')]
                 df.append(values)
                 
-            column_names = [column.text for column in leaderboard_columns[iteration].find_elements(By.XPATH, './/tr/th')]
             df = pd.DataFrame(df, columns=column_names)
             
             try:
@@ -45,11 +46,7 @@ if __name__ == '__main__':
             except:
                 pass
             
-            try:
-                df.rename(columns={'模型': 'Model'}, inplace=True)
-            except:
-                df.rename(columns={'模型名称': 'Model'}, inplace=True)
-                
+            df.rename(columns={'模型': 'Model', '模型名称': 'Model'}, inplace=True)
             df.to_json(f"{leaderboard_path}/iw-{subleaderboard_name}.json", orient='records', indent=4)
             
             iteration += 1
