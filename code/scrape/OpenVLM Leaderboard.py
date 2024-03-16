@@ -4,7 +4,7 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = 'data/Multi-modal Leaderboard'
+path_leaderboard = 'data/OpenVLM Leaderboard'
 url = "https://opencompass.openxlab.space/utils/OpenVLM.json"
 
 # def preprocess_name(s):
