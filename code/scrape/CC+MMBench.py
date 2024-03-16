@@ -43,5 +43,5 @@ if __name__ == '__main__':
                 path_leaderboard = "data/CCBench"
             if not os.path.exists(path_leaderboard):
                 os.makedirs(path_leaderboard)
-            df.to_json(f"{path_leaderboard}/iw-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
+            df.to_json(f"{path_leaderboard}/ip-{name_process(benchmark_name.text, filter_keywords=['mmbench', 'ccbench'])}-{name_process(table_name.text)}.json", orient='records', indent=4)
                 

@@ -31,6 +31,6 @@ if __name__ == "__main__":
                 table_name = preprocess_name(table['name'])
                 df = pd.DataFrame(table['data'], columns=table['headers'])
                 df['Model'] = df['Model'].apply(extract_text_from_html)
-                df.to_json(f'{path_leaderboard}/iw-{group_name}-{table_name}.json', orient='records', indent=4)
+                df.to_json(f'{path_leaderboard}/ip-{group_name}-{table_name}.json', orient='records', indent=4)
     else:
         print(f"Failed to fetch the data. Status code: {response.status_code}")

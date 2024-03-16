@@ -52,5 +52,5 @@ if __name__ == '__main__':
             
                 df = pd.DataFrame(df, columns=column_names)
                 df.rename(columns={'MODEL': 'Model'}, inplace=True)
-                df.to_json(f'{path}/iw-{suffix}-{query}-{length}.json', orient='records', indent=4)
+                df.to_json(f'{path}/ip-{suffix}-{query}-{length}.json', orient='records', indent=4)
                     

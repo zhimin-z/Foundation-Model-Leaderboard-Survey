@@ -65,7 +65,7 @@ if __name__ == '__main__':
         
         if 'Rank' in df.columns:
             df = df.drop('Rank', axis=1)
-        df.to_json(f'{path_leaderboard}/iw-{leaderboard_name}.json',
+        df.to_json(f'{path_leaderboard}/ip-{leaderboard_name}.json',
                    orient='records', indent=4)
         
     driver.quit()

@@ -61,4 +61,4 @@ if __name__ == '__main__':
                 df.append(series)
 
             df = pd.DataFrame(df)
-            df.to_json(f'{path_leaderboard}/iw-{prepcess_name(table_name)}.json', orient='records', indent=4)
+            df.to_json(f'{path_leaderboard}/ip-{prepcess_name(table_name)}.json', orient='records', indent=4)

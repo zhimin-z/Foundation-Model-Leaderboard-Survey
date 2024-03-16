@@ -49,7 +49,7 @@ if __name__ == '__main__':
     df = pd.DataFrame(df, columns=column_names)
     leaderboard_names = [
         leaderboard.text for leaderboard in driver.find_elements(By.XPATH, '//h2')]
-    df.to_json(f"{path_leaderboard}/iw-{leaderboard_names.pop(0).replace('CMB-', '').lower()}.json",
+    df.to_json(f"{path_leaderboard}/ip-{leaderboard_names.pop(0).replace('CMB-', '').lower()}.json",
                orient='records', indent=4)
 
     column_names = []
@@ -62,5 +62,5 @@ if __name__ == '__main__':
         df.append(values)
 
     df = pd.DataFrame(df, columns=column_names)
-    df.to_json(f"{path_leaderboard}/iw-{leaderboard_names.pop(0).replace('CMB-', '').lower()}.json",
+    df.to_json(f"{path_leaderboard}/ip-{leaderboard_names.pop(0).replace('CMB-', '').lower()}.json",
                orient='records', indent=4)

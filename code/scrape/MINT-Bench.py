@@ -36,7 +36,7 @@ if __name__ == '__main__':
     
     df = pd.DataFrame(df, columns=column_names)
     df.rename(columns={'Model Family': 'Model'}, inplace=True)
-    df.to_json(f'{path_leaderboard}/iw-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/ip-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
     
     table = driver.find_element(By.XPATH, f'//div[@id="benchmark-feedback-efficancy-table"]')
     column_names = []
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     
     df = pd.DataFrame(df, columns=column_names)
     df.rename(columns={'Model Family': 'Model'}, inplace=True)
-    df.to_json(f'{path_leaderboard}/iw-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/ip-{leaderboard_names.pop(0)}.json', orient='records', indent=4)

@@ -36,4 +36,4 @@ if __name__ == '__main__':
         
         df = pd.DataFrame(df, columns=column_names)
         df.rename(columns={'模型名称': 'Model'}, inplace=True)
-        df.to_json(f'{path_leaderboard}/iw-{page.text}.json', orient='records', indent=4)
+        df.to_json(f'{path_leaderboard}/ip-{page.text}.json', orient='records', indent=4)

@@ -69,13 +69,13 @@ if __name__ == "__main__":
 
         df_overall = pd.DataFrame(overall_rows)
         df_overall.to_json(
-            f'{path_leaderboard}/iw-main.json', orient='records', indent=4)
+            f'{path_leaderboard}/ip-main.json', orient='records', indent=4)
 
         # Convert each benchmark-specific list to a DataFrame and save as CSV
         benchmark_file_paths_merged = {}
         for benchmark_name, benchmark_rows in benchmark_dfs.items():
             df_benchmark = pd.DataFrame(benchmark_rows)
             df_benchmark.to_json(
-                f'{path_leaderboard}/iw-{benchmark_name}.json', orient='records', indent=4)
+                f'{path_leaderboard}/ip-{benchmark_name}.json', orient='records', indent=4)
     else:
         print(f"Failed to fetch the data. Status code: {response.status_code}")

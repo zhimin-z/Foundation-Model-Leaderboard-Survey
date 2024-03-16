@@ -42,4 +42,4 @@ if __name__ == '__main__':
         
     df = pd.DataFrame(df, columns=column_names)
     df.drop(columns=['Rank'], inplace=True)
-    df.to_json(f'{path_leaderboard}/iw.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/ip.json', orient='records', indent=4)

@@ -30,4 +30,4 @@ if __name__ == '__main__':
         driver.execute_script("arguments[0].click();", next)
             
     df = pd.DataFrame(df, columns=column_names)
-    df.to_json(f'{path_leaderboard}/iw.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/ip.json', orient='records', indent=4)
