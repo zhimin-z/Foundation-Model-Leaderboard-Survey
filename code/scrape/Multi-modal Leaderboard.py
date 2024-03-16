@@ -4,8 +4,8 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = 'data/MTEB'
-url = "https://raw.githubusercontent.com/AI-Northstar-Tech/mteb-info/main/data/data.json"
+path_leaderboard = 'data/Multi-modal Leaderboard'
+url = "https://opencompass.openxlab.space/utils/OpenVLM.json"
 
 def preprocess_name(s):
     s = s.lower().replace(" ", "_")
@@ -20,6 +20,7 @@ def extract_text_from_html(html_string):
 if __name__ == "__main__":
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
+        
     response = requests.get(url)
     # Checking if the request was successful
     if response.status_code == 200:
@@ -34,3 +35,4 @@ if __name__ == "__main__":
                 df.to_json(f'{path_leaderboard}/iw-{group_name}-{table_name}.json', orient='records', indent=4)
     else:
         print(f"Failed to fetch the data. Status code: {response.status_code}")
+

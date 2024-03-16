@@ -13,8 +13,8 @@ def file_rename(title):
 
 bloom = False
 dataset = ''
-path_leaderboard = 'data/FineAction'
-included_leaderboards = ['temporal-action-localization-on-fineaction']
+path_leaderboard = 'data/COCO Captions'
+included_leaderboards = ['image-captioning-on-coco-captions']
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
