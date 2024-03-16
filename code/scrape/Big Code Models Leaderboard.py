@@ -51,6 +51,7 @@ def get_datas(data):
 if __name__ == "__main__":
     if not os.path.exists(path_leaderboard):
         os.makedirs(path_leaderboard)
+        
     data = get_json_format_data()
     finished_models = get_datas(data)
     df = pd.DataFrame(finished_models)

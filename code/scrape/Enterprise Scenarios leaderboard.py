@@ -5,11 +5,11 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = "data/Powered-by-Intel LLM Leaderboard"
+path_leaderboard = "data/Enterprise Scenarios leaderboard"
 
 
 def get_json_format_data():
-    url = 'https://intel-powered-by-intel-llm-leaderboard.hf.space'
+    url = 'https://patronusai-enterprise-scenarios-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
@@ -26,7 +26,7 @@ def get_datas(data):
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
                     try:
-                        results_json = {"Model": results[0], "Average": results[1], "Harware": results[2], "Model Type": results[3], "Precision": results[4], "Size": results[5], "Infrastructure": results[6], "ARC": results[7], "HellaSwag": results[8], "MMLU": results[9], "TruthfulQA": results[10], "Winogrande": results[11], "GSM8K": results[12], "Affiliation": results[13]}
+                        results_json = {"T": results[0], "Model": results[-1], "Average": results[2], "FinanceBench": results[3], "Legal Confidentiality": results[4], "Writing Prompts": results[5], "Customer Support Dialogue": results[6], "Toxic Prompts": results[7], "Enterprise PII": results[8], "Type": results[9], "Architecture": results[10], "Precision": results[11], "Hub License": results[12], "#Params (B)": results[13], "Hub": results[14], "Available on the Hub": results[15], "Model Sha": results[16]}
                     except IndexError:  # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)

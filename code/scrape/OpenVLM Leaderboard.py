@@ -38,8 +38,7 @@ if __name__ == "__main__":
                 "Org": details["META"]["Org"],
                 "Time": details["META"]["Time"],
                 "Verified": details["META"]["Verified"],
-                "OpenSource": details["META"]["OpenSource"],
-                "URL": details["META"]["Method"][1]
+                "OpenSource": details["META"]["OpenSource"]
             }
 
             # Initialize the row for overall evaluation
