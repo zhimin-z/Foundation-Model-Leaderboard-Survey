@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = ''
-path_leaderboard = 'data/COCO Captions'
-included_leaderboards = ['image-captioning-on-coco-captions']
+dataset = 'spgispeech'
+path_leaderboard = 'data/SPGISpeech'
+included_leaderboards = []
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
