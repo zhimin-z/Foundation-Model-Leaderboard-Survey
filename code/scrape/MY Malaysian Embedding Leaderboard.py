@@ -5,11 +5,11 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = "data/Hallucinations Leaderboard"
+path_leaderboard = "data/MY Malaysian Embedding Leaderboard"
 
 
 def get_json_format_data():
-    url = 'https://hallucinations-leaderboard-leaderboard.hf.space'
+    url = 'https://mesolitica-malaysian-embedding-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
@@ -17,8 +17,14 @@ def get_json_format_data():
     return json_format_data
 
 
+def extract_model_repo_names(repo):
+    if ']' in repo and '[' in repo:
+        return repo.split(']')[0].split('[')[1]
+    return repo
+
+
 def get_datas(data):
-    for component_index in range(10, 50, 1):  # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
+    for component_index in range(1, 10, 1):  # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
         try:
             result_list = []
             i = 0
@@ -26,7 +32,7 @@ def get_datas(data):
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
                     try:
-                        results_json = {"T": results[0], "Model": results[-1], "NQ Open/EM": results[2], "TriviaQA/EM": results[3], "TruthQA MC1/Acc": results[4], "TruthQA MC2/Acc": results[5], "TruthQA Gen/ROUGE": results[6], "XSum/ROUGE": results[7], "XSum/factKB": results[8], "XSum/BERT-P": results[9], "CNN-DM/ROUGE": results[10], "CNN-DM/factKB": results[11], "CNN-DM/BERT-P": results[12], "RACE/Acc": results[13], "SQUaDv2/EM": results[14], "MemoTrap/Acc": results[15], "IFEval/Acc": results[16], "FaithDial/Acc": results[17], "HaluQA/Acc": results[18], "HaluSumm/Acc": results[19], "HaluDial/Acc": results[20], "FEVER/Acc": results[21], "TrueFalse/Acc": results[22], "Type": results[23], "Architecture": results[24], "Precision": results[25], "Hub License": results[26], "#Params (B)": results[27], "Hub": results[28], "Available on the hub": results[29], "Model sha": results[30]}
+                        results_json = {"Model": extract_model_repo_names(results[0]), "Crossref Melayu top-1": results[1], "Crossref Melayu top-3": results[2], "Crossref Melayu top-5": results[3], "Crossref Melayu top-10": results[4], "lom.agc.gov.my top-1": results[5], "lom.agc.gov.my top-3": results[6], "lom.agc.gov.my top-5": results[7], "lom.agc.gov.my top-10": results[8], "b.cari.com.my top-1": results[9], "b.cari.com.my top-3": results[10], "b.cari.com.my top-5": results[11], "b.cari.com.my top-10": results[12], "c.cari.com.my top-1": results[13], "c.cari.com.my top-3": results[14], "c.cari.com.my top-5": results[15], "c.cari.com.my top-10": results[16], "malay-news top-1": results[17], "malay-news top-3": results[18], "malay-news top-5": results[19], "malay-news top-10": results[20], "twitter top-1": results[21], "twitter top-3": results[22], "twitter top-5": results[23], "twitter top-10": results[24]}
                     except IndexError:  # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
@@ -44,6 +50,8 @@ if __name__ == "__main__":
         os.makedirs(path_leaderboard)
         
     data = get_json_format_data()
+    # with open(f"{path_leaderboard}/hf.json", 'w') as f:
+    #     json.dump(data, f, indent=4)
     finished_models = get_datas(data)
     df = pd.DataFrame(finished_models)
     df.to_json(f"{path_leaderboard}/hf.json", orient='records', indent=4)
