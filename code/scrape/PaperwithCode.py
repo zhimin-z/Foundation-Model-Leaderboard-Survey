@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'spgispeech'
-path_leaderboard = 'data/SPGISpeech'
+dataset = 'ifeval'
+path_leaderboard = 'data/IFEval'
 included_leaderboards = []
 
 if __name__ == '__main__':

@@ -8,10 +8,10 @@
         "Time":"2023\/8\/24",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":57.6,
-        "fAcc":12.4,
-        "qAcc":19.6,
-        "Overall":29.9
+        "BLEU-1":11.6,
+        "BLEU-4":3.5,
+        "ROUGE-L":30.0,
+        "CIDEr":41.1
     },
     {
         "Model":"Qwen-VL-Chat",
@@ -22,10 +22,10 @@
         "Time":"2023\/8\/24",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":56.4,
-        "fAcc":27.7,
-        "qAcc":26.4,
-        "Overall":36.8
+        "BLEU-1":75.8,
+        "BLEU-4":34.0,
+        "ROUGE-L":54.9,
+        "CIDEr":98.9
     },
     {
         "Model":"PandaGPT-13B",
@@ -36,10 +36,10 @@
         "Time":"2023\/5\/25",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":43.1,
-        "fAcc":9.2,
-        "qAcc":7.7,
-        "Overall":20.0
+        "BLEU-1":19.9,
+        "BLEU-4":4.6,
+        "ROUGE-L":19.3,
+        "CIDEr":0.1
     },
     {
         "Model":"OpenFlamingo v2",
@@ -50,10 +50,10 @@
         "Time":"2023\/6\/28",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":52.7,
-        "fAcc":17.6,
-        "qAcc":18.0,
-        "Overall":29.4
+        "BLEU-1":6.4,
+        "BLEU-4":1.3,
+        "ROUGE-L":15.8,
+        "CIDEr":14.9
     },
     {
         "Model":"IDEFICS-9B-Instruct",
@@ -64,10 +64,10 @@
         "Time":"2023\/7\/25",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":50.1,
-        "fAcc":16.2,
-        "qAcc":15.6,
-        "Overall":27.3
+        "BLEU-1":72.7,
+        "BLEU-4":29.4,
+        "ROUGE-L":53.4,
+        "CIDEr":90.4
     },
     {
         "Model":"IDEFICS-80B-Instruct",
@@ -78,10 +78,10 @@
         "Time":"2023\/7\/25",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":46.1,
-        "fAcc":13.3,
-        "qAcc":11.0,
-        "Overall":23.4
+        "BLEU-1":76.1,
+        "BLEU-4":32.5,
+        "ROUGE-L":54.1,
+        "CIDEr":94.9
     },
     {
         "Model":"LLaVA-v1.5-7B",
@@ -92,10 +92,10 @@
         "Time":"2023\/10\/05",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":48.8,
-        "fAcc":20.5,
-        "qAcc":13.6,
-        "Overall":27.6
+        "BLEU-1":19.8,
+        "BLEU-4":4.7,
+        "ROUGE-L":20.0,
+        "CIDEr":0.0
     },
     {
         "Model":"ShareGPT4V-7B",
@@ -106,10 +106,10 @@
         "Time":"2023\/12\/08",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":48.8,
-        "fAcc":22.3,
-        "qAcc":14.7,
-        "Overall":28.6
+        "BLEU-1":9.6,
+        "BLEU-4":1.4,
+        "ROUGE-L":10.5,
+        "CIDEr":0.0
     },
     {
         "Model":"ShareGPT4V-13B",
@@ -120,10 +120,10 @@
         "Time":"2023\/12\/08",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":48.8,
-        "fAcc":22.0,
-        "qAcc":14.5,
-        "Overall":28.4
+        "BLEU-1":12.4,
+        "BLEU-4":2.6,
+        "ROUGE-L":19.0,
+        "CIDEr":8.6
     },
     {
         "Model":"LLaVA-v1.5-13B",
@@ -134,10 +134,10 @@
         "Time":"2023\/10\/05",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":45.3,
-        "fAcc":17.1,
-        "qAcc":11.0,
-        "Overall":24.5
+        "BLEU-1":20.7,
+        "BLEU-4":5.1,
+        "ROUGE-L":21.4,
+        "CIDEr":0.4
     },
     {
         "Model":"LLaVA-v1-7B",
@@ -148,10 +148,10 @@
         "Time":"2023\/4\/17",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":43.6,
-        "fAcc":13.0,
-        "qAcc":8.1,
-        "Overall":21.6
+        "BLEU-1":27.0,
+        "BLEU-4":6.7,
+        "ROUGE-L":26.4,
+        "CIDEr":5.5
     },
     {
         "Model":"TransCore-M",
@@ -162,10 +162,10 @@
         "Time":"2023\/11\/30",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":49.7,
-        "fAcc":21.4,
-        "qAcc":15.8,
-        "Overall":29.0
+        "BLEU-1":14.2,
+        "BLEU-4":2.1,
+        "ROUGE-L":13.8,
+        "CIDEr":0.2
     },
     {
         "Model":"InstructBLIP-7B",
@@ -176,10 +176,10 @@
         "Time":"2023\/5\/11",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":53.6,
-        "fAcc":20.2,
-        "qAcc":19.8,
-        "Overall":31.2
+        "BLEU-1":56.8,
+        "BLEU-4":20.9,
+        "ROUGE-L":39.9,
+        "CIDEr":58.1
     },
     {
         "Model":"VisualGLM",
@@ -190,10 +190,10 @@
         "Time":"2023\/5\/17",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":47.2,
-        "fAcc":11.3,
-        "qAcc":16.5,
-        "Overall":25.0
+        "BLEU-1":28.6,
+        "BLEU-4":5.4,
+        "ROUGE-L":23.6,
+        "CIDEr":0.2
     },
     {
         "Model":"InternLM-XComposer-VL",
@@ -204,10 +204,10 @@
         "Time":"2023\/9\/26",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":57.0,
-        "fAcc":26.3,
-        "qAcc":24.6,
-        "Overall":36.0
+        "BLEU-1":38.3,
+        "BLEU-4":12.4,
+        "ROUGE-L":37.9,
+        "CIDEr":41.0
     },
     {
         "Model":"mPLUG-Owl2",
@@ -218,10 +218,10 @@
         "Time":"2023\/11\/10",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":48.9,
-        "fAcc":22.5,
-        "qAcc":16.7,
-        "Overall":29.4
+        "BLEU-1":25.8,
+        "BLEU-4":7.1,
+        "ROUGE-L":33.6,
+        "CIDEr":35.0
     },
     {
         "Model":"GeminiProVision",
@@ -232,10 +232,10 @@
         "Time":"2023\/12\/23",
         "Verified":"Yes",
         "OpenSource":"No",
-        "aAcc":63.9,
-        "fAcc":37.3,
-        "qAcc":34.3,
-        "Overall":45.2
+        "BLEU-1":33.2,
+        "BLEU-4":8.4,
+        "ROUGE-L":31.2,
+        "CIDEr":9.7
     },
     {
         "Model":"LLaVA-InternLM-7B (QLoRA)",
@@ -246,10 +246,10 @@
         "Time":"2023\/12\/28",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":49.1,
-        "fAcc":22.3,
-        "qAcc":15.4,
-        "Overall":28.9
+        "BLEU-1":17.3,
+        "BLEU-4":4.0,
+        "ROUGE-L":17.2,
+        "CIDEr":0.1
     },
     {
         "Model":"LLaVA-v1.5-7B (QLoRA)",
@@ -260,10 +260,10 @@
         "Time":"2023\/12\/28",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":46.2,
-        "fAcc":16.2,
-        "qAcc":13.2,
-        "Overall":25.2
+        "BLEU-1":25.0,
+        "BLEU-4":7.2,
+        "ROUGE-L":36.6,
+        "CIDEr":43.2
     },
     {
         "Model":"LLaVA-v1.5-13B (QLoRA)",
@@ -274,10 +274,10 @@
         "Time":"2023\/12\/28",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":46.9,
-        "fAcc":17.6,
-        "qAcc":14.1,
-        "Overall":26.2
+        "BLEU-1":19.6,
+        "BLEU-4":5.3,
+        "ROUGE-L":25.8,
+        "CIDEr":17.8
     },
     {
         "Model":"CogVLM-17B-Chat",
@@ -288,10 +288,10 @@
         "Time":"2024\/01\/03",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.1,
-        "fAcc":26.3,
-        "qAcc":24.8,
-        "Overall":35.4
+        "BLEU-1":21.3,
+        "BLEU-4":3.6,
+        "ROUGE-L":20.0,
+        "CIDEr":0.1
     },
     {
         "Model":"SharedCaptioner",
@@ -302,10 +302,10 @@
         "Time":"2024\/01\/03",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.6,
-        "fAcc":22.8,
-        "qAcc":24.2,
-        "Overall":34.2
+        "BLEU-1":8.8,
+        "BLEU-4":1.0,
+        "ROUGE-L":9.2,
+        "CIDEr":0.0
     },
     {
         "Model":"Qwen-VL-Plus",
@@ -316,10 +316,10 @@
         "Time":"2024\/01\/10",
         "Verified":"Yes",
         "OpenSource":"No",
-        "aAcc":57.6,
-        "fAcc":32.7,
-        "qAcc":31.4,
-        "Overall":40.6
+        "BLEU-1":47.0,
+        "BLEU-4":14.7,
+        "ROUGE-L":44.5,
+        "CIDEr":64.2
     },
     {
         "Model":"Monkey",
@@ -330,10 +330,10 @@
         "Time":"2024\/01\/11",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.1,
-        "fAcc":24.0,
-        "qAcc":25.5,
-        "Overall":34.9
+        "BLEU-1":42.3,
+        "BLEU-4":17.7,
+        "ROUGE-L":38.8,
+        "CIDEr":62.8
     },
     {
         "Model":"Monkey-Chat",
@@ -344,10 +344,10 @@
         "Time":"2024\/01\/16",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":58.4,
-        "fAcc":30.6,
-        "qAcc":29.0,
-        "Overall":39.3
+        "BLEU-1":37.8,
+        "BLEU-4":5.9,
+        "ROUGE-L":25.6,
+        "CIDEr":15.6
     },
     {
         "Model":"MiniGPT-4-v2",
@@ -358,10 +358,10 @@
         "Time":"2023\/10\/27",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":52.6,
-        "fAcc":16.5,
-        "qAcc":21.1,
-        "Overall":30.0
+        "BLEU-1":12.6,
+        "BLEU-4":1.4,
+        "ROUGE-L":13.3,
+        "CIDEr":0.1
     },
     {
         "Model":"MiniGPT-4-v1-7B",
@@ -372,10 +372,10 @@
         "Time":"2023\/4\/20",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":52.4,
-        "fAcc":17.3,
-        "qAcc":25.9,
-        "Overall":31.9
+        "BLEU-1":19.6,
+        "BLEU-4":4.3,
+        "ROUGE-L":17.5,
+        "CIDEr":0.8
     },
     {
         "Model":"Emu2_chat",
@@ -386,10 +386,10 @@
         "Time":"2024\/01\/17",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":49.4,
-        "fAcc":22.3,
-        "qAcc":16.9,
-        "Overall":29.5
+        "BLEU-1":78.2,
+        "BLEU-4":38.7,
+        "ROUGE-L":56.9,
+        "CIDEr":109.2
     },
     {
         "Model":"LLaVA-InternLM2-7B (QLoRA)",
@@ -400,10 +400,10 @@
         "Time":"2024\/01\/17",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":46.8,
-        "fAcc":19.1,
-        "qAcc":14.3,
-        "Overall":26.7
+        "BLEU-1":18.6,
+        "BLEU-4":4.3,
+        "ROUGE-L":18.0,
+        "CIDEr":0.0
     },
     {
         "Model":"LLaVA-InternLM2-20B (QLoRA)",
@@ -414,10 +414,10 @@
         "Time":"2024\/01\/17",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":47.7,
-        "fAcc":17.1,
-        "qAcc":14.3,
-        "Overall":26.4
+        "BLEU-1":17.9,
+        "BLEU-4":4.0,
+        "ROUGE-L":17.3,
+        "CIDEr":0.0
     },
     {
         "Model":"Yi-VL-6B",
@@ -428,10 +428,10 @@
         "Time":"2024\/01\/25",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.7,
-        "fAcc":27.2,
-        "qAcc":25.1,
-        "Overall":36.0
+        "BLEU-1":27.5,
+        "BLEU-4":9.0,
+        "ROUGE-L":47.1,
+        "CIDEr":77.6
     },
     {
         "Model":"Yi-VL-34B",
@@ -442,10 +442,10 @@
         "Time":"2024\/01\/25",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":54.9,
-        "fAcc":27.2,
-        "qAcc":23.7,
-        "Overall":35.3
+        "BLEU-1":68.4,
+        "BLEU-4":31.5,
+        "ROUGE-L":55.2,
+        "CIDEr":98.5
     },
     {
         "Model":"InternLM-XComposer2-VL",
@@ -456,10 +456,10 @@
         "Time":"2024\/01\/26",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":60.0,
-        "fAcc":31.2,
-        "qAcc":31.6,
-        "Overall":41.0
+        "BLEU-1":20.9,
+        "BLEU-4":4.7,
+        "ROUGE-L":20.0,
+        "CIDEr":0.1
     },
     {
         "Model":"MMAlaya",
@@ -470,10 +470,10 @@
         "Time":"2024\/01\/29",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.1,
-        "fAcc":22.3,
-        "qAcc":21.3,
-        "Overall":32.9
+        "BLEU-1":31.2,
+        "BLEU-4":8.0,
+        "ROUGE-L":30.8,
+        "CIDEr":6.4
     },
     {
         "Model":"Qwen-VL-Max",
@@ -484,10 +484,10 @@
         "Time":"2024\/02\/02",
         "Verified":"Yes",
         "OpenSource":"No",
-        "aAcc":57.7,
-        "fAcc":34.4,
-        "qAcc":31.4,
-        "Overall":41.2
+        "BLEU-1":12.3,
+        "BLEU-4":2.1,
+        "ROUGE-L":16.7,
+        "CIDEr":4.3
     },
     {
         "Model":"OmniLMM-12B",
@@ -498,10 +498,10 @@
         "Time":"2024\/02\/07",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":54.9,
-        "fAcc":28.6,
-        "qAcc":24.0,
-        "Overall":35.8
+        "BLEU-1":29.8,
+        "BLEU-4":7.2,
+        "ROUGE-L":28.4,
+        "CIDEr":12.1
     },
     {
         "Model":"MiniCPM-V",
@@ -512,10 +512,10 @@
         "Time":"2024\/02\/07",
         "Verified":"Yes",
         "OpenSource":"Yes",
-        "aAcc":55.7,
-        "fAcc":25.7,
-        "qAcc":27.0,
-        "Overall":36.2
+        "BLEU-1":61.8,
+        "BLEU-4":19.6,
+        "ROUGE-L":46.1,
+        "CIDEr":63.3
     },
     {
         "Model":"Step-1V",
@@ -526,10 +526,10 @@
         "Time":"2024\/03\/15",
         "Verified":"Yes",
         "OpenSource":"No",
-        "aAcc":65.4,
-        "fAcc":40.2,
-        "qAcc":39.6,
-        "Overall":48.4
+        "BLEU-1":45.9,
+        "BLEU-4":13.4,
+        "ROUGE-L":41.8,
+        "CIDEr":34.4
     },
     {
         "Model":"GPT-4v",
@@ -540,9 +540,9 @@
         "Time":"2023\/12\/23",
         "Verified":"Yes",
         "OpenSource":"No",
-        "aAcc":65.8,
-        "fAcc":38.4,
-        "qAcc":35.2,
-        "Overall":46.5
+        "BLEU-1":18.0,
+        "BLEU-4":3.3,
+        "ROUGE-L":18.1,
+        "CIDEr":0.0
     }
 ]
