@@ -16,7 +16,7 @@ if __name__ == '__main__':
     url = 'https://con-textual.github.io'
     driver.get(url)
 
-    leaderboard_names = ['overall', 'eval']
+    leaderboard_names = ['test', 'eval']
     for leaderboard_table in driver.find_elements(By.XPATH, './/table[@class="js-sort-table"]'):
         column_names = []
         for column in leaderboard_table.find_elements(By.XPATH, './/thead/tr/td'):
