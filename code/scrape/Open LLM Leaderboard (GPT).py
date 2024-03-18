@@ -5,11 +5,11 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = "data/MY Malaysian Speech-to-Text Leaderboard"
+path_leaderboard = "data/Open LLM Leaderboard (GPT)"
 
 
 def get_json_format_data():
-    url = 'https://mesolitica-malaysian-stt-leaderboard.hf.space'
+    url = 'https://gsaivinay-open-llm-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
@@ -18,7 +18,7 @@ def get_json_format_data():
 
 
 def get_datas(data):
-    for component_index in range(1, 10, 1):  # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
+    for component_index in range(10, 50, 1):  # component_index sometimes changes when they update the space, we can use this "for" loop to avoid changing component index manually
         try:
             result_list = []
             i = 0
@@ -26,7 +26,7 @@ def get_datas(data):
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
                     try:
-                        results_json = {"Model": results[0], "model size FP16 (MB)": results[1], "Malaya-Speech test CER": results[2], "Malaya-Speech test WER": results[3], "Fleurs MY-MS CER": results[4], "Fleurs MY-MS WER": results[5], "IMDA TTS CER": results[6], "IMDA TTS WER": results[7]}
+                        results_json = {"T": results[0], "Model": results[-1], "Average": results[2], "ARC": results[3], "HellaSwag": results[4], "MMLU": results[5], "TruthfulQA": results[6], "Type": results[7], "Precision": results[8], "Hub License": results[9], "#Params (B)": results[10], "Hub": results[11], "Available on the hub": results[12], "Model Sha": results[13]}
                     except IndexError:  # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)

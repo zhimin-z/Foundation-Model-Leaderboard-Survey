@@ -29,7 +29,8 @@ if __name__ == '__main__':
                     values.append(value.find_element(By.XPATH, './/a').get_attribute('href'))
                 else:
                     values.append(value.text)
-            df.append(values)
+            if values:
+                df.append(values)
         df = pd.DataFrame(df, columns=column_names)
         df.drop(columns=['#'], inplace=True)
         df.to_json(f'{path_leaderboard}/gh-{leaderboard_names.pop(0)}.json', orient='records', indent=4)

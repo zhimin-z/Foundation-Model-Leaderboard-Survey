@@ -1,0 +1,137 @@
+[
+    {
+        "Model":"bge-large-en-v1.5",
+        "Average":52.27,
+        "MTEB AmazonReviewsClassification (es)":34.63,
+        "MTEB MTOPDomainClassification (es)":78.8,
+        "MTEB MTOPIntentClassification (es)":47.4,
+        "MTEB MassiveIntentClassification (es)":45.58,
+        "MTEB MassiveScenarioClassification (es)":54.95
+    },
+    {
+        "Model":"e5-large-v2",
+        "Average":56.15,
+        "MTEB AmazonReviewsClassification (es)":40.01,
+        "MTEB MTOPDomainClassification (es)":82.74,
+        "MTEB MTOPIntentClassification (es)":49.66,
+        "MTEB MassiveIntentClassification (es)":49.82,
+        "MTEB MassiveScenarioClassification (es)":58.5
+    },
+    {
+        "Model":"multilingual-e5-base",
+        "Average":63.88,
+        "MTEB AmazonReviewsClassification (es)":42.47,
+        "MTEB MTOPDomainClassification (es)":89.62,
+        "MTEB MTOPIntentClassification (es)":60.27,
+        "MTEB MassiveIntentClassification (es)":60.51,
+        "MTEB MassiveScenarioClassification (es)":66.52
+    },
+    {
+        "Model":"multilingual-e5-LARGE-tuned-double-dataset-b16-e5",
+        "Average":62.65,
+        "MTEB AmazonReviewsClassification (es)":42.33,
+        "MTEB MTOPDomainClassification (es)":85.21,
+        "MTEB MTOPIntentClassification (es)":57.01,
+        "MTEB MassiveIntentClassification (es)":62.09,
+        "MTEB MassiveScenarioClassification (es)":66.61
+    },
+    {
+        "Model":"multilingual-e5-large",
+        "Average":66.6,
+        "MTEB AmazonReviewsClassification (es)":42.66,
+        "MTEB MTOPDomainClassification (es)":89.95,
+        "MTEB MTOPIntentClassification (es)":66.84,
+        "MTEB MassiveIntentClassification (es)":64.68,
+        "MTEB MassiveScenarioClassification (es)":68.85
+    },
+    {
+        "Model":"paraphrase-multilingual-mpnet-base-v2",
+        "Average":65.68,
+        "MTEB AmazonReviewsClassification (es)":39.99,
+        "MTEB MTOPDomainClassification (es)":86.96,
+        "MTEB MTOPIntentClassification (es)":66.59,
+        "MTEB MassiveIntentClassification (es)":64.43,
+        "MTEB MassiveScenarioClassification (es)":70.42
+    },
+    {
+        "Model":"paraphrase-spanish-distilroberta",
+        "Average":63.98,
+        "MTEB AmazonReviewsClassification (es)":38.25,
+        "MTEB MTOPDomainClassification (es)":86.81,
+        "MTEB MTOPIntentClassification (es)":65.95,
+        "MTEB MassiveIntentClassification (es)":60.51,
+        "MTEB MassiveScenarioClassification (es)":68.39
+    },
+    {
+        "Model":"retromae_es_67000",
+        "Average":58.27,
+        "MTEB AmazonReviewsClassification (es)":33.14,
+        "MTEB MTOPDomainClassification (es)":84.09,
+        "MTEB MTOPIntentClassification (es)":62.75,
+        "MTEB MassiveIntentClassification (es)":51.93,
+        "MTEB MassiveScenarioClassification (es)":59.45
+    },
+    {
+        "Model":"RetroMAE-finetuned-stsb_multi_es_aug_gpt3.5-turbo_v2",
+        "Average":59.63,
+        "MTEB AmazonReviewsClassification (es)":29.7,
+        "MTEB MTOPDomainClassification (es)":87.64,
+        "MTEB MTOPIntentClassification (es)":60.15,
+        "MTEB MassiveIntentClassification (es)":55.43,
+        "MTEB MassiveScenarioClassification (es)":65.22
+    },
+    {
+        "Model":"sentence_similarity_spanish_es",
+        "Average":61.77,
+        "MTEB AmazonReviewsClassification (es)":35.08,
+        "MTEB MTOPDomainClassification (es)":85.86,
+        "MTEB MTOPIntentClassification (es)":65.21,
+        "MTEB MassiveIntentClassification (es)":58.49,
+        "MTEB MassiveScenarioClassification (es)":64.21
+    },
+    {
+        "Model":"sentence-t5-xl",
+        "Average":61.64,
+        "MTEB AmazonReviewsClassification (es)":45.01,
+        "MTEB MTOPDomainClassification (es)":85.32,
+        "MTEB MTOPIntentClassification (es)":57.38,
+        "MTEB MassiveIntentClassification (es)":57.97,
+        "MTEB MassiveScenarioClassification (es)":62.52
+    },
+    {
+        "Model":"bert-base-spanish-wwm-uncased",
+        "Average":57.35,
+        "MTEB AmazonReviewsClassification (es)":33.94,
+        "MTEB MTOPDomainClassification (es)":79.68,
+        "MTEB MTOPIntentClassification (es)":61.96,
+        "MTEB MassiveIntentClassification (es)":52.54,
+        "MTEB MassiveScenarioClassification (es)":58.61
+    },
+    {
+        "Model":"bertin-roberta-base-spanish",
+        "Average":28.57,
+        "MTEB AmazonReviewsClassification (es)":23.4,
+        "MTEB MTOPDomainClassification (es)":39.95,
+        "MTEB MTOPIntentClassification (es)":22.77,
+        "MTEB MassiveIntentClassification (es)":25.32,
+        "MTEB MassiveScenarioClassification (es)":31.41
+    },
+    {
+        "Model":"roberta-base-bne",
+        "Average":56.27,
+        "MTEB AmazonReviewsClassification (es)":34.15,
+        "MTEB MTOPDomainClassification (es)":78.91,
+        "MTEB MTOPIntentClassification (es)":63.17,
+        "MTEB MassiveIntentClassification (es)":50.3,
+        "MTEB MassiveScenarioClassification (es)":54.82
+    },
+    {
+        "Model":"multilingual-e5-LARGE-stsb-tuned-b16-e5",
+        "Average":66.33,
+        "MTEB AmazonReviewsClassification (es)":43.02,
+        "MTEB MTOPDomainClassification (es)":89.71,
+        "MTEB MTOPIntentClassification (es)":64.4,
+        "MTEB MassiveIntentClassification (es)":64.8,
+        "MTEB MassiveScenarioClassification (es)":69.72
+    }
+]

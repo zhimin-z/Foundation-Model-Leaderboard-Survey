@@ -9,14 +9,6 @@ from bs4 import BeautifulSoup
 path_leaderboard = "data/Open PT LLM Leaderboard"
 
 
-def extract_model_repo_names(html):
-    # This regex pattern looks for the HuggingFace model names in the provided HTML strings.
-    # It matches the text after 'https://huggingface.co/' and before the closing double quote.
-    pattern = r'https://huggingface.co/([^"]+)'
-    matches = re.findall(pattern, html)
-    return matches[0]
-
-
 def get_json_format_data():
     url = 'https://eduagarcia-open-pt-llm-leaderboard.hf.space'
     response = requests.get(url)

@@ -5,7 +5,7 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/Safety-Prompts"
+path_leaderboard = "data/Safety Prompts"
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
