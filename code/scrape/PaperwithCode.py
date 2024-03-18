@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'ifeval'
-path_leaderboard = 'data/IFEval'
+dataset = 'whoops'
+path_leaderboard = 'data/WHOOPS!'
 included_leaderboards = []
 
 if __name__ == '__main__':
