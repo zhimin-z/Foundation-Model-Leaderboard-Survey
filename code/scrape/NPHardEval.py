@@ -5,11 +5,11 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = "data/Berkeley Function Calling Leaderboard"
+path_leaderboard = "data/NPHardEval"
 
 
 def get_json_format_data():
-    url = 'https://gorilla-berkeley-function-calling-leaderboard.hf.space'
+    url = 'https://nphardeval-nphardeval-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
@@ -26,7 +26,7 @@ def get_datas(data):
                 try:
                     results = data['components'][component_index]['props']['value']['data'][i]
                     try:
-                        results_json = {"T": results[0], "Model": results[-1], "Average": results[2], "MedMCQA": results[3], "MedQA": results[4], "MMLU Anatomy": results[5], "MMLU Clinical Knowledge": results[6], "MMLU College Biology": results[7], "MMLU College Medicine": results[8], "MMLU Medical Genetics": results[9], "MMLU Professional Medicine": results[10], "PubMedQA": results[11], "Type": results[12], "Architecture": results[13], "Precision": results[14], "Hub License": results[15], "#Params (B)": results[16], "Hub": results[17], "Available on the Hub": results[18], "Model Sha": results[19]}
+                        results_json = {"T": results[0], "Model": results[-1], "Avg": results[2], "SAS": results[3], "SPP": results[4], "EDP": results[5], "TSP_D": results[6], "GCP_D": results[7], "KSP": results[8], "TSP": results[9], "GCP": results[10], "MSP": results[11], "Type": results[12], "Architecture": results[13], "Precision": results[14], "Hub License": results[15], "#Params (B)": results[16], "Hub": results[17], "Available on the Hub": results[18], "Model Sha": results[19]}
                     except IndexError:  # Wrong component index, so breaking loop to try next component index. (NOTE: More than one component index can give you some results but we must find the right component index to get all results we want.)
                         break
                     result_list.append(results_json)
@@ -44,8 +44,6 @@ if __name__ == "__main__":
         os.makedirs(path_leaderboard)
         
     data = get_json_format_data()
-    with open(f"{path_leaderboard}/hf.json", "w") as f:
-        f.write(json.dumps(data, indent=4))
-    # finished_models = get_datas(data)
-    # df = pd.DataFrame(finished_models)
-    # df.to_json(f"{path_leaderboard}/hf.json", orient='records', indent=4)
+    finished_models = get_datas(data)
+    df = pd.DataFrame(finished_models)
+    df.to_json(f"{path_leaderboard}/hf.json", orient='records', indent=4)

@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'whoops'
-path_leaderboard = 'data/WHOOPS!'
+dataset = 'biolama'
+path_leaderboard = 'data/BioLAMA'
 included_leaderboards = []
 
 if __name__ == '__main__':
