@@ -4,8 +4,8 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = 'data/OpenVLM Leaderboard'
-url = "https://opencompass.openxlab.space/utils/OpenVLM.json"
+path_leaderboard = 'data/SeaEval'
+url = "https://huggingface.co/spaces/SeaEval/SeaEval_Leaderboard/raw/main/all_results.json"
 
 
 def extract_text_from_html(html_string):
