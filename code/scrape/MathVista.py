@@ -16,8 +16,8 @@ if __name__ == '__main__':
     url = 'https://mathvista.github.io'
     driver.get(url)
 
-    leaderboards = driver.find_elements(By.XPATH, '//section[@class="section"]')[2]
     leaderboard_names = []
+    leaderboards = driver.find_elements(By.XPATH, '//section[@class="section"]')[2]
     for leaderboard_name in leaderboards.find_elements(By.XPATH, './/h2[@class="title is-3"]'):
         leaderboard_names.append(leaderboard_name.text.lower().replace('leaderboard on ', ''))
     
