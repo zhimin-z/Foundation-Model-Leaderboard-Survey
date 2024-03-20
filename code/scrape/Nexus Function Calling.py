@@ -7,7 +7,7 @@ import os
 from bs4 import BeautifulSoup
 
 url = 'https://nexusflow-nexus-function-calling-leaderboard.hf.space'
-path_leaderboard = "data/Nexus Function Calling"
+path_leaderboard = "data/Nexus Function Calling Leaderboard"
 leaderboard_names = ['overall', 'climate-nested_parallel', 'stack-mostly_single', 'places-nested', 'otx-single', 'virustotal-single', 'vt_multi-nested', 'vt_multi-parallel', 'nvdlibrary-single', 'nvdlibrary_multi-nested']
 
 
