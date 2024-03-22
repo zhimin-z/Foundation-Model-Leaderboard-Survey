@@ -4,8 +4,8 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = ['LLM API Hosts Leaderboard', 'Models Leaderboard']
-suffix_leaderboard = ['hosts', 'models']
+path_leaderboard = ['Models Leaderboard']
+suffix_leaderboard = ['models']
     
 parallel_queries = ['single', 'multiple']
 prompt_length = ['short', 'long']
