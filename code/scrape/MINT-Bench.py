@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/MINT-Bench"
+path_leaderboard = "data/MINT"
 leaderboard_names = ['multi_turn_interactions', 'natural_language_feedback']
 
 if __name__ == '__main__':
