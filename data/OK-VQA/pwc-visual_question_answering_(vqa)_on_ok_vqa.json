@@ -161,48 +161,8 @@
     },
     {
         "table_id":18035,
-        "row_id":111032,
-        "rank":5,
-        "Model":"RA-VQA-v2 (BLIP 2)",
-        "mlmodel":{
-
-        },
-        "method_short":"RA-VQA-v2 ",
-        "method_details":"BLIP 2",
-        "mlmodel_short":null,
-        "mlmodeldetails":null,
-        "evaluation_date":null,
-        "metrics":{
-            "Accuracy":"62.08",
-            "Exact Match (EM)":"62.01",
-            "Recall@5":"89.32"
-        },
-        "raw_metrics":{
-            "Accuracy":62.08,
-            "Exact Match (EM)":62.01,
-            "Recall@5":89.32
-        },
-        "uses_additional_data":false,
-        "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
-            "review_url":null
-        },
-        "external_source_url":null,
-        "tags":[
-
-        ],
-        "reports":[
-
-        ]
-    },
-    {
-        "table_id":18035,
         "row_id":100127,
-        "rank":6,
+        "rank":5,
         "Model":"Prophet",
         "mlmodel":{
 
@@ -213,12 +173,12 @@
         "mlmodeldetails":null,
         "evaluation_date":"2023-03-03",
         "metrics":{
-            "Accuracy":"61.1",
+            "Accuracy":"62.5",
             "Exact Match (EM)":null,
             "Recall@5":null
         },
         "raw_metrics":{
-            "Accuracy":61.1,
+            "Accuracy":62.5,
             "Exact Match (EM)":null,
             "Recall@5":null
         },
@@ -241,8 +201,88 @@
     },
     {
         "table_id":18035,
-        "row_id":79371,
+        "row_id":111032,
+        "rank":6,
+        "Model":"RA-VQA-v2 (BLIP 2)",
+        "mlmodel":{
+
+        },
+        "method_short":"RA-VQA-v2 ",
+        "method_details":"BLIP 2",
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-09-29",
+        "metrics":{
+            "Accuracy":"62.08",
+            "Exact Match (EM)":"62.01",
+            "Recall@5":"89.32"
+        },
+        "raw_metrics":{
+            "Accuracy":62.08,
+            "Exact Match (EM)":62.01,
+            "Recall@5":89.32
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1346101,
+            "title":"Fine-grained Late-interaction Multi-modal Retrieval for Retrieval Augmented Visual Question Answering",
+            "url":"\/paper\/fine-grained-late-interaction-multi-modal-1",
+            "published":"2023-09-29T00:00:00.000000",
+            "code":true,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":18035,
+        "row_id":116367,
         "rank":7,
+        "Model":"A Simple Baseline for KB-VQA",
+        "mlmodel":{
+
+        },
+        "method_short":"A Simple Baseline for KB-VQA",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-10-20",
+        "metrics":{
+            "Accuracy":"61.2",
+            "Exact Match (EM)":null,
+            "Recall@5":null
+        },
+        "raw_metrics":{
+            "Accuracy":61.2,
+            "Exact Match (EM)":null,
+            "Recall@5":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1305110,
+            "title":"A Simple Baseline for Knowledge-Based Visual Question Answering",
+            "url":"\/paper\/a-simple-baseline-for-knowledge-based-visual",
+            "published":"2023-10-20T00:00:00.000000",
+            "code":false,
+            "review_url":null
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":18035,
+        "row_id":79371,
+        "rank":8,
         "Model":"PromptCap",
         "mlmodel":{
 
@@ -282,7 +322,7 @@
     {
         "table_id":18035,
         "row_id":108869,
-        "rank":8,
+        "rank":9,
         "Model":"ReVeaL WIT + CC12M + Wikidata + VQA-2",
         "mlmodel":{
 
@@ -321,8 +361,48 @@
     },
     {
         "table_id":18035,
+        "row_id":114554,
+        "rank":10,
+        "Model":"Lyrics",
+        "mlmodel":{
+
+        },
+        "method_short":"Lyrics",
+        "method_details":null,
+        "mlmodel_short":null,
+        "mlmodeldetails":null,
+        "evaluation_date":"2023-12-08",
+        "metrics":{
+            "Accuracy":"58.2",
+            "Exact Match (EM)":null,
+            "Recall@5":null
+        },
+        "raw_metrics":{
+            "Accuracy":58.2,
+            "Exact Match (EM)":null,
+            "Recall@5":null
+        },
+        "uses_additional_data":false,
+        "paper":{
+            "id":1340689,
+            "title":"Lyrics: Boosting Fine-grained Language-Vision Alignment and Comprehension via Semantic-aware Visual Objects",
+            "url":"\/paper\/lyrics-boosting-fine-grained-language-vision",
+            "published":"2023-12-08T00:00:00.000000",
+            "code":false,
+            "review_url":"\/paper\/lyrics-boosting-fine-grained-language-vision\/review\/?hl=114554"
+        },
+        "external_source_url":null,
+        "tags":[
+
+        ],
+        "reports":[
+
+        ]
+    },
+    {
+        "table_id":18035,
         "row_id":73823,
-        "rank":9,
+        "rank":11,
         "Model":"REVIVE (Ensemble)",
         "mlmodel":{
 
@@ -362,7 +442,7 @@
     {
         "table_id":18035,
         "row_id":73394,
-        "rank":10,
+        "rank":12,
         "Model":"REVIVE (Single)",
         "mlmodel":{
 
@@ -402,7 +482,7 @@
     {
         "table_id":18035,
         "row_id":111034,
-        "rank":11,
+        "rank":13,
         "Model":"RA-VQA-v2 (T5-large)",
         "mlmodel":{
 
@@ -411,7 +491,7 @@
         "method_details":"T5-large",
         "mlmodel_short":null,
         "mlmodeldetails":null,
-        "evaluation_date":null,
+        "evaluation_date":"2023-09-29",
         "metrics":{
             "Accuracy":"54.85",
             "Exact Match (EM)":null,
@@ -424,11 +504,11 @@
         },
         "uses_additional_data":false,
         "paper":{
-            "id":null,
-            "title":null,
-            "url":null,
-            "published":null,
-            "code":false,
+            "id":1346101,
+            "title":"Fine-grained Late-interaction Multi-modal Retrieval for Retrieval Augmented Visual Question Answering",
+            "url":"\/paper\/fine-grained-late-interaction-multi-modal-1",
+            "published":"2023-09-29T00:00:00.000000",
+            "code":true,
             "review_url":null
         },
         "external_source_url":null,
@@ -442,7 +522,7 @@
     {
         "table_id":18035,
         "row_id":88500,
-        "rank":12,
+        "rank":14,
         "Model":"RA-VQA (T5-large)",
         "mlmodel":{
 
@@ -482,7 +562,7 @@
     {
         "table_id":18035,
         "row_id":110629,
-        "rank":13,
+        "rank":15,
         "Model":"VK-OOD",
         "mlmodel":{
 
@@ -522,7 +602,7 @@
     {
         "table_id":18035,
         "row_id":88501,
-        "rank":14,
+        "rank":16,
         "Model":"RA-VQA-FrDPR (T5-large)",
         "mlmodel":{
 
@@ -562,7 +642,7 @@
     {
         "table_id":18035,
         "row_id":96148,
-        "rank":15,
+        "rank":17,
         "Model":"Flamingo80B",
         "mlmodel":{
 
@@ -602,7 +682,7 @@
     {
         "table_id":18035,
         "row_id":97408,
-        "rank":16,
+        "rank":18,
         "Model":"TRiG (T5-Large)",
         "mlmodel":{
 
@@ -642,7 +722,7 @@
     {
         "table_id":18035,
         "row_id":97431,
-        "rank":17,
+        "rank":19,
         "Model":"PICa",
         "mlmodel":{
 
@@ -682,7 +762,7 @@
     {
         "table_id":18035,
         "row_id":99561,
-        "rank":18,
+        "rank":20,
         "Model":"LaKo",
         "mlmodel":{
 
@@ -722,7 +802,7 @@
     {
         "table_id":18035,
         "row_id":96147,
-        "rank":19,
+        "rank":21,
         "Model":"BLIP-2 ViT-G FlanT5 XXL (zero-shot)",
         "mlmodel":{
 
@@ -762,7 +842,7 @@
     {
         "table_id":18035,
         "row_id":96149,
-        "rank":20,
+        "rank":22,
         "Model":"Flamingo9B",
         "mlmodel":{
 
@@ -802,7 +882,7 @@
     {
         "table_id":18035,
         "row_id":73822,
-        "rank":21,
+        "rank":23,
         "Model":"VLC-BERT",
         "mlmodel":{
 
@@ -842,7 +922,7 @@
     {
         "table_id":18035,
         "row_id":99560,
-        "rank":22,
+        "rank":24,
         "Model":"T5(Tan and Bansal, 2019) + Prefixes",
         "mlmodel":{
 
@@ -882,7 +962,7 @@
     {
         "table_id":18035,
         "row_id":96150,
-        "rank":23,
+        "rank":25,
         "Model":"Flamingo3B",
         "mlmodel":{
 
@@ -922,7 +1002,7 @@
     {
         "table_id":18035,
         "row_id":96146,
-        "rank":24,
+        "rank":26,
         "Model":"BLIP-2 ViT-G FlanT5 XL (zero-shot)",
         "mlmodel":{
 
@@ -962,7 +1042,7 @@
     {
         "table_id":18035,
         "row_id":96145,
-        "rank":25,
+        "rank":27,
         "Model":"BLIP-2 ViT-L FlanT5 XL (zero-shot)",
         "mlmodel":{
 
@@ -1002,7 +1082,7 @@
     {
         "table_id":18035,
         "row_id":96144,
-        "rank":26,
+        "rank":28,
         "Model":"BLIP-2 ViT-G OPT 6.7B (zero-shot)",
         "mlmodel":{
 
@@ -1042,7 +1122,7 @@
     {
         "table_id":18035,
         "row_id":73806,
-        "rank":27,
+        "rank":29,
         "Model":"PNP-VQA",
         "mlmodel":{
 
@@ -1086,7 +1166,7 @@
     {
         "table_id":18035,
         "row_id":96143,
-        "rank":28,
+        "rank":30,
         "Model":"BLIP-2 ViT-G OPT 2.7B (zero-shot)",
         "mlmodel":{
 
@@ -1126,7 +1206,7 @@
     {
         "table_id":18035,
         "row_id":96142,
-        "rank":29,
+        "rank":31,
         "Model":"BLIP-2 ViT-L OPT 2.7B (zero-shot)",
         "mlmodel":{
 
@@ -1166,7 +1246,7 @@
     {
         "table_id":18035,
         "row_id":96151,
-        "rank":30,
+        "rank":32,
         "Model":"FewVLM",
         "mlmodel":{
 
@@ -1206,7 +1286,7 @@
     {
         "table_id":18035,
         "row_id":56662,
-        "rank":31,
+        "rank":33,
         "Model":"MetaLM",
         "mlmodel":{
 
@@ -1250,7 +1330,7 @@
     {
         "table_id":18035,
         "row_id":56663,
-        "rank":32,
+        "rank":34,
         "Model":"VLKD(ViT-B\/16)",
         "mlmodel":{
 
@@ -1294,7 +1374,7 @@
     {
         "table_id":18035,
         "row_id":56664,
-        "rank":33,
+        "rank":35,
         "Model":"Frozen",
         "mlmodel":{
 
