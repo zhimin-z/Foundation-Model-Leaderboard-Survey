@@ -12,9 +12,9 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = ''
-path_leaderboard = 'data/OK-VQA'
-included_leaderboards = ['visual-question-answering-on-ok-vqa']
+dataset = 'gem'
+path_leaderboard = 'data/GEM'
+included_leaderboards = []
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):

@@ -1,16 +1,58 @@
 [
     {
+        "T":"?",
+        "Model":"databricks\/dbrx-instruct",
+        "SelfCheckGPT":"Unknown",
+        "MMLU\/Acc":62.18,
+        "Type":73.2,
+        "Architecture":"",
+        "Precision":"?",
+        "Hub License":"8bit",
+        "#Params (B)":"?",
+        "Hub":0.0,
+        "Available on the Hub":0,
+        "Model Sha":false
+    },
+    {
+        "T":"?",
+        "Model":"keyfan\/grok-1-hf",
+        "SelfCheckGPT":"Unknown",
+        "MMLU\/Acc":1.68,
+        "Type":71.66,
+        "Architecture":"",
+        "Precision":"GrokForCausalLM",
+        "Hub License":"8bit",
+        "#Params (B)":"?",
+        "Hub":0.0,
+        "Available on the Hub":0,
+        "Model Sha":true
+    },
+    {
         "T":"\ud83d\udfe2",
         "Model":"mistralai\/Mixtral-8x7B-Instruct-v0.1",
-        "SelfCheckGPT":38.24,
-        "MMLU\/Acc":70.24,
-        "Type":"pretrained",
-        "Architecture":"MixtralForCausalLM",
-        "Precision":"float16",
-        "Hub License":"apache-2.0",
-        "#Params (B)":46.7,
-        "Hub":3377,
-        "Available on the Hub":true,
-        "Model Sha":"main"
+        "SelfCheckGPT":"Unknown",
+        "MMLU\/Acc":38.24,
+        "Type":70.23,
+        "Architecture":"pretrained",
+        "Precision":"MixtralForCausalLM",
+        "Hub License":"float16",
+        "#Params (B)":"apache-2.0",
+        "Hub":46.7,
+        "Available on the Hub":3377,
+        "Model Sha":true
+    },
+    {
+        "T":"?",
+        "Model":"mistralai\/Mixtral-8x7B-v0.1",
+        "SelfCheckGPT":"Unknown",
+        "MMLU\/Acc":0.0,
+        "Type":70.46,
+        "Architecture":"",
+        "Precision":"MixtralForCausalLM",
+        "Hub License":"8bit",
+        "#Params (B)":"?",
+        "Hub":0.0,
+        "Available on the Hub":0,
+        "Model Sha":true
     }
 ]

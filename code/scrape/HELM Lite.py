@@ -116,3 +116,4 @@ if __name__ == '__main__':
             driver.refresh()
 
     remove(path_leaderboard)
+    driver.quit()
