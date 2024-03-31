@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'gem'
-path_leaderboard = 'data/GEM'
+dataset = 'openbookqa'
+path_leaderboard = 'data/OpenBookQA'
 included_leaderboards = []
 
 if __name__ == '__main__':
