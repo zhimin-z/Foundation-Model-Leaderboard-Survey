@@ -19,12 +19,10 @@ def filter_string(text):
 def get_json_format_data(script_elements):
     for item in json.loads(str(script_elements[1])[31:-10])['components']:
         if item['type'] == 'dataframe':
-            columns = [filter_string(column)
-                       for column in item['props']['headers']]
+            columns = [filter_string(column) for column in item['props']['headers']]
             data = item['props']['value']['data']
             df = pd.DataFrame(data, columns=columns)
-            df['Model'] = df['Model'].apply(
-                lambda x: extract_model_repo_names(x))
+            df['Model'] = df['Model'].apply(lambda x: extract_model_repo_names(x))
             df.to_json(f'{path_leaderboard}/hf-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
 
 

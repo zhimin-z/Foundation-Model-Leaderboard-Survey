@@ -1,7 +1,6 @@
 import pandas as pd
 import requests
 import json
-import re
 import os
 
 from bs4 import BeautifulSoup
@@ -16,14 +15,6 @@ def get_json_format_data(script_elements):
         if item['type'] == 'dataframe':
             df = pd.DataFrame(item['props']['value']['data'], columns=item['props']['value']['headers'])
             df.to_json(f'{path_leaderboard}/hf-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
-
-
-def extract_model_repo_names(html):
-    # This regex pattern looks for the HuggingFace model names in the provided HTML strings.
-    # It matches the text after 'https://huggingface.co/' and before the closing double quote.
-    pattern = r'https://huggingface.co/([^"]+)'
-    matches = re.findall(pattern, html)
-    return matches[0]
 
 
 if __name__ == "__main__":
