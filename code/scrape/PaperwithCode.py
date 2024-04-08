@@ -12,8 +12,8 @@ def file_rename(title):
     return title
 
 bloom = False
-dataset = 'openbookqa'
-path_leaderboard = 'data/OpenBookQA'
+dataset = 'fewclue'
+path_leaderboard = 'data/FewCLUE'
 included_leaderboards = []
 
 if __name__ == '__main__':
