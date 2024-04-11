@@ -20,7 +20,6 @@ def get_json_format_data(script_elements):
     for item in json.loads(str(script_elements[1])[31:-10])['components']:
         if item['type'] == 'dataframe':
             columns = item['props']['value']['headers']
-            print(columns)
             data = item['props']['value']['data']
             df = pd.DataFrame(data, columns=columns)
             df.to_json(f'{path_leaderboard}/hf-{preprocess_name(leaderboard_names.pop(0))}.json', orient='records', indent=4)

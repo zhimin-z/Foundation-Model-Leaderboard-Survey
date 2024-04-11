@@ -26,7 +26,7 @@ if __name__ == '__main__':
         os.makedirs(path_leaderboard)
     
     driver = Driver(uc=True)
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(10)
 
     url = 'https://allenai-wildbench.hf.space'
     driver.get(url)
