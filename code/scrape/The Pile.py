@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     df = []
     for row in table.find_elements(By.XPATH, './/tbody/tr'):
-        values = [column.text for column in row.find_elements(By.XPATH, './/td')]
+        values = [value.text for value in row.find_elements(By.XPATH, './/td')]
         df.append(values)
             
     df = pd.DataFrame(df, columns=column_names)

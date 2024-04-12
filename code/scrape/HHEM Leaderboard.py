@@ -9,7 +9,7 @@ path_leaderboard = "data/HHEM Leaderboard"
 
 
 def get_json_format_data():
-    url = 'https://vectara-leaderboard.hf.space/'
+    url = 'https://vectara-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')

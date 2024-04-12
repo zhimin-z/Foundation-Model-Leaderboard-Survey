@@ -1,10 +1,17 @@
 import pandas as pd
 import os
+import re
 
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
 path_leaderboard = "data/TrustLLM"
+
+
+def filter_string(text):
+    regex_pattern = r'(↑)'
+    filtered_string = re.sub(regex_pattern, '', text)
+    return filtered_string.strip()
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
@@ -19,14 +26,11 @@ if __name__ == '__main__':
     leaderboard_names = [name.text.lower() for name in driver.find_elements(By.XPATH, '//div[@class="section"]/h2')]
     
     for leaderboard in driver.find_elements(By.XPATH, ".//table[contains(@id, 'table_')]"):
-        column_names = []
-        for column in leaderboard.find_elements(By.XPATH, './/thead/tr/th'):
-            column_name = column.text.replace(' (↑)', '')
-            column_names.append(column_name)
+        column_names = [filter_string(column.text) for column in leaderboard.find_elements(By.XPATH, './/th')]
         
         df = []
         for row in leaderboard.find_elements(By.XPATH, './/tbody/tr'):
-            values = [column.text for column in row.find_elements(By.XPATH, './/td')]
+            values = [value.text for value in row.find_elements(By.XPATH, './/td')]
             df.append(values)
         
         df = pd.DataFrame(df, columns=column_names)

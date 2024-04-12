@@ -30,7 +30,7 @@ if __name__ == '__main__':
         df = []
         for index, row in enumerate(leaderboard.find_elements(By.XPATH, './/table[@class="table performanceTable"]/tbody/tr')):
             if index:
-                values = [column.text for column in row.find_elements(By.XPATH, './/td')]
+                values = [value.text for value in row.find_elements(By.XPATH, './/td')]
                 df.append(values)
             else:
                 column_names = [column.text for column in row.find_elements(By.XPATH, './/th')]
