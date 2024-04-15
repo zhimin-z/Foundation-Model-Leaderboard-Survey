@@ -23,7 +23,6 @@ if __name__ == '__main__':
     driver.implicitly_wait(5)
     
     leaderboard_urls = []
-    community_indicator = ''
     base_url = 'https://paperswithcode.com'
     
     if dataset:
@@ -50,7 +49,6 @@ if __name__ == '__main__':
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
             table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
-            community_indicator = 'community-'
         table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
         if table != '[]':
             table = json.loads(table)
@@ -58,6 +56,6 @@ if __name__ == '__main__':
             table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
-            table.to_json(f'{path_leaderboard}/pwc-{community_indicator}{title}.json', orient='records', indent=4)
+            table.to_json(f'{path_leaderboard}/pwc-community-{title}.json', orient='records', indent=4)
     
     driver.quit()
