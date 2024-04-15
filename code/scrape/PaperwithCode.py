@@ -41,17 +41,19 @@ if __name__ == '__main__':
     
     for url in leaderboard_urls:
         driver.get(url)
+        
         table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
-        if table != '[]':
-            table = json.loads(table)
+        table = json.loads(table)
+        if table:
             table = pd.DataFrame(table)
             table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
             title = file_rename(title)
             table.to_json(f'{path_leaderboard}/pwc-{title}.json', orient='records', indent=4)
+            
         table = driver.find_element(By.XPATH, '//script[@id="community-table-data"]').get_attribute("innerText")
-        if table != '[]':
-            table = json.loads(table)
+        table = json.loads(table)
+        if table:
             table = pd.DataFrame(table)
             table = table.rename(columns={'method': 'Model'})
             title = driver.find_element(By.XPATH, '//div[@class="leaderboard-title"]/div/div/h1').text
