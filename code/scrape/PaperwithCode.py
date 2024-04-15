@@ -1,6 +1,5 @@
 import pandas as pd
 import json
-import re
 import os
 
 from selenium.webdriver.common.by import By
@@ -11,10 +10,10 @@ def file_rename(title):
     title = title.replace(',', '_').replace('/', '_').replace('-', '_').replace(':', '_').replace(' ', '_')
     return title
 
-bloom = False
-dataset = 'fewclue'
-path_leaderboard = 'data/FewCLUE'
+dataset = '3dpw'
+path_leaderboard = 'data/3dpw'
 included_leaderboards = []
+use_bloom_only = False
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
@@ -23,7 +22,7 @@ if __name__ == '__main__':
     driver = Driver(uc=True)
     driver.implicitly_wait(5)
     
-    leaderboard_links = []
+    leaderboard_urls = []
     community_indicator = ''
     base_url = 'https://paperswithcode.com'
     
@@ -31,20 +30,18 @@ if __name__ == '__main__':
         url = f'{base_url}/dataset/{dataset}'
         driver.get(url)
         for leaderboard in driver.find_elements(By.XPATH, '//table[@id="benchmarks-table"]/tbody/tr'):
-            if bloom:
+            if use_bloom_only:
                 if 'bloom' not in driver.execute_script("return arguments[0].innerText;", leaderboard):
                     continue
-            text = leaderboard.get_attribute('onclick')
-            match = re.findall(r"'(.*?)'", text)[0]
-            link = f'{base_url}{match}'
-            leaderboard_links.append(link)
+            url = leaderboard.find_element(By.XPATH, './/td[1]/a').get_attribute("href")
+            leaderboard_urls.append(url)
     else:
-        for match in included_leaderboards:
-            link = f'{base_url}/sota/{match}'
-            leaderboard_links.append(link)
+        for suffix in included_leaderboards:
+            url = f'{base_url}/sota/{suffix}'
+            leaderboard_urls.append(url)
     
-    for link in leaderboard_links:
-        driver.get(link)
+    for url in leaderboard_urls:
+        driver.get(url)
         table = driver.find_element(By.XPATH, '//script[@id="evaluation-table-data"]').get_attribute("innerText")
         if table != '[]':
             table = json.loads(table)
