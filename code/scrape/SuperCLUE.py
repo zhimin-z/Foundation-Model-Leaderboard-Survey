@@ -8,7 +8,7 @@ leaderboard_open = 'data/SuperCLUE-Open'
 
 
 def preprocess_text(name):
-    return name.text.lower().replace('auto', '').replace('agent', '').replace('superclue-safety', '')
+    return name.text.lower().replace('auto', '').replace('agent', '').replace('rag', '').replace('superclue-', '').replace('superclue-safety', '')
 
 if __name__ == '__main__':
     driver = Driver(uc=True)
@@ -24,8 +24,6 @@ if __name__ == '__main__':
     
     for index, leaderboard in enumerate(leaderboards[0].find_elements(By.XPATH, './/button')):
         leaderboard_name = leaderboard.text.encode('ascii', 'ignore').decode('ascii')
-        if leaderboard_name == 'SuperCLUE-200K':
-            leaderboard_name = 'SuperCLUE'
         leaderboard_path = f"data/{leaderboard_name}"
         
         if not os.path.exists(leaderboard_path):

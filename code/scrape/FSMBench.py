@@ -6,14 +6,16 @@ import os
 from bs4 import BeautifulSoup
 
 path_leaderboard = "data/FSMBench"
-leaderboard_names = ['text', 'vision']
+leaderboard_names = ['text', 'vision', 'text_only', 'majority_vote']
 
 
 def get_json_format_data(script_elements):
     for item in json.loads(str(script_elements[1])[31:-10])['components']:
         if item['type'] == 'dataframe':
             df = pd.DataFrame(item['props']['value']['data'], columns=item['props']['value']['headers'])
-            df.rename(columns={'🤖 Model Name': 'Model'}, inplace=True)
+            df.rename(columns={'🤖 Model Name': 'Model', 'model_name': 'Model'}, inplace=True)
+            if 'Model' not in df.columns:
+                continue
             df.to_json(f'{path_leaderboard}/hf-{leaderboard_names.pop(0)}.json', orient='records', indent=4)
 
 
