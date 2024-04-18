@@ -38,11 +38,11 @@ if __name__ == '__main__':
         
         table = driver.find_element(By.XPATH, '//table[@id="table-1-1"]')
         
+        column_names = []
         try:
             upper_columns, lower_columns = table.find_elements(By.XPATH, './/thead/tr')
             lower_column_list = [lower_column.text for lower_column in lower_columns.find_elements(By.XPATH, './/th')]
 
-            column_names = []
             for upper_column in upper_columns.find_elements(By.XPATH, './/th'):
                 for _ in range(int(upper_column.get_attribute('colspan'))):
                     if upper_column.text:
@@ -52,7 +52,6 @@ if __name__ == '__main__':
                     else:
                         lower_column_list.pop(0)
         except:
-            column_names = []
             for upper_column in table.find_elements(By.XPATH, './/thead/tr/th'):
                 if upper_column.text:
                     column_names.append(upper_column.text)

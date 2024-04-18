@@ -20,10 +20,12 @@ if __name__ == '__main__':
     iteration = 0
     leaderboard_columns = driver.find_elements(By.XPATH, '//thead[@class="svelte-1tclfmr"]')
     leaderboard_tables = driver.find_elements(By.XPATH, '//tbody[@class="svelte-1tclfmr"]')
-    leaderboards = driver.find_elements(By.XPATH, '//div[@id="component-228"]/div')
+    leaderboards = driver.find_elements(By.XPATH, '//div[@id="component-286"]/div')
     
     for index, leaderboard in enumerate(leaderboards[0].find_elements(By.XPATH, './/button')):
         leaderboard_name = leaderboard.text.encode('ascii', 'ignore').decode('ascii')
+        if leaderboard_name == 'SuperCLUE-200K':
+            leaderboard_name = 'SuperCLUE'
         leaderboard_path = f"data/{leaderboard_name}"
         
         if not os.path.exists(leaderboard_path):
