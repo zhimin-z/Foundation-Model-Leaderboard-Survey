@@ -1,0 +1,20 @@
+<div align="center">
+    <h1>Uncovering the Landscape of Leaderboards for Foundation Models</h1>
+    <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
+</div>
+
+This repository contains the datasets, code, and additional resources used in the study "Uncovering the Landscape of Leaderboards and Associated Systems for Foundation Models: An Exploratory Study" by Zhimin Zhao et al. The paper investigates various leaderboard systems across multiple platforms, focusing on their structure, operations, and the challenges they present in the evaluation of Foundation Models (FMs).
+
+## Overview
+The study systematically explores the architecture of leaderboard systems, identifying key components and operational patterns that enhance or hinder the effectiveness of FMs in various evaluation contexts. It introduces the concept of LBOps (Leaderboard Operations), which includes methodologies and practices critical for managing and optimizing leaderboard systems.
+
+## Contents
+1. **Code**: Includes scripts used for collecting and analyzing data from leaderboard systems. The repository also features the development of our own leaderboard systems which illustrate the LBOps concept.
+2. **Data**: This section hosts the collected data from over 439 distinct leaderboard systems, categorized by model type, evaluation metrics, and other relevant criteria.
+
+## Citation
+If you use this repository or its contents for your research, please cite it as follows:
+Zhimin Zhao et al., "Uncovering the Landscape of Leaderboards for Foundation Models: An Exploratory Study." Available at DOI: [Zenodo DOI](https://zenodo.org/doi/10.5281/zenodo.10593653).
+
+## Contact
+For further inquiries or potential collaboration, please open an issue in this repository or contact the authors through the provided issue tracker link.
