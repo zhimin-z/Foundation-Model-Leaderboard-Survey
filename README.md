@@ -9,8 +9,8 @@ This repository contains the datasets, code, and additional resources used in th
 The study systematically explores the architecture of leaderboard systems, identifying key components and operational patterns that enhance or hinder the effectiveness of FMs in various evaluation contexts. It introduces the concept of LBOps (Leaderboard Operations), which includes methodologies and practices critical for managing and optimizing leaderboard systems.
 
 ## Contents
-1. **Code**: Includes scripts used for collecting and analyzing data from leaderboard systems. The repository also features the development of our own leaderboard systems which illustrate the LBOps concept.
-2. **Data**: This section hosts the collected data from over 439 distinct leaderboard systems, categorized by model type, evaluation metrics, and other relevant criteria.
+1. **Code**: Includes scripts used for collecting and analyzing data from leaderboard systems.
+2. **Data**: This section hosts the collected data from over 439 distinct leaderboard systems.
 
 ## Citation
 If you use this repository or its contents for your research, please cite it as follows:
