@@ -56,7 +56,7 @@ def save_table(driver, index, leaderboard_name):
         df.drop(columns=['Rank'], inplace=True)
     if 'Delta' in column_names:
         df.drop(columns=['Delta'], inplace=True)
-    df.to_json(f'{path_leaderboard}/hf-{leaderboard_name}.json', orient='records', indent=4)
+    df.to_json(f'{path_leaderboard}/ip-{leaderboard_name}.json', orient='records', indent=4)
 
 if __name__ == '__main__':
     if not os.path.exists(path_leaderboard):
