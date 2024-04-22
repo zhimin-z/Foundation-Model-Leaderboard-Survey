@@ -5,11 +5,11 @@ import os
 
 from bs4 import BeautifulSoup
 
-path_leaderboard = "data/MOE LLM GPU-Poor Leaderboard"
+path_leaderboard = "data/OPEN MOE LLM Leaderboard"
 
 
 def get_json_format_data():
-    url = 'https://pingandpasquale-moe-llm-gpu-poor-leaderboard.hf.space'
+    url = 'https://sparse-generative-ai-open-moe-llm-leaderboard.hf.space'
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     script_elements = soup.find_all('script')
