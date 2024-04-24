@@ -6,8 +6,7 @@ import os
 from bs4 import BeautifulSoup
 
 path_leaderboard = "data/FSMBench"
-leaderboard_names = ['text', 'vision', 'text_only', 'majority_vote']
-
+leaderboard_names = ['text_only', 'contraint_text_only']
 
 def get_json_format_data(script_elements):
     for item in json.loads(str(script_elements[1])[31:-10])['components']:
