@@ -10,9 +10,9 @@ def file_rename(title):
     title = title.replace(',', '_').replace('/', '_').replace('-', '_').replace(':', '_').replace(' ', '_')
     return title
 
-dataset = '3dpw'
-path_leaderboard = 'data/3dpw'
-included_leaderboards = []
+dataset = ''
+path_leaderboard = 'data/TextVQA'
+included_leaderboards = ['visual-question-answering-on-textvqa-test-1']
 use_bloom_only = False
 
 if __name__ == '__main__':
