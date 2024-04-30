@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.common.by import By
 from seleniumbase import Driver
 
-path_leaderboard = "data/OpenCompass Large Language Model Leaderboard"
+path_leaderboard = "data/OpenCompass Large Language Model Leaderboard (v2)"
 url = 'https://rank.opencompass.org.cn/leaderboard-llm'
 
 
