@@ -16,7 +16,6 @@ def get_json_format_data(script_elements):
             marker = not marker
             if marker:
                 continue
-            
             df = pd.DataFrame(item['props']['value']['data'], columns=item['props']['value']['headers'])
             df['Model'] = df['Model'].apply(lambda x: extract_text(x))
             df.drop(columns=[''], inplace=True)
