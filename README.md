@@ -3,18 +3,21 @@
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
-This repository contains the datasets, code, and additional resources used in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al. The paper investigates various leaderboard systems across multiple platforms, focusing on their characteristics, operations, and smells prevalent in foundation model leaderboards.
+This repository contains the datasets, code, and additional resources used in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al.
 
 ## Overview
-The study systematically explores the architecture of leaderboard systems, identifying key components and operational patterns that enhance or hinder the effectiveness of FMs in various evaluation contexts. It introduces the concept of LBOps (Leaderboard Operations), which includes methodologies and practices critical for managing and optimizing leaderboard systems.
+The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells".
 
 ## Contents
-1. **Code**: Includes scripts used for collecting and analyzing data from leaderboard systems.
-2. **Data**: This section hosts the collected data from over 439 distinct leaderboard systems.
+1. **Code**: Includes scripts to analyze metadata from 735 FM leaderboards.
+2. **Data**: Includes collected metadata from 735 FM leaderboards.
+3. **Results**: Includes analyses from 735 FM leaderboards.
 
 ## Citation
 If you use this repository or its contents for your research, please cite it as follows:
-Zhimin Zhao et al., "Uncovering the Landscape of Leaderboards for Foundation Models: An Exploratory Study." Available at DOI: [Zenodo DOI](https://zenodo.org/doi/10.5281/zenodo.10593653).
+```bibtex
+TODO
+```
 
 ## Contact
-For further inquiries or potential collaboration, please open an issue in this repository or contact the authors through the provided issue tracker link.
+For queries or collaboration, feel free to raise an issue.
