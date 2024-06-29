@@ -9,9 +9,9 @@ This repository contains the datasets, code, and additional resources used in "A
 The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells".
 
 ## Contents
-1. **Code**: Includes scripts to analyze metadata from 735 FM leaderboards.
-2. **Data**: Includes collected metadata from 735 FM leaderboards.
-3. **Results**: Includes analyses from 735 FM leaderboards.
+1. **Code**: This repository includes scripts to analyze metadata from 735 FM leaderboards.
+2. **Data**: This repository includes collected metadata from 735 FM leaderboards.
+3. **Results**: This repository includes results of analyses on 735 FM leaderboards.
 
 ## Citation
 If you use this repository or its contents for your research, please cite it as follows:
