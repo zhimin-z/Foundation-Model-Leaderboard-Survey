@@ -3,8 +3,6 @@
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
-This repository contains the datasets, code, and results in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al. 
-
 Watch the following video teaser to learn about our motivation, methodology, and key findings (lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))!
 
 https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/b3ec788b-ee22-4280-b261-71d6534012ad
