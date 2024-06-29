@@ -7,7 +7,7 @@ This repository contains the datasets, code, and results in "An Exploratory Stud
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings!
 
-https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/0faaa8b7-481e-4c54-941e-e9e61e5ab7b9
+https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/81fbd586-803f-4cde-8379-71e819c6640c
 
 ## Overview
 The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells".
