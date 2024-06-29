@@ -3,7 +3,7 @@
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
-This repository contains the datasets, code, and additional resources used in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al.
+This repository contains the datasets, code, and results in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al.
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings!
 
