@@ -5,9 +5,10 @@
 
 This repository contains the datasets, code, and results in "An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards" by Zhimin Zhao et al.
 
-Watch the following video teaser to learn about our motivation, methodology, and key findings!
+[![Video Cover Image](https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/96a6576d-ed8d-49a9-a1ee-23bf4b12e792)](https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/81fbd586-803f-4cde-8379-71e819c6640c
+)
 
-https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/81fbd586-803f-4cde-8379-71e819c6640c
+Click the image above to watch the video teaser to learn about our motivation, methodology, and key findings!
 
 ## Overview
 The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells".
@@ -25,5 +26,3 @@ TODO
 
 ## Contact
 For queries or collaboration, feel free to raise an issue.
-
-![cover](https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/96a6576d-ed8d-49a9-a1ee-23bf4b12e792)
