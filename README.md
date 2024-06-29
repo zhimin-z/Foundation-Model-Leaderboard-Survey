@@ -11,9 +11,9 @@ https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/d
 The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells". We also curate an awesome list of ML leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
 
 ## Contents
-1. **Code**: This repository includes scripts to analyze metadata from 735 FM leaderboards.
-2. **Data**: This repository includes collected metadata from 735 FM leaderboards.
-3. **Results**: This repository includes results of analyses on 735 FM leaderboards.
+1. **Code**: This repository includes scripts to analyze metadata from FM leaderboards.
+2. **Data**: This repository includes collected metadata from FM leaderboards.
+3. **Results**: This repository includes results of analyses on FM leaderboards.
 
 ## Citation
 If you use this repository or its contents for your research, please cite it as follows:
