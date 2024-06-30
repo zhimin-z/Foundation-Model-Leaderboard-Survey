@@ -5,7 +5,7 @@
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings! (lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
 
-https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/d015b3ba-e450-459e-801f-c51e2e4ed3d7
+https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/2a015f0d-14ed-4473-96c8-c8cb9f4bc0a1
 
 ## Overview
 The paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, workflows, and operational issues or "smells". We also curate an awesome list of ML leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
