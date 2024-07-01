@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>An Exploratory Study on the Operations and Smells of Foundation Model Leaderboards</h1>
+    <h1>On the Workflows and Smells of Leaderboard Operations (LBOps):<br>An Exploratory Study of Foundation Model Leaderboards</h1>
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
