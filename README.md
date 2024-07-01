@@ -22,6 +22,6 @@ TODO
 ```
 
 ## Contact
-For queries or collaboration, feel free to raise an issue.
+For queries or collaboration, feel free to [raise an issue](https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/issues/new).
 
 ![Video Cover Image](https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/96a6576d-ed8d-49a9-a1ee-23bf4b12e792)
