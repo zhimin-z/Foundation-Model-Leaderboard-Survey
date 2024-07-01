@@ -3,7 +3,7 @@
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
-Watch the following video teaser to learn about our motivation, methodology, and key findings! (lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
+Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video & editing by [Canva](https://www.canva.com))
 
 https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/e3702dd1-ee03-4720-8055-4c46c1f0399f
 
