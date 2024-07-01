@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>On the Workflows and Smells of Leaderboard Operations (LBOps):<br>An Exploratory Study of Foundation Model Leaderboards</h1>
+    <h1>On the Workflows and Smells of Leaderboard Operations:<br>An Exploratory Study of Foundation Model Leaderboards</h1>
     <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
@@ -13,7 +13,7 @@ The [paper](TODO) investigates various foundation model (FM) leaderboards across
 ## Contents
 1. **Code**: This repository includes scripts to analyze metadata from FM leaderboards.
 2. **Data**: This repository includes collected metadata from FM leaderboards.
-3. **Results**: This repository includes results of analyses on FM leaderboards.
+3. **Results**: This repository includes results and graphs of analyses on FM leaderboards.
 
 ## Citation
 If you use this repository or its contents for your research, please cite it as follows:
