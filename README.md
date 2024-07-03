@@ -1,6 +1,5 @@
 <div align="center">
     <h1>On the Workflows and Smells of Leaderboard Operations:<br>An Exploratory Study of Foundation Model Leaderboards</h1>
-    <a href="https://zenodo.org/doi/10.5281/zenodo.10593653"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10593653.svg" alt="DOI"></a>
 </div>
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
