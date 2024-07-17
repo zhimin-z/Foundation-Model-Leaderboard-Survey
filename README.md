@@ -6,7 +6,10 @@
     <a href="https://arxiv.org/abs/2407.04065"><img src="https://img.shields.io/badge/📃-Arxiv-b31b1b?style=for-the-badge"></a>
 </a>
 
-Watch the following video teaser to learn about our motivation, methodology, and key findings! (cover & lyrics by [GPT-4o](https://chat.openai.com), music by [Suno](https://suno.plminu.com), video by [Canva](https://www.canva.com))
+Watch the following video teaser to learn about our motivation, methodology, and key findings!
+#### Image: [GPT-4o](https://chat.openai.com)
+#### Music: [Suno](https://suno.plminu.com)
+#### Video: [Canva](https://www.canva.com)
 
 https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/9c542b50-be3c-4952-8595-a1c1a2023607
 
