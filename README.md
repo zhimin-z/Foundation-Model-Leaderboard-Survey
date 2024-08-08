@@ -11,7 +11,7 @@ Watch the following video teaser to learn about our motivation, methodology, and
 #### Music: [Suno](https://suno.plminu.com)
 #### Video: [Canva](https://www.canva.com)
 
-https://github.com/zhimin-z/Foundation-Model-Leaderboard-Survey/assets/8592144/9c542b50-be3c-4952-8595-a1c1a2023607
+https://github.com/user-attachments/assets/30ef02d2-a653-408a-a4fc-6a0db58e2b72
 
 ## Overview
 Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, operational workflows ("**LBOps**"), and issues ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
