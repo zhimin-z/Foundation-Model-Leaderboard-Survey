@@ -6,4 +6,4 @@
 # Get the path_repository argument
 path_repository="$1"
 
-src search -json 'context:global "leaderboard" select:repo count:all file:\.(html|md)' >"${path_repository}/GitHub.json"
+src search -json 'context:global /leaderboard|leader-board|leader board/ select:repo count:all file:\.(html|md)' >"${path_repository}/GitHub.json"
