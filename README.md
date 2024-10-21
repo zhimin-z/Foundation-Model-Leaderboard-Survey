@@ -7,9 +7,9 @@
 </a>
 
 Watch the following video teaser to learn about our motivation, methodology, and key findings!
-#### Image: [GPT-4o](https://chat.openai.com)
-#### Music: [Suno](https://suno.plminu.com)
 #### Video: [Canva](https://www.canva.com)
+#### Image: [GPT-4o](https://chat.openai.com)
+#### Music: [Suno](https://suno.com)
 
 https://github.com/user-attachments/assets/54001fd6-b7b4-4248-953c-d613ea00fa9e
 
