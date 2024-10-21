@@ -19,7 +19,7 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 ## Contents
 1. **Code**: This repository includes scripts to analyze metadata from FM leaderboards.
 2. **Data**: This repository includes collected metadata from FM leaderboards.
-3. **Results**: This repository includes results and graphs of analyses on FM leaderboards.
+3. **Results**: This repository includes results and graphs of analyses on FM leaderboards. In particular, "Foundation Model Leaderboards.xlsx" contains all the necessary labels throughout our studies.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
