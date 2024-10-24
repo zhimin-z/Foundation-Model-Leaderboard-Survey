@@ -1,0 +1,173 @@
+Me: Hello, Xu Liang. Since you are one of the leading experts on model evaluation, especially in Chinese evaluation, I would like to get your thoughts on our research and ask for some verbal feedback. I'm currently in the rebuttal phase for a paper, and I’m not sure if you're familiar with this stage—it’s where experts provide feedback on reviewer comments. One of the reviewers mentioned that there hasn’t been real feedback from practitioners, which is why I’m reaching out to you to see if you could provide some feedback based on your experience.
+
+This is the background: I have a paper, and it’s in the process of being reviewed. Actually, this is not the only thing I want to discuss, but it’s the main focus right now.
+
+Xu Liang: Understood, sure.
+
+Me: I plan to share my screen because I want to walk you through our work, which will make it easier for me to seek your feedback. Is that okay?
+
+Xu Liang: Yes, that works.
+
+Me: Can you see it?
+
+Xu Liang: Yes, I can see it.
+
+Me: Great. So, here's the situation. I’ll walk you through our research. As you know, I’ve already sent you the draft of the manuscript, so when you review it closely, you’ll quickly understand that our work mainly focuses on the maintenance of leaderboards, especially leaderboards for large models. We’ve concentrated on their operational workflow and things similar to code smells, which we call "leaderboard smells." Do you know what "code smells" are?
+
+Xu Liang: Not really familiar with that term.
+
+Me: "Code smell" refers to a situation where, for example, I could solve a problem with a simple loop, but instead, I use a bunch of if statements. This approach is more error-prone, right? It’s a kind of anti-pattern that violates best practices and can potentially lead to problems. We call this a “smell.” It’s a concept in coding, but we’ve adapted it to leaderboards, so we call it “leaderboard smell.”
+
+Xu Liang: I see.
+
+Me: Right, this is one of our main research objectives. We first collected links to various leaderboards. In total, we collected around 15,000 leaderboard links. Then we set some criteria for what qualifies as a leaderboard for large models. For example, it has to be related to large models, and the leaderboard needs to be accessible—meaning it’s not completely restricted from public access.
+
+Xu Liang: Uh-huh.
+
+Me: After filtering, we identified nearly 1,050 leaderboards for large models. For example, you might know about Hugging Face, which has 178 leaderboards. Then there’s Paper with Code, which you’ve probably heard of as well—it has 569 leaderboards. Notably, there are about 147 leaderboards hosted on independent platforms, like SuperCLUE, where most of the leaderboards are on standalone websites, such as the SuperCLUE site.
+
+Xu Liang: Yes, that’s right.
+
+Me: We then examined the documentation for these leaderboards and any publications related to them, like research papers. If they have a GitHub repository, we also look into the GitHub commit history and messages. However, even after researching these known details, we sometimes run into challenges in understanding certain aspects. So, based on our two research objectives, whenever we encounter something unclear, we reach out to the leaderboard maintainers for clarification. For example, I’ve asked you some questions on GitHub before, which is why we’re now communicating via WeChat as well.
+
+Xu Liang: Yes, that’s right.
+
+Me: Through this iterative process of continuous communication, reading, and discussions among the authors, we eventually resolved the issues regarding leaderboard maintenance and the concept of leaderboard smells. This is the overall research process. The categories of the leaderboards I showed you earlier remain the same, as you can see. For instance, PapersWithCode has the most large model leaderboards. These are the characteristics of leaderboards across different platforms, such as whether they have a GitHub repository. Having a GitHub repo shows that the leaderboard is more open-source, and you can access the test code. Another characteristic is whether there has been a major release, like we see with OpenCompass, which has versions V1 and V2.
+
+We also look at whether there is a submission channel or submission requirements, like the submission protocol. Additionally, some leaderboards allow for more than just model submissions, such as submitting datasets or even submitting a new large model as a judge. These are some of the specific data points we’ve gathered, and if you're interested, you can take a closer look.
+
+This is an example of a classic leaderboard: The leaderboard typically offers different options, such as model information and submission options. For example, this is Chatbot Arena, which you’ve probably heard of. There’s also an area where you can run experiments. Each leaderboard might have different tabs, and here you can see what we call a "Ranking DataFrame," which is sortable data. You can filter and sort the data, which is one of the essential features of any leaderboard. We analyze these essential features and examine submission requirements and channels, which allowed us to summarize five types of workflows.
+
+You can see, for instance, that Workflow Pattern P1 involves submitting evaluation results that the leaderboard maintainer integrates directly. I’m not sure if you’ve used PapersWithCode—it works this way. It has two channels: One is where it automatically fetches evaluation results from published papers, often using model cards to generate a leaderboard. The other is where users can upload evaluation results themselves, with no need for additional validation or traceability. You simply submit the results, and a leaderboard is generated. Users can also modify the data—like deleting or creating new leaderboard entries—very freely.
+
+In Workflow Pattern P2, I upload prediction results, and someone checks them against test data. Here, I can compare the results to the labels (ground truth), or if there are no labels, the final accuracy or other metrics will be calculated and incorporated into the leaderboard.
+
+Workflow Pattern P3 is rare and quite unique. It allows users to vote on or rank models, and the leaderboard maintainer aggregates these votes to determine the leaderboard rankings. This approach is similar to GitHub’s “Star” leaderboard, which ranks repositories based on user popularity.
+
+Workflow Pattern P4 is the more traditional method where I upload a model, and the maintainer conducts the evaluation. Sometimes, if the maintainer doesn’t have the ground truth, they might use a large model as a judge, like in Chatbot Arena, where a model is used to assess other models. This has some subjectivity, but it is still considered a standard evaluation method, and each model generates its own evaluation record. This is called Workflow Pattern P4.
+
+Finally, P5...
+
+Xu Liang: Hold on a second. For P4, what exactly is the user uploading?
+
+Me: They upload model-related files or an API. In P5, the user also uploads a model, but the key difference is that after uploading, the model can be compared by third parties, similar to Chatbot Arena. The user generates the results, and based on their satisfaction with the inference, they rate which model they think performs better or if there is no better-performing model. That’s how P5 works. We found that P1 is the most common, covering over 50%, and P4 is the second most common, covering over 40%.
+
+Xu Liang: Hmm, yes, that reminds me of the early days when we were developing CLUE. Back then, users could upload prediction results themselves. The predictions would be compared with the ground truth on our backend to get a score. Initially, we made CLUE open-source, but now, users need to provide an API. Once the API is provided, we conduct the evaluation and generate a score.
+
+Me: Yes, that aligns with my observations of your work. I studied your process, and most of what you do fits within P4, though there are also cases that fit P5, such as the Langya List (琅琊榜), right?
+
+Xu Liang: Yes, that’s correct.
+
+Me: Of course, this isn’t everything yet—let's continue. Based on our previous findings, we’ve created a diagram similar to a flowchart. However, it’s not exactly a flowchart; it’s called a domain concept map, something like a UML diagram. I’m not sure if you’re familiar with it. In this diagram, you can see that every leaderboard consists of three layers: the submission layer, the evaluation layer, and the integration layer. These three layers interact to form the entire leaderboard’s preparation mechanism. This addresses our first research question.
+
+Now, let’s look at our second research question, which focuses on leaderboard smells. As you can see, while we were studying how the domain model functions on a leaderboard, we also discovered several issues. To investigate these issues, we reached out through GitHub, Hugging Face, and email to ask the maintainers to verify them. However, some issues are hard to validate since not all maintainers respond to us. So, we did our best to identify potential problems, though there is some uncertainty.
+
+For example, we identified a total of eight smells. The first one is confusing entity, which refers to a situation where the documentation might explain how to perform an evaluation, but it’s unclear. This confusion leads users to struggle with understanding the process. The second is deprecated entity, which means certain things, like datasets or tasks, have become outdated. For instance, a dataset that was once used may no longer be valid, making the leaderboard irrelevant to that dataset.
+
+The third smell is inaccessible entity, which refers to cases where a link is broken, so users can’t access something. The fourth is misdisplayed entity, where there are visual issues with the leaderboard. For instance, rows in the leaderboard may be misaligned. The fifth smell is mismatched entity, which occurs when the leaderboard documentation states one fact (Fact A), but during actual use, it turns out to be a different fact (Fact B).
+
+The sixth smell is missing entity, where something expected to be present is absent. For example, a model or dataset should be available, but it cannot be found. This is somewhat similar to inaccessible entity, but we differentiate between the two. Inaccessible entity refers to things that exist but are inaccessible, like a gateway timeout. Missing entity, on the other hand, is more like a 404 error, where something is entirely missing.
+
+The seventh smell is redundant entity, which refers to unnecessary repetition. For instance, if a leaderboard has multiple entries for the same model, such as GPT-4, when one entry would suffice, that’s redundant.
+
+The final smell is unresponsive entity, which is particularly common on Hugging Face. There, many spaces may be accessible, but when you try to use them, you encounter runtime errors. I’m not sure if you’ve experienced this before?
+
+Xu Liang: Yes, I have. Sometimes, it’s probably due to limitations in the allocation of computing resources. When you want to use them, the resources may not be available at that moment.
+
+Me: Yes, that can be an issue. Now, take a look at this. It’s a map of how different smells correspond to different workflows. You can see that P4 covers almost all of these smells; it’s the most common one, followed by P2 and P1. This is essentially the main result of our research. So, Xu Liang, I’m wondering if you have any questions. After answering your questions, I’d like to ask for some feedback. However, before I do that, I need to mention that I might disclose some of your personal information. Would you mind if I mentioned that you are the main operator of SuperCLUE?
+
+Xu Liang: If it’s just that information, I don’t think it would affect me much.
+
+Me: OK, and I’m also wondering if you’d prefer to be acknowledged by name or by your organization in the final paper. If you don’t want that, we can list you anonymously. If you’re fine with it, we can include your name and organization.
+
+Xu Liang: It’s fine either way, as long as it doesn’t involve any private information. It shouldn’t be a problem.
+
+Me: OK, so I’ll include your name and organization, if that’s OK with you. I just want to respect your choice.
+
+Xu Liang: Understood. Yes, I have some questions. First, your research perspective is quite unique. I haven’t seen anyone approach this from this angle before. So, what is the purpose of your research?
+
+Me: There are two aspects—one for leaderboard maintainers and one for leaderboard users. The users are primarily model developers and model users. For the maintainers, we want to highlight these different types of smells to make them aware of potential pitfalls during the development process, so they can be more cautious. As for the different domains, we hope that by showcasing these workflows, model developers will better understand the internal mechanisms of leaderboards. For new leaderboard developers, this can serve as a reference.
+
+Xu Liang: Oh, so your target audience is people like me?
+
+Me: Yes.
+
+Xu Liang: Another thing—you mentioned earlier that there are at least hundreds, if not thousands, of deployed leaderboards. You also mentioned that you collected some data. Are these data points, including the issues you found, all manually gathered and analyzed?
+
+Me: Yes, that's right. This research took quite a long time. It originally started as a student project last semester, around November of last year. However, the project took longer than expected, especially with the data collection and user feedback, since it involved ongoing feedback loops and revisions. It wasn’t until early July of this year that we were able to submit the manuscript. Some of the leaderboard maintainers were a bit slow to respond, so getting feedback from them took some time.
+
+Xu Liang: Got it, understood. My last question is: why are you particularly focused on leaderboards? What made you pay special attention to this area?
+
+Me: This focus is because the evaluation of large models is a critical aspect. Most people are concerned about the evaluation process—whether it’s saturated, if there’s been any data leakage, or if the final results are satisfactory and reliable. Even if the evaluation process itself is flawless, presenting faulty results at the end would be problematic because users only see the final product, not the steps that led to it. Typically, they don't care about the steps involved in the evaluation process, except for experts who might be interested. For most users, the key concern is whether the ranking results align with their experience. They might have personal insights into this, but they probably don’t fully understand the specific metrics or how the evaluation was conducted.
+
+Xu Liang: Right.
+
+Me: Some model users may not have the resources to run evaluations themselves, so leaderboards become crucial for them. They might only have limited computational power to run customized tests. On the other hand, larger organizations can afford to ignore the leaderboards and conduct evaluations based on their own budget, which is a completely different scenario. This is our understanding, but I’m not sure if it’s accurate.
+
+Xu Liang: Yes, that’s correct.
+
+Me: Alright. I have a few questions I’d like to ask you, Xu Liang. Is it convenient for me to ask now? These questions are quite important for us.
+
+Xu Liang: Yes, go ahead.
+
+Me: The first question is related to what I previously presented, especially concerning the workflows and leaderboard smells. I’m wondering if you’ve had any related experiences with these?
+
+Xu Liang: Yes, I’ve had some experience with open-source projects. First, in terms of workflows, we allow users to submit their models. Before we implemented this, we looked at other processes, such as one from a project called Guru. We studied their workflow. So, you could say that before we release a leaderboard or define its mechanism, we do a preliminary review. But it seems that we didn’t go as in-depth as you have by studying various different systems. Typically, if we have a specific leaderboard or system we want to benchmark against, we focus on understanding that one and follow its approach if we find it efficient.
+
+Me: What specific approaches, for example?
+
+Xu Liang: It depends on what suits the leaderboard publisher’s needs. The priority is to find a workflow that is convenient to maintain and meets the specific requirements. They choose the method based on that. Even when we decided to open-source the project and let users submit their own models, we also encountered alternative mechanisms. For example, one approach is to allow users to upload models that can be evaluated in a Docker environment. However, due to resource limitations, we couldn’t fully implement all of these better methods. There are certainly other, potentially superior, approaches, but we haven’t reached that level yet due to constraints.
+
+Me: OK. So, looking at the leaderboard smells, do you think they make sense to you?
+
+Xu Liang: Yes, leaderboard smells do make sense. For example, when we publish a leaderboard, we usually provide a related GitHub repository with documentation explaining the submission process. If necessary, we also provide some code. When we first started open-source projects, our goal was to allow people to submit with one click. The idea was that users could download the dataset and submit their results without writing too much code—just replacing the results in a folder and running everything in one step. Initially, this approach worked smoothly.
+
+However, over time, we encountered issues like leaderboard overfitting. In most cases, things worked as expected, but occasionally there were bugs or unforeseen problems that prevented proper submissions. Since I was the maintainer at the time, I would take care of these issues. We had a main leaderboard and several sub-leaderboards, but the maintenance of these sub-leaderboards wasn’t as well-managed, leading to various issues.
+
+One thing I noticed that you didn’t mention is the potential problems with the dataset itself or the tasks. Users are very concerned about these issues, especially over time. After a while, people start wondering if the task has become overfitted, saturated, or if it remains challenging enough. So, it seems that your focus is more on process-related problems, right?
+
+Me: Looking at these eight types of smells, have you encountered any of them during your leaderboard operations or management?
+
+Xu Liang: Yes, for example, the confusing entity issue. Sometimes, the documentation for a leaderboard isn’t very clear, which can cause confusion for users. Occasionally, we see someone raise an issue on GitHub, and we try to respond. If it turns out to be a common problem, we address it by updating the documentation. However, I have a question: what about issues related to the task setup itself? For instance, if the task design is flawed or contains minor errors—are those included in your smell categories, or do they fall into a different area?
+
+Me: Our research mainly focuses on leaderboard operations. While leaderboard maintenance is related to benchmark maintenance, many benchmark-related issues are beyond the control of leaderboard maintainers. For example, if the benchmark itself has bias or experiences data leakage, there’s not much a leaderboard maintainer can do besides deciding whether or not to use that benchmark. So, we focus on issues specific to leaderboards, not on benchmark problems. That’s why we didn’t include issues like overfitting or data leakage in our smells.
+
+Xu Liang: I see.
+
+Me: Besides data leakage, do you think there are any other areas we might have overlooked? Or are there aspects in the domain model that we haven’t covered?
+
+Xu Liang: Let’s take a look at your domain model diagram. For leaderboards, you mention submission, evaluation, and integration. Does the concept of publishing also fall under your focus? By publishing, I mean when there’s a release of new results or an important model is launched, and it’s promoted through social media or other platforms, highlighting its key features. I’ve seen some well-managed leaderboards that handle this aspect well.
+
+Me: I’m not sure I fully understand what you mean by publishing. How is the publishing you’re referring to different from what we’ve mentioned?
+
+Xu Liang: The publishing I’m talking about refers to the update mechanism. For example, when a result is submitted, does the leaderboard update immediately, or is there a fixed schedule for updates? Like updating every Friday at 3 PM, or in the case of a monthly leaderboard, where results are released at the end of every two months. In our case, we release results at the end of every two-month cycle. Does this kind of result release, in a specific format or schedule, relate to your research?
+
+Me: OK, that’s something we’ve mentioned in the implications section. I’ve also noticed that some leaderboards have their own publishing cycles. This could be an area for future research. Since we had limited time, we didn’t go deep into this. But your point is great, and we’ll definitely note it down. Do you have any other suggestions? Maybe related to the smells—did we miss anything?
+
+Xu Liang: Let me take a look. What exactly do you mean by entity in your context?
+
+Me: Entity refers to a specific component. In the context of the leaderboard, we broke down various parts, and an entity refers to any component. It could be a dataset, a benchmark evaluation protocol, metrics, tasks, final evaluation scores, the model itself, the leaderboard table, or the submission mechanisms and channels. These are the entities we focused on for the eight smells.
+
+Xu Liang: Hmm, it looks like it’s already quite detailed and specific.
+
+Me: Yes. So, who do you think the biggest beneficiaries of our research would be?
+
+Xu Liang: The biggest beneficiaries would be the leaderboard maintainers or developers. Your research provides them with a perspective on how they can choose from different workflows and what challenges they might encounter during the maintenance process. It helps them foresee and potentially avoid various problems, which could lead to better-maintained leaderboards within their capacity.
+
+Me: I see. Another question: how important do you think these smells are for the user experience?
+
+Xu Liang: User experience?
+
+Me: Yes.
+
+Xu Liang: Hmm, I think users might care about this. It should be useful. We hope that when users engage with the leaderboard, they can submit or integrate their models in a smooth and straightforward manner. For example, like what we tried to implement before, where users wouldn’t need to write any code. They’d just download a project, update their results in the project, and run everything with one click. So, users likely care about the ease and smoothness of the process, as well as the completeness of the documentation, knowing exactly which steps they need to follow and how well the process guides them.
+
+Me: OK. Based on your years of experience in leaderboard maintenance, do you think the leaderboard smells I mentioned are genuine problems for maintainers? Are these expected issues, or are they considered abnormal?
+
+Xu Liang: I think it’s a mix of both. At the start of running a leaderboard, most of these might not be significant issues because, generally speaking, before releasing a leaderboard, the maintainer will perform a self-test. Good leaderboard maintainers will document their self-testing process. So, in the beginning, things can usually run smoothly. However, the problem arises when the leaderboard evolves, gets updated, or runs over an extended period. At that point, issues start to surface—such as inconsistent maintenance, irregular updates, or changes that aren’t synchronized—leading to the various problems you’ve outlined.
+
+Me: So, from a technical perspective, based on what you’ve said, avoiding these smells seems easier at the beginning, but as time goes on, it becomes increasingly challenging. Is that correct?
+
+Xu Liang: Yes, that’s right.
+
+Me: OK, I think I’ve asked most of the questions I wanted to. Thanks for your feedback. I’ll take note of your suggestions and incorporate them into our research. I’ll also include your name and organization in the acknowledgments section. If you have any other questions or suggestions, please feel free to let me know.
