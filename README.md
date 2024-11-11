@@ -17,9 +17,10 @@ https://github.com/user-attachments/assets/54001fd6-b7b4-4248-953c-d613ea00fa9e
 Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, operational workflows ("**LBOps**"), and issues ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
 
 ## Contents
-1. **Code**: This repository includes scripts to analyze metadata from FM leaderboards.
-2. **Data**: This repository includes collected metadata from FM leaderboards.
-3. **Results**: This repository includes results and graphs of analyses on FM leaderboards. In particular, "Foundation Model Leaderboards.xlsx" contains all the necessary labels throughout our studies.
+1. **Code**: Contains scripts for analyzing metadata from FM leaderboards.  
+2. **Data**: Stores collected metadata from FM leaderboards.  
+3. **Results**: Includes analysis results and graphs related to FM leaderboards. Notably, *Foundation Model Leaderboards.xlsx* provides all the necessary labels used throughout our studies.  
+4. **Talk**: Features transcripts (in both English and Chinese) from a discussion with a leading expert in leaderboard operations.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
