@@ -11,7 +11,7 @@ Watch the following video teaser to learn about our motivation, methodology, and
 #### Image: [GPT-4o](https://chat.openai.com)
 #### Music: [Suno](https://suno.com)
 
-https://github.com/user-attachments/assets/54001fd6-b7b4-4248-953c-d613ea00fa9e
+https://github.com/user-attachments/assets/031a2f93-6f95-4b67-993f-808864abbfaa
 
 ## Overview
 Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their types, operational workflows ("**LBOps**"), and issues ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
@@ -20,7 +20,7 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 1. **Code**: Contains scripts for analyzing metadata from FM leaderboards.  
 2. **Data**: Stores collected metadata from FM leaderboards.  
 3. **Results**: Includes analysis results and graphs related to FM leaderboards. Notably, *Foundation Model Leaderboards.xlsx* provides all the necessary labels used throughout our studies.  
-4. **Talk**: Features transcripts (in both English and Chinese) from a discussion with a leading expert in leaderboard operations.
+4. **Feedback**: Covers transcripts (in both English and Chinese) from a discussion where we presented our research findings to [Liang Xu](https://github.com/brightmart), a leading expert in leaderboard operations, and sought his feedback.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
