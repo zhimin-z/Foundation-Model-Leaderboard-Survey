@@ -20,7 +20,6 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 1. **Code**: Contains scripts for analyzing metadata from FM leaderboards.  
 2. **Data**: Stores collected metadata from FM leaderboards.  
 3. **Results**: Includes analysis results and graphs related to FM leaderboards. Notably, *Foundation Model Leaderboards.xlsx* provides all the necessary labels used throughout our studies.  
-4. **Feedback**: Covers transcripts (in both English and Chinese) from a discussion where we presented our research findings to [Liang Xu](https://github.com/brightmart), a leading expert in leaderboard operations, and sought his feedback.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
