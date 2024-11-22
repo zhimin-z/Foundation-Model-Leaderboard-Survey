@@ -17,21 +17,22 @@ https://github.com/user-attachments/assets/031a2f93-6f95-4b67-993f-808864abbfaa
 Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their operational workflows ("**LBOps**"), and common pitfalls ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
 
 ## Contents
-1. **requirements.txt**: Lists all the necessary libraries required to run the script. Use this file to install dependencies with a package manager like pip.
 
-2. **code/main.ipynb**: The main Jupyter notebook containing the core script of our study, including data processing, analysis, and visualization steps.
+1. **requirements.txt**: Lists the libraries needed to run the scripts. Use it to install dependencies via a package manager like `pip`.
 
-3. **data/Dependents_Lookup.sh**: Bash script used for mining GitHub repositories. It automates the process of retrieving repository information.
+2. **code/main.ipynb**: The primary notebook for the study, covering data collection, analysis, and visualization.
 
-4. **data/GitHub.json**: Stores metadata about the GitHub repositories mined during our study, including relevant details for analysis.
+3. **data/Dependents_Lookup.sh**: A bash script for automating the mining of GitHub repositories and retrieving repository metadata.
 
-5. **data/HuggingFace.json**: Contains the URLs of all the mined Hugging Face spaces, facilitating further exploration and analysis of foundation models.
+4. **data/GitHub.json**: Contains the URLs of GitHub repositories mined during the study.
 
-6. **data/PapersWithCode.json**: Stores URLs of the mined leaderboards from Papers with Code, supporting our study on benchmarking efforts.
+5. **data/HuggingFace.json**: Contains the URLs of Hugging Face Spaces mined during the study.
 
-7. **result/Foundation Model Leaderboards.xlsx**: Spreadsheet containing all the labels and relevant information extracted for the foundation model leaderboards analyzed in our research.
+6. **data/PapersWithCode.json**: Contains the URLs of Papers with Code leaderboards mined during the study.
 
-8. **result/Leaderboard-Distribution.pdf**: Visual representation of the distribution of leaderboards across various platforms, summarizing the findings of our study.
+7. **result/Foundation Model Leaderboards.xlsx**: Includes metadata, labels, and URLs for foundation model leaderboards identified during the study.
+
+8. **result/Leaderboard-Distribution.pdf**: A visual representation of the distribution of leaderboards across various platforms.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
