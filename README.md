@@ -19,21 +19,19 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 ## Contents
 1. **requirements.txt**: Lists all the necessary libraries required to run the script. Use this file to install dependencies with a package manager like pip.
 
-2. **README.md**: Provides comprehensive documentation for the replication package, including setup instructions and usage guidelines.
+2. **code/main.ipynb**: The main Jupyter notebook containing the core script of our study, including data processing, analysis, and visualization steps.
 
-3. **code/main.ipynb**: The main Jupyter notebook containing the core script of our study, including data processing, analysis, and visualization steps.
+3. **data/Dependents_Lookup.sh**: Bash script used for mining GitHub repositories. It automates the process of retrieving repository information.
 
-4. **data/Dependents_Lookup.sh**: Bash script used for mining GitHub repositories. It automates the process of retrieving repository information.
+4. **data/GitHub.json**: Stores metadata about the GitHub repositories mined during our study, including relevant details for analysis.
 
-5. **data/GitHub.json**: Stores metadata about the GitHub repositories mined during our study, including relevant details for analysis.
+5. **data/HuggingFace.json**: Contains the URLs of all the mined Hugging Face spaces, facilitating further exploration and analysis of foundation models.
 
-6. **data/HuggingFace.json**: Contains the URLs of all the mined Hugging Face spaces, facilitating further exploration and analysis of foundation models.
+6. **data/PapersWithCode.json**: Stores URLs of the mined leaderboards from Papers with Code, supporting our study on benchmarking efforts.
 
-7. **data/PapersWithCode.json**: Stores URLs of the mined leaderboards from Papers with Code, supporting our study on benchmarking efforts.
+7. **result/Foundation Model Leaderboards.xlsx**: Spreadsheet containing all the labels and relevant information extracted for the foundation model leaderboards analyzed in our research.
 
-8. **result/Foundation Model Leaderboards.xlsx**: Spreadsheet containing all the labels and relevant information extracted for the foundation model leaderboards analyzed in our research.
-
-9. **result/Leaderboard-Distribution.pdf**: Visual representation of the distribution of leaderboards across various platforms, summarizing the findings of our study.
+8. **result/Leaderboard-Distribution.pdf**: Visual representation of the distribution of leaderboards across various platforms, summarizing the findings of our study.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
