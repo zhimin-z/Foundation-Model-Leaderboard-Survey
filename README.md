@@ -32,7 +32,7 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 
 7. **result/Foundation Model Leaderboards.xlsx**: Includes metadata, labels, and URLs for foundation model leaderboards identified during the study.
 
-8. **result/Leaderboard-Distribution.pdf**: A visual representation of the distribution of leaderboards across various platforms.
+8. **result/Leaderboard-Distribution.pdf**: A visual representation of the distribution of leaderboards across different sources.
 
 ## Citation
 If you find this repository useful, please consider giving us a star :star: and citation:
