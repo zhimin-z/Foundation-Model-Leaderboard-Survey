@@ -26,7 +26,7 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 
 4. **data/GitHub.json**: Contains the URLs of GitHub repositories mined during the study.
 
-5. **data/HuggingFace.json**: Contains the URLs of Hugging Face Spaces mined during the study.
+5. **data/HuggingFace.json**: Contains the URLs of Hugging Face spaces mined during the study.
 
 6. **data/PapersWithCode.json**: Contains the URLs of Papers with Code leaderboards mined during the study.
 
