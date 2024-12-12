@@ -11,7 +11,7 @@ Watch the following video teaser to learn about our motivation, methodology, and
 #### Image: [GPT-4o](https://chat.openai.com)
 #### Music: [Suno](https://suno.com)
 
-https://github.com/user-attachments/assets/031a2f93-6f95-4b67-993f-808864abbfaa
+https://github.com/user-attachments/assets/519ea656-7b89-475a-8694-c0a5fbe4c1e1
 
 ## Overview
 Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their operational workflows ("**LBOps**"), and common pitfalls ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
