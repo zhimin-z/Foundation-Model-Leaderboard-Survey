@@ -14,7 +14,7 @@ Watch the following video teaser to learn about our motivation, methodology, and
 https://github.com/user-attachments/assets/519ea656-7b89-475a-8694-c0a5fbe4c1e1
 
 ## Overview
-Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their operational workflows ("**LBOps**"), and common pitfalls ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
+Our paper investigates various foundation model (FM) leaderboards across multiple platforms, focusing on their operational workflows ("**LBOps**"), and common pitfalls ("**leaderboard smells**"). We also curate an awesome list of FM leaderboards and their associated tools and organizations, check [here](https://github.com/SAILResearch/awesome-foundation-model-leaderboards).
 
 ## Contents
 
