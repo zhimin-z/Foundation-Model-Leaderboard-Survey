@@ -38,11 +38,11 @@ Our paper investigates various foundation model (FM) leaderboards across multipl
 If you find this repository useful, please consider giving us a star :star: and citation:
 ```
 @article{zhao2024workflows,
-  title={On the Workflows and Smells of Leaderboard Operations (LBOps): An Exploratory Study of Foundation Model Leaderboards},
-  author={Zhao, Zhimin and Bangash, Abdul Ali and C{\^o}go, Filipe Roseiro and Adams, Bram and Hassan, Ahmed E},
-  journal={arXiv preprint arXiv:2407.04065},
-  year={2024}
-}
+  author={Zhao, Zhimin and Bangash, Abdul Ali and Côgo, Filipe Roseiro and Adams, Bram and Hassan, Ahmed E.},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={On the Workflows and Smells of Leaderboard Operations (LBOps): An Exploratory Study of Foundation Model Leaderboards}, 
+  year={2025},
+  doi={10.1109/TSE.2025.3533972}}
 ```
 
 ## Contact
